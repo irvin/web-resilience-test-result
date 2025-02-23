@@ -152,6 +152,7 @@
     <template id="not-found-template">
         <div class="message">
             <p>找不到 <span class="url-param"></span> 的測試結果</p>
+            <p>所有的測試資料：<a href="https://github.com/irvin/digital-service-resilience-test-result" target="_blank">github.com/irvin/digital-service-resilience-test-result</a></p>
         </div>
     </template>
 
@@ -261,15 +262,11 @@
                     summary = '會動';
                 }
                 
-                // 更新 og:description
-                document.querySelector('meta[property="og:description"]').content = 
-                    `${urlParam} ${summary}，境內連線: ${result.test_results.domestic}，` +
-                    `具有國內節點的雲端: ${result.test_results.cloud_w_domestic_node}，` +
-                    `境外連線: ${result.test_results.foreign}`;
+                // 更新 og:description，只顯示結論
+                document.querySelector('meta[property="og:description"]').content = summary;
 
                 resultsDiv.appendChild(createResultCard(result));
             } else {
-                testSite.textContent = '';
                 // 重設 og:description 為預設值
                 document.querySelector('meta[property="og:description"]').content = 
                     '檢測網站在海纜受損時的可用性';
