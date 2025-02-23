@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>海纜斷掉時網站會動嗎？</title>
+    
+    <!-- Open Graph 標籤 -->
+    <meta property="og:title" content="海纜斷掉時網站會動嗎？">
+    <meta property="og:description" content="檢測台灣網站在海纜受損時的可用性">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://irvin.github.io/digital-service-resilience-test-result/">
+    <meta id="og-canonical" property="og:canonical" content="https://irvin.github.io/digital-service-resilience-test-result/">
+
+    <!-- 一般 canonical -->
+    <link id="canonical" rel="canonical" href="https://irvin.github.io/digital-service-resilience-test-result/">
+
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -65,10 +76,15 @@
         .raw-json-link:hover {
             text-decoration: underline;
         }
+
+        /* 在 test-site 前後加上間距 */
+        .test-site {
+            margin: 0 0.25em;
+        }
     </style>
 </head>
 <body>
-    <h1>海纜斷掉時網站會動嗎？</h1>
+    <h1 id="page-title">海纜斷掉時<span class="test-site"></span>網站會動嗎？</h1>
     <div id="results"></div>
 
     <!-- HTML 模板 -->
@@ -162,12 +178,26 @@
         async function loadResults() {
             const resultsDiv = document.getElementById('results');
             const urlParam = getUrlParam();
+            const testSite = document.querySelector('.test-site');
+            
+            // 更新 meta 標籤
+            const baseUrl = 'https://irvin.github.io/digital-service-resilience-test-result/';
+            const currentUrl = urlParam ? `${baseUrl}?url=${urlParam}` : baseUrl;
+            
+            document.getElementById('canonical').href = currentUrl;
+            document.getElementById('og-canonical').content = currentUrl;
+            document.title = urlParam ? `海纜斷掉時 ${urlParam} 網站會動嗎？` : '海纜斷掉時網站會動嗎？';
+            document.querySelector('meta[property="og:title"]').content = document.title;
 
             if (!urlParam) {
+                testSite.textContent = '';
                 const template = document.getElementById('no-param-template');
                 resultsDiv.appendChild(template.content.cloneNode(true));
                 return;
             }
+
+            // 更新標題中的網站名稱
+            testSite.textContent = urlParam;  // 直接設定文字，不加空白
 
             // 顯示指定網址的結果
             const filename = urlToFilename(urlParam);
@@ -175,6 +205,7 @@
             if (result) {
                 resultsDiv.appendChild(createResultCard(result));
             } else {
+                testSite.textContent = '';
                 const template = document.getElementById('not-found-template');
                 const content = template.content.cloneNode(true);
                 content.querySelector('.url-param').textContent = urlParam;
