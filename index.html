@@ -28,11 +28,20 @@
             padding: 20px;
             margin-bottom: 20px;
         }
-        .score {
+        .score-container {
+          margin: 0 6px;
+        }
+        .score-container p {
+          font-size: 0.9em;
+          line-height: 1.5em;
+          margin: 0;
+        }
+        .score-container .score {
             display: inline-block;
             padding: 4px 8px;
             border-radius: 4px;
-            margin: 6px 6px;
+            margin-bottom: 10px;
+            font-size: 1em;
         }
         .score-O { background-color: #d4edda; color: #155724; }
         .score-Q { background-color: #fff3cd; color: #856404; }
@@ -49,8 +58,8 @@
         }
         
         code {
+            font-size: 0.7em;
             font-family: Monaco, Consolas, "Courier New", monospace;
-            font-size: 14px;
         }
         
         .message {
@@ -127,15 +136,17 @@
             <div class="summary">
                 <h2 class="summary-text"></h2>
             </div>
-            <p>最後一次測試時間: <span class="test-time"></span></p>
-            <p>測試結果:</p>
-            <div>
+            <p>最後一次測試時間：<span class="test-time"></span></p>
+            <p>結果摘要：</p>
+            <div class="score-container">
                 <p class="score score-O">境內連線 (O): <span class="domestic-count"></span></p><br>
                 <p class="score score-Q">具有國內節點的雲端 (?): <span class="cloud-count"></span></p><br>
                 <p class="score score-X">境外連線 (X): <span class="foreign-count"></span></p>
+              <p>說明：在開啟 ${url} 時，我們總共鑑別出 ${totalConnections} 項連線。其中 ${domestic} 項為境內資源，${cloudDomestic} 項為具有國內節點的雲端服務（尚不清楚在對外斷線是否可用），${foreign} 項為境外資源。</p>
             </div>
-            <p><a href="" class="raw-json-link" target="_blank">原始資料</a></p>
 
+            <p><a href="" class="raw-json-link" target="_blank">原始資料</a></p>
+            
             <div class="domain-details">
                 <pre><code class="details-json"></code></pre>
             </div>
@@ -145,11 +156,11 @@
     <template id="not-found-template">
         <div class="message">
             <p>找不到 <span class="url-param"></span> 的測試結果</p>
-            <p>所有的測試資料：<a href="https://github.com/irvin/digital-service-resilience-test-result" target="_blank">github.com/irvin/digital-service-resilience-test-result</a></p>
+            <p>目前已測試的所有資料：<a href="https://github.com/irvin/digital-service-resilience-test-result" target="_blank">github.com/irvin/digital-service-resilience-test-result</a>，你可以按照<a href="https://github.com/irvin/https://github.com/irvin/digital-service-resilience" target="_blank"></a>這邊的方式</a>進行測試</p>
         </div>
     </template>
 
-    <p><a href="https://github.com/irvin/digital-service-resilience-" target="_blank">研究方法</a></p>
+    <p><a href="https://github.com/irvin/digital-service-resilience" target="_blank">研究方法</a></p>
     <p><a href="https://g0v.hackmd.io/@paulpengtw/DigiResiTh0n-home/https%3A%2F%2Fg0v.hackmd.io%2F%40paulpengtw%2FDigiResiTh0n-home" target="_blank">g0v.tw 數位韌性松</a></p>
 
     <script>
@@ -170,9 +181,38 @@
             return new Date(isoString).toLocaleString('zh-TW');
         }
 
+        function getSummaryText(result) {
+            if (result.test_results.foreign > 0) {
+                return '不會動';
+            } else if (result.test_results.cloud_w_domestic_node > 0) {
+                return '不確定';
+            } else {
+                return '會動';
+            }
+        }
+
         function createResultCard(result) {
             const template = document.getElementById('result-card-template');
-            const card = template.content.cloneNode(true);
+            let templateHTML = template.innerHTML;
+            
+            // 計算總連線數
+            const totalConnections = result.test_results.domestic + 
+                                   result.test_results.cloud_w_domestic_node + 
+                                   result.test_results.foreign;
+            
+            // 先取得 summary 結果
+            const summaryResult = getSummaryText(result);
+            
+            // 替換模板中的變數
+            templateHTML = templateHTML.replace('${url}', result.url)
+                .replace('${totalConnections}', totalConnections)
+                .replace('${domestic}', result.test_results.domestic)
+                .replace('${cloudDomestic}', result.test_results.cloud_w_domestic_node)
+                .replace('${foreign}', result.test_results.foreign);
+            
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = templateHTML;
+            const card = tempDiv.firstElementChild;
             
             // 判斷總評
             const summary = card.querySelector('.summary');
@@ -180,14 +220,12 @@
             
             if (result.test_results.foreign > 0) {
                 summary.classList.add('wont-work');
-                summaryText.textContent = '不會動';
             } else if (result.test_results.cloud_w_domestic_node > 0) {
                 summary.classList.add('might-work');
-                summaryText.textContent = '不確定';
             } else {
                 summary.classList.add('will-work');
-                summaryText.textContent = '會動';
             }
+            summaryText.textContent = summaryResult;
             
             // 填充資料
             card.querySelector('.test-time').textContent = formatDate(result.timestamp);
@@ -200,6 +238,9 @@
             const rawLink = card.querySelector('.raw-json-link');
             const filename = urlToFilename(result.url);
             rawLink.href = GITHUB_WEB_URL + filename;
+            
+            // 更新 og:description
+            document.querySelector('meta[property="og:description"]').content = summaryResult;
             
             return card;
         }
@@ -247,25 +288,9 @@
             const filename = urlToFilename(urlParam);
             const result = await fetchTestResult(filename);
             if (result) {
-                // 根據測試結果生成描述
-                let summary = '';
-                if (result.test_results.foreign > 0) {
-                    summary = '不會動';
-                } else if (result.test_results.cloud_w_domestic_node > 0) {
-                    summary = '不確定';
-                } else {
-                    summary = '會動';
-                }
-                
-                // 更新 og:description，只顯示結論
-                document.querySelector('meta[property="og:description"]').content = summary;
-
                 resultsDiv.appendChild(createResultCard(result));
-            } else {
-                // 重設 og:description 為預設值
-                document.querySelector('meta[property="og:description"]').content = 
-                    '檢測網站在台灣對外海纜斷掉時的可用性';
-                    
+            } 
+            else {
                 const template = document.getElementById('not-found-template');
                 const content = template.content.cloneNode(true);
                 content.querySelector('.url-param').textContent = urlParam;
