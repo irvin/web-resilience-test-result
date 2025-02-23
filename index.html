@@ -10,9 +10,7 @@
     <meta property="og:description" content="檢測網站在台灣對外海纜斷掉時的可用性">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://irvin.github.io/digital-service-resilience-test-result/">
-    <meta id="og-canonical" property="og:canonical" content="https://irvin.github.io/digital-service-resilience-test-result/">
-
-    <!-- 一般 canonical -->
+    <meta property="og:canonical" content="https://irvin.github.io/digital-service-resilience-test-result/">
     <link id="canonical" rel="canonical" href="https://irvin.github.io/digital-service-resilience-test-result/">
 
     <style>
@@ -130,7 +128,7 @@
     </style>
 </head>
 <body>
-    <h1 id="page-title">海纜斷掉時<a href="" class="site-link" target="_blank"><span class="test-site"></span></a>網站會動嗎？</h1>
+    <h1 id="page-title">海纜斷掉時<a href="" class="site-link" target="_blank"><span class="test-site"></span></a>會動嗎？</h1>
     <div id="results"></div>
 
     <!-- HTML 模板 -->
@@ -283,9 +281,9 @@
             const currentUrl = urlParam ? `${baseUrl}?url=${urlParam}` : baseUrl;
             
             document.getElementById('canonical').href = currentUrl;
-            document.getElementById('og-canonical').content = currentUrl;
+            document.querySelector('meta[property="og:canonical"]').content = currentUrl;
             document.querySelector('meta[property="og:url"]').content = currentUrl;
-            document.title = urlParam ? `海纜斷掉時 ${urlParam} 網站會動嗎？` : '海纜斷掉時網站會動嗎？';
+            document.title = urlParam ? `海纜斷掉時，${urlParam} 會動嗎？` : '海纜斷掉時網站會動嗎？';
             document.querySelector('meta[property="og:title"]').content = document.title;
 
             // 顯示指定網址的結果
