@@ -206,23 +206,18 @@
 
         // 從 URL 參數取得要顯示的網址
         function getUrlParam() {
-            const params = new URLSearchParams(window.location.search);
-            return params.get('url');
+            return window.location.search.substring(5);
         }
 
         // 將網址轉換為對應的 JSON 檔名
         function urlToFilename(url) {
-            // 移除協議前綴（http:// 或 https://）
             const urlObj = new URL('https://' + url.replace(/^https?:\/\//, ''));
-            let filename = `${urlObj.hostname}${urlObj.pathname.replace(/\//g, '_')}${
-                urlObj.search ? '_' + urlObj.search.replace(/[?&=]/g, '_') : ''
-            }`.replace(/_+$/, '');
-            
-            // 如果檔名太長，直接截斷到 95 字元
+            let filename = urlObj.hostname + urlObj.pathname.replace(/\//g, '_');
+            if (urlObj.search) filename += '__' + urlObj.search.substring(1).replace(/[&=]/g, '_');
+            filename = filename.replace(/_+$/, '');
             if (filename.length > 95) {
                 filename = filename.slice(0, 95);
             }
-            
             return filename + '.json';
         }
 
@@ -281,4 +276,4 @@
         loadResults();
     </script>
 </body>
-</html> 
+</html>
