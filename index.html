@@ -21,7 +21,7 @@
             display: inline-block;
             padding: 4px 8px;
             border-radius: 4px;
-            margin-right: 8px;
+            margin: 6px 6px;
         }
         .score-O { background-color: #d4edda; color: #155724; }
         .score-Q { background-color: #fff3cd; color: #856404; }
@@ -41,14 +41,73 @@
             font-family: Monaco, Consolas, "Courier New", monospace;
             font-size: 14px;
         }
+        
+        .message {
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .message code {
+            background-color: #e9ecef;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        .raw-json-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: #0366d6;
+            text-decoration: none;
+        }
+
+        .raw-json-link:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <h1>海纜斷掉時網站會動嗎？</h1>
     <div id="results"></div>
 
+    <!-- HTML 模板 -->
+    <template id="result-card-template">
+        <div class="result-card">
+            <h2>
+                <a href="" class="site-url" target="_blank"></a>
+            </h2>
+            <p>最後一次測試時間: <span class="test-time"></span></p>
+            <p>測試結果:</p>
+            <div>
+                <p class="score score-O">境內連線 (O): <span class="domestic-count"></span></p><br>
+                <p class="score score-Q">具有國內節點的雲端 (?): <span class="cloud-count"></span></p><br>
+                <p class="score score-X">境外連線 (X): <span class="foreign-count"></span></p>
+            </div>
+            <p>原始資料（<a href="" class="raw-json-link" target="_blank">在 GitHub 上查看</a>）</p>
+
+            <div class="domain-details">
+                <pre><code class="details-json"></code></pre>
+            </div>
+        </div>
+    </template>
+
+    <template id="no-param-template">
+        <div class="message">
+            <p>請在網址後加上 ?url= 參數來查看特定網站的測試結果</p>
+            <p>例如：<code>?url=g0v.tw</code></p>
+        </div>
+    </template>
+
+    <template id="not-found-template">
+        <div class="message">
+            <p>找不到 <span class="url-param"></span> 的測試結果</p>
+        </div>
+    </template>
+
     <script>
         const GITHUB_RAW_URL = 'https://raw.githubusercontent.com/irvin/digital-service-resilience-test-result/refs/heads/main/';
+        const GITHUB_WEB_URL = 'https://github.com/irvin/digital-service-resilience-test-result/blob/main/';
 
         async function fetchTestResult(filename) {
             try {
@@ -65,23 +124,26 @@
         }
 
         function createResultCard(result) {
-            return `
-                <div class="result-card">
-                    <h2>
-                        <a href="${result.url}" target="_blank">${result.url}</a>
-                    </h2>
-                    <p>最後一次測試時間: ${formatDate(result.timestamp)}</p>
-                    <p>測試結果:</p>
-                    <div>
-                        <span class="score score-O">境內連線 (O): ${result.test_results.domestic}</span>
-                        <span class="score score-Q">具有國內節點的雲端 (?): ${result.test_results.cloud_w_domestic_node}</span>
-                        <span class="score score-X">境外連線 (X): ${result.test_results.foreign}</span>
-                    </div>
-                    <div class="domain-details">
-                        <pre><code>${JSON.stringify(result.domainDetails, null, 2)}</code></pre>
-                    </div>
-                </div>
-            `;
+            const template = document.getElementById('result-card-template');
+            const card = template.content.cloneNode(true);
+            
+            // 填充資料
+            const link = card.querySelector('.site-url');
+            link.href = result.url;
+            link.textContent = result.url;
+            
+            card.querySelector('.test-time').textContent = formatDate(result.timestamp);
+            card.querySelector('.domestic-count').textContent = result.test_results.domestic;
+            card.querySelector('.cloud-count').textContent = result.test_results.cloud_w_domestic_node;
+            card.querySelector('.foreign-count').textContent = result.test_results.foreign;
+            card.querySelector('.details-json').textContent = JSON.stringify(result.domainDetails, null, 2);
+            
+            // 設定 JSON 原始資料連結
+            const rawLink = card.querySelector('.raw-json-link');
+            const filename = urlToFilename(result.url);
+            rawLink.href = GITHUB_WEB_URL + filename;
+            
+            return card;
         }
 
         // 從 URL 參數取得要顯示的網址
@@ -102,10 +164,8 @@
             const urlParam = getUrlParam();
 
             if (!urlParam) {
-                resultsDiv.innerHTML = `
-                    <p>請在網址後加上 ?url= 參數來查看特定網站的測試結果</p>
-                    <p>例如：<code>?url=g0v.tw</code></p>
-                `;
+                const template = document.getElementById('no-param-template');
+                resultsDiv.appendChild(template.content.cloneNode(true));
                 return;
             }
 
@@ -113,9 +173,12 @@
             const filename = urlToFilename(urlParam);
             const result = await fetchTestResult(filename);
             if (result) {
-                resultsDiv.innerHTML = createResultCard(result);
+                resultsDiv.appendChild(createResultCard(result));
             } else {
-                resultsDiv.innerHTML = `<p>找不到 ${urlParam} 的測試結果</p>`;
+                const template = document.getElementById('not-found-template');
+                const content = template.content.cloneNode(true);
+                content.querySelector('.url-param').textContent = urlParam;
+                resultsDiv.appendChild(content);
             }
         }
 
