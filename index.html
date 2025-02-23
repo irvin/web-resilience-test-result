@@ -81,18 +81,55 @@
         .test-site {
             margin: 0 0.25em;
         }
+
+        .summary {
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .summary.will-work {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        .summary.might-work {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+
+        .summary.wont-work {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+
+        .summary h2 {
+            margin: 0;
+        }
+
+        .site-link {
+            color: unset;
+            text-decoration: none;
+        }
+
+        .site-link:hover,
+        .site-link:focus {
+            color: unset;  /* 確保滑鼠移過時也保持相同顏色 */
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <h1 id="page-title">海纜斷掉時<span class="test-site"></span>網站會動嗎？</h1>
+    <h1 id="page-title">海纜斷掉時<a href="" class="site-link" target="_blank"><span class="test-site"></span></a>網站會動嗎？</h1>
     <div id="results"></div>
 
     <!-- HTML 模板 -->
     <template id="result-card-template">
         <div class="result-card">
-            <h2>
-                <a href="" class="site-url" target="_blank"></a>
-            </h2>
+            <div class="summary">
+                <h2 class="summary-text"></h2>
+            </div>
             <p>最後一次測試時間: <span class="test-time"></span></p>
             <p>測試結果:</p>
             <div>
@@ -100,7 +137,7 @@
                 <p class="score score-Q">具有國內節點的雲端 (?): <span class="cloud-count"></span></p><br>
                 <p class="score score-X">境外連線 (X): <span class="foreign-count"></span></p>
             </div>
-            <p>原始資料（<a href="" class="raw-json-link" target="_blank">在 GitHub 上查看</a>）</p>
+            <p>原始資料（<a href="" class="raw-json-link" target="_blank">GitHub link</a>）</p>
 
             <div class="domain-details">
                 <pre><code class="details-json"></code></pre>
@@ -143,11 +180,22 @@
             const template = document.getElementById('result-card-template');
             const card = template.content.cloneNode(true);
             
-            // 填充資料
-            const link = card.querySelector('.site-url');
-            link.href = result.url;
-            link.textContent = result.url;
+            // 判斷總評
+            const summary = card.querySelector('.summary');
+            const summaryText = card.querySelector('.summary-text');
             
+            if (result.test_results.foreign > 0) {
+                summary.classList.add('wont-work');
+                summaryText.textContent = '不會動';
+            } else if (result.test_results.cloud_w_domestic_node > 0) {
+                summary.classList.add('might-work');
+                summaryText.textContent = '不確定';
+            } else {
+                summary.classList.add('will-work');
+                summaryText.textContent = '會動';
+            }
+            
+            // 填充資料
             card.querySelector('.test-time').textContent = formatDate(result.timestamp);
             card.querySelector('.domestic-count').textContent = result.test_results.domestic;
             card.querySelector('.cloud-count').textContent = result.test_results.cloud_w_domestic_node;
@@ -179,7 +227,20 @@
             const resultsDiv = document.getElementById('results');
             const urlParam = getUrlParam();
             const testSite = document.querySelector('.test-site');
+            const siteLink = document.querySelector('.site-link');
             
+            if (!urlParam) {
+                testSite.textContent = '';
+                siteLink.removeAttribute('href');  // 移除連結
+                const template = document.getElementById('no-param-template');
+                resultsDiv.appendChild(template.content.cloneNode(true));
+                return;
+            }
+
+            // 更新標題中的網站名稱和連結
+            testSite.textContent = urlParam;
+            siteLink.href = `https://${urlParam}`;  // 設定連結
+
             // 更新 meta 標籤
             const baseUrl = 'https://irvin.github.io/digital-service-resilience-test-result/';
             const currentUrl = urlParam ? `${baseUrl}?url=${urlParam}` : baseUrl;
@@ -188,16 +249,6 @@
             document.getElementById('og-canonical').content = currentUrl;
             document.title = urlParam ? `海纜斷掉時 ${urlParam} 網站會動嗎？` : '海纜斷掉時網站會動嗎？';
             document.querySelector('meta[property="og:title"]').content = document.title;
-
-            if (!urlParam) {
-                testSite.textContent = '';
-                const template = document.getElementById('no-param-template');
-                resultsDiv.appendChild(template.content.cloneNode(true));
-                return;
-            }
-
-            // 更新標題中的網站名稱
-            testSite.textContent = urlParam;  // 直接設定文字，不加空白
 
             // 顯示指定網址的結果
             const filename = urlToFilename(urlParam);
