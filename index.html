@@ -284,6 +284,7 @@
             
             document.getElementById('canonical').href = currentUrl;
             document.getElementById('og-canonical').content = currentUrl;
+            document.querySelector('meta[property="og:url"]').content = currentUrl;
             document.title = urlParam ? `海纜斷掉時 ${urlParam} 網站會動嗎？` : '海纜斷掉時網站會動嗎？';
             document.querySelector('meta[property="og:title"]').content = document.title;
 
