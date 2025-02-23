@@ -7,7 +7,7 @@
     
     <!-- Open Graph 標籤 -->
     <meta property="og:title" content="海纜斷掉時網站會動嗎？">
-    <meta property="og:description" content="檢測台灣網站在海纜受損時的可用性">
+    <meta property="og:description" content="檢測網站在海纜受損時的可用性">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://irvin.github.io/digital-service-resilience-test-result/">
     <meta id="og-canonical" property="og:canonical" content="https://irvin.github.io/digital-service-resilience-test-result/">
@@ -251,9 +251,29 @@
             const filename = urlToFilename(urlParam);
             const result = await fetchTestResult(filename);
             if (result) {
+                // 根據測試結果生成描述
+                let summary = '';
+                if (result.test_results.foreign > 0) {
+                    summary = '不會動';
+                } else if (result.test_results.cloud_w_domestic_node > 0) {
+                    summary = '不確定';
+                } else {
+                    summary = '會動';
+                }
+                
+                // 更新 og:description
+                document.querySelector('meta[property="og:description"]').content = 
+                    `${urlParam} ${summary}，境內連線: ${result.test_results.domestic}，` +
+                    `具有國內節點的雲端: ${result.test_results.cloud_w_domestic_node}，` +
+                    `境外連線: ${result.test_results.foreign}`;
+
                 resultsDiv.appendChild(createResultCard(result));
             } else {
                 testSite.textContent = '';
+                // 重設 og:description 為預設值
+                document.querySelector('meta[property="og:description"]').content = 
+                    '檢測網站在海纜受損時的可用性';
+                    
                 const template = document.getElementById('not-found-template');
                 const content = template.content.cloneNode(true);
                 content.querySelector('.url-param').textContent = urlParam;
