@@ -235,7 +235,8 @@
                 return;
             }
 
-            document.querySelector('h1').outerHTML = templates.title({ url: urlParam });
+            const cleanUrl = urlParam.replace(/^https?:\/\//, '');
+            document.querySelector('h1').outerHTML = templates.title({ url: cleanUrl });
 
             // 更新 meta 標籤
             const baseUrl = 'https://irvin.github.io/web-resilience-test-result/';
