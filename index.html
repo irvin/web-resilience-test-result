@@ -21,20 +21,26 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            line-height: 1.6;
         }
         .result-card {
             border: 1px solid #ddd;
             border-radius: 8px;
             padding: 20px;
             margin-bottom: 20px;
+            background-color: #fff;
         }
         .score-container {
-          margin: 0 6px;
+            margin: 0 6px;
+            padding: 12px;
+            background-color: #f8f9fa;
+            border-radius: 6px;
         }
         .score-container p {
-          font-size: 0.9em;
-          line-height: 1.5em;
-          margin: 0;
+            font-size: 0.9em;
+            line-height: 1.5em;
+            margin: 0;
+            margin-bottom: 0.5em;
         }
         .score-container .score {
             display: inline-block;
@@ -42,19 +48,18 @@
             border-radius: 4px;
             margin-bottom: 10px;
             font-size: 1em;
+            min-width: 100px;
+            text-align: center;
         }
         .score-O { background-color: #d4edda; color: #155724; }
         .score-Q { background-color: #fff3cd; color: #856404; }
         .score-X { background-color: #f8d7da; color: #721c24; }
-        .domain-details {
-            margin-top: 10px;
-            padding-left: 20px;
-        }
         pre {
             background-color: #f5f5f5;
             padding: 15px;
             border-radius: 4px;
             overflow-x: auto;
+            margin: 1em 0;
         }
         
         code {
@@ -76,8 +81,6 @@
         }
 
         .raw-json-link {
-            display: inline-block;
-            margin-top: 10px;
             color: #0366d6;
             text-decoration: none;
         }
@@ -137,18 +140,17 @@
                 <h2 class="summary-text"></h2>
             </div>
             <p>最後一次測試時間：<span class="test-time"></span></p>
-            <p>結果摘要：</p>
+            <p>結果摘要</p>
             <div class="score-container">
                 <p class="score score-O">境內連線 (O): <span class="domestic-count"></span></p><br>
                 <p class="score score-Q">具有國內節點的雲端 (?): <span class="cloud-count"></span></p><br>
                 <p class="score score-X">境外連線 (X): <span class="foreign-count"></span></p>
-              <p>說明：在開啟 ${url} 時，我們總共鑑別出 ${totalConnections} 項連線。其中 ${domestic} 項為境內資源，${cloudDomestic} 項為具有國內節點的雲端服務（尚不清楚在對外斷線是否可用），${foreign} 項為境外資源。</p>
+              <p>說明：在開啟 ${url} 時，我們總共鑑別出 ${totalConnections} 項連線。<br>其中 ${foreign} 項為境外資源，${cloudDomestic} 項為具有國內節點的雲端服務（尚不清楚在對外斷線是否可用），${domestic} 項為境內資源。</p>
             </div>
-
-            <p><a href="" class="raw-json-link" target="_blank">原始資料</a></p>
             
-            <div class="domain-details">
-                <pre><code class="details-json"></code></pre>
+            <div class="details-container">
+              <p><a href="" class="raw-json-link" target="_blank">原始資料</a></p>
+              <pre><code class="details-json"></code></pre>
             </div>
         </div>
     </template>
@@ -161,7 +163,8 @@
     </template>
 
     <p><a href="https://github.com/irvin/digital-service-resilience" target="_blank">研究方法</a></p>
-    <p><a href="https://g0v.hackmd.io/@paulpengtw/DigiResiTh0n-home/https%3A%2F%2Fg0v.hackmd.io%2F%40paulpengtw%2FDigiResiTh0n-home" target="_blank">g0v.tw 數位韌性松</a></p>
+    <p><a href="https://g0v.hackmd.io/@paulpengtw/DigiResiTh0n-home/https%3A%2F%2Fg0v.hackmd.io%2F%40paulpengtw%2FDigiResiTh0n-home" target="_blank">g0v 數位韌性松</a></p>
+    <img src="g0v_logo.png" alt="g0v.tw 台灣零時政府" style="width: 100px; height: 100px;">
 
     <script>
         const GITHUB_RAW_URL = 'https://raw.githubusercontent.com/irvin/digital-service-resilience-test-result/refs/heads/main/';
