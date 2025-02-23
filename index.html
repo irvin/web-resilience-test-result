@@ -9,9 +9,9 @@
     <meta property="og:title" content="海纜斷掉時網站會動嗎？">
     <meta property="og:description" content="檢測網站在台灣對外海纜斷掉時的可用性">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://irvin.github.io/digital-service-resilience-test-result/">
-    <meta property="og:canonical" content="https://irvin.github.io/digital-service-resilience-test-result/">
-    <link id="canonical" rel="canonical" href="https://irvin.github.io/digital-service-resilience-test-result/">
+    <meta property="og:url" content="https://irvin.github.io/web-resilience-test-result/">
+    <meta property="og:canonical" content="https://irvin.github.io/web-resilience-test-result/">
+    <link id="canonical" rel="canonical" href="https://irvin.github.io/web-resilience-test-result/">
 
     <style>
         body {
@@ -126,47 +126,59 @@
             text-decoration: underline;
         }
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"></script>
 </head>
 <body>
-    <h1 id="page-title">海纜斷掉時<a href="" class="site-link" target="_blank"><span class="test-site"></span></a>會動嗎？</h1>
+    <h1>海纜斷掉時，網站會動嗎？</h1>
+    <template id="title-template">
+        <h1>海纜斷掉時，<a href="https://{{url}}" target="_blank">{{url}}</a> 會動嗎？</h1>
+    </template>
+
     <div id="results"></div>
 
-    <!-- HTML 模板 -->
     <template id="result-card-template">
         <div class="result-card">
-            <div class="summary">
-                <h2 class="summary-text"></h2>
+            <div class="summary {{summaryClass}}">
+                <h2>{{summaryText}}</h2>
             </div>
-            <p>最後一次測試時間：<span class="test-time"></span></p>
-            <p>結果摘要</p>
+            <p>最後一次測試時間：{{testTime}}</p>
             <div class="score-container">
-                <p class="score score-O">境內連線 (O): <span class="domestic-count"></span></p><br>
-                <p class="score score-Q">具有國內節點的雲端 (?): <span class="cloud-count"></span></p><br>
-                <p class="score score-X">境外連線 (X): <span class="foreign-count"></span></p>
-              <p>說明：在開啟 ${url} 時，我們總共鑑別出 ${totalConnections} 項連線。<br>其中 ${foreign} 項為境外資源，${cloudDomestic} 項為具有國內節點的雲端服務（尚不清楚在對外斷線是否可用），${domestic} 項為境內資源。</p>
+                <p class="score score-O">境內連線 (O): {{domesticCount}}</p><br>
+                <p class="score score-Q">具有國內節點的雲 (?): {{cloudCount}}</p><br>
+                <p class="score score-X">境外連線 (X): {{foreignCount}}</p>
+                <p>在開啟 {{url}} 時，我們總共鑑別出 {{totalConnections}} 項連線。<br>
+                其中 {{domesticCount}} 項為境內資源，{{cloudCount}} 項為具有國內節點的雲端服務（尚不清楚在對外斷線是否可用），{{foreignCount}} 項為境外資源。</p>
             </div>
-            
             <div class="details-container">
-              <p><a href="" class="raw-json-link" target="_blank">原始資料</a></p>
-              <pre><code class="details-json"></code></pre>
+                <p><a href="{{rawDataUrl}}" target="_blank">原始資料</a></p>
+                <pre><code>{{detailsJson}}</code></pre>
             </div>
         </div>
     </template>
 
     <template id="not-found-template">
         <div class="message">
-            <p>找不到 <span class="url-param"></span> 的測試結果</p>
-            <p>目前已測試的所有資料：<a href="https://github.com/irvin/digital-service-resilience-test-result" target="_blank">github.com/irvin/digital-service-resilience-test-result</a>，你可以按照<a href="https://github.com/irvin/https://github.com/irvin/digital-service-resilience" target="_blank"></a>這邊的方式</a>進行測試</p>
+            <p>找不到 {{url}} 的測試結果</p>
+            <p>目前已測試的所有頁面資料：<a href="https://github.com/irvin/web-resilience-test-result" target="_blank">github.com/irvin/web-resilience-test-result</a></p>
+            <p>你可以按照<a href="https://github.com/irvin/digital-service-resilience" target="_blank">這邊的方式</a>進行測試。</p>
         </div>
     </template>
 
-    <p><a href="https://github.com/irvin/digital-service-resilience" target="_blank">研究方法</a></p>
-    <p><a href="https://g0v.hackmd.io/@paulpengtw/DigiResiTh0n-home/https%3A%2F%2Fg0v.hackmd.io%2F%40paulpengtw%2FDigiResiTh0n-home" target="_blank">g0v 數位韌性松</a></p>
-    <img src="g0v_logo.png" alt="g0v.tw 台灣零時政府" style="width: 100px; height: 100px;">
+    <footer>
+      <p><a href="https://github.com/irvin/digital-service-resilience" target="_blank">研究方法</a></p>
+      <p><a href="https://g0v.hackmd.io/@paulpengtw/DigiResiTh0n-home" target="_blank">g0v 數位韌性松</a></p>
+      <img src="g0v_logo.png" alt="g0v.tw 台灣零時政府" style="width: 100px; height: 100px;">
+    </footer>
 
     <script>
-        const GITHUB_RAW_URL = 'https://raw.githubusercontent.com/irvin/digital-service-resilience-test-result/refs/heads/main/';
-        const GITHUB_WEB_URL = 'https://github.com/irvin/digital-service-resilience-test-result/blob/main/';
+        const GITHUB_RAW_URL = 'https://raw.githubusercontent.com/irvin/web-resilience-test-result/refs/heads/main/';
+        const GITHUB_WEB_URL = 'https://github.com/irvin/web-resilience-test-result/blob/main/';
+
+        const templates = {
+            title: Handlebars.compile(document.getElementById('title-template').innerHTML),
+            resultCard: Handlebars.compile(document.getElementById('result-card-template').innerHTML),
+            notFound: Handlebars.compile(document.getElementById('not-found-template').innerHTML)
+        };
 
         async function fetchTestResult(filename) {
             try {
@@ -192,60 +204,6 @@
             }
         }
 
-        function createResultCard(result) {
-            const template = document.getElementById('result-card-template');
-            let templateHTML = template.innerHTML;
-            
-            // 計算總連線數
-            const totalConnections = result.test_results.domestic + 
-                                   result.test_results.cloud_w_domestic_node + 
-                                   result.test_results.foreign;
-            
-            // 先取得 summary 結果
-            const summaryResult = getSummaryText(result);
-            
-            // 替換模板中的變數
-            templateHTML = templateHTML.replace('${url}', result.url)
-                .replace('${totalConnections}', totalConnections)
-                .replace('${domestic}', result.test_results.domestic)
-                .replace('${cloudDomestic}', result.test_results.cloud_w_domestic_node)
-                .replace('${foreign}', result.test_results.foreign);
-            
-            const tempDiv = document.createElement('div');
-            tempDiv.innerHTML = templateHTML;
-            const card = tempDiv.firstElementChild;
-            
-            // 判斷總評
-            const summary = card.querySelector('.summary');
-            const summaryText = card.querySelector('.summary-text');
-            
-            if (result.test_results.foreign > 0) {
-                summary.classList.add('wont-work');
-            } else if (result.test_results.cloud_w_domestic_node > 0) {
-                summary.classList.add('might-work');
-            } else {
-                summary.classList.add('will-work');
-            }
-            summaryText.textContent = summaryResult;
-            
-            // 填充資料
-            card.querySelector('.test-time').textContent = formatDate(result.timestamp);
-            card.querySelector('.domestic-count').textContent = result.test_results.domestic;
-            card.querySelector('.cloud-count').textContent = result.test_results.cloud_w_domestic_node;
-            card.querySelector('.foreign-count').textContent = result.test_results.foreign;
-            card.querySelector('.details-json').textContent = JSON.stringify(result.domainDetails, null, 2);
-            
-            // 設定 JSON 原始資料連結
-            const rawLink = card.querySelector('.raw-json-link');
-            const filename = urlToFilename(result.url);
-            rawLink.href = GITHUB_WEB_URL + filename;
-            
-            // 更新 og:description
-            document.querySelector('meta[property="og:description"]').content = summaryResult;
-            
-            return card;
-        }
-
         // 從 URL 參數取得要顯示的網址
         function getUrlParam() {
             const params = new URLSearchParams(window.location.search);
@@ -254,9 +212,7 @@
 
         // 將網址轉換為對應的 JSON 檔名
         function urlToFilename(url) {
-            // 移除 protocol
-            url = url.replace(/^https?:\/\//, '');
-            return `${url}.json`;
+            return url.replace(/^https?:\/\//, '') + '.json';
         }
 
         async function loadResults() {
@@ -268,37 +224,46 @@
                 return;
             }
 
-            const resultsDiv = document.getElementById('results');
-            const testSite = document.querySelector('.test-site');
-            const siteLink = document.querySelector('.site-link');
-            
-            // 更新標題中的網站名稱和連結
-            testSite.textContent = urlParam;
-            siteLink.href = `https://${urlParam}`;  // 設定連結
+            document.querySelector('h1').outerHTML = templates.title({ url: urlParam });
 
             // 更新 meta 標籤
-            const baseUrl = 'https://irvin.github.io/digital-service-resilience-test-result/';
+            const baseUrl = 'https://irvin.github.io/web-resilience-test-result/';
             const currentUrl = urlParam ? `${baseUrl}?url=${urlParam}` : baseUrl;
             
-            document.getElementById('canonical').href = currentUrl;
+            document.querySelector('link[rel="canonical"]').href = currentUrl;
             document.querySelector('meta[property="og:canonical"]').content = currentUrl;
             document.querySelector('meta[property="og:url"]').content = currentUrl;
             document.title = urlParam ? `海纜斷掉時，${urlParam} 會動嗎？` : '海纜斷掉時網站會動嗎？';
             document.querySelector('meta[property="og:title"]').content = document.title;
 
-            // 顯示指定網址的結果
-            const filename = urlToFilename(urlParam);
-            const result = await fetchTestResult(filename);
+            // 顯示測試結果
+            const result = await fetchTestResult(urlToFilename(urlParam));
             if (result) {
-                resultsDiv.appendChild(createResultCard(result));
+                const totalConnections = result.test_results.domestic + 
+                                       result.test_results.cloud_w_domestic_node + 
+                                       result.test_results.foreign;
+
+                document.getElementById('results').innerHTML = templates.resultCard({
+                    url: result.url,
+                    summaryText: getSummaryText(result),
+                    summaryClass: result.test_results.foreign > 0 ? 'wont-work' :
+                                result.test_results.cloud_w_domestic_node > 0 ? 'might-work' : 
+                                'will-work',
+                    testTime: formatDate(result.timestamp),
+                    domesticCount: result.test_results.domestic,
+                    cloudCount: result.test_results.cloud_w_domestic_node,
+                    foreignCount: result.test_results.foreign,
+                    totalConnections,
+                    rawDataUrl: GITHUB_WEB_URL + urlToFilename(result.url),
+                    detailsJson: JSON.stringify(result.domainDetails, null, 2)
+                });
+
             } 
             else {
-                const template = document.getElementById('not-found-template');
-                const content = template.content.cloneNode(true);
-                content.querySelector('.url-param').textContent = urlParam;
-                resultsDiv.appendChild(content);
+                document.getElementById('results').innerHTML = templates.notFound({ url: urlParam });
             }
-        }
+            document.querySelector('meta[property="og:description"]').content = getSummaryText(result);
+          }
 
         // 載入測試結果
         loadResults();
