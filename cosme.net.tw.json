@@ -2,7 +2,7 @@
   "url": "https://cosme.net.tw",
   "canonicalURL": "https://www.cosme.net.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:19:35.846Z",
+  "timestamp": "2026-01-05T20:09:51.028Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 215,
+  "requestCount": 232,
   "uniqueDomains": 18,
   "test_results": {
-    "domestic": 10,
-    "cloud_w_domestic_node": 7,
-    "foreign": 1
+    "domestic": {
+      "cloud": 7,
+      "direct": 2
+    },
+    "foreign": {
+      "cloud": 9,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -38,8 +43,8 @@
       "type": "link",
       "ipinfo": {
         "domain": "www.cosme.net.tw",
-        "ip": "18.141.6.209",
-        "hostname": "ec2-18-141-6-209.ap-southeast-1.compute.amazonaws.com",
+        "ip": "18.138.105.37",
+        "hostname": "ec2-18-138-105-37.ap-southeast-1.compute.amazonaws.com",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",
@@ -47,15 +52,15 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=AW-605142604",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.204.40",
+        "hostname": "hkg07s38-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -63,14 +68,14 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://cdn.maac.app/widget/081b99500b6149f4963af8f19adad971.js",
       "type": "script",
       "ipinfo": {
         "domain": "cdn.maac.app",
-        "ip": "104.18.1.232",
+        "ip": "104.18.0.232",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -78,7 +83,54 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css",
+      "type": "link",
+      "ipinfo": {
+        "domain": "cdnjs.cloudflare.com",
+        "ip": "104.17.25.14",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://fonts.googleapis.com/css2?family=Cal+Sans&family=Noto+Color+Emoji&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap",
+      "type": "link",
+      "ipinfo": {
+        "domain": "fonts.googleapis.com",
+        "ip": "142.250.204.42",
+        "hostname": "hkg07s38-in-f10.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://dg9ugnb21lig7.cloudfront.net/uploads/brand_image/4384/1/_120x120_4384.jpg",
+      "type": "img",
+      "ipinfo": {
+        "domain": "dg9ugnb21lig7.cloudfront.net",
+        "ip": "3.169.43.152",
+        "hostname": "server-3-169-43-152.tpe53.r.cloudfront.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css",
@@ -93,54 +145,23 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://fonts.googleapis.com/css2?family=Cal+Sans&family=Noto+Color+Emoji&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap",
-      "type": "link",
-      "ipinfo": {
-        "domain": "fonts.googleapis.com",
-        "ip": "142.250.66.74",
-        "hostname": "hkg12s27-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css",
-      "type": "link",
-      "ipinfo": {
-        "domain": "cdnjs.cloudflare.com",
-        "ip": "104.17.24.14",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://dg9ugnb21lig7.cloudfront.net/uploads/brand_image/4180/1/_120x120_4180.jpg",
+      "originalUrl": "https://flipa-production.s3.amazonaws.com/uploads/ckeditor/pictures/Activity-1187/content_micael_toner.png",
       "type": "img",
       "ipinfo": {
-        "domain": "dg9ugnb21lig7.cloudfront.net",
-        "ip": "3.169.43.152",
-        "hostname": "server-3-169-43-152.tpe53.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
+        "domain": "flipa-production.s3.amazonaws.com",
+        "ip": "52.219.164.16",
+        "hostname": "s3-ap-southeast-1-w.amazonaws.com",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
         "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
+        "timezone": "Asia/Singapore"
       },
-      "score": "O"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://www.instagram.com/embed.js",
@@ -156,39 +177,7 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://flipa-production.s3.amazonaws.com/uploads/ckeditor/pictures/Activity-1187/content_micael_toner.png",
-      "type": "img",
-      "ipinfo": {
-        "domain": "flipa-production.s3.amazonaws.com",
-        "ip": "3.5.148.37",
-        "hostname": "s3-w.ap-southeast-1.amazonaws.com",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://www.recaptcha.net/recaptcha/api.js?render=6Ld5988ZAAAAAMQ1LWfhXo9Xi18ErXbolDwvI-WV",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.recaptcha.net",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js",
@@ -203,7 +192,23 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "X"
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://www.recaptcha.net/recaptcha/api.js?render=6Ld5988ZAAAAAMQ1LWfhXo9Xi18ErXbolDwvI-WV",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.recaptcha.net",
+        "ip": "142.250.77.3",
+        "hostname": "nctsaa-ab-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
@@ -219,15 +224,15 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&tid=AW-605142604&en=page_view&dl=https%3A%2F%2Fwww.cosme.net.tw%2F&scrsrc=www.googletagmanager.com&rnd=1186466677.1764865173&dt=%E5%8C%96%E5%A6%9D%E5%93%81%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97%E5%8F%8A%E6%8E%92%E8%A1%8C%E6%A6%9C%E7%B6%9C%E5%90%88%E7%B6%B2%E7%AB%99%40cosme&auid=547694486.1764865173&navt=n&npa=0&gtm=45be5c30h2v9138158182za200zb9101813078zd9101813078xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115938465~115938469~116184927~116184929~116217636~116217638~116427946&tft=1764865173274&tfd=1097&apve=1&apvf=f",
+      "originalUrl": "https://www.google.com/ccm/collect?frm=0&tid=AW-605142604&en=page_view&dl=https%3A%2F%2Fwww.cosme.net.tw%2F&scrsrc=www.googletagmanager.com&rnd=506047170.1767643789&dt=%E5%8C%96%E5%A6%9D%E5%93%81%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97%E5%8F%8A%E6%8E%92%E8%A1%8C%E6%A6%9C%E7%B6%9C%E5%90%88%E7%B6%B2%E7%AB%99%40cosme&auid=847872256.1767643789&navt=n&npa=0&gtm=45be5cb0v9138158182za200zd9138158182xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115583767~115616985~115938466~115938468~116184927~116184929~116251938~116251940&tft=1767643789023&tfd=890&apve=1&apvf=f",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.198.68",
-        "hostname": "lctsaa-ab-in-f4.1e100.net",
+        "ip": "142.250.204.36",
+        "hostname": "hkg07s38-in-f4.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -235,15 +240,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.gstatic.com/recaptcha/releases/TkacYOdEJbdB_JjX802TMer9/recaptcha__en.js",
+      "originalUrl": "https://www.gstatic.com/recaptcha/releases/7gg7H51Q-naNfhmCP3_R47ho/recaptcha__en.js",
       "type": "script",
       "ipinfo": {
         "domain": "www.gstatic.com",
-        "ip": "142.250.204.35",
-        "hostname": "hkg07s38-in-f3.1e100.net",
+        "ip": "142.250.66.67",
+        "hostname": "hkg12s27-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -251,31 +256,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/605142604/?random=1764865173270&cv=11&fst=1764864000000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be5c30h2v9138158182za200zb9101813078zd9101813078xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115938465~115938469~116184927~116184929~116217636~116217638~116427946&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.cosme.net.tw%2F&frm=0&tiba=%E5%8C%96%E5%A6%9D%E5%93%81%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97%E5%8F%8A%E6%8E%92%E8%A1%8C%E6%A6%9C%E7%B6%9C%E5%90%88%E7%B6%B2%E7%AB%99%40cosme&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=547694486.1764865173&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.1.0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEAwksa0UaMHS9fLchaid0NQsC5OcvxWFUGfAKAr9U19ghESwWRf2DeRLAi1tQyodUvK8gacH6kJrPpk96cVeNqMYnMBKhy4AQr5inrih3wim0KT2AIlbhjqr5GjxBkKgKTpJWUDWQtVBd6CU2MJrW0V-92L3FXd1xlKHpdWqwvZ_KC5JQ4-YnSk2rH&random=2074614968&rmt_tld=1&ipr=y",
-      "type": "img",
-      "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.198.67",
-        "hostname": "lctsaa-ab-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://analytics.cosme.net.tw/trackings/pageview?appid=965838b67f90f71e2791c6beb59f16c6&p=%2F&uuid=&uid=&fp=4212036864&refer=&tags=04.UrCosme^04_index&url=https%3A%2F%2Fwww.cosme.net.tw%2F&t=1764865173678",
+      "originalUrl": "https://analytics.cosme.net.tw/trackings/pageview?appid=965838b67f90f71e2791c6beb59f16c6&p=%2F&uuid=&uid=&fp=4212036864&refer=&tags=04.UrCosme^04_index&url=https%3A%2F%2Fwww.cosme.net.tw%2F&t=1767643789313",
       "type": "xmlhttprequest",
       "ipinfo": {
         "domain": "analytics.cosme.net.tw",
-        "ip": "52.220.84.106",
-        "hostname": "ec2-52-220-84-106.ap-southeast-1.compute.amazonaws.com",
+        "ip": "13.215.136.107",
+        "hostname": "ec2-13-215-136-107.ap-southeast-1.compute.amazonaws.com",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",
@@ -283,15 +272,15 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://dmp.cosme.net.tw/v1/auds?appid=965838b67f90f71e2791c6beb59f16c6&p=%2F&uuid=&uid=&fp=4212036864&t=1764865173679",
+      "originalUrl": "https://dmp.cosme.net.tw/v1/auds?appid=965838b67f90f71e2791c6beb59f16c6&p=%2F&uuid=&uid=&fp=4212036864&t=1767643789314",
       "type": "xmlhttprequest",
       "ipinfo": {
         "domain": "dmp.cosme.net.tw",
-        "ip": "52.220.84.106",
-        "hostname": "ec2-52-220-84-106.ap-southeast-1.compute.amazonaws.com",
+        "ip": "3.0.27.192",
+        "hostname": "ec2-3-0-27-192.ap-southeast-1.compute.amazonaws.com",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",
@@ -299,23 +288,39 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://www.facebook.com/tr/?id=189161381425626&ev=PageView&dl=https%3A%2F%2Fwww.cosme.net.tw%2F&rl=&if=false&ts=1764865174368&sw=1280&sh=720&v=2.9.243&r=stable&ec=0&o=4254&fbp=fb.2.1764865174365.586456753123159396&ler=empty&bfs[b]=1&pmd[title]=%E5%8C%96%E5%A6%9D%E5%93%81%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97%E5%8F%8A%E6%8E%92%E8%A1%8C%E6%A6%9C%E7%B6%9C%E5%90%88%E7%B6%B2%E7%AB%99%40cosme&pmd[description]=%E6%8F%90%E4%BE%9B%E8%B1%90%E5%AF%8C%E7%9A%84%E5%8C%96%E5%A6%9D%E5%93%81%E5%92%8C%E7%BE%8E%E5%AE%B9%E4%BF%9D%E9%A4%8A%E8%B3%87%E8%A8%8A%EF%BC%8C%E5%8C%85%E5%90%AB%E6%9C%80%E6%96%B0%E7%BE%8E%E5%A6%9D%E6%96%B0%E8%81%9E%E5%8F%8A%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97%E6%8E%92%E8%A1%8C%E6%A6%9C%EF%BC%8C%E9%82%84%E6%9C%89%E5%90%84%E7%A8%AE%E6%96%B0%E5%93%81%E8%A9%A6%E7%94%A8%E6%A9%9F%E6%9C%83%E3%80%82%40cosme%E7%9B%AE%E5%89%8D%E7%B4%AF%E7%A9%8D1494839%E7%AF%87%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97%EF%BC%8C123360%E4%BB%B6%E5%8C%96%E5%A6%9D%E5%93%81%E8%B3%87%E6%96%99%E5%BA%AB%EF%BC%8C%E8%AE%93%E6%82%A8%E5%9C%A8%E8%B3%BC%E7%89%A9%E5%89%8D%E6%9F%A5%E8%A9%A2%E5%95%86%E5%93%81%E5%8F%A3%E7%A2%91%E7%B5%A6%E6%82%A8%E6%9C%80%E8%81%B0%E6%98%8E%E7%9A%84%E8%B3%BC%E7%89%A9%E6%B1%BA%E7%AD%96%E3%80%82&pmd[keywords]=%E5%8C%96%E5%A6%9D%E5%93%81%2C%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97%2C%E6%8E%92%E8%A1%8C%E6%A6%9C%2C%E7%BE%8E%E5%A6%9D%E5%A0%B1%E5%B0%8E%2C%E7%BE%8E%E5%AE%B9%E8%A8%8E%E8%AB%96%E5%8D%80&plt=1546.699999999255&it=1764865174151&coo=false&expv2[0]=pl1&expv2[1]=el2&expv2[2]=bc1&expv2[3]=mr2&rqm=GET",
+      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/605142604/?random=1767643789019&cv=11&fst=1767643200000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be5cb0v9138158182za200zd9138158182xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115583767~115616985~115938466~115938468~116184927~116184929~116251938~116251940&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.cosme.net.tw%2F&frm=0&tiba=%E5%8C%96%E5%A6%9D%E5%93%81%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97%E5%8F%8A%E6%8E%92%E8%A1%8C%E6%A6%9C%E7%B6%9C%E5%90%88%E7%B6%B2%E7%AB%99%40cosme&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=847872256.1767643789&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEAwksa0ZXHsxmFWqX53-AY0QPxcu3DWphRQA5TJ3F8HCrUbDUQoXPicJsH92EfHTQX2F9R6Lqa800_Ak7dmDpxoIQLoJ4bGdnYYZ9P2EV0xijoMA1_6wbjhHkBaoyZpwGIZdtiPcQaht5V_s_jRqUYV56t1bK9KIWI24fU5aQKb4_cLZ4o9kViqT0d&random=162276855&rmt_tld=1&ipr=y",
       "type": "img",
       "ipinfo": {
-        "domain": "www.facebook.com",
-        "ip": "31.13.87.36",
-        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
-        "city": "Taipei",
-        "region": "Taiwan",
+        "domain": "www.google.com.tw",
+        "ip": "142.250.66.67",
+        "hostname": "hkg12s27-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
         "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS32934 Facebook, Inc.",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://csi.gstatic.com/csi?v=2&s=pagead&action=csi_pagead&dmc=8&top=1&puid=1~mk1lh178&c=7044096081218072&e=83321072%2C31061691%2C95340252%2C95340254%2C31061693&ctx=1&met.9=1.zc~2.10r~9.0~9.0~9.0~9.0~9.0~9.0~3_3.12w~3_34.12w~3_65.12w~3_96.12w~3_130.12w~3_207.12x~7_3.0~7_34.0~7_65.0~7_96.0~7_130.0~7_207.0~9.0~3_161.132~7_161.0~4_34.168~5_34.16a~4_65.16r~5_65.16r~4_3.16r~5_3.16s~4_130.16s~5_130.16t~4_96.16t~5_96.16t~4_161.16w~5_161.16x&met.10=1_4.CAAQABiAoDggpgsoAQ~1_244.CMoyEMoyGICgOCCmCygB~1_243.CMoyEMoyGICgOCCmCygB~1_6.CAAQABiAoDggpgsoAQ~1_242.CMoyEMoyGICgOCCmCygB~1_5.CAAQABiAoDggpgsoAQ~1_11.CJD9ARAAGICgOCCmCygA~1_27.CAAQABiAoDggpgsoAQ~1_10.CO7UBxAAGICgOCCmCygA~1_3.CAAQABiAoDggpgsoAQ&met.3=112.167_1&met.7=CBsQCMABtbaOiwg~CBsQByChAzi-AcABivuL_wo~CBsQCiChAzi9AcABjdqL4wY~CBsQChgBIKEDKKEDMPMFONICwAGM1djrBA~CBsQCiChAzi0BMABvIbilAk~CBsQByChAzgwwAGqz-WvBA~CBIQBxgBIKEDKKEDMNMDODJAogNIpwNQpwNYvANgrANovANw0QN4wyaAAZckiAGC2wSqAQoKCENhbCtTYW5zsAEBuAEDwAGxoLupCg~CBsQBiChAzg3wAGXh8arAg~CBsQByChAzg9wAGn-KKRAg~CBsQChgBIKEDKKEDMOwFOMsCwAGM1djrBA~CBsQBiChAzg4wAGctduXAg~CBsQBiChAzg-wAGGuIKZDg~CBsQBiChAzg-wAGs8r6lDA~CBsQBiChAzhFwAGtxfe-AQ~CBsQBiChAziCAsABsbby3wo~CBsQBiChAziDAsAB3sH9lgg~CBsQBiChAziEAsAB-aOXuw0~CBsQBiChAziEAsABwrnTuwc~CBsQBiC1AzjxAcAB78_Gvgc~CBsQBiC1AzjxAcABubiVtA4~CBsQBiC1AzjzAcAB_aKFzQQ~CBsQBiC1AzjxAcABwK-xxA4~CBsQBiC1AziNAsAB47W_5AE~CBsQBiC1AzjxAcABuriq8wQ~CBsQBiC1AzjxAcABkdrl6gw~CBsQBiC1AzjeAsAByp7-kQQ~CBsQByC4AzifAcAB0L7orwc~CBsQCiC4AziRAsABgITC5wY~CBsQBiC4Azj2AsABgtjY9gk~CBsQBiC4AzidA8AB5OnWdQ~CBsQBiC4AzisA8ABp72BBg~CBsQBiC4AzicA8ABlcvbsQU~CBsQBiC4Azi7A8ABz5GOrAc~CBsQBiC4AziTAsAB-JrezwE~CBsQBiC4Azj5AsABl9K54AQ~CBsQBiC4Azi-AsABmK6nxgE~CBsQBiC4AziEAsAB0vuA7wg~CBsQBiC4AziFAsAB_8rE5Q8~CBsQBiC4Azj0AcAB3_f5hA4~CBsQBiC4Azj1AcABnevArAk~CBsQBiC4AziwAsABse-rkQ4~CBsQBiC4AzjQAsABp-yM9Qo~CBsQBiC4AzjbAsAB96uZigQ~CBsQBiC4AzicA8AB1ca74wY~CBsQBiDNAzjsAcABhNqAkwE~CBsQBiDNAziIAsABt5ma5gs~CBsQBiDNAzjhAsABuZ3GtQg~CBsQBiDNAzjrAsABuouL6QE~CBsQBiDNAzjnAsABq4So0gY~CBsQBiDNAzjsAcAB5cWH_w0~CBsQBiDNAzjvAcAByqb77gM~CBsQBiDNAzi7AsABs9rE2As~CBsQBiDNAzjLAsAB1-f_mAY~CBsQBiDNAzjpAsABiNKA6AU~CBsQBiDPAzjwAsAB-pXawgo~CBsQBiDPAziEA8ABj62mwwU~CBsQBiDPAzjqAsAB86OcjAs~CBsQBiDPAziTAsABiKrisQc~CBsQBiDPAzjAAsAB27_MqQk~CBsQBiDPAzjfAsAB6q-YzQk~CBsQBiDPAzjlAsAB2_TumAw~CBsQBiDPAzjsAsABvvbkpAw~CBsQBiDPAzjRAsAB9eHW6wM~CBsQBiDPAzjrAsABzs6x_gw~CBsQBiDPAzjvAsABlKeumQg~CBsQBiDPAzj9AsABycCUtAc~CBsQBiDPAziDA8AB2tHD9w4~CBsQBiDPAziVAsAB8d7ugQE~CBsQBiDPAziWAsAB4uOrmAk~CBsQBiDPAzjMAsAB9oTG9Qc~CBsQBiDPAzjpAsABtp2WlAU~CBsQBiDPAzjvAsABrc3U8g8~CBsQBiDPAziMAsABnL_WlA4~CBsQBiDPAzinAsABo9ubygI~CBsQBiDPAzi3AsAB1rr_kAU~CBsQBiDPAzjyAsABmd3Hzws~CBsQBiDPAzj6AsAB1L_tlwY~CBsQBiDPAzi2AsABrv-5xgM~CBsQBiDPAzj2AcABj9Kp2QU~CBsQBiDPAzinAsABvLGOjgc~CBsQBiDPAzjDAsABlZW65wc~CBsQBiDPAzjvAsABho3oxg4~CBsQBiDPAzj6AsAB4fLn0w8~CBsQBiDPAziDA8ABwbTxpw0~CBsQBiDQAzj5AcABw6afvAY~CBsQBiDQAzi-AsABs-TY_wk~CBsQBiDQAzjHAsAB883V8gQ~CBsQBiDQAzjJAsABir7YtQo~CBsQBiDQAzjDAsAB6c3tmwc~CBsQBiDQAzjhAsAB9repYw~CBsQBiDQAzjlAsAB6cDSlgo~CBsQBiDQAzjvAsABycHt7ws~CBsQBiDQAzjxAsAB_sGjuwc~CBsQBiDQAzjxAsAB9unK7A8~CBsQBiDQAzjKAsABzITQ0gM~CBsQBiDQAzjKAsABnqyIlws~CBsQBiDQAzjfAsAB8bL54gE~CBsQBiDQAzjdAsAB0s207A4~CBsQBiDQAzjjAsABzpWi4Qs~CBsQBiDQAzjpAsABweCAggo~CBsQBiDQAzjpAsABuZ-J4wE~CBsQBiDQAziNAsAB5frR5wI~CBsQBiDQAzjDAsAB4aHz5wQ~CBsQBiDQAzjDAsAB0p6W5AQ~CBsQBiDQAzjpAsABtPzK6gY~CBsQBiDQAzjxAsABlb-uiQs~CBsQBiDQAzj9AsABn6HCjAw~CBsQBiDQAziCA8AB6uqp7A4~CBsQBiDQAzitAsAB4K38gwI~CBsQBiDQAzjmAsABzLGJjQk~CBsQBiDQAzjwAsABpbzl7A0~CBsQBiDQAzjyAsABvOOMyQ4~CBsQBiDkAzijAsABkJCs8wo~CBsQBiDkAziyAsAB_6Grxg4~CBsQBiDkAzjUAsAB1OiNqgQ~CBsQBiDkAzigAsABluO88gM~CBsQBiDkAziMAsAB9P3S3gE~CBsQBiDkAziQAsABpv_a7AM~CBsQBiDkAzjhAsABvKOEzQ4~CBsQBiDkAzjtAsAB9OHD7Q4~CBsQBiDkAzjtAsABvZSXogc~CBsQBiDkAzjyAsAB0OPoyAI~CBsQBiDkAzjuAsAB-e2hyQg~CBsQBiDkAzijAsABu_fUhQM~CBsQBiDkAziQAsABh6SrrAs~CBsQBiDkAziQAsAByKrXsQw~CBsQBiDkAziEAsAB9vmA7ws~CBsQBiDkAziUAsAB7Kj4wQY~CBsQBiDkAzj5AcABp7Wojgg~CBsQBiDkAzj8AcABwcHaiwg~CBsQBiDkAzinAsAB7IjT3wo~CBsQBiDkAzj3AcABpvz9swg~CBsQBiDkAzj3AcAB6ITXyw4~CBsQBiDkAziOAsABsqbU5Q0~CBsQBiDkAziZAsABr5KU6Ao~CBsQBiDkAzi0AsAB2-7kqQQ~CBsQBiDlAziUAsABncL_UA~CBsQBiDlAziiAsAB0bn7Jg~CBsQBiDlAziVAsABwY367wI~CBsQBiDlAzitAsAB0vH0pwU~CBsQBiDlAzjNAsABrqnHxwY~CBsQBiDlAzjQAsABhsKL6gY~CBsQBiDlAzjWAsABosPUjAM~CBsQBiDlAzjWAsAB17ufjwM~CBsQBiDlAzirAsABhcCx1QU~CBsQBiDlAzioAsABt7eH6Aw~CBsQBiDlAzjOAsABidyMoQg~CBsQBiDlAzjaAsAB47WpjQI~CBsQBiDlAziGAsABt_GipAc~CBsQBiDlAzi7AsAB4drIrAo~CBsQBiDlAzjNAsABlar79Q8~CBsQBiDlAzjNAsAB85XPsgg~CBsQBiDlAzjSAsAB-8a5rA8~CBsQBiDlAzjbAsAB65KY1wY~CBsQBiDlAzjoAsAB5u3--w8~CBsQBiDlAzjSBMAB4c34iwY~CBsQBiDmAzjRAsABxNqfuw8~CBsQBiDmAzjdAsAB0Irr7Qw~CBsQBiDmAzjpAsAB9Pm2sg8~CBsQBiDmAzioAsABt_ShsgU~CBsQBiDmAzjTAsABjPfmtwo~CBsQBiDmAzjsAsABmYCLnwM~CBsQBiDmAzj7AcABqJPy_gQ~CBsQBiDmAzimAsABn4LbsgI~CBsQBiDmAzi1AsABmpGalww~CBsQBiDmAzjKAsABlL-A_Qc~CBsQBiDmAzjUAsABhZv8mww~CBsQBiDmAzjtAsABhrypzQo~CBsQBiDmAziRA8ABzefNqgI~CBsQCiD7AziTAsABsrTV8wo~CBsQBiD7AzidBMAB6frzgAE~CBsQBiD7AziqBMAB26-GnQQ~CBsQCiD7Azj4BsAB0Ou4lg4~CBsQBiD7Azj_AcABwuHM9ws~CBsQBiD7AzjOAsAB_O-T_gc~CBsQBiD7AziMBMAB4YfEtAg~CBsQBiD7AziRBMABopnCowk~CBsQBiD7AziaBMAB_Yu5_Aw~CBsQBiD7AzjmAcAB8Nq44Q0~CBsQCiD7AzjEAcABq9Gtqgo~CBsQCiD7AzjGAcABoqz3qQw~CBsQCiD7AzjWAcABiNKZlQE~CBsQCiD7AzjOAsAB_vHEmAE~CBsQDSD0BDhBwAGH5c7xAQ~CBsQCiCJBTjIA8AB9LK_vwQ~CBsQAiCTBThHwAHwq46xDg~CBsQAiCUBThIwAGVt_2VCA~CBsQAiCUBThJwAGZponCAQ~CBsQAiCUBThJwAGMkb30BA~CBsQAiCUBThNwAHgp4ydDQ~CBsQAiCVBThIwAHv2su5CQ~CBsQCiDPBjgRwAGwgPeGAw~CBsQBBgBIPsGKPsGMKgHOC3AAdDt1_0O~CCgQChgBIIEHKIEHMLoHODlAggdIhQdQhQdYoAdgjgdooAdwugd45xOAAbsRiAHFK7ABAbgBA8AB986r2QQ~CBsQChgBIIkHKIkHMNsHOFJAigdIjAdQjAdYpwdglAdopwdwsgd45JIWgAG4kBaIAfnsM7ABAbgBA8ABlrDLkAQ~CBsQAiCMBzgywAHxuMPUBA~CBsQAiCMBzg1wAHsjcymDw~CDsQChgBIJQHKJQHMIkIOHVAugdI0AdQ0AdY6Qdg2Ado6Qdw_wd4_YgCgAHRhgKIAbm3BrABAbgBA8AB4s3qlgk~CBsQDSCfBzhGwAGxrbCMCA~CBsQDSChBzhVwAHzssmmCQ~CBsQDSCrBzhFwAGQrdaYBg~CBsQAiCvBzg0wAGC5pu2DQ~CBsQAiCxBzgzwAHW0OzIDQ~CBsQDSCdCTi_AsABlJfMpwk~CBsQBhgBIKgJKKgJML0JOBRoqglwvAl41gKAASqIASqwAQG4AQPAAef_rqUJ~CBsQBhgBIKgJKKgJMNUJOC1AqQlIqwlQqwlYwwlgsglowwlw1Ql41gKAASqIASqwAQG4AQPAAevkl5EF~CBsQBiCsCTgJwAGtr6TgAQ~CBsQBSDpCTiKAsABga7S1gw~CEMQChgBIPwJKPwJMJ8KOCNo_Qlwhgp4_YgMgAHRhgyIAd6ZJrABAbgBA8ABscey5gY~CBkQChgBINEKKNEKMIQLODNA0gpI2gpQ2gpY7gpg4Qpo7gpw-wp4pssBgAH6yAGIAeCiBLABAbgBA8ABlN3A2AU~CA8QBBgBIPkKKPkKMKgLODBo-QpwqAt49gWAAcoDiAGqB7ABAbgBA8ABv96a6wY~CA8QBBgBIPkKKPkKMKILOCpo-gpwogt4sQWAAYUDiAHbBrABAbgBA8ABv96a6wY~CA8QBBgBIPkKKPkKMKgLODBo-gpwpwt4rgWAAYIDiAHaBrABAbgBA8ABv96a6wY~CA8QBBgBIPkKKPkKMKwLODNo-gpwrAt4pgWAAfoCiAHVBrABAbgBA8ABv96a6wY~CA8QBBgBIPkKKPkKMKoLODFo-gpwqQt4qgWAAf4CiAHVBrABAbgBA8ABv96a6wY~CA8QBBgBIP4KKP4KMLELODNo_gpwsAt4sgWAAYYDiAHfBrABAbgBA8ABv96a6wY&qqid.4=CIrOqqGa9ZEDFViDpgMdrQM7Lg&qqid.5=CPrfqqGa9ZEDFfFZDwIdJrsEXw&qqid.3=COngqqGa9ZEDFfR_DwIdhTYxHg&qqid.10=CPX0qqGa9ZEDFZSzKQMdWKU52g&qqid.6=COzxqqGa9ZEDFQq7pgMdGTEGXw&qqid.11=COfxqqGa9ZEDFZuYpgMdNeE4kA",
+      "type": "beacon",
+      "ipinfo": {
+        "domain": "csi.gstatic.com",
+        "ip": "64.233.184.94",
+        "hostname": "wa-in-f94.1e100.net",
+        "city": "Brussels",
+        "region": "Brussels Capital",
+        "country": "BE",
+        "loc": "50.8505,4.3488",
+        "org": "AS15169 Google LLC",
+        "timezone": "Europe/Brussels"
+      },
+      "category": "foreign/cloud"
     }
   ]
 }

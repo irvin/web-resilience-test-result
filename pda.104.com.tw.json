@@ -2,7 +2,7 @@
   "url": "https://pda.104.com.tw",
   "canonicalURL": "https://pda.104.com.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:11:42.440Z",
+  "timestamp": "2026-01-05T19:58:59.624Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 50,
-  "uniqueDomains": 9,
+  "requestCount": 45,
+  "uniqueDomains": 8,
   "test_results": {
-    "domestic": 8,
-    "cloud_w_domestic_node": 1,
-    "foreign": 0
+    "domestic": {
+      "cloud": 6,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 1,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -38,8 +43,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.77.8",
-        "hostname": "nctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.66.72",
+        "hostname": "hkg12s27-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -47,30 +52,30 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://static.104.com.tw/104i/js/api/log/e104.log.latest.js?v=20190424",
       "type": "script",
       "ipinfo": {
         "domain": "static.104.com.tw",
-        "ip": "202.8.14.29",
+        "ip": "122.147.53.29",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
         "loc": "25.0143,121.4672",
-        "org": "AS18410 104 Information Technology Co., Ltd.",
+        "org": "AS9919 New Century InfoComm Tech Co., Ltd.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://signin.104.com.tw/assets/index-3F2TjW_e.css",
+      "originalUrl": "https://signin.104.com.tw/assets/index-CCLLXTXE.css",
       "type": "link",
       "ipinfo": {
         "domain": "signin.104.com.tw",
-        "ip": "3.169.121.26",
-        "hostname": "server-3-169-121-26.tpe53.r.cloudfront.net",
+        "ip": "3.169.121.122",
+        "hostname": "server-3-169-121-122.tpe53.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -78,10 +83,25 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fsignin.104.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=879084186.1764864700&dt=%E6%AD%A1%E8%BF%8E%E4%BD%BF%E7%94%A8%20104%20%E6%9C%8D%E5%8B%99&auid=783262859.1764864700&navt=n&npa=0&gtm=45He5c21v810694838za200zd810694838xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115938466~115938469~116184927~116184929~116217636~116217638~116427529~116474638~116514483~116682875&tft=1764864700237&tfd=979&apve=1&apvf=f",
+      "originalUrl": "https://api.signin.104.com.tw/api/toggle",
+      "type": "xmlhttprequest",
+      "ipinfo": {
+        "domain": "api.signin.104.com.tw",
+        "ip": "104.18.4.84",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fsignin.104.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=1536377842.1767643138&dt=%E6%AD%A1%E8%BF%8E%E4%BD%BF%E7%94%A8%20104%20%E6%9C%8D%E5%8B%99&auid=343433663.1767643138&navt=n&npa=0&gtm=45He5cb0v810694838za200zd810694838xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115583767~115938465~115938469~116184927~116184929~116251938~116251940&tft=1767643137506&tfd=751&apve=1&apvf=f",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
@@ -94,7 +114,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
@@ -110,15 +130,15 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-FJWMQR9J2K&cid=346548915.1764864700&gtm=45je5c21v872422518z8810694838za200zb810694838zd810694838&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115938466~115938468~116184927~116184929~116217636~116217638~116251938~116251940~116427529~116474638~116514483~116682875&z=395805581",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-W9X1GB1SVR&cid=1584371015.1767643138&gtm=45je5cb0v874125392z8810694838za20gzb810694838zd810694838&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115583767~115616985~115938465~115938468~116184927~116184929~116251938~116251940&z=1320818265",
       "type": "img",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.198.67",
-        "hostname": "lctsaa-ab-in-f3.1e100.net",
+        "ip": "142.250.204.35",
+        "hostname": "hkg07s38-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -126,53 +146,22 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://api.signin.104.com.tw/api/toggle",
-      "type": "xmlhttprequest",
-      "ipinfo": {
-        "domain": "api.signin.104.com.tw",
-        "ip": "104.18.5.84",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://uts.104.com.tw/log/send?lus=%7B%22sourcepage%22%3A%22https%3A%2F%2Fsignin.104.com.tw%2F%22%2C%22querystring%22%3A%22%22%7D&lua=%7B%22track_action%22%3A%22viewPage%22%2C%22websource%22%3A%22104_bank%22%7D&lue=%7B%22pkey%22%3A%22%22%7D&lur=%7B%22referrer%22%3A%22%22%2C%22querystring%22%3A%22%22%7D&luf=js&lugcid=346548915.1764864700&luauid=1238878857&lurrc=4428111280114&luc=4428111280114&luv=1&lub=webkit/537.36&lut=1764864700594",
+      "originalUrl": "https://uts.104.com.tw/log/send?lus=%7B%22sourcepage%22%3A%22https%3A%2F%2Fsignin.104.com.tw%2F%22%2C%22querystring%22%3A%22%22%7D&lua=%7B%22track_action%22%3A%22viewPage%22%2C%22websource%22%3A%22104_bank%22%7D&lue=%7B%22pkey%22%3A%22%22%7D&lur=%7B%22referrer%22%3A%22%22%2C%22querystring%22%3A%22%22%7D&luf=js&lugcid=1584371015.1767643138&luauid=2147336648&lurrc=4428111280114&luc=4428111280114&luv=1&lub=webkit/537.36&lut=1767643137782",
       "type": "img",
       "ipinfo": {
         "domain": "uts.104.com.tw",
-        "ip": "202.8.14.51",
+        "ip": "122.147.53.51",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
         "loc": "25.0143,121.4672",
-        "org": "AS18410 104 Information Technology Co., Ltd.",
+        "org": "AS9919 New Century InfoComm Tech Co., Ltd.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://www.facebook.com/tr/?id=1607446572852316&ev=PageView&dl=https%3A%2F%2Fsignin.104.com.tw%2F&rl=&if=false&ts=1764864701745&sw=1280&sh=720&v=2.9.243&r=stable&ec=0&o=4254&fbp=fb.2.1764864701743.434688848170313380&ler=empty&bfs[b]=1&pmd[title]=Log%20in%20now%EF%BD%9CWelcome%20to%20104%20service&plt=1301.199999999255&it=1764864700770&coo=false&expv2[0]=pl1&expv2[1]=el2&expv2[2]=bc1&expv2[3]=mr2&rqm=GET",
-      "type": "img",
-      "ipinfo": {
-        "domain": "www.facebook.com",
-        "ip": "31.13.87.36",
-        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS32934 Facebook, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "url": "https://ss.net.tw",
   "canonicalURL": "https://ss.net.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T17:03:47.743Z",
+  "timestamp": "2026-01-05T21:05:32.780Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 40,
-  "uniqueDomains": 5,
+  "requestCount": 42,
+  "uniqueDomains": 6,
   "test_results": {
-    "domestic": 1,
-    "cloud_w_domestic_node": 4,
-    "foreign": 0
+    "domestic": {
+      "cloud": 1,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 5,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -46,22 +51,7 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://cdn.taiyea.com/css/basic.css",
-      "type": "link",
-      "ipinfo": {
-        "domain": "cdn.taiyea.com",
-        "ip": "172.67.140.172",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css",
@@ -76,30 +66,14 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-7HDRQQ7LF7",
+      "originalUrl": "https://cdn.taiyea.com/css/basic.css",
       "type": "link",
       "ipinfo": {
-        "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js",
-      "type": "link",
-      "ipinfo": {
-        "domain": "cdn.jsdelivr.net",
-        "ip": "104.16.175.226",
+        "domain": "cdn.taiyea.com",
+        "ip": "104.21.54.167",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -107,7 +81,53 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://art.ss.net.tw/A/HOME2.jpg",
+      "type": "video",
+      "ipinfo": {
+        "domain": "art.ss.net.tw",
+        "ip": "172.67.203.183",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-7HDRQQ7LF7",
+      "type": "link",
+      "ipinfo": {
+        "domain": "www.googletagmanager.com",
+        "ip": "142.250.77.8",
+        "hostname": "nctsaa-ab-in-f8.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js",
+      "type": "link",
+      "ipinfo": {
+        "domain": "cdn.jsdelivr.net",
+        "ip": "151.101.1.229",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
     }
   ]
 }

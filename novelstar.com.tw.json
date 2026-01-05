@@ -2,7 +2,7 @@
   "url": "https://novelstar.com.tw",
   "canonicalURL": "https://novelstar.com.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T17:00:54.638Z",
+  "timestamp": "2026-01-05T20:32:48.005Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 108,
+  "requestCount": 114,
   "uniqueDomains": 3,
   "test_results": {
-    "domestic": 3,
-    "cloud_w_domestic_node": 0,
-    "foreign": 0
+    "domestic": {
+      "cloud": 2,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 0,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -47,7 +52,7 @@
         "org": "AS7532 Gamania CloudForce",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-S9BTW329DX",
@@ -63,7 +68,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.11",
@@ -79,7 +84,7 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     }
   ]
 }

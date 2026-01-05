@@ -2,7 +2,7 @@
   "url": "https://tisnet.net.tw",
   "canonicalURL": "https://www.tisnet.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:41:57.775Z",
+  "timestamp": "2026-01-05T19:45:19.913Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 48,
   "uniqueDomains": 8,
   "test_results": {
-    "domestic": 6,
-    "cloud_w_domestic_node": 1,
-    "foreign": 1
+    "domestic": {
+      "cloud": 6,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 1,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -47,15 +52,15 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://static-assets.strikinglycdn.com/themes/s5-theme/main_v4.4be64f555d43cffc7ce3.bundle.css",
+      "originalUrl": "https://static-assets.strikinglycdn.com/themes/s5-theme/main_v4.7966f0a13d124e268ee7.bundle.css",
       "type": "link",
       "ipinfo": {
         "domain": "static-assets.strikinglycdn.com",
-        "ip": "3.169.121.129",
-        "hostname": "server-3-169-121-129.tpe53.r.cloudfront.net",
+        "ip": "3.169.121.48",
+        "hostname": "server-3-169-121-48.tpe53.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -63,15 +68,15 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_300,w_300,f_auto,q_100/10828404/784931_435658.png",
       "type": "img",
       "ipinfo": {
         "domain": "custom-images.strikinglycdn.com",
-        "ip": "3.169.36.19",
-        "hostname": "server-3-169-36-19.tpe53.r.cloudfront.net",
+        "ip": "3.169.36.121",
+        "hostname": "server-3-169-36-121.tpe53.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -79,14 +84,30 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/f_auto,q_1,w_4096/unsplashcom/photo-1614064641938-3bbee52942c7?h=1440&w=720&fit=clip&fm=jpg",
+      "type": "img",
+      "ipinfo": {
+        "domain": "user-images.strikinglycdn.com",
+        "ip": "3.169.36.105",
+        "hostname": "server-3-169-36-105.tpe53.r.cloudfront.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "cdnjs.cloudflare.com",
-        "ip": "104.17.24.14",
+        "ip": "104.17.25.14",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -94,7 +115,7 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-BSGZ5W247L",
@@ -110,22 +131,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://images.unsplash.com/photo-1620825937374-87fc7d6bddc2?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&h=1080&w=1080&fit=clip&fm=jpg",
-      "type": "css",
-      "ipinfo": {
-        "domain": "images.unsplash.com",
-        "ip": "146.75.46.208",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "score": "X"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js",
@@ -141,15 +147,15 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-BSGZ5W247L&cid=1056018539.1764862916&gtm=45je5c21v9117359138za200zd9117359138&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115938466~115938469~116184927~116184929~116217636~116217638&z=2141526184",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-J1TEHM62R4&cid=1257331787.1767642319&gtm=45je5cb0v9117359138za200zd9117359138&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115938466~115938469~116184927~116184929~116251938~116251940~116682877~116744867&z=1005867777",
       "type": "img",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "ip": "142.250.198.67",
+        "hostname": "lctsaa-ab-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -157,7 +163,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

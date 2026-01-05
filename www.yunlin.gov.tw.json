@@ -2,7 +2,7 @@
   "url": "https://www.yunlin.gov.tw/",
   "canonicalURL": "https://www.yunlin.gov.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:22:14.784Z",
+  "timestamp": "2026-01-05T20:15:05.302Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 250,
   "uniqueDomains": 9,
   "test_results": {
-    "domestic": 8,
-    "cloud_w_domestic_node": 1,
-    "foreign": 0
+    "domestic": {
+      "cloud": 7,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 1,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -47,7 +52,7 @@
         "org": "AS4782 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://api.tgos.tw/TGOS_API/tgos?ver=2&AppID=/d1r2NrXFUiZAJq0A0h24WPDq0ju2F938Dy1kXQgqTgKqYzD1XdRIQ==&APIKey=cGEErDNy5yN/1fQ0vyTOZrghjE+jIU6uBH+2Qt3D3YxsUlxn6hjOi6DwNvrlmJtLSs90CkhHlfpBTPXvhFukRoPYlBJWJg+2QL+ECnY+IXQgnRPziXDw0Vc5kpUABRwirXOA0NEWKXwPir80YwkBckRFCwJh82z0TIP+o6ulUdAymiFtLfPw8l+l/DnJVbtL2MjEqryL4t1nh34b7WRzFPaZv81jQW9GfV0H2a3yAfLRADLd0qCQMMe9pyZcA/Z0FIYZD2LgQiHHEgm3xfJJswTHBNDlL6nSt7YhwvvCgNgAVWpHgG0Onc1n2DwLiSNpq0eqGWmwGJguhwvNnVSzNJN1mpqs+skS5DP6a2CaqlVUHEnUzouXuWyB8K4wuIRRc1eEiRxrrjXAtYbZ7VEQXphB9CKQeJ3qXMoopGj9V0Eanjf+uBcdqOlJfadPGc12ALzn4nzJyvO+vtmGVqZGazUudiOlLTlXIXq4eeMWNaRMQxso63nUxr5pdsYB3M/2jYB1NJDfhoP+U+5OLzdSRpQrls4TbyKi",
@@ -63,15 +68,15 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=UA-152861665-1",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.204.40",
+        "hostname": "hkg07s38-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -79,10 +84,10 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://ws.yunlin.gov.tw/001/Upload/400/relpic/9888/570304/06175e0a-6d1d-45bb-bd3a-555640dde026.png",
+      "originalUrl": "https://ws.yunlin.gov.tw/001/Upload/400/relpic/9888/569983/c214de31-8828-4694-9539-1589ad4d17ed.png",
       "type": "img",
       "ipinfo": {
         "domain": "ws.yunlin.gov.tw",
@@ -94,15 +99,15 @@
         "org": "AS4782 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.youtube.com/embed/NA1hVcVgv74?rel=0",
       "type": "iframe",
       "ipinfo": {
         "domain": "www.youtube.com",
-        "ip": "142.250.198.78",
-        "hostname": "lctsaa-ab-in-f14.1e100.net",
+        "ip": "142.250.196.206",
+        "hostname": "nctsaa-ac-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -110,7 +115,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fyunlin.lishan%2F%3Fref%3Dembed_page&tabs=timeline&width=500&height=350&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId",
@@ -126,7 +131,7 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://wmts.nlsc.gov.tw/wmts/EMAP/default/GoogleMapsCompatible/2/1/3",
@@ -141,15 +146,15 @@
         "org": "AS7539 National Center for High-performance Computing",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&tid=AW-494888555&en=page_view&dl=https%3A%2F%2Fwww.yunlin.gov.tw%2F&scrsrc=www.googletagmanager.com&rnd=1978707291.1764865331&dt=%E9%9B%B2%E6%9E%97%E7%B8%A3%E6%94%BF%E5%BA%9C%E5%85%A8%E7%90%83%E8%B3%87%E8%A8%8A%E7%B6%B2&auid=1130670627.1764865331&navt=n&npa=0&gtm=45be5c21za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115497442~115583767~115616985~115938466~115938469~116184927~116184929~116217636~116217638~116427528~116514482&tft=1764865330575&tfd=1091&apve=1&apvf=f",
+      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fwww.yunlin.gov.tw%2F&scrsrc=www.googletagmanager.com&rnd=1273749585.1767644101&dt=%E9%9B%B2%E6%9E%97%E7%B8%A3%E6%94%BF%E5%BA%9C%E5%85%A8%E7%90%83%E8%B3%87%E8%A8%8A%E7%B6%B2&auid=1211120349.1767644101&navt=n&npa=0&gtm=45be5cb0za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115583767~115938465~115938468~116184927~116184929~116251938~116251940~116682875&apve=1&apvf=f&apvc=1&tids=AW-494888555&tid=AW-494888555&tft=1767644100643&tfd=1146",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.196.196",
-        "hostname": "nctsaa-ac-in-f4.1e100.net",
+        "ip": "142.250.198.68",
+        "hostname": "lctsaa-ab-in-f4.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -157,10 +162,10 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/494888555/?random=1764865330571&cv=11&fst=1764864000000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be5c21za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115497442~115583767~115616985~115938466~115938469~116184927~116184929~116217636~116217638~116427528~116514482&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.yunlin.gov.tw%2F&frm=0&tiba=%E9%9B%B2%E6%9E%97%E7%B8%A3%E6%94%BF%E5%BA%9C%E5%85%A8%E7%90%83%E8%B3%87%E8%A8%8A%E7%B6%B2&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1130670627.1764865331&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.1.0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEAwksa0ajUEvVCJl-5ReG16WSe0id7lgwcBDPASVxPS04MGVXgRbPiSik97zGx-YasfvyJKhSDwx7B7jkeGn3J6o6TPBfl-qRy_wgnULLMBR3BX9vBdI0Arid_iCKWfvrSwQmTPo7_s4Owpy6rvLJk6tUlPqv3F02iqrXxvnWG3GcavcURXlsBWIvi&random=3189036590&rmt_tld=1&ipr=y",
+      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/494888555/?random=1767644100616&cv=11&fst=1767643200000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be5cb0za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115583767~115938465~115938468~116184927~116184929~116251938~116251940~116682875&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.yunlin.gov.tw%2F&frm=0&tiba=%E9%9B%B2%E6%9E%97%E7%B8%A3%E6%94%BF%E5%BA%9C%E5%85%A8%E7%90%83%E8%B3%87%E8%A8%8A%E7%B6%B2&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1211120349.1767644101&data=event%3Dgtag.config&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEAwksa0Wfs6dIYp098Xy82sBgHhE8KBJ2w5MEN8GYjGXqAR1lsXDAt9wHp3fsDaN1EOQpIHuiOCJm38qjfKKrzk52ei9Qe6os42MX82fXJpaMnCfHlc37zVj6ZALZynm9_ztMPzl6IVyTm4FKrkgEIDpal7MmtJoq91xuNMTUGqp6bt5p3SyL9HY0D&random=2700090198&rmt_tld=1&ipr=y",
       "type": "img",
       "ipinfo": {
         "domain": "www.google.com.tw",
@@ -173,7 +178,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

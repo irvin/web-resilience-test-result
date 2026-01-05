@@ -2,7 +2,7 @@
   "url": "https://rarbg.tw",
   "canonicalURL": "https://rarbg.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T17:04:45.745Z",
+  "timestamp": "2026-01-05T20:50:50.661Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,23 +22,28 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 21,
-  "uniqueDomains": 1,
+  "requestCount": 20,
+  "uniqueDomains": 2,
   "test_results": {
-    "domestic": 0,
-    "cloud_w_domestic_node": 1,
-    "foreign": 0
+    "domestic": {
+      "cloud": 0,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 2,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://ww2.rarbg.tw/assets3/css/screen.css",
+      "originalUrl": "https://ww3.rarbg.tw/assets3/css/screen.css",
       "type": "link",
       "ipinfo": {
-        "domain": "ww2.rarbg.tw",
-        "ip": "172.67.217.12",
+        "domain": "ww3.rarbg.tw",
+        "ip": "104.21.35.93",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -46,7 +51,22 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://keetsea5o2na8lwia4ccbwsug1e.com/f7/50/fb/f750fbf9f9cb20affeb0f97d1998d79c.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "keetsea5o2na8lwia4ccbwsug1e.com",
+        "ip": "172.67.168.87",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
     }
   ]
 }

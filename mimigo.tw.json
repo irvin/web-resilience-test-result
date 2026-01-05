@@ -2,7 +2,7 @@
   "url": "https://mimigo.tw",
   "canonicalURL": "https://mimigo.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:59:01.162Z",
+  "timestamp": "2026-01-05T20:48:32.252Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 45,
   "uniqueDomains": 4,
   "test_results": {
-    "domestic": 1,
-    "cloud_w_domestic_node": 1,
-    "foreign": 2
+    "domestic": {
+      "cloud": 1,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 1,
+      "direct": 2
+    }
   },
   "domainDetails": [
     {
@@ -38,8 +43,8 @@
       "type": "link",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.198.74",
-        "hostname": "lctsaa-ab-in-f10.1e100.net",
+        "ip": "142.250.196.202",
+        "hostname": "nctsaa-ac-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -47,14 +52,14 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://mimigo.tw/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.8.3",
+      "originalUrl": "https://mimigo.tw/wp-includes/css/dist/block-library/style.min.css?ver=6.8.3",
       "type": "link",
       "ipinfo": {
         "domain": "mimigo.tw",
-        "ip": "172.67.139.176",
+        "ip": "104.21.26.249",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -62,27 +67,11 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://i0.wp.com/mimigo.tw/wp-content/uploads/20211030122455_28.jpg?quality=90&ssl=1",
+      "originalUrl": "https://i2.wp.com/mimigo.tw/wp-content/uploads/20220817103904_18.jpg?quality=90&ssl=1",
       "type": "link",
-      "ipinfo": {
-        "domain": "i0.wp.com",
-        "ip": "192.0.77.2",
-        "hostname": "i0.wp.com",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7749,-122.4194",
-        "org": "AS2635 Automattic, Inc",
-        "timezone": "America/Los_Angeles"
-      },
-      "score": "X"
-    },
-    {
-      "originalUrl": "https://i2.wp.com/mimigo.tw/wp-content/uploads/20211030122455_28.jpg?quality=90&ssl=1",
-      "type": "img",
       "ipinfo": {
         "domain": "i2.wp.com",
         "ip": "192.0.77.2",
@@ -94,7 +83,23 @@
         "org": "AS2635 Automattic, Inc",
         "timezone": "America/Los_Angeles"
       },
-      "score": "X"
+      "category": "foreign/direct"
+    },
+    {
+      "originalUrl": "https://i1.wp.com/mimigo.tw/wp-content/uploads/20220817103904_18.jpg?quality=90&ssl=1",
+      "type": "img",
+      "ipinfo": {
+        "domain": "i1.wp.com",
+        "ip": "192.0.77.2",
+        "hostname": "i0.wp.com",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7749,-122.4194",
+        "org": "AS2635 Automattic, Inc",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/direct"
     }
   ]
 }

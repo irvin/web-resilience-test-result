@@ -2,7 +2,7 @@
   "url": "https://m.xsw.tw",
   "canonicalURL": "https://m.xsw.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:42:54.409Z",
+  "timestamp": "2026-01-05T19:45:46.234Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 8,
   "uniqueDomains": 3,
   "test_results": {
-    "domestic": 3,
-    "cloud_w_domestic_node": 0,
-    "foreign": 0
+    "domestic": {
+      "cloud": 1,
+      "direct": 2
+    },
+    "foreign": {
+      "cloud": 0,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -47,10 +52,10 @@
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://cdn.ampproject.org/v0/amp-form-0.1.js",
+      "originalUrl": "https://cdn.ampproject.org/v0.js",
       "type": "script",
       "ipinfo": {
         "domain": "cdn.ampproject.org",
@@ -63,7 +68,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://img.xsw.tw/1079/1079186/1079186s.jpg",
@@ -79,7 +84,7 @@
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     }
   ]
 }

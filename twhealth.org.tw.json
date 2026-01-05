@@ -2,7 +2,7 @@
   "url": "https://twhealth.org.tw",
   "canonicalURL": "https://twhealth.org.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T17:06:28.732Z",
+  "timestamp": "2026-01-05T21:06:14.952Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 16,
   "uniqueDomains": 4,
   "test_results": {
-    "domestic": 2,
-    "cloud_w_domestic_node": 2,
-    "foreign": 0
+    "domestic": {
+      "cloud": 2,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 2,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -38,8 +43,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.77.8",
+        "hostname": "nctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -47,14 +52,14 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://twhealth.org.tw/css/bundle.min.css",
       "type": "link",
       "ipinfo": {
         "domain": "twhealth.org.tw",
-        "ip": "104.21.47.57",
+        "ip": "172.67.144.219",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -62,15 +67,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://www.youtube.com/embed/afiOh7f2czM",
+      "originalUrl": "https://www.youtube.com/embed/7-qDcPZOxoM",
       "type": "iframe",
       "ipinfo": {
         "domain": "www.youtube.com",
-        "ip": "142.250.204.46",
-        "hostname": "hkg07s38-in-f14.1e100.net",
+        "ip": "142.250.66.78",
+        "hostname": "hkg12s27-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -78,7 +83,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.twhealth.org.tw/uploadfile/fileadv_link01/1_1762830095.jpg",
@@ -93,7 +98,7 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     }
   ]
 }

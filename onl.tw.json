@@ -2,7 +2,7 @@
   "url": "https://onl.tw",
   "canonicalURL": "https://onl.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T17:07:39.708Z",
+  "timestamp": "2026-01-05T20:50:11.633Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 17,
   "uniqueDomains": 4,
   "test_results": {
-    "domestic": 3,
-    "cloud_w_domestic_node": 0,
-    "foreign": 1
+    "domestic": {
+      "cloud": 3,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 0,
+      "direct": 1
+    }
   },
   "domainDetails": [
     {
@@ -38,8 +43,8 @@
       "type": "link",
       "ipinfo": {
         "domain": "ajax.googleapis.com",
-        "ip": "142.250.204.42",
-        "hostname": "hkg07s38-in-f10.1e100.net",
+        "ip": "142.250.66.74",
+        "hostname": "hkg12s27-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -47,7 +52,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://onl.tw/app.css?v=20150522",
@@ -63,15 +68,15 @@
         "org": "AS7506 GMO Internet Group, Inc.",
         "timezone": "Asia/Tokyo"
       },
-      "score": "X"
+      "category": "foreign/direct"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-7J1JZ0F4C3",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -79,15 +84,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&_ng=1&tid=G-7J1JZ0F4C3&cid=1287653434.1764868059&gtm=45je5c30h2v9122424040za200zd9122424040&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115616985~115938466~115938469~116184927~116184929~116217636~116217638~116474638&z=68003354",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&_ng=1&tid=G-7J1JZ0F4C3&cid=687170459.1767646211&gtm=45je5cb0v9122424040za200zd9122424040&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391252~115583767~115616986~115938466~115938469~116184927~116184929~116251938~116251940~116682876&z=1354874790",
       "type": "img",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.198.67",
-        "hostname": "lctsaa-ab-in-f3.1e100.net",
+        "ip": "142.250.204.35",
+        "hostname": "hkg07s38-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -95,7 +100,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

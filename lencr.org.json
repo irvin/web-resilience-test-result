@@ -2,7 +2,7 @@
   "url": "https://lencr.org",
   "canonicalURL": "https://lencr.org",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:41:22.741Z",
+  "timestamp": "2026-01-05T19:44:22.623Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,19 +22,24 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 11,
   "uniqueDomains": 2,
   "test_results": {
-    "domestic": 0,
-    "cloud_w_domestic_node": 2,
-    "foreign": 0
+    "domestic": {
+      "cloud": 0,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 2,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://letsencrypt.org/css/le-2025-theme-input.22d1a417a223d8c358f72073698033ed544d727794e4c9eb9535f6758f5b4e69.css",
+      "originalUrl": "https://letsencrypt.org/css/le-2025-theme-input.83b391790aa8702415f51f5ec8bdd538bea639b2f6ed734a0ffd9da30654b332.css",
       "type": "link",
       "ipinfo": {
         "domain": "letsencrypt.org",
@@ -47,15 +52,15 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://outreach.abetterinternet.org/l/1011011/2025-01-14/31v6r",
       "type": "iframe",
       "ipinfo": {
         "domain": "outreach.abetterinternet.org",
-        "ip": "34.237.219.119",
-        "hostname": "ec2-34-237-219-119.compute-1.amazonaws.com",
+        "ip": "52.54.96.194",
+        "hostname": "ec2-52-54-96-194.compute-1.amazonaws.com",
         "city": "Ashburn",
         "region": "Virginia",
         "country": "US",
@@ -63,7 +68,7 @@
         "org": "AS14618 Amazon.com, Inc.",
         "timezone": "America/New_York"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     }
   ]
 }

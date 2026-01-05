@@ -2,7 +2,7 @@
   "url": "https://careonline.com.tw",
   "canonicalURL": "https://careonline.com.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:57:43.521Z",
+  "timestamp": "2026-01-05T20:46:17.841Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 11,
+  "requestCount": 15,
   "uniqueDomains": 3,
   "test_results": {
-    "domestic": 2,
-    "cloud_w_domestic_node": 1,
-    "foreign": 0
+    "domestic": {
+      "cloud": 2,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 1,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -38,7 +43,7 @@
       "type": "link",
       "ipinfo": {
         "domain": "careonline.com.tw",
-        "ip": "172.67.73.178",
+        "ip": "104.26.12.223",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -46,15 +51,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://maps.googleapis.com/maps/api/js?key=AIzaSyDpMA2Y0cCelflvQ-XNTBRrfXpDYJBh_J4&callback=initMap",
       "type": "link",
       "ipinfo": {
         "domain": "maps.googleapis.com",
-        "ip": "142.250.198.74",
-        "hostname": "lctsaa-ab-in-f10.1e100.net",
+        "ip": "142.250.66.74",
+        "hostname": "hkg12s27-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -62,15 +67,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=UA-90244036-5",
       "type": "link",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
+        "ip": "142.250.66.72",
+        "hostname": "hkg12s27-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -78,7 +83,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

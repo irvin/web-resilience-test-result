@@ -2,7 +2,7 @@
   "url": "https://gimy.net.tw",
   "canonicalURL": "https://gimy.net.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:47:43.260Z",
+  "timestamp": "2026-01-05T21:03:59.821Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 34,
   "uniqueDomains": 5,
   "test_results": {
-    "domestic": 1,
-    "cloud_w_domestic_node": 1,
-    "foreign": 2
+    "domestic": {
+      "cloud": 1,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 1,
+      "direct": 2
+    }
   },
   "domainDetails": [
     {
@@ -46,14 +51,14 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://nk.pickoffsatis.com/rUp3LCjlMi7z2Fwcg/131678",
       "type": "script",
       "ipinfo": {
         "domain": "nk.pickoffsatis.com",
-        "ip": "23.109.135.44",
+        "ip": "172.241.7.43",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",
@@ -61,15 +66,15 @@
         "org": "AS7979 Servers.com, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "score": "X"
+      "category": "foreign/direct"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-Z7XGQJM672",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -77,7 +82,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://twtw.d9ym.com/index.php/index/index/api?quanju=gimy.net.tw&bh=v1",
@@ -91,15 +96,16 @@
       "type": "script",
       "ipinfo": {
         "domain": "polyfill-js.cn",
-        "ip": "192.252.179.114",
+        "ip": "123.254.106.115",
+        "hostname": "mail.asiahostway.com",
         "city": "Hong Kong",
         "region": "Hong Kong",
         "country": "HK",
         "loc": "22.2783,114.1747",
-        "org": "AS152194 CTG Server Limited",
+        "org": "AS55933 Cloudie Limited",
         "timezone": "Asia/Hong_Kong"
       },
-      "score": "X"
+      "category": "foreign/direct"
     }
   ]
 }

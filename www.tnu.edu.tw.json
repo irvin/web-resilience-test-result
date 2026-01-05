@@ -2,7 +2,7 @@
   "url": "https://www.tnu.edu.tw/",
   "canonicalURL": "https://www.tnu.edu.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:26:54.550Z",
+  "timestamp": "2026-01-05T20:32:05.082Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,33 +22,22 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 62,
+  "requestCount": 61,
   "uniqueDomains": 4,
   "test_results": {
-    "domestic": 4,
-    "cloud_w_domestic_node": 0,
-    "foreign": 0
+    "domestic": {
+      "cloud": 4,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 0,
+      "direct": 0
+    }
   },
   "domainDetails": [
-    {
-      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-80BCXK3CTB",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.googletagmanager.com",
-        "ip": "142.250.77.8",
-        "hostname": "nctsaa-ab-in-f8.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
     {
       "originalUrl": "https://www.tnu.edu.tw/styles/css/custom.css",
       "type": "link",
@@ -63,7 +52,23 @@
         "org": "AS1659 Taiwan Academic Network (TANet) Information Center",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-80BCXK3CTB",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.googletagmanager.com",
+        "ip": "142.250.204.40",
+        "hostname": "hkg07s38-in-f8.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://web.tnu.edu.tw/home_page/pages/getPosts.php",
@@ -79,14 +84,15 @@
         "org": "AS1659 Taiwan Academic Network (TANet) Information Center",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://wwwold.tnu.edu.tw/uploads/bulletin/image/6928fd6c1d41c849f80043e1/thumb_276424230281726_P33801980.jpg",
+      "originalUrl": "https://wwwold.tnu.edu.tw/uploads/bulletin/image/695360ea1d41c849fe0087a7/thumb_176698821132136_P34058220.jpg",
       "type": "img",
       "ipinfo": {
         "domain": "wwwold.tnu.edu.tw",
         "ip": "140.129.140.3",
+        "hostname": "wwwold.tnu.edu.tw",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -94,7 +100,7 @@
         "org": "AS1659 Taiwan Academic Network (TANet) Information Center",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

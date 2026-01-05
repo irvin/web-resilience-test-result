@@ -2,7 +2,7 @@
   "url": "https://app.yamol.tw",
   "canonicalURL": "https://app.yamol.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:40:48.322Z",
+  "timestamp": "2026-01-05T20:18:53.706Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 79,
-  "uniqueDomains": 12,
+  "requestCount": 53,
+  "uniqueDomains": 8,
   "test_results": {
-    "domestic": 6,
-    "cloud_w_domestic_node": 6,
-    "foreign": 0
+    "domestic": {
+      "cloud": 3,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 4,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -38,8 +43,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.77.8",
+        "hostname": "nctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -47,10 +52,10 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://app.yamol.tw/static/js/lib-polyfill.fe8e41f0.js",
+      "originalUrl": "https://app.yamol.tw/static/js/lib-axios.167824b6.js",
       "type": "script",
       "ipinfo": {
         "domain": "app.yamol.tw",
@@ -62,26 +67,26 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://accounts.google.com/gsi/client",
       "type": "script",
       "ipinfo": {
         "domain": "accounts.google.com",
-        "ip": "74.125.203.84",
-        "hostname": "th-in-f84.1e100.net",
-        "city": "Chang-hua",
+        "ip": "64.233.188.84",
+        "hostname": "tk-in-f84.1e100.net",
+        "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "24.0733,120.5628",
+        "loc": "24.1469,120.6839",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://sentry.yamol.tw/api/3/envelope/?sentry_key=c0e344dab99e40638501913f97261b8b&sentry_version=7&sentry_client=sentry.javascript.react%2F7.85.0",
+      "originalUrl": "https://sentry.yamol.tw/api/3/envelope/?sentry_key=c0e344dab99e40638501913f97261b8b&sentry_version=7&sentry_client=sentry.javascript.react%2F7.120.4",
       "type": "fetch",
       "ipinfo": {
         "domain": "sentry.yamol.tw",
@@ -94,7 +99,7 @@
         "org": "AS63949 Akamai Connected Cloud",
         "timezone": "Asia/Tokyo"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/sdk.js",
@@ -110,28 +115,13 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://appspot.yamol.tw/images/google-play-badge.png",
       "type": "img",
       "ipinfo": {
         "domain": "appspot.yamol.tw",
-        "ip": "104.26.2.172",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://api.yamol.tw/api/v3/nowEnv",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "api.yamol.tw",
         "ip": "104.26.3.172",
         "city": "San Francisco",
         "region": "California",
@@ -140,44 +130,13 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://api.ipify.org/?format=json",
-      "type": "xmlhttprequest",
+      "originalUrl": "https://api.yamol.tw/api/v3/banner",
+      "type": "fetch",
       "ipinfo": {
-        "domain": "api.ipify.org",
-        "ip": "104.26.12.205",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-YLQXFP87X7&cid=1097160234.1764866447&gtm=45je5c21v872562041za200zd872562041&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115938466~115938469~116184927~116184929~116217636~116217638~116474637&z=533526444",
-      "type": "img",
-      "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.204.35",
-        "hostname": "hkg07s38-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://img.yamol.tw/file/69255bdb5650c.jpg",
-      "type": "img",
-      "ipinfo": {
-        "domain": "img.yamol.tw",
+        "domain": "api.yamol.tw",
         "ip": "172.67.68.104",
         "city": "San Francisco",
         "region": "California",
@@ -186,39 +145,23 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://graph.facebook.com/v3.3/8586603098061791/picture?width=1920",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-YLQXFP87X7&cid=892283327.1767644333&gtm=45je5cc1h2v872562041za200zd872562041&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115583767~115616986~115938466~115938468~116184927~116184929~116251938~116251940~116744867&z=375639680",
       "type": "img",
       "ipinfo": {
-        "domain": "graph.facebook.com",
-        "ip": "31.13.87.1",
-        "hostname": "edge-star-shv-01-tpe1.facebook.com",
-        "city": "Taipei",
-        "region": "Taiwan",
+        "domain": "www.google.com.tw",
+        "ip": "142.250.196.195",
+        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
         "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS32934 Facebook, Inc.",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://www.facebook.com/x/oauth/status?client_id=213343434487&input_token&origin=1&redirect_uri=https%3A%2F%2Fapp.yamol.tw%2F&sdk=joey&wants_cookie_data=true",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "www.facebook.com",
-        "ip": "31.13.87.36",
-        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS32934 Facebook, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

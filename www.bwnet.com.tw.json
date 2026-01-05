@@ -2,7 +2,7 @@
   "url": "https://www.bwnet.com.tw/",
   "canonicalURL": "https://www.businessweekly.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T17:00:26.589Z",
+  "timestamp": "2026-01-05T20:54:13.155Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 200,
-  "uniqueDomains": 25,
+  "uniqueDomains": 24,
   "test_results": {
-    "domestic": 22,
-    "cloud_w_domestic_node": 3,
-    "foreign": 0
+    "domestic": {
+      "cloud": 19,
+      "direct": 2
+    },
+    "foreign": {
+      "cloud": 3,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -38,8 +43,8 @@
       "type": "link",
       "ipinfo": {
         "domain": "ibw.bwnet.com.tw",
-        "ip": "3.169.137.60",
-        "hostname": "server-3-169-137-60.tpe54.r.cloudfront.net",
+        "ip": "3.169.137.113",
+        "hostname": "server-3-169-137-113.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -47,7 +52,7 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.businessweekly.com.tw/bwevent/2021/member-system/cdn/member.min.js",
@@ -63,15 +68,15 @@
         "org": "AS7532 Gamania CloudForce",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.gstatic.com/firebasejs/4.8.1/firebase.js",
       "type": "script",
       "ipinfo": {
         "domain": "www.gstatic.com",
-        "ip": "142.250.198.67",
-        "hostname": "lctsaa-ab-in-f3.1e100.net",
+        "ip": "142.250.196.195",
+        "hostname": "nctsaa-ac-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -79,7 +84,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://member.businessweekly.com.tw/Content/images/normal-male.jpg",
@@ -95,15 +100,15 @@
         "org": "AS7532 Gamania CloudForce",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-M73WTP6D",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
+        "ip": "142.250.77.8",
+        "hostname": "nctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -111,7 +116,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://apis.businessweekly.com.tw/member/v1/user/BaseInfo",
@@ -127,15 +132,15 @@
         "org": "AS7532 Gamania CloudForce",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dr=www.bwnet.com.tw&dl=https%3A%2F%2Fwww.businessweekly.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=155302668.1764867624&dt=%E5%95%86%E6%A5%AD%E5%91%A8%E5%88%8A%20-%20%E5%95%86%E5%91%A8%EF%BD%9C%E5%85%88%E9%80%B2%E8%A7%80%E5%BF%B5%EF%BC%8E%E8%BC%95%E9%AC%86%E6%8E%8C%E6%8F%A1&auid=1561521951.1764867624&navt=n&npa=0&gtm=45He5c21h1v9185779297za200zd9185779297xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115583767~115616986~115938466~115938469~116184927~116184929~116217636~116217638~116251938~116251940&tft=1764867623916&tfd=1049&apve=1&apvf=f",
-      "type": "fetch",
+      "originalUrl": "https://www.youtube.com/iframe_api",
+      "type": "script",
       "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.66.68",
-        "hostname": "hkg12s27-in-f4.1e100.net",
+        "domain": "www.youtube.com",
+        "ip": "142.250.196.206",
+        "hostname": "nctsaa-ac-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -143,7 +148,39 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap",
+      "type": "link",
+      "ipinfo": {
+        "domain": "fonts.googleapis.com",
+        "ip": "142.250.204.42",
+        "hostname": "hkg07s38-in-f10.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dr=www.bwnet.com.tw&dl=https%3A%2F%2Fwww.businessweekly.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=604548182.1767646450&dt=%E5%95%86%E6%A5%AD%E5%91%A8%E5%88%8A%20-%20%E5%95%86%E5%91%A8%EF%BD%9C%E5%85%88%E9%80%B2%E8%A7%80%E5%BF%B5%EF%BC%8E%E8%BC%95%E9%AC%86%E6%8E%8C%E6%8F%A1&auid=574461403.1767646450&navt=n&npa=0&gtm=45He5cb0v9185779297za200zd9185779297xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528501~104573694~104684208~104684211~105391253~115583767~115616985~115938465~115938468~116184927~116184929~116251938~116251940&tft=1767646450456&tfd=1084&apve=1&apvf=f",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.250.196.196",
+        "hostname": "nctsaa-ac-in-f4.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
@@ -159,39 +196,7 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://www.youtube.com/iframe_api",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.youtube.com",
-        "ip": "142.250.198.78",
-        "hostname": "lctsaa-ab-in-f14.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap",
-      "type": "link",
-      "ipinfo": {
-        "domain": "fonts.googleapis.com",
-        "ip": "142.250.196.202",
-        "hostname": "nctsaa-ac-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://d.line-scdn.net/n/line_tag/public/release/v1/lt.js",
@@ -207,7 +212,7 @@
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://club.businessweekly.com.tw/api/watermark/list",
@@ -223,23 +228,7 @@
         "org": "AS7532 Gamania CloudForce",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/762141425/?random=1764867624013&cv=11&fst=1764867600000&bg=ffffff&guid=ON&async=1&gtm=45be5c21h1v9215070462z89185779297za200zb9185779297zd9185779297xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115938466~115938469~116184927~116184929~116217636~116217638&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.businessweekly.com.tw%2F&ref=https%3A%2F%2Fwww.bwnet.com.tw%2F&frm=0&tiba=%E5%95%86%E6%A5%AD%E5%91%A8%E5%88%8A%20-%20%E5%95%86%E5%91%A8%EF%BD%9C%E5%85%88%E9%80%B2%E8%A7%80%E5%BF%B5%EF%BC%8E%E8%BC%95%E9%AC%86%E6%8E%8C%E6%8F%A1&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1561521951.1764867624&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.1.0&uaw=0&_tu=CA&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEAwksa0ZiaOyeThW03rmwwnVrPXK6JfgVQmjfgc-FLnx7dkJNeWbWyh9Gd22Sb4sKoURFNU-OlZVfN1feEDoKc7pgbpS5oVSf9JkXqRa9uP3NYMMMwa8KO0wxPHHOR_1GrjYh0G1dMsc6ujdfTWwZEkKPnNWmHNJDoFPNrEGZd-ReDaYzXgvQZYPQt&random=1476168740&rmt_tld=1&ipr=y",
-      "type": "img",
-      "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.204.35",
-        "hostname": "hkg07s38-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://static.businessweekly.com.tw/redpack/css/generalRedpack.css",
@@ -255,7 +244,102 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/762141425/?random=1767646450584&cv=11&fst=1767643200000&bg=ffffff&guid=ON&async=1&gtm=45be5cb0v9215070462z89185779297za20gzb9185779297zd9185779297xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115583767~115616986~115938465~115938469~116184927~116184929~116251938~116251940&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.businessweekly.com.tw%2F&ref=https%3A%2F%2Fwww.bwnet.com.tw%2F&frm=0&tiba=%E5%95%86%E6%A5%AD%E5%91%A8%E5%88%8A%20-%20%E5%95%86%E5%91%A8%EF%BD%9C%E5%85%88%E9%80%B2%E8%A7%80%E5%BF%B5%EF%BC%8E%E8%BC%95%E9%AC%86%E6%8E%8C%E6%8F%A1&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=574461403.1767646450&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&_tu=CA&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEAwksa0fmZ_Wa4M2Exjggh5NmCUOvNuCu-JGHFHev23bokPl1eTgi7NbiFv3S4Gm80isHlyZipPC0APXqMFBFM3NYgBE3LaLLlfsxdJ4yBZGR302b51Tndm0NFScgnh--7-hbPMqUUaECPie6FQp7uJ7xF83ikyXEe3WmesL4g4-gjMW37TyzrC6BX&random=3808211597&rmt_tld=1&ipr=y",
+      "type": "img",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.198.67",
+        "hostname": "lctsaa-ab-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://bw.businessweekly.com.tw/assets/demo/2023-wegrow-share-test/dist/wegrow-share.min.css?v=1767646450895",
+      "type": "link",
+      "ipinfo": {
+        "domain": "bw.businessweekly.com.tw",
+        "ip": "112.121.107.9",
+        "hostname": "112.121.107.9.cloudforce.gamania.com",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS7532 Gamania CloudForce",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://sb.scorecardresearch.com/beacon.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "sb.scorecardresearch.com",
+        "ip": "3.169.137.63",
+        "hostname": "server-3-169-137-63.tpe54.r.cloudfront.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "snap.licdn.com",
+        "ip": "203.69.81.48",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://static.cmh.com.tw/track/track.v3.min.js?v=20240723",
+      "type": "script",
+      "ipinfo": {
+        "domain": "static.cmh.com.tw",
+        "ip": "3.169.121.121",
+        "hostname": "server-3-169-121-121.tpe53.r.cloudfront.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://sta.cmh.com.tw/apis/track/track2/v2?si=bw_web&ost=mac&apn=&apv=&pt=pc&p=MacIntel&c=1&s=1&ln=en-US&sr=1280x720&sd=24&bs=1280x720&fu=1&tz=-480&v=ver_20251216&osv=deviceOsNamedeviceOsVersion&mpb=deviceBrand&mpm=deviceModel&ssouid=&dh=4746&nv=1&uv=5415577318451292&pv=5415577318451292_8e136483f389036ccc0ac194fa9d4381_1767646451292&utn=1767646451292&utl=1767646451292&utc=1767646451292&rl=0&cti=5ZWG5qWt5ZGo5YiKIC0g5ZWG5ZGo772c5YWI6YCy6KeA5b+177yO6LyV6ayG5o6M5o+h&cur=aHR0cHM6Ly93d3cuYnVzaW5lc3N3ZWVrbHkuY29tLnR3Lw&ref=aHR0cHM6Ly93d3cuYnduZXQuY29tLnR3Lw&rpv=&rep=&fv=9203442229451292&fs=ref_aHR0cHM6Ly93d3cuYnduZXQuY29tLnR3Lw&se=0&sn=&sk=&adid=5fffb26a-9e7c-4b25-9c44-2a5d56e6c5d6&srcid=&adt=&t=1767646451294&rel_type=undefined&atype=&atime=&cdata=ZHdfdWlkPSZ0aT0mbWV0YWRhdGE9JnJpPSZydD0mZXg4PUJXLVdFQi0xNDQmZXg5PSZ1X21jPTAmc3Q9NzgxMzc1ZTItNmE1Ni00ZWRkLWJiOWUtZDgyNjZiNDRhMGUzJmZ0Zj0x",
+      "type": "script",
+      "ipinfo": {
+        "domain": "sta.cmh.com.tw",
+        "ip": "112.121.107.73",
+        "hostname": "112.121.107.73.cloudforce.gamania.com",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS7532 Gamania CloudForce",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://rtbdemand.apiip.net/api/check?accessKey=7ef45bac-167a-4aa8-8c99-bc8a28f80bc5&fields=countryCode,regionCode,regionName,city,timeZone,countryName",
@@ -270,7 +354,7 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://www.googletagservices.com/tag/js/gpt.js",
@@ -286,14 +370,14 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://s.lucead.com/prebid/1444684727.js",
       "type": "script",
       "ipinfo": {
         "domain": "s.lucead.com",
-        "ip": "104.26.13.223",
+        "ip": "172.67.73.178",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -301,78 +385,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://www.facebook.com/tr/?id=367878147323964&ev=PageView&dl=https%3A%2F%2Fwww.businessweekly.com.tw%2F&rl=https%3A%2F%2Fwww.bwnet.com.tw%2F&if=false&ts=1764867624405&sw=1280&sh=720&v=2.9.243&r=stable&ec=0&o=4254&fbp=fb.2.1764867624399.203913120671444221&hmd=7a8566a5150b11bb69f23a7b&pl=https%3A%2F%2Fwww.businessweekly.com.tw%2F&cs_est=true&ler=other&bfs[b]=1&pmd[title]=%E5%95%86%E6%A5%AD%E5%91%A8%E5%88%8A%20-%20%E5%95%86%E5%91%A8%EF%BD%9C%E5%85%88%E9%80%B2%E8%A7%80%E5%BF%B5%EF%BC%8E%E8%BC%95%E9%AC%86%E6%8E%8C%E6%8F%A1&pmd[keywords]=%E9%9B%9C%E8%AA%8C%2C%E7%B6%93%E6%BF%9F%2C%E8%B2%A1%E7%B6%93%2C%E5%95%86%E6%A5%AD&pmd[description]=%E5%85%A8%E5%8F%B0%E6%9C%80%E6%9C%89%E5%BD%B1%E9%9F%BF%E5%8A%9B%E8%B2%A1%E7%B6%93%E9%9B%9C%E8%AA%8C%E3%80%8A%E5%95%86%E6%A5%AD%E5%91%A8%E5%88%8A%E3%80%8B%E7%B6%B2%E7%AB%99%EF%BC%8C%E6%AF%8F%E6%97%A5%E6%9B%B4%E6%96%B0%E6%9C%80%E6%96%B0%E3%80%8C%E7%B6%93%E6%BF%9F%E3%80%81%E7%84%A6%E9%BB%9E%E3%80%81%E5%9C%8B%E9%9A%9B%E3%80%81%E8%81%B7%E5%A0%B4%E3%80%81%E8%B2%A1%E7%B6%93%E3%80%81%E7%94%9F%E6%B4%BB%E3%80%8D%E7%AD%89%E6%B7%B1%E5%BA%A6%E5%A0%B1%E5%B0%8E%E6%96%87%E7%AB%A0%E3%80%82%E5%B9%AB%E4%BD%A0%E6%8E%8C%E6%8F%A1%E5%9C%8B%E5%AE%B6%E7%B6%93%E6%BF%9F%E6%99%82%E4%BA%8B%E3%80%81%E5%88%86%E6%9E%90%E5%9C%8B%E9%9A%9B%E5%A4%A7%E4%BA%8B%E3%80%81%E8%B2%A1%E7%B6%93%E6%B4%9E%E5%AF%9F%E3%80%81%E7%AE%A1%E7%90%86%E7%9F%A5%E8%AD%98%E3%80%81%E8%81%B7%E5%A0%B4%E9%80%B2%E4%BF%AE%E5%8F%8A%E6%96%B0%E7%94%9F%E6%B4%BB%E9%A2%A8%E6%A0%BC%E3%80%82%E5%9F%B9%E9%A4%8A%E7%AB%B6%E7%88%AD%E5%8A%9B%EF%BC%8C%E7%AB%8B%E5%8D%B3%E8%A8%82%E9%96%B1%E5%95%86%E5%91%A8%EF%BC%81&plt=1092&it=1764867624312&coo=false&expv2[0]=pl0&expv2[1]=el3&expv2[2]=bc1&expv2[3]=mr2&rqm=GET",
-      "type": "img",
-      "ipinfo": {
-        "domain": "www.facebook.com",
-        "ip": "31.13.87.36",
-        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS32934 Facebook, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://sb.scorecardresearch.com/beacon.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "sb.scorecardresearch.com",
-        "ip": "3.169.137.94",
-        "hostname": "server-3-169-137-94.tpe54.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "snap.licdn.com",
-        "ip": "203.69.81.48",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS3462 Data Communication Business Group",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://bw.businessweekly.com.tw/assets/demo/2023-wegrow-share-test/dist/wegrow-share.min.css?v=1764867624567",
-      "type": "link",
-      "ipinfo": {
-        "domain": "bw.businessweekly.com.tw",
-        "ip": "112.121.107.9",
-        "hostname": "112.121.107.9.cloudforce.gamania.com",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS7532 Gamania CloudForce",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://fundingchoicesmessages.google.com/i/7682122?ers=3",
       "type": "script",
       "ipinfo": {
         "domain": "fundingchoicesmessages.google.com",
-        "ip": "142.250.77.14",
-        "hostname": "nctsaa-ab-in-f14.1e100.net",
+        "ip": "142.250.198.78",
+        "hostname": "lctsaa-ab-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -380,54 +401,22 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://static.cmh.com.tw/track/track.v3.min.js?v=20240723",
-      "type": "script",
-      "ipinfo": {
-        "domain": "static.cmh.com.tw",
-        "ip": "3.169.121.28",
-        "hostname": "server-3-169-121-28.tpe53.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://cdn.jsdelivr.net/gh/prebid/shared-id/pubcid.js/docs/pubcid.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "104.16.175.226",
+        "ip": "151.101.129.229",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
         "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
+        "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://sta.cmh.com.tw/apis/track/track2/v2?si=bw_web&ost=mac&apn=&apv=&pt=pc&p=MacIntel&c=1&s=1&ln=en-US&sr=1280x720&sd=24&bs=1280x720&fu=1&tz=-480&v=ver_20250805&osv=deviceOsNamedeviceOsVersion&mpb=deviceBrand&mpm=deviceModel&ssouid=&dh=4831&nv=1&uv=0979899393624896&pv=0979899393624896_8e136483f389036ccc0ac194fa9d4381_1764867624897&utn=1764867624897&utl=1764867624897&utc=1764867624897&rl=0&cti=5ZWG5qWt5ZGo5YiKIC0g5ZWG5ZGo772c5YWI6YCy6KeA5b+177yO6LyV6ayG5o6M5o+h&cur=aHR0cHM6Ly93d3cuYnVzaW5lc3N3ZWVrbHkuY29tLnR3Lw&ref=aHR0cHM6Ly93d3cuYnduZXQuY29tLnR3Lw&rpv=&rep=&fv=5093448591624900&fs=ref_aHR0cHM6Ly93d3cuYnduZXQuY29tLnR3Lw&se=0&sn=&sk=&adid=7d813ca2-91eb-4d8b-8198-f34fdeeac930&srcid=&adt=&t=1764867624900&rel_type=undefined&atype=&atime=&cdata=ZHdfdWlkPSZ0aT0mbWV0YWRhdGE9JnJpPSZydD0mZXg4PUJXLVdFQi0zJmV4OT0mdV9tYz0wJnN0PTY0ODJlZjA2LTI2ZDEtNDM5Zi05NGU0LTdkNDk0OWRkMzg0OCZmdGY9MQ==",
-      "type": "script",
-      "ipinfo": {
-        "domain": "sta.cmh.com.tw",
-        "ip": "112.121.107.73",
-        "hostname": "112.121.107.73.cloudforce.gamania.com",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS7532 Gamania CloudForce",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "foreign/cloud"
     }
   ]
 }

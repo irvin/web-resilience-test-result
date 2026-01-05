@@ -2,7 +2,7 @@
   "url": "https://tianmu.org.tw",
   "canonicalURL": "https://tianmu.org.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T17:02:08.590Z",
+  "timestamp": "2026-01-05T20:45:04.199Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 115,
   "uniqueDomains": 5,
   "test_results": {
-    "domestic": 4,
-    "cloud_w_domestic_node": 1,
-    "foreign": 0
+    "domestic": {
+      "cloud": 3,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 1,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -47,7 +52,7 @@
         "org": "AS63949 Akamai Connected Cloud",
         "timezone": "Asia/Tokyo"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "http://maps.google.com/maps/api/js?sensor=false&language=zh-tw",
@@ -63,15 +68,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-E7RY9320NM",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -79,7 +84,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/zh_TW/all.js#xfbml=1",
@@ -95,15 +100,15 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-E7RY9320NM&cid=1609113931.1764867727&gtm=45je5c21v9131143012za200zd9131143012&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104573694~104684208~104684211~105391252~115583767~115616985~115938466~115938469~116184927~116184929~116217636~116217638~116427529&z=378152976",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-E7RY9320NM&cid=734315877.1767645903&gtm=45je5cb0v9131143012za200zd9131143012&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=102015666~103116026~103200004~104527907~104528501~104684208~104684211~105391252~115495938~115583767~115616985~115938466~115938468~116184927~116184929~116251938~116251940~116682875&z=2045311405",
       "type": "img",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.204.35",
-        "hostname": "hkg07s38-in-f3.1e100.net",
+        "ip": "142.250.196.195",
+        "hostname": "nctsaa-ac-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -111,7 +116,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

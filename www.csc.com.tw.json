@@ -2,7 +2,7 @@
   "url": "https://www.csc.com.tw/",
   "canonicalURL": "https://www.csc.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:40:33.609Z",
+  "timestamp": "2026-01-05T20:35:42.253Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 89,
-  "uniqueDomains": 4,
+  "requestCount": 87,
+  "uniqueDomains": 3,
   "test_results": {
-    "domestic": 4,
-    "cloud_w_domestic_node": 0,
-    "foreign": 0
+    "domestic": {
+      "cloud": 1,
+      "direct": 2
+    },
+    "foreign": {
+      "cloud": 0,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -38,16 +43,16 @@
       "type": "link",
       "ipinfo": {
         "domain": "www.csc.com.tw",
-        "ip": "203.66.32.205",
-        "hostname": "203-66-32-205.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "203.66.35.73",
+        "hostname": "203-66-35-73.hinet-ip.hinet.net",
+        "city": "Taipei",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "25.0531,121.5264",
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap",
@@ -63,7 +68,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/all.js#xfbml=1",
@@ -79,23 +84,7 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-03N604T55S&cx=c&_slc=1",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "domestic/direct"
     }
   ]
 }

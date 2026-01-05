@@ -2,7 +2,7 @@
   "url": "https://newsmarket.com.tw",
   "canonicalURL": "https://www.newsmarket.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:45:37.737Z",
+  "timestamp": "2026-01-05T20:35:31.687Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,19 +22,24 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 82,
   "uniqueDomains": 4,
   "test_results": {
-    "domestic": 2,
-    "cloud_w_domestic_node": 2,
-    "foreign": 0
+    "domestic": {
+      "cloud": 2,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 2,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://www.newsmarket.com.tw/wp-content/plugins/kadence-conversions/assets/kadence-conversions.css?ver=1.1.3",
+      "originalUrl": "https://www.newsmarket.com.tw/wp-content/plugins/kadence-blocks/dist/style-blocks-column.css?ver=3.5.1",
       "type": "link",
       "ipinfo": {
         "domain": "www.newsmarket.com.tw",
@@ -46,14 +51,14 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js?ver=1.0.0",
       "type": "script",
       "ipinfo": {
         "domain": "cdn.onesignal.com",
-        "ip": "104.16.160.145",
+        "ip": "104.17.111.223",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -61,15 +66,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-P6KXBQW",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.204.40",
+        "hostname": "hkg07s38-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -77,15 +82,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-EBH7Z3RQXE&cid=1916169241.1764866737&gtm=45je5c21v9124968433z8810881778za200zb810881778zd810881778&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115583767~115616986~115938465~115938468~116184927~116184929~116217636~116217638~116678528&z=1032083546",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-EBH7Z3RQXE&cid=1639623995.1767645331&gtm=45je5cb0v9124968433z8810881778za20gzb810881778zd810881778&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115616986~115938465~115938469~116184927~116184929~116251938~116251940&z=1265068559",
       "type": "img",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.198.67",
-        "hostname": "lctsaa-ab-in-f3.1e100.net",
+        "ip": "142.250.77.3",
+        "hostname": "nctsaa-ab-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -93,7 +98,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

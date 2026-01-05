@@ -2,7 +2,7 @@
   "url": "https://chao60.com.tw",
   "canonicalURL": "https://chao60.com.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T17:27:29.431Z",
+  "timestamp": "2026-01-05T21:12:20.561Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 6,
+  "requestCount": 5,
   "uniqueDomains": 3,
   "test_results": {
-    "domestic": 3,
-    "cloud_w_domestic_node": 0,
-    "foreign": 0
+    "domestic": {
+      "cloud": 2,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 0,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -40,22 +45,22 @@
         "domain": "ad.url.com.tw",
         "ip": "210.59.228.163",
         "hostname": "ad.url.com.tw",
-        "city": "Taipei",
-        "region": "Taiwan",
+        "city": "Banqiao",
+        "region": "Taipei",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "25.0143,121.4672",
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-WKCNHLN",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.66.72",
+        "hostname": "hkg12s27-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -63,10 +68,10 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-NVZ47LWS0Q&cid=1410768168.1764869249&gtm=45je5c30v9128824651z89134851380za200zb9134851380zd9134851380&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115583767~115938465~115938468~116184927~116184929~116217636~116217638&z=2089149846",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-NVZ47LWS0Q&cid=1556388355.1767647540&gtm=45je5cb0v9128824651z89134851380za20gzb9134851380zd9134851380&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391252~115497441~115583767~115938465~115938468~116184927~116184929~116251938~116251940&z=536745219",
       "type": "img",
       "ipinfo": {
         "domain": "www.google.com.tw",
@@ -79,7 +84,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

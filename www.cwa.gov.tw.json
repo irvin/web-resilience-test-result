@@ -2,7 +2,7 @@
   "url": "https://www.cwa.gov.tw/",
   "canonicalURL": "https://www.cwa.gov.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:36:08.341Z",
+  "timestamp": "2026-01-05T19:38:28.039Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,32 +22,37 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 87,
+  "requestCount": 84,
   "uniqueDomains": 3,
   "test_results": {
-    "domestic": 3,
-    "cloud_w_domestic_node": 0,
-    "foreign": 0
+    "domestic": {
+      "cloud": 2,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 0,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://www.cwa.gov.tw/V8/assets/plugins/bootstrap/css/bootstrap.min.css?v=20230418",
+      "originalUrl": "https://www.cwa.gov.tw/V8/assets/plugins/font-awesome/css/font-awesome.min.css?v=20191223",
       "type": "link",
       "ipinfo": {
         "domain": "www.cwa.gov.tw",
-        "ip": "203.66.32.13",
-        "hostname": "203-66-32-13.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "203.66.35.106",
+        "hostname": "203-66-35-106.hinet-ip.hinet.net",
+        "city": "Taipei",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "25.0531,121.5264",
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-P7QGZ2G",
@@ -63,10 +68,10 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-K6HENP0XVS&cid=696818913.1764862567&gtm=45je5c21v876098597z8860780529za200zb860780529zd860780529&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115583767~115938466~115938469~116184927~116184929~116217636~116217638~116427946~116474638&z=998458694",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-K6HENP0XVS&cid=478372799.1767641907&gtm=45je5cb0v876098597z89134612741za20gzb9134612741zd9134612741&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115616986~115938466~115938468~116184927~116184929~116251938~116251940~116744866&z=410255295",
       "type": "img",
       "ipinfo": {
         "domain": "www.google.com.tw",
@@ -79,7 +84,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

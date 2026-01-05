@@ -2,7 +2,7 @@
   "url": "https://www.ubot.com.tw/",
   "canonicalURL": "https://www.ubot.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:36:37.670Z",
+  "timestamp": "2026-01-05T20:31:10.512Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,23 +22,28 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 12,
+  "requestCount": 14,
   "uniqueDomains": 1,
   "test_results": {
-    "domestic": 0,
-    "cloud_w_domestic_node": 1,
-    "foreign": 0
+    "domestic": {
+      "cloud": 0,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 1,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://www.ubot.com.tw/assets/index.52f0c026.js",
-      "type": "script",
+      "originalUrl": "https://www.ubot.com.tw/assets/index.3ddcf593.css",
+      "type": "link",
       "ipinfo": {
         "domain": "www.ubot.com.tw",
-        "ip": "104.18.11.26",
+        "ip": "104.18.10.26",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -46,7 +51,7 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     }
   ]
 }

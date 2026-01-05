@@ -2,7 +2,7 @@
   "url": "https://www.worldvision.org.tw/",
   "canonicalURL": "https://www.worldvision.org.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:50:05.079Z",
+  "timestamp": "2026-01-05T21:04:46.368Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 179,
-  "uniqueDomains": 12,
+  "requestCount": 63,
+  "uniqueDomains": 2,
   "test_results": {
-    "domestic": 7,
-    "cloud_w_domestic_node": 5,
-    "foreign": 0
+    "domestic": {
+      "cloud": 0,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 2,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -46,7 +51,7 @@
         "org": "AS8075 Microsoft Corporation",
         "timezone": "Asia/Tokyo"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://cdn.worldvision.org.tw/polar/site/logo.svg",
@@ -61,164 +66,7 @@
         "org": "AS8075 Microsoft Corporation",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-K2FRZBX",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://polar-api.worldvision.org.tw/pages?filter[type_id]=1&filter[category_id]=7&page=1&limit=3",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "polar-api.worldvision.org.tw",
-        "ip": "20.210.36.58",
-        "city": "Tokyo",
-        "region": "Tokyo",
-        "country": "JP",
-        "loc": "35.6895,139.6917",
-        "org": "AS8075 Microsoft Corporation",
-        "timezone": "Asia/Tokyo"
-      },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fwww.worldvision.org.tw%2F&scrsrc=www.googletagmanager.com&rnd=656827844.1764867003&dt=%E9%A6%96%E9%A0%81%20%7C%20%E5%8F%B0%E7%81%A3%E4%B8%96%E7%95%8C%E5%B1%95%E6%9C%9B%E6%9C%83&auid=789416713.1764867003&navt=n&npa=0&_tu=CA&gtm=45He5c30h2v847456661za200zd847456661xea&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tag_exp=102015666~103116026~103200004~104527907~104528500~104684208~104684211~105391253~115583767~115938465~115938469~116184927~116184929~116217636~116217638&tft=1764867003377&tfd=606&apve=1&apvf=f",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.198.68",
-        "hostname": "lctsaa-ab-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://d.line-scdn.net/n/line_tag/public/release/v1/lt.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "d.line-scdn.net",
-        "ip": "23.39.61.163",
-        "hostname": "a23-39-61-163.deploy.static.akamaitechnologies.com",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16625 Akamai Technologies, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://bat.bing.com/bat.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "bat.bing.com",
-        "ip": "150.171.28.10",
-        "city": "Redmond",
-        "region": "Washington",
-        "country": "US",
-        "loc": "47.6740,-122.1215",
-        "org": "AS8075 Microsoft Corporation",
-        "timezone": "America/Los_Angeles"
-      },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "connect.facebook.net",
-        "ip": "31.13.87.5",
-        "hostname": "xx-fbcdn-shv-01-tpe1.fbcdn.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS32934 Facebook, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-QSXQYEM6MY&cid=559069669.1764867003&gtm=45je5c30h2v873188939z8847456661za200zb847456661zd847456661&aip=1&dma=0&gcs=G111&gcd=13t3t3t3t5l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115583767~115938465~115938468~116184927~116184929~116217636~116217638&z=1963240450",
-      "type": "img",
-      "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://d3cfrqjucqh0ip.cloudfront.net/child/images/222764-QRQS_20240612_154917_CGP.jpg",
-      "type": "img",
-      "ipinfo": {
-        "domain": "d3cfrqjucqh0ip.cloudfront.net",
-        "ip": "3.169.137.45",
-        "hostname": "server-3-169-137-45.tpe54.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://api.iconify.design/fa6-solid.json?icons=angles-left%2Cangles-right",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "api.iconify.design",
-        "ip": "172.67.71.159",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://www.facebook.com/tr/?id=294590452575433&ev=PageView&dl=https%3A%2F%2Fwww.worldvision.org.tw%2F&rl=&if=false&ts=1764867004045&sw=1280&sh=720&v=2.9.243&r=stable&ec=0&o=4254&fbp=fb.2.1764867004042.701100716632801261&ler=empty&bfs[b]=1&pmd[title]=%E9%A6%96%E9%A0%81%20%7C%20%E5%8F%B0%E7%81%A3%E4%B8%96%E7%95%8C%E5%B1%95%E6%9C%9B%E6%9C%83&pmd[description]=%E4%B8%96%E7%95%8C%E5%B1%95%E6%9C%9B%E6%9C%83%E6%98%AF%E4%B8%80%E5%80%8B%E6%8F%B4%E5%8A%A9%E3%80%81%E7%99%BC%E5%B1%95%E5%92%8C%E5%80%A1%E8%AD%B0%E7%9A%84%E5%85%A8%E7%90%83%E6%80%A7%E5%9F%BA%E7%9D%A3%E6%95%99%E7%B5%84%E7%B9%94%EF%BC%8C%E5%9C%A8%E5%85%AD%E5%A4%A7%E6%B4%B2%E3%80%81%E8%BF%91100%E5%80%8B%E5%9C%8B%E5%AE%B6%E5%85%B1%E6%9C%893%E8%90%AC4%2C000%E5%A4%9A%E5%90%8D%E5%B7%A5%E4%BD%9C%E5%A4%A5%E4%BC%B4%EF%BC%8C%E4%BB%A5%E5%A4%A5%E4%BC%B4%E9%97%9C%E4%BF%82%E5%90%88%E5%8A%9B%E6%9C%8D%E5%8B%99%E6%9C%80%E5%BC%B1%E5%8B%A2%E5%85%92%E7%AB%A5%E5%8F%8A%E5%AE%B6%E5%BA%AD%E8%84%AB%E9%9B%A2%E8%B2%A7%E7%AA%AE%E8%88%87%E5%8D%B1%E9%9B%A3%EF%BC%8C%E9%99%AA%E4%BC%B4%E4%BB%96%E5%80%91%E7%B6%93%E6%AD%B7%E7%94%9F%E5%91%BD%E7%9A%84%E5%96%9C%E6%A8%82%E8%88%87%E8%B1%90%E7%9B%9B%E3%80%82%E8%B5%B0%E9%80%B2%E8%B2%A7%E5%9B%B0%E8%84%86%E5%BC%B1%E7%9A%84%E8%A7%92%E8%90%BD%EF%BC%8C%E4%B8%96%E7%95%8C%E5%B1%95%E6%9C%9B%E6%9C%83%E9%99%AA%E4%BC%B4%E5%AE%B6%E5%BA%AD%E8%88%87%E5%85%92%E7%AB%A5%E8%84%AB%E8%B2%A7%E3%80%81%E7%99%BC%E5%B1%95%E7%A4%BE%E5%8D%80%EF%BC%8C%E7%84%A1%E8%AB%96%E5%85%B6%E7%A8%AE%E6%97%8F%E3%80%81%E6%80%A7%E5%88%A5%E3%80%81%E4%BF%A1%E4%BB%B0%EF%BC%8C%E6%88%91%E5%80%91%E4%B8%80%E8%A6%96%E5%90%8C%E4%BB%81%E3%80%82%E5%9B%A0%E7%82%BA%E6%88%91%E5%80%91%E7%9B%B8%E4%BF%A1%EF%BC%8C%E6%AF%8F%E4%B8%80%E5%80%8B%E6%9C%80%E5%BC%B1%E5%8B%A2%E5%85%92%E7%AB%A5%EF%BC%8C%E9%83%BD%E5%80%BC%E5%BE%97%E6%93%81%E6%9C%89%E7%99%BC%E5%B1%95%E7%BE%8E%E5%A5%BD%E6%9C%AA%E4%BE%86%E7%9A%84%E6%A9%9F%E6%9C%83%E3%80%82&plt=400.0999999977648&it=1764867003751&coo=false&expv2[0]=pl0&expv2[1]=el2&expv2[2]=bc1&expv2[3]=mr2&rqm=GET",
-      "type": "img",
-      "ipinfo": {
-        "domain": "www.facebook.com",
-        "ip": "31.13.87.36",
-        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS32934 Facebook, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "foreign/cloud"
     }
   ]
 }

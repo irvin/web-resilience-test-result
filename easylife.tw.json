@@ -2,7 +2,7 @@
   "url": "https://easylife.tw",
   "canonicalURL": "https://blog.easylife.tw/page/1",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:59:08.266Z",
+  "timestamp": "2026-01-05T20:32:12.803Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 28,
-  "uniqueDomains": 3,
+  "requestCount": 21,
+  "uniqueDomains": 2,
   "test_results": {
-    "domestic": 1,
-    "cloud_w_domestic_node": 1,
-    "foreign": 1
+    "domestic": {
+      "cloud": 0,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 1,
+      "direct": 1
+    }
   },
   "domainDetails": [
     {
@@ -46,7 +51,7 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://i0.wp.com/host.easylife.tw/pics/202304/WordPress.png",
@@ -62,23 +67,7 @@
         "org": "AS2635 Automattic, Inc",
         "timezone": "America/Los_Angeles"
       },
-      "score": "X"
-    },
-    {
-      "originalUrl": "https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,500,500i,600,700,800,900|Poppins:200,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900|Raleway:200,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900",
-      "type": "link",
-      "ipinfo": {
-        "domain": "fonts.googleapis.com",
-        "ip": "142.250.198.74",
-        "hostname": "lctsaa-ab-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "foreign/direct"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "url": "https://www.moe.gov.tw/",
   "canonicalURL": "https://www.moe.gov.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:18:06.405Z",
+  "timestamp": "2026-01-05T20:05:55.171Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,19 +22,24 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 93,
   "uniqueDomains": 7,
   "test_results": {
-    "domestic": 6,
-    "cloud_w_domestic_node": 1,
-    "foreign": 0
+    "domestic": {
+      "cloud": 5,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 1,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://www.edu.tw/css/index.css?1141205121524",
+      "originalUrl": "https://www.edu.tw/css/index.css?1150106040348",
       "type": "link",
       "ipinfo": {
         "domain": "www.edu.tw",
@@ -47,7 +52,7 @@
         "org": "AS1659 Taiwan Academic Network (TANet) Information Center",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-KBT2PDEDRK",
@@ -63,7 +68,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v24.0&appId=APP_ID",
@@ -79,7 +84,7 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://www.moe.gov.tw/WebResource.axd?d=Pm47-a8qKVdNeIz5os9iyZbi0mIIF-eXU02XW2IlI_HkIhO5Ohr0-OtIr9YkEjhoJZvrvKQAFLnqoNvbi1Ga-EXPTRyBu2N-TIyF-yYcY6Y1&t=638901824248157332",
@@ -95,23 +100,7 @@
         "org": "AS1659 Taiwan Academic Network (TANet) Information Center",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://ws.moe.edu.tw/001/Upload/1/relpic/7632/103073/212ce11c-38c3-4c06-acea-314fb40353b4@710x470.jpg",
-      "type": "img",
-      "ipinfo": {
-        "domain": "ws.moe.edu.tw",
-        "ip": "140.111.14.162",
-        "hostname": "ws.moe.edu.tw",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS1659 Taiwan Academic Network (TANet) Information Center",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://static.addtoany.com/menu/page.js",
@@ -126,15 +115,31 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-KBT2PDEDRK&cid=1467751383.1764865086&gtm=45je5c21v872675615za200zd872675615&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115616986~115938466~115938468~116184927~116184929~116217636~116217638~116518834&z=700679729",
+      "originalUrl": "https://ws.moe.edu.tw/001/Upload/1/relpic/7632/103474/7d2a7bda-3474-4144-82be-5e0754260e43@710x470.jpg",
+      "type": "img",
+      "ipinfo": {
+        "domain": "ws.moe.edu.tw",
+        "ip": "140.111.14.162",
+        "hostname": "ws.moe.edu.tw",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS1659 Taiwan Academic Network (TANet) Information Center",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-KBT2PDEDRK&cid=1874431439.1767643553&gtm=45je5cb0v872675615za200zd872675615&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115616985~115938465~115938468~116184927~116184929~116251938~116251940~116682875~116744867&z=1744214596",
       "type": "img",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.66.67",
-        "hostname": "hkg12s27-in-f3.1e100.net",
+        "ip": "142.250.77.3",
+        "hostname": "nctsaa-ab-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -142,7 +147,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

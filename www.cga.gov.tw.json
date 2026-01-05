@@ -2,7 +2,7 @@
   "url": "https://www.cga.gov.tw/",
   "canonicalURL": "https://www.cga.gov.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:51:45.157Z",
+  "timestamp": "2026-01-05T20:43:04.835Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 124,
   "uniqueDomains": 3,
   "test_results": {
-    "domestic": 3,
-    "cloud_w_domestic_node": 0,
-    "foreign": 0
+    "domestic": {
+      "cloud": 3,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 0,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -47,7 +52,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.cga.gov.tw/GipOpen/wSite/styles/RWD/css/bootstrap-3.3.6.min.css",
@@ -56,14 +61,14 @@
         "domain": "www.cga.gov.tw",
         "ip": "210.241.92.252",
         "hostname": "210-241-92-252.hinet-ip.hinet.net",
-        "city": "Taoyuan City",
-        "region": "Taiwan",
+        "city": "Banqiao",
+        "region": "Taipei",
         "country": "TW",
-        "loc": "24.9937,121.2970",
+        "loc": "25.0143,121.4672",
         "org": "AS4782 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700",
@@ -79,7 +84,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

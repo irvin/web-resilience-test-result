@@ -2,7 +2,7 @@
   "url": "https://bonnyread.com.tw",
   "canonicalURL": "https://www.bonnyread.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T17:21:40.338Z",
+  "timestamp": "2026-01-05T21:18:39.466Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,24 +22,29 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 160,
-  "uniqueDomains": 24,
+  "requestCount": 161,
+  "uniqueDomains": 25,
   "test_results": {
-    "domestic": 17,
-    "cloud_w_domestic_node": 6,
-    "foreign": 1
+    "domestic": {
+      "cloud": 16,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 8,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://cdn.shoplineapp.com/s/javascripts/currencies.js",
+      "originalUrl": "https://cdn.shoplineapp.com/assets/lib/bootstrap-3.4.1-4ccbe929d8684c8cc83f72911d02f011655dbd6b146a879612fadcdfa86fa7c7.css",
       "type": "link",
       "ipinfo": {
         "domain": "cdn.shoplineapp.com",
-        "ip": "3.169.137.37",
-        "hostname": "server-3-169-137-37.tpe54.r.cloudfront.net",
+        "ip": "3.169.137.85",
+        "hostname": "server-3-169-137-85.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -47,14 +52,14 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://browser.sentry-cdn.com/6.8.0/bundle.tracing.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "browser.sentry-cdn.com",
-        "ip": "151.101.194.217",
+        "ip": "151.101.2.217",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -62,15 +67,15 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "X"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://static.shoplineapp.com/web/assets/misc/loader1.gif",
       "type": "img",
       "ipinfo": {
         "domain": "static.shoplineapp.com",
-        "ip": "3.169.55.43",
-        "hostname": "server-3-169-55-43.tpe54.r.cloudfront.net",
+        "ip": "3.169.55.79",
+        "hostname": "server-3-169-55-79.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -78,23 +83,7 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://shoplineimg.com/53eb2bccb32b41ef6e000007/692ea120e31c2c712424b2e3/1296x.webp?source_format=jpg",
-      "type": "img",
-      "ipinfo": {
-        "domain": "shoplineimg.com",
-        "ip": "3.169.36.74",
-        "hostname": "server-3-169-36-74.tpe53.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://img.shoplineapp.com/media/image_clips/5eb0e9af1f1d01002a3dfaf7/original.png?1588652463",
@@ -110,7 +99,7 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://r2cdn.myshopline.com/static/rs/adff/prod/latest/bundle.iife.js",
@@ -126,15 +115,15 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=AW-881946816",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -142,7 +131,23 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://shoplineimg.com/53eb2bccb32b41ef6e000007/6940bdab01803eef3b04d445/375x.webp?source_format=jpg",
+      "type": "img",
+      "ipinfo": {
+        "domain": "shoplineimg.com",
+        "ip": "3.169.36.74",
+        "hostname": "server-3-169-36-74.tpe53.r.cloudfront.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://d.line-scdn.net/n/line_tag/public/release/v1/lt.js",
@@ -158,7 +163,7 @@
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
@@ -174,15 +179,15 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&tid=AW-881946816&en=page_view&dl=https%3A%2F%2Fwww.bonnyread.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=378637858.1764868896&dt=BONNY%20%26%20READ%20%E9%A3%BE%E5%93%81%20%7C%20%E8%A9%AE%E9%87%8B%E8%B3%AA%E6%84%9F%E7%A9%BF%E6%90%AD%20%E9%A3%BE%E5%93%81%E5%93%81%E7%89%8C&auid=1408788649.1764868896&navt=n&npa=0&gtm=45be5c30v9170032867za200zd9170032867xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115938466~115938469~116184927~116184929~116217636~116217638~116474636&tft=1764868896423&tfd=7684&apve=1&apvf=f",
+      "originalUrl": "https://www.google.com/ccm/collect?frm=0&tid=AW-881946816&en=page_view&dl=https%3A%2F%2Fwww.bonnyread.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=1856096575.1767647916&dt=BONNY%20%26%20READ%20%E9%A3%BE%E5%93%81%20%7C%20%E8%A9%AE%E9%87%8B%E8%B3%AA%E6%84%9F%E7%A9%BF%E6%90%AD%20%E9%A3%BE%E5%93%81%E5%93%81%E7%89%8C&auid=1419886847.1767647916&navt=n&npa=0&gtm=45be5cb0v9170032867za200zd9170032867xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528501~104573694~104684208~104684211~105391253~115583767~115938466~115938468~116184927~116184929~116251938~116251940~116682877&tft=1767647916464&tfd=7892&apve=1&apvf=f",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.77.4",
-        "hostname": "nctsaa-ab-in-f4.1e100.net",
+        "ip": "142.250.204.36",
+        "hostname": "hkg07s38-in-f4.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -190,7 +195,23 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-8L45QW4Z1J&cid=1741587241.1767647917&gtm=45je5cb0v897876252za200zb9170032867zd9170032867&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115583767~115938466~115938468~116184927~116184929~116251938~116251940~116682877&z=1496775503",
+      "type": "img",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.204.35",
+        "hostname": "hkg07s38-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://bat.bing.com/bat.js",
@@ -205,7 +226,7 @@
         "org": "AS8075 Microsoft Corporation",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://client-chat.easychat.co/?appkey=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0ZWFtTmFtZSI6IkJvbm55ICYgUmVhZCDpo77lk4EifQ.5ty8CUk7AnGRlzyL8HYaqeEaL_vcWQg0xCN1N2ri29E&lang=zh-Hant",
@@ -221,15 +242,15 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://chat-plugin.easychat.co/easychat.js",
       "type": "script",
       "ipinfo": {
         "domain": "chat-plugin.easychat.co",
-        "ip": "3.169.137.47",
-        "hostname": "server-3-169-137-47.tpe54.r.cloudfront.net",
+        "ip": "3.169.137.118",
+        "hostname": "server-3-169-137-118.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -237,14 +258,14 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://unpkg.com/@dcard/web-ad-tracking-sdk/build/dadk.iife.js",
       "type": "script",
       "ipinfo": {
         "domain": "unpkg.com",
-        "ip": "104.18.1.22",
+        "ip": "104.18.0.22",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -252,15 +273,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-8L45QW4Z1J&cid=718216403.1764868897&gtm=45je5c30v897876252za200zb9170032867zd9170032867&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115938466~115938469~116184927~116184929~116217636~116217638~116474636&z=1561765612",
-      "type": "img",
+      "originalUrl": "https://www.recaptcha.net/recaptcha/api.js?onload=onRecaptchaLoaded&render=explicit",
+      "type": "script",
       "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.198.67",
-        "hostname": "lctsaa-ab-in-f3.1e100.net",
+        "domain": "www.recaptcha.net",
+        "ip": "142.250.204.35",
+        "hostname": "hkg07s38-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -268,15 +289,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.bonnyread.com.tw/api/merchants/53eb2bccb32b41ef6e000007/cart/count",
       "type": "xmlhttprequest",
       "ipinfo": {
         "domain": "www.bonnyread.com.tw",
-        "ip": "3.169.55.80",
-        "hostname": "server-3-169-55-80.tpe54.r.cloudfront.net",
+        "ip": "3.169.55.73",
+        "hostname": "server-3-169-55-73.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -284,38 +305,7 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://www.gstatic.com/recaptcha/releases/TkacYOdEJbdB_JjX802TMer9/recaptcha__en.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.gstatic.com",
-        "ip": "142.250.198.67",
-        "hostname": "lctsaa-ab-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://pixel.dcard.tw/api/v2/track?url=https%3A%2F%2Fwww.bonnyread.com.tw%2F&referrer=&createdAt=2025-12-04T17%3A21%3A36.846Z&deviceId=59892230-007a-4242-adb8-6f27ea654b87&pixel=AShxKPRvcP-0lC-dHS3Zm&id=ba1c4da4-d326-4638-98e6-10d82f0a1deb&type=PageView",
-      "type": "img",
-      "ipinfo": {
-        "domain": "pixel.dcard.tw",
-        "ip": "104.19.248.7",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "score": "?"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://static2.zotabox.com/widgets.js",
@@ -330,7 +320,38 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://www.gstatic.com/recaptcha/releases/7gg7H51Q-naNfhmCP3_R47ho/recaptcha__en.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.gstatic.com",
+        "ip": "142.250.198.67",
+        "hostname": "lctsaa-ab-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://pixel.dcard.tw/api/v2/devices/init?id=348f5fb9-8f46-4654-929c-6542fdefde03&pixel=AShxKPRvcP-0lC-dHS3Zm&createdAt=2026-01-05T21%3A18%3A37.002Z&clickId=&version=3.0.0-3p",
+      "type": "img",
+      "ipinfo": {
+        "domain": "pixel.dcard.tw",
+        "ip": "104.19.248.7",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://actions.zotabox.com/geoip/check",
@@ -345,30 +366,30 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://www.facebook.com/tr/?id=344792162347738&ev=PageView&dl=https%3A%2F%2Fwww.bonnyread.com.tw%2F&rl=&if=false&ts=1764868897502&sw=1280&sh=720&v=2.9.244&r=stable&a=plShopline&ec=0&o=4254&fbp=fb.2.1764868897499.14493435693951518&cs_est=true&ler=empty&bfs[b]=1&pmd[title]=BONNY%20%26%20READ%20%E9%A3%BE%E5%93%81%20%7C%20%E8%A9%AE%E9%87%8B%E8%B3%AA%E6%84%9F%E7%A9%BF%E6%90%AD%20%E9%A3%BE%E5%93%81%E5%93%81%E7%89%8C&pmd[description]=BONNY%20%26amp%3B%20READ%E9%A3%BE%E5%93%81%EF%BC%8C%E6%AF%8F%E9%80%B1%E6%96%B0%E5%93%81%E4%B8%8A%E6%9E%B6%EF%BC%8C%E6%AF%AB%E4%B8%8D%E8%B2%BB%E5%8A%9B%E6%93%81%E6%9C%89%E6%B5%81%E8%A1%8C%E6%99%82%E5%B0%9A%E3%80%82%E6%88%92%E6%8C%87%3B%20%E9%A0%85%E9%8D%8A%3B%20%E8%80%B3%E7%92%B0%3B%20%E6%89%8B%E9%8D%8A%3B%20%E9%A3%BE%E5%93%81%E9%85%8D%E4%BB%B6%3B%20%E6%88%90%E7%AB%8B%E9%A3%BE%E5%93%81%E5%93%81%E8%B3%AA%E6%AA%A2%E9%A9%97%E5%AE%A4%EF%BC%8C%E7%B6%93%E9%81%8E%E5%9A%B4%E6%A0%BC%E7%9A%84%E6%8C%91%E9%81%B8%E5%92%8C%E5%93%81%E8%B3%AA%E7%9A%84%E6%8A%8A%E9%97%9C%EF%BC%8C%20%E8%AE%93%E7%BE%8E%E9%BA%97%E8%88%87%E8%B3%AA%E6%84%9F%E5%8F%AF%E4%BB%A5%E4%B8%A6%E8%82%A9%E8%80%8C%E8%A1%8C%E3%80%82%E5%A0%85%E6%8C%81%E8%A6%81%E6%8A%8A%E5%84%AA%E8%B3%AA%E7%9A%84%E9%A3%BE%E5%93%81%E5%88%86%E4%BA%AB%E7%B5%A6%E6%AF%8F%E5%80%8B%E6%84%9B%E6%BC%82%E4%BA%AE%E7%9A%84%E5%A6%B3%E5%80%91%E3%80%82&pmd[keywords]=%E8%80%B3%E5%A4%BE%2C%E5%A4%BE%E5%BC%8F%E8%80%B3%E7%92%B0%2C%E5%B9%B3%E5%83%B9%E9%A3%BE%E5%93%81%2C%E9%9F%93%E5%9C%8B%E9%A3%BE%E5%93%81%2C%E9%A3%BE%E5%93%81%2C%E6%88%92%E6%8C%87%2C%E8%80%B3%E7%92%B0%2C%E9%A0%85%E9%8D%8A%2C%E6%89%8B%E9%8D%8A%2C%E9%A3%BE%E5%93%81%2C%E6%89%8B%E9%8F%88%2Cbr%20accessory&plt=7982.39999999851&it=1764868897307&coo=false&expv2[0]=pl1&expv2[1]=el3&expv2[2]=bc1&expv2[3]=mr2&rqm=GET",
+      "originalUrl": "https://track.omnichat.ai/restapi/v1/pixel/track?ecid=e6e57261-31f1-41c3-b604-f6cf8d5f20b7&p=Shopline&t=Bonny%20%26%20Read%20%E9%A3%BE%E5%93%81&bh=pageview&v=1.0&dl=https%3A%2F%2Fwww.bonnyread.com.tw%2F&dv=web_desktop&ssid=yi2hlbn5-mk1nxice.1767647917598.1767647917598",
       "type": "img",
       "ipinfo": {
-        "domain": "www.facebook.com",
-        "ip": "31.13.87.36",
-        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS32934 Facebook, Inc.",
-        "timezone": "Asia/Taipei"
+        "domain": "track.omnichat.ai",
+        "ip": "52.220.212.148",
+        "hostname": "ec2-52-220-212-148.ap-southeast-1.compute.amazonaws.com",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Singapore"
       },
-      "score": "O"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://stats-v2.zotabox.com/log",
       "type": "xmlhttprequest",
       "ipinfo": {
         "domain": "stats-v2.zotabox.com",
-        "ip": "104.26.12.201",
+        "ip": "172.67.75.122",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -376,15 +397,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://fonts.googleapis.com/css?family=Arvo:400|Bodoni+Moda:400|DM+Sans:400|Poppins:400|Hammersmith+One:400|Libre+Baskerville:400|Lexend+Giga:400|Ubuntu:400|Montserrat:400|Nunito:400|News+Cycle:400|Oswald:400|Roboto:400",
       "type": "link",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.204.42",
-        "hostname": "hkg07s38-in-f10.1e100.net",
+        "ip": "142.250.196.202",
+        "hostname": "nctsaa-ac-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -392,15 +413,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://dee.myshopline.com/html/main_dee.html?env=pro&appCode=m3tdgo&sceneCode=s4ce61&originCode=dee&bizFactors=%7B%22b_ap%22%3A-1%2C%22b_ce%22%3A1%2C%22s_sr%22%3A%221280%2C720%22%7D&bizOrigin=%7B%22oi-o%22%3A%22www.bonnyread.com.tw%22%2C%22oi-pn%22%3A%22%2F%22%2C%22biz-v%22%3A%22a0.5.8%22%7D&bizTime=1764868897954",
+      "originalUrl": "https://dee.myshopline.com/html/main_dee.html?env=pro&appCode=m3tdgo&sceneCode=s4ce61&originCode=dee&bizFactors=%7B%22b_ap%22%3A-1%2C%22b_ce%22%3A1%2C%22s_sr%22%3A%221280%2C720%22%7D&bizOrigin=%7B%22oi-sid%22%3A%22%22%2C%22oi-o%22%3A%22www.bonnyread.com.tw%22%2C%22oi-pn%22%3A%22%2F%22%2C%22biz-v%22%3A%22a0.5.9%22%7D&bizTime=1767647917776",
       "type": "iframe",
       "ipinfo": {
         "domain": "dee.myshopline.com",
-        "ip": "3.169.36.15",
-        "hostname": "server-3-169-36-15.tpe53.r.cloudfront.net",
+        "ip": "3.169.36.58",
+        "hostname": "server-3-169-36-58.tpe53.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -408,7 +429,7 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

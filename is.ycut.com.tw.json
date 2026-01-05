@@ -2,7 +2,7 @@
   "url": "https://is.ycut.com.tw",
   "canonicalURL": "https://is.ycut.com.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:11:26.681Z",
+  "timestamp": "2026-01-05T19:59:34.964Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 10,
   "uniqueDomains": 1,
   "test_results": {
-    "domestic": 1,
-    "cloud_w_domestic_node": 0,
-    "foreign": 0
+    "domestic": {
+      "cloud": 0,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 0,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -47,7 +52,7 @@
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     }
   ]
 }

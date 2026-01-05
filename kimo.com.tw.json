@@ -2,7 +2,7 @@
   "url": "https://kimo.com.tw",
   "canonicalURL": "https://kimo.com.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:46:48.824Z",
+  "timestamp": "2026-01-05T20:37:45.231Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,56 +22,61 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 291,
-  "uniqueDomains": 16,
+  "requestCount": 281,
+  "uniqueDomains": 15,
   "test_results": {
-    "domestic": 11,
-    "cloud_w_domestic_node": 4,
-    "foreign": 1
+    "domestic": {
+      "cloud": 9,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 6,
+      "direct": 0
+    }
   },
   "domainDetails": [
+    {
+      "originalUrl": "https://s.yimg.com/ss/analytics3.js",
+      "type": "link",
+      "ipinfo": {
+        "domain": "s.yimg.com",
+        "ip": "180.222.106.11",
+        "hostname": "e1.ycpi.vip.tpb.yahoo.com",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS38033 internet content provider",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
     {
       "originalUrl": "https://consent.cmp.oath.com/version/7.0.2/cmp.js",
       "type": "link",
       "ipinfo": {
         "domain": "consent.cmp.oath.com",
-        "ip": "108.156.22.46",
-        "hostname": "server-108-156-22-46.hel51.r.cloudfront.net",
-        "city": "Helsinki",
-        "region": "Uusimaa",
-        "country": "FI",
-        "loc": "60.1695,24.9354",
+        "ip": "108.139.10.82",
+        "hostname": "server-108-139-10-82.sfo5.r.cloudfront.net",
+        "city": "San Jose",
+        "region": "California",
+        "country": "US",
+        "loc": "37.3394,-121.8950",
         "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Europe/Helsinki"
+        "timezone": "America/Los_Angeles"
       },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://s.yimg.com/aaq/benji/benji-2.3.80.js",
-      "type": "link",
-      "ipinfo": {
-        "domain": "s.yimg.com",
-        "ip": "180.222.109.252",
-        "hostname": "e2-bmr.ycpi.vip.twb.yahoo.com",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS24376 Yahoo China Datacenter",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://guce.yahoo.com/v1/consentRecord?consentTypes=iab%2CiabCCPA%2Cgpp%2CgppSid",
       "type": "xmlhttprequest",
       "ipinfo": {
         "domain": "guce.yahoo.com",
-        "ip": "46.137.243.226",
-        "hostname": "ec2-46-137-243-226.ap-southeast-1.compute.amazonaws.com",
+        "ip": "52.220.55.87",
+        "hostname": "ec2-52-220-55-87.ap-southeast-1.compute.amazonaws.com",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",
@@ -79,7 +84,7 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://tw.buy.yahoo.com/smartbanner/ecm?site=fp&device=desktop&bucketName=frontpage-TW-zh-Hant-TW-def&spaceId=152963594",
@@ -95,10 +100,10 @@
         "org": "AS24506 Yahoo Global Holdings B.V. Taiwan Branch",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://udc.yahoo.com/v2/public/yql?yhlVer=2&yhlClient=rapid&yhlS=152963594&yhlCT=2&yhlBTMS=1764866720746&yhlClientVer=3.68.2&yhlRnd=gDc0QaR48QAQkCBs&yhlCompressed=0",
+      "originalUrl": "https://udc.yahoo.com/v2/public/yql?yhlVer=2&yhlClient=rapid&yhlS=152963594&yhlCT=2&yhlBTMS=1767645385897&yhlClientVer=3.68.4&yhlRnd=66SomTtgFOfaPjaB&yhlCompressed=0",
       "type": "xmlhttprequest",
       "ipinfo": {
         "domain": "udc.yahoo.com",
@@ -111,15 +116,15 @@
         "org": "AS24506 Yahoo Global Holdings B.V. Taiwan Branch",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-SV1HSD0SMT",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.66.72",
+        "hostname": "hkg12s27-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -127,7 +132,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://pbs.yahoo.com/cookie_sync",
@@ -143,7 +148,23 @@
         "org": "AS38033 internet content provider",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://c2shb-oao.ssp.yahoo.com/admax/bid/partners/YPBJS",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "c2shb-oao.ssp.yahoo.com",
+        "ip": "52.74.154.150",
+        "hostname": "ec2-52-74-154-150.ap-southeast-1.compute.amazonaws.com",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://prebid.media.net/rtb/prebid?cid=8CU2K123F",
@@ -159,47 +180,31 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://c2shb-oao.ssp.yahoo.com/admax/bid/partners/YPBJS",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "c2shb-oao.ssp.yahoo.com",
-        "ip": "18.139.199.46",
-        "hostname": "ec2-18-139-199-46.ap-southeast-1.compute.amazonaws.com",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://tw.yahoo.com/p.gif?beaconType=saready&ns_ready=3375&dcl_ready=1150&bucket=frontpage-TW-zh-Hant-TW-def",
+      "originalUrl": "https://tw.yahoo.com/p.gif?beaconType=saready&ns_ready=2971&dcl_ready=276&bucket=frontpage-TW-zh-Hant-TW-def",
       "type": "beacon",
       "ipinfo": {
         "domain": "tw.yahoo.com",
-        "ip": "180.222.106.11",
-        "hostname": "e1.ycpi.vip.tpb.yahoo.com",
+        "ip": "180.222.109.251",
+        "hostname": "e1-bmr.ycpi.vip.twb.yahoo.com",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
         "loc": "25.0143,121.4672",
-        "org": "AS38033 internet content provider",
+        "org": "AS24376 Yahoo China Datacenter",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://sb.scorecardresearch.com/p?c14=-1&c5=152963594&c1=2&c2=7241469&c7=https%3A%2F%2Ftw.yahoo.com%2F&c8=Yahoo%E5%A5%87%E6%91%A9&c9=&gdpr=0&gdpr_consent=&cs_ucfr=1&cs_fpdm=*null&cs_fpdt=*null&cs_fpid=Lo4BSb-YjuP3Rc_pux71IlmxYL9Q4ebgqCd5DfUyMN0&cs_fpit=c&ns_c=UTF-8&ns__t=1764866722184",
+      "originalUrl": "https://sb.scorecardresearch.com/p?c14=-1&c5=152963594&c1=2&c2=7241469&c7=https%3A%2F%2Ftw.yahoo.com%2F&c8=Yahoo%E5%A5%87%E6%91%A9&c9=&gdpr=0&gdpr_consent=&cs_ucfr=1&cs_fpdm=*null&cs_fpdt=*null&cs_fpid=0NYl1khAsJl4wolvCtbFfXHwIwXMxJVMgXlwcz83iTQ&cs_fpit=c&ns_c=UTF-8&ns__t=1767645386389",
       "type": "img",
       "ipinfo": {
         "domain": "sb.scorecardresearch.com",
-        "ip": "3.169.137.63",
-        "hostname": "server-3-169-137-63.tpe54.r.cloudfront.net",
+        "ip": "3.169.137.94",
+        "hostname": "server-3-169-137-94.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -207,46 +212,30 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://ncp-gw-frontpage.media.yahoo.com/api/v1/gql/stream_view?bucketId=frontpage-TW-zh-Hant-TW-def&device=desktop&id=main-stream&imageFormat=WEBP&lang=zh-Hant-TW&region=TW&site=frontpage&version=v1&clientId=abu-web&count=200&imageTags=498x280&namespace=abu&snippetCount=20",
       "type": "fetch",
       "ipinfo": {
         "domain": "ncp-gw-frontpage.media.yahoo.com",
-        "ip": "180.222.102.169",
-        "hostname": "media-router-api71.prod.media.vip.tp2.yahoo.com",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS24506 Yahoo Global Holdings B.V. Taiwan Branch",
-        "timezone": "Asia/Taipei"
+        "ip": "202.165.107.53",
+        "hostname": "media-router-api71.prod.media.vip.sg3.yahoo.com",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS56173 internet content provider",
+        "timezone": "Asia/Singapore"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://video-api.yql.yahoo.com/v1/video/sapi/streams/a1e15319-3aea-45d7-93e5-13e4f8fba106?srid=4157414219&protocol=http&format=m3u8%2Cmp4%2Cwebm&rt=html&devtype=desktop&offnetwork=false&plid=89454121-3faa-480f-884a-8d422a7b2fa5&region=TW&site=frontpage&expb=frontpage-TW-zh-Hant-TW-def&expn=sidekicktvTW&bckt=Treatment_Oath_Player&lang=zh-Hant-TW&width=272&height=153&resize=true&ps=14xpspd6&autoplay=true&image_sizes=&excludePS=true&isDockable=0&acctid=&synd=&pspid=152963594&plidl=&topic=&pver=1.14.59&try=1&failover_count=0&ads=ima&ad.pl=up&ad.pd=&ad.pt=home&ad.pct=&ad.pg_name=&ad.ver=&evp=bcp&hlspre=false&ad.plseq=1&pblob=bucket%3Afrontpage-TW-zh-Hant-TW-def%3Blu%3A0&gdpr=false&iabconsent=&usprv=1---&gpp=DBAA&gppSid=-1",
-      "type": "xmlhttprequest",
-      "ipinfo": {
-        "domain": "video-api.yql.yahoo.com",
-        "ip": "180.222.106.12",
-        "hostname": "e2.ycpi.vip.tpb.yahoo.com",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS38033 internet content provider",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://tsdtocl.com/",
       "type": "iframe",
       "ipinfo": {
         "domain": "tsdtocl.com",
-        "ip": "151.101.1.44",
+        "ip": "151.101.193.44",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -254,15 +243,31 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "X"
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://video-api.yql.yahoo.com/v1/video/sapi/streams/4d51f0f2-dee4-41d8-a4ff-45017135da61?srid=3576446393&protocol=http&format=m3u8%2Cmp4%2Cwebm&rt=html&devtype=desktop&offnetwork=false&plid=e635b9d3-d654-47f2-8a14-440a7bf3d5fe&region=TW&site=frontpage&expb=frontpage-TW-zh-Hant-TW-def&expn=sidekicktvTW&bckt=Treatment_Oath_Player&lang=zh-Hant-TW&width=272&height=153&resize=true&ps=1jnkmelu&autoplay=true&image_sizes=&excludePS=true&isDockable=0&acctid=&synd=&pspid=152963594&plidl=&topic=&pver=1.14.59&try=1&failover_count=0&ads=ima&ad.pl=up&ad.pd=&ad.pt=home&ad.pct=&ad.pg_name=&ad.ver=&evp=bcp&hlspre=false&ad.plseq=1&pblob=bucket%3Afrontpage-TW-zh-Hant-TW-def%3Blu%3A0&gdpr=false&iabconsent=&usprv=1---&gpp=DBAA&gppSid=-1",
+      "type": "xmlhttprequest",
+      "ipinfo": {
+        "domain": "video-api.yql.yahoo.com",
+        "ip": "180.222.109.251",
+        "hostname": "e1-bmr.ycpi.vip.twb.yahoo.com",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS24376 Yahoo China Datacenter",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://hbx.media.net/checksync.php?cid=8CUEHS6F9&cs=87&type=mpbc&cv=37&vsSync=1&uspstring=1---&gdpr=0&gdprstring=&gpp=DBAA&gpp_sid=-1&redirect=https%3A%2F%2Fpbs.yahoo.com%2Fsetuid%3Fbidder%3Dmedianet%26gdpr%3D0%26gdpr_consent%3D%26gpp%3DDBAA%26gpp_sid%3D-1%26f%3Db%26uid%3D%3Cvsid%3E",
       "type": "iframe",
       "ipinfo": {
         "domain": "hbx.media.net",
-        "ip": "23.39.60.28",
-        "hostname": "a23-39-60-28.deploy.static.akamaitechnologies.com",
+        "ip": "23.220.196.27",
+        "hostname": "a23-220-196-27.deploy.static.akamaitechnologies.com",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -270,23 +275,7 @@
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://www.google.com/recaptcha/api2/aframe",
-      "type": "iframe",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.196.196",
-        "hostname": "nctsaa-ac-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

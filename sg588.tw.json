@@ -2,7 +2,7 @@
   "url": "https://sg588.tw",
   "canonicalURL": "https://sg588.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:42:03.098Z",
+  "timestamp": "2026-01-05T20:26:36.398Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 60,
+  "requestCount": 61,
   "uniqueDomains": 1,
   "test_results": {
-    "domestic": 0,
-    "cloud_w_domestic_node": 0,
-    "foreign": 1
+    "domestic": {
+      "cloud": 0,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 0,
+      "direct": 1
+    }
   },
   "domainDetails": [
     {
@@ -46,7 +51,7 @@
         "org": "AS133861 SonderCloud Limited",
         "timezone": "America/Los_Angeles"
       },
-      "score": "X"
+      "category": "foreign/direct"
     }
   ]
 }

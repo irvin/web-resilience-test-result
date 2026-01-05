@@ -2,7 +2,7 @@
   "url": "https://shopeemobile.com",
   "canonicalURL": "https://shopeemobile.com",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:41:26.182Z",
+  "timestamp": "2026-01-05T19:44:09.868Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,40 +22,45 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 126,
-  "uniqueDomains": 9,
+  "requestCount": 103,
+  "uniqueDomains": 7,
   "test_results": {
-    "domestic": 8,
-    "cloud_w_domestic_node": 0,
-    "foreign": 1
+    "domestic": {
+      "cloud": 3,
+      "direct": 2
+    },
+    "foreign": {
+      "cloud": 0,
+      "direct": 2
+    }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/bundle.e6e2a9fbb5815bb0.2023.css",
+      "originalUrl": "https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/bundle.8d2938e07caf8fb9.2023.css",
       "type": "link",
       "ipinfo": {
         "domain": "deo.shopeemobile.com",
-        "ip": "203.69.138.208",
-        "hostname": "203-69-138-208.hinet-ip.hinet.net",
-        "city": "New Taipei City",
+        "ip": "203.69.138.209",
+        "hostname": "203-69-138-209.hinet-ip.hinet.net",
+        "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
-        "loc": "25.0620,121.4570",
+        "loc": "25.0143,121.4672",
         "org": "AS20940 Akamai International B.V.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-WJZQSJF",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.77.8",
-        "hostname": "nctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.66.72",
+        "hostname": "hkg12s27-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -63,10 +68,10 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fshopee.tw%2F&scrsrc=www.googletagmanager.com&rnd=464571331.1764862883&auid=1912855360.1764862883&navt=n&npa=0&gtm=45He5c21h1v77691473za200zd77691473xea&gcs=G1--&gcd=13l3l3l3l5l1&dma=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115938466~115938469~116184927~116184929~116217636~116217638~116518834&tft=1764862883237&tfd=903&apve=1&apvf=f",
+      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fshopee.tw%2F&scrsrc=www.googletagmanager.com&rnd=1458067481.1767642247&auid=1406606193.1767642247&navt=n&npa=0&gtm=45He5cb0v77691473za200zd77691473xea&gcs=G1--&gcd=13l3l3l3l5l1&dma=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115583767~115938465~115938468~116184927~116184929~116251938~116251940&tft=1767642246687&tfd=1006&apve=1&apvf=f",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
@@ -79,7 +84,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
@@ -95,29 +100,14 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://shopee.tw/api/v4/platform/get_ft_v2?compress=true",
       "type": "fetch",
       "ipinfo": {
         "domain": "shopee.tw",
-        "ip": "103.127.231.0",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS131634 MOBA Private Limited Taiwan Branch",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://df.infra.shopee.tw/v2/shpsec/web/report",
-      "type": "xmlhttprequest",
-      "ipinfo": {
-        "domain": "df.infra.shopee.tw",
-        "ip": "143.92.75.109",
+        "ip": "147.136.172.131",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",
@@ -125,14 +115,29 @@
         "org": "AS138341 SHOPEE SINGAPORE PRIVATE LIMITED",
         "timezone": "Asia/Singapore"
       },
-      "score": "X"
+      "category": "foreign/direct"
+    },
+    {
+      "originalUrl": "https://df.infra.shopee.tw/v2/shpsec/web/report",
+      "type": "xmlhttprequest",
+      "ipinfo": {
+        "domain": "df.infra.shopee.tw",
+        "ip": "143.92.85.12",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS138341 SHOPEE SINGAPORE PRIVATE LIMITED",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/direct"
     },
     {
       "originalUrl": "https://content.garena.com/shopee/track_config/split_by_market_config.json",
       "type": "fetch",
       "ipinfo": {
         "domain": "content.garena.com",
-        "ip": "203.69.81.49",
+        "ip": "210.71.227.122",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -140,39 +145,7 @@
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://www.facebook.com/tr/?id=503280033161781&ev=PageView&dl=https%3A%2F%2Fshopee.tw%2F&rl=&if=false&ts=1764862885000&sw=1280&sh=720&v=2.9.243&r=stable&ec=0&o=4254&fbp=fb.1.1764862884988.332999829410844408&ler=empty&bfs[b]=1&pmd[title]=%E8%9D%A6%E7%9A%AE%E8%B3%BC%E7%89%A9%20%7C%20%09%E8%8A%B1%E5%BE%97%E6%9B%B4%E5%B0%91%E8%B2%B7%E5%BE%97%E6%9B%B4%E5%A5%BD&plt=837.6000000014901&it=1764862884468&coo=false&expv2[0]=pl0&expv2[1]=el3&expv2[2]=bc1&expv2[3]=mr2&rqm=GET",
-      "type": "img",
-      "ipinfo": {
-        "domain": "www.facebook.com",
-        "ip": "31.13.87.36",
-        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS32934 Facebook, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-E1H7XE0312&cid=1359224851.1764862886&gtm=45je5c21h1v9111305889z877691473za200zb77691473zd77691473&aip=1&dma=0&gcs=G1--&gcd=13l3l3l3l5l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115616986~115938466~115938468~116184927~116184929~116217636~116217638~116518834&z=1120108828",
-      "type": "img",
-      "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "domestic/direct"
     }
   ]
 }

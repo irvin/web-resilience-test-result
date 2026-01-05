@@ -2,7 +2,7 @@
   "url": "https://cardu.com.tw",
   "canonicalURL": "https://cardu.com.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:27:17.516Z",
+  "timestamp": "2026-01-05T20:09:37.725Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,23 +22,44 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 218,
+  "requestCount": 209,
   "uniqueDomains": 15,
   "test_results": {
-    "domestic": 11,
-    "cloud_w_domestic_node": 3,
-    "foreign": 1
+    "domestic": {
+      "cloud": 9,
+      "direct": 2
+    },
+    "foreign": {
+      "cloud": 4,
+      "direct": 0
+    }
   },
   "domainDetails": [
+    {
+      "originalUrl": "https://www.cardu.com.tw/vendor/bootstrap/css/bootstrap.min.css",
+      "type": "link",
+      "ipinfo": {
+        "domain": "www.cardu.com.tw",
+        "ip": "3.169.36.99",
+        "hostname": "server-3-169-36-99.tpe53.r.cloudfront.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
     {
       "originalUrl": "https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css",
       "type": "link",
       "ipinfo": {
         "domain": "code.jquery.com",
-        "ip": "151.101.2.137",
+        "ip": "151.101.194.137",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -46,30 +67,14 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "X"
-    },
-    {
-      "originalUrl": "https://www.cardu.com.tw/vendor/bootstrap/css/bootstrap.min.css",
-      "type": "link",
-      "ipinfo": {
-        "domain": "www.cardu.com.tw",
-        "ip": "3.169.36.128",
-        "hostname": "server-3-169-36-128.tpe53.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
       "type": "link",
       "ipinfo": {
         "domain": "cdnjs.cloudflare.com",
-        "ip": "104.17.24.14",
+        "ip": "104.17.25.14",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -77,15 +82,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://imgcloud.cardu.com.tw/201910/20201225/credit/30/Cardu20201225111992.png",
+      "originalUrl": "https://imgcloud.cardu.com.tw/201910/20220701/credit/18/Cardu20220701163251.png",
       "type": "img",
       "ipinfo": {
         "domain": "imgcloud.cardu.com.tw",
-        "ip": "3.169.137.70",
-        "hostname": "server-3-169-137-70.tpe54.r.cloudfront.net",
+        "ip": "3.169.137.88",
+        "hostname": "server-3-169-137-88.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -93,15 +98,15 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://apis.google.com/js/api.js",
       "type": "script",
       "ipinfo": {
         "domain": "apis.google.com",
-        "ip": "142.250.204.46",
-        "hostname": "hkg07s38-in-f14.1e100.net",
+        "ip": "142.250.198.78",
+        "hostname": "lctsaa-ab-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -109,15 +114,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-T20MHX87FQ",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -125,15 +130,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://kkpartners.kkday.com/iframe.init.1.0.js",
       "type": "script",
       "ipinfo": {
         "domain": "kkpartners.kkday.com",
-        "ip": "18.179.234.196",
-        "hostname": "ec2-18-179-234-196.ap-northeast-1.compute.amazonaws.com",
+        "ip": "18.179.64.26",
+        "hostname": "ec2-18-179-64-26.ap-northeast-1.compute.amazonaws.com",
         "city": "Tokyo",
         "region": "Tokyo",
         "country": "JP",
@@ -141,15 +146,15 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Tokyo"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://ad.cardu.com.tw/ad.htm?ap_pk=160&ids=ad160_0",
       "type": "script",
       "ipinfo": {
         "domain": "ad.cardu.com.tw",
-        "ip": "3.169.36.5",
-        "hostname": "server-3-169-36-5.tpe53.r.cloudfront.net",
+        "ip": "3.169.36.99",
+        "hostname": "server-3-169-36-99.tpe53.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -157,15 +162,15 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://fonts.googleapis.com/css?family=Roboto:700",
       "type": "css",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.204.42",
-        "hostname": "hkg07s38-in-f10.1e100.net",
+        "ip": "142.250.196.202",
+        "hostname": "nctsaa-ac-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -173,15 +178,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://adimgcloud.cardu.com.tw/ad_images/20251110103016-1.jpg",
+      "originalUrl": "https://adimgcloud.cardu.com.tw/ad_images/20251231112622-1.jpg",
       "type": "css",
       "ipinfo": {
         "domain": "adimgcloud.cardu.com.tw",
-        "ip": "3.169.121.57",
-        "hostname": "server-3-169-121-57.tpe53.r.cloudfront.net",
+        "ip": "3.169.121.37",
+        "hostname": "server-3-169-121-37.tpe53.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -189,7 +194,7 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcardu.tw%2F%3Flocale%3Dzh_TW&tabs=timeline&width=300&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=616626501755047",
@@ -205,7 +210,7 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://connect.facebook.net/zh_TW/sdk.js",
@@ -221,15 +226,15 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://accounts.google.com/o/oauth2/iframe#origin=https%3A%2F%2Fwww.cardu.com.tw&rpcToken=592878583.632373&clearCache=1&supportBlocked3PCookies=1",
+      "originalUrl": "https://accounts.google.com/o/oauth2/iframe#origin=https%3A%2F%2Fwww.cardu.com.tw&rpcToken=218579294.9228733&clearCache=1&supportBlocked3PCookies=1",
       "type": "iframe",
       "ipinfo": {
         "domain": "accounts.google.com",
-        "ip": "108.177.125.84",
-        "hostname": "tp-in-f84.1e100.net",
+        "ip": "64.233.189.84",
+        "hostname": "tl-in-f84.1e100.net",
         "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
@@ -237,7 +242,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://cdn.klook.com/s/dist_web/klook-affiliate-front/static/widget/iframe/iframe-init-v1.0.10.js",
@@ -252,23 +257,23 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://fundingchoicesmessages.google.com/i/ca-pub-9437131422990685?href=https%3A%2F%2Fwww.cardu.com.tw&ers=2",
       "type": "script",
       "ipinfo": {
         "domain": "fundingchoicesmessages.google.com",
-        "ip": "142.250.66.78",
-        "hostname": "hkg12s27-in-f14.1e100.net",
-        "city": "Taipei",
-        "region": "Taiwan",
+        "ip": "142.250.196.206",
+        "hostname": "nctsaa-ac-in-f14.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "25.0143,121.4672",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

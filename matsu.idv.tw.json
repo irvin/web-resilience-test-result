@@ -2,7 +2,7 @@
   "url": "https://matsu.idv.tw",
   "canonicalURL": "https://matsu.idv.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:40:53.156Z",
+  "timestamp": "2026-01-05T20:17:17.037Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 222,
+  "requestCount": 196,
   "uniqueDomains": 9,
   "test_results": {
-    "domestic": 7,
-    "cloud_w_domestic_node": 2,
-    "foreign": 0
+    "domestic": {
+      "cloud": 7,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 2,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -47,23 +52,7 @@
         "org": "AS63949 Akamai Connected Cloud",
         "timezone": "Asia/Tokyo"
       },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://www.youtube.com/embed/REZzCJxjUrY?si=8YcOWFhCLABJ46Vi",
-      "type": "iframe",
-      "ipinfo": {
-        "domain": "www.youtube.com",
-        "ip": "142.250.196.206",
-        "hostname": "nctsaa-ac-in-f14.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://m.vpon.com/sdk/vpadn-sdk.js",
@@ -79,7 +68,7 @@
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.google.com/jsapi",
@@ -95,7 +84,23 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.youtube.com/embed/WTw9WXqdgvc",
+      "type": "iframe",
+      "ipinfo": {
+        "domain": "www.youtube.com",
+        "ip": "142.250.196.206",
+        "hostname": "nctsaa-ac-in-f14.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "http://fonts.googleapis.com/css?family=Open+Sans:700,400,300",
@@ -111,14 +116,14 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css",
       "type": "css",
       "ipinfo": {
         "domain": "netdna.bootstrapcdn.com",
-        "ip": "104.18.11.207",
+        "ip": "104.18.10.207",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -126,15 +131,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://fundingchoicesmessages.google.com/i/37275962?ers=3",
       "type": "script",
       "ipinfo": {
         "domain": "fundingchoicesmessages.google.com",
-        "ip": "142.250.198.78",
-        "hostname": "lctsaa-ab-in-f14.1e100.net",
+        "ip": "142.250.196.206",
+        "hostname": "nctsaa-ac-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -142,13 +147,29 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://cse.google.com/cse.js?cx=014666550212532079306:skupnu-kknk",
       "type": "script",
       "ipinfo": {
         "domain": "cse.google.com",
+        "ip": "142.250.77.14",
+        "hostname": "nctsaa-ab-in-f14.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://clients1.google.com/generate_204",
+      "type": "img",
+      "ipinfo": {
+        "domain": "clients1.google.com",
         "ip": "142.250.198.78",
         "hostname": "lctsaa-ab-in-f14.1e100.net",
         "city": "Banqiao",
@@ -158,23 +179,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://clients1.google.com/generate_204",
-      "type": "img",
-      "ipinfo": {
-        "domain": "clients1.google.com",
-        "ip": "142.250.66.78",
-        "hostname": "hkg12s27-in-f14.1e100.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

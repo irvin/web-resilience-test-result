@@ -2,7 +2,7 @@
   "url": "https://journey.tw",
   "canonicalURL": "https://journey.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T17:08:53.864Z",
+  "timestamp": "2026-01-05T20:49:43.934Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 73,
   "uniqueDomains": 8,
   "test_results": {
-    "domestic": 3,
-    "cloud_w_domestic_node": 2,
-    "foreign": 3
+    "domestic": {
+      "cloud": 3,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 3,
+      "direct": 2
+    }
   },
   "domainDetails": [
     {
@@ -46,7 +51,7 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css",
@@ -61,15 +66,15 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "X"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://fonts.googleapis.com/css?family=Montserrat%3A400%2C700%7COpen%2BSans%3A400italic%2C700italic%2C400%2C700&display=swap",
       "type": "link",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.204.42",
-        "hostname": "hkg07s38-in-f10.1e100.net",
+        "ip": "142.250.198.74",
+        "hostname": "lctsaa-ab-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -77,25 +82,10 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://journey.tw/wp-content/uploads/2025/08/20250819152108_0_54596a.jpg",
-      "type": "link",
-      "ipinfo": {
-        "domain": "journey.tw",
-        "ip": "104.21.14.161",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://c0.wp.com/c/6.8.3/wp-includes/css/dashicons.min.css",
+      "originalUrl": "https://c0.wp.com/c/6.8.3/wp-includes/css/dist/block-library/style.min.css",
       "type": "link",
       "ipinfo": {
         "domain": "c0.wp.com",
@@ -108,11 +98,11 @@
         "org": "AS2635 Automattic, Inc",
         "timezone": "America/Los_Angeles"
       },
-      "score": "X"
+      "category": "foreign/direct"
     },
     {
-      "originalUrl": "https://i0.wp.com/journey.tw/wp-content/uploads/20200206212131_97.png?fit=1033%2C373&quality=99&ssl=1",
-      "type": "img",
+      "originalUrl": "https://i0.wp.com/journey.tw/wp-content/uploads/2025/12/20251206155312_0_a45430.jpg?fit=700%2C466&quality=99&ssl=1",
+      "type": "link",
       "ipinfo": {
         "domain": "i0.wp.com",
         "ip": "192.0.77.2",
@@ -124,15 +114,30 @@
         "org": "AS2635 Automattic, Inc",
         "timezone": "America/Los_Angeles"
       },
-      "score": "X"
+      "category": "foreign/direct"
+    },
+    {
+      "originalUrl": "https://journey.tw/wp-content/plugins/instagram-widget-by-wpzoom/dist/styles/library/swiper.css?ver=7.4.1",
+      "type": "link",
+      "ipinfo": {
+        "domain": "journey.tw",
+        "ip": "172.67.160.8",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-W6ML9MN",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.204.40",
+        "hostname": "hkg07s38-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -140,10 +145,10 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-34D08J2LV5&cid=1228495939.1764868133&gtm=45je5c30v890810521z879271156za200zb79271156zd79271156&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115583767~115616986~115938465~115938469~116184927~116184929~116217636~116217638&z=741827836",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-G0Y8KJ0SD5&cid=911016398.1767646183&gtm=45je5cb0h1v899975905z879271156za20gzb79271156zd79271156&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104573694~104684208~104684211~105391252~115583767~115938465~115938469~116184927~116184929~116251938~116251940&z=1239090654",
       "type": "img",
       "ipinfo": {
         "domain": "www.google.com.tw",
@@ -156,7 +161,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

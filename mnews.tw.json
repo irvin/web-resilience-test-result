@@ -2,7 +2,7 @@
   "url": "https://mnews.tw",
   "canonicalURL": "https://mnews.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:45:31.153Z",
+  "timestamp": "2026-01-05T20:35:48.853Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 110,
-  "uniqueDomains": 16,
+  "requestCount": 106,
+  "uniqueDomains": 15,
   "test_results": {
-    "domestic": 7,
-    "cloud_w_domestic_node": 6,
-    "foreign": 3
+    "domestic": {
+      "cloud": 7,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 8,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -47,30 +52,15 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://cdn.jsdelivr.net/npm/@miso.ai/client-sdk@1.11.4/dist/umd/miso.min.js",
-      "type": "link",
-      "ipinfo": {
-        "domain": "cdn.jsdelivr.net",
-        "ip": "151.101.193.229",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "score": "X"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-PK7VRFX",
       "type": "link",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.77.8",
+        "hostname": "nctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -78,31 +68,46 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://cdn.jsdelivr.net/npm/@miso.ai/client-sdk@1.11.4/dist/umd/miso.min.js",
+      "type": "link",
+      "ipinfo": {
+        "domain": "cdn.jsdelivr.net",
+        "ip": "151.101.1.229",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://www.youtube.com/iframe_api",
       "type": "script",
       "ipinfo": {
         "domain": "www.youtube.com",
-        "ip": "142.250.66.78",
-        "hostname": "hkg12s27-in-f14.1e100.net",
-        "city": "Taipei",
-        "region": "Taiwan",
+        "ip": "142.250.196.206",
+        "hostname": "nctsaa-ac-in-f14.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "25.0143,121.4672",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://sb.scorecardresearch.com/cs/CLIENT_ID/beacon.js",
       "type": "script",
       "ipinfo": {
         "domain": "sb.scorecardresearch.com",
-        "ip": "3.169.137.63",
-        "hostname": "server-3-169-137-63.tpe54.r.cloudfront.net",
+        "ip": "3.169.137.94",
+        "hostname": "server-3-169-137-94.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -110,10 +115,10 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://statics.mnews.tw/assets/images/cm7ncrxav008010pb65m6g8l0-mobile.jpg",
+      "originalUrl": "https://statics.mnews.tw/assets/images/cmiwizg2j002w10kt4b5g9f7o-mobile.png",
       "type": "img",
       "ipinfo": {
         "domain": "statics.mnews.tw",
@@ -126,15 +131,15 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://cpt.cyntelli.com/cpt.v2.min.js?key=ec9d577f75a86384e2df44d9c26f1ec861a1761d&t=1764866700000",
+      "originalUrl": "https://cpt.cyntelli.com/cpt.v2.min.js?key=ec9d577f75a86384e2df44d9c26f1ec861a1761d&t=1767645300000",
       "type": "script",
       "ipinfo": {
         "domain": "cpt.cyntelli.com",
-        "ip": "52.198.16.107",
-        "hostname": "ec2-52-198-16-107.ap-northeast-1.compute.amazonaws.com",
+        "ip": "35.73.88.150",
+        "hostname": "ec2-35-73-88-150.ap-northeast-1.compute.amazonaws.com",
         "city": "Tokyo",
         "region": "Tokyo",
         "country": "JP",
@@ -142,26 +147,26 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Tokyo"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://fundingchoicesmessages.google.com/i/128002626?ers=3",
-      "type": "script",
+      "originalUrl": "https://data.tryspot.app/thumbnails/e6561449-e628-48cd-bd96-09eb55a2882f.jpg",
+      "type": "img",
       "ipinfo": {
-        "domain": "fundingchoicesmessages.google.com",
-        "ip": "142.250.196.206",
-        "hostname": "nctsaa-ac-in-f14.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "domain": "data.tryspot.app",
+        "ip": "34.98.126.126",
+        "hostname": "126.126.98.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
       },
-      "score": "O"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-YZ07T9YJ6T&cid=1638748024.1764866728&gtm=45je5c21v877188499z8863736503za200zb863736503zd863736503&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115583767~115616986~115938466~115938468~116184927~116184929~116217636~116217638~116251938~116251940&z=2059288250",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-YZ07T9YJ6T&cid=215812984.1767645347&gtm=45je5cb0v877188499z8863736503za20gzb863736503zd863736503&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115616986~115938466~115938468~116184927~116184929~116251938~116251940&z=2131702665",
       "type": "img",
       "ipinfo": {
         "domain": "www.google.com.tw",
@@ -174,7 +179,39 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://fundingchoicesmessages.google.com/i/128002626?ers=3",
+      "type": "script",
+      "ipinfo": {
+        "domain": "fundingchoicesmessages.google.com",
+        "ip": "142.250.66.78",
+        "hostname": "hkg12s27-in-f14.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://caesar-api.cyntelli.com/website/ec9d577f75a86384e2df44d9c26f1ec861a1761d.json?t=1767645300000",
+      "type": "xmlhttprequest",
+      "ipinfo": {
+        "domain": "caesar-api.cyntelli.com",
+        "ip": "35.73.88.150",
+        "hostname": "ec2-35-73-88-150.ap-northeast-1.compute.amazonaws.com",
+        "city": "Tokyo",
+        "region": "Tokyo",
+        "country": "JP",
+        "loc": "35.6895,139.6917",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Tokyo"
+      },
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://cdn.mgaru.dev/static/myGaruStandalone.js",
@@ -189,15 +226,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://cdn.prod.euid.eu/euidSecureSignal.js",
       "type": "script",
       "ipinfo": {
         "domain": "cdn.prod.euid.eu",
-        "ip": "3.169.121.112",
-        "hostname": "server-3-169-121-112.tpe53.r.cloudfront.net",
+        "ip": "3.169.121.105",
+        "hostname": "server-3-169-121-105.tpe53.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -205,31 +242,15 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://caesar-api.cyntelli.com/website/ec9d577f75a86384e2df44d9c26f1ec861a1761d.json?t=1764866700000",
-      "type": "xmlhttprequest",
-      "ipinfo": {
-        "domain": "caesar-api.cyntelli.com",
-        "ip": "52.198.16.107",
-        "hostname": "ec2-52-198-16-107.ap-northeast-1.compute.amazonaws.com",
-        "city": "Tokyo",
-        "region": "Tokyo",
-        "country": "JP",
-        "loc": "35.6895,139.6917",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Tokyo"
-      },
-      "score": "?"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.googletagservices.com/tag/js/gpt.js",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagservices.com",
-        "ip": "142.250.196.194",
-        "hostname": "nctsaa-ac-in-f2.1e100.net",
+        "ip": "142.250.204.34",
+        "hostname": "hkg07s38-in-f2.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -237,15 +258,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://r.adgeek.net/10419/tr/60650?ev=PageView&evId=5707afd7-ed39-4f14-a8af-013749324488&hit=1764866728831&pi%5Burl%5D=https%3A%2F%2Fwww.mnews.tw%2F&pi%5Breferrer%5D=&pi%5Btitle%5D=%E9%8F%A1%E6%96%B0%E8%81%9E&i%5Buid%5D=8c2627c0-1dbe-4b31-949d-10dfdd76051e&p%5Bwebsite_id%5D=514",
+      "originalUrl": "https://r.adgeek.net/10419/tr/60650?ev=PageView&evId=4cfad70d-ec84-431a-9ad4-14303d1ab2a6&hit=1767645347219&pi%5Burl%5D=https%3A%2F%2Fwww.mnews.tw%2F&pi%5Breferrer%5D=&pi%5Btitle%5D=%E9%8F%A1%E6%96%B0%E8%81%9E&i%5Buid%5D=f956b4b9-eb71-4d92-bcb2-d9532536d808&p%5Bwebsite_id%5D=514",
       "type": "img",
       "ipinfo": {
         "domain": "r.adgeek.net",
-        "ip": "54.65.167.254",
-        "hostname": "ec2-54-65-167-254.ap-northeast-1.compute.amazonaws.com",
+        "ip": "18.177.255.254",
+        "hostname": "ec2-18-177-255-254.ap-northeast-1.compute.amazonaws.com",
         "city": "Tokyo",
         "region": "Tokyo",
         "country": "JP",
@@ -253,37 +274,7 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Tokyo"
       },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://ident.mygaru.com/v2/id?partner_id=abd6fad8-5220-4364-8fd1-052f78594be6",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "ident.mygaru.com",
-        "ip": "192.145.111.2",
-        "city": "Kyiv",
-        "region": "Kyiv City",
-        "country": "UA",
-        "loc": "50.4547,30.5238",
-        "org": "AS207522 myGaru global",
-        "timezone": "Europe/Kyiv"
-      },
-      "score": "X"
-    },
-    {
-      "originalUrl": "https://tracking.mygaru.com/ident/?domain=www.mnews.tw&otp=0&ttems=618.4&i=myg-standalone&resource=script&type=script&conn_id=null&conn_req_num=null&dns=155.1&tcp=145.99999999999997&tls=155.4&ttfb=153.4&transfer=1.8&redirect=0&blocked=0&total=618.4&fromCache=false",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "tracking.mygaru.com",
-        "ip": "192.145.111.3",
-        "city": "Kyiv",
-        "region": "Kyiv City",
-        "country": "UA",
-        "loc": "50.4547,30.5238",
-        "org": "AS207522 myGaru global",
-        "timezone": "Europe/Kyiv"
-      },
-      "score": "X"
+      "category": "foreign/cloud"
     }
   ]
 }

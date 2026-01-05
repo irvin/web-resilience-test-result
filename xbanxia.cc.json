@@ -2,7 +2,7 @@
   "url": "https://xbanxia.cc",
   "canonicalURL": "https://xbanxia.cc",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:36:27.927Z",
+  "timestamp": "2026-01-05T19:39:03.678Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 26,
-  "uniqueDomains": 4,
+  "requestCount": 21,
+  "uniqueDomains": 3,
   "test_results": {
-    "domestic": 0,
-    "cloud_w_domestic_node": 2,
-    "foreign": 2
+    "domestic": {
+      "cloud": 0,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 3,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -38,7 +43,7 @@
       "type": "link",
       "ipinfo": {
         "domain": "www.xbanxia.cc",
-        "ip": "104.21.75.24",
+        "ip": "104.26.1.132",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -46,14 +51,14 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://faves.grow.me/main.js",
       "type": "script",
       "ipinfo": {
         "domain": "faves.grow.me",
-        "ip": "199.232.114.49",
+        "ip": "146.75.46.49",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",
@@ -61,14 +66,14 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "score": "X"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://image.xbanxia.cc/files/article/image/98/98232/98232s.jpg",
       "type": "img",
       "ipinfo": {
         "domain": "image.xbanxia.cc",
-        "ip": "104.21.75.24",
+        "ip": "104.26.1.132",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -76,22 +81,7 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://api.grow.me/sites/U2l0ZTpjOTNkNmE3Ny0xMTNiLTRjMDQtYmQ3ZC0wZDMyN2I3MzNkZmU=/config",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "api.grow.me",
-        "ip": "199.232.114.49",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "score": "X"
+      "category": "foreign/cloud"
     }
   ]
 }

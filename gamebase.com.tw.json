@@ -2,7 +2,7 @@
   "url": "https://gamebase.com.tw",
   "canonicalURL": "https://news.gamebase.com.tw/news.gamebase.com.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:42:27.258Z",
+  "timestamp": "2026-01-05T20:15:37.057Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 111,
+  "requestCount": 105,
   "uniqueDomains": 15,
   "test_results": {
-    "domestic": 10,
-    "cloud_w_domestic_node": 3,
-    "foreign": 2
+    "domestic": {
+      "cloud": 8,
+      "direct": 2
+    },
+    "foreign": {
+      "cloud": 5,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -47,7 +52,7 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://www.googletagservices.com/tag/js/gpt.js",
@@ -63,15 +68,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=AW-10888020617",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.66.72",
-        "hostname": "hkg12s27-in-f8.1e100.net",
+        "ip": "142.250.204.40",
+        "hostname": "hkg07s38-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -79,37 +84,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css",
-      "type": "link",
-      "ipinfo": {
-        "domain": "cdn.jsdelivr.net",
-        "ip": "151.101.1.229",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "score": "X"
-    },
-    {
-      "originalUrl": "https://unpkg.com/swiper@7/swiper-bundle.min.css",
-      "type": "link",
-      "ipinfo": {
-        "domain": "unpkg.com",
-        "ip": "104.18.0.22",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "score": "?"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/froala-editor/3.2.2/css/froala_style.min.css",
@@ -124,10 +99,40 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://connect.facebook.net/en_US/sdk.js",
+      "originalUrl": "https://unpkg.com/swiper@7/swiper-bundle.min.css",
+      "type": "link",
+      "ipinfo": {
+        "domain": "unpkg.com",
+        "ip": "104.18.1.22",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css",
+      "type": "link",
+      "ipinfo": {
+        "domain": "cdn.jsdelivr.net",
+        "ip": "151.101.1.229",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v8.0",
       "type": "script",
       "ipinfo": {
         "domain": "connect.facebook.net",
@@ -140,103 +145,22 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://api.gamebase.com.tw/api/advertising/getAdvertisingFull",
-      "type": "xmlhttprequest",
-      "ipinfo": {
-        "domain": "api.gamebase.com.tw",
-        "ip": "34.80.246.181",
-        "hostname": "181.246.80.34.bc.googleusercontent.com",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS396982 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://image.gamebase.com.tw/gb_tw/static//header/search.png",
-      "type": "img",
-      "ipinfo": {
-        "domain": "image.gamebase.com.tw",
-        "ip": "3.169.36.93",
-        "hostname": "server-3-169-36-93.tpe53.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://imasdk.googleapis.com/js/sdkloader/ima3.js",
+      "originalUrl": "https://platform.twitter.com/widgets.js",
       "type": "script",
       "ipinfo": {
-        "domain": "imasdk.googleapis.com",
-        "ip": "142.250.196.202",
-        "hostname": "nctsaa-ac-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "domain": "platform.twitter.com",
+        "ip": "146.75.44.157",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://fundingchoicesmessages.google.com/i/7682122?ers=3",
-      "type": "script",
-      "ipinfo": {
-        "domain": "fundingchoicesmessages.google.com",
-        "ip": "142.250.198.78",
-        "hostname": "lctsaa-ab-in-f14.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&tid=AW-1002156953&en=page_view&dl=https%3A%2F%2Fnews.gamebase.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=1927496294.1764866546&dt=%E9%A6%96%E9%A0%81%20%7C%20%E9%81%8A%E6%88%B2%E5%9F%BA%E5%9C%B0%20Gamebase&auid=485599779.1764866546&navt=n&npa=0&gtm=45be5c21v890920473za200zd890920473xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=102015666~103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115616985~115938465~115938468~115985661~116184927~116184929~116217636~116217638~116251935~116251937&tft=1764866545679&tfd=1064&apve=1&apvf=f",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.196.196",
-        "hostname": "nctsaa-ac-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/1002156953/?random=1764866545670&cv=11&fst=1764864000000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be5c21v890920473za200zd890920473xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=102015666~103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115616985~115938465~115938468~115985661~116184927~116184929~116217636~116217638~116251935~116251937&u_w=1280&u_h=720&url=https%3A%2F%2Fnews.gamebase.com.tw%2F&frm=0&tiba=%E9%A6%96%E9%A0%81%20%7C%20%E9%81%8A%E6%88%B2%E5%9F%BA%E5%9C%B0%20Gamebase&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=485599779.1764866546&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.1.0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=3&is_vtc=1&cid=CAQSmQEAwksa0UXQWRHrR8gtQVCBPvbaPbZEx6lP2ksqoI0-8vbS_ITY7E9OFA5PYeang3MLszFlvXGkxuVvWfA-cTVczW0-ViOh9E5nAOyPapcZWovTIMB3y4NNPrLSJLMjJeYhphsZ-_cMX7mgvdXJSZRAcGuyYCYcagr4vzynw4rPxWXDjtlSj0hzQ_yPt5XhjBZKdU7OvJS-Gv0&random=2630391386&rmt_tld=1&ipr=y",
-      "type": "img",
-      "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.198.67",
-        "hostname": "lctsaa-ab-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://www.instagram.com/embed.js",
@@ -252,22 +176,103 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://platform.twitter.com/widgets.js",
+      "originalUrl": "https://fundingchoicesmessages.google.com/i/7682122?ers=3",
       "type": "script",
       "ipinfo": {
-        "domain": "platform.twitter.com",
-        "ip": "199.232.112.157",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
+        "domain": "fundingchoicesmessages.google.com",
+        "ip": "142.250.198.78",
+        "hostname": "lctsaa-ab-in-f14.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
       },
-      "score": "X"
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com/measurement/conversion?random=1767644136275&cv=11&tid=G-EQ6KLQXZE8&fst=1767644136275&fmt=6&en=session_start&gtm=45je5cb0v887382548za20gxec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115583767~115938466~115938469~116184927~116184929~116251938~116251940&u_w=1280&u_h=720&url=https%3A%2F%2Fnews.gamebase.com.tw%2F&gacid=2116990028.1767644136&frm=0&tiba=%E9%A6%96%E9%A0%81%20%7C%20%E9%81%8A%E6%88%B2%E5%9F%BA%E5%9C%B0%20Gamebase&npa=0&pscdl=noapi&auid=2113752698.1767644136&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.250.198.68",
+        "hostname": "lctsaa-ab-in-f4.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-EQ6KLQXZE8&cid=2116990028.1767644136&gtm=45je5cb0v887382548za20g&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115583767~115938466~115938469~116184927~116184929~116251938~116251940&z=1158542221",
+      "type": "img",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.196.195",
+        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://api.gamebase.com.tw/api/advertising/getAdvertisingFull",
+      "type": "xmlhttprequest",
+      "ipinfo": {
+        "domain": "api.gamebase.com.tw",
+        "ip": "34.80.246.181",
+        "hostname": "181.246.80.34.bc.googleusercontent.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS396982 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://image.gamebase.com.tw/2011/header/logo/logo_01.png",
+      "type": "img",
+      "ipinfo": {
+        "domain": "image.gamebase.com.tw",
+        "ip": "3.169.36.93",
+        "hostname": "server-3-169-36-93.tpe53.r.cloudfront.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://imasdk.googleapis.com/js/sdkloader/ima3.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "imasdk.googleapis.com",
+        "ip": "142.250.196.202",
+        "hostname": "nctsaa-ac-in-f10.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     }
   ]
 }

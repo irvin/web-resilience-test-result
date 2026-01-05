@@ -1,9 +1,10 @@
 {
   "url": "https://ocac.gov.tw",
   "canonicalURL": "https://ocac.gov.tw",
-  "timestamp": "2025-12-04T16:44:53.278Z",
+  "httpStatus": null,
+  "timestamp": "2026-01-05T20:32:44.459Z",
   "testParameters": {
-    "customDNS": "168.95.1.1",
+    "customDNS": null,
     "useAdblock": true,
     "adblockUrls": [
       "https://filter.futa.gg/hosts_abp.txt",
@@ -12,25 +13,15 @@
     "useCache": true,
     "hasIPinfoToken": true
   },
-  "testingEnvironment": {
-    "ip": "220.132.212.194",
-    "hostname": "220-132-212-194.hinet-ip.hinet.net",
-    "city": "Banqiao",
-    "region": "Taipei",
-    "country": "TW",
-    "loc": "25.0143,121.4672",
-    "org": "AS3462 Data Communication Business Group",
-    "timezone": "Asia/Taipei",
-    "source": "json api",
-    "dnsServer": "168.95.1.1"
-  },
+  "testingEnvironment": null,
   "requestCount": 0,
   "uniqueDomains": 0,
   "testError": true,
-  "errorReason": "No domains after filtering",
+  "errorReason": "Error: Error",
   "errorDetails": {
-    "message": "所有域名都被 adblock 清單過濾掉了",
-    "totalRequests": 0,
-    "filteredDomains": 0
+    "message": "page.goto: net::ERR_SSL_UNRECOGNIZED_NAME_ALERT at https://ocac.gov.tw/\nCall log:\n\u001b[2m  - navigating to \"https://ocac.gov.tw/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "name": "Error",
+    "statusCode": null,
+    "stack": "page.goto: net::ERR_SSL_UNRECOGNIZED_NAME_ALERT at https://ocac.gov.tw/\nCall log:\n\u001b[2m  - navigating to \"https://ocac.gov.tw/\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at collectHARAndCanonical (/Users/Irvin/Coding/smc git/digital-service-resilience/no-global-connection-check.js:416:37)\n    at async checkWebsiteResilience (/Users/Irvin/Coding/smc git/digital-service-resilience/no-global-connection-check.js:957:25)\n    at async runWorker (/Users/Irvin/Coding/smc git/digital-service-resilience/batch-test.js:143:32)\n    at async batchTest (/Users/Irvin/Coding/smc git/digital-service-resilience/batch-test.js:217:5)"
   }
 }

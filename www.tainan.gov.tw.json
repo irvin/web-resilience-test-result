@@ -2,7 +2,7 @@
   "url": "https://www.tainan.gov.tw/",
   "canonicalURL": "https://www.tainan.gov.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:14:40.312Z",
+  "timestamp": "2026-01-05T20:01:57.051Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 87,
+  "requestCount": 88,
   "uniqueDomains": 3,
   "test_results": {
-    "domestic": 3,
-    "cloud_w_domestic_node": 0,
-    "foreign": 0
+    "domestic": {
+      "cloud": 3,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 0,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -38,8 +43,8 @@
       "type": "link",
       "ipinfo": {
         "domain": "www.tainan.gov.tw",
-        "ip": "3.169.121.122",
-        "hostname": "server-3-169-121-122.tpe53.r.cloudfront.net",
+        "ip": "3.169.121.106",
+        "hostname": "server-3-169-121-106.tpe53.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -47,10 +52,10 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://w3fs.tainan.gov.tw/001/Upload/1/relpic/12837/8782505/28ade6fc-63b6-4fad-a91f-9ceef23bdebc.jpg",
+      "originalUrl": "https://w3fs.tainan.gov.tw/001/Upload/1/relpic/12837/8785752/1de4da7c-377c-4883-8804-894a537e7ceb.jpg",
       "type": "img",
       "ipinfo": {
         "domain": "w3fs.tainan.gov.tw",
@@ -63,15 +68,15 @@
         "org": "AS7539 National Center for High-performance Computing",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=UA-1442181-2",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.77.8",
-        "hostname": "nctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.204.40",
+        "hostname": "hkg07s38-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -79,7 +84,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

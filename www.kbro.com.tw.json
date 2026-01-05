@@ -2,7 +2,7 @@
   "url": "https://www.kbro.com.tw/",
   "canonicalURL": "https://www.kbro.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:37:46.875Z",
+  "timestamp": "2026-01-05T20:29:04.600Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 144,
-  "uniqueDomains": 13,
+  "requestCount": 145,
+  "uniqueDomains": 14,
   "test_results": {
-    "domestic": 10,
-    "cloud_w_domestic_node": 3,
-    "foreign": 0
+    "domestic": {
+      "cloud": 8,
+      "direct": 2
+    },
+    "foreign": {
+      "cloud": 4,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -47,7 +52,7 @@
         "org": "AS38841 kbro CO. Ltd.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap",
@@ -63,14 +68,14 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://bat.bing.com/bat.js",
       "type": "script",
       "ipinfo": {
         "domain": "bat.bing.com",
-        "ip": "150.171.27.10",
+        "ip": "150.171.28.10",
         "city": "Redmond",
         "region": "Washington",
         "country": "US",
@@ -78,31 +83,15 @@
         "org": "AS8075 Microsoft Corporation",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://s.yimg.com/wi/ytc.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "s.yimg.com",
-        "ip": "180.222.109.251",
-        "hostname": "e1-bmr.ycpi.vip.twb.yahoo.com",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS24376 Yahoo China Datacenter",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-MDNXQ84",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.66.72",
+        "hostname": "hkg12s27-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -110,15 +99,31 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fwww.kbro.com.tw%2FK01%2F&scrsrc=www.googletagmanager.com&rnd=1758308395.1764866265&dt=%E5%87%B1%E6%93%98%E5%A4%A7%E5%AF%AC%E9%A0%BB%20%7C%20%E5%80%BC%E5%BE%97%E4%BF%A1%E8%B3%B4%E7%9A%84%E7%B6%B2%E8%B7%AF%E5%B0%88%E5%AE%B6%EF%BC%9A%E5%85%89%E7%BA%96%E4%B8%8A%E7%B6%B2%E3%80%81%E6%95%B8%E4%BD%8D%E6%9C%89%E7%B7%9A%E9%9B%BB%E8%A6%96%E3%80%81&auid=747169403.1764866265&navt=n&npa=0&gtm=45He5c21v79454470za200zd79454470xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115583767~115616986~115938465~115938469~116184927~116184929~116217636~116217638~116427529&tft=1764866265411&tfd=987&apve=1&apvf=f",
+      "originalUrl": "https://s.yimg.com/wi/ytc.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "s.yimg.com",
+        "ip": "180.222.106.11",
+        "hostname": "e1.ycpi.vip.tpb.yahoo.com",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS38033 internet content provider",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fwww.kbro.com.tw%2FK01%2F&scrsrc=www.googletagmanager.com&rnd=174670511.1767644942&dt=%E5%87%B1%E6%93%98%E5%A4%A7%E5%AF%AC%E9%A0%BB%20%7C%20%E5%80%BC%E5%BE%97%E4%BF%A1%E8%B3%B4%E7%9A%84%E7%B6%B2%E8%B7%AF%E5%B0%88%E5%AE%B6%EF%BC%9A%E5%85%89%E7%BA%96%E4%B8%8A%E7%B6%B2%E3%80%81%E6%95%B8%E4%BD%8D%E6%9C%89%E7%B7%9A%E9%9B%BB%E8%A6%96%E3%80%81&auid=1835766884.1767644942&navt=n&npa=0&gtm=45He5cb0v79454470za200zd79454470xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115616985~115938465~115938469~116184927~116184929~116251938~116251940&tft=1767644942500&tfd=983&apve=1&apvf=f",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.77.4",
-        "hostname": "nctsaa-ab-in-f4.1e100.net",
+        "ip": "142.250.198.68",
+        "hostname": "lctsaa-ab-in-f4.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -126,15 +131,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://d.line-scdn.net/n/line_tag/public/release/v1/lt.js",
       "type": "script",
       "ipinfo": {
         "domain": "d.line-scdn.net",
-        "ip": "23.39.61.163",
-        "hostname": "a23-39-61-163.deploy.static.akamaitechnologies.com",
+        "ip": "23.220.197.166",
+        "hostname": "a23-220-197-166.deploy.static.akamaitechnologies.com",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -142,15 +147,15 @@
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.techsolutions.com.tw/analytics.js?id=64c332c4ca2bf64c&d=https://adbert.techsolutions.com.tw&0.019920795159940496",
+      "originalUrl": "https://www.techsolutions.com.tw/analytics.js?id=64c332c4ca2bf64c&d=https://adbert.techsolutions.com.tw&0.9181928497225564",
       "type": "script",
       "ipinfo": {
         "domain": "www.techsolutions.com.tw",
-        "ip": "13.230.131.73",
-        "hostname": "ec2-13-230-131-73.ap-northeast-1.compute.amazonaws.com",
+        "ip": "13.114.139.107",
+        "hostname": "ec2-13-114-139-107.ap-northeast-1.compute.amazonaws.com",
         "city": "Tokyo",
         "region": "Tokyo",
         "country": "JP",
@@ -158,7 +163,7 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Tokyo"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://adc.tamedia.com.tw/tr/pixel.js",
@@ -173,10 +178,10 @@
         "org": "AS24158 Taiwan Mobile Co., Ltd.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/981534827/?random=1764866265371&cv=9&fst=1764864000000&num=1&label=0QkzCKbFwGYQ65CE1AM&guid=ON&resp=GooglemKTybQhCsO&eid=375603260%2C466465926%2C512247839%2C658953496&u_h=720&u_w=1280&ig=1&frm=0&url=https%3A%2F%2Fwww.kbro.com.tw%2FK01%2F&tiba=%E5%87%B1%E6%93%98%E5%A4%A7%E5%AF%AC%E9%A0%BB%20%7C%20%E5%80%BC%E5%BE%97%E4%BF%A1%E8%B3%B4%E7%9A%84%E7%B6%B2%E8%B7%AF%E5%B0%88%E5%AE%B6%EF%BC%9A%E5%85%89%E7%BA%96%E4%B8%8A%E7%B6%B2%E3%80%81%E6%95%B8%E4%BD%8D%E6%9C%89%E7%B7%9A%E9%9B%BB%E8%A6%96%E3%80%81&hn=www.googleadservices.com&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEAwksa0ftkpPZ8WyMWAnJzFSbgLmw5ifiW3HQJk5XNXlvCDx-RyTTxfiHipYEzHmKBuebVr-UfIvP21SdsfQo3Ty910SBPZBw0sPhVEDwYn8QhstB6rKeQQM1gQzl7QQup9Nr_4bDFCOyWmeMu6BN6j5muhFzAl8ZWKpvfPL1OtGKaGkbEtObKx89G&random=885096537&resp=GooglemKTybQhCsO&rmt_tld=1&ipr=y",
+      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/981534827/?random=1767644942462&cv=9&fst=1767643200000&num=1&label=0QkzCKbFwGYQ65CE1AM&guid=ON&resp=GooglemKTybQhCsO&eid=375603261%2C466465926%2C512247838%2C658953496&u_h=720&u_w=1280&ig=1&frm=0&url=https%3A%2F%2Fwww.kbro.com.tw%2FK01%2F&tiba=%E5%87%B1%E6%93%98%E5%A4%A7%E5%AF%AC%E9%A0%BB%20%7C%20%E5%80%BC%E5%BE%97%E4%BF%A1%E8%B3%B4%E7%9A%84%E7%B6%B2%E8%B7%AF%E5%B0%88%E5%AE%B6%EF%BC%9A%E5%85%89%E7%BA%96%E4%B8%8A%E7%B6%B2%E3%80%81%E6%95%B8%E4%BD%8D%E6%9C%89%E7%B7%9A%E9%9B%BB%E8%A6%96%E3%80%81&hn=www.googleadservices.com&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEAwksa0dAFU-azs-LHQJ6gwpfzNoBVjkn0CVNGHYvmf6uZVhKX5P3AlsHzJAheiM7TC8vNbAL2EBfavIkoZSkp7ygKTuEgD7p-kmkfENmCmSnP23BIDT49HGeTL21pluYTAlzJUinOtki6yuswBp1isSvaQLVk1L3axuQ-0NYng8VBJwWumFWDNiCU&random=2066573339&resp=GooglemKTybQhCsO&rmt_tld=1&ipr=y",
       "type": "img",
       "ipinfo": {
         "domain": "www.google.com.tw",
@@ -189,10 +194,10 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.facebook.com/tr/?id=323233295159703&ev=PageView&dl=https%3A%2F%2Fwww.kbro.com.tw%2FK01%2F&rl=&if=false&ts=1764866265875&cd[cv]=0&cd[pm]=0&cd[pp]=0&cd[l]=0&eid=01143c04902fd1f011a1a6fe336321b688&fbp=fb.2.1764866265875.1479632509",
+      "originalUrl": "https://www.facebook.com/tr/?id=1316264982232256&ev=PageView&dl=https%3A%2F%2Fwww.kbro.com.tw%2FK01%2F&rl=&if=false&ts=1767644942971&cd[cv]=0&cd[pm]=0&cd[pp]=0&cd[l]=0&eid=01dcf4a02c75eaf01188579e3989057147&fbp=fb.2.1767644942971.1449656147",
       "type": "img",
       "ipinfo": {
         "domain": "www.facebook.com",
@@ -205,15 +210,15 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://tag.techsolutions.com.tw/cookie?fp=5b2ba880487edf9db0fac0b3801943bd",
       "type": "fetch",
       "ipinfo": {
         "domain": "tag.techsolutions.com.tw",
-        "ip": "18.178.132.179",
-        "hostname": "ec2-18-178-132-179.ap-northeast-1.compute.amazonaws.com",
+        "ip": "13.114.139.107",
+        "hostname": "ec2-13-114-139-107.ap-northeast-1.compute.amazonaws.com",
         "city": "Tokyo",
         "region": "Tokyo",
         "country": "JP",
@@ -221,15 +226,15 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Tokyo"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://cdn.adbert.com.tw/sdk/analytics.js",
       "type": "xmlhttprequest",
       "ipinfo": {
         "domain": "cdn.adbert.com.tw",
-        "ip": "3.169.137.97",
-        "hostname": "server-3-169-137-97.tpe54.r.cloudfront.net",
+        "ip": "3.169.137.43",
+        "hostname": "server-3-169-137-43.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -237,7 +242,23 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://atag-analytics.techsolutions.com.tw/get_event?id=64c332c4ca2bf64c&d=https:%2F%2Fadbert.techsolutions.com.tw&_=0.7616831135528028",
+      "type": "xmlhttprequest",
+      "ipinfo": {
+        "domain": "atag-analytics.techsolutions.com.tw",
+        "ip": "18.182.140.81",
+        "hostname": "ec2-18-182-140-81.ap-northeast-1.compute.amazonaws.com",
+        "city": "Tokyo",
+        "region": "Tokyo",
+        "country": "JP",
+        "loc": "35.6895,139.6917",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Tokyo"
+      },
+      "category": "foreign/cloud"
     }
   ]
 }

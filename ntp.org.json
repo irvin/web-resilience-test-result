@@ -2,7 +2,7 @@
   "url": "https://ntp.org",
   "canonicalURL": "https://www.ntp.org/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:37:33.457Z",
+  "timestamp": "2026-01-05T19:40:21.316Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 19,
-  "uniqueDomains": 6,
+  "requestCount": 21,
+  "uniqueDomains": 7,
   "test_results": {
-    "domestic": 5,
-    "cloud_w_domestic_node": 0,
-    "foreign": 1
+    "domestic": {
+      "cloud": 5,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 0,
+      "direct": 2
+    }
   },
   "domainDetails": [
     {
@@ -38,8 +43,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.77.8",
-        "hostname": "nctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -47,15 +52,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,800,800i,900i&display=swap",
       "type": "link",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.198.74",
-        "hostname": "lctsaa-ab-in-f10.1e100.net",
+        "ip": "142.250.77.10",
+        "hostname": "nctsaa-ab-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -63,7 +68,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.ntp.org/scss/nwtime.min.33139960351778bcc5aee21b22a8ddf3.css",
@@ -72,22 +77,22 @@
         "domain": "www.ntp.org",
         "ip": "209.148.110.246",
         "hostname": "slb0.srs1.ntfo.org",
-        "city": "Pittsburg",
+        "city": "Oakland",
         "region": "California",
         "country": "US",
-        "loc": "38.0280,-121.8847",
+        "loc": "37.8044,-122.2708",
         "org": "AS46375 Sonic Telecom LLC",
         "timezone": "America/Los_Angeles"
       },
-      "score": "X"
+      "category": "foreign/direct"
     },
     {
       "originalUrl": "https://cse.google.com/cse.js?cx=bb3c9b3e375d856be",
       "type": "script",
       "ipinfo": {
         "domain": "cse.google.com",
-        "ip": "142.250.196.206",
-        "hostname": "nctsaa-ac-in-f14.1e100.net",
+        "ip": "142.250.66.78",
+        "hostname": "hkg12s27-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -95,15 +100,31 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/cse/static/element/f71e4ed980f4c082/cse_element__en.js?usqp=CAM%3D",
+      "originalUrl": "https://www.nwtime.org/images/support.jpg",
+      "type": "img",
+      "ipinfo": {
+        "domain": "www.nwtime.org",
+        "ip": "209.148.110.246",
+        "hostname": "slb0.srs1.ntfo.org",
+        "city": "Oakland",
+        "region": "California",
+        "country": "US",
+        "loc": "37.8044,-122.2708",
+        "org": "AS46375 Sonic Telecom LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/direct"
+    },
+    {
+      "originalUrl": "https://www.google.com/cse/static/element/f71e4ed980f4c082/cse_element__en.js?usqp=CAI%3D",
       "type": "script",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.204.36",
-        "hostname": "hkg07s38-in-f4.1e100.net",
+        "ip": "142.250.198.68",
+        "hostname": "lctsaa-ab-in-f4.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -111,15 +132,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://clients1.google.com/generate_204",
       "type": "img",
       "ipinfo": {
         "domain": "clients1.google.com",
-        "ip": "142.250.196.206",
-        "hostname": "nctsaa-ac-in-f14.1e100.net",
+        "ip": "142.250.204.46",
+        "hostname": "hkg07s38-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -127,7 +148,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

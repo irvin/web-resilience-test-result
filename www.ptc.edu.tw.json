@@ -2,7 +2,7 @@
   "url": "https://www.ptc.edu.tw/",
   "canonicalURL": "https://www.ptc.edu.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:17:42.454Z",
+  "timestamp": "2026-01-05T20:09:21.762Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,39 +22,45 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 160,
+  "requestCount": 155,
   "uniqueDomains": 2,
   "test_results": {
-    "domestic": 2,
-    "cloud_w_domestic_node": 0,
-    "foreign": 0
+    "domestic": {
+      "cloud": 2,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 0,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://www.ptc.edu.tw/pkg_nss/61cae0dbc136c11eba073841/css/basic.css",
+      "originalUrl": "https://www.ptc.edu.tw/pkg_nss/61cae0dbc136c11eba073841/css/theme.css",
       "type": "link",
       "ipinfo": {
         "domain": "www.ptc.edu.tw",
         "ip": "163.24.180.193",
-        "city": "Hengchun",
-        "region": "Taiwan",
+        "hostname": "www.adce.ptc.edu.tw",
+        "city": "Kaohsiung",
+        "region": "Takao",
         "country": "TW",
-        "loc": "22.0042,120.7439",
+        "loc": "22.6163,120.3133",
         "org": "AS1659 Taiwan Academic Network (TANet) Information Center",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap",
       "type": "css",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.204.42",
-        "hostname": "hkg07s38-in-f10.1e100.net",
+        "ip": "142.250.198.74",
+        "hostname": "lctsaa-ab-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -62,7 +68,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "url": "https://criteo.com",
   "canonicalURL": "https://www.criteo.com/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:38:46.738Z",
+  "timestamp": "2026-01-05T19:44:46.145Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 109,
-  "uniqueDomains": 9,
+  "requestCount": 160,
+  "uniqueDomains": 23,
   "test_results": {
-    "domestic": 2,
-    "cloud_w_domestic_node": 4,
-    "foreign": 3
+    "domestic": {
+      "cloud": 5,
+      "direct": 2
+    },
+    "foreign": {
+      "cloud": 14,
+      "direct": 2
+    }
   },
   "domainDetails": [
     {
@@ -46,14 +51,14 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "X"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css",
       "type": "link",
       "ipinfo": {
         "domain": "cdnjs.cloudflare.com",
-        "ip": "104.17.25.14",
+        "ip": "104.17.24.14",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -61,15 +66,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-M4Z343H",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -77,7 +82,23 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://tree-nation.com/images/tracking/label-co2-website-white-en.png",
+      "type": "img",
+      "ipinfo": {
+        "domain": "tree-nation.com",
+        "ip": "3.169.36.122",
+        "hostname": "server-3-169-36-122.tpe53.r.cloudfront.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css?ver=6.8.2",
@@ -92,38 +113,23 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "X"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://tree-nation.com/images/tracking/label-co2-website-white-en.png",
-      "type": "img",
+      "originalUrl": "https://web.cmp.usercentrics.eu/ui/loader.js",
+      "type": "script",
       "ipinfo": {
-        "domain": "tree-nation.com",
-        "ip": "3.169.36.7",
-        "hostname": "server-3-169-36-7.tpe53.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://criteo.com/wp-content/themes/criteo2017/fonts/graphik-lc/Graphik-Regular-Cy-Web.woff2",
-      "type": "css",
-      "ipinfo": {
-        "domain": "criteo.com",
-        "ip": "23.185.0.4",
-        "city": "San Francisco",
-        "region": "California",
+        "domain": "web.cmp.usercentrics.eu",
+        "ip": "34.149.254.14",
+        "hostname": "14.254.149.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
         "country": "US",
-        "loc": "37.7929,-122.4079",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "America/Los_Angeles"
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
       },
-      "score": "X"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://unpkg.com/web-vitals@2.1.0/dist/web-vitals.umd.js",
@@ -138,7 +144,7 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://cdn.dreamdata.cloud/scripts/identify-form/v1/identify-form.min.js",
@@ -154,14 +160,93 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+      "originalUrl": "https://v1.api.service.cmp.usercentrics.eu/latest/ruleSetData?id=oQCDaiX1ieAt_1",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "v1.api.service.cmp.usercentrics.eu",
+        "ip": "34.102.170.124",
+        "hostname": "124.170.102.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://app.usercentrics.eu/session/1px.png?settingsId=TFyHjq3Zhxu1Kh",
+      "type": "img",
+      "ipinfo": {
+        "domain": "app.usercentrics.eu",
+        "ip": "35.190.14.188",
+        "hostname": "188.14.190.35.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fwww.criteo.com%2F&scrsrc=www.googletagmanager.com&rnd=842421820.1767642283&dt=The%20Commerce%20Media%20Platform%20for%20the%20Open%20Internet%20%7C%20Criteo&auid=1586824004.1767642283&navt=n&npa=0&us_privacy=1-N-&gdid=dOThhZD&_tu=CA&gtm=45He5cb0v77234826za200zd77234826xea&gcs=G111&gcd=13r3r3r3r5l1&dma=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115583767~115938466~115938469~116184927~116184929~116251938~116251940~116744867&tft=1767642283200&tfd=1675&apve=1&apvf=f",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.250.77.4",
+        "hostname": "nctsaa-ab-in-f4.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
       "type": "script",
       "ipinfo": {
-        "domain": "cdn.cookielaw.org",
-        "ip": "104.18.86.42",
+        "domain": "snap.licdn.com",
+        "ip": "203.69.81.48",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "connect.facebook.net",
+        "ip": "31.13.87.5",
+        "hostname": "xx-fbcdn-shv-01-tpe1.fbcdn.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://ws.zoominfo.com/pixel/IzAhpRlpXlvH3pmd6tcj",
+      "type": "script",
+      "ipinfo": {
+        "domain": "ws.zoominfo.com",
+        "ip": "104.16.117.43",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -169,7 +254,146 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://www.redditstatic.com/ads/pixel.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.redditstatic.com",
+        "ip": "199.232.113.140",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://widget.intercom.io/widget/r7jdoyyv",
+      "type": "script",
+      "ipinfo": {
+        "domain": "widget.intercom.io",
+        "ip": "3.169.36.126",
+        "hostname": "server-3-169-36-126.tpe53.r.cloudfront.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://cdn.eu.amplitude.com/script/d1a1a0e0442e6efaa42b8b244c1739c2.experiment.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "cdn.eu.amplitude.com",
+        "ip": "3.169.121.49",
+        "hostname": "server-3-169-121-49.tpe53.r.cloudfront.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://consent-api.service.consent.usercentrics.eu/consent/uw/3",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "consent-api.service.consent.usercentrics.eu",
+        "ip": "35.201.111.240",
+        "hostname": "240.111.201.35.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://t.co/i/adsct?bci=3&dv=Asia%2FTaipei%26en-US%26Google%20Inc.%26MacIntel%26127%261280%26720%268%2624%261280%26720%260%26na&eci=2&event_id=aeb49724-4a7c-4810-8be6-56132a6cb669&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=2ef36859-e41f-483b-90fa-107670e6ec1c&pt=The%20Commerce%20Media%20Platform%20for%20the%20Open%20Internet%20%7C%20Criteo&tw_document_href=https%3A%2F%2Fwww.criteo.com%2F&tw_iframe_status=0&tw_order_quantity=0&tw_sale_amount=0&txn_id=o7kth&type=javascript&version=2.3.35",
+      "type": "img",
+      "ipinfo": {
+        "domain": "t.co",
+        "ip": "172.66.0.227",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://analytics.twitter.com/i/adsct?bci=3&dv=Asia%2FTaipei%26en-US%26Google%20Inc.%26MacIntel%26127%261280%26720%268%2624%261280%26720%260%26na&eci=2&event_id=aeb49724-4a7c-4810-8be6-56132a6cb669&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=2ef36859-e41f-483b-90fa-107670e6ec1c&pt=The%20Commerce%20Media%20Platform%20for%20the%20Open%20Internet%20%7C%20Criteo&tw_document_href=https%3A%2F%2Fwww.criteo.com%2F&tw_iframe_status=0&tw_order_quantity=0&tw_sale_amount=0&txn_id=o7kth&type=javascript&version=2.3.35",
+      "type": "img",
+      "ipinfo": {
+        "domain": "analytics.twitter.com",
+        "ip": "172.66.0.227",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://www2.criteo.com/pdt.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www2.criteo.com",
+        "ip": "18.208.125.13",
+        "hostname": "ec2-18-208-125-13.compute-1.amazonaws.com",
+        "city": "Ashburn",
+        "region": "Virginia",
+        "country": "US",
+        "loc": "39.0437,-77.4875",
+        "org": "AS14618 Amazon.com, Inc.",
+        "timezone": "America/New_York"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://gum.criteo.com/syncframe?topUrl=www.criteo.com&origin=onetag&us_privacy=1-N-#{%22bundle%22:{%22identifierExtractor%22:{%22origin%22:0},%22value%22:null},%22cw%22:true,%22optout%22:{%22identifierExtractor%22:{%22origin%22:0},%22value%22:null},%22origin%22:%22onetag%22,%22tld%22:%22criteo.com%22,%22topUrl%22:%22www.criteo.com%22,%22version%22:%225_43_0%22,%22ifa%22:{%22identifierExtractor%22:{%22origin%22:0},%22value%22:null},%22lsw%22:true,%22pm%22:0,%22requestId%22:%22734a0182-cf7f-4b0a-a0d7-2e0acf1c1aad%22}",
+      "type": "iframe",
+      "ipinfo": {
+        "domain": "gum.criteo.com",
+        "ip": "182.161.73.131",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS55569 Criteo APAC",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/direct"
+    },
+    {
+      "originalUrl": "https://sslwidget.criteo.com/event?a=65263&v=5.43.0&p0=e%3Dexd%26site_type%3Dd%26siteLanguage%3Den-US%26siteCountry%3D%26siteURL%3Dhttps%253A%252F%252Fwww.criteo.com%252F&p1=e%3Dce%26m%3D%255B%255D&p2=e%3Dvh&p3=e%3Ddis&sc=%7B%22fbp%22%3A%22fb.1.1767642284228.830978487593526269%22%7D&tld=criteo.com&fu=https%253A%252F%252Fwww.criteo.com%252F&ceid=b2e1f031-7044-4aa2-b58a-f0f073aef08c&cs=1-N-&cv=1",
+      "type": "script",
+      "ipinfo": {
+        "domain": "sslwidget.criteo.com",
+        "ip": "182.161.73.175",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS55569 Criteo APAC",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/direct"
     }
   ]
 }

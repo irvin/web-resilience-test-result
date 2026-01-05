@@ -2,7 +2,7 @@
   "url": "https://www.csmu.edu.tw/",
   "canonicalURL": "https://www.csmu.edu.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:36:49.812Z",
+  "timestamp": "2026-01-05T20:30:15.476Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,19 +22,24 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 82,
+  "requestCount": 77,
   "uniqueDomains": 5,
   "test_results": {
-    "domestic": 5,
-    "cloud_w_domestic_node": 0,
-    "foreign": 0
+    "domestic": {
+      "cloud": 4,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 0,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://www.csmu.edu.tw/var/file/0/1000/mobilestyle/combine-zh-tw.css?t=a98c6d6920",
+      "originalUrl": "https://www.csmu.edu.tw/var/file/0/1000/mobilestyle/combine-zh-tw.css?t=f2b6dec6d3",
       "type": "link",
       "ipinfo": {
         "domain": "www.csmu.edu.tw",
@@ -46,7 +51,7 @@
         "org": "AS1659 Taiwan Academic Network (TANet) Information Center",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://msg.csmu.edu.tw/CsmuBoardSchedular/CsmuBoard_Calendar.txt",
@@ -62,15 +67,15 @@
         "org": "AS1659 Taiwan Academic Network (TANet) Information Center",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-5K7GG8H7",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -78,7 +83,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.facebook.com/v2.5/plugins/page.php?href=https://www.facebook.com/profile.php?id=61552908842035&locale=zh_TW&width=240&height=400&show_facepile=true&small_header=false&hide_cover=false&show_posts=true&locale=zh_TW",
@@ -94,15 +99,15 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://www.youtube.com/embed/Mb2VonJbHIQ",
       "type": "iframe",
       "ipinfo": {
         "domain": "www.youtube.com",
-        "ip": "142.250.198.78",
-        "hostname": "lctsaa-ab-in-f14.1e100.net",
+        "ip": "142.250.196.206",
+        "hostname": "nctsaa-ac-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -110,7 +115,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

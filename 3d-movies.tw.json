@@ -2,7 +2,7 @@
   "url": "https://3d-movies.tw",
   "canonicalURL": "https://3d-movies.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:54:01.408Z",
+  "timestamp": "2026-01-05T20:45:42.328Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 85,
+  "requestCount": 98,
   "uniqueDomains": 5,
   "test_results": {
-    "domestic": 4,
-    "cloud_w_domestic_node": 0,
-    "foreign": 1
+    "domestic": {
+      "cloud": 2,
+      "direct": 2
+    },
+    "foreign": {
+      "cloud": 1,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -40,21 +45,21 @@
         "domain": "3d-movies.tw",
         "ip": "211.20.210.202",
         "hostname": "211-20-210-202.hinet-ip.hinet.net",
-        "city": "Chiayi City",
-        "region": "Taiwan",
+        "city": "Kaohsiung",
+        "region": "Takao",
         "country": "TW",
-        "loc": "23.4792,120.4489",
+        "loc": "22.6163,120.3133",
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://code.jquery.com/jquery-3.2.1.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "code.jquery.com",
-        "ip": "151.101.194.137",
+        "ip": "151.101.130.137",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -62,7 +67,7 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "X"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://fonts.googleapis.com/css?family=Jomolhari&display=swap",
@@ -78,31 +83,31 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.3d-movies.tw/upload/other/%E6%8A%BD%E7%8D%8E.png",
+      "originalUrl": "https://www.3d-movies.tw/upload/other/611723378_1274699854686324_4160181138008647097_n.jpg",
       "type": "img",
       "ipinfo": {
         "domain": "www.3d-movies.tw",
         "ip": "211.20.210.202",
         "hostname": "211-20-210-202.hinet-ip.hinet.net",
-        "city": "Chiayi City",
-        "region": "Taiwan",
+        "city": "Kaohsiung",
+        "region": "Takao",
         "country": "TW",
-        "loc": "23.4792,120.4489",
+        "loc": "22.6163,120.3133",
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://buttons-config.sharethis.com/js/5dce4212870f330012eb032e.js",
       "type": "script",
       "ipinfo": {
         "domain": "buttons-config.sharethis.com",
-        "ip": "3.169.55.44",
-        "hostname": "server-3-169-55-44.tpe54.r.cloudfront.net",
+        "ip": "3.169.55.54",
+        "hostname": "server-3-169-55-54.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -110,7 +115,7 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

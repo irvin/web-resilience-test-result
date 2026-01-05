@@ -2,7 +2,7 @@
   "url": "https://netflix.com",
   "canonicalURL": "https://netflix.com",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:35:59.462Z",
+  "timestamp": "2026-01-05T19:38:23.189Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,19 +22,24 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 25,
-  "uniqueDomains": 8,
+  "requestCount": 28,
+  "uniqueDomains": 7,
   "test_results": {
-    "domestic": 3,
-    "cloud_w_domestic_node": 2,
-    "foreign": 3
+    "domestic": {
+      "cloud": 1,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 2,
+      "direct": 3
+    }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://assets.nflxext.com/web/ffe/wp/ui/landingPages/nmhp/nmhpFrameworkClient.c563b53f1d8de9f3e85b.js",
+      "originalUrl": "https://assets.nflxext.com/web/ffe/wp/ui/landingPages/nmhp/nmhpFrameworkClient.2ccd3a78b0b33cc7d7c5.js",
       "type": "link",
       "ipinfo": {
         "domain": "assets.nflxext.com",
@@ -47,7 +52,7 @@
         "org": "AS40027 Netflix Streaming Services Inc.",
         "timezone": "America/New_York"
       },
-      "score": "X"
+      "category": "foreign/direct"
     },
     {
       "originalUrl": "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production_2025-12-03/scripttemplates/otSDKStub.js",
@@ -63,10 +68,10 @@
         "org": "AS40027 Netflix Streaming Services Inc.",
         "timezone": "America/New_York"
       },
-      "score": "X"
+      "category": "foreign/direct"
     },
     {
-      "originalUrl": "https://occ.a.nflxso.net/genc/hawkins/5.8.1/font/netflix-sans-core-variable-full.woff2",
+      "originalUrl": "https://occ.a.nflxso.net/genc/hawkins/5.10.0/font/netflix-sans-core-variable-full.woff2",
       "type": "link",
       "ipinfo": {
         "domain": "occ.a.nflxso.net",
@@ -79,15 +84,15 @@
         "org": "AS40027 Netflix Streaming Services Inc.",
         "timezone": "America/New_York"
       },
-      "score": "X"
+      "category": "foreign/direct"
     },
     {
       "originalUrl": "https://logs.netflix.com/log/wwwhead/cl/2?fetchType=js&eventType=WebsiteDetect&modalView=nmLanding",
       "type": "xmlhttprequest",
       "ipinfo": {
         "domain": "logs.netflix.com",
-        "ip": "35.163.192.149",
-        "hostname": "ec2-35-163-192-149.us-west-2.compute.amazonaws.com",
+        "ip": "44.228.67.58",
+        "hostname": "ec2-44-228-67-58.us-west-2.compute.amazonaws.com",
         "city": "Boardman",
         "region": "Oregon",
         "country": "US",
@@ -95,54 +100,7 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://occ-0-7507-395.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABTQlsWr_mcdz4o6-Ugb7_kDi_wHENfZsGH25TGwaZimdcNyjODXxid2k91aZAG-gfEDyHpmuyk2eo19E3FYeBhaJn9WgOZglw3M.webp?r=d9e",
-      "type": "css",
-      "ipinfo": {
-        "domain": "occ-0-7507-395.1.nflxso.net",
-        "ip": "203.75.84.28",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS3462 Data Communication Business Group",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://www.google.com/recaptcha/enterprise.js?render=6LdqW_EqAAAAAO87Fb_kcZfNzs0IqJRcKiJDYpUv",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.198.68",
-        "hostname": "lctsaa-ab-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://www.gstatic.com/recaptcha/releases/TkacYOdEJbdB_JjX802TMer9/recaptcha__en.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.gstatic.com",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
@@ -157,7 +115,38 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://occ-0-3594-395.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABetZV_Qn1mqr8IbJyfZ_EGBZvHTzyoun3YNJSRJlM1vgNO0avhxoXq3sYRnbV0PgR8v0ZvfXdnfP_H7QQB8ZEG5bCJvinLHyDSM.webp?r=b55",
+      "type": "css",
+      "ipinfo": {
+        "domain": "occ-0-3594-395.1.nflxso.net",
+        "ip": "203.75.84.4",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://www.google.com/recaptcha/enterprise.js?render=6LdqW_EqAAAAAO87Fb_kcZfNzs0IqJRcKiJDYpUv",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.250.204.36",
+        "hostname": "hkg07s38-in-f4.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     }
   ]
 }

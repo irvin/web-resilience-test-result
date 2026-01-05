@@ -2,7 +2,7 @@
   "url": "https://1010apothecary.com.tw",
   "canonicalURL": "https://1010apothecary.com.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T17:26:57.407Z",
+  "timestamp": "2026-01-05T20:54:16.936Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,23 +22,28 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 250,
-  "uniqueDomains": 9,
+  "uniqueDomains": 10,
   "test_results": {
-    "domestic": 4,
-    "cloud_w_domestic_node": 4,
-    "foreign": 1
+    "domestic": {
+      "cloud": 3,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 6,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://1010apothecary.com.tw/static/version1760352755/frontend/AstralWeb/apothecary/zh_Hant_TW/mage/calendar.css",
+      "originalUrl": "https://1010apothecary.com.tw/static/version1766162932/frontend/AstralWeb/apothecary/zh_Hant_TW/mage/calendar.css",
       "type": "link",
       "ipinfo": {
         "domain": "1010apothecary.com.tw",
-        "ip": "151.101.65.124",
+        "ip": "151.101.1.124",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -46,7 +51,7 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "X"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-5Z7CL7H",
@@ -62,15 +67,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2F1010apothecary.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=483693585.1764869215&dt=10%2F10%20APOTHECARY%EF%BD%9C%E8%87%B4%E5%8A%9B%E6%96%BC%E6%AF%8F%E5%80%8B%E4%BA%BA%E7%9A%84%E8%B3%AA%E6%84%9F%E7%94%9F%E6%B4%BB%E6%8F%90%E6%A1%88&auid=1498476119.1764869215&navt=n&npa=0&ep.google_analysis_params=%5Bobject%20Object%5D&gtm=45He5c30v810263647za200zd810263647xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115616985~115938465~115938469~116184927~116184929~116217636~116217638&tft=1764869214525&tfd=1065&apve=1&apvf=f&gap.plf=1",
+      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2F1010apothecary.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=2127088899.1767646455&dt=10%2F10%20APOTHECARY%EF%BD%9C%E8%87%B4%E5%8A%9B%E6%96%BC%E6%AF%8F%E5%80%8B%E4%BA%BA%E7%9A%84%E8%B3%AA%E6%84%9F%E7%94%9F%E6%B4%BB%E6%8F%90%E6%A1%88&auid=578543499.1767646455&navt=n&npa=0&ep.google_analysis_params=%5Bobject%20Object%5D&gtm=45He5cb0v810263647za200zd810263647xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115616985~115938465~115938469~116184927~116184929~116251938~116251940&tft=1767646455444&tfd=1088&apve=1&apvf=f&gap.plf=1",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.196.196",
-        "hostname": "nctsaa-ac-in-f4.1e100.net",
+        "ip": "142.250.66.68",
+        "hostname": "hkg12s27-in-f4.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -78,14 +83,14 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://s3-ap-southeast-1.amazonaws.com/plugins.rosetta.ai.prod/1010/plugin.js",
       "type": "script",
       "ipinfo": {
         "domain": "s3-ap-southeast-1.amazonaws.com",
-        "ip": "52.219.40.242",
+        "ip": "52.219.132.90",
         "hostname": "s3-ap-southeast-1.amazonaws.com",
         "city": "Singapore",
         "region": "Singapore",
@@ -94,7 +99,7 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
@@ -110,7 +115,7 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://1010apothecary.api.useinsider.com/ins.js?id=10012796",
@@ -125,15 +130,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-BTRLXGQH0K&cid=630245307.1764869215&gtm=45je5c30v874337419z8810263647za200zb810263647zd810263647&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=102015666~103116026~103200004~104527906~104528501~104684208~104684211~105391252~115583767~115938465~115938468~116184927~116184929~116217636~116217638&z=2121884607",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-BTRLXGQH0K&cid=1655840022.1767646456&gtm=45je5cb0v874337419z8810263647za20gzb810263647zd810263647&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115616985~115938465~115938469~116184927~116184929~116251938~116251940&z=405426934",
       "type": "img",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "ip": "142.250.198.67",
+        "hostname": "lctsaa-ab-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -141,14 +146,14 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://assets.api.useinsider.com/css/info.min.css",
       "type": "link",
       "ipinfo": {
         "domain": "assets.api.useinsider.com",
-        "ip": "162.159.133.61",
+        "ip": "162.159.134.61",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -156,7 +161,7 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://eitri.api.useinsider.com/static/info.js",
@@ -171,7 +176,22 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://locationv2.api.useinsider.com/?v=2&pId=10012796&",
+      "type": "xmlhttprequest",
+      "ipinfo": {
+        "domain": "locationv2.api.useinsider.com",
+        "ip": "162.159.133.61",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
     }
   ]
 }

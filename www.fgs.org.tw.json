@@ -2,7 +2,7 @@
   "url": "https://www.fgs.org.tw/",
   "canonicalURL": "https://www.fgs.org.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:25:24.566Z",
+  "timestamp": "2026-01-05T20:25:47.725Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 63,
+  "requestCount": 62,
   "uniqueDomains": 3,
   "test_results": {
-    "domestic": 3,
-    "cloud_w_domestic_node": 0,
-    "foreign": 0
+    "domestic": {
+      "cloud": 1,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 0,
+      "direct": 1
+    }
   },
   "domainDetails": [
     {
@@ -38,24 +43,23 @@
       "type": "link",
       "ipinfo": {
         "domain": "www.fgs.org.tw",
-        "ip": "61.221.134.67",
-        "hostname": "61-221-134-67.hinet-ip.hinet.net",
-        "city": "Kaohsiung",
-        "region": "Takao",
-        "country": "TW",
-        "loc": "22.6163,120.3133",
-        "org": "AS3462 Data Communication Business Group",
-        "timezone": "Asia/Taipei"
+        "ip": "154.19.150.23",
+        "city": "Hong Kong",
+        "region": "Hong Kong",
+        "country": "HK",
+        "loc": "22.2783,114.1747",
+        "org": "AS147060 HCS LIMITED",
+        "timezone": "Asia/Hong_Kong"
       },
-      "score": "O"
+      "category": "foreign/direct"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=UA-1138370-1",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.66.72",
-        "hostname": "hkg12s27-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -63,10 +67,10 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.lnanews.com/imgnews/2025-12-03/heoi4k9060o6mx71b78mf4eea.jpg",
+      "originalUrl": "https://www.lnanews.com/imgnews/2026-01-04/afc909a0ga12f92x7v93a3xgn.jpg",
       "type": "img",
       "ipinfo": {
         "domain": "www.lnanews.com",
@@ -79,7 +83,7 @@
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     }
   ]
 }

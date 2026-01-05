@@ -2,7 +2,7 @@
   "url": "https://gimy.tw",
   "canonicalURL": "https://gimy.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:14:59.302Z",
+  "timestamp": "2026-01-05T19:57:16.608Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 57,
-  "uniqueDomains": 7,
+  "requestCount": 43,
+  "uniqueDomains": 5,
   "test_results": {
-    "domestic": 4,
-    "cloud_w_domestic_node": 2,
-    "foreign": 1
+    "domestic": {
+      "cloud": 2,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 2,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -38,7 +43,7 @@
       "type": "link",
       "ipinfo": {
         "domain": "gimy.tw",
-        "ip": "172.67.179.155",
+        "ip": "104.21.31.193",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -46,15 +51,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-3Y58CB1Z43",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.77.8",
-        "hostname": "nctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -62,7 +67,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://img.avdb.me/titan/upload/site/20220619-1/3112319371f03843023ab2f21c581da8.png",
@@ -77,25 +82,17 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://vcover-hz-pic.puui.qpic.cn/vcover_hz_pic/0/mzc00200d70bilg1750670747688/0",
-      "type": "img",
+      "originalUrl": "https://twtw.d9ym.com/index.php/index/index/api?quanju=gimy.tw&bh=v1",
+      "type": "xmlhttprequest",
       "ipinfo": {
-        "domain": "vcover-hz-pic.puui.qpic.cn",
-        "ip": "107.155.58.204",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS21859 Zenlayer Inc",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+        "domain": "twtw.d9ym.com"
+      }
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-3Y58CB1Z43&cid=1349216582.1764864897&gtm=45je5c21v889125899za200zd889125899&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115583767~115616985~115938465~115938468~116184927~116184929~116217636~116217638&z=398443782",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-3Y58CB1Z43&cid=1597871478.1767643035&gtm=45je5cb0v889125899za200zd889125899&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115583767~115616986~115938465~115938469~116184927~116184929~116251938~116251940&z=99782988",
       "type": "img",
       "ipinfo": {
         "domain": "www.google.com.tw",
@@ -108,37 +105,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://vcover-vt-pic.puui.qpic.cn/vcover_vt_pic/0/mzc00200d70bilg1761899010583/0",
-      "type": "img",
-      "ipinfo": {
-        "domain": "vcover-vt-pic.puui.qpic.cn",
-        "ip": "107.155.58.204",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS21859 Zenlayer Inc",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://3img.hitv.com/preview/sp_images/2025/11/21/202511211443409399748.jpg",
-      "type": "img",
-      "ipinfo": {
-        "domain": "3img.hitv.com",
-        "ip": "163.181.81.236",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS24429 Zhejiang Taobao Network Co.,Ltd",
-        "timezone": "Asia/Singapore"
-      },
-      "score": "X"
+      "category": "domestic/cloud"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "url": "https://sialiagames.com.tw",
   "canonicalURL": "https://sialiagames.com.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:12:00.412Z",
+  "timestamp": "2026-01-05T19:56:09.721Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 250,
-  "uniqueDomains": 6,
+  "uniqueDomains": 3,
   "test_results": {
-    "domestic": 4,
-    "cloud_w_domestic_node": 1,
-    "foreign": 1
+    "domestic": {
+      "cloud": 1,
+      "direct": 2
+    },
+    "foreign": {
+      "cloud": 0,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -38,8 +43,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "i.alicdn.com",
-        "ip": "23.39.60.47",
-        "hostname": "a23-39-60-47.deploy.static.akamaitechnologies.com",
+        "ip": "23.41.128.2",
+        "hostname": "a23-41-128-2.deploy.static.akamaitechnologies.com",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -47,10 +52,10 @@
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://cdn-os.sialiagames.com.tw/wukongbuild/prism-vue3-new-template/1.0.0/prod/views/assets/index-a766f9cb.css",
+      "originalUrl": "https://cdn-os.sialiagames.com.tw/wukongbuild/prism-vue3-new-template/1.0.0/prod/views/assets/index-08746ce3.css",
       "type": "link",
       "ipinfo": {
         "domain": "cdn-os.sialiagames.com.tw",
@@ -62,14 +67,14 @@
         "org": "AS24429 Zhejiang Taobao Network Co.,Ltd",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://retcode.alicdn.com/retcode/bl.js",
       "type": "script",
       "ipinfo": {
         "domain": "retcode.alicdn.com",
-        "ip": "47.246.38.140",
+        "ip": "47.246.38.141",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -77,53 +82,7 @@
         "org": "AS24429 Zhejiang Taobao Network Co.,Ltd",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://cdn-os.qookkagames.com/ieu-tracker/dist/tracker-2.1.6.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "cdn-os.qookkagames.com",
-        "ip": "192.169.122.172",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS21859 Zenlayer Inc",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://cubeapi.sialiagames.com.tw/lingxigamescube/api/information/query-collection-entity-by-page",
-      "type": "xmlhttprequest",
-      "ipinfo": {
-        "domain": "cubeapi.sialiagames.com.tw",
-        "ip": "8.218.57.136",
-        "city": "Hong Kong",
-        "region": "Hong Kong",
-        "country": "HK",
-        "loc": "22.2783,114.1747",
-        "org": "AS45102 Alibaba (US) Technology Co., Ltd.",
-        "timezone": "Asia/Hong_Kong"
-      },
-      "score": "X"
-    },
-    {
-      "originalUrl": "https://log.sialiagames.com.tw/json/beacon",
-      "type": "beacon",
-      "ipinfo": {
-        "domain": "log.sialiagames.com.tw",
-        "ip": "34.8.229.165",
-        "hostname": "165.229.8.34.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
-        "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
-      },
-      "score": "?"
+      "category": "domestic/direct"
     }
   ]
 }

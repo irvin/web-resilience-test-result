@@ -2,7 +2,7 @@
   "url": "https://windows.net",
   "canonicalURL": "https://dotnet.microsoft.com/en-us/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:39:56.950Z",
+  "timestamp": "2026-01-05T19:44:42.964Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 35,
   "uniqueDomains": 6,
   "test_results": {
-    "domestic": 3,
-    "cloud_w_domestic_node": 3,
-    "foreign": 0
+    "domestic": {
+      "cloud": 2,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 3,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -46,7 +51,7 @@
         "org": "AS8075 Microsoft Corporation",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://www.microsoft.com/onerfstatics/marketingsites-wcus-prod/west-european/shell/_scrf/css/themes=default.device=uplevel_web_pc/63-57d110/c9-be0100/a6-e969ef/43-9f2e7c/82-8b5456/a0-5d3913/3d-28500e/ae-f1ac0c?ver=2.0&_cf=02242021_3231",
@@ -62,7 +67,7 @@
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://js.monitor.azure.com/scripts/c/ms.analytics-web-4.min.js",
@@ -77,7 +82,7 @@
         "org": "AS8075 Microsoft Corporation",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://uhf.microsoft.com/images/microsoft/RE1Mu3b.png",
@@ -93,7 +98,7 @@
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js",
@@ -108,7 +113,7 @@
         "org": "AS8075 Microsoft Corporation",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31",
@@ -123,7 +128,7 @@
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     }
   ]
 }

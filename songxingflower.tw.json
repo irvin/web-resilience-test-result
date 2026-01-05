@@ -2,7 +2,7 @@
   "url": "https://songxingflower.tw",
   "canonicalURL": "https://songxingflower.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:37:20.481Z",
+  "timestamp": "2026-01-05T20:32:03.756Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,32 +22,52 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 250,
-  "uniqueDomains": 2,
+  "uniqueDomains": 3,
   "test_results": {
-    "domestic": 1,
-    "cloud_w_domestic_node": 0,
-    "foreign": 1
+    "domestic": {
+      "cloud": 1,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 1,
+      "direct": 1
+    }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://songxingflower.tw/wp-content/cache/wpfc-minified/le02bwuo/5wypc.css",
+      "originalUrl": "https://songxingflower.tw/wp-content/cache/wpfc-minified/le02bwuo/8hxaz.css",
       "type": "link",
       "ipinfo": {
         "domain": "songxingflower.tw",
         "ip": "43.254.17.40",
         "hostname": "wp5.g-dns.com",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "city": "Taipei",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "25.0531,121.5264",
         "org": "AS131149 Yuan-Jhen Info., Co., Ltd",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
+      "type": "link",
+      "ipinfo": {
+        "domain": "cdnjs.cloudflare.com",
+        "ip": "104.17.24.14",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "http://siangservice.com/wp-content/uploads/elementor/google-fonts/fonts/roboto-kfo5cnqeu92fr1mu53zec9_vu3r1gihoszmkc3kawzu.woff2",
@@ -63,7 +83,7 @@
         "org": "AS18450 WebNX, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "X"
+      "category": "foreign/direct"
     }
   ]
 }

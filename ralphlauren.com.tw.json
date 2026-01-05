@@ -2,7 +2,7 @@
   "url": "https://ralphlauren.com.tw",
   "canonicalURL": "https://ralphlauren.com.tw",
   "httpStatus": 307,
-  "timestamp": "2025-12-04T17:02:44.605Z",
+  "timestamp": "2026-01-05T20:51:54.200Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,23 +22,28 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 3,
   "uniqueDomains": 3,
   "test_results": {
-    "domestic": 1,
-    "cloud_w_domestic_node": 0,
-    "foreign": 2
+    "domestic": {
+      "cloud": 1,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 2,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://www.ralphlauren.com.tw/aXVw3L5r/captcha/captcha.js?a=c&u=0c3eee72-d133-11f0-873d-47dd86d210bb&v=&m=0&h=R0VU",
+      "originalUrl": "https://www.ralphlauren.com.tw/aXVw3L5r/captcha/captcha.js?a=c&u=5cc7a204-ea78-11f0-ab23-fc9aa6e7429c&v=&m=0&h=R0VU",
       "type": "script",
       "ipinfo": {
         "domain": "www.ralphlauren.com.tw",
-        "ip": "146.75.47.52",
+        "ip": "199.232.115.52",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",
@@ -46,15 +51,15 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "score": "X"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap",
       "type": "css",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.204.42",
-        "hostname": "hkg07s38-in-f10.1e100.net",
+        "ip": "142.250.66.74",
+        "hostname": "hkg12s27-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -62,7 +67,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://client.px-cloud.net/PXaXVw3L5r/main.min.js",
@@ -77,7 +82,7 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "score": "X"
+      "category": "foreign/cloud"
     }
   ]
 }

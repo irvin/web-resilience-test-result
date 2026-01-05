@@ -2,7 +2,7 @@
   "url": "https://taobao.com",
   "canonicalURL": "https://taobao.com",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:36:55.999Z",
+  "timestamp": "2026-01-05T19:39:20.048Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 250,
-  "uniqueDomains": 17,
+  "uniqueDomains": 16,
   "test_results": {
-    "domestic": 10,
-    "cloud_w_domestic_node": 0,
-    "foreign": 7
+    "domestic": {
+      "cloud": 1,
+      "direct": 9
+    },
+    "foreign": {
+      "cloud": 1,
+      "direct": 5
+    }
   },
   "domainDetails": [
     {
@@ -38,7 +43,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "o.alicdn.com",
-        "ip": "47.246.38.140",
+        "ip": "47.246.38.141",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -46,7 +51,7 @@
         "org": "AS24429 Zhejiang Taobao Network Co.,Ltd",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://g.alicdn.com/tbpc/font/1.0.0/index.umd.es5.production.css",
@@ -61,29 +66,14 @@
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://fourier.taobao.com/rp?ext=51&data=jm_null&random=08603097977569996&href=https%3A%2F%2Fwww.taobao.com%2F&protocol=https:&callback=jsonpCallback",
+      "originalUrl": "https://fourier.taobao.com/rp?ext=51&data=jm_null&random=004721814181832373&href=https%3A%2F%2Fwww.taobao.com%2F&protocol=https:&callback=jsonpCallback",
       "type": "script",
       "ipinfo": {
         "domain": "fourier.taobao.com",
-        "ip": "123.183.232.34",
-        "city": "Zhangjiakou",
-        "region": "Hebei",
-        "country": "CN",
-        "loc": "40.7834,114.8714",
-        "org": "AS4134 CHINANET-BACKBONE",
-        "timezone": "Asia/Shanghai"
-      },
-      "score": "X"
-    },
-    {
-      "originalUrl": "https://umdc.taobao.com/wcfg.json?ver=2&href=https%3A%2F%2Fwww.taobao.com%2F&v=08802480969957893",
-      "type": "xmlhttprequest",
-      "ipinfo": {
-        "domain": "umdc.taobao.com",
-        "ip": "59.82.122.224",
+        "ip": "203.119.204.19",
         "city": "Zhangjiakou",
         "region": "Hebei",
         "country": "CN",
@@ -91,14 +81,29 @@
         "org": "AS37963 Hangzhou Alibaba Advertising Co.,Ltd.",
         "timezone": "Asia/Shanghai"
       },
-      "score": "X"
+      "category": "foreign/direct"
     },
     {
-      "originalUrl": "https://h5api.m.taobao.com/h5/mtop.tmall.kangaroo.core.service.route.aldlampservicefixedresv2/1.0/?jsv=2.7.2&appKey=12574478&t=1764862612700&sign=a7b3e641658da79cce991489be4250ad&api=mtop.tmall.kangaroo.core.service.route.AldLampServiceFixedResV2&v=1.0&timeout=3000&dataType=jsonp&valueType=original&jsonpIncPrefix=tbpc&ttid=1%40tbwang_mac_1.0.0%23pc&type=originaljsonp&callback=mtopjsonptbpc1&data=%7B%22params%22%3A%22%7B%5C%22resId%5C%22%3A%5C%2233718589%2C33972676%2C33665512%2C41905558%2C33667440%5C%22%2C%5C%22bizId%5C%22%3A%5C%22443%2C443%2C443%2C443%2C443%5C%22%7D%22%7D",
+      "originalUrl": "https://umdc.taobao.com/wcfg.json?ver=2&href=https%3A%2F%2Fwww.taobao.com%2F&v=08217680888558696",
+      "type": "xmlhttprequest",
+      "ipinfo": {
+        "domain": "umdc.taobao.com",
+        "ip": "59.82.120.143",
+        "city": "Zhangjiakou",
+        "region": "Hebei",
+        "country": "CN",
+        "loc": "40.7834,114.8714",
+        "org": "AS37963 Hangzhou Alibaba Advertising Co.,Ltd.",
+        "timezone": "Asia/Shanghai"
+      },
+      "category": "foreign/direct"
+    },
+    {
+      "originalUrl": "https://h5api.m.taobao.com/h5/mtop.tmall.kangaroo.core.service.route.aldlampservicefixedresv2/1.0/?jsv=2.7.2&appKey=12574478&t=1767641956508&sign=ff8ae230cf8f80ea5d3042029296511e&api=mtop.tmall.kangaroo.core.service.route.AldLampServiceFixedResV2&v=1.0&timeout=3000&dataType=jsonp&valueType=original&jsonpIncPrefix=tbpc&ttid=1%40tbwang_mac_1.0.0%23pc&type=originaljsonp&callback=mtopjsonptbpc1&data=%7B%22params%22%3A%22%7B%5C%22resId%5C%22%3A%5C%2233718589%2C33972676%2C33665512%2C41905558%2C33667440%5C%22%2C%5C%22bizId%5C%22%3A%5C%22443%2C443%2C443%2C443%2C443%5C%22%7D%22%7D",
       "type": "script",
       "ipinfo": {
         "domain": "h5api.m.taobao.com",
-        "ip": "47.246.99.148",
+        "ip": "47.246.180.83",
         "city": "Hong Kong",
         "region": "Hong Kong",
         "country": "HK",
@@ -106,7 +111,7 @@
         "org": "AS45102 Alibaba (US) Technology Co., Ltd.",
         "timezone": "Asia/Hong_Kong"
       },
-      "score": "X"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://www.taobao.com/wow/z/tbhome/default/kissy-search-suggest-iframe",
@@ -121,10 +126,10 @@
         "org": "AS24429 Zhejiang Taobao Network Co.,Ltd",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://d.alicdn.com/alilog/??aplus/1.13.26/aplus_pc.js,aplus/1.13.26/plugin/aplus_spmact.js?v=20251014185814",
+      "originalUrl": "https://d.alicdn.com/alilog/??aplus/1.13.27/aplus_pc.js,aplus/1.13.27/plugin/aplus_spmact.js?v=20251202143226",
       "type": "fetch",
       "ipinfo": {
         "domain": "d.alicdn.com",
@@ -136,14 +141,14 @@
         "org": "AS24429 Zhejiang Taobao Network Co.,Ltd",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://img.alicdn.com/imgextra/i1/O1CN011YZ3P01zMCE6HGyhk_!!6000000006699-2-tps-480-144.png",
       "type": "css",
       "ipinfo": {
         "domain": "img.alicdn.com",
-        "ip": "47.246.38.140",
+        "ip": "47.246.38.141",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -151,7 +156,7 @@
         "org": "AS24429 Zhejiang Taobao Network Co.,Ltd",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://gw.alicdn.com/imgextra/i1/O1CN01uLBB2V1kF7sKTyIQ6_!!6000000004653-2-tps-48-48.png",
@@ -166,14 +171,14 @@
         "org": "AS24429 Zhejiang Taobao Network Co.,Ltd",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://push-v1.taobao.com/app/tbpc/tb-web-push/dist/site-push.js",
+      "originalUrl": "https://push-v1.taobao.com/app/tbpc/tb-web-push/dist/global-request-permission.js",
       "type": "script",
       "ipinfo": {
         "domain": "push-v1.taobao.com",
-        "ip": "47.246.38.181",
+        "ip": "47.246.38.178",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -181,29 +186,14 @@
         "org": "AS24429 Zhejiang Taobao Network Co.,Ltd",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://pc-growht-rta.taobao.com/rta/360redirect",
-      "type": "img",
-      "ipinfo": {
-        "domain": "pc-growht-rta.taobao.com",
-        "ip": "47.246.103.68",
-        "city": "Hong Kong",
-        "region": "Hong Kong",
-        "country": "HK",
-        "loc": "22.2783,114.1747",
-        "org": "AS45102 Alibaba (US) Technology Co., Ltd.",
-        "timezone": "Asia/Hong_Kong"
-      },
-      "score": "X"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://at.alicdn.com/t/a/font_4480420_nu0sa7g3x9d.woff2?t=1737688298714",
       "type": "css",
       "ipinfo": {
         "domain": "at.alicdn.com",
-        "ip": "155.102.184.137",
+        "ip": "155.102.184.136",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -211,7 +201,7 @@
         "org": "AS24429 Zhejiang Taobao Network Co.,Ltd",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://umdcv4.taobao.com/repTw.json?e=2075&sv=145&pv=231&pn=www.taobao.com",
@@ -226,7 +216,7 @@
         "org": "AS37963 Hangzhou Alibaba Advertising Co.,Ltd.",
         "timezone": "Asia/Shanghai"
       },
-      "score": "X"
+      "category": "foreign/direct"
     },
     {
       "originalUrl": "https://ynuf.aliapp.org/w/wu.json",
@@ -241,7 +231,7 @@
         "org": "AS4134 CHINANET-BACKBONE",
         "timezone": "Asia/Shanghai"
       },
-      "score": "X"
+      "category": "foreign/direct"
     },
     {
       "originalUrl": "https://alidt.alicdn.com/alilog/configs/sdk/common.json",
@@ -256,14 +246,14 @@
         "org": "AS21859 Zenlayer Inc",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://g.aplus.taobao.com/aplus.monitor.intercept_expect?gmkey=OTHER&gokey=spm-url%3D%26spm-pre%3D%26spm-cnt%3Da21bo.jianhua%2Fa.0.0.5af92a89qGEuYF%26_f_t%3Dfalse%26pid%3Dwww_taobao_com%26logSendDomain%3Dg.aplus.taobao.com%26clientType%3Dpc%26cache%3Dca8aa4c%26jsver%3Daplus.js%26lver%3D1.13.26%26customSdkId%3D%26platformType%3Dpc%26device_model%3DMacintosh%26os%3DMac%20OS%20X%26os_version%3D10.15.7%26language%3Den-US%26o%3Dmac%26w%3Dwebkit%26s%3D1280x720%26scr%3D1280x720%26m%3D%26ism%3Dmac%26p%3D1%26b%3Dchrome133%26tag%3D0%26stag%3D-2%26lstag%3D-1%26_g_encode%3Dutf-8&cna=&spm-cnt=a21bo.jianhua%2Fa.0.0.5af92a89qGEuYF&logtype=2&scr=1280x720&_p_url=https%3A%2F%2Fwww.taobao.com%2F",
+      "originalUrl": "https://g.aplus.taobao.com/aplus.monitor.intercept_expect?gmkey=OTHER&gokey=spm-url%3D%26spm-pre%3D%26spm-cnt%3Da21bo.jianhua%2Fa.0.0.5af92a890BC9P2%26_f_t%3Dfalse%26pid%3Dwww_taobao_com%26logSendDomain%3Dg.aplus.taobao.com%26clientType%3Dpc%26cache%3D8590aed%26jsver%3Daplus.js%26lver%3D1.13.27%26customSdkId%3D%26platformType%3Dpc%26device_model%3DMacintosh%26os%3DMac%20OS%20X%26os_version%3D10.15.7%26language%3Den-US%26o%3Dmac%26w%3Dwebkit%26s%3D1280x720%26scr%3D1280x720%26m%3D%26ism%3Dmac%26p%3D1%26b%3Dchrome133%26tag%3D0%26stag%3D-2%26lstag%3D-1%26_g_encode%3Dutf-8&cna=ZQHjIT61TmIBASABsBFX2jAg&spm-cnt=a21bo.jianhua%2Fa.0.0.5af92a890BC9P2&logtype=2&scr=1280x720&_p_url=https%3A%2F%2Fwww.taobao.com%2F",
       "type": "img",
       "ipinfo": {
         "domain": "g.aplus.taobao.com",
-        "ip": "140.205.151.5",
+        "ip": "140.205.151.6",
         "city": "Shanghai",
         "region": "Shanghai",
         "country": "CN",
@@ -271,7 +261,7 @@
         "org": "AS37963 Hangzhou Alibaba Advertising Co.,Ltd.",
         "timezone": "Asia/Shanghai"
       },
-      "score": "X"
+      "category": "foreign/direct"
     },
     {
       "originalUrl": "https://hudong.alicdn.com/api/online/data/v3/c45746794e4a4de99af2b9fb4f65e0d2.js",
@@ -286,7 +276,7 @@
         "org": "AS24429 Zhejiang Taobao Network Co.,Ltd",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     }
   ]
 }

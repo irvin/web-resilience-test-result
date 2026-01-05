@@ -2,7 +2,7 @@
   "url": "https://yabeline.tw",
   "canonicalURL": "https://yabeline.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:40:29.341Z",
+  "timestamp": "2026-01-05T20:56:32.330Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,19 +22,24 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 122,
+  "requestCount": 124,
   "uniqueDomains": 8,
   "test_results": {
-    "domestic": 5,
-    "cloud_w_domestic_node": 2,
-    "foreign": 1
+    "domestic": {
+      "cloud": 5,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 3,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://yabeline.tw/bootstrap-3.3.2-dist/css/bootstrap.min.css",
+      "originalUrl": "https://yabeline.tw/bootstrap-3.3.2-dist/css/bootstrap-theme.min.css",
       "type": "link",
       "ipinfo": {
         "domain": "yabeline.tw",
@@ -46,15 +51,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css",
       "type": "link",
       "ipinfo": {
         "domain": "gitcdn.github.io",
-        "ip": "185.199.110.153",
-        "hostname": "cdn-185-199-110-153.github.com",
+        "ip": "185.199.109.153",
+        "hostname": "cdn-185-199-109-153.github.com",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -62,14 +67,14 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "X"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://use.fontawesome.com/releases/v5.5.0/css/all.css",
       "type": "link",
       "ipinfo": {
         "domain": "use.fontawesome.com",
-        "ip": "104.21.27.152",
+        "ip": "172.67.142.245",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -77,7 +82,7 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://stickershop.line-scdn.net/stickershop/v1/product/19561313/LINEStorePC/main.png",
@@ -93,10 +98,10 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://shop.line-scdn.net/themeshop/v1/products/13/cc/7e/13cc7ebe-631a-4766-bd85-0c876f35953a/1/WEBSTORE/icon_136x190.png",
+      "originalUrl": "https://shop.line-scdn.net/themeshop/v1/products/ed/83/23/ed832316-9a8e-4e01-89bf-472265d9b092/1/WEBSTORE/icon_136x190.png",
       "type": "img",
       "ipinfo": {
         "domain": "shop.line-scdn.net",
@@ -109,7 +114,7 @@
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.google.com/recaptcha/api.js",
@@ -125,15 +130,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js",
       "type": "link",
       "ipinfo": {
         "domain": "ajax.googleapis.com",
-        "ip": "142.250.204.42",
-        "hostname": "hkg07s38-in-f10.1e100.net",
+        "ip": "142.250.66.74",
+        "hostname": "hkg12s27-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -141,15 +146,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-KYLETBKS5K",
       "type": "link",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.204.40",
+        "hostname": "hkg07s38-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -157,7 +162,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "url": "https://cloudflare-dns.com",
   "canonicalURL": "https://1.1.1.1/dns/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:38:24.305Z",
+  "timestamp": "2026-01-05T19:41:00.956Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,17 +22,38 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 9,
   "uniqueDomains": 3,
   "test_results": {
-    "domestic": 1,
-    "cloud_w_domestic_node": 2,
-    "foreign": 0
+    "domestic": {
+      "cloud": 1,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 2,
+      "direct": 0
+    }
   },
   "domainDetails": [
+    {
+      "originalUrl": "https://one.one.one.one/dns-aa686e0e9e4d122550f8.css",
+      "type": "link",
+      "ipinfo": {
+        "domain": "one.one.one.one",
+        "ip": "1.1.1.1",
+        "hostname": "one.one.one.one",
+        "city": "Hong Kong",
+        "region": "Hong Kong",
+        "country": "HK",
+        "loc": "22.2783,114.1747",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "Asia/Hong_Kong"
+      },
+      "category": "foreign/cloud"
+    },
     {
       "originalUrl": "https://fonts.googleapis.com/css?family=Open+Sans:400,600,700",
       "type": "link",
@@ -47,30 +68,14 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://one.one.one.one/dns-aa686e0e9e4d122550f8.css",
-      "type": "link",
-      "ipinfo": {
-        "domain": "one.one.one.one",
-        "ip": "1.0.0.1",
-        "hostname": "one.one.one.one",
-        "city": "Brisbane",
-        "region": "Queensland",
-        "country": "AU",
-        "loc": "-27.4816,153.0175",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "Australia/Brisbane"
-      },
-      "score": "?"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://embed.cloudflarestream.com/embed/r4xu.fla9.latest.js",
       "type": "script",
       "ipinfo": {
         "domain": "embed.cloudflarestream.com",
-        "ip": "104.16.94.114",
+        "ip": "104.16.96.114",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -78,7 +83,7 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     }
   ]
 }

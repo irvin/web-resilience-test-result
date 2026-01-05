@@ -2,7 +2,7 @@
   "url": "https://news.gamme.com.tw",
   "canonicalURL": "https://news.gamme.com.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:28:29.240Z",
+  "timestamp": "2026-01-05T20:17:59.526Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 61,
   "uniqueDomains": 5,
   "test_results": {
-    "domestic": 4,
-    "cloud_w_domestic_node": 1,
-    "foreign": 0
+    "domestic": {
+      "cloud": 4,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 1,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -47,15 +52,15 @@
         "org": "AS396982 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "ajax.googleapis.com",
-        "ip": "142.250.77.10",
-        "hostname": "nctsaa-ab-in-f10.1e100.net",
+        "ip": "142.250.204.42",
+        "hostname": "hkg07s38-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -63,10 +68,10 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://images2.gamme.com.tw/news2/2025/47/1/qaCSzqbKw6Wep6OdkZ2dlo3Y1d4-150x110.webp",
+      "originalUrl": "https://images2.gamme.com.tw/news2/2025/52/3/qaCVz8_exKCZ3KqbkZ2dlo3Y1d4-150x110.webp",
       "type": "img",
       "ipinfo": {
         "domain": "images2.gamme.com.tw",
@@ -78,7 +83,7 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://member.gamme.com.tw/css/member_ui.css?v=1",
@@ -94,7 +99,7 @@
         "org": "AS396982 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://movie.gamme.com.tw/img/play_btn.png",
@@ -110,7 +115,7 @@
         "org": "AS396982 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

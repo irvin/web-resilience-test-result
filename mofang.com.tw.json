@@ -2,7 +2,7 @@
   "url": "https://mofang.com.tw",
   "canonicalURL": "https://mofang.com.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:53:33.085Z",
+  "timestamp": "2026-01-05T19:52:45.116Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 65,
-  "uniqueDomains": 12,
+  "requestCount": 86,
+  "uniqueDomains": 13,
   "test_results": {
-    "domestic": 6,
-    "cloud_w_domestic_node": 3,
-    "foreign": 3
+    "domestic": {
+      "cloud": 6,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 6,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -47,14 +52,14 @@
         "org": "AS396982 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://code.jquery.com/jquery-3.6.0.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "code.jquery.com",
-        "ip": "151.101.130.137",
+        "ip": "151.101.194.137",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -62,7 +67,7 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "X"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-MPK6GXQ&l=dataLayer",
@@ -78,10 +83,10 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://connect.facebook.net/en_US/sdk.js",
+      "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
       "type": "script",
       "ipinfo": {
         "domain": "connect.facebook.net",
@@ -94,14 +99,14 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://hcaptcha.com/1/api.js?render=explicit&onload=_hcaptchaOnLoad&sentry=true",
       "type": "script",
       "ipinfo": {
         "domain": "hcaptcha.com",
-        "ip": "104.19.229.21",
+        "ip": "104.19.230.21",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -109,7 +114,7 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://api.mofang.com.tw/news_banner.php",
@@ -125,15 +130,15 @@
         "org": "AS396982 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://id.twitch.tv/oauth2/token?client_id=jlkvbk69xbbwfiy164pfa8y3yc7nlk&client_secret=3w7v0xryhg4g4b8h1cxdga3gd7dp2o&grant_type=client_credentials",
       "type": "xmlhttprequest",
       "ipinfo": {
         "domain": "id.twitch.tv",
-        "ip": "54.203.181.232",
-        "hostname": "ec2-54-203-181-232.us-west-2.compute.amazonaws.com",
+        "ip": "54.71.142.10",
+        "hostname": "ec2-54-71-142-10.us-west-2.compute.amazonaws.com",
         "city": "Boardman",
         "region": "Oregon",
         "country": "US",
@@ -141,10 +146,25 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://betabg.mofang.com.tw/admin/20201209/uploads/2025-11-26/images/%E8%B3%BD%E4%BA%8B%E6%99%82%E7%A8%8B_02.jpg",
+      "originalUrl": "https://newassets.hcaptcha.com/captcha/v1/2e2f9feae51e15dd4676ba8e3d761ec72f41b826/static/hcaptcha.html#frame=challenge&id=0gjsnvrbvue&host=mofang.com.tw&sentry=true&reportapi=https%3A%2F%2Faccounts.hcaptcha.com&recaptchacompat=true&custom=false&hl=en&tplinks=on&andint=off&pstissuer=https%3A%2F%2Fpst-issuer.hcaptcha.com&sitekey=2f56fe4d-3fea-484e-bf91-4d9f2a27dc2b&size=compact&theme=light&origin=https%3A%2F%2Fmofang.com.tw",
+      "type": "iframe",
+      "ipinfo": {
+        "domain": "newassets.hcaptcha.com",
+        "ip": "104.19.229.21",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://betabg.mofang.com.tw/admin/20201209/uploads/2023-11-03/images/230x0w.jpg",
       "type": "img",
       "ipinfo": {
         "domain": "betabg.mofang.com.tw",
@@ -157,15 +177,61 @@
         "org": "AS396982 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://api.twitch.tv/helix/streams?language=zh&first=24",
+      "type": "xmlhttprequest",
+      "ipinfo": {
+        "domain": "api.twitch.tv",
+        "ip": "3.169.121.28",
+        "hostname": "server-3-169-121-28.tpe53.r.cloudfront.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://is4-ssl.mzstatic.com/image/thumb/PurpleSource125/v4/b4/40/07/b4400778-0801-6e30-cea3-52b8bc2590db/fb75f7c9-f328-4b1a-a844-3e9411116766_a1.jpg/552x414bb.jpg",
+      "type": "img",
+      "ipinfo": {
+        "domain": "is4-ssl.mzstatic.com",
+        "ip": "146.75.47.6",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource125/v4/ec/7d/20/ec7d2036-7fff-5a44-60ee-2e75d1aef19f/867f11cf-b25a-4f14-9eb7-60cbc66ed535_iOS_12.9inch_title_2048x2732_v18.png/576x768bb.png",
+      "type": "img",
+      "ipinfo": {
+        "domain": "is1-ssl.mzstatic.com",
+        "ip": "146.75.47.6",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://lh7-us.googleusercontent.com/ErqPBXjRCIk79BconXqSGiJEuqcVpl8WLc9JbEwPWmM3DVwLnfkCzpkanXfUyvCGi7NAPH9AuGKXGo9zVI9GBluC7tQOuPqOGuLDeTp6JbyphAEqOQHhieptzAJs9dbi9vXn3yixUiES6jBa80s2kg",
       "type": "img",
       "ipinfo": {
         "domain": "lh7-us.googleusercontent.com",
-        "ip": "142.250.198.65",
-        "hostname": "lctsaa-ab-in-f1.1e100.net",
+        "ip": "142.250.204.33",
+        "hostname": "hkg07s38-in-f1.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -173,52 +239,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://newassets.hcaptcha.com/captcha/v1/44f27d7882ec4be4e7e3eeff0c652cae8ecd13c8/static/hcaptcha.html#frame=challenge&id=0v8sxa3hkzy&host=mofang.com.tw&sentry=true&reportapi=https%3A%2F%2Faccounts.hcaptcha.com&recaptchacompat=true&custom=false&hl=en&tplinks=on&andint=off&pstissuer=https%3A%2F%2Fpst-issuer.hcaptcha.com&sitekey=2f56fe4d-3fea-484e-bf91-4d9f2a27dc2b&size=compact&theme=light&origin=https%3A%2F%2Fmofang.com.tw",
-      "type": "iframe",
-      "ipinfo": {
-        "domain": "newassets.hcaptcha.com",
-        "ip": "104.19.229.21",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://is4-ssl.mzstatic.com/image/thumb/PurpleSource114/v4/6b/0b/ec/6b0becfb-3745-cbd5-5d87-095acee91270/1bffabc8-41a5-43ce-9a3e-1af586310fb7_01.png/552x414bb.png",
-      "type": "img",
-      "ipinfo": {
-        "domain": "is4-ssl.mzstatic.com",
-        "ip": "199.232.115.6",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "score": "X"
-    },
-    {
-      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource125/v4/ec/7d/20/ec7d2036-7fff-5a44-60ee-2e75d1aef19f/867f11cf-b25a-4f14-9eb7-60cbc66ed535_iOS_12.9inch_title_2048x2732_v18.png/576x768bb.png",
-      "type": "img",
-      "ipinfo": {
-        "domain": "is1-ssl.mzstatic.com",
-        "ip": "199.232.115.6",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "score": "X"
+      "category": "domestic/cloud"
     }
   ]
 }

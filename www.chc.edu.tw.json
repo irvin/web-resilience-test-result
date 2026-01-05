@@ -2,7 +2,7 @@
   "url": "https://www.chc.edu.tw/",
   "canonicalURL": "https://www.chc.edu.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:49:30.271Z",
+  "timestamp": "2026-01-05T19:53:20.176Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,54 +22,58 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 24,
+  "requestCount": 18,
   "uniqueDomains": 4,
   "test_results": {
-    "domestic": 3,
-    "cloud_w_domestic_node": 1,
-    "foreign": 0
+    "domestic": {
+      "cloud": 2,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 2,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap",
+      "originalUrl": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css",
       "type": "link",
       "ipinfo": {
-        "domain": "fonts.googleapis.com",
-        "ip": "142.250.198.74",
-        "hostname": "lctsaa-ab-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "domain": "cdn.jsdelivr.net",
+        "ip": "151.101.193.229",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "America/Los_Angeles"
       },
-      "score": "O"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://newboe.chc.edu.tw/ZenBlog/assets/vendor/bootstrap/css/bootstrap.min.css",
+      "originalUrl": "https://newboe.chc.edu.tw/css/my.css",
       "type": "link",
       "ipinfo": {
         "domain": "newboe.chc.edu.tw",
         "ip": "163.23.200.8",
-        "city": "Beigang",
+        "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "23.5701,120.3016",
+        "loc": "24.1469,120.6839",
         "org": "AS1659 Taiwan Academic Network (TANet) Information Center",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js",
-      "type": "script",
+      "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.2/chosen.min.css",
+      "type": "link",
       "ipinfo": {
         "domain": "cdnjs.cloudflare.com",
-        "ip": "104.17.25.14",
+        "ip": "104.17.24.14",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -77,15 +81,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-RPLBGVYQZ6",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.77.8",
-        "hostname": "nctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.204.40",
+        "hostname": "hkg07s38-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -93,7 +97,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

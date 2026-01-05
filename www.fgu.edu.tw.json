@@ -2,7 +2,7 @@
   "url": "https://www.fgu.edu.tw/",
   "canonicalURL": "https://www.fgu.edu.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:24:01.491Z",
+  "timestamp": "2026-01-05T20:24:46.600Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,19 +22,24 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 179,
-  "uniqueDomains": 14,
+  "uniqueDomains": 13,
   "test_results": {
-    "domestic": 9,
-    "cloud_w_domestic_node": 2,
-    "foreign": 2
+    "domestic": {
+      "cloud": 7,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 4,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://website.fgu.edu.tw/assets/frontend_extend-cf7eb66a2f662cb09c7862fe6dd8ddcf42a82a66b81f1adab026e833666b74e8.css",
+      "originalUrl": "https://website.fgu.edu.tw/assets/front_end-c68018fd9a6aceb4059c7815e101465ef23be8c2adce9cace6aefc2882108744.css",
       "type": "link",
       "ipinfo": {
         "domain": "website.fgu.edu.tw",
@@ -47,14 +52,14 @@
         "org": "AS1659 Taiwan Academic Network (TANet) Information Center",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css",
       "type": "link",
       "ipinfo": {
         "domain": "stackpath.bootstrapcdn.com",
-        "ip": "104.18.10.207",
+        "ip": "104.18.11.207",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -62,15 +67,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://apis.google.com/js/platform.js",
       "type": "script",
       "ipinfo": {
         "domain": "apis.google.com",
-        "ip": "142.250.198.78",
-        "hostname": "lctsaa-ab-in-f14.1e100.net",
+        "ip": "142.250.196.206",
+        "hostname": "nctsaa-ac-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -78,15 +83,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=UA-84018348-1",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.77.8",
-        "hostname": "nctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -94,22 +99,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://pro.fontawesome.com/releases/v5.10.0/css/all.css",
-      "type": "link",
-      "ipinfo": {
-        "domain": "pro.fontawesome.com",
-        "ip": "172.64.147.188",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "score": "?"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://db.onlinekenfonts.com/c/b8e20323f8f36e06f87745c93c45afcd?family=IndustryW00-Medium",
@@ -119,12 +109,27 @@
       }
     },
     {
+      "originalUrl": "https://pro.fontawesome.com/releases/v5.10.0/css/all.css",
+      "type": "link",
+      "ipinfo": {
+        "domain": "pro.fontawesome.com",
+        "ip": "104.18.40.68",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
       "originalUrl": "https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500&display=swap&subset=chinese-traditional",
       "type": "link",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.198.74",
-        "hostname": "lctsaa-ab-in-f10.1e100.net",
+        "ip": "142.250.196.202",
+        "hostname": "nctsaa-ac-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -132,7 +137,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://code.jquery.com/ui/1.12.1/jquery-ui.js",
@@ -147,39 +152,7 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "X"
-    },
-    {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&tid=AW-674644842&en=page_view&dl=https%3A%2F%2Fwebsite.fgu.edu.tw%2F&scrsrc=www.googletagmanager.com&rnd=1246838100.1764865438&dt=%E4%BD%9B%E5%85%89%E5%A4%A7%E5%AD%B8&auid=305946700.1764865438&navt=n&npa=0&gtm=45be5c21za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115583767~115938465~115938468~116184927~116184929~116217636~116217638~116251938~116251940~116474638&tft=1764865437761&tfd=2026&apve=1&apvf=f",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.77.4",
-        "hostname": "nctsaa-ab-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/674644842/?random=1764865437756&cv=11&fst=1764864000000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be5c21za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115583767~115938465~115938468~116184927~116184929~116217636~116217638~116251938~116251940~116474638&u_w=1280&u_h=720&url=https%3A%2F%2Fwebsite.fgu.edu.tw%2F%3Flocale%3Dzh_tw&frm=0&tiba=%E4%BD%9B%E5%85%89%E5%A4%A7%E5%AD%B8&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=305946700.1764865438&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.1.0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEAwksa0W0YF5oHTd8OWxwV1_lbn8RCoPvwMUmnYWaSnfkR-HQimAAJ0aF6CYq4jHNXhnpTIeqPYVRbBuN0N4HOhipMMgxwT-92q3ZUOGS0QdevCiOOk75HaZgFgNy7QNblmf5Z_vi6Q7BpJRzf9e41CMRA7y0cIJrhxeCS2aJ6hIyGbpzsVnStgDIV&random=1699912118&rmt_tld=1&ipr=y",
-      "type": "img",
-      "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://platform.twitter.com/widgets.js",
@@ -194,15 +167,15 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "score": "X"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://www.youtube.com/iframe_api",
-      "type": "script",
+      "originalUrl": "https://www.google.com/ccm/collect?frm=0&tid=AW-674644842&en=page_view&dl=https%3A%2F%2Fwebsite.fgu.edu.tw%2F&scrsrc=www.googletagmanager.com&rnd=693912526.1767644682&dt=%E4%BD%9B%E5%85%89%E5%A4%A7%E5%AD%B8&auid=1868863930.1767644682&navt=n&npa=0&gtm=45be5cb0za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528500~104573694~104684208~104684211~105391253~115583767~115616985~115938465~115938469~116184927~116184929~116251938~116251940&tft=1767644681935&tfd=1327&apve=1&apvf=f",
+      "type": "fetch",
       "ipinfo": {
-        "domain": "www.youtube.com",
-        "ip": "142.250.198.78",
-        "hostname": "lctsaa-ab-in-f14.1e100.net",
+        "domain": "www.google.com",
+        "ip": "142.250.196.196",
+        "hostname": "nctsaa-ac-in-f4.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -210,7 +183,39 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/674644842/?random=1767644681930&cv=11&fst=1767643200000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be5cb0za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528500~104573694~104684208~104684211~105391253~115583767~115616985~115938465~115938469~116184927~116184929~116251938~116251940&u_w=1280&u_h=720&url=https%3A%2F%2Fwebsite.fgu.edu.tw%2F%3Flocale%3Dzh_tw&frm=0&tiba=%E4%BD%9B%E5%85%89%E5%A4%A7%E5%AD%B8&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1868863930.1767644682&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEAwksa0RGQCA5N58pBa23lWzVhqVZf8X2dHsEoR0B0-bdbJxLka93ewRzLMBK7UZC0Ee4jdwe-PiCQCtPEsAvy7CJ8rjLFbHokciJkNMoU27BnTBWkSkBmrlVjqBqyU7b93B18B_xirWWjw9_iogQ04iqIXjJeqOUcW0WZoR0KbohhCGv3ClqrUEfp&random=74730767&rmt_tld=1&ipr=y",
+      "type": "img",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.198.67",
+        "hostname": "lctsaa-ab-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.youtube.com/iframe_api",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.youtube.com",
+        "ip": "142.250.66.78",
+        "hostname": "hkg12s27-in-f14.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
@@ -226,23 +231,7 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://www.facebook.com/tr/",
-      "type": "beacon",
-      "ipinfo": {
-        "domain": "www.facebook.com",
-        "ip": "31.13.87.36",
-        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS32934 Facebook, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "domestic/direct"
     }
   ]
 }

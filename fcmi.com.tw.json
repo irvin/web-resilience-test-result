@@ -2,7 +2,7 @@
   "url": "https://fcmi.com.tw",
   "canonicalURL": "https://fcmi.com.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:41:39.779Z",
+  "timestamp": "2026-01-05T19:51:05.275Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 30,
   "uniqueDomains": 3,
   "test_results": {
-    "domestic": 1,
-    "cloud_w_domestic_node": 2,
-    "foreign": 0
+    "domestic": {
+      "cloud": 1,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 2,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -47,10 +52,10 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://www.fcmi.com.tw/upload/report/photo/20251204155745818387.png",
+      "originalUrl": "https://www.fcmi.com.tw/upload/banner/photo/20241203162703506117.jpg",
       "type": "img",
       "ipinfo": {
         "domain": "www.fcmi.com.tw",
@@ -63,15 +68,15 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://fonts.googleapis.com/css2?family=Lexend:wght@300;600&family=Noto+Sans+TC:wght@400;500;700&display=swap",
       "type": "css",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.77.10",
-        "hostname": "nctsaa-ab-in-f10.1e100.net",
+        "ip": "142.250.196.202",
+        "hostname": "nctsaa-ac-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -79,7 +84,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

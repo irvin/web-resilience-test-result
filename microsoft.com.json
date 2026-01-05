@@ -2,7 +2,7 @@
   "url": "https://microsoft.com",
   "canonicalURL": "https://www.microsoft.com/zh-tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:36:12.937Z",
+  "timestamp": "2026-01-05T19:38:37.972Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 73,
   "uniqueDomains": 7,
   "test_results": {
-    "domestic": 4,
-    "cloud_w_domestic_node": 3,
-    "foreign": 0
+    "domestic": {
+      "cloud": 3,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 3,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -38,16 +43,16 @@
       "type": "link",
       "ipinfo": {
         "domain": "c.s-microsoft.com",
-        "ip": "184.25.124.92",
-        "hostname": "a184-25-124-92.deploy.static.akamaitechnologies.com",
-        "city": "Yuanlin",
+        "ip": "23.39.61.232",
+        "hostname": "a23-39-61-232.deploy.static.akamaitechnologies.com",
+        "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "23.9567,120.5761",
+        "loc": "25.0531,121.5264",
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.microsoft.com/echo/etc.clientlibs/microsoft/clientlibs/clientlib-mwf-new/main-light.ACSHASH00f3de21feb098c1210537b8acff540a.min.css",
@@ -63,7 +68,7 @@
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://uhf.microsoft.com/images/microsoft/RE1Mu3b.png",
@@ -79,38 +84,22 @@
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Hero-Desktop-M365-Premium-FY26HOL:VP4-1399x600",
+      "originalUrl": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Hero-Desktop-M365-Icon-Bounce-Premium:VP4-1399x600",
       "type": "link",
       "ipinfo": {
         "domain": "cdn-dynmedia-1.microsoft.com",
-        "ip": "203.69.138.40",
-        "hostname": "203-69-138-40.hinet-ip.hinet.net",
-        "city": "New Taipei City",
-        "region": "Taipei",
+        "ip": "210.71.227.210",
+        "city": "Taipei",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0620,121.4570",
-        "org": "AS20940 Akamai International B.V.",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://mem.gfx.ms/meversion?partner=mshomepage&market=zh-tw&uhf=1",
-      "type": "script",
-      "ipinfo": {
-        "domain": "mem.gfx.ms",
-        "ip": "13.107.213.73",
-        "city": "Redmond",
-        "region": "Washington",
-        "country": "US",
-        "loc": "47.6740,-122.1215",
-        "org": "AS8075 Microsoft Corporation",
-        "timezone": "America/Los_Angeles"
-      },
-      "score": "?"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js",
@@ -125,7 +114,22 @@
         "org": "AS8075 Microsoft Corporation",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://mem.gfx.ms/meversion?partner=mshomepage&market=zh-tw&uhf=1",
+      "type": "script",
+      "ipinfo": {
+        "domain": "mem.gfx.ms",
+        "ip": "13.107.246.73",
+        "city": "Redmond",
+        "region": "Washington",
+        "country": "US",
+        "loc": "47.6740,-122.1215",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://js.monitor.azure.com/scripts/c/ms.shared.analytics.mectrl-3.gbl.min.js",
@@ -140,7 +144,7 @@
         "org": "AS8075 Microsoft Corporation",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "url": "https://taishinbank.com.tw",
   "canonicalURL": "https://taishinbank.com.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:39:34.878Z",
+  "timestamp": "2026-01-05T19:40:03.997Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 111,
+  "requestCount": 118,
   "uniqueDomains": 4,
   "test_results": {
-    "domestic": 4,
-    "cloud_w_domestic_node": 0,
-    "foreign": 0
+    "domestic": {
+      "cloud": 3,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 0,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -39,22 +44,22 @@
       "ipinfo": {
         "domain": "www.taishinbank.com.tw",
         "ip": "60.244.64.20",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "city": "Taipei",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "25.0531,121.5264",
         "org": "AS24154 Asia Pacific Broadband Fixed Lines Co., Ltd.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-MJKQK2B",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -62,23 +67,23 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://web.taishinbank.com.tw/TSB/export/sites/TSB/images/homepage/HomepageBanner1_1920x475_20251201.jpg",
+      "originalUrl": "https://web.taishinbank.com.tw/TSB/export/sites/TSB/images/homepage/HomepageBanner1_1920x475_20260101.jpg",
       "type": "css",
       "ipinfo": {
         "domain": "web.taishinbank.com.tw",
-        "ip": "203.66.34.34",
-        "hostname": "203-66-34-34.hinet-ip.hinet.net",
-        "city": "Taichung",
+        "ip": "203.66.32.10",
+        "hostname": "203-66-32-10.hinet-ip.hinet.net",
+        "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "24.1469,120.6839",
+        "loc": "25.0531,121.5264",
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://smartrobot.taishinbank.com.tw/Webhook/getgreeting/4e299055df6833f1f373/roseweb/",
@@ -93,7 +98,7 @@
         "org": "AS9919 New Century InfoComm Tech Co., Ltd.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

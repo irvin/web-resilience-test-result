@@ -2,7 +2,7 @@
   "url": "https://xiaoyakankan.com",
   "canonicalURL": "https://xiaoyakankan.com",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:41:14.574Z",
+  "timestamp": "2026-01-05T19:44:22.791Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 17,
+  "requestCount": 18,
   "uniqueDomains": 2,
   "test_results": {
-    "domestic": 0,
-    "cloud_w_domestic_node": 2,
-    "foreign": 0
+    "domestic": {
+      "cloud": 0,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 2,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -38,6 +43,21 @@
       "type": "other",
       "ipinfo": {
         "domain": "xiaoyakankan.com",
+        "ip": "104.26.1.55",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://i1.xiaoyakankan.com/b/f4/ic51.jpg",
+      "type": "img",
+      "ipinfo": {
+        "domain": "i1.xiaoyakankan.com",
         "ip": "172.67.68.73",
         "city": "San Francisco",
         "region": "California",
@@ -46,22 +66,7 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://i1.xiaoyakankan.com/1/j6/r6o7.jpg",
-      "type": "img",
-      "ipinfo": {
-        "domain": "i1.xiaoyakankan.com",
-        "ip": "104.26.0.55",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "score": "?"
+      "category": "foreign/cloud"
     }
   ]
 }

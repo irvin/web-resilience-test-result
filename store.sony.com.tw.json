@@ -2,7 +2,7 @@
   "url": "https://store.sony.com.tw",
   "canonicalURL": "https://store.sony.com.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:41:52.844Z",
+  "timestamp": "2026-01-05T20:23:03.206Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 85,
-  "uniqueDomains": 6,
+  "requestCount": 96,
+  "uniqueDomains": 9,
   "test_results": {
-    "domestic": 5,
-    "cloud_w_domestic_node": 1,
-    "foreign": 0
+    "domestic": {
+      "cloud": 7,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 2,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -46,15 +51,31 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://tags.tiqcdn.com/utag/sony-marketing/tw/prod/utag.sync.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "tags.tiqcdn.com",
+        "ip": "3.169.55.78",
+        "hostname": "server-3-169-55-78.tpe54.r.cloudfront.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
       "type": "script",
       "ipinfo": {
         "domain": "ajax.googleapis.com",
-        "ip": "142.250.66.74",
-        "hostname": "hkg12s27-in-f10.1e100.net",
+        "ip": "142.250.204.42",
+        "hostname": "hkg07s38-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -62,15 +83,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-MMFD7QH",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -78,15 +99,47 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com/pagead/1p-user-list/1038284608/?random=1767644581260&cv=9&fst=1767643200000&num=1&guid=ON&resp=GooglemKTybQhCsO&eid=375603260%2C466465926%2C512247838%2C658953495&u_h=720&u_w=1280&ig=1&frm=0&url=https%3A%2F%2Fstore.sony.com.tw%2F&tiba=Sony%20%E5%8F%B0%E7%81%A3%E5%AE%98%E6%96%B9%E8%B3%BC%E7%89%A9%E7%B6%B2%E7%AB%99%20-%20Sony%20Store%2C%20Online%20(Taiwan)&hn=www.googleadservices.com&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEAwksa0fNIoPzR_u1sY5PEJoTlEpqvZY4Tnh299YFEmOqAr4TLH1x7CBYty5szpl4SZzdDsSiPiOIHYrQKlPltuc3_2ezlMd-s8SfOnDTiq0W6WAXbUTNxEdtoqse0BfNwqIJ0edBfy03GDgVwB6xrWSO1tGdMcJcEYeFz396BJtOBfzMJBt-AKeyx&random=1764841693&resp=GooglemKTybQhCsO&rmt_tld=0&ipr=y",
+      "type": "img",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.250.196.196",
+        "hostname": "nctsaa-ac-in-f4.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/1038284608/?random=1767644581260&cv=9&fst=1767643200000&num=1&guid=ON&resp=GooglemKTybQhCsO&eid=375603260%2C466465926%2C512247838%2C658953495&u_h=720&u_w=1280&ig=1&frm=0&url=https%3A%2F%2Fstore.sony.com.tw%2F&tiba=Sony%20%E5%8F%B0%E7%81%A3%E5%AE%98%E6%96%B9%E8%B3%BC%E7%89%A9%E7%B6%B2%E7%AB%99%20-%20Sony%20Store%2C%20Online%20(Taiwan)&hn=www.googleadservices.com&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEAwksa0fNIoPzR_u1sY5PEJoTlEpqvZY4Tnh299YFEmOqAr4TLH1x7CBYty5szpl4SZzdDsSiPiOIHYrQKlPltuc3_2ezlMd-s8SfOnDTiq0W6WAXbUTNxEdtoqse0BfNwqIJ0edBfy03GDgVwB6xrWSO1tGdMcJcEYeFz396BJtOBfzMJBt-AKeyx&random=1764841693&resp=GooglemKTybQhCsO&rmt_tld=1&ipr=y",
+      "type": "img",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.196.195",
+        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap",
       "type": "link",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.196.202",
-        "hostname": "nctsaa-ac-in-f10.1e100.net",
+        "ip": "142.250.198.74",
+        "hostname": "lctsaa-ab-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -94,39 +147,38 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/1038284608/?random=1764866511917&cv=9&fst=1764864000000&num=1&guid=ON&resp=GooglemKTybQhCsO&eid=375603260%2C466465926%2C512247839%2C658953496&u_h=720&u_w=1280&ig=1&frm=0&url=https%3A%2F%2Fstore.sony.com.tw%2F&tiba=Sony%20%E5%8F%B0%E7%81%A3%E5%AE%98%E6%96%B9%E8%B3%BC%E7%89%A9%E7%B6%B2%E7%AB%99%20-%20Sony%20Store%2C%20Online%20(Taiwan)&hn=www.googleadservices.com&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEAwksa0aIM9nGYBiPWVxw0hV9lwQXIyFnpEGpUu2YKEweoNXSiAO00_Zzlpvh9Ba0U5IS9M7rsA3zKkAw7xf4zrfSrzW96dL2uvCHOk4asFmZzquMmW8BP0AtoXum51FIAH9CuxV7LyiI2g1rbJdL7RndnGXTo29lY9BFGU3SK3DilD9u5_v87db-_&random=1465739142&resp=GooglemKTybQhCsO&rmt_tld=1&ipr=y",
-      "type": "img",
+      "originalUrl": "https://sonyglobal.d1.sc.omtrdc.net/id?d_visid_ver=5.2.0&d_fieldgroup=A&mcorgid=7286403D53B6AA9A0A490D4C%40AdobeOrg&mid=18184065306001647151988703650086401162&ts=1767644581558",
+      "type": "xmlhttprequest",
       "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.66.67",
-        "hostname": "hkg12s27-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "domain": "sonyglobal.d1.sc.omtrdc.net",
+        "ip": "63.140.48.235",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Singapore"
       },
-      "score": "O"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/pagead/1p-user-list/1038284608/?random=1764866511917&cv=9&fst=1764864000000&num=1&guid=ON&resp=GooglemKTybQhCsO&eid=375603260%2C466465926%2C512247839%2C658953496&u_h=720&u_w=1280&ig=1&frm=0&url=https%3A%2F%2Fstore.sony.com.tw%2F&tiba=Sony%20%E5%8F%B0%E7%81%A3%E5%AE%98%E6%96%B9%E8%B3%BC%E7%89%A9%E7%B6%B2%E7%AB%99%20-%20Sony%20Store%2C%20Online%20(Taiwan)&hn=www.googleadservices.com&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEAwksa0aIM9nGYBiPWVxw0hV9lwQXIyFnpEGpUu2YKEweoNXSiAO00_Zzlpvh9Ba0U5IS9M7rsA3zKkAw7xf4zrfSrzW96dL2uvCHOk4asFmZzquMmW8BP0AtoXum51FIAH9CuxV7LyiI2g1rbJdL7RndnGXTo29lY9BFGU3SK3DilD9u5_v87db-_&random=1465739142&resp=GooglemKTybQhCsO&rmt_tld=0&ipr=y",
-      "type": "img",
+      "originalUrl": "https://cdn.qgr.ph/qgraph.823fc5b3d3edef7a400b.js",
+      "type": "script",
       "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.198.68",
-        "hostname": "lctsaa-ab-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "domain": "cdn.qgr.ph",
+        "ip": "3.169.121.17",
+        "hostname": "server-3-169-121-17.tpe53.r.cloudfront.net",
+        "city": "Taipei",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
+        "loc": "25.0531,121.5264",
+        "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

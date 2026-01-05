@@ -2,7 +2,7 @@
   "url": "https://www.tyc.edu.tw/",
   "canonicalURL": "https://www.tyc.edu.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:41:39.436Z",
+  "timestamp": "2026-01-05T19:45:13.008Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 126,
+  "requestCount": 122,
   "uniqueDomains": 5,
   "test_results": {
-    "domestic": 4,
-    "cloud_w_domestic_node": 1,
-    "foreign": 0
+    "domestic": {
+      "cloud": 3,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 1,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -40,14 +45,14 @@
         "domain": "www.tyc.edu.tw",
         "ip": "61.67.75.72",
         "hostname": "61-67-75-72.hinet-ip.hinet.net",
-        "city": "Taipei",
-        "region": "Taiwan",
+        "city": "Banqiao",
+        "region": "Taipei",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "25.0143,121.4672",
         "org": "AS4782 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://api.tgos.tw/TGOS_API/tgos?ver=2&AppID=FSoRQRqbuATdyDOgRwu7dITo7MSp2t+h/5G16sniliGsOO1PZTvMHA==&APIKey=cGEErDNy5yN/1fQ0vyTOZrghjE+jIU6uS3aGRO6EvtTOY2vPhVrueTYEcihg8LuWYNattxUmIdoxPhBuDyWCMCipaMLcgtirUgmhH3mNlJbopaH6simvNNZZkDV4p3QPScAtvy9qirQydpOgVITlIQ3tGIy1jy23AUOHiTaJNyabo7gm3c2JyPx3LDt9XYXQ1+xxZuZ0tCY6SH4daUq1ls3AJ2KtkdD+GR+5NOx42QUYKu8NiGW22sPUmHw3xMNbQuv+JhFPjphoYPYSw/6kzbsemarScQnhZroDQSDR0zmUnIfpfgr5Lw6/m0Z8UyQfjt3JyzMMQSKF6/EbAR+WzBXul0MrBlTIyk7KRklQppW44hUNh2oqxkI5+fKnigW3ellJLt3FAjL0uwyvQxt8tVGyFCi0A/ksXo0y/evRb/+xMVeM76/F1z10gJx7T7nK7HLKdnhB2TAWU2H5Bdz14A==",
@@ -63,15 +68,15 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-YW2DMSD0X1",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -79,31 +84,31 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://ws.tycg.gov.tw/001/Upload/66/relpic/11201/1597130/47b8849b-c697-47a6-917a-423bbe60d4ba.png",
+      "originalUrl": "https://ws.tycg.gov.tw/001/Upload/66/relpic/11201/1601405/8a5c3e83-2ee3-4da8-9695-bb82dc3f8b19.png",
       "type": "img",
       "ipinfo": {
         "domain": "ws.tycg.gov.tw",
-        "ip": "203.66.32.201",
-        "hostname": "203-66-32-201.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "203.66.32.205",
+        "hostname": "203-66-32-205.hinet-ip.hinet.net",
+        "city": "Taipei",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "25.0531,121.5264",
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://www.youtube.com/embed/r9q9vke8iUA",
       "type": "iframe",
       "ipinfo": {
         "domain": "www.youtube.com",
-        "ip": "142.250.198.78",
-        "hostname": "lctsaa-ab-in-f14.1e100.net",
+        "ip": "142.250.204.46",
+        "hostname": "hkg07s38-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -111,7 +116,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

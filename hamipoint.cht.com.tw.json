@@ -2,7 +2,7 @@
   "url": "https://hamipoint.cht.com.tw",
   "canonicalURL": "https://hamipoint.cht.com.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:29:41.698Z",
+  "timestamp": "2026-01-05T20:20:46.620Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 174,
-  "uniqueDomains": 15,
+  "requestCount": 163,
+  "uniqueDomains": 14,
   "test_results": {
-    "domestic": 10,
-    "cloud_w_domestic_node": 5,
-    "foreign": 0
+    "domestic": {
+      "cloud": 6,
+      "direct": 3
+    },
+    "foreign": {
+      "cloud": 5,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -38,8 +43,8 @@
       "type": "link",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.204.42",
-        "hostname": "hkg07s38-in-f10.1e100.net",
+        "ip": "142.250.77.10",
+        "hostname": "nctsaa-ab-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -47,7 +52,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
@@ -62,7 +67,7 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css",
@@ -77,31 +82,31 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://portal-hamipoint.cdn.hinet.net/css/style.css",
+      "originalUrl": "https://portal-hamipoint.cdn.hinet.net/css/animate.css",
       "type": "link",
       "ipinfo": {
         "domain": "portal-hamipoint.cdn.hinet.net",
-        "ip": "203.66.32.105",
-        "hostname": "203-66-32-105.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "203.66.32.140",
+        "hostname": "203-66-32-140.hinet-ip.hinet.net",
+        "city": "Taipei",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "25.0531,121.5264",
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-5WCGJ7V",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -109,14 +114,14 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://img.sopower.com.tw/g_pic_p1_20241123135138.jpg",
+      "originalUrl": "https://img.sopower.com.tw/g_pic_p1_20250123094438.jpg",
       "type": "img",
       "ipinfo": {
         "domain": "img.sopower.com.tw",
-        "ip": "172.67.71.78",
+        "ip": "104.26.9.251",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -124,15 +129,31 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://images.payeasy.com.tw/products/9289/8365/8365822.jpg",
+      "originalUrl": "https://ws-hamipoint.cdn.hinet.net/uploads/%E5%95%86%E5%93%81%E5%9C%96/7-11/%E8%99%9B%E6%93%AC%E5%95%86%E5%93%81%E5%8D%A1/7-11%E5%95%86%E5%93%81%E5%8D%A1%24500(New).jpeg",
+      "type": "img",
+      "ipinfo": {
+        "domain": "ws-hamipoint.cdn.hinet.net",
+        "ip": "203.66.32.107",
+        "hostname": "203-66-32-107.hinet-ip.hinet.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://images.payeasy.com.tw/products/8889/8001/8001452.jpg",
       "type": "img",
       "ipinfo": {
         "domain": "images.payeasy.com.tw",
-        "ip": "13.114.1.1",
-        "hostname": "ec2-13-114-1-1.ap-northeast-1.compute.amazonaws.com",
+        "ip": "13.113.44.8",
+        "hostname": "ec2-13-113-44-8.ap-northeast-1.compute.amazonaws.com",
         "city": "Tokyo",
         "region": "Tokyo",
         "country": "JP",
@@ -140,42 +161,10 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Tokyo"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://web-cpe.cdn.hinet.net/res/images/202502/prodimg-20250208-TL3KXQ.jpg",
-      "type": "img",
-      "ipinfo": {
-        "domain": "web-cpe.cdn.hinet.net",
-        "ip": "203.66.32.5",
-        "hostname": "203-66-32-5.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS3462 Data Communication Business Group",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://ws-hamipoint.cdn.hinet.net/uploads/%E5%95%86%E5%93%81%E5%9C%96/7-11/%E8%99%9B%E6%93%AC%E5%95%86%E5%93%81%E5%8D%A1/7-11%E5%95%86%E5%93%81%E5%8D%A1%24500(New).jpeg",
-      "type": "img",
-      "ipinfo": {
-        "domain": "ws-hamipoint.cdn.hinet.net",
-        "ip": "203.66.32.197",
-        "hostname": "203-66-32-197.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS3462 Data Communication Business Group",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://backend.cmp.17life.com/10276700638866298026448311.jpeg",
+      "originalUrl": "https://backend.cmp.17life.com/10278502638881679759515736.jpeg",
       "type": "img",
       "ipinfo": {
         "domain": "backend.cmp.17life.com",
@@ -187,15 +176,30 @@
         "org": "AS8075 Microsoft Corporation",
         "timezone": "Asia/Tokyo"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fhamipoint.cht.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=1177774619.1764865780&dt=Hami%20Point%E5%AE%98%E6%96%B9%E7%B6%B2%E7%AB%99%20%EF%BD%9C%E4%B8%AD%E8%8F%AF%E9%9B%BB%E4%BF%A1%E7%B4%85%E5%88%A9%E9%BB%9E%E6%95%B8&auid=158900199.1764865780&navt=n&npa=0&gtm=45He5c21v9103054457za200zd9103054457xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115583767~115938465~115938468~116184927~116184929~116217636~116217638~116518833&tft=1764865779931&tfd=1629&apve=1&apvf=f",
+      "originalUrl": "https://www.mohist.com.tw/mohist/upload/MOT/202307/20230727183241_f9c10.jpg",
+      "type": "img",
+      "ipinfo": {
+        "domain": "www.mohist.com.tw",
+        "ip": "210.241.131.225",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS17420 Acer e-Enabling Data Center, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fhamipoint.cht.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=1108186109.1767644445&dt=Hami%20Point%E5%AE%98%E6%96%B9%E7%B6%B2%E7%AB%99%20%EF%BD%9C%E4%B8%AD%E8%8F%AF%E9%9B%BB%E4%BF%A1%E7%B4%85%E5%88%A9%E9%BB%9E%E6%95%B8&auid=1821955975.1767644445&navt=n&npa=0&gtm=45He5cb0v9103054457za200zd9103054457xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391252~115583767~115938466~115938469~116184927~116184929~116251938~116251940~116744866&tft=1767644445047&tfd=1443&apve=1&apvf=f",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.198.68",
-        "hostname": "lctsaa-ab-in-f4.1e100.net",
+        "ip": "142.250.196.196",
+        "hostname": "nctsaa-ac-in-f4.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -203,7 +207,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://d.line-scdn.net/n/line_tag/public/release/v1/lt.js",
@@ -219,7 +223,7 @@
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
@@ -235,15 +239,15 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-Q4KMN4TT1L&cid=1847213092.1764865780&gtm=45je5c21v884609818z89103054457za20gzb9103054457zd9103054457&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115583767~115938465~115938469~116184927~116184929~116217636~116217638~116518833&z=1923939081",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-Q4KMN4TT1L&cid=429898184.1767644445&gtm=45je5cb0v884609818z89103054457za20gzb9103054457zd9103054457&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115938466~115938468~116184927~116184929~116251938~116251940~116744866&z=1151511044",
       "type": "img",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.198.67",
-        "hostname": "lctsaa-ab-in-f3.1e100.net",
+        "ip": "142.250.196.195",
+        "hostname": "nctsaa-ac-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -251,23 +255,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://www.facebook.com/tr/",
-      "type": "beacon",
-      "ipinfo": {
-        "domain": "www.facebook.com",
-        "ip": "31.13.87.36",
-        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS32934 Facebook, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "url": "https://steampowered.com",
   "canonicalURL": "https://store.steampowered.com/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:40:23.324Z",
+  "timestamp": "2026-01-05T19:43:38.141Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 75,
+  "requestCount": 71,
   "uniqueDomains": 4,
   "test_results": {
-    "domestic": 1,
-    "cloud_w_domestic_node": 0,
-    "foreign": 3
+    "domestic": {
+      "cloud": 1,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 3,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -46,14 +51,14 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "score": "X"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://cdn.fastly.steamstatic.com/store/steamdeck/steamdeck_promo_2344520.png?v=4",
+      "originalUrl": "https://cdn.fastly.steamstatic.com/store/steamdeck/steamdeck_promo_990080.png?v=4",
       "type": "img",
       "ipinfo": {
         "domain": "cdn.fastly.steamstatic.com",
-        "ip": "146.75.47.52",
+        "ip": "199.232.115.52",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",
@@ -61,11 +66,11 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "score": "X"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/clusters/frontpage/53f7d307f6c9f5fa24744bd0/page_bg_english.jpg?t=1764801707",
-      "type": "img",
+      "originalUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/clusters/sale_autumn2019_assets/54b5034d397baccb93181cc6/deck_banner_animated_static_english.jpg?t=1765400249",
+      "type": "video",
       "ipinfo": {
         "domain": "shared.fastly.steamstatic.com",
         "ip": "199.232.115.52",
@@ -76,23 +81,23 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "score": "X"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://store.steampowered.com/dynamicstore/saledata/?cc=TW",
       "type": "xmlhttprequest",
       "ipinfo": {
         "domain": "store.steampowered.com",
-        "ip": "184.25.121.213",
-        "hostname": "a184-25-121-213.deploy.static.akamaitechnologies.com",
-        "city": "Yuanlin",
+        "ip": "23.39.61.133",
+        "hostname": "a23-39-61-133.deploy.static.akamaitechnologies.com",
+        "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "23.9567,120.5761",
+        "loc": "25.0531,121.5264",
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

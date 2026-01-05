@@ -2,7 +2,7 @@
   "url": "https://garena.tw",
   "canonicalURL": "https://garena.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:43:52.537Z",
+  "timestamp": "2026-01-05T19:47:33.862Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 60,
-  "uniqueDomains": 4,
+  "requestCount": 92,
+  "uniqueDomains": 6,
   "test_results": {
-    "domestic": 2,
-    "cloud_w_domestic_node": 0,
-    "foreign": 2
+    "domestic": {
+      "cloud": 3,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 0,
+      "direct": 2
+    }
   },
   "domainDetails": [
     {
@@ -38,8 +43,8 @@
       "type": "css",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.198.74",
-        "hostname": "lctsaa-ab-in-f10.1e100.net",
+        "ip": "142.250.196.202",
+        "hostname": "nctsaa-ac-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -47,7 +52,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.garena.tw/_nuxt/Loading.TsTnEmwV.css",
@@ -62,7 +67,7 @@
         "org": "AS58521 Garena Online Pte Ltd",
         "timezone": "Asia/Singapore"
       },
-      "score": "X"
+      "category": "foreign/direct"
     },
     {
       "originalUrl": "https://footer.garena.tw/js/app.js",
@@ -77,22 +82,55 @@
         "org": "AS58521 Garena Online Pte Ltd",
         "timezone": "Asia/Singapore"
       },
-      "score": "X"
+      "category": "foreign/direct"
     },
     {
       "originalUrl": "https://official.garena.com/tw/v1/assets/career_txt.png",
       "type": "img",
       "ipinfo": {
         "domain": "official.garena.com",
-        "ip": "210.71.227.144",
+        "ip": "203.69.138.216",
+        "hostname": "203-69-138-216.hinet-ip.hinet.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS20940 Akamai International B.V.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "connect.facebook.net",
+        "ip": "31.13.87.5",
+        "hostname": "xx-fbcdn-shv-01-tpe1.fbcdn.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
         "loc": "25.0531,121.5264",
-        "org": "AS3462 Data Communication Business Group",
+        "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-2V705DDE96",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.googletagmanager.com",
+        "ip": "142.250.66.72",
+        "hostname": "hkg12s27-in-f8.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     }
   ]
 }

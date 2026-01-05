@@ -2,7 +2,7 @@
   "url": "https://books.com.tw",
   "canonicalURL": "https://www.books.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:36:51.503Z",
+  "timestamp": "2026-01-05T19:39:47.194Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 250,
-  "uniqueDomains": 7,
+  "uniqueDomains": 6,
   "test_results": {
-    "domestic": 7,
-    "cloud_w_domestic_node": 0,
-    "foreign": 0
+    "domestic": {
+      "cloud": 6,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 0,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -38,8 +43,8 @@
       "type": "link",
       "ipinfo": {
         "domain": "jci.book.com.tw",
-        "ip": "3.169.137.113",
-        "hostname": "server-3-169-137-113.tpe54.r.cloudfront.net",
+        "ip": "3.169.137.109",
+        "hostname": "server-3-169-137-109.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -47,7 +52,7 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.books.com.tw/jss/web/adv_log.js?v=5aefea69",
@@ -63,15 +68,15 @@
         "org": "AS9919 New Century InfoComm Tech Co., Ltd.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://jci1.book.com.tw/jss/books/jqueryplugin/lazyload/1.9.3/jquery.lazyload.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "jci1.book.com.tw",
-        "ip": "3.169.137.39",
-        "hostname": "server-3-169-137-39.tpe54.r.cloudfront.net",
+        "ip": "3.169.137.109",
+        "hostname": "server-3-169-137-109.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -79,31 +84,15 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://im2.book.com.tw/image/getImage?i=https://addons.books.com.tw/G/ADbanner/2025/12/top100/03_1200x655.jpg&v=692fa783k&w=1200&h=",
-      "type": "img",
-      "ipinfo": {
-        "domain": "im2.book.com.tw",
-        "ip": "3.169.55.12",
-        "hostname": "server-3-169-55-12.tpe54.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://im1.book.com.tw/image/getImage?i=https://addons.books.com.tw/G/ADbanner/marketing/2025/12/d12/15_320x72.jpg&v=692531abk&w=320&h=72",
+      "originalUrl": "https://im1.book.com.tw/image/getImage?i=https://addons.books.com.tw/G/ADbanner/2026/01/inbok_line_1200x655_0106.jpg&v=695b5ef6k&w=1200&h=",
       "type": "img",
       "ipinfo": {
         "domain": "im1.book.com.tw",
-        "ip": "3.169.55.108",
-        "hostname": "server-3-169-55-108.tpe54.r.cloudfront.net",
+        "ip": "3.169.55.32",
+        "hostname": "server-3-169-55-32.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -111,10 +100,26 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://addons.books.com.tw/G/ADbanner/marketing/2025/12/d12/13_1180x250_01.png",
+      "originalUrl": "https://im2.book.com.tw/image/getImage?i=https://addons.books.com.tw/G/ADbanner/marketing/2022/homenew/Books.png&v=636e293ck&w=24&h=24",
+      "type": "img",
+      "ipinfo": {
+        "domain": "im2.book.com.tw",
+        "ip": "3.169.55.128",
+        "hostname": "server-3-169-55-128.tpe54.r.cloudfront.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://addons.books.com.tw/G/ADbanner/marketing/2026/01/G/24_1180x250_02.png",
       "type": "img",
       "ipinfo": {
         "domain": "addons.books.com.tw",
@@ -127,23 +132,7 @@
         "org": "AS9919 New Century InfoComm Tech Co., Ltd.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-TBZGS7",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

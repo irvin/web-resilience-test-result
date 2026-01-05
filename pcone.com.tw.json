@@ -1,8 +1,8 @@
 {
   "url": "https://pcone.com.tw",
-  "canonicalURL": "https://www.pcone.com.tw/",
+  "canonicalURL": "https://pcone.com.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:33:40.539Z",
+  "timestamp": "2026-01-05T20:16:52.480Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,23 +22,28 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 120,
-  "uniqueDomains": 3,
+  "requestCount": 90,
+  "uniqueDomains": 5,
   "test_results": {
-    "domestic": 2,
-    "cloud_w_domestic_node": 1,
-    "foreign": 0
+    "domestic": {
+      "cloud": 1,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 3,
+      "direct": 1
+    }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://www.pcone.com.tw/vCss/normalize.min.css",
+      "originalUrl": "https://pcone.com.tw/Content/css/bootstrap.min.css",
       "type": "link",
       "ipinfo": {
-        "domain": "www.pcone.com.tw",
-        "ip": "104.18.93.225",
+        "domain": "pcone.com.tw",
+        "ip": "104.26.3.7",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -46,37 +51,68 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://s3.buy123.com.tw/images/upload/x/homemodulesmall_banner17545479520.gif",
-      "type": "img",
+      "originalUrl": "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap",
+      "type": "link",
       "ipinfo": {
-        "domain": "s3.buy123.com.tw",
-        "ip": "156.59.34.2",
-        "city": "Taipei",
-        "region": "Taiwan",
+        "domain": "fonts.googleapis.com",
+        "ip": "142.250.204.42",
+        "hostname": "hkg07s38-in-f10.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
         "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS21859 Zenlayer Inc",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://images.pcone.com.tw/uploads/product_image/7743337/11962875bbd7cb85a4b53b27872df36a/85211812970a5858ed8c11529007fa49.jpg",
+      "originalUrl": "https://webapi.pcone.com.tw/api/cart/num",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "webapi.pcone.com.tw",
+        "ip": "104.26.2.7",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://s-cf-tw.shopeesz.com/file/a224f9195ada3bcfebf5a431436e7cf7",
       "type": "img",
       "ipinfo": {
-        "domain": "images.pcone.com.tw",
-        "ip": "162.128.37.194",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS21859 Zenlayer Inc",
-        "timezone": "Asia/Taipei"
+        "domain": "s-cf-tw.shopeesz.com",
+        "ip": "116.193.87.41",
+        "city": "Hong Kong",
+        "region": "Hong Kong",
+        "country": "HK",
+        "loc": "22.2783,114.1747",
+        "org": "AS54994 Meteverse Limited.",
+        "timezone": "Asia/Hong_Kong"
       },
-      "score": "O"
+      "category": "foreign/direct"
+    },
+    {
+      "originalUrl": "https://twshopcom.com/Home/ProductImg/?type=small&fn=202512171219033711681.jpg",
+      "type": "img",
+      "ipinfo": {
+        "domain": "twshopcom.com",
+        "ip": "20.64.251.1",
+        "city": "Moses Lake",
+        "region": "Washington",
+        "country": "US",
+        "loc": "47.1301,-119.2781",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
     }
   ]
 }

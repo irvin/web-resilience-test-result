@@ -2,7 +2,7 @@
   "url": "https://lohasnet.tw",
   "canonicalURL": "https://lohasnet.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T17:07:37.045Z",
+  "timestamp": "2026-01-05T20:58:15.941Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 111,
+  "requestCount": 120,
   "uniqueDomains": 10,
   "test_results": {
-    "domestic": 5,
-    "cloud_w_domestic_node": 1,
-    "foreign": 4
+    "domestic": {
+      "cloud": 3,
+      "direct": 2
+    },
+    "foreign": {
+      "cloud": 5,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -38,7 +43,7 @@
       "type": "link",
       "ipinfo": {
         "domain": "cdnjs.cloudflare.com",
-        "ip": "104.17.25.14",
+        "ip": "104.17.24.14",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -46,31 +51,31 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://lohasnet.tw/dist/css/app.d14fb599.css",
+      "originalUrl": "https://lohasnet.tw/dist/css/app.2cf3b098.css",
       "type": "link",
       "ipinfo": {
         "domain": "lohasnet.tw",
         "ip": "202.39.210.46",
         "hostname": "202-39-210-46.hinet-ip.hinet.net",
-        "city": "Douliu",
+        "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "23.7094,120.5433",
+        "loc": "24.1469,120.6839",
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,700|Roboto:300,400,500,700&display=swap",
       "type": "css",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.198.74",
-        "hostname": "lctsaa-ab-in-f10.1e100.net",
+        "ip": "142.250.196.202",
+        "hostname": "nctsaa-ac-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -78,7 +83,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://fastcut.lohasnet.tech/favicon.ico",
@@ -87,14 +92,14 @@
         "domain": "fastcut.lohasnet.tech",
         "ip": "202.39.210.33",
         "hostname": "202-39-210-33.hinet-ip.hinet.net",
-        "city": "Douliu",
+        "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "23.7094,120.5433",
+        "loc": "24.1469,120.6839",
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://member.lohasnet.tw/checkLoginVue?aaa=aaa",
@@ -110,7 +115,7 @@
         "org": "AS20473 The Constant Company, LLC",
         "timezone": "Asia/Tokyo"
       },
-      "score": "X"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://signup.lohasnet.tw/lohasnet/index",
@@ -126,15 +131,15 @@
         "org": "AS20473 The Constant Company, LLC",
         "timezone": "Asia/Tokyo"
       },
-      "score": "X"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-F52XZ3VLDB&cx=c&_slc=1",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -142,31 +147,31 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://i.postimg.cc/QdRhpzFH/1.png",
+      "originalUrl": "https://i.postimg.cc/bJ7nZxm1/tu-pian1.jpg",
       "type": "img",
       "ipinfo": {
         "domain": "i.postimg.cc",
-        "ip": "38.145.218.18",
-        "hostname": "18.218-145-38.rdns.scalabledns.com",
-        "city": "Redondo Beach",
-        "region": "California",
-        "country": "US",
-        "loc": "33.8492,-118.3884",
-        "org": "AS18978 Enzu Inc",
-        "timezone": "America/Los_Angeles"
+        "ip": "46.105.222.161",
+        "hostname": "ns3236477.ip-46-105-222.eu",
+        "city": "Lille",
+        "region": "Hauts-de-France",
+        "country": "FR",
+        "loc": "50.6330,3.0586",
+        "org": "AS16276 OVH SAS",
+        "timezone": "Europe/Paris"
       },
-      "score": "X"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&_ng=1&tid=G-F52XZ3VLDB&cid=1031240465.1764867981&gtm=45je5c30v9104454586za200&aip=1&dma=0&gcd=13l3l3l3l2l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115583767~115616986~115938466~115938469~116184927~116184929~116217636~116217638~116427946&z=1569595233",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&_ng=1&tid=G-F52XZ3VLDB&cid=1702488867.1767646693&gtm=45je5cb0v9104454586za20g&aip=1&dma=0&gcd=13l3l3l3l2l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115583767~115616986~115938465~115938468~116184927~116184929~116251938~116251940&z=1067041288",
       "type": "img",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "ip": "142.250.66.67",
+        "hostname": "hkg12s27-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -174,10 +179,10 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://shop.lohasnet.tw//uploads/lhs/firm/21/21_16_0.jpg",
+      "originalUrl": "https://shop.lohasnet.tw//uploads/kua/firm/2064/2064_2370_0.jpg",
       "type": "img",
       "ipinfo": {
         "domain": "shop.lohasnet.tw",
@@ -190,7 +195,7 @@
         "org": "AS20473 The Constant Company, LLC",
         "timezone": "Asia/Tokyo"
       },
-      "score": "X"
+      "category": "foreign/cloud"
     }
   ]
 }

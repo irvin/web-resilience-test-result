@@ -2,7 +2,7 @@
   "url": "https://dict.idioms.moe.edu.tw",
   "canonicalURL": "https://dict.idioms.moe.edu.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:30:26.494Z",
+  "timestamp": "2026-01-05T20:19:45.658Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 11,
   "uniqueDomains": 2,
   "test_results": {
-    "domestic": 1,
-    "cloud_w_domestic_node": 0,
-    "foreign": 1
+    "domestic": {
+      "cloud": 1,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 0,
+      "direct": 1
+    }
   },
   "domainDetails": [
     {
@@ -39,7 +44,6 @@
       "ipinfo": {
         "domain": "dict.idioms.moe.edu.tw",
         "ip": "163.28.11.58",
-        "hostname": "dict.idioms2.moe.edu.tw",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -47,7 +51,7 @@
         "org": "AS1659 Taiwan Academic Network (TANet) Information Center",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://weloveiconfonts.com/api/?family=entypo",
@@ -62,7 +66,7 @@
         "org": "AS42263 WIIT AG",
         "timezone": "Europe/Berlin"
       },
-      "score": "X"
+      "category": "foreign/direct"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "url": "https://www.map.com.tw/",
   "canonicalURL": "https://www.map.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:22:22.357Z",
+  "timestamp": "2026-01-05T20:12:18.392Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 160,
   "uniqueDomains": 6,
   "test_results": {
-    "domestic": 4,
-    "cloud_w_domestic_node": 2,
-    "foreign": 0
+    "domestic": {
+      "cloud": 4,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 2,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -46,7 +51,7 @@
         "org": "AS9924 Taiwan Fixed Network, Telco and Network Service Provider.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css",
@@ -61,7 +66,7 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://api.map.com.tw/MapTile/js/getAPI.asp?v=1&key=32FAFAA12E07573A06C6BAFFCC206D162C7C9D49&t=2025_0923_5",
@@ -76,14 +81,14 @@
         "org": "AS9924 Taiwan Fixed Network, Telco and Network Service Provider.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js?t=20241021_1",
       "type": "script",
       "ipinfo": {
         "domain": "ajax.cloudflare.com",
-        "ip": "104.17.72.14",
+        "ip": "104.17.73.14",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -91,15 +96,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js",
       "type": "link",
       "ipinfo": {
         "domain": "ajax.googleapis.com",
-        "ip": "142.250.204.42",
-        "hostname": "hkg07s38-in-f10.1e100.net",
+        "ip": "142.250.77.10",
+        "hostname": "nctsaa-ab-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -107,7 +112,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://im3.map.com.tw/MapTile/TiledLayer/16/54880/28063.jpg",
@@ -122,7 +127,7 @@
         "org": "AS9924 Taiwan Fixed Network, Telco and Network Service Provider.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

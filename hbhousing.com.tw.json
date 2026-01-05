@@ -2,7 +2,7 @@
   "url": "https://hbhousing.com.tw",
   "canonicalURL": "https://www.hbhousing.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:34:07.243Z",
+  "timestamp": "2026-01-05T20:31:04.620Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,17 +22,38 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 138,
-  "uniqueDomains": 5,
+  "requestCount": 250,
+  "uniqueDomains": 20,
   "test_results": {
-    "domestic": 4,
-    "cloud_w_domestic_node": 1,
-    "foreign": 0
+    "domestic": {
+      "cloud": 6,
+      "direct": 5
+    },
+    "foreign": {
+      "cloud": 9,
+      "direct": 0
+    }
   },
   "domainDetails": [
+    {
+      "originalUrl": "https://accounts.google.com/gsi/client",
+      "type": "script",
+      "ipinfo": {
+        "domain": "accounts.google.com",
+        "ip": "74.125.203.84",
+        "hostname": "th-in-f84.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.1469,120.6839",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
     {
       "originalUrl": "https://hbhousing.api.useinsider.com/ins.js?id=10006879",
       "type": "script",
@@ -46,7 +67,23 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://www.hbhousing.com.tw/_nuxt/vendor-splide.Doz5KnUv.css",
+      "type": "link",
+      "ipinfo": {
+        "domain": "www.hbhousing.com.tw",
+        "ip": "60.251.73.234",
+        "hostname": "60-251-73-234.hinet-ip.hinet.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js",
@@ -62,47 +99,105 @@
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://accounts.google.com/gsi/client",
-      "type": "script",
+      "originalUrl": "https://segment.api.useinsider.com/v4/segments/1767645061942d9b89d44bc.ecc04b47?partnerid=10006879&fields=30413f1c3f7264f9934b316de002938e,9635c16a607236b40a4e69f72e569b47,98de679c059f7f709e29f56550042371&",
+      "type": "xmlhttprequest",
       "ipinfo": {
-        "domain": "accounts.google.com",
-        "ip": "74.125.203.84",
-        "hostname": "th-in-f84.1e100.net",
-        "city": "Chang-hua",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "24.0733,120.5628",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "domain": "segment.api.useinsider.com",
+        "ip": "162.159.133.61",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
       },
-      "score": "O"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://www.hbhousing.com.tw/_nuxt/vendor-splide.Doz5KnUv.css",
+      "originalUrl": "https://ucd-web.api.useinsider.com/v1/get",
+      "type": "xmlhttprequest",
+      "ipinfo": {
+        "domain": "ucd-web.api.useinsider.com",
+        "ip": "162.159.133.61",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://assets.api.useinsider.com/css/info.min.css",
       "type": "link",
       "ipinfo": {
-        "domain": "www.hbhousing.com.tw",
-        "ip": "60.251.73.234",
-        "hostname": "60-251-73-234.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS3462 Data Communication Business Group",
-        "timezone": "Asia/Taipei"
+        "domain": "assets.api.useinsider.com",
+        "ip": "162.159.134.61",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
       },
-      "score": "O"
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://eitri.api.useinsider.com/static/info.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "eitri.api.useinsider.com",
+        "ip": "162.159.133.61",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://locationv2.api.useinsider.com/?v=2&pId=10006879&",
+      "type": "xmlhttprequest",
+      "ipinfo": {
+        "domain": "locationv2.api.useinsider.com",
+        "ip": "162.159.133.61",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://unification.useinsider.com/api/event/v1/insert",
+      "type": "xmlhttprequest",
+      "ipinfo": {
+        "domain": "unification.useinsider.com",
+        "ip": "162.159.134.61",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-PGGQNQ7R",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.204.40",
+        "hostname": "hkg07s38-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -110,7 +205,149 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v16.0",
+      "type": "script",
+      "ipinfo": {
+        "domain": "connect.facebook.net",
+        "ip": "31.13.87.5",
+        "hostname": "xx-fbcdn-shv-01-tpe1.fbcdn.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "cdnjs.cloudflare.com",
+        "ip": "104.17.24.14",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://bat.bing.com/bat.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "bat.bing.com",
+        "ip": "150.171.27.10",
+        "city": "Redmond",
+        "region": "Washington",
+        "country": "US",
+        "loc": "47.6740,-122.1215",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fwww.hbhousing.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=165219679.1767645062&dt=%E4%BD%8F%E5%95%86%E4%B8%8D%E5%8B%95%E7%94%A2%E6%88%BF%E5%B1%8B%E7%B6%B2%20-%20%E6%8F%90%E4%BE%9B%E8%B2%B7%E5%B1%8B%E3%80%81%E7%A7%9F%E5%B1%8B%E3%80%81%E8%B3%A3%E5%B1%8B%E3%80%81%E6%88%BF%E8%B2%B8%E8%A9%A6%E7%AE%97%E3%80%81%E8%A8%AD%E8%A8%88%E3%80%81&auid=1925158968.1767645062&navt=n&npa=0&gtm=45He5cb0v9182946083za200zd9182946083xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115938465~115938468~116184927~116184929~116251938~116251940&tft=1767645062357&tfd=2452&apve=1&apvf=f",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.250.198.68",
+        "hostname": "lctsaa-ab-in-f4.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://d.line-scdn.net/n/line_tag/public/release/v1/lt.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "d.line-scdn.net",
+        "ip": "23.220.197.166",
+        "hostname": "a23-220-197-166.deploy.static.akamaitechnologies.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16625 Akamai Technologies, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-D3FM01BS72&cid=719220400.1767645062&gtm=45je5cb0v884669803z89182946083za20gzb9182946083zd9182946083&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391252~115583767~115938465~115938469~116184927~116184929~116251938~116251940&z=936612084",
+      "type": "img",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.196.195",
+        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.facebook.com/tr/?id=269051281548301&ev=PageView&dl=https%3A%2F%2Fwww.hbhousing.com.tw%2F&rl=&if=false&ts=1767645062841&cd[cv]=0&cd[pm]=0&cd[pp]=0&cd[l]=0&eid=01c8c0197475eaf0118f499e3989057147&fbp=fb.2.1767645062841.2128090895",
+      "type": "img",
+      "ipinfo": {
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://csa.hbhousing.com.tw/FileImages/faad9f3f-1b85-4488-b272-6fbeec8f0209/20250328092006_A66D14F7A588_Default_001.jpg",
+      "type": "css",
+      "ipinfo": {
+        "domain": "csa.hbhousing.com.tw",
+        "ip": "60.251.73.202",
+        "hostname": "60-251-73-202.hinet-ip.hinet.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://img.hbhousing.com.tw/ADImages/20250507110538a.jpg?1767645059",
+      "type": "img",
+      "ipinfo": {
+        "domain": "img.hbhousing.com.tw",
+        "ip": "60.251.73.206",
+        "hostname": "60-251-73-206.hinet-ip.hinet.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
     }
   ]
 }

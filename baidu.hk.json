@@ -2,7 +2,7 @@
   "url": "https://baidu.hk",
   "canonicalURL": "https://baidu.hk",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:40:16.786Z",
+  "timestamp": "2026-01-05T19:43:32.076Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 95,
-  "uniqueDomains": 9,
+  "requestCount": 91,
+  "uniqueDomains": 8,
   "test_results": {
-    "domestic": 0,
-    "cloud_w_domestic_node": 0,
-    "foreign": 9
+    "domestic": {
+      "cloud": 0,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 0,
+      "direct": 8
+    }
   },
   "domainDetails": [
     {
@@ -46,14 +51,14 @@
         "org": "AS55967 Beijing Baidu Netcom Science and Technology Co., Ltd.",
         "timezone": "Asia/Hong_Kong"
       },
-      "score": "X"
+      "category": "foreign/direct"
     },
     {
       "originalUrl": "https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png",
       "type": "img",
       "ipinfo": {
         "domain": "www.baidu.com",
-        "ip": "103.235.46.102",
+        "ip": "103.235.46.115",
         "city": "Hong Kong",
         "region": "Hong Kong",
         "country": "HK",
@@ -61,67 +66,83 @@
         "org": "AS55967 Beijing Baidu Netcom Science and Technology Co., Ltd.",
         "timezone": "Asia/Hong_Kong"
       },
-      "score": "X"
+      "category": "foreign/direct"
     },
     {
       "originalUrl": "https://psstatic.cdn.bcebos.com/aife/static/wenAI_1761814195000.png",
       "type": "img",
       "ipinfo": {
         "domain": "psstatic.cdn.bcebos.com",
-        "ip": "183.60.227.38",
-        "city": "Shenzhen",
-        "region": "Guangdong",
+        "ip": "171.107.86.38",
+        "city": "Nanning",
+        "region": "Guangxi",
         "country": "CN",
-        "loc": "22.5455,114.0683",
-        "org": "AS134763 CHINANET Guangdong province network",
+        "loc": "22.8167,108.3167",
+        "org": "AS138169 China Telecom",
         "timezone": "Asia/Shanghai"
       },
-      "score": "X"
+      "category": "foreign/direct"
     },
     {
       "originalUrl": "https://aisearch.cdn.bcebos.com/public/weixin_code/2025-06/eba505c38fe819615861ee2dc71991ac.png",
       "type": "img",
       "ipinfo": {
         "domain": "aisearch.cdn.bcebos.com",
-        "ip": "111.170.165.38",
-        "city": "Wuhan",
-        "region": "Hubei",
+        "ip": "113.142.212.38",
+        "city": "Xi’an",
+        "region": "Shaanxi",
         "country": "CN",
-        "loc": "30.5833,114.2667",
-        "org": "AS151185 China Telecom",
+        "loc": "34.2583,108.9286",
+        "org": "AS134768 CHINANET SHAANXI province Cloud Base network",
         "timezone": "Asia/Shanghai"
       },
-      "score": "X"
+      "category": "foreign/direct"
     },
     {
       "originalUrl": "https://hectorstatic.baidu.com/cd37ed75a9387c5b.js",
       "type": "script",
       "ipinfo": {
         "domain": "hectorstatic.baidu.com",
-        "ip": "42.101.56.38",
-        "city": "Harbin",
-        "region": "Heilongjiang",
+        "ip": "120.41.32.38",
+        "city": "Xiamen",
+        "region": "Fujian",
         "country": "CN",
-        "loc": "45.7500,126.6500",
-        "org": "AS137698 Haerbing , Heilongjiang Province, P.R.China.",
+        "loc": "24.4798,118.0819",
+        "org": "AS4134 CHINANET-BACKBONE",
         "timezone": "Asia/Shanghai"
       },
-      "score": "X"
+      "category": "foreign/direct"
     },
     {
-      "originalUrl": "https://mbd.baidu.com/ztbox?action=zpblog&appname=pcsearch&v=2.0&data=%7B%22cateid%22%3A%2299%22%2C%22actiondata%22%3A%7B%22id%22%3A18463%2C%22type%22%3A%220%22%2C%22timestamp%22%3A1764862813818%2C%22content%22%3A%7B%22page%22%3A%22home%22%2C%22source%22%3A%22%22%2C%22from%22%3A%22search%22%2C%22type%22%3A%22display%22%2C%22value%22%3A%22%22%2C%22ext%22%3A%7B%22status%22%3A%22default%22%2C%22is_log%22%3A%220%22%2C%22have_hotsearch%22%3A%221%22%2C%22is_kuang_rec_disp%22%3A%221%22%2C%22search_kuang_status%22%3A%22default%22%2C%22aisou_btn%22%3A%220%22%2C%22kuang_rec_status%22%3A%221%22%7D%7D%7D%7D",
-      "type": "beacon",
+      "originalUrl": "https://hector.baidu.com/a.js",
+      "type": "script",
       "ipinfo": {
-        "domain": "mbd.baidu.com",
-        "ip": "45.113.194.208",
+        "domain": "hector.baidu.com",
+        "ip": "36.110.192.200",
+        "city": "Beijing",
+        "region": "Beijing",
+        "country": "CN",
+        "loc": "39.9075,116.3972",
+        "org": "AS23724 IDC, China Telecommunications Corporation",
+        "timezone": "Asia/Shanghai"
+      },
+      "category": "foreign/direct"
+    },
+    {
+      "originalUrl": "https://gips0.baidu.com/it/u=14154217,3818936281&fm=3028&app=3028&f=PNG&fmt=auto&q=100&size=f384_384",
+      "type": "css",
+      "ipinfo": {
+        "domain": "gips0.baidu.com",
+        "ip": "66.93.81.121",
+        "hostname": "dsl093-081-121.atl1.dsl.speakeasy.net",
         "city": "Hong Kong",
         "region": "Hong Kong",
         "country": "HK",
         "loc": "22.2783,114.1747",
-        "org": "AS55967 Beijing Baidu Netcom Science and Technology Co., Ltd.",
+        "org": "AS62610 Zenlayer Inc",
         "timezone": "Asia/Hong_Kong"
       },
-      "score": "X"
+      "category": "foreign/direct"
     },
     {
       "originalUrl": "https://gips2.baidu.com/it/u=1627277417,3307578141&fm=3028&app=3028&f=PNG&fmt=auto&q=100&size=f526_253",
@@ -137,38 +158,7 @@
         "org": "AS62610 Zenlayer Inc",
         "timezone": "Asia/Hong_Kong"
       },
-      "score": "X"
-    },
-    {
-      "originalUrl": "https://gips0.baidu.com/it/u=14154217,3818936281&fm=3028&app=3028&f=PNG&fmt=auto&q=100&size=f384_384",
-      "type": "css",
-      "ipinfo": {
-        "domain": "gips0.baidu.com",
-        "ip": "66.93.81.122",
-        "hostname": "dsl093-081-122.atl1.dsl.speakeasy.net",
-        "city": "Hong Kong",
-        "region": "Hong Kong",
-        "country": "HK",
-        "loc": "22.2783,114.1747",
-        "org": "AS62610 Zenlayer Inc",
-        "timezone": "Asia/Hong_Kong"
-      },
-      "score": "X"
-    },
-    {
-      "originalUrl": "https://hector.baidu.com/a.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "hector.baidu.com",
-        "ip": "39.156.68.81",
-        "city": "Beijing",
-        "region": "Beijing",
-        "country": "CN",
-        "loc": "39.9075,116.3972",
-        "org": "AS9808 China Mobile Communications Group Co., Ltd.",
-        "timezone": "Asia/Shanghai"
-      },
-      "score": "X"
+      "category": "foreign/direct"
     }
   ]
 }

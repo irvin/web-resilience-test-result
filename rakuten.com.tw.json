@@ -2,7 +2,7 @@
   "url": "https://rakuten.com.tw",
   "canonicalURL": "https://www.rakuten.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:48:17.765Z",
+  "timestamp": "2026-01-05T19:51:20.871Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 250,
-  "uniqueDomains": 17,
+  "uniqueDomains": 16,
   "test_results": {
-    "domestic": 14,
-    "cloud_w_domestic_node": 0,
-    "foreign": 3
+    "domestic": {
+      "cloud": 10,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 2,
+      "direct": 3
+    }
   },
   "domainDetails": [
     {
@@ -47,25 +52,26 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://intl.rakuten-static.com/b/tw/assets/top/css/index_all.css",
-      "type": "link",
+      "originalUrl": "https://intl.rakuten-static.com/b/tw/assets/ad/admanager/admanager_lzld.js",
+      "type": "script",
       "ipinfo": {
         "domain": "intl.rakuten-static.com",
-        "ip": "199.232.114.63",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
+        "ip": "23.201.11.79",
+        "hostname": "a23-201-11-79.deploy.static.akamaitechnologies.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16625 Akamai Technologies, Inc.",
+        "timezone": "Asia/Taipei"
       },
-      "score": "X"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.rakuten.com.tw/assets/webpack/widgets-bundle.css?t=46dhmh26yb2",
+      "originalUrl": "https://www.rakuten.com.tw/assets/webpack/theme-bundle.css?t=kq3773jsvg",
       "type": "link",
       "ipinfo": {
         "domain": "www.rakuten.com.tw",
@@ -77,10 +83,10 @@
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://shop.r10s.com/f1c1aaf0-c88e-11e4-9b8f-005056ae3607/Amy/oktea_logo.jpg",
+      "originalUrl": "https://shop.r10s.com/c468d590-5f61-11e6-97c4-005056991641/enroute_135X90.jpg",
       "type": "img",
       "ipinfo": {
         "domain": "shop.r10s.com",
@@ -93,10 +99,10 @@
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://cont001.ias.global.rakuten.com/tw/ec/creative/dst/1000001509/195461/559132/13bc43cdf07692ecfd0315cfa2f6b0537d94bd33.png",
+      "originalUrl": "https://cont001.ias.global.rakuten.com/tw/ec/creative/dst/1000001509/195456/560904/8121a6b689bbd540dc2fe316c8f364d047c4df77.jpg",
       "type": "img",
       "ipinfo": {
         "domain": "cont001.ias.global.rakuten.com",
@@ -109,26 +115,10 @@
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://ayumi.shop.rakuten.tw/gold/MEGA/logo_200x46-1.png",
-      "type": "img",
-      "ipinfo": {
-        "domain": "ayumi.shop.rakuten.tw",
-        "ip": "23.41.141.137",
-        "hostname": "a23-41-141-137.deploy.static.akamaitechnologies.com",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16625 Akamai Technologies, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://tshop.r10s.com/e01/764/b58b/9f5b/2063/08cb/0963/11d0ed9f980242ac110005.png?_ex=100x100",
+      "originalUrl": "https://tshop.r10s.com/1a5/a29/f07b/1c7d/007c/9b53/575a/11a0efbec50242ac110002.jpg?_ex=100x100",
       "type": "img",
       "ipinfo": {
         "domain": "tshop.r10s.com",
@@ -141,39 +131,22 @@
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://r.r10s.jp/com/rat/js/rat-main-1.12.4.js",
       "type": "script",
       "ipinfo": {
         "domain": "r.r10s.jp",
-        "ip": "23.39.61.108",
-        "hostname": "a23-39-61-108.deploy.static.akamaitechnologies.com",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16625 Akamai Technologies, Inc.",
-        "timezone": "Asia/Taipei"
+        "ip": "199.232.114.63",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://fundingchoicesmessages.google.com/i/7682122?ers=3",
-      "type": "script",
-      "ipinfo": {
-        "domain": "fundingchoicesmessages.google.com",
-        "ip": "142.250.198.78",
-        "hostname": "lctsaa-ab-in-f14.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://gateway-api.global.rakuten.com/riva/tracking/pageviewed",
@@ -189,14 +162,60 @@
         "org": "AS23820 Rakuten Group, Inc.",
         "timezone": "Asia/Tokyo"
       },
-      "score": "X"
+      "category": "foreign/direct"
+    },
+    {
+      "originalUrl": "https://fundingchoicesmessages.google.com/i/7682122?ers=3",
+      "type": "script",
+      "ipinfo": {
+        "domain": "fundingchoicesmessages.google.com",
+        "ip": "142.250.204.46",
+        "hostname": "hkg07s38-in-f14.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://pagesense.zoho.com/pagesense/api/getipinfo",
+      "type": "xmlhttprequest",
+      "ipinfo": {
+        "domain": "pagesense.zoho.com",
+        "ip": "204.141.43.104",
+        "city": "Seattle",
+        "region": "Washington",
+        "country": "US",
+        "loc": "47.6062,-122.3321",
+        "org": "AS2639 ZOHO",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/direct"
+    },
+    {
+      "originalUrl": "https://static.zohocdn.com/pagesense/tracking/heatmapscript-0b9c9b4831_.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "static.zohocdn.com",
+        "ip": "193.118.161.82",
+        "city": "Tokyo",
+        "region": "Tokyo",
+        "country": "JP",
+        "loc": "35.6895,139.6917",
+        "org": "AS141757 Zoho Japan Corporation",
+        "timezone": "Asia/Tokyo"
+      },
+      "category": "foreign/direct"
     },
     {
       "originalUrl": "https://cdn.jsdelivr.net/gh/prebid/shared-id/pubcid.js/docs/pubcid.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "151.101.65.229",
+        "ip": "151.101.129.229",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -204,15 +223,15 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "X"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-N72TJV",
+      "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-MHDQ9PL",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -220,15 +239,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fwww.rakuten.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=1630314294.1764863288&dt=%E6%A8%82%E5%A4%A9%E5%B8%82%E5%A0%B4%E8%B3%BC%E7%89%A9%E7%B6%B2-%20Rakuten%E6%97%A5%E6%9C%AC%E6%9C%80%E5%A4%A7%E7%B7%9A%E4%B8%8A%E8%B3%BC%E7%89%A9%E7%B6%B2%E7%AB%99&auid=1507479661.1764863288&navt=n&npa=0&gtm=45He5c30h2v6657462za200zd6657462xea&gcs=G1--&gcd=13l3l3l3l5l1&dma=0&tcfd=10000&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115583767~115938465~115938469~116184927~116184929~116217636~116217638~116474637~116514483&tft=1764863287936&tfd=21140&apve=1&apvf=f",
+      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fwww.rakuten.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=1902055280.1767642671&dt=%E6%A8%82%E5%A4%A9%E5%B8%82%E5%A0%B4%E8%B3%BC%E7%89%A9%E7%B6%B2-%20Rakuten%E6%97%A5%E6%9C%AC%E6%9C%80%E5%A4%A7%E7%B7%9A%E4%B8%8A%E8%B3%BC%E7%89%A9%E7%B6%B2%E7%AB%99&auid=2066568441.1767642671&navt=n&npa=0&gtm=45He5cb0v6657462za200zd6657462xea&gcs=G1--&gcd=13l3l3l3l5l1&dma=0&tcfd=10000&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115583767~115938465~115938469~116184927~116184929~116251938~116251940~116744866&tft=1767642671256&tfd=21336&apve=1&apvf=f",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.198.68",
-        "hostname": "lctsaa-ab-in-f4.1e100.net",
+        "ip": "142.250.196.196",
+        "hostname": "nctsaa-ac-in-f4.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -236,42 +255,26 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "connect.facebook.net",
-        "ip": "31.13.87.5",
-        "hostname": "xx-fbcdn-shv-01-tpe1.fbcdn.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS32934 Facebook, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://d.line-scdn.net/n/line_tag/public/release/v1/lt.js",
       "type": "script",
       "ipinfo": {
         "domain": "d.line-scdn.net",
-        "ip": "184.25.121.253",
-        "hostname": "a184-25-121-253.deploy.static.akamaitechnologies.com",
-        "city": "Yuanlin",
+        "ip": "23.39.61.163",
+        "hostname": "a23-39-61-163.deploy.static.akamaitechnologies.com",
+        "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "23.9567,120.5761",
+        "loc": "25.0531,121.5264",
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/311303639/?random=1764863288250&cv=11&fst=1764860400000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be5c21v892665292za200zb9102423871zd9102423871xec&gcd=13l3l3l3l5l1&dma=0&tcfd=10000&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115938465~115938468~116184927~116184929~116217636~116217638~116474637~116514483&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.rakuten.com.tw%2F&frm=0&tiba=%E6%A8%82%E5%A4%A9%E5%B8%82%E5%A0%B4%E8%B3%BC%E7%89%A9%E7%B6%B2-%20Rakuten%E6%97%A5%E6%9C%AC%E6%9C%80%E5%A4%A7%E7%B7%9A%E4%B8%8A%E8%B3%BC%E7%89%A9%E7%B6%B2%E7%AB%99&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1507479661.1764863288&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.1.0&uaw=0&_tu=CA&data=event%3Dgtag.config&rfmt=3&fmt=3&is_vtc=1&cid=CAQSmQEAwksa0WrvILecmq0D9RkjNmbCb3fhQNzuAKKFkFlroswxpsC-JU55wWW1aRBwMSSMBeSbW1WdbJNbEXK0bb8J5nbJ41MCY3_90ipDye6XGHlbtlRYLJHEf-vLfVXAqurO9XTGi21vKoD8TUi2wIYf3GEKj6P0hRgqZfIPN33kFuDEnTlhWV1Je3EWVzF3F1ezelHx4tbidck&random=3596941231&rmt_tld=1&ipr=y",
+      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/311303639/?random=1767642671307&cv=11&fst=1767639600000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be5cb0v892665292za200zb9102423871zd9102423871xec&gcd=13l3l3l3l5l1&dma=0&tcfd=10000&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115583767~115616986~115938465~115938469~116184927~116184929~116251938~116251940~116744866&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.rakuten.com.tw%2F&frm=0&tiba=%E6%A8%82%E5%A4%A9%E5%B8%82%E5%A0%B4%E8%B3%BC%E7%89%A9%E7%B6%B2-%20Rakuten%E6%97%A5%E6%9C%AC%E6%9C%80%E5%A4%A7%E7%B7%9A%E4%B8%8A%E8%B3%BC%E7%89%A9%E7%B6%B2%E7%AB%99&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=2066568441.1767642671&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&_tu=CA&data=event%3Dgtag.config&rfmt=3&fmt=3&is_vtc=1&cid=CAQSmQEAwksa0TbhNz5WqLvO5Mu8MJ8SNJ1rWK9mdVXTKsZk2x7o0cesJN6ZQqoOO4U6Byj8IB8UwyJqqCaR2bd4QS79YEpKM3YwM2Qlfsccr4dghKIJTVAk7ZE5tDXgcRutUYhavP7AcR5ErNF8Yl9Zcfg3PiDhh-jRUSyvNVPh-2dEP5aupzprQ2qpsO68TGhz7NDe2uicq5bCs6w&random=854350674&rmt_tld=1&ipr=y",
       "type": "img",
       "ipinfo": {
         "domain": "www.google.com.tw",
@@ -284,23 +287,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://www.facebook.com/tr/",
-      "type": "beacon",
-      "ipinfo": {
-        "domain": "www.facebook.com",
-        "ip": "31.13.87.36",
-        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS32934 Facebook, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

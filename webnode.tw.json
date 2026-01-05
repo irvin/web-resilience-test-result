@@ -2,7 +2,7 @@
   "url": "https://webnode.tw",
   "canonicalURL": "https://www.webnode.com/zh/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:42:08.646Z",
+  "timestamp": "2026-01-05T20:32:41.609Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,24 +22,29 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 41,
   "uniqueDomains": 7,
   "test_results": {
-    "domestic": 4,
-    "cloud_w_domestic_node": 2,
-    "foreign": 1
+    "domestic": {
+      "cloud": 4,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 2,
+      "direct": 1
+    }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://d1rv23qj5kas56.cloudfront.net/obfs/css/webnode-2018.bundle.31904c9aa369158f.css",
+      "originalUrl": "https://d1rv23qj5kas56.cloudfront.net/obfs/css/webnode-2018.bundle.ceb17436bb7e54f3.css",
       "type": "link",
       "ipinfo": {
         "domain": "d1rv23qj5kas56.cloudfront.net",
-        "ip": "3.169.58.120",
-        "hostname": "server-3-169-58-120.tpe54.r.cloudfront.net",
+        "ip": "3.169.58.160",
+        "hostname": "server-3-169-58-160.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -47,7 +52,23 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com/recaptcha/api.js?render=6LczSRclAAAAACB7FEX2Fk4c6q3ipPjRWGF8vz0B&hl=zh_TW",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.250.198.68",
+        "hostname": "lctsaa-ab-in-f4.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://motu.teamblue.services/js/skeletor.js",
@@ -62,23 +83,7 @@
         "org": "AS39729 REGISTER S.P.A.",
         "timezone": "Europe/Rome"
       },
-      "score": "X"
-    },
-    {
-      "originalUrl": "https://www.google.com/recaptcha/api.js?render=6LczSRclAAAAACB7FEX2Fk4c6q3ipPjRWGF8vz0B&hl=zh_TW",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.196.196",
-        "hostname": "nctsaa-ac-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "foreign/direct"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-KN6424",
@@ -94,7 +99,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://eu.acsbapp.com/apps/app/dist/js/app.js",
@@ -110,15 +115,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Europe/Brussels"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://events.webnode.com/projects/-/events/PROD?api_key=-&data=eyJ1c2VyIjp7InUiOm51bGwsInVoIjpudWxsLCJwIjpudWxsLCJsYyI6bnVsbH0sImFjdGlvbiI6eyJpZGVudGlmaWVyIjoiYWl3aXphcmRfbHBfbG9hZGVkIiwibmFtZSI6IkFJIFdpemFyZCBMYW5kaW5nIFBhZ2UgRGlzcGxheWVkIiwiY2F0ZWdvcnkiOiJwb3J0YWwiLCJwbGF0Zm9ybSI6IldORDIiLCJ2ZXJzaW9uIjoid2Vibm9kZS0yMDE1In0sImJyb3dzZXIiOnsidXJsIjoiaHR0cHM6Ly93d3cud2Vibm9kZS5jb20vemgvIiwiaG9zdCI6Imh0dHBzOi8vd3d3LndlYm5vZGUuY29tL3poIiwidWEiOiJNb3ppbGxhLzUuMCAoTWFjaW50b3NoOyBJbnRlbCBNYWMgT1MgWCAxMF8xNV83KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBIZWFkbGVzc0Nocm9tZS8xMzMuMC42OTQzLjE2IFNhZmFyaS81MzcuMzYiLCJyZWZlcmVyX3VybCI6IiIsInJlc29sdXRpb24iOiIxMjgweDcyMCIsImlwIjoiMjIwLjEzMi4yMTIuMTk0In0sImRhdGEiOnsidXNlckhhc2giOiI0Y2UwMTJhODRhZTgyZDIxM2IxYmRiOTc3ZmJiNzU0N2M2NzE1MGZjLjE3NjQ4NjY1MjQ2OTMxYjlkY2Q2ZjA5In0sInVzZXJIYXNoIjoiNGNlMDEyYTg0YWU4MmQyMTNiMWJkYjk3N2ZiYjc1NDdjNjcxNTBmYy4xNzY0ODY2NTI0NjkzMWI5ZGNkNmYwOSIsImFpd2l6YXJkVmVyc2lvbiI6Mn0%3D&modified=1764866525725&jsonp=trackerJSONPCallback1764866525725_0",
+      "originalUrl": "https://events.webnode.com/projects/-/events/PROD?api_key=-&data=eyJ1c2VyIjp7InUiOm51bGwsInVoIjpudWxsLCJwIjpudWxsLCJsYyI6bnVsbH0sImFjdGlvbiI6eyJpZGVudGlmaWVyIjoiYWl3aXphcmRfbHBfbG9hZGVkIiwibmFtZSI6IkFJIFdpemFyZCBMYW5kaW5nIFBhZ2UgRGlzcGxheWVkIiwiY2F0ZWdvcnkiOiJwb3J0YWwiLCJwbGF0Zm9ybSI6IldORDIiLCJ2ZXJzaW9uIjoid2Vibm9kZS0yMDE1In0sImJyb3dzZXIiOnsidXJsIjoiaHR0cHM6Ly93d3cud2Vibm9kZS5jb20vemgvIiwiaG9zdCI6Imh0dHBzOi8vd3d3LndlYm5vZGUuY29tL3poIiwidWEiOiJNb3ppbGxhLzUuMCAoTWFjaW50b3NoOyBJbnRlbCBNYWMgT1MgWCAxMF8xNV83KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBIZWFkbGVzc0Nocm9tZS8xMzMuMC42OTQzLjE2IFNhZmFyaS81MzcuMzYiLCJyZWZlcmVyX3VybCI6IiIsInJlc29sdXRpb24iOiIxMjgweDcyMCIsImlwIjoiMjIwLjEzMi4yMTIuMTk0In0sImRhdGEiOnsidXNlckhhc2giOiIyZTVjMjVhZDdiMDk0YjIzOTZkNDEyZjAzODhjMGE4ZGIxMDRiYTk5LjE3Njc2NDUxNTc2OTVjMWZlNWJmYzk3IiwiaHBWZXJzaW9uIjoiaG9tZXBhZ2VfdmVyc2lvbl9haV9wcm9tcHQifSwidXNlckhhc2giOiIyZTVjMjVhZDdiMDk0YjIzOTZkNDEyZjAzODhjMGE4ZGIxMDRiYTk5LjE3Njc2NDUxNTc2OTVjMWZlNWJmYzk3IiwiYWl3aXphcmRWZXJzaW9uIjoyfQ%3D%3D&modified=1767645158657&jsonp=trackerJSONPCallback1767645158657_0",
       "type": "script",
       "ipinfo": {
         "domain": "events.webnode.com",
-        "ip": "63.176.158.143",
-        "hostname": "ec2-63-176-158-143.eu-central-1.compute.amazonaws.com",
+        "ip": "63.179.33.7",
+        "hostname": "ec2-63-179-33-7.eu-central-1.compute.amazonaws.com",
         "city": "Frankfurt am Main",
         "region": "Hesse",
         "country": "DE",
@@ -126,15 +131,15 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Europe/Berlin"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://www.gstatic.com/recaptcha/releases/TkacYOdEJbdB_JjX802TMer9/recaptcha__zh_tw.js",
+      "originalUrl": "https://www.gstatic.com/recaptcha/releases/7gg7H51Q-naNfhmCP3_R47ho/recaptcha__zh_tw.js",
       "type": "script",
       "ipinfo": {
         "domain": "www.gstatic.com",
-        "ip": "142.250.66.67",
-        "hostname": "hkg12s27-in-f3.1e100.net",
+        "ip": "142.250.198.67",
+        "hostname": "lctsaa-ab-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -142,7 +147,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

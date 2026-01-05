@@ -2,7 +2,7 @@
   "url": "https://cis.ncu.edu.tw",
   "canonicalURL": "https://cis.ncu.edu.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:29:06.809Z",
+  "timestamp": "2026-01-05T20:20:21.054Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,23 +22,28 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 75,
-  "uniqueDomains": 6,
+  "requestCount": 89,
+  "uniqueDomains": 2,
   "test_results": {
-    "domestic": 4,
-    "cloud_w_domestic_node": 2,
-    "foreign": 0
+    "domestic": {
+      "cloud": 1,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 0,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://www.ncu.edu.tw/plugins/bootstrap-4.0.0/css/bootstrap.css",
+      "originalUrl": "https://www.ncu.edu.tw/var/file/0/1000/mobilestyle/combine-zh-tw.css?t=49cdc148fc",
       "type": "link",
       "ipinfo": {
         "domain": "www.ncu.edu.tw",
-        "ip": "140.115.17.82",
+        "ip": "140.115.197.226",
         "city": "Taoyuan City",
         "region": "Taiwan",
         "country": "TW",
@@ -46,72 +51,10 @@
         "org": "AS18420 National Central University",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/6.1.4/jquery.mmenu.all.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "cdnjs.cloudflare.com",
-        "ip": "104.17.25.14",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-6JN8TKYSNX",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://fonts.googleapis.com/css?family=Open+Sans",
-      "type": "css",
-      "ipinfo": {
-        "domain": "fonts.googleapis.com",
-        "ip": "142.250.198.74",
-        "hostname": "lctsaa-ab-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://static.addtoany.com/menu/svg/icons.28.svg.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "static.addtoany.com",
-        "ip": "104.20.20.192",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://www.youtube.com/embed/PG_W6lt9X_I",
+      "originalUrl": "https://www.youtube.com/embed/wJ_f7YAv4tw?si=Xb7FXMyv7TMdyb2m%22",
       "type": "iframe",
       "ipinfo": {
         "domain": "www.youtube.com",
@@ -124,7 +67,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

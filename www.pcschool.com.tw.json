@@ -2,7 +2,7 @@
   "url": "https://www.pcschool.com.tw/",
   "canonicalURL": "https://www.pcschool.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T17:10:24.158Z",
+  "timestamp": "2026-01-05T21:03:32.915Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 112,
+  "requestCount": 106,
   "uniqueDomains": 18,
   "test_results": {
-    "domestic": 11,
-    "cloud_w_domestic_node": 7,
-    "foreign": 0
+    "domestic": {
+      "cloud": 9,
+      "direct": 2
+    },
+    "foreign": {
+      "cloud": 7,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -46,23 +51,7 @@
         "org": "AS8075 Microsoft Corporation",
         "timezone": "Asia/Hong_Kong"
       },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap",
-      "type": "link",
-      "ipinfo": {
-        "domain": "fonts.googleapis.com",
-        "ip": "142.250.77.10",
-        "hostname": "nctsaa-ab-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css",
@@ -77,30 +66,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css",
+      "originalUrl": "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap",
       "type": "link",
       "ipinfo": {
-        "domain": "cdnjs.cloudflare.com",
-        "ip": "104.17.25.14",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-TPQ8RC",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "domain": "fonts.googleapis.com",
+        "ip": "142.250.198.74",
+        "hostname": "lctsaa-ab-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -108,10 +82,41 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fwww.pcschool.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=1039765464.1764868222&dt=%E5%B7%A8%E5%8C%A0%E9%9B%BB%E8%85%A6%EF%BD%9C%E7%A8%8B%E5%BC%8F%2C%E8%A8%AD%E8%A8%88%E8%AA%B2%E7%A8%8B%E9%A6%96%E9%81%B8%E9%9B%BB%E8%85%A6%E8%A3%9C%E7%BF%92%E7%8F%AD%2C%E7%9B%B4%E6%92%AD%E8%AA%B2%E7%A8%8B%E6%9B%B4%E6%96%B9%E4%BE%BF&auid=1520069571.1764868222&navt=n&npa=0&gtm=45He5c21v71908315za200zd71908315xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115583767~115938465~115938468~116184927~116184929~116217636~116217638~116427946~116518833&tft=1764868221752&tfd=1844&apve=1&apvf=f",
+      "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css",
+      "type": "link",
+      "ipinfo": {
+        "domain": "cdnjs.cloudflare.com",
+        "ip": "104.17.24.14",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-TPQ8RC",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.googletagmanager.com",
+        "ip": "142.250.66.72",
+        "hostname": "hkg12s27-in-f8.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fwww.pcschool.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=1779789655.1767647012&dt=%E5%B7%A8%E5%8C%A0%E9%9B%BB%E8%85%A6%EF%BD%9C%E7%A8%8B%E5%BC%8F%2C%E8%A8%AD%E8%A8%88%E8%AA%B2%E7%A8%8B%E9%A6%96%E9%81%B8%E9%9B%BB%E8%85%A6%E8%A3%9C%E7%BF%92%E7%8F%AD%2C%E7%9B%B4%E6%92%AD%E8%AA%B2%E7%A8%8B%E6%9B%B4%E6%96%B9%E4%BE%BF&auid=217325533.1767647012&navt=n&npa=0&gtm=45He5cb0v71908315za200zd71908315xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115583767~115616985~115938465~115938468~116184927~116184929~116251938~116251940&tft=1767647011518&tfd=571&apve=1&apvf=f",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
@@ -124,7 +129,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/zh_TW/sdk.js",
@@ -140,7 +145,7 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://d.line-scdn.net/n/line_tag/public/release/v1/lt.js",
@@ -156,14 +161,14 @@
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://bat.bing.com/bat.js",
       "type": "script",
       "ipinfo": {
         "domain": "bat.bing.com",
-        "ip": "150.171.28.10",
+        "ip": "150.171.27.10",
         "city": "Redmond",
         "region": "Washington",
         "country": "US",
@@ -171,15 +176,15 @@
         "org": "AS8075 Microsoft Corporation",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://asset.botbonnie.com/sdk/sdk.js",
       "type": "script",
       "ipinfo": {
         "domain": "asset.botbonnie.com",
-        "ip": "3.169.137.58",
-        "hostname": "server-3-169-137-58.tpe54.r.cloudfront.net",
+        "ip": "3.169.137.96",
+        "hostname": "server-3-169-137-96.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -187,7 +192,7 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://cdn.chichat.tw/clients/243db076-fa55-44e1-a324-907df4c82ceb/public/scripts/script.js",
@@ -202,15 +207,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-9WWLSEMX3M&cid=712855189.1764868222&gtm=45je5c30v887610288z871908315za20gzb71908315zd71908315&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115583767~115938465~115938468~116184927~116184929~116217636~116217638~116427946~116518833&z=883230964",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-9WWLSEMX3M&cid=2079953751.1767647012&gtm=45je5cb0v887610288z871908315za20gzb71908315zd71908315&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391252~115495938~115583767~115938465~115938468~116184927~116184929~116251938~116251940&z=779062364",
       "type": "img",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.77.3",
-        "hostname": "nctsaa-ab-in-f3.1e100.net",
+        "ip": "142.250.196.195",
+        "hostname": "nctsaa-ac-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -218,7 +223,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://cdn.qgr.ph/qgraph.c74a76057a63c3f11013.js",
@@ -234,14 +239,14 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://cdn.chat-marketing.tech/index.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "cdn.chat-marketing.tech",
-        "ip": "104.26.12.195",
+        "ip": "172.67.74.250",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -249,10 +254,10 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://www.facebook.com/tr?id=696468764188826&ev=PageView&dl=https%253A%252F%252Fwww.pcschool.com.tw%252F&rl=&if=false&ts=1764868222192&fbp=fb.3.1764868222192.1890830262",
+      "originalUrl": "https://www.facebook.com/tr?id=696468764188826&ev=PageView&dl=https%253A%252F%252Fwww.pcschool.com.tw%252F&rl=&if=false&ts=1767647011825&fbp=fb.3.1767647011825.1359155897",
       "type": "img",
       "ipinfo": {
         "domain": "www.facebook.com",
@@ -265,7 +270,7 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://bb-webchat-api.appier.com/api/v2/user-api/login",
@@ -280,7 +285,7 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://cdn-prd-gcp-jp0.aiqua.io/sdk/v3/r/aiqua.js",
@@ -289,22 +294,22 @@
         "domain": "cdn-prd-gcp-jp0.aiqua.io",
         "ip": "203.69.138.209",
         "hostname": "203-69-138-209.hinet-ip.hinet.net",
-        "city": "New Taipei City",
+        "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
-        "loc": "25.0620,121.4570",
+        "loc": "25.0143,121.4672",
         "org": "AS20940 Akamai International B.V.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://chat.botbonnie.com/?appId=page-c73ce9ff91614ad38d113bdb&userId=bb-NLAea0JtkzSvtSBF-_dct&isNewUser=true&",
+      "originalUrl": "https://chat.botbonnie.com/?appId=page-c73ce9ff91614ad38d113bdb&userId=bb-JUPlbTB-ZQjE4aYnJgEnq&isNewUser=true&",
       "type": "iframe",
       "ipinfo": {
         "domain": "chat.botbonnie.com",
-        "ip": "3.169.36.28",
-        "hostname": "server-3-169-36-28.tpe53.r.cloudfront.net",
+        "ip": "3.169.36.2",
+        "hostname": "server-3-169-36-2.tpe53.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -312,7 +317,7 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

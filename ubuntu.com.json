@@ -2,7 +2,7 @@
   "url": "https://ubuntu.com",
   "canonicalURL": "https://ubuntu.com/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:39:28.333Z",
+  "timestamp": "2026-01-05T19:41:43.834Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 36,
   "uniqueDomains": 4,
   "test_results": {
-    "domestic": 0,
-    "cloud_w_domestic_node": 1,
-    "foreign": 3
+    "domestic": {
+      "cloud": 1,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 1,
+      "direct": 2
+    }
   },
   "domainDetails": [
     {
@@ -38,8 +43,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "assets.ubuntu.com",
-        "ip": "185.125.190.29",
-        "hostname": "website-content-cache-3.ps5.canonical.com",
+        "ip": "185.125.190.21",
+        "hostname": "website-content-cache-2.ps5.canonical.com",
         "city": "London",
         "region": "England",
         "country": "GB",
@@ -47,15 +52,15 @@
         "org": "AS41231 Canonical Group Limited",
         "timezone": "Europe/London"
       },
-      "score": "X"
+      "category": "foreign/direct"
     },
     {
       "originalUrl": "https://ubuntu.com/static/js/src/navigation.js?v=7519945",
       "type": "script",
       "ipinfo": {
         "domain": "ubuntu.com",
-        "ip": "185.125.190.20",
-        "hostname": "website-content-cache-1.ps5.canonical.com",
+        "ip": "185.125.190.21",
+        "hostname": "website-content-cache-2.ps5.canonical.com",
         "city": "London",
         "region": "England",
         "country": "GB",
@@ -63,22 +68,23 @@
         "org": "AS41231 Canonical Group Limited",
         "timezone": "Europe/London"
       },
-      "score": "X"
+      "category": "foreign/direct"
     },
     {
       "originalUrl": "https://res.cloudinary.com/canonical/image/fetch/f_svg,q_auto,fl_sanitize,w_197/https%3A%2F%2Fassets.ubuntu.com%2Fv1%2F33b5133c-Noble-Numbat-optimised.svg",
       "type": "img",
       "ipinfo": {
         "domain": "res.cloudinary.com",
-        "ip": "199.232.113.137",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
+        "ip": "23.220.196.41",
+        "hostname": "a23-220-196-41.deploy.static.akamaitechnologies.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16625 Akamai Technologies, Inc.",
+        "timezone": "Asia/Taipei"
       },
-      "score": "X"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://jspm.dev/uuid",
@@ -94,7 +100,7 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     }
   ]
 }

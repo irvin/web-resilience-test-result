@@ -2,7 +2,7 @@
   "url": "https://twitch.tv",
   "canonicalURL": "https://www.twitch.tv/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:36:25.173Z",
+  "timestamp": "2026-01-05T19:38:54.265Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,19 +22,24 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 76,
+  "requestCount": 80,
   "uniqueDomains": 3,
   "test_results": {
-    "domestic": 2,
-    "cloud_w_domestic_node": 0,
-    "foreign": 1
+    "domestic": {
+      "cloud": 2,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 1,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://assets.twitch.tv/config/settings.d1501df25524c1f5540509afe846019a.js",
+      "originalUrl": "https://assets.twitch.tv/config/settings.68da5e6de6d5bdc7a8ca17481cf4361c.js",
       "type": "script",
       "ipinfo": {
         "domain": "assets.twitch.tv",
@@ -47,7 +52,7 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://k.twitchcdn.net/149e9513-01fa-4fb0-aad4-566afd725d1b/2d206a39-8ed7-437e-a3be-862e0f06eea3/p.js",
@@ -62,15 +67,15 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "score": "X"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1",
       "type": "script",
       "ipinfo": {
         "domain": "www.gstatic.com",
-        "ip": "142.250.204.35",
-        "hostname": "hkg07s38-in-f3.1e100.net",
+        "ip": "142.250.196.195",
+        "hostname": "nctsaa-ac-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -78,7 +83,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

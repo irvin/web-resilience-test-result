@@ -2,7 +2,7 @@
   "url": "https://pili.com.tw",
   "canonicalURL": "https://pili.com.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:58:28.734Z",
+  "timestamp": "2026-01-05T20:46:12.103Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 112,
   "uniqueDomains": 5,
   "test_results": {
-    "domestic": 3,
-    "cloud_w_domestic_node": 2,
-    "foreign": 0
+    "domestic": {
+      "cloud": 3,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 2,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -38,7 +43,7 @@
       "type": "link",
       "ipinfo": {
         "domain": "www.pili.com.tw",
-        "ip": "104.21.82.90",
+        "ip": "172.67.155.227",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -46,7 +51,7 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js",
@@ -61,15 +66,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-HDCJVFD0JM",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.204.40",
+        "hostname": "hkg07s38-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -77,15 +82,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://i.ytimg.com/vi/4ad8naGbojU/maxresdefault.jpg",
+      "originalUrl": "https://i.ytimg.com/vi/tA3AJgfGLPA/maxresdefault.jpg",
       "type": "css",
       "ipinfo": {
         "domain": "i.ytimg.com",
-        "ip": "142.250.66.86",
-        "hostname": "hkg12s27-in-f22.1e100.net",
+        "ip": "142.250.77.22",
+        "hostname": "nctsaa-ab-in-f22.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -93,15 +98,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-HDCJVFD0JM&cid=1535491838.1764867507&gtm=45je5c21v877008332za200zd877008332&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391252~115583767~115616986~115938466~115938468~116184927~116184929~116217636~116217638~116474638&z=1783826247",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-HDCJVFD0JM&cid=1188048090.1767645970&gtm=45je5cb0v877008332za200zd877008332&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391252~115495939~115583767~115938465~115938468~116184927~116184929~116251938~116251940&z=1290657730",
       "type": "img",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "ip": "142.250.198.67",
+        "hostname": "lctsaa-ab-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -109,7 +114,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

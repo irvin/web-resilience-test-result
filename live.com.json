@@ -2,7 +2,7 @@
   "url": "https://live.com",
   "canonicalURL": "https://live.com",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:36:30.582Z",
+  "timestamp": "2026-01-05T19:39:06.218Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,32 +22,37 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 10,
   "uniqueDomains": 1,
   "test_results": {
-    "domestic": 1,
-    "cloud_w_domestic_node": 0,
-    "foreign": 0
+    "domestic": {
+      "cloud": 1,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 0,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.mail.runtime.00d185fd.js",
+      "originalUrl": "https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.mail.runtime.cf4de167.js",
       "type": "link",
       "ipinfo": {
         "domain": "res.public.onecdn.static.microsoft",
-        "ip": "203.69.138.206",
-        "hostname": "203-69-138-206.hinet-ip.hinet.net",
-        "city": "Hsinchu",
-        "region": "Taiwan",
+        "ip": "203.69.138.225",
+        "hostname": "203-69-138-225.hinet-ip.hinet.net",
+        "city": "Banqiao",
+        "region": "Taipei",
         "country": "TW",
-        "loc": "24.8036,120.9686",
+        "loc": "25.0143,121.4672",
         "org": "AS20940 Akamai International B.V.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "url": "https://x.com",
   "canonicalURL": "https://x.com/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:36:20.570Z",
+  "timestamp": "2026-01-05T19:38:46.554Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,23 +22,28 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 66,
+  "requestCount": 64,
   "uniqueDomains": 4,
   "test_results": {
-    "domestic": 1,
-    "cloud_w_domestic_node": 1,
-    "foreign": 2
+    "domestic": {
+      "cloud": 2,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 2,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://abs.twimg.com/responsive-web/client-web/vendor.7e606e9a.js",
+      "originalUrl": "https://abs.twimg.com/responsive-web/client-web/vendor.39bcba4a.js",
       "type": "link",
       "ipinfo": {
         "domain": "abs.twimg.com",
-        "ip": "199.232.112.159",
+        "ip": "146.75.44.159",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",
@@ -46,7 +51,7 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "score": "X"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://abs-0.twimg.com/emoji/v2/svg/26a0.svg",
@@ -61,38 +66,39 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "X"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://accounts.google.com/gsi/client",
       "type": "script",
       "ipinfo": {
         "domain": "accounts.google.com",
-        "ip": "74.125.203.84",
-        "hostname": "th-in-f84.1e100.net",
-        "city": "Chang-hua",
+        "ip": "74.125.204.84",
+        "hostname": "ti-in-f84.1e100.net",
+        "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "24.0733,120.5628",
+        "loc": "24.1469,120.6839",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://api.x.com/graphql/178EtFdhcGqmoyzKL4muaA/Viewer?variables=%7B%22withCommunitiesMemberships%22%3Atrue%7D&features=%7B%22subscriptions_upsells_api_enabled%22%3Atrue%2C%22profile_label_improvements_pcf_label_in_post_enabled%22%3Atrue%2C%22responsive_web_profile_redirect_enabled%22%3Afalse%2C%22rweb_tipjar_consumption_enabled%22%3Atrue%2C%22verified_phone_label_enabled%22%3Afalse%2C%22creator_subscriptions_tweet_preview_api_enabled%22%3Atrue%2C%22responsive_web_graphql_skip_user_profile_image_extensions_enabled%22%3Afalse%2C%22responsive_web_graphql_timeline_navigation_enabled%22%3Atrue%7D&fieldToggles=%7B%22isDelegate%22%3Afalse%2C%22withAuxiliaryUserLabels%22%3Atrue%7D",
-      "type": "xmlhttprequest",
+      "originalUrl": "https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js",
+      "type": "script",
       "ipinfo": {
-        "domain": "api.x.com",
-        "ip": "172.66.0.227",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
+        "domain": "appleid.cdn-apple.com",
+        "ip": "23.201.14.88",
+        "hostname": "a23-201-14-88.deploy.static.akamaitechnologies.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16625 Akamai Technologies, Inc.",
+        "timezone": "Asia/Taipei"
       },
-      "score": "?"
+      "category": "domestic/cloud"
     }
   ]
 }

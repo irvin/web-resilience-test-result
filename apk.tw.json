@@ -2,7 +2,7 @@
   "url": "https://apk.tw",
   "canonicalURL": "https://apk.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:43:21.201Z",
+  "timestamp": "2026-01-05T19:46:00.520Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,17 +22,38 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 84,
-  "uniqueDomains": 5,
+  "requestCount": 85,
+  "uniqueDomains": 6,
   "test_results": {
-    "domestic": 2,
-    "cloud_w_domestic_node": 3,
-    "foreign": 0
+    "domestic": {
+      "cloud": 2,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 3,
+      "direct": 0
+    }
   },
   "domainDetails": [
+    {
+      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-LDPBW7DG21",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.googletagmanager.com",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
     {
       "originalUrl": "https://apk.tw/static/js/audio.min.js",
       "type": "script",
@@ -46,25 +67,10 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://img2.apk.tw/pureing/alterimages/logo.png",
-      "type": "img",
-      "ipinfo": {
-        "domain": "img2.apk.tw",
-        "ip": "172.67.71.224",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://img1.apk.tw/data/attachment/block/f8/f81d521aa920851bc7e29ddd89794a71.jpg",
+      "originalUrl": "https://img1.apk.tw/data/attachment/block/57/576c4ebc05e098b745b31a29507e6b50.jpg",
       "type": "img",
       "ipinfo": {
         "domain": "img1.apk.tw",
@@ -76,15 +82,30 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-LDPBW7DG21",
-      "type": "script",
+      "originalUrl": "https://img2.apk.tw/pureing/alterimages/logo.png",
+      "type": "img",
       "ipinfo": {
-        "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "domain": "img2.apk.tw",
+        "ip": "104.26.4.233",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-LDPBW7DG21&cid=1673938232.1767642360&gtm=45je5cc1h2v9135327702za200zd9135327702&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115616985~115938465~115938468~116184927~116184929~116251938~116251940~116682875~116744866&z=1395156161",
+      "type": "img",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.66.67",
+        "hostname": "hkg12s27-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -92,7 +113,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/zh_TW/all.js#xfbml=1&appId=477589119023232",
@@ -108,7 +129,7 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     }
   ]
 }

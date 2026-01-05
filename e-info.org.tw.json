@@ -2,7 +2,7 @@
   "url": "https://e-info.org.tw",
   "canonicalURL": "https://e-info.org.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:36:22.204Z",
+  "timestamp": "2026-01-05T20:22:19.588Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 141,
+  "requestCount": 135,
   "uniqueDomains": 11,
   "test_results": {
-    "domestic": 8,
-    "cloud_w_domestic_node": 3,
-    "foreign": 0
+    "domestic": {
+      "cloud": 6,
+      "direct": 2
+    },
+    "foreign": {
+      "cloud": 3,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -38,8 +43,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagservices.com",
-        "ip": "142.250.196.194",
-        "hostname": "nctsaa-ac-in-f2.1e100.net",
+        "ip": "142.250.66.66",
+        "hostname": "hkg12s27-in-f2.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -47,10 +52,10 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://e-info.org.tw/modules/system/system.base.css?t6r4p5",
+      "originalUrl": "https://e-info.org.tw/modules/system/system.base.css?t8epy3",
       "type": "css",
       "ipinfo": {
         "domain": "e-info.org.tw",
@@ -63,7 +68,7 @@
         "org": "AS63949 Akamai Connected Cloud",
         "timezone": "Asia/Singapore"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css",
@@ -78,15 +83,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-5K476LW",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.77.8",
+        "hostname": "nctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -94,7 +99,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
@@ -110,26 +115,25 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js",
       "type": "script",
       "ipinfo": {
         "domain": "s3.amazonaws.com",
-        "ip": "52.216.51.80",
-        "hostname": "s3-1.amazonaws.com",
+        "ip": "16.15.184.12",
         "city": "Ashburn",
         "region": "Virginia",
         "country": "US",
         "loc": "39.0437,-77.4875",
-        "org": "AS16509 Amazon.com, Inc.",
+        "org": "AS14618 Amazon.com, Inc.",
         "timezone": "America/New_York"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/measurement/conversion?random=1764866179013&cv=11&tid=G-R4DB2E3D96&fst=1764866179013&fmt=6&en=page_view&gtm=45je5c30h2v9209390686z89104561018za200zb9104561018zd9104561018xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528501~104573694~104684208~104684211~105391253~115583767~115938466~115938469~116184927~116184929~116217636~116217638&u_w=1280&u_h=720&url=https%3A%2F%2Fe-info.org.tw%2F&gacid=717347797.1764866179&frm=0&tiba=%E7%92%B0%E5%A2%83%E8%B3%87%E8%A8%8A%E4%B8%AD%E5%BF%83%20%7C%20%E9%BB%9E%E6%93%8A%E4%B9%8B%E9%96%93%20%E5%89%B5%E9%80%A0%E7%92%B0%E5%A2%83%E5%A4%A7%E4%B8%8D%E5%90%8C&npa=0&pscdl=noapi&auid=1893068262.1764866179&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.1.0&uaw=0",
+      "originalUrl": "https://www.google.com/measurement/conversion?random=1767644537052&cv=11&tid=G-3G2CB5BM24&fst=1767644537052&fmt=6&en=page_view&gtm=45Pe5cb0v9237823479z89104561018za20gzb9104561018zd9104561018xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391252~115583767~115938466~115938468~116184927~116184929~116251938~116251940&u_w=1280&u_h=720&url=https%3A%2F%2Fe-info.org.tw%2F&gacid=630030288.1767644537&frm=0&tiba=%E7%92%B0%E5%A2%83%E8%B3%87%E8%A8%8A%E4%B8%AD%E5%BF%83%20%7C%20%E9%BB%9E%E6%93%8A%E4%B9%8B%E9%96%93%20%E5%89%B5%E9%80%A0%E7%92%B0%E5%A2%83%E5%A4%A7%E4%B8%8D%E5%90%8C&npa=0&pscdl=noapi&auid=2104611141.1767644537&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
@@ -142,15 +146,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-R4DB2E3D96&cid=717347797.1764866179&gtm=45je5c30h2v9209390686z89104561018za200zb9104561018zd9104561018&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528501~104573694~104684208~104684211~105391253~115583767~115938466~115938469~116184927~116184929~116217636~116217638&z=1335314731",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-3G2CB5BM24&cid=630030288.1767644537&gtm=45Pe5cb0v9237823479z89104561018za20gzb9104561018zd9104561018&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391252~115583767~115938466~115938468~116184927~116184929~116251938~116251940&z=246752940",
       "type": "img",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.204.35",
-        "hostname": "hkg07s38-in-f3.1e100.net",
+        "ip": "142.250.198.67",
+        "hostname": "lctsaa-ab-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -158,7 +162,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fenc.teia&tabs=timeline&width=255&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=639007582858790",
@@ -174,7 +178,7 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "http://action.earthday.org.tw/api/green_action",
@@ -190,15 +194,15 @@
         "org": "AS396982 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://images3223-focus-opensocial.googleusercontent.com/gadgets/proxy?container=none&url=https://www.instagram.com/instagram/",
+      "originalUrl": "https://images1041-focus-opensocial.googleusercontent.com/gadgets/proxy?container=none&url=https://www.instagram.com/instagram/",
       "type": "xmlhttprequest",
       "ipinfo": {
-        "domain": "images3223-focus-opensocial.googleusercontent.com",
-        "ip": "142.250.66.65",
-        "hostname": "hkg12s27-in-f1.1e100.net",
+        "domain": "images1041-focus-opensocial.googleusercontent.com",
+        "ip": "142.250.196.193",
+        "hostname": "nctsaa-ac-in-f1.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -206,7 +210,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

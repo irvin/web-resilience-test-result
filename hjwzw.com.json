@@ -2,7 +2,7 @@
   "url": "https://hjwzw.com",
   "canonicalURL": "https://hjwzw.com",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:40:14.525Z",
+  "timestamp": "2026-01-05T19:43:30.752Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 25,
   "uniqueDomains": 4,
   "test_results": {
-    "domestic": 1,
-    "cloud_w_domestic_node": 0,
-    "foreign": 3
+    "domestic": {
+      "cloud": 1,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 0,
+      "direct": 3
+    }
   },
   "domainDetails": [
     {
@@ -46,15 +51,15 @@
         "org": "AS32097 WholeSale Internet, Inc.",
         "timezone": "America/Chicago"
       },
-      "score": "X"
+      "category": "foreign/direct"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-L51P0WCBSV",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.204.40",
+        "hostname": "hkg07s38-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -62,7 +67,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.hjwzw.com/images/hjw_01.jpg",
@@ -77,10 +82,10 @@
         "org": "AS32097 WholeSale Internet, Inc.",
         "timezone": "America/Chicago"
       },
-      "score": "X"
+      "category": "foreign/direct"
     },
     {
-      "originalUrl": "https://bm.hjwzw.com/Count.aspx?referer=&_=1764862813644",
+      "originalUrl": "https://bm.hjwzw.com/Count.aspx?referer=&_=1767642209616",
       "type": "script",
       "ipinfo": {
         "domain": "bm.hjwzw.com",
@@ -92,7 +97,7 @@
         "org": "AS32097 WholeSale Internet, Inc.",
         "timezone": "America/Chicago"
       },
-      "score": "X"
+      "category": "foreign/direct"
     }
   ]
 }

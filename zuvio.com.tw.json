@@ -2,7 +2,7 @@
   "url": "https://zuvio.com.tw",
   "canonicalURL": "https://zuvio.com.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:11:55.481Z",
+  "timestamp": "2026-01-05T20:01:23.487Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 17,
-  "uniqueDomains": 5,
+  "requestCount": 15,
+  "uniqueDomains": 4,
   "test_results": {
-    "domestic": 5,
-    "cloud_w_domestic_node": 0,
-    "foreign": 0
+    "domestic": {
+      "cloud": 2,
+      "direct": 2
+    },
+    "foreign": {
+      "cloud": 0,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -47,15 +52,15 @@
         "org": "AS396982 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-VD52P5PXXL",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.66.72",
+        "hostname": "hkg12s27-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -63,7 +68,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
@@ -79,7 +84,7 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://s3.hicloud.net.tw/homepage.resources/public/images/ver_4.0/index_bg.png",
@@ -95,23 +100,7 @@
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://www.facebook.com/tr/?id=879723955932697&ev=PageView&dl=https%3A%2F%2Fzuvio.com.tw%2F&rl=&if=false&ts=1764864714798&sw=1280&sh=720&v=2.9.243&r=stable&ec=0&o=4254&fbp=fb.2.1764864714796.14961276755123246&ler=empty&bfs[b]=1&pmd[title]=Zuvio%20-%20%E6%9C%80%E4%BD%B3%E5%A4%A7%E5%AD%B8%E5%B8%AB%E7%94%9F%E4%BA%92%E5%8B%95%E5%B9%B3%E5%8F%B0&pmd[description]=Zuvio%20%E8%83%BD%E8%AE%93%E8%80%81%E5%B8%AB%E9%80%8F%E9%81%8E%E4%BA%8B%E5%89%8D%E5%82%99%E9%A1%8C%EF%BC%8C%E6%96%BC%E8%AA%B2%E4%B8%AD%E9%80%B2%E8%A1%8C%E5%95%8F%E7%AD%94%EF%BC%8C%E5%B9%AB%E5%8A%A9%E6%82%A8%E5%BF%AB%E9%80%9F%E6%94%B6%E9%9B%86%E5%AD%B8%E7%94%9F%E6%84%8F%E8%A6%8B%E8%88%87%E7%AD%94%E6%A1%88%EF%BC%8C%E5%A2%9E%E5%8A%A0%E8%AA%B2%E5%A0%82%E4%BA%92%E5%8B%95%EF%BC%8C%E4%B8%80%E6%89%8B%E6%8E%8C%E6%8F%A1%E6%95%99%E5%AD%B8%E7%8F%BE%E6%B3%81%E3%80%82&plt=372.5999999977648&it=1764864714469&coo=false&expv2[0]=pl0&expv2[1]=el2&expv2[2]=bc1&expv2[3]=mr2&rqm=GET",
-      "type": "img",
-      "ipinfo": {
-        "domain": "www.facebook.com",
-        "ip": "31.13.87.36",
-        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS32934 Facebook, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "domestic/direct"
     }
   ]
 }

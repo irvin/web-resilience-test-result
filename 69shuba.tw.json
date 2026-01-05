@@ -2,7 +2,7 @@
   "url": "https://69shuba.tw",
   "canonicalURL": "https://69shuba.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:43:51.575Z",
+  "timestamp": "2026-01-05T19:45:28.197Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,22 +22,27 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 29,
-  "uniqueDomains": 8,
+  "requestCount": 7,
+  "uniqueDomains": 3,
   "test_results": {
-    "domestic": 0,
-    "cloud_w_domestic_node": 8,
-    "foreign": 0
+    "domestic": {
+      "cloud": 0,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 2,
+      "direct": 1
+    }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://69shuba.tw/cdn-cgi/speculation",
-      "type": "other",
+      "originalUrl": "https://p.69shuba.tw/js/style.css",
+      "type": "link",
       "ipinfo": {
-        "domain": "69shuba.tw",
+        "domain": "p.69shuba.tw",
         "ip": "104.21.22.151",
         "city": "San Francisco",
         "region": "California",
@@ -46,14 +51,14 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "cdnjs.cloudflare.com",
-        "ip": "104.17.25.14",
+        "ip": "104.17.24.14",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -61,98 +66,22 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://js.novelapis.com/ad.js",
-      "type": "script",
+      "originalUrl": "https://69shuba.tw/static/ss_wap/search.png",
+      "type": "css",
       "ipinfo": {
-        "domain": "js.novelapis.com",
-        "ip": "172.67.184.184",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
+        "domain": "69shuba.tw",
+        "ip": "193.111.31.55",
+        "city": "Tokyo",
+        "region": "Tokyo",
+        "country": "JP",
+        "loc": "35.6895,139.6917",
+        "org": "AS3258 xTom Japan Corporation",
+        "timezone": "Asia/Tokyo"
       },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://the.gatekeeperconsent.com/cmp.min.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "the.gatekeeperconsent.com",
-        "ip": "172.67.199.186",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://cmp.gatekeeperconsent.com/min.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "cmp.gatekeeperconsent.com",
-        "ip": "172.67.199.186",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://www.ezojs.com/ezoic/sa.min.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.ezojs.com",
-        "ip": "104.21.63.106",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://privacy.gatekeeperconsent.com/consent_modules.json",
-      "type": "xmlhttprequest",
-      "ipinfo": {
-        "domain": "privacy.gatekeeperconsent.com",
-        "ip": "104.21.42.32",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://g.ezoic.net/ezintegration?d=69shuba.tw&ts=1764863030232",
-      "type": "img",
-      "ipinfo": {
-        "domain": "g.ezoic.net",
-        "ip": "52.221.42.138",
-        "hostname": "ec2-52-221-42-138.ap-southeast-1.compute.amazonaws.com",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "score": "?"
+      "category": "foreign/direct"
     }
   ]
 }

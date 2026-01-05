@@ -2,7 +2,7 @@
   "url": "https://www.mercedes-benz.com.tw/",
   "canonicalURL": "https://www.mercedes-benz.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:36:41.880Z",
+  "timestamp": "2026-01-05T20:37:52.362Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 207,
+  "requestCount": 215,
   "uniqueDomains": 7,
   "test_results": {
-    "domestic": 4,
-    "cloud_w_domestic_node": 3,
-    "foreign": 0
+    "domestic": {
+      "cloud": 0,
+      "direct": 5
+    },
+    "foreign": {
+      "cloud": 2,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -46,7 +51,7 @@
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://www.mercedes-benz.com.tw/etc.clientlibs/daimler/embxp-wholesale/components-ng/clientlibs/cookie-layer/publish.lc-c13796e2aed1470a07bdf9f4df8318d9-lc.min.js",
@@ -61,23 +66,22 @@
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://places.mercedes-benz.com/datadog-rum-v5.js",
       "type": "script",
       "ipinfo": {
         "domain": "places.mercedes-benz.com",
-        "ip": "203.69.138.19",
-        "hostname": "203-69-138-19.hinet-ip.hinet.net",
-        "city": "New Taipei City",
-        "region": "Taipei",
+        "ip": "210.71.227.218",
+        "city": "Taipei",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0620,121.4570",
-        "org": "AS20940 Akamai International B.V.",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://api.usercentrics.eu/settings/IyHHYSrz9/latest/languages.json",
@@ -93,7 +97,37 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "score": "?"
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://api.oneweb.mercedes-benz.com/vmos-api/v1/data/TW/zh/OWF/live/summary",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "api.oneweb.mercedes-benz.com",
+        "ip": "210.71.227.202",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://i18n.oneweb.mercedes-benz.com/euw1-c1d77c09c00d79e653b3ivp/manifest.json",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "i18n.oneweb.mercedes-benz.com",
+        "ip": "210.71.227.202",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://app.usercentrics.eu/session/1px.png?settingsId=IyHHYSrz9",
@@ -109,38 +143,7 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://api.oneweb.mercedes-benz.com/vmos-api/v1/data/TW/zh/OWF/live/summary",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "api.oneweb.mercedes-benz.com",
-        "ip": "210.71.227.202",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS3462 Data Communication Business Group",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://aggregator.service.usercentrics.eu/aggregate/zh_tw?templates=1et3EyIgn0K6E2@1.0.1,4Dp8M7ByFZC6bm@1.12.2,4shu1uEGE@2.0.1,5UgrUg69_@1.0.2,CLnJfGlFY@2.1.4,EUB92J07k@1.12.75,GHhG9kZWBELPvh@9.7.2,HHvalqBcopjFbL@1.0.2,HJTYbvshz@1.0.5,PiVeoleE5@4.2.4,TKXOJr6QJLl9oN@1.0.1,UrIZhsV9ivH-iD@5.6.11,XdGYN2BsK@1.59.170,bTHx5BzIk@2.1.5,fGOBIj9WT@4.2.8,gRqMlUZEd@1.0.1,ifdaOc2gZoj91y@1.0.3,kudYhSamD@1.2.3,mzhCR6Q8-@1.6.4,n0fbxxVyASPQRd@1.1.0,pFaCf_bDZ@1.19.10,rp755WRJe@1.0.3,tDpNV_x9W@2.2.3,yCaVq0XoyjsDbx@1.2.0",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "aggregator.service.usercentrics.eu",
-        "ip": "34.120.28.121",
-        "hostname": "121.28.120.34.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
-        "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
-      },
-      "score": "?"
+      "category": "foreign/cloud"
     }
   ]
 }

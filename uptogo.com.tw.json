@@ -2,7 +2,7 @@
   "url": "https://uptogo.com.tw",
   "canonicalURL": "https://uptogo.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T17:15:36.081Z",
+  "timestamp": "2026-01-05T20:50:44.691Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 71,
-  "uniqueDomains": 4,
+  "requestCount": 52,
+  "uniqueDomains": 8,
   "test_results": {
-    "domestic": 3,
-    "cloud_w_domestic_node": 1,
-    "foreign": 0
+    "domestic": {
+      "cloud": 3,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 4,
+      "direct": 1
+    }
   },
   "domainDetails": [
     {
@@ -38,7 +43,7 @@
       "type": "other",
       "ipinfo": {
         "domain": "uptogo.com.tw",
-        "ip": "172.67.70.85",
+        "ip": "104.26.2.154",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -46,7 +51,7 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=GT-NGPP4GJS",
@@ -62,26 +67,10 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://fonts.googleapis.com/css?family=Google%20Sans%20Text%3A500",
-      "type": "link",
-      "ipinfo": {
-        "domain": "fonts.googleapis.com",
-        "ip": "142.250.198.74",
-        "hostname": "lctsaa-ab-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://fundingchoicesmessages.google.com/i/ca-pub-3278456532162935?href=https%3A%2F%2Fuptogo.com.tw&ers=2",
+      "originalUrl": "https://fundingchoicesmessages.google.com/i/pub-3278456532162935?ers=1",
       "type": "script",
       "ipinfo": {
         "domain": "fundingchoicesmessages.google.com",
@@ -94,7 +83,85 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://privacy.gatekeeperconsent.com/consent_modules.json",
+      "type": "xmlhttprequest",
+      "ipinfo": {
+        "domain": "privacy.gatekeeperconsent.com",
+        "ip": "172.67.199.186",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://www.ezojs.com/identity.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.ezojs.com",
+        "ip": "104.21.63.106",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://g.ezoic.net/ezintegration?d=uptogo.com.tw&ts=1767646243157",
+      "type": "img",
+      "ipinfo": {
+        "domain": "g.ezoic.net",
+        "ip": "52.221.42.138",
+        "hostname": "ec2-52-221-42-138.ap-southeast-1.compute.amazonaws.com",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://s.w.org/images/core/emoji/17.0.2/svg/1f340.svg",
+      "type": "img",
+      "ipinfo": {
+        "domain": "s.w.org",
+        "ip": "192.0.77.48",
+        "hostname": "s.w.org",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7749,-122.4194",
+        "org": "AS2635 Automattic, Inc",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/direct"
+    },
+    {
+      "originalUrl": "https://fonts.googleapis.com/css?family=Google%20Sans%20Text%3A500",
+      "type": "link",
+      "ipinfo": {
+        "domain": "fonts.googleapis.com",
+        "ip": "142.250.204.42",
+        "hostname": "hkg07s38-in-f10.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     }
   ]
 }

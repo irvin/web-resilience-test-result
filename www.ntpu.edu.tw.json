@@ -2,7 +2,7 @@
   "url": "https://www.ntpu.edu.tw/",
   "canonicalURL": "https://www.ntpu.edu.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:45:37.117Z",
+  "timestamp": "2026-01-05T19:47:44.143Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 92,
-  "uniqueDomains": 5,
+  "requestCount": 121,
+  "uniqueDomains": 6,
   "test_results": {
-    "domestic": 5,
-    "cloud_w_domestic_node": 0,
-    "foreign": 0
+    "domestic": {
+      "cloud": 5,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 0,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -38,7 +43,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "documentcloud.adobe.com",
-        "ip": "210.71.227.216",
+        "ip": "210.71.227.200",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -46,7 +51,7 @@
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://new.ntpu.edu.tw/assets/fontawesome/css/fontawesome.css",
@@ -62,15 +67,15 @@
         "org": "AS1659 Taiwan Academic Network (TANet) Information Center",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-VBD7Z9XB68",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -78,10 +83,10 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://cms-carrier.ntpu.edu.tw/uploads/69315c5963f5a608851f91ebcover_Image_1fc85f0535.jpg",
+      "originalUrl": "https://cms-carrier.ntpu.edu.tw/uploads/695b189c63f5a608851f9deacover_Image_06932e7d78.jpg",
       "type": "img",
       "ipinfo": {
         "domain": "cms-carrier.ntpu.edu.tw",
@@ -94,15 +99,15 @@
         "org": "AS1659 Taiwan Academic Network (TANet) Information Center",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://accounts.google.com/gsi/client",
       "type": "script",
       "ipinfo": {
         "domain": "accounts.google.com",
-        "ip": "142.250.157.84",
-        "hostname": "ta-in-f84.1e100.net",
+        "ip": "64.233.188.84",
+        "hostname": "tk-in-f84.1e100.net",
         "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
@@ -110,7 +115,23 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://api-carrier.ntpu.edu.tw/strapi",
+      "type": "xmlhttprequest",
+      "ipinfo": {
+        "domain": "api-carrier.ntpu.edu.tw",
+        "ip": "120.126.192.182",
+        "hostname": "192182.ntpu.edu.tw",
+        "city": "Taoyuan City",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
+        "org": "AS1659 Taiwan Academic Network (TANet) Information Center",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     }
   ]
 }

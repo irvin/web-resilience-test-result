@@ -2,7 +2,7 @@
   "url": "https://www.sinica.edu.tw/",
   "canonicalURL": "https://www.sinica.edu.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:41:42.837Z",
+  "timestamp": "2026-01-05T19:45:16.601Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 102,
+  "requestCount": 104,
   "uniqueDomains": 3,
   "test_results": {
-    "domestic": 3,
-    "cloud_w_domestic_node": 0,
-    "foreign": 0
+    "domestic": {
+      "cloud": 1,
+      "direct": 2
+    },
+    "foreign": {
+      "cloud": 0,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -38,32 +43,32 @@
       "type": "link",
       "ipinfo": {
         "domain": "www.sinica.edu.tw",
-        "ip": "203.66.32.72",
-        "hostname": "203-66-32-72.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "203.66.32.129",
+        "hostname": "203-66-32-129.hinet-ip.hinet.net",
+        "city": "Taipei",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "25.0531,121.5264",
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://file.apps.sinica.edu.tw/filepool/asweb/image/2025/22047tDkIXxV3jlqqBkgLCYg/%E5%8D%97%E6%B8%AF%E9%99%A2%E5%8D%80.jfif",
       "type": "img",
       "ipinfo": {
         "domain": "file.apps.sinica.edu.tw",
-        "ip": "203.66.32.170",
-        "hostname": "203-66-32-170.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "203.66.34.41",
+        "hostname": "203-66-34-41.hinet-ip.hinet.net",
+        "city": "Taichung",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "24.1469,120.6839",
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-GCY6KHM7T1",
@@ -79,7 +84,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

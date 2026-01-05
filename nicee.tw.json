@@ -2,7 +2,7 @@
   "url": "https://nicee.tw",
   "canonicalURL": "https://nicee.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T17:11:18.983Z",
+  "timestamp": "2026-01-05T21:10:52.058Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,19 +22,24 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 214,
-  "uniqueDomains": 8,
+  "requestCount": 27,
+  "uniqueDomains": 5,
   "test_results": {
-    "domestic": 4,
-    "cloud_w_domestic_node": 3,
-    "foreign": 1
+    "domestic": {
+      "cloud": 1,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 2,
+      "direct": 1
+    }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://www.nicee.tw/static/css/chunk-0279cb40.2692f6ff.css",
+      "originalUrl": "https://www.nicee.tw/static/css/app.6176a25c.css",
       "type": "link",
       "ipinfo": {
         "domain": "www.nicee.tw",
@@ -47,7 +52,7 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-LDXKDR58JG",
@@ -63,7 +68,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://ssl.captcha.qq.com/TCaptcha.js",
@@ -74,26 +79,11 @@
         "city": "Shenzhen",
         "region": "Guangdong",
         "country": "CN",
-        "loc": "22.1823,111.1179",
+        "loc": "22.5455,114.0683",
         "org": "AS17816 China Unicom IP network China169 Guangdong province",
         "timezone": "Asia/Shanghai"
       },
-      "score": "X"
-    },
-    {
-      "originalUrl": "https://web.sdk.qcloud.com/im/download/error-message/v3/0.0.3/tim-error-message.txt",
-      "type": "xmlhttprequest",
-      "ipinfo": {
-        "domain": "web.sdk.qcloud.com",
-        "ip": "128.1.102.2",
-        "city": "Kaohsiung",
-        "region": "Takao",
-        "country": "TW",
-        "loc": "22.6163,120.3133",
-        "org": "AS3462 Data Communication Business Group",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "foreign/direct"
     },
     {
       "originalUrl": "https://connect.facebook.net/zh_TW/sdk.js",
@@ -109,7 +99,7 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://api.nicee.tw/seo/config",
@@ -125,39 +115,7 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://o4510219141447680.ingest.de.sentry.io/api/4510219143086160/envelope/?sentry_key=4b11d5e9e3b7932da9f2edf9ca8eebdb&sentry_version=7&sentry_client=sentry.javascript.vue%2F7.26.0",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "o4510219141447680.ingest.de.sentry.io",
-        "ip": "34.120.62.213",
-        "hostname": "213.62.120.34.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
-        "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
-      },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://resource.3uplay.com/newicon/tab_1_c.png?d=300x300",
-      "type": "img",
-      "ipinfo": {
-        "domain": "resource.3uplay.com",
-        "ip": "3.169.36.3",
-        "hostname": "server-3-169-36-3.tpe53.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "foreign/cloud"
     }
   ]
 }

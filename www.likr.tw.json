@@ -2,7 +2,7 @@
   "url": "https://www.likr.tw/",
   "canonicalURL": "https://www.avividai.com/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:43:05.291Z",
+  "timestamp": "2026-01-05T19:45:57.636Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 138,
-  "uniqueDomains": 20,
+  "requestCount": 141,
+  "uniqueDomains": 22,
   "test_results": {
-    "domestic": 7,
-    "cloud_w_domestic_node": 10,
-    "foreign": 3
+    "domestic": {
+      "cloud": 5,
+      "direct": 2
+    },
+    "foreign": {
+      "cloud": 15,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -46,7 +51,22 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.3/css/all.min.css",
+      "type": "link",
+      "ipinfo": {
+        "domain": "cdnjs.cloudflare.com",
+        "ip": "104.17.24.14",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css",
@@ -61,22 +81,7 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "X"
-    },
-    {
-      "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.3/css/all.min.css",
-      "type": "link",
-      "ipinfo": {
-        "domain": "cdnjs.cloudflare.com",
-        "ip": "104.17.25.14",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://www.avividai.com/css/app/block.min.css?id=e16a68e31d9220f15c979465f9a9a708",
@@ -91,14 +96,14 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://saas.avividai.com/storage/website/brands/brand-8.png",
       "type": "img",
       "ipinfo": {
         "domain": "saas.avividai.com",
-        "ip": "104.21.26.110",
+        "ip": "172.67.135.240",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -106,15 +111,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "ajax.googleapis.com",
-        "ip": "142.250.196.202",
-        "hostname": "nctsaa-ac-in-f10.1e100.net",
+        "ip": "142.250.198.74",
+        "hostname": "lctsaa-ab-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -122,15 +127,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://fonts.googleapis.com/css?family=Arsenal:700|Noto+Sans+TC:400,700|Noto+Serif+TC:700&display=swap&subset=chinese-traditional",
       "type": "css",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.66.74",
-        "hostname": "hkg12s27-in-f10.1e100.net",
+        "ip": "142.250.204.42",
+        "hostname": "hkg07s38-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -138,14 +143,14 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://use.typekit.net/gpu3zhj.css",
       "type": "css",
       "ipinfo": {
         "domain": "use.typekit.net",
-        "ip": "203.69.81.58",
+        "ip": "203.69.81.56",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -153,15 +158,15 @@
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-PXQP4DD5",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -169,7 +174,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
@@ -185,15 +190,30 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dr=www.likr.tw&dl=https%3A%2F%2Fwww.avividai.com%2F&scrsrc=www.googletagmanager.com&rnd=1041487900.1764862983&dt=LRMN%20%E9%A0%98%E5%B0%8E%E5%93%81%E7%89%8C%EF%BD%9CAviviD%EF%BD%9C%E7%A6%BE%E5%A4%9A%E7%A7%BB%E5%8B%95%E5%A4%9A%E5%AA%92%E9%AB%94&auid=1636473120.1764862983&navt=n&npa=0&gtm=45He5c21v9222415702za200zd9222415702xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528500~104573694~104684208~104684211~105391252~115583767~115616985~115938465~115938469~116184927~116184929~116217636~116217638&tft=1764862983220&tfd=2495&apve=1&apvf=f",
+      "originalUrl": "https://auto-cdn.advividnetwork.com/cm/uuid1.php",
+      "type": "iframe",
+      "ipinfo": {
+        "domain": "auto-cdn.advividnetwork.com",
+        "ip": "104.20.37.215",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dr=www.likr.tw&dl=https%3A%2F%2Fwww.avividai.com%2F&scrsrc=www.googletagmanager.com&rnd=387973966.1767642355&dt=LRMN%20%E9%A0%98%E5%B0%8E%E5%93%81%E7%89%8C%EF%BD%9CAviviD%EF%BD%9C%E7%A6%BE%E5%A4%9A%E7%A7%BB%E5%8B%95%E5%A4%9A%E5%AA%92%E9%AB%94&auid=513651273.1767642355&navt=n&npa=0&gtm=45He5cb0h1v9222415702za200zd9222415702xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528500~104573694~104684208~104684211~105391252~115583767~115616985~115938466~115938468~116184927~116184929~116251938~116251940~116682877&tft=1767642354875&tfd=2365&apve=1&apvf=f",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.66.68",
-        "hostname": "hkg12s27-in-f4.1e100.net",
+        "ip": "142.250.196.196",
+        "hostname": "nctsaa-ac-in-f4.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -201,7 +221,23 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-N7ERK8YH08&cid=685237899.1767642355&gtm=45je5cb0h1v9102994462za200zb9222415702zd9222415702&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115583767~115938466~115938469~116184927~116184929~116251938~116251940~116682877&z=1413135021",
+      "type": "img",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.66.67",
+        "hostname": "hkg12s27-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://auto-load-balancer.likr.com.tw/pushEndPoint/uuid_gen/uuid_iframe.php",
@@ -216,14 +252,14 @@
         "org": "AS31898 Oracle Corporation",
         "timezone": "Asia/Tokyo"
       },
-      "score": "X"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://rhea-cache.advividnetwork.com/tracker/event_tracker_gtm_media.js",
       "type": "script",
       "ipinfo": {
         "domain": "rhea-cache.advividnetwork.com",
-        "ip": "104.20.37.215",
+        "ip": "172.66.164.89",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -231,14 +267,14 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://auto-load-balancer.likr.tw/api/get_client_ip.php",
       "type": "xmlhttprequest",
       "ipinfo": {
         "domain": "auto-load-balancer.likr.tw",
-        "ip": "104.20.24.89",
+        "ip": "172.66.162.241",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -246,23 +282,52 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-N7ERK8YH08&cid=1279700777.1764862983&gtm=45je5c21v9102994462za200zb9222415702zd9222415702&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115938465~115938469~116184927~116184929~116217636~116217638&z=449141721",
-      "type": "img",
+      "originalUrl": "https://auto-satellite.advividnetwork.com/include_code/uuid_iframe.html?uuid=c184f631-0645-477a-ad29-43346f4a98f0",
+      "type": "iframe",
       "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.198.67",
-        "hostname": "lctsaa-ab-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "domain": "auto-satellite.advividnetwork.com",
+        "ip": "172.66.164.89",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
       },
-      "score": "O"
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://avividone.likr.tw/killswitch/killswitch_config.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "avividone.likr.tw",
+        "ip": "172.66.162.241",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://load-balancer.likr.com.tw/api/get_onpage_data.php?is_crescent=0&utm_mode=1&uuid=c184f631-0645-477a-ad29-43346f4a98f0&web_id=avividai&onpage_type=landing&website_type=1&browser_ver=133.0.6943.16&os_ver=10.15.7&user_agent=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F133.0.6943.16%20Safari%2F537.36&client_href=https%3A%2F%2Fwww.avividai.com%2F&os_type=3&browser_type=1&ad_id=_&is_ios=2",
+      "type": "xmlhttprequest",
+      "ipinfo": {
+        "domain": "load-balancer.likr.com.tw",
+        "ip": "172.66.162.241",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://livechat.mantago.cc/?botId=y1aKrPzeQ",
@@ -278,37 +343,7 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://auto-satellite.advividnetwork.com/include_code/uuid_iframe.html?uuid=6e404344-1f95-4bb9-b985-95c020b98b3c",
-      "type": "iframe",
-      "ipinfo": {
-        "domain": "auto-satellite.advividnetwork.com",
-        "ip": "172.66.164.89",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "score": "?"
-    },
-    {
-      "originalUrl": "https://avividone.likr.tw/killswitch/killswitch_config.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "avividone.likr.tw",
-        "ip": "104.20.24.89",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://kinesis.ap-southeast-1.amazonaws.com/",
@@ -324,14 +359,14 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://tls-ap-southeast-1.bytepluses.com/WebTracks?ProjectId=453d149c-b36d-4124-8acf-6a6d863db444&TopicId=4879af10-a8cc-45b2-8ba1-f6ebc1eb8821",
       "type": "fetch",
       "ipinfo": {
         "domain": "tls-ap-southeast-1.bytepluses.com",
-        "ip": "101.47.4.99",
+        "ip": "101.47.4.48",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",
@@ -339,7 +374,7 @@
         "org": "AS150436 Byteplus Pte. Ltd.",
         "timezone": "Asia/Singapore"
       },
-      "score": "X"
+      "category": "foreign/cloud"
     }
   ]
 }

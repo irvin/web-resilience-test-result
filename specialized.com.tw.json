@@ -2,7 +2,7 @@
   "url": "https://specialized.com.tw",
   "canonicalURL": "https://specialized.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T17:08:08.898Z",
+  "timestamp": "2026-01-05T21:13:20.480Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 117,
-  "uniqueDomains": 12,
+  "requestCount": 116,
+  "uniqueDomains": 11,
   "test_results": {
-    "domestic": 5,
-    "cloud_w_domestic_node": 6,
-    "foreign": 1
+    "domestic": {
+      "cloud": 3,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 7,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -47,14 +52,14 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Toronto"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.css",
       "type": "link",
       "ipinfo": {
         "domain": "cdnjs.cloudflare.com",
-        "ip": "104.17.24.14",
+        "ip": "104.17.25.14",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -62,15 +67,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=AW-654516818",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -78,7 +83,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://static.klaviyo.com/onsite/js/J7N8m5/klaviyo.js?company_id=J7N8m5",
@@ -93,7 +98,7 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "score": "X"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://cdn.weglot.com/weglot.min.js",
@@ -108,7 +113,7 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://a.klaviyo.com/media/js/onsite/onsite.js",
@@ -123,10 +128,10 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&tid=AW-654516818&en=page_view&dl=https%3A%2F%2Fspecialized.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=1889601392.1764868087&dt=Specialized.com.tw%3A%20%E5%AE%98%E6%96%B9%E8%B3%BC%E7%89%A9%E7%B6%B2%E7%AB%99&auid=1599255880.1764868087&navt=n&npa=0&did=dN2ZkMj&gdid=dN2ZkMj&gtm=45be5c30h1v9103961982za200zd9103961982xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391252~115583767~115938466~115938468~115985660~116184927~116184929~116217636~116217638~116427528&tft=1764868087134&tfd=657&apve=1&apvf=f",
+      "originalUrl": "https://www.google.com/ccm/collect?frm=0&tid=AW-654516818&en=page_view&dl=https%3A%2F%2Fspecialized.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=592850743.1767647599&dt=Specialized.com.tw%3A%20%E5%AE%98%E6%96%B9%E8%B3%BC%E7%89%A9%E7%B6%B2%E7%AB%99&auid=988355508.1767647599&navt=n&npa=0&did=dN2ZkMj&gdid=dN2ZkMj&gtm=45be5cb0v9103961982za200zd9103961982xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=102015665~103116026~103200004~104527907~104528500~104684208~104684211~105391252~115583767~115938465~115938468~116184927~116184929~116251938~116251940&tft=1767647598815&tfd=608&apve=1&apvf=f",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
@@ -139,15 +144,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/654516818/?random=1764868087128&cv=11&fst=1764867600000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be5c30h1v9103961982za200zd9103961982xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391252~115583767~115938466~115938468~115985660~116184927~116184929~116217636~116217638~116427528&u_w=1280&u_h=720&url=https%3A%2F%2Fspecialized.com.tw%2F&frm=0&tiba=Specialized.com.tw%3A%20%E5%AE%98%E6%96%B9%E8%B3%BC%E7%89%A9%E7%B6%B2%E7%AB%99&did=dN2ZkMj&gdid=dN2ZkMj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1599255880.1764868087&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.1.0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEAwksa0Ra6ayVR8yj5sxBt3AtZCWTH0NcLOzexaH9AeT9kmSNOChrzfEbHQfchfYoKB9bfP5D-pLAwuKawlgqCJtL6M2fq6fWg0eCsMqw-EStXIqDcQCAL8fpicbJZK220WmGIwWaYCG8nicexoNb4ixPjRG6PUCGPTGOwsmbQ_RalwcO_mL0pdIu4&random=1706696149&rmt_tld=1&ipr=y",
+      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/654516818/?random=1767647598811&cv=11&fst=1767646800000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be5cb0v9103961982za200zd9103961982xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=102015665~103116026~103200004~104527907~104528500~104684208~104684211~105391252~115583767~115938465~115938468~116184927~116184929~116251938~116251940&u_w=1280&u_h=720&url=https%3A%2F%2Fspecialized.com.tw%2F&frm=0&tiba=Specialized.com.tw%3A%20%E5%AE%98%E6%96%B9%E8%B3%BC%E7%89%A9%E7%B6%B2%E7%AB%99&did=dN2ZkMj&gdid=dN2ZkMj&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=988355508.1767647599&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEAwksa0QK5uyF_O_JcCSQU6C2FCJ4zH7rsLPO89oJVgCqH7Kck0x4s4QP50QgoXdlr_BY5vU4qdOnWkxbjEZSkLG0vcQfN8yY1yWUo2bPTASiVtQ7mefMOpIeOAtQfsMtSV8scWYuhSf7VVKNhJHGqGL98HRcCLJYFkb84JDgl7ewPPHmZzrCKMH-D&random=1742684448&rmt_tld=1&ipr=y",
       "type": "img",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.77.3",
-        "hostname": "nctsaa-ab-in-f3.1e100.net",
+        "ip": "142.250.204.35",
+        "hostname": "hkg07s38-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -155,7 +160,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
@@ -171,7 +176,7 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://cdn.shopify.com/shop-assets/static_uploads/shoplift/GTStandard-MRegular.woff2",
@@ -186,26 +191,10 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Toronto"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://www.facebook.com/tr/?id=2551079241888473&ev=PageView&dl=https%3A%2F%2Fspecialized.com.tw%2F&rl=&if=false&ts=1764868087966&sw=1280&sh=720&v=2.9.243&r=stable&a=shopify_web_pixel&ec=0&o=4254&fbp=fb.2.1764868087960.105192760502000345&hmd=478e20f86190e1d021fa952c&pl=https%3A%2F%2Fspecialized.com.tw&cs_est=true&ler=empty&bfs[b]=1&pmd[title]=%0A%20%20%20%20%20%20Specialized.com.tw%3A%20%E5%AE%98%E6%96%B9%E8%B3%BC%E7%89%A9%E7%B6%B2%E7%AB%99&pmd[description]=%E7%80%8F%E8%A6%BD%E5%AE%98%E6%96%B9%E8%B3%BC%E7%89%A9%E7%B6%B2%E7%AB%99%E9%A0%82%E5%B0%96%E6%80%A7%E8%83%BD%E7%9A%84%E8%87%AA%E8%A1%8C%E8%BB%8A%E3%80%81%E5%AE%89%E5%85%A8%E5%B8%BD%E3%80%81%E8%BB%8A%E9%9E%8B%E3%80%81%E6%9C%8D%E8%A3%9D%E8%88%87%E8%A3%9D%E5%82%99%E3%80%82%E8%B3%BC%E8%B2%B7%E5%96%AE%E8%BB%8A%E6%88%96%E8%BB%8A%E6%9E%B6%E7%B5%84%EF%BC%8C%E4%BA%AB%E6%9C%80%E9%AB%9824%E6%9C%9F%E5%88%86%E6%9C%9F0%E5%88%A9%E7%8E%87%EF%BC%81&plt=1020.8999999985099&it=1764868087694&coo=false&dpo=&eid=sh-ea55e0af-78BD-49CA-C1A3-18A670D9B546&expv2[0]=pl0&expv2[1]=el2&expv2[2]=bc1&expv2[3]=mr2&rqm=GET",
-      "type": "img",
-      "ipinfo": {
-        "domain": "www.facebook.com",
-        "ip": "31.13.87.36",
-        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS32934 Facebook, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://shop.app/pay/hop?analytics_trace_id=9c3fb845-023a-4313-9f1a-08d39f1c3ad2&target_origin=https%3A%2F%2Fspecialized.com.tw&client_handle=specialized-taiwan.myshopify.com",
+      "originalUrl": "https://shop.app/pay/hop?analytics_trace_id=041e295d-fbd1-4bed-a2ff-2e139e979f45&target_origin=https%3A%2F%2Fspecialized.com.tw&client_handle=specialized-taiwan.myshopify.com",
       "type": "iframe",
       "ipinfo": {
         "domain": "shop.app",
@@ -217,7 +206,7 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "Europe/Stockholm"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     }
   ]
 }

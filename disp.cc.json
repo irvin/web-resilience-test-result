@@ -2,7 +2,7 @@
   "url": "https://disp.cc",
   "canonicalURL": "https://disp.cc",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:40:54.724Z",
+  "timestamp": "2026-01-05T19:44:14.390Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 96,
-  "uniqueDomains": 7,
+  "requestCount": 81,
+  "uniqueDomains": 8,
   "test_results": {
-    "domestic": 4,
-    "cloud_w_domestic_node": 2,
-    "foreign": 1
+    "domestic": {
+      "cloud": 2,
+      "direct": 2
+    },
+    "foreign": {
+      "cloud": 4,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -47,7 +52,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://disp.cc/include/A.91style.css.pagespeed.cf.Xa8J1Z92Id.css",
@@ -63,10 +68,10 @@
         "org": "AS63949 Akamai Connected Cloud",
         "timezone": "Asia/Tokyo"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://i4.disp.cc/s2/p/img.news.ebc.net.tw/80c4c959e4e90646d34bbe3db64c11df.jpg",
+      "originalUrl": "https://i4.disp.cc/s2/q/img.youtube.com/vi_2FDY3NoucJh08_2F0.jpg",
       "type": "img",
       "ipinfo": {
         "domain": "i4.disp.cc",
@@ -79,22 +84,37 @@
         "org": "AS63949 Akamai Connected Cloud",
         "timezone": "Asia/Tokyo"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://i.imgur.com/cu691OPb.jpeg",
+      "originalUrl": "https://i.imgur.com/4SpIHjzb.jpeg",
       "type": "img",
       "ipinfo": {
         "domain": "i.imgur.com",
-        "ip": "146.75.92.193",
-        "city": "Los Angeles",
-        "region": "California",
+        "ip": "146.75.40.193",
+        "city": "Seattle",
+        "region": "Washington",
         "country": "US",
-        "loc": "34.0522,-118.2437",
+        "loc": "47.6062,-122.3321",
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "X"
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://i.meee.com.tw/gvdVIyI.png",
+      "type": "img",
+      "ipinfo": {
+        "domain": "i.meee.com.tw",
+        "ip": "104.21.74.50",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/zh_TW/all.js#xfbml=1&appId=111318672241067",
@@ -110,7 +130,7 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fdispbbs&width=220&colorscheme=dark&show_faces=true&stream=false&header=false&height=260",
@@ -126,15 +146,15 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-B3J7M12832&cid=98649004.1764862847&gtm=45je5c21v897334014za200&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391252~115583767~115616986~115938465~115938468~116184927~116184929~116217636~116217638~116251938~116251940&z=1284590661",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-B3J7M12832&cid=1040802741.1767642252&gtm=45je5cb0h1v897334014za20g&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115616985~115938465~115938469~116184927~116184929~116251938~116251940&z=1183133920",
       "type": "img",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.204.35",
-        "hostname": "hkg07s38-in-f3.1e100.net",
+        "ip": "142.250.66.67",
+        "hostname": "hkg12s27-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -142,7 +162,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

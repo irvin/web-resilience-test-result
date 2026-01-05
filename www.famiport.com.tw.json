@@ -2,7 +2,7 @@
   "url": "https://www.famiport.com.tw/",
   "canonicalURL": "https://www.famiport.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:50:10.836Z",
+  "timestamp": "2026-01-05T20:39:26.528Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 44,
+  "requestCount": 42,
   "uniqueDomains": 1,
   "test_results": {
-    "domestic": 0,
-    "cloud_w_domestic_node": 1,
-    "foreign": 0
+    "domestic": {
+      "cloud": 0,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 1,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -46,7 +51,7 @@
         "org": "AS8075 Microsoft Corporation",
         "timezone": "Asia/Singapore"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     }
   ]
 }

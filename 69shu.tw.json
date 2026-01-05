@@ -2,7 +2,7 @@
   "url": "https://69shu.tw",
   "canonicalURL": "https://69shu.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T17:15:18.955Z",
+  "timestamp": "2026-01-05T20:18:57.821Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,38 +22,28 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 17,
   "uniqueDomains": 3,
   "test_results": {
-    "domestic": 0,
-    "cloud_w_domestic_node": 2,
-    "foreign": 1
+    "domestic": {
+      "cloud": 0,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 3,
+      "direct": 0
+    }
   },
   "domainDetails": [
-    {
-      "originalUrl": "https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/all.min.css",
-      "type": "link",
-      "ipinfo": {
-        "domain": "cdn.bootcdn.net",
-        "ip": "143.92.34.62",
-        "city": "Hong Kong",
-        "region": "Hong Kong",
-        "country": "HK",
-        "loc": "22.2783,114.1747",
-        "org": "AS152194 CTG Server Limited",
-        "timezone": "Asia/Hong_Kong"
-      },
-      "score": "X"
-    },
     {
       "originalUrl": "https://69shu.tw/static/laoniu/style.css",
       "type": "link",
       "ipinfo": {
         "domain": "69shu.tw",
-        "ip": "172.67.148.61",
+        "ip": "104.21.33.188",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -61,7 +51,22 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/all.min.css",
+      "type": "link",
+      "ipinfo": {
+        "domain": "cdn.bootcdn.net",
+        "ip": "137.220.229.87",
+        "city": "Hong Kong",
+        "region": "Hong Kong",
+        "country": "HK",
+        "loc": "22.2783,114.1747",
+        "org": "AS152194 CTG Server Limited",
+        "timezone": "Asia/Hong_Kong"
+      },
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://cdn.69shu.tw/0/1/1s.jpg",
@@ -76,7 +81,7 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     }
   ]
 }

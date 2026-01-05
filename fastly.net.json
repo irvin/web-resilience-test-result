@@ -2,7 +2,7 @@
   "url": "https://fastly.net",
   "canonicalURL": "https://www.fastly.com/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:38:51.511Z",
+  "timestamp": "2026-01-05T19:43:47.017Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 37,
-  "uniqueDomains": 2,
+  "requestCount": 25,
+  "uniqueDomains": 3,
   "test_results": {
-    "domestic": 1,
-    "cloud_w_domestic_node": 0,
-    "foreign": 1
+    "domestic": {
+      "cloud": 1,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 2,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -38,8 +43,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.77.8",
-        "hostname": "nctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -47,14 +52,14 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.fastly.com/static/inter-latin-wght-normal-e62404dc3261fb537f3a211edf6a2682.woff2",
+      "originalUrl": "https://cdn.intellimize.co/snippet/117419923.js",
       "type": "link",
       "ipinfo": {
-        "domain": "www.fastly.com",
-        "ip": "146.75.45.57",
+        "domain": "cdn.intellimize.co",
+        "ip": "199.232.114.132",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",
@@ -62,7 +67,22 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "score": "X"
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://www.fastly.com/static/inter-latin-wght-normal-e62404dc3261fb537f3a211edf6a2682.woff2",
+      "type": "link",
+      "ipinfo": {
+        "domain": "www.fastly.com",
+        "ip": "199.232.113.57",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "url": "https://itaigi.tw",
   "canonicalURL": "https://itaigi.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:52:01.131Z",
+  "timestamp": "2026-01-05T20:37:10.867Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 15,
   "uniqueDomains": 5,
   "test_results": {
-    "domestic": 3,
-    "cloud_w_domestic_node": 2,
-    "foreign": 0
+    "domestic": {
+      "cloud": 2,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 2,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -46,15 +51,14 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://itaigi.tw/static/tsiantuan/bundle.js",
       "type": "script",
       "ipinfo": {
         "domain": "itaigi.tw",
-        "ip": "203.145.218.39",
-        "hostname": "203-145-218-39.twcc.ai",
+        "ip": "211.73.81.182",
         "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
@@ -62,15 +66,15 @@
         "org": "AS7539 National Center for High-performance Computing",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-PHLN815S8E",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.77.8",
+        "hostname": "nctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -78,14 +82,14 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://tauhu.tw/tauhu-oo.css",
       "type": "css",
       "ipinfo": {
         "domain": "tauhu.tw",
-        "ip": "104.21.15.60",
+        "ip": "172.67.161.191",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -93,7 +97,7 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fitaigi.tw%2F&appId=590065061070994&layout=button_count&mobile_iframe=true&size=large&width=110&height=28",
@@ -109,7 +113,7 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "url": "https://apple.com",
   "canonicalURL": "https://www.apple.com/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:36:12.162Z",
+  "timestamp": "2026-01-05T19:38:37.013Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 50,
-  "uniqueDomains": 3,
+  "requestCount": 43,
+  "uniqueDomains": 2,
   "test_results": {
-    "domestic": 1,
-    "cloud_w_domestic_node": 0,
-    "foreign": 2
+    "domestic": {
+      "cloud": 1,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 0,
+      "direct": 1
+    }
   },
   "domainDetails": [
     {
@@ -47,25 +52,10 @@
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/8rF8s5lmPuF1fmRHAMrzKQ/980x551.jpg",
-      "type": "css",
-      "ipinfo": {
-        "domain": "is1-ssl.mzstatic.com",
-        "ip": "199.232.115.6",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "score": "X"
-    },
-    {
-      "originalUrl": "https://securemetrics.apple.com/b/ss/applestoreww/1/JS-2.23.0/s37018026373220?AQB=1&ndh=1&pf=1&t=4%2F11%2F2025%2023%3A36%3A11%204%20-480&fid=0EAA8014BEDCA0CC-34BBE73C29B9EEAD&ce=UTF-8&cdp=2&cl=1800&pageName=apple%20-%20index%2Ftab%20%28us%29&g=https%3A%2F%2Fwww.apple.com%2F&cc=USD&ch=www.us.homepage&server=ac-2.28.1&h1=www.us.homepage&v3=aos%3A%20us&l3=D%3Das_tex&c4=D%3Dg&v4=D%3DpageName&v14=en-us&c20=aos%3A%20us&v54=D%3Dg&v97=s.t-p&s=1280x720&c=24&j=1.6&v=N&k=Y&bw=1280&bh=720&AQE=1",
+      "originalUrl": "https://securemetrics.apple.com/b/ss/applestoreww/1/JS-2.23.0/s03238333554118?AQB=1&ndh=1&pf=1&t=6%2F0%2F2026%203%3A38%3A36%202%20-480&fid=097DE00FEAF47E5A-3DBDA9BDEEB5EDC4&ce=UTF-8&cdp=2&cl=1800&pageName=apple%20-%20index%2Ftab%20%28us%29&g=https%3A%2F%2Fwww.apple.com%2F&cc=USD&ch=www.us.homepage&server=ac-2.28.1&h1=www.us.homepage&v3=aos%3A%20us&l3=D%3Das_tex&c4=D%3Dg&v4=D%3DpageName&v14=en-us&c20=aos%3A%20us&v54=D%3Dg&v97=s.t-p&s=1280x720&c=24&j=1.6&v=N&k=Y&bw=1280&bh=720&AQE=1",
       "type": "img",
       "ipinfo": {
         "domain": "securemetrics.apple.com",
@@ -77,7 +67,7 @@
         "org": "AS714 Apple Inc.",
         "timezone": "Asia/Tokyo"
       },
-      "score": "X"
+      "category": "foreign/direct"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "url": "https://www.edu.tw/",
   "canonicalURL": "https://www.edu.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T15:43:44.032Z",
+  "timestamp": "2026-01-05T19:47:26.282Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,19 +22,24 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 114,
-  "uniqueDomains": 6,
+  "requestCount": 115,
+  "uniqueDomains": 7,
   "test_results": {
-    "domestic": 5,
-    "cloud_w_domestic_node": 1,
-    "foreign": 0
+    "domestic": {
+      "cloud": 4,
+      "direct": 2
+    },
+    "foreign": {
+      "cloud": 1,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://www.edu.tw/css/index.css?1141204112915",
+      "originalUrl": "https://www.edu.tw/css/index.css?1150106033338",
       "type": "link",
       "ipinfo": {
         "domain": "www.edu.tw",
@@ -47,15 +52,15 @@
         "org": "AS1659 Taiwan Academic Network (TANet) Information Center",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-KBT2PDEDRK",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -63,7 +68,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v24.0&appId=APP_ID",
@@ -79,14 +84,14 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://static.addtoany.com/menu/page.js",
       "type": "script",
       "ipinfo": {
         "domain": "static.addtoany.com",
-        "ip": "104.20.20.192",
+        "ip": "172.66.171.172",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -94,10 +99,10 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://ws.moe.edu.tw/001/Upload/1/relpic/7632/103073/212ce11c-38c3-4c06-acea-314fb40353b4@710x470.jpg",
+      "originalUrl": "https://ws.moe.edu.tw/001/Upload/1/relpic/6205/1575/9a441fc9-370a-42f5-a758-75c51c7a9257.png",
       "type": "img",
       "ipinfo": {
         "domain": "ws.moe.edu.tw",
@@ -110,10 +115,10 @@
         "org": "AS1659 Taiwan Academic Network (TANet) Information Center",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-KBT2PDEDRK&cid=1306403226.1764863023&gtm=45je5c21v872675615za200zd872675615&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115938466~115938469~116184927~116184929~116217636~116217638~116474636&z=981738753",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-KBT2PDEDRK&cid=65218889.1767642445&gtm=45je5cb0v872675615za200zd872675615&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115938466~115938468~116184927~116184929~116251938~116251940&z=1869950285",
       "type": "img",
       "ipinfo": {
         "domain": "www.google.com.tw",
@@ -126,7 +131,23 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.facebook.com/v24.0/plugins/page.php?adapt_container_width=true&app_id=&channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df812ee7c8d61d7f04%26domain%3Dwww.edu.tw%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.edu.tw%252Ffd14c443e6f0010c5%26relation%3Dparent.parent&container_width=439&height=370&hide_cover=false&href=https%3A%2F%2Fwww.facebook.com%2Fwww.edu.tw&lazy=true&locale=zh_TW&sdk=joey&show_facepile=false&small_header=true&tabs=timeline&width=",
+      "type": "iframe",
+      "ipinfo": {
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "url": "https://webike.tw",
   "canonicalURL": "https://www.webike.tw/",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:36:01.818Z",
+  "timestamp": "2026-01-05T20:22:00.554Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,24 +22,44 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 203,
+  "requestCount": 250,
   "uniqueDomains": 14,
   "test_results": {
-    "domestic": 5,
-    "cloud_w_domestic_node": 6,
-    "foreign": 3
+    "domestic": {
+      "cloud": 4,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 6,
+      "direct": 3
+    }
   },
   "domainDetails": [
+    {
+      "originalUrl": "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css",
+      "type": "link",
+      "ipinfo": {
+        "domain": "maxcdn.bootstrapcdn.com",
+        "ip": "104.18.11.207",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-VG8GN3WL3S",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -47,29 +67,14 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css",
-      "type": "link",
-      "ipinfo": {
-        "domain": "maxcdn.bootstrapcdn.com",
-        "ip": "104.18.10.207",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "score": "?"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css",
       "type": "link",
       "ipinfo": {
         "domain": "cdnjs.cloudflare.com",
-        "ip": "104.17.24.14",
+        "ip": "104.17.25.14",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -77,10 +82,10 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://webike-tw.azureedge.net/shopping/css/basic/main.css?time=1764864076",
+      "originalUrl": "https://webike-tw.azureedge.net/shopping/css/basic/main.css?time=1767633120",
       "type": "link",
       "ipinfo": {
         "domain": "webike-tw.azureedge.net",
@@ -92,15 +97,15 @@
         "org": "AS8075 Microsoft Corporation",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "ajax.googleapis.com",
-        "ip": "142.250.204.42",
-        "hostname": "hkg07s38-in-f10.1e100.net",
+        "ip": "142.250.198.74",
+        "hostname": "lctsaa-ab-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -108,10 +113,10 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://webike-review.azureedge.net/images/review/28929/176484036817648403680960.jpg",
+      "originalUrl": "https://webike-review.azureedge.net/images/review/29226/176731894717673189477495.JPG",
       "type": "img",
       "ipinfo": {
         "domain": "webike-review.azureedge.net",
@@ -123,14 +128,14 @@
         "org": "AS8075 Microsoft Corporation",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://webike-cdn-net.azureedge.net/sys_images/bg.png",
       "type": "img",
       "ipinfo": {
         "domain": "webike-cdn-net.azureedge.net",
-        "ip": "13.107.246.73",
+        "ip": "13.107.213.73",
         "city": "Redmond",
         "region": "Washington",
         "country": "US",
@@ -138,25 +143,10 @@
         "org": "AS8075 Microsoft Corporation",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://img.webike.tw/imageUpload/17270633221727063322616.jpg",
-      "type": "img",
-      "ipinfo": {
-        "domain": "img.webike.tw",
-        "ip": "153.120.92.142",
-        "city": "Tokyo",
-        "region": "Tokyo",
-        "country": "JP",
-        "loc": "35.6895,139.6917",
-        "org": "AS7684 SAKURA Internet Inc.",
-        "timezone": "Asia/Tokyo"
-      },
-      "score": "X"
-    },
-    {
-      "originalUrl": "https://img.webike.net/sys_images/brand/brand_237.gif",
+      "originalUrl": "https://img.webike.net/sys_images/brand/brand_2775.gif",
       "type": "img",
       "ipinfo": {
         "domain": "img.webike.net",
@@ -168,14 +158,29 @@
         "org": "AS9370 SAKURA Internet Inc.",
         "timezone": "Asia/Tokyo"
       },
-      "score": "X"
+      "category": "foreign/direct"
+    },
+    {
+      "originalUrl": "https://img.webike.tw/brand/brnad_t156942.jpg",
+      "type": "img",
+      "ipinfo": {
+        "domain": "img.webike.tw",
+        "ip": "153.120.92.142",
+        "city": "Tokyo",
+        "region": "Tokyo",
+        "country": "JP",
+        "loc": "35.6895,139.6917",
+        "org": "AS7684 SAKURA Internet Inc.",
+        "timezone": "Asia/Tokyo"
+      },
+      "category": "foreign/direct"
     },
     {
       "originalUrl": "https://unpkg.com/promise-polyfill@7.1.0/dist/promise.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "unpkg.com",
-        "ip": "104.18.0.22",
+        "ip": "104.18.1.22",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -183,15 +188,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&tid=AW-983559217&en=page_view&dl=https%3A%2F%2Fwww.webike.tw%2F&scrsrc=www.googletagmanager.com&rnd=1578744075.1764866161&dt=Webike%E5%8F%B0%E7%81%A3%20%7C%20%E9%87%8D%E6%A9%9F%E3%80%81%E6%A9%9F%E8%BB%8A%E6%94%B9%E8%A3%9D%E9%9B%B6%E4%BB%B6%E9%A8%8E%E5%A3%AB%E7%94%A8%E5%93%81%E3%83%BB%E8%BB%8A%E8%BC%9B%E8%B2%B7%E8%B3%A3%E3%83%BB%E6%A5%AD%E7%95%8C%E6%96%B0%E8%81%9E%EF%BC%8C&auid=1293240024.1764866161&navt=n&npa=0&gtm=45je5c21v897009231za200zd897009231xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115583767~115938465~115938468~116184927~116184929~116217636~116217638~116474638~116518834&tft=1764866160630&tfd=970&apve=1&apvf=f",
+      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fwww.webike.tw%2F&scrsrc=www.googletagmanager.com&rnd=1190020025.1767644519&dt=Webike%E5%8F%B0%E7%81%A3%20%7C%20%E9%87%8D%E6%A9%9F%E3%80%81%E6%A9%9F%E8%BB%8A%E6%94%B9%E8%A3%9D%E9%9B%B6%E4%BB%B6%E9%A8%8E%E5%A3%AB%E7%94%A8%E5%93%81%E3%83%BB%E8%BB%8A%E8%BC%9B%E8%B2%B7%E8%B3%A3%E3%83%BB%E6%A5%AD%E7%95%8C%E6%96%B0%E8%81%9E%EF%BC%8C&auid=266591645.1767644519&navt=n&npa=0&gtm=45je5cb0v897009231za200zd897009231xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115583767~115938466~115938468~116184927~116184929~116251938~116251940~116682875&apve=1&apvf=f&apvc=1&tids=AW-983559217&tid=AW-983559217&tft=1767644518875&tfd=996",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.196.196",
-        "hostname": "nctsaa-ac-in-f4.1e100.net",
+        "ip": "142.250.204.36",
+        "hostname": "hkg07s38-in-f4.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -199,15 +204,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-46Y88B04SP&cid=607361267.1764866161&gtm=45je5c21v897009231za200zd897009231&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115583767~115938465~115938468~116184927~116184929~116217636~116217638~116474638~116518834&z=352369731",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-46Y88B04SP&cid=244684397.1767644519&gtm=45je5cb0v897009231za200zd897009231&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115583767~115938466~115938468~116184927~116184929~116251938~116251940~116682875&z=371485534",
       "type": "img",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.77.3",
-        "hostname": "nctsaa-ab-in-f3.1e100.net",
+        "ip": "142.250.196.195",
+        "hostname": "nctsaa-ac-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -215,7 +220,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.9&appId=791319474279962",
@@ -231,7 +236,7 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://www.webike.tw/new-product",
@@ -247,7 +252,7 @@
         "org": "AS7684 SAKURA Internet Inc.",
         "timezone": "Asia/Tokyo"
       },
-      "score": "X"
+      "category": "foreign/direct"
     }
   ]
 }

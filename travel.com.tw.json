@@ -2,7 +2,7 @@
   "url": "https://travel.com.tw",
   "canonicalURL": "https://travel.com.tw",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:42:33.982Z",
+  "timestamp": "2026-01-05T20:23:11.216Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,23 +22,28 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 89,
-  "uniqueDomains": 12,
+  "requestCount": 88,
+  "uniqueDomains": 11,
   "test_results": {
-    "domestic": 9,
-    "cloud_w_domestic_node": 2,
-    "foreign": 1
+    "domestic": {
+      "cloud": 7,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 3,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://code.jquery.com/jquery-3.7.1.min.js",
+      "originalUrl": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js",
       "type": "script",
       "ipinfo": {
-        "domain": "code.jquery.com",
-        "ip": "151.101.130.137",
+        "domain": "cdn.jsdelivr.net",
+        "ip": "151.101.193.229",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -46,7 +51,22 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "X"
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://code.jquery.com/jquery-3.7.1.min.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "code.jquery.com",
+        "ip": "151.101.194.137",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://travel.com.tw/js/jquery.gScrollingCarousel.js",
@@ -61,22 +81,7 @@
         "org": "AS17416 DWINS Digital Service Corp.,",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "cdn.jsdelivr.net",
-        "ip": "104.16.175.226",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "score": "?"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://event.travel.com.tw/test/index2022/css/indexStyle.css?v=202510",
@@ -91,10 +96,10 @@
         "org": "AS17416 DWINS Digital Service Corp.,",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://pic.travel.com.tw/IMP/PROMO/16/2025082214104121902.jpg",
+      "originalUrl": "https://pic.travel.com.tw/IMP/PROMO/16/2025102313345888954.jpg",
       "type": "img",
       "ipinfo": {
         "domain": "pic.travel.com.tw",
@@ -106,7 +111,7 @@
         "org": "AS17416 DWINS Digital Service Corp.,",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.travel.com.tw/images/ig.png",
@@ -121,7 +126,7 @@
         "org": "AS17416 DWINS Digital Service Corp.,",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://d.line-scdn.net/n/line_tag/public/release/v1/lt.js",
@@ -137,7 +142,7 @@
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://az416426.vo.msecnd.net/scripts/a/ai.0.js",
@@ -152,7 +157,7 @@
         "org": "AS8075 Microsoft Corporation",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
@@ -168,15 +173,15 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-4SXDJ8GZP4&cx=c&_slc=1",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -184,15 +189,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-4SXDJ8GZP4&cid=1450797617.1764866552&gtm=45je5c21h1v9130194978za200&aip=1&dma=0&gcd=13l3l3l3l2l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115938466~115938468~116184927~116184929~116217636~116217638&z=453761847",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-4SXDJ8GZP4&cid=1336693059.1767644590&gtm=45je5cb0v9130194978za20g&aip=1&dma=0&gcd=13l3l3l3l2l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115616986~115938466~115938468~116184927~116184929~116251938~116251940&z=170441092",
       "type": "img",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "ip": "142.250.198.67",
+        "hostname": "lctsaa-ab-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -200,23 +205,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://www.facebook.com/tr/?id=374853092853392&ev=PageView&dl=https%3A%2F%2Ftravel.com.tw%2F&rl=&if=false&ts=1764866552650&sw=1280&sh=720&v=2.9.243&r=stable&ec=0&o=4254&fbp=fb.2.1764866552645.956151121765016121&ler=empty&bfs[b]=1&pmd[title]=%E5%80%BC%E5%BE%97%E6%82%A8%E4%BF%A1%E8%B3%B4%E7%9A%84%E6%97%85%E9%81%8A%E5%93%81%E7%89%8C%2C%E9%B3%B3%E5%87%B0%E6%97%85%E9%81%8A-%E9%B3%B3%E5%87%B0%E6%97%85%E8%A1%8C%E7%A4%BE&pmd[keywords]=%E6%97%85%E8%A1%8C%E7%A4%BE%2C%E6%97%85%E9%81%8A%2C%E5%9C%8B%E5%A4%96%E6%97%85%E9%81%8A%2C%E8%87%AA%E7%94%B1%E8%A1%8C%2C%E5%9C%98%E9%AB%94%E6%97%85%E9%81%8A%2C%E5%9C%8B%E9%9A%9B%E6%A9%9F%E7%A5%A8%2C%E6%A9%9F%2B%E9%85%92%2C%E6%AD%90%E6%B4%B2%2C%E7%BE%A9%E5%A4%A7%E5%88%A9%2C%E7%BE%8E%E5%9C%8B%2C%E5%8A%A0%E6%8B%BF%E5%A4%A7%2C%E6%BE%B3%E6%B4%B2%2C%E6%97%A5%E6%9C%AC%2C%E9%9F%93%E5%9C%8B%2C%E5%A4%A7%E9%99%B8%2C%E5%8F%A4%E6%96%87%E6%98%8E%2C%E5%9F%83%E5%8F%8A%2C%E8%82%AF%E4%BA%9E%2C%E7%B4%90%E8%A5%BF%E8%98%AD%2C%E9%83%B5%E8%BC%AA%2C%20clubmed%2C%E6%B5%B7%E5%B3%B6%E6%97%85%E9%81%8A%E3%80%82&pmd[description]=%E9%B3%B3%E5%87%B0%E6%97%85%E9%81%8A%E6%8F%90%E4%BE%9B%E5%9C%8B%E5%A4%96%E5%9C%98%E9%AB%94%E6%97%85%E9%81%8A%E3%80%81%E9%81%8A%E8%BC%AA%E3%80%81%E6%A9%9F%E7%A5%A8%E3%80%81%E8%A8%82%E6%88%BF%E3%80%81%E8%87%AA%E7%94%B1%E8%A1%8C%E3%80%81%E6%B5%B7%E5%A4%96%E6%97%85%E5%B9%B3%E9%9A%AA%EF%BC%8C%E9%AB%98%E9%90%B5%E5%81%87%E6%9C%9F%E3%80%81%E5%8F%B0%E7%81%A3%E6%97%85%E9%81%8A%EF%BC%8C%E4%BB%A5%E5%8F%8A%E7%8D%8E%E5%8B%B5%E6%97%85%E9%81%8A%E3%80%81%E5%93%A1%E5%B7%A5%E6%97%85%E9%81%8A%E7%AD%89%E5%AE%A2%E8%A3%BD%E5%8C%96%E6%9C%8D%E5%8B%99%EF%BC%8C%E4%B9%9F%E6%98%AF%E5%85%A8%E5%8F%B0%E9%A6%96%E5%AE%B6%E4%B8%8A%E5%B8%82%E6%97%85%E8%A1%8C%E7%A4%BE%E3%80%81%E6%B7%B1%E5%BE%97%E6%97%85%E5%AE%A2%E4%BF%A1%E8%B3%B4%E3%80%82&plt=1433.699999999255&it=1764866552349&coo=false&exp=s1&expv2[0]=pl0&expv2[1]=el3&expv2[2]=bc1&expv2[3]=mr2&rqm=GET",
-      "type": "img",
-      "ipinfo": {
-        "domain": "www.facebook.com",
-        "ip": "31.13.87.36",
-        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS32934 Facebook, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }

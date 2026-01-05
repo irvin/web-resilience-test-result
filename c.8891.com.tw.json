@@ -2,7 +2,7 @@
   "url": "https://c.8891.com.tw",
   "canonicalURL": "https://c.8891.com.tw/Models",
   "httpStatus": 200,
-  "timestamp": "2025-12-04T16:28:17.903Z",
+  "timestamp": "2026-01-05T20:17:28.383Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -22,15 +22,20 @@
     "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
-    "source": "json api",
+    "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 128,
-  "uniqueDomains": 17,
+  "requestCount": 129,
+  "uniqueDomains": 16,
   "test_results": {
-    "domestic": 16,
-    "cloud_w_domestic_node": 1,
-    "foreign": 0
+    "domestic": {
+      "cloud": 13,
+      "direct": 2
+    },
+    "foreign": {
+      "cloud": 1,
+      "direct": 0
+    }
   },
   "domainDetails": [
     {
@@ -47,15 +52,15 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://assets.8891.com.tw/newCar/4660.090f9b379bc9ce100871.css",
+      "originalUrl": "https://assets.8891.com.tw/newCar/6354.651e71e89cbb07572106.css",
       "type": "link",
       "ipinfo": {
         "domain": "assets.8891.com.tw",
-        "ip": "3.169.36.115",
-        "hostname": "server-3-169-36-115.tpe53.r.cloudfront.net",
+        "ip": "3.169.121.79",
+        "hostname": "server-3-169-121-79.tpe53.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -63,15 +68,15 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.googletagservices.com/tag/js/gpt.js",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagservices.com",
-        "ip": "142.250.196.194",
-        "hostname": "nctsaa-ac-in-f2.1e100.net",
+        "ip": "142.250.77.2",
+        "hostname": "nctsaa-ab-in-f2.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -79,14 +84,14 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "cdnjs.cloudflare.com",
-        "ip": "104.17.25.14",
+        "ip": "104.17.24.14",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -94,15 +99,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "score": "?"
+      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://apis.google.com/js/api.js",
       "type": "script",
       "ipinfo": {
         "domain": "apis.google.com",
-        "ip": "142.250.198.78",
-        "hostname": "lctsaa-ab-in-f14.1e100.net",
+        "ip": "142.250.77.14",
+        "hostname": "nctsaa-ab-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -110,15 +115,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-4YCT4M05RT",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -126,7 +131,7 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
@@ -142,7 +147,7 @@
         "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://profiles.dunsregistered.com/ESGSeal.aspx",
@@ -157,15 +162,15 @@
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://sb.scorecardresearch.com/beacon.js",
       "type": "script",
       "ipinfo": {
         "domain": "sb.scorecardresearch.com",
-        "ip": "3.169.137.16",
-        "hostname": "server-3-169-137-16.tpe54.r.cloudfront.net",
+        "ip": "3.169.137.63",
+        "hostname": "server-3-169-137-63.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -173,31 +178,15 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://photo.8891.com.tw/2024/05/21/1716274778529383.png",
-      "type": "img",
-      "ipinfo": {
-        "domain": "photo.8891.com.tw",
-        "ip": "3.169.55.21",
-        "hostname": "server-3-169-55-21.tpe54.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://img.8891.com.tw/v3/logo.png",
       "type": "img",
       "ipinfo": {
         "domain": "img.8891.com.tw",
-        "ip": "3.169.137.79",
-        "hostname": "server-3-169-137-79.tpe54.r.cloudfront.net",
+        "ip": "3.169.137.108",
+        "hostname": "server-3-169-137-108.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -205,10 +194,26 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.8891.com.tw/api/v5/common/hot-brands?api=2.13.2",
+      "originalUrl": "https://photo.8891.com.tw/2024/05/21/1716274778529383.png",
+      "type": "img",
+      "ipinfo": {
+        "domain": "photo.8891.com.tw",
+        "ip": "3.169.55.17",
+        "hostname": "server-3-169-55-17.tpe54.r.cloudfront.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.8891.com.tw/oapi/newIndex/fastNav?api=2.13.2",
       "type": "xmlhttprequest",
       "ipinfo": {
         "domain": "www.8891.com.tw",
@@ -221,15 +226,15 @@
         "org": "AS9919 New Century InfoComm Tech Co., Ltd.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/measurement/conversion?random=1764865696653&cv=11&tid=G-4YCT4M05RT&fst=1764865696653&fmt=6&en=first_visit&gtm=45je5c21v872754476za200zd872754476xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115616986~115938465~115938469~116184927~116184929~116217636~116217638&u_w=1280&u_h=720&hl=en&gl=us&url=https%3A%2F%2Fc.8891.com.tw%2FModels&gacid=679620300.1764865697&frm=0&tiba=8891%E6%B1%BD%E8%BB%8A%E5%A4%A7%E5%85%A8%EF%BC%8C2025%E6%9C%80%E6%96%B0%E6%B1%BD%E8%BB%8A%E5%93%81%E7%89%8C%E8%BB%8A%E6%AC%BE%2C%E5%83%B9%E6%A0%BC%2C%E9%8A%B7%E9%87%8F&gtm_ee=1&npa=0&pscdl=noapi&auid=1561962632.1764865697&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.1.0&uaw=0",
+      "originalUrl": "https://www.google.com/measurement/conversion?random=1767644246777&cv=11&tid=G-4YCT4M05RT&fst=1767644246777&fmt=6&en=first_visit&gtm=45je5cb0v872754476za200zd872754476xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115583767~115938465~115938468~116184927~116184929~116251938~116251940&u_w=1280&u_h=720&hl=en&gl=us&url=https%3A%2F%2Fc.8891.com.tw%2FModels&gacid=349711721.1767644247&frm=0&tiba=8891%E6%B1%BD%E8%BB%8A%E5%A4%A7%E5%85%A8%EF%BC%8C2025%E6%9C%80%E6%96%B0%E6%B1%BD%E8%BB%8A%E5%93%81%E7%89%8C%E8%BB%8A%E6%AC%BE%2C%E5%83%B9%E6%A0%BC%2C%E9%8A%B7%E9%87%8F&gtm_ee=1&npa=0&pscdl=noapi&auid=837972099.1767644247&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.198.68",
-        "hostname": "lctsaa-ab-in-f4.1e100.net",
+        "ip": "142.250.66.68",
+        "hostname": "hkg12s27-in-f4.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -237,15 +242,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-4YCT4M05RT&cid=679620300.1764865697&gtm=45je5c21v872754476za200zd872754476&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115583767~115616986~115938465~115938469~116184927~116184929~116217636~116217638&z=480691922",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-4YCT4M05RT&cid=349711721.1767644247&gtm=45je5cb0v872754476za200zd872754476&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115583767~115938465~115938468~116184927~116184929~116251938~116251940&z=928479012",
       "type": "img",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "ip": "142.250.204.35",
+        "hostname": "hkg07s38-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -253,15 +258,15 @@
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://p3.8891.com.tw/nc/2025/11/07/s/1762481545272918_300_200.png",
+      "originalUrl": "https://p3.8891.com.tw/nc/2024/12/18/s/1734504031162984_300_200.png",
       "type": "img",
       "ipinfo": {
         "domain": "p3.8891.com.tw",
-        "ip": "3.169.55.35",
-        "hostname": "server-3-169-55-35.tpe54.r.cloudfront.net",
+        "ip": "3.169.55.88",
+        "hostname": "server-3-169-55-88.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -269,26 +274,10 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.facebook.com/tr/?id=1500391950263215&ev=PageView&dl=https%3A%2F%2Fc.8891.com.tw%2FModels&rl=&if=false&ts=1764865696861&sw=1280&sh=720&v=2.9.243&r=stable&a=tmSimo-GTM-WebTemplate&ec=0&o=4254&fbp=fb.2.1764865696856.31718279222967595&cs_est=true&ler=empty&bfs[b]=1&pmd[title]=8891%E6%B1%BD%E8%BB%8A%E5%A4%A7%E5%85%A8%EF%BC%8C2025%E6%9C%80%E6%96%B0%E6%B1%BD%E8%BB%8A%E5%93%81%E7%89%8C%E8%BB%8A%E6%AC%BE%2C%E5%83%B9%E6%A0%BC%2C%E9%8A%B7%E9%87%8F&pmd[keywords]=%E6%B1%BD%E8%BB%8A%E5%93%81%E7%89%8C%E5%A4%A7%E5%85%A8%2C2025%E6%96%B0%E8%BB%8A%E5%83%B9%E6%A0%BC%2C%E6%B1%BD%E8%BB%8A%E9%8A%B7%E5%94%AE%E6%8E%92%E8%A1%8C%2C8891%E6%96%B0%E8%BB%8A%2C8891%E6%B1%BD%E8%BB%8A&pmd[description]=8891%E6%B1%BD%E8%BB%8A%E5%A4%A7%E5%85%A8%EF%BC%8C%E7%82%BA%E6%82%A8%E6%8F%90%E4%BE%9B2025%E5%B9%B4%E5%8F%B0%E7%81%A3%E6%9C%80%E6%96%B0%E6%B1%BD%E8%BB%8A%E5%93%81%E7%89%8C%E8%BB%8A%E6%AC%BE%E3%80%81%E5%83%B9%E6%A0%BC%E5%92%8C%E9%8A%B7%E9%87%8F%E8%B3%87%E6%96%99%EF%BC%8C%E5%8C%85%E6%8B%AC%E5%A4%9A%E7%B6%AD%E5%BA%A6%E8%BB%8A%E8%BC%9B%E6%9F%A5%E8%A9%A2%E3%80%81%E7%86%B1%E9%96%80%E5%BB%A0%E7%89%8C%E3%80%81%E4%B8%8A%E5%B8%82%E6%96%B0%E8%BB%8A%E3%80%81%E8%BD%8E%E8%BB%8ASUV%E9%8A%B7%E5%94%AE%E6%8E%92%E8%A1%8C%E5%92%8C%E7%B6%B2%E5%8F%8B%E7%86%B1%E6%90%9C%E8%BB%8A%E6%AC%BE%E7%AD%89%E8%B3%87%E6%96%99%E3%80%82&plt=621&it=1764865696753&coo=false&expv2[0]=pl0&expv2[1]=el3&expv2[2]=bc1&expv2[3]=mr2&rqm=GET",
-      "type": "img",
-      "ipinfo": {
-        "domain": "www.facebook.com",
-        "ip": "31.13.87.36",
-        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS32934 Facebook, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "score": "O"
-    },
-    {
-      "originalUrl": "https://dc.8891.tw/api/generic?api=2.13.2&ga4ClientId=679620300.1764865697",
+      "originalUrl": "https://dc.8891.tw/api/generic?api=2.13.2&ga4ClientId=349711721.1767644247",
       "type": "xmlhttprequest",
       "ipinfo": {
         "domain": "dc.8891.tw",
@@ -301,7 +290,7 @@
         "org": "AS9919 New Century InfoComm Tech Co., Ltd.",
         "timezone": "Asia/Taipei"
       },
-      "score": "O"
+      "category": "domestic/cloud"
     }
   ]
 }
