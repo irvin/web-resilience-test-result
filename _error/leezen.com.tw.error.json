@@ -2,7 +2,7 @@
   "url": "https://leezen.com.tw",
   "canonicalURL": "https://leezen.com.tw",
   "httpStatus": null,
-  "timestamp": "2026-01-05T21:03:10.511Z",
+  "timestamp": "2026-01-05T23:33:43.644Z",
   "testParameters": {
     "customDNS": null,
     "useAdblock": true,
@@ -17,11 +17,11 @@
   "requestCount": 0,
   "uniqueDomains": 0,
   "testError": true,
-  "errorReason": "Timeout",
+  "errorReason": "Error: Error",
   "errorDetails": {
-    "message": "page.goto: Timeout 120000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://leezen.com.tw/\", waiting until \"domcontentloaded\"\u001b[22m\n",
-    "name": "TimeoutError",
+    "message": "page.goto: net::ERR_CONNECTION_RESET at https://leezen.com.tw/\nCall log:\n\u001b[2m  - navigating to \"https://leezen.com.tw/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "name": "Error",
     "statusCode": null,
-    "stack": "page.goto: Timeout 120000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://leezen.com.tw/\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at collectHARAndCanonical (/Users/Irvin/Coding/smc git/digital-service-resilience/no-global-connection-check.js:416:37)\n    at async checkWebsiteResilience (/Users/Irvin/Coding/smc git/digital-service-resilience/no-global-connection-check.js:957:25)\n    at async runWorker (/Users/Irvin/Coding/smc git/digital-service-resilience/batch-test.js:143:32)\n    at async batchTest (/Users/Irvin/Coding/smc git/digital-service-resilience/batch-test.js:217:5)"
+    "stack": "page.goto: net::ERR_CONNECTION_RESET at https://leezen.com.tw/\nCall log:\n\u001b[2m  - navigating to \"https://leezen.com.tw/\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at collectHARAndCanonical (/Users/Irvin/Coding/smc git/digital-service-resilience/no-global-connection-check.js:416:37)\n    at async checkWebsiteResilience (/Users/Irvin/Coding/smc git/digital-service-resilience/no-global-connection-check.js:957:25)\n    at async runWorker (/Users/Irvin/Coding/smc git/digital-service-resilience/batch-test.js:160:32)\n    at async batchTest (/Users/Irvin/Coding/smc git/digital-service-resilience/batch-test.js:234:5)"
   }
 }

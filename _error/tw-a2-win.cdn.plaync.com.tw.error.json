@@ -1,10 +1,9 @@
 {
   "url": "https://tw-a2-win.cdn.plaync.com.tw",
   "canonicalURL": "https://tw-a2-win.cdn.plaync.com.tw",
-  "httpStatus": null,
-  "timestamp": "2026-01-05T21:10:05.489Z",
+  "timestamp": "2026-01-05T23:37:36.229Z",
   "testParameters": {
-    "customDNS": null,
+    "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
       "https://filter.futa.gg/hosts_abp.txt",
@@ -13,15 +12,25 @@
     "useCache": true,
     "hasIPinfoToken": true
   },
-  "testingEnvironment": null,
+  "testingEnvironment": {
+    "ip": "220.132.212.194",
+    "hostname": "220-132-212-194.hinet-ip.hinet.net",
+    "city": "Banqiao",
+    "region": "Taipei",
+    "country": "TW",
+    "loc": "25.0143,121.4672",
+    "org": "AS3462 Data Communication Business Group",
+    "timezone": "Asia/Taipei",
+    "source": "ipinfo json api (direct)",
+    "dnsServer": "168.95.1.1"
+  },
   "requestCount": 0,
   "uniqueDomains": 0,
   "testError": true,
-  "errorReason": "Error: Error",
+  "errorReason": "No domains after filtering",
   "errorDetails": {
-    "message": "page.goto: net::ERR_SSL_UNRECOGNIZED_NAME_ALERT at https://tw-a2-win.cdn.plaync.com.tw/\nCall log:\n\u001b[2m  - navigating to \"https://tw-a2-win.cdn.plaync.com.tw/\", waiting until \"domcontentloaded\"\u001b[22m\n",
-    "name": "Error",
-    "statusCode": null,
-    "stack": "page.goto: net::ERR_SSL_UNRECOGNIZED_NAME_ALERT at https://tw-a2-win.cdn.plaync.com.tw/\nCall log:\n\u001b[2m  - navigating to \"https://tw-a2-win.cdn.plaync.com.tw/\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at collectHARAndCanonical (/Users/Irvin/Coding/smc git/digital-service-resilience/no-global-connection-check.js:416:37)\n    at async checkWebsiteResilience (/Users/Irvin/Coding/smc git/digital-service-resilience/no-global-connection-check.js:957:25)\n    at async runWorker (/Users/Irvin/Coding/smc git/digital-service-resilience/batch-test.js:143:32)\n    at async batchTest (/Users/Irvin/Coding/smc git/digital-service-resilience/batch-test.js:217:5)"
+    "message": "所有域名都被 adblock 清單過濾掉了",
+    "totalRequests": 0,
+    "filteredDomains": 0
   }
 }
