@@ -1,8 +1,8 @@
 {
   "url": "https://www.neuvoo.com.tw/",
   "canonicalURL": "https://www.neuvoo.com.tw/",
-  "httpStatus": 404,
-  "timestamp": "2026-01-05T22:31:30.406Z",
+  "httpStatus": null,
+  "timestamp": "2026-01-06T21:00:02.865Z",
   "testParameters": {
     "customDNS": null,
     "useAdblock": true,
@@ -17,11 +17,11 @@
   "requestCount": 0,
   "uniqueDomains": 0,
   "testError": true,
-  "errorReason": "HTTP 404 Error",
+  "errorReason": "Error: Error",
   "errorDetails": {
-    "message": "HTTP 404 ",
+    "message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.neuvoo.com.tw/\nCall log:\n\u001b[2m  - navigating to \"https://www.neuvoo.com.tw/\", waiting until \"domcontentloaded\"\u001b[22m\n",
     "name": "Error",
-    "statusCode": "404",
-    "stack": "Error: HTTP 404 \n    at collectHARAndCanonical (/Users/Irvin/Coding/smc git/digital-service-resilience/no-global-connection-check.js:431:19)\n    at async checkWebsiteResilience (/Users/Irvin/Coding/smc git/digital-service-resilience/no-global-connection-check.js:990:33)\n    at async runWorker (/Users/Irvin/Coding/smc git/digital-service-resilience/batch-test.js:160:32)\n    at async Promise.all (index 0)\n    at async batchTest (/Users/Irvin/Coding/smc git/digital-service-resilience/batch-test.js:234:5)"
+    "statusCode": null,
+    "stack": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.neuvoo.com.tw/\nCall log:\n\u001b[2m  - navigating to \"https://www.neuvoo.com.tw/\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at collectHARAndCanonical (/Users/Irvin/Coding/smc git/digital-service-resilience/no-global-connection-check.js:418:37)\n    at async checkWebsiteResilience (/Users/Irvin/Coding/smc git/digital-service-resilience/no-global-connection-check.js:1031:41)\n    at async runWorker (/Users/Irvin/Coding/smc git/digital-service-resilience/batch-test.js:160:32)\n    at async batchTest (/Users/Irvin/Coding/smc git/digital-service-resilience/batch-test.js:234:5)"
   }
 }

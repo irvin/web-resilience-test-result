@@ -1,10 +1,9 @@
 {
   "url": "https://babyhome.com.tw",
   "canonicalURL": "https://babyhome.com.tw",
-  "httpStatus": 403,
-  "timestamp": "2026-01-05T22:32:36.990Z",
+  "timestamp": "2026-01-06T21:02:07.641Z",
   "testParameters": {
-    "customDNS": null,
+    "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
       "https://filter.futa.gg/hosts_abp.txt",
@@ -13,15 +12,25 @@
     "useCache": true,
     "hasIPinfoToken": true
   },
-  "testingEnvironment": null,
-  "requestCount": 0,
+  "testingEnvironment": {
+    "ip": "220.132.212.194",
+    "hostname": "220-132-212-194.hinet-ip.hinet.net",
+    "city": "Banqiao",
+    "region": "Taipei",
+    "country": "TW",
+    "loc": "25.0143,121.4672",
+    "org": "AS3462 Data Communication Business Group",
+    "timezone": "Asia/Taipei",
+    "source": "ipinfo json api (direct)",
+    "dnsServer": "168.95.1.1"
+  },
+  "requestCount": 1,
   "uniqueDomains": 0,
   "testError": true,
-  "errorReason": "HTTP 403 Error",
+  "errorReason": "No domains after filtering",
   "errorDetails": {
-    "message": "HTTP 403 ",
-    "name": "Error",
-    "statusCode": "403",
-    "stack": "Error: HTTP 403 \n    at collectHARAndCanonical (/Users/Irvin/Coding/smc git/digital-service-resilience/no-global-connection-check.js:431:19)\n    at async checkWebsiteResilience (/Users/Irvin/Coding/smc git/digital-service-resilience/no-global-connection-check.js:957:25)\n    at async runWorker (/Users/Irvin/Coding/smc git/digital-service-resilience/batch-test.js:160:32)\n    at async Promise.all (index 3)\n    at async batchTest (/Users/Irvin/Coding/smc git/digital-service-resilience/batch-test.js:234:5)"
+    "message": "所有域名都被 adblock 清單過濾掉了",
+    "totalRequests": 1,
+    "filteredDomains": 0
   }
 }
