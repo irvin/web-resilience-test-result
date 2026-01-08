@@ -2,7 +2,7 @@
   "url": "https://office.com",
   "canonicalURL": "https://www.office.com/",
   "httpStatus": 200,
-  "timestamp": "2026-01-05T19:40:39.736Z",
+  "timestamp": "2026-01-07T20:08:45.300Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,22 +25,52 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 50,
-  "uniqueDomains": 7,
+  "requestCount": 59,
+  "uniqueDomains": 12,
   "test_results": {
     "domestic": {
-      "cloud": 3,
-      "direct": 0
+      "cloud": 4,
+      "direct": 1
     },
     "foreign": {
-      "cloud": 4,
-      "direct": 0
+      "cloud": 5,
+      "direct": 2
     }
   },
   "domainDetails": [
     {
+      "originalUrl": "https://office.com/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "office.com",
+        "ip": "13.107.6.156",
+        "city": "Redmond",
+        "region": "Washington",
+        "country": "US",
+        "loc": "47.6740,-122.1215",
+        "org": "AS8068 Microsoft Corporation",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/direct"
+    },
+    {
+      "originalUrl": "https://www.office.com/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "www.office.com",
+        "ip": "13.107.6.156",
+        "city": "Redmond",
+        "region": "Washington",
+        "country": "US",
+        "loc": "47.6740,-122.1215",
+        "org": "AS8068 Microsoft Corporation",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/direct"
+    },
+    {
       "originalUrl": "https://res.cdn.office.net/officehub/bundles/unauth-923eead6a4.css",
-      "type": "link",
+      "type": "stylesheet",
       "ipinfo": {
         "domain": "res.cdn.office.net",
         "ip": "203.69.138.209",
@@ -56,7 +86,7 @@
     },
     {
       "originalUrl": "https://www.microsoft.com/onerfstatics/marketingsites-wcus-prod/west-european/shell/_scrf/css/themes=default.device=uplevel_web_pc/63-57d110/c9-be0100/a6-e969ef/43-9f2e7c/82-8b5456/a0-5d3913/3d-28500e/ae-f1ac0c?ver=2.0&_cf=02242021_3231",
-      "type": "link",
+      "type": "stylesheet",
       "ipinfo": {
         "domain": "www.microsoft.com",
         "ip": "23.39.61.232",
@@ -72,7 +102,7 @@
     },
     {
       "originalUrl": "https://uhf.microsoft.com/images/microsoft/RE1Mu3b.png",
-      "type": "img",
+      "type": "image",
       "ipinfo": {
         "domain": "uhf.microsoft.com",
         "ip": "23.41.129.197",
@@ -103,25 +133,10 @@
     },
     {
       "originalUrl": "https://login.live.com/Me.srf?wa=wsignin1.0&wreply=https://www.office.com/",
-      "type": "iframe",
+      "type": "document",
       "ipinfo": {
         "domain": "login.live.com",
-        "ip": "20.190.141.37",
-        "city": "Osaka",
-        "region": "Osaka",
-        "country": "JP",
-        "loc": "34.6938,135.5011",
-        "org": "AS8075 Microsoft Corporation",
-        "timezone": "Asia/Tokyo"
-      },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://login.microsoftonline.com/savedusers?wreply=https://www.office.com/&appid=4345a7b9-9a63-4910-a426-35363201d503",
-      "type": "iframe",
-      "ipinfo": {
-        "domain": "login.microsoftonline.com",
-        "ip": "40.126.38.22",
+        "ip": "20.190.166.133",
         "city": "Tokyo",
         "region": "Tokyo",
         "country": "JP",
@@ -132,11 +147,26 @@
       "category": "foreign/cloud"
     },
     {
+      "originalUrl": "https://login.microsoftonline.com/savedusers?wreply=https://www.office.com/&appid=4345a7b9-9a63-4910-a426-35363201d503",
+      "type": "document",
+      "ipinfo": {
+        "domain": "login.microsoftonline.com",
+        "ip": "20.190.141.34",
+        "city": "Osaka",
+        "region": "Osaka",
+        "country": "JP",
+        "loc": "34.6938,135.5011",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "Asia/Tokyo"
+      },
+      "category": "foreign/cloud"
+    },
+    {
       "originalUrl": "https://js.monitor.azure.com/scripts/c/ms.shared.analytics.mectrl-3.gbl.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "js.monitor.azure.com",
-        "ip": "13.107.213.73",
+        "ip": "13.107.246.73",
         "city": "Redmond",
         "region": "Washington",
         "country": "US",
@@ -145,6 +175,52 @@
         "timezone": "America/Los_Angeles"
       },
       "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://aadcdnjp.msftauth.net/shared/1.0/content/js/BssoInterrupt_Core_ZdehiqMaZbamNI2GxExNjA2.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "aadcdnjp.msftauth.net",
+        "ip": "210.71.227.200",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://logincdn.msauth.net/16.000/content/js/MeControl_UaDf_ZvWRHqtiaO6Ibd8gw2.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "logincdn.msauth.net",
+        "ip": "13.107.246.73",
+        "city": "Redmond",
+        "region": "Washington",
+        "country": "US",
+        "loc": "47.6740,-122.1215",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2",
+      "type": "font",
+      "ipinfo": {
+        "domain": "c.s-microsoft.com",
+        "ip": "23.39.61.232",
+        "hostname": "a23-39-61-232.deploy.static.akamaitechnologies.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16625 Akamai Technologies, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     }
   ]
 }

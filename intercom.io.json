@@ -2,7 +2,7 @@
   "url": "https://intercom.io",
   "canonicalURL": "https://www.intercom.com/",
   "httpStatus": 200,
-  "timestamp": "2026-01-05T19:45:00.536Z",
+  "timestamp": "2026-01-07T20:14:37.423Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,26 +25,42 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 36,
-  "uniqueDomains": 2,
+  "requestCount": 39,
+  "uniqueDomains": 4,
   "test_results": {
     "domestic": {
-      "cloud": 2,
+      "cloud": 3,
       "direct": 0
     },
     "foreign": {
-      "cloud": 0,
+      "cloud": 1,
       "direct": 0
     }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://www.intercom.com/_next/static/media/1f91b722a405b6f7-s.p.woff2",
-      "type": "link",
+      "originalUrl": "https://intercom.io/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "intercom.io",
+        "ip": "3.169.36.33",
+        "hostname": "server-3-169-36-33.tpe53.r.cloudfront.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.intercom.com/",
+      "type": "document",
       "ipinfo": {
         "domain": "www.intercom.com",
-        "ip": "3.169.121.62",
-        "hostname": "server-3-169-121-62.tpe53.r.cloudfront.net",
+        "ip": "3.169.121.73",
+        "hostname": "server-3-169-121-73.tpe53.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -56,11 +72,11 @@
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=",
-      "type": "link",
+      "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.66.72",
-        "hostname": "hkg12s27-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -69,6 +85,21 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://2u17yy.fscdn.eppo.cloud/api/flag-config/v1/config?apiKey=j0jR9bZdjYJh6GoUpvXwDXTCZl17Grmv.ZWg9MnUxN3l5LmUuZXBwby5jbG91ZCZjcz0ydTE3eXk&sdkName=js-client-sdk&sdkVersion=3.18.0",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "2u17yy.fscdn.eppo.cloud",
+        "ip": "146.75.45.91",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud"
     }
   ]
 }

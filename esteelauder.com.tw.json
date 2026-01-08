@@ -2,7 +2,7 @@
   "url": "https://esteelauder.com.tw",
   "canonicalURL": "https://www.esteelauder.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-06T22:10:31.335Z",
+  "timestamp": "2026-01-07T22:42:05.677Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,12 +25,12 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 126,
-  "uniqueDomains": 6,
+  "requestCount": 128,
+  "uniqueDomains": 9,
   "test_results": {
     "domestic": {
       "cloud": 2,
-      "direct": 2
+      "direct": 4
     },
     "foreign": {
       "cloud": 2,
@@ -39,8 +39,23 @@
   },
   "domainDetails": [
     {
-      "originalUrl": "https://www.esteelauder.com.tw/_fonts/esteelauder/RobotoCondensed/roboto-condensed-300.woff2",
-      "type": "link",
+      "originalUrl": "https://esteelauder.com.tw/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "esteelauder.com.tw",
+        "ip": "210.71.227.201",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://www.esteelauder.com.tw/",
+      "type": "document",
       "ipinfo": {
         "domain": "www.esteelauder.com.tw",
         "ip": "210.71.227.208",
@@ -58,7 +73,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "js.sentry-cdn.com",
-        "ip": "151.101.130.217",
+        "ip": "151.101.194.217",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -73,8 +88,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "ui.powerreviews.com",
-        "ip": "3.169.55.84",
-        "hostname": "server-3-169-55-84.tpe54.r.cloudfront.net",
+        "ip": "3.169.55.4",
+        "hostname": "server-3-169-55-4.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -105,8 +120,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "tags.tiqcdn.com",
-        "ip": "3.169.121.121",
-        "hostname": "server-3-169-121-121.tpe53.r.cloudfront.net",
+        "ip": "3.169.55.78",
+        "hostname": "server-3-169-55-78.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -117,11 +132,18 @@
       "category": "domestic/cloud"
     },
     {
+      "originalUrl": "blob:https://www.esteelauder.com.tw/6e2f067b-cf6c-4700-9087-3c52a6b74954",
+      "type": "script",
+      "ipinfo": {
+        "domain": ""
+      }
+    },
+    {
       "originalUrl": "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
       "type": "script",
       "ipinfo": {
         "domain": "cdn.cookielaw.org",
-        "ip": "104.18.86.42",
+        "ip": "104.18.87.42",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -130,6 +152,22 @@
         "timezone": "America/Los_Angeles"
       },
       "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://www.facebook.com/x/oauth/status?client_id=2666298647015580&input_token&origin=1&redirect_uri=https%3A%2F%2Fwww.esteelauder.com.tw%2F&sdk=joey&wants_cookie_data=true",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
     }
   ]
 }

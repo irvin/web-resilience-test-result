@@ -2,7 +2,7 @@
   "url": "https://fastly.net",
   "canonicalURL": "https://www.fastly.com/",
   "httpStatus": 200,
-  "timestamp": "2026-01-05T19:43:47.017Z",
+  "timestamp": "2026-01-07T20:13:14.523Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,19 +25,49 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 25,
-  "uniqueDomains": 3,
+  "requestCount": 120,
+  "uniqueDomains": 21,
   "test_results": {
     "domestic": {
-      "cloud": 1,
-      "direct": 0
+      "cloud": 4,
+      "direct": 2
     },
     "foreign": {
-      "cloud": 2,
+      "cloud": 13,
       "direct": 0
     }
   },
   "domainDetails": [
+    {
+      "originalUrl": "https://fastly.net/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "fastly.net",
+        "ip": "151.101.129.6",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://www.fastly.com/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "www.fastly.com",
+        "ip": "199.232.113.57",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud"
+    },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-W9FKFHD",
       "type": "script",
@@ -56,10 +86,10 @@
     },
     {
       "originalUrl": "https://cdn.intellimize.co/snippet/117419923.js",
-      "type": "link",
+      "type": "script",
       "ipinfo": {
         "domain": "cdn.intellimize.co",
-        "ip": "199.232.114.132",
+        "ip": "146.75.46.132",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",
@@ -70,17 +100,249 @@
       "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://www.fastly.com/static/inter-latin-wght-normal-e62404dc3261fb537f3a211edf6a2682.woff2",
-      "type": "link",
+      "originalUrl": "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+      "type": "script",
       "ipinfo": {
-        "domain": "www.fastly.com",
-        "ip": "199.232.113.57",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
+        "domain": "cdn.cookielaw.org",
+        "ip": "104.18.86.42",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://117419923.intellimizeio.com/storage.html",
+      "type": "document",
+      "ipinfo": {
+        "domain": "117419923.intellimizeio.com",
+        "ip": "52.64.24.134",
+        "hostname": "ec2-52-64-24-134.ap-southeast-2.compute.amazonaws.com",
+        "city": "Sydney",
+        "region": "New South Wales",
+        "country": "AU",
+        "loc": "-33.8678,151.2073",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Australia/Sydney"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://api.intellimize.co/context-v2/117419923",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "api.intellimize.co",
+        "ip": "13.239.194.43",
+        "hostname": "ec2-13-239-194-43.ap-southeast-2.compute.amazonaws.com",
+        "city": "Sydney",
+        "region": "New South Wales",
+        "country": "AU",
+        "loc": "-33.8678,151.2073",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Australia/Sydney"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "geolocation.onetrust.com",
+        "ip": "104.18.32.137",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fwww.fastly.com%2F&scrsrc=www.googletagmanager.com&rnd=1746609434.1767816792&dt=Powering%20the%20best%20of%20the%20internet%20%7C%20Fastly&auid=327091846.1767816792&navt=n&npa=0&gtm=45He6151v810839359za200zd810839359xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115495938~115583767~115616985~115938466~115938468~116988316&tft=1767816791875&tfd=1377&apve=1&apvf=f",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.250.77.4",
+        "hostname": "nctsaa-ab-in-f4.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "snap.licdn.com",
+        "ip": "203.69.81.41",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://bat.bing.com/bat.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "bat.bing.com",
+        "ip": "150.171.28.10",
+        "city": "Redmond",
+        "region": "Washington",
+        "country": "US",
+        "loc": "47.6740,-122.1215",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "connect.facebook.net",
+        "ip": "31.13.87.5",
+        "hostname": "xx-fbcdn-shv-01-tpe1.fbcdn.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-ETDRC9QJ6S&cid=998574787.1767816792&gtm=45je6151v872918845z8810839359za20gzb810839359zd810839359&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115583767~115938466~115938468&z=555164747",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.196.195",
+        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://ibc-flow.techtarget.com/a/gif.gif?actTypeId=31&cid=4982510&r=1767816792157&ref=https%3A%2F%2Fwww.fastly.com%2F&version=2.4",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "ibc-flow.techtarget.com",
+        "ip": "34.111.208.231",
+        "hostname": "231.208.111.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://cdn.bizibly.com/u?_biz_u=796d0177c98c4b619ed17f95dbcb3bdb&_biz_l=https%3A%2F%2Fwww.fastly.com%2F&_biz_t=1767816792280&_biz_i=Powering%20the%20best%20of%20the%20internet%20%7C%20Fastly&rnd=820088&cdn_o=a&_biz_z=1767816792280",
+      "type": "image",
+      "ipinfo": {
+        "domain": "cdn.bizibly.com",
+        "ip": "203.69.138.209",
+        "hostname": "203-69-138-209.hinet-ip.hinet.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS20940 Akamai International B.V.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://54.156.2.105/is?cb=1767816792281",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "54.156.2.105"
+      }
+    },
+    {
+      "originalUrl": "https://www.linkedin.com/px/li_sync?redirect=https%3A%2F%2Fpx.ads.linkedin.com%2Fcollect%3Fv%3D2%26fmt%3Djs%26pid%3D118344%252C4799041%26time%3D1767816792170%26li_adsId%3D429c08c5-3494-4445-ac60-5faf28398dbe%26url%3Dhttps%253A%252F%252Fwww.fastly.com%252F%26tm%3Dgtmv2%26cookiesTest%3Dtrue%26liSync%3Dtrue",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.linkedin.com",
+        "ip": "172.64.146.215",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "blob:https://www.fastly.com/e4e334d6-19cd-475c-bd80-470601d2070f",
+      "type": "image",
+      "ipinfo": {
+        "domain": ""
+      }
+    },
+    {
+      "originalUrl": "https://api.c99.ai/api/v1/fire/snippet?domain=fastly.com&token=CT-1NQX26Q",
+      "type": "script",
+      "ipinfo": {
+        "domain": "api.c99.ai",
+        "ip": "104.21.15.165",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://epsilon.6sense.com/v3/company/details",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "epsilon.6sense.com",
+        "ip": "99.83.231.3",
+        "hostname": "afe865822f884bb48.awsglobalaccelerator.com",
+        "city": "Seattle",
+        "region": "Washington",
+        "country": "US",
+        "loc": "47.5413,-122.3129",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://js.zi-scripts.com/zi-tag.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "js.zi-scripts.com",
+        "ip": "172.64.150.44",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
       },
       "category": "foreign/cloud"
     }

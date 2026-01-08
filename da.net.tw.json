@@ -2,7 +2,7 @@
   "url": "https://da.net.tw",
   "canonicalURL": "https://da.net.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-05T20:30:42.013Z",
+  "timestamp": "2026-01-07T21:33:46.008Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,12 +25,12 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 9,
-  "uniqueDomains": 2,
+  "requestCount": 15,
+  "uniqueDomains": 4,
   "test_results": {
     "domestic": {
-      "cloud": 1,
-      "direct": 0
+      "cloud": 2,
+      "direct": 1
     },
     "foreign": {
       "cloud": 1,
@@ -39,12 +39,44 @@
   },
   "domainDetails": [
     {
+      "originalUrl": "https://da.net.tw/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "da.net.tw",
+        "ip": "124.109.125.163",
+        "hostname": "n125-h163.109.124.dynamic.da.net.tw",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS18419 DaDa Broadband LTD.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://sso.dmg.tv/app/panw_globalprotect/exk1o3m33qmmlrM6x1d8/sso/saml",
+      "type": "document",
+      "ipinfo": {
+        "domain": "sso.dmg.tv",
+        "ip": "35.71.190.245",
+        "hostname": "aaa00e5cffb63d634.awsglobalaccelerator.com",
+        "city": "Seattle",
+        "region": "Washington",
+        "country": "US",
+        "loc": "47.6339,-122.3476",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
       "originalUrl": "https://ok3static2.oktacdn.com/assets/js/sdk/okta-signin-widget/7.38.0/js/okta-sign-in.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "ok3static2.oktacdn.com",
-        "ip": "3.169.121.8",
-        "hostname": "server-3-169-121-8.tpe53.r.cloudfront.net",
+        "ip": "3.169.121.3",
+        "hostname": "server-3-169-121-3.tpe53.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -55,20 +87,20 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://sso.dmg.tv/api/internal/brand/theme/style-sheet?touch-point=SIGN_IN_PAGE&v=abc4780733b2999dc5536ea4bf18a7237d32beafe91e2f7611b8af3ecb8ae0d0dfb208992a3b1ecefd0c0f9333f4b59d",
-      "type": "link",
+      "originalUrl": "https://login.okta.com/discovery/iframe.html",
+      "type": "document",
       "ipinfo": {
-        "domain": "sso.dmg.tv",
-        "ip": "52.223.7.86",
-        "hostname": "aaa00e5cffb63d634.awsglobalaccelerator.com",
-        "city": "Seattle",
-        "region": "Washington",
-        "country": "US",
-        "loc": "47.6339,-122.3476",
+        "domain": "login.okta.com",
+        "ip": "3.169.137.69",
+        "hostname": "server-3-169-137-69.tpe54.r.cloudfront.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
         "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "America/Los_Angeles"
+        "timezone": "Asia/Taipei"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud"
     }
   ]
 }

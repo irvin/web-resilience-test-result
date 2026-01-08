@@ -2,7 +2,7 @@
   "url": "https://bilibili.com",
   "canonicalURL": "https://www.bilibili.com/",
   "httpStatus": 200,
-  "timestamp": "2026-01-05T19:39:13.245Z",
+  "timestamp": "2026-01-07T20:06:57.109Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,25 +25,56 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 111,
-  "uniqueDomains": 8,
+  "requestCount": 117,
+  "uniqueDomains": 11,
   "test_results": {
     "domestic": {
-      "cloud": 2,
+      "cloud": 1,
       "direct": 0
     },
     "foreign": {
       "cloud": 0,
-      "direct": 5
+      "direct": 9
     }
   },
   "domainDetails": [
+    {
+      "originalUrl": "https://bilibili.com/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "bilibili.com",
+        "ip": "139.159.241.37",
+        "hostname": "ecs-139-159-241-37.compute.hwclouds-dns.com",
+        "city": "Guangzhou",
+        "region": "Guangdong",
+        "country": "CN",
+        "loc": "23.1167,113.2500",
+        "org": "AS55990 Huawei Cloud Service data center",
+        "timezone": "Asia/Shanghai"
+      },
+      "category": "foreign/direct"
+    },
+    {
+      "originalUrl": "https://www.bilibili.com/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "www.bilibili.com",
+        "ip": "103.151.151.4",
+        "city": "Hong Kong",
+        "region": "Hong Kong",
+        "country": "HK",
+        "loc": "22.2783,114.1747",
+        "org": "AS140633 BILIBILI HK LIMITED",
+        "timezone": "Asia/Hong_Kong"
+      },
+      "category": "foreign/direct"
+    },
     {
       "originalUrl": "https://s1.hdslb.com/bfs/seed/jinkela/short/bmg/register/fallback.js",
       "type": "script",
       "ipinfo": {
         "domain": "s1.hdslb.com",
-        "ip": "163.181.77.221",
+        "ip": "163.181.77.222",
         "city": "Hong Kong",
         "region": "Hong Kong",
         "country": "HK",
@@ -55,22 +86,22 @@
     },
     {
       "originalUrl": "https://i0.hdslb.com/bfs/archive/12573bbe82fe6e24e49c199186936b5b15d6572d.png@3840w_360h_1c.avif?mirror_report_banner=1",
-      "type": "img",
+      "type": "image",
       "ipinfo": {
         "domain": "i0.hdslb.com",
-        "ip": "162.128.37.194",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS21859 Zenlayer Inc",
-        "timezone": "Asia/Taipei"
+        "ip": "203.88.160.157",
+        "city": "Hong Kong",
+        "region": "Hong Kong",
+        "country": "HK",
+        "loc": "22.2783,114.1747",
+        "org": "AS54994 Meteverse Limited.",
+        "timezone": "Asia/Hong_Kong"
       },
-      "category": "domestic/cloud"
+      "category": "foreign/direct"
     },
     {
-      "originalUrl": "https://i2.hdslb.com/bfs/archive/63c12798056af42eb0830723d91802ee7f4091f8.jpg@672w_378h_1c_!web-home-common-cover.avif",
-      "type": "img",
+      "originalUrl": "https://i2.hdslb.com/bfs/archive/9fcab662834d86da0a676db090e721b288e46e4a.jpg@672w_378h_1c_!web-home-common-cover.avif",
+      "type": "image",
       "ipinfo": {
         "domain": "i2.hdslb.com",
         "ip": "162.128.37.194",
@@ -84,11 +115,11 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://i1.hdslb.com/bfs/archive/6efc6e8ce0ad99f30cfe26b033b80a24ad0d4621.jpg@672w_378h_1c_!web-home-common-cover.avif",
-      "type": "img",
+      "originalUrl": "https://i1.hdslb.com/bfs/archive/5e7ad1fa2b427486e4481c7c0d95264056a65ec0.jpg@672w_378h_1c_!web-home-common-cover.avif",
+      "type": "image",
       "ipinfo": {
         "domain": "i1.hdslb.com",
-        "ip": "116.193.87.41",
+        "ip": "61.110.241.58",
         "city": "Hong Kong",
         "region": "Hong Kong",
         "country": "HK",
@@ -99,26 +130,11 @@
       "category": "foreign/direct"
     },
     {
-      "originalUrl": "https://www.bilibili.com/gentleman/polyfill.js?features=es2015%2Ces2016%2Ces2017%2Ces2018%2Ces2019%2Ces2020%2Ces2021%2Ces2022%2CglobalThis&flags=gated",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.bilibili.com",
-        "ip": "103.151.151.6",
-        "city": "Hong Kong",
-        "region": "Hong Kong",
-        "country": "HK",
-        "loc": "22.2783,114.1747",
-        "org": "AS140633 BILIBILI HK LIMITED",
-        "timezone": "Asia/Hong_Kong"
-      },
-      "category": "foreign/direct"
-    },
-    {
       "originalUrl": "https://api.bilibili.com/x/kv-frontend/namespace/data?appKey=333.1339&nscode=1&unlimit=true",
-      "type": "xmlhttprequest",
+      "type": "xhr",
       "ipinfo": {
         "domain": "api.bilibili.com",
-        "ip": "103.151.151.6",
+        "ip": "103.151.151.4",
         "city": "Hong Kong",
         "region": "Hong Kong",
         "country": "HK",
@@ -144,8 +160,38 @@
       "category": "foreign/direct"
     },
     {
-      "originalUrl": "https://bfs/vc/cd4194a7be89655450147d2384a162b966cf2ec2.png@1c.webp",
-      "type": "img",
+      "originalUrl": "https://cm.bilibili.com/cm/api/receive/content/pc",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "cm.bilibili.com",
+        "ip": "103.151.151.133",
+        "city": "Hong Kong",
+        "region": "Hong Kong",
+        "country": "HK",
+        "loc": "22.2783,114.1747",
+        "org": "AS140633 BILIBILI HK LIMITED",
+        "timezone": "Asia/Hong_Kong"
+      },
+      "category": "foreign/direct"
+    },
+    {
+      "originalUrl": "https://api.live.bilibili.com/xlive/web-interface/v1/webMain/getMoreRecList?platform=web&web_location=333.1007",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "api.live.bilibili.com",
+        "ip": "103.151.151.134",
+        "city": "Hong Kong",
+        "region": "Hong Kong",
+        "country": "HK",
+        "loc": "22.2783,114.1747",
+        "org": "AS140633 BILIBILI HK LIMITED",
+        "timezone": "Asia/Hong_Kong"
+      },
+      "category": "foreign/direct"
+    },
+    {
+      "originalUrl": "https://bfs/vc/90240f707cb4a015bbf8bbd13e018b3f664087ce.png@1c.webp",
+      "type": "image",
       "ipinfo": {
         "domain": "bfs"
       }

@@ -2,7 +2,7 @@
   "url": "https://github.com",
   "canonicalURL": "https://github.com/",
   "httpStatus": 200,
-  "timestamp": "2026-01-05T19:39:34.916Z",
+  "timestamp": "2026-01-07T20:07:23.949Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,26 +25,41 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 126,
-  "uniqueDomains": 2,
+  "requestCount": 134,
+  "uniqueDomains": 4,
   "test_results": {
     "domestic": {
       "cloud": 1,
       "direct": 0
     },
     "foreign": {
-      "cloud": 1,
-      "direct": 0
+      "cloud": 2,
+      "direct": 1
     }
   },
   "domainDetails": [
     {
+      "originalUrl": "https://github.com/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "github.com",
+        "ip": "20.27.177.113",
+        "city": "Tokyo",
+        "region": "Tokyo",
+        "country": "JP",
+        "loc": "35.6895,139.6917",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "Asia/Tokyo"
+      },
+      "category": "foreign/cloud"
+    },
+    {
       "originalUrl": "https://github.githubassets.com/assets/global-banner-disable-54e442fb573b.js",
-      "type": "link",
+      "type": "script",
       "ipinfo": {
         "domain": "github.githubassets.com",
-        "ip": "185.199.109.154",
-        "hostname": "cdn-185-199-109-154.github.com",
+        "ip": "185.199.110.154",
+        "hostname": "cdn-185-199-110-154.github.com",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -56,11 +71,11 @@
     },
     {
       "originalUrl": "https://images.ctfassets.net/8aevphvgewt8/4IfncsgGkGPFESlWXlAWfU/6f671f0ff761cb276c2effced9dca773/eyebrow-banner-duck.png",
-      "type": "img",
+      "type": "image",
       "ipinfo": {
         "domain": "images.ctfassets.net",
-        "ip": "3.169.55.76",
-        "hostname": "server-3-169-55-76.tpe54.r.cloudfront.net",
+        "ip": "3.169.55.16",
+        "hostname": "server-3-169-55-16.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -69,6 +84,22 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://collector.github.com/github/collect",
+      "type": "ping",
+      "ipinfo": {
+        "domain": "collector.github.com",
+        "ip": "140.82.113.21",
+        "hostname": "lb-140-82-113-21-iad.github.com",
+        "city": "South Riding",
+        "region": "Virginia",
+        "country": "US",
+        "loc": "38.9209,-77.5039",
+        "org": "AS36459 GitHub, Inc.",
+        "timezone": "America/New_York"
+      },
+      "category": "foreign/direct"
     }
   ]
 }

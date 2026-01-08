@@ -2,7 +2,7 @@
   "url": "https://spotify.com",
   "canonicalURL": "https://open.spotify.com/",
   "httpStatus": 200,
-  "timestamp": "2026-01-05T19:40:56.423Z",
+  "timestamp": "2026-01-07T20:09:06.815Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,25 +25,71 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 35,
-  "uniqueDomains": 8,
+  "requestCount": 40,
+  "uniqueDomains": 10,
   "test_results": {
     "domestic": {
       "cloud": 3,
       "direct": 1
     },
     "foreign": {
-      "cloud": 4,
+      "cloud": 6,
       "direct": 0
     }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://encore.scdn.co/fonts/SpotifyMixUI-Bold-4264b799009b1db5c491778b1bc8e5b7.woff2",
-      "type": "link",
+      "originalUrl": "https://spotify.com/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "spotify.com",
+        "ip": "35.186.224.24",
+        "hostname": "24.224.186.35.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://www.spotify.com/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "www.spotify.com",
+        "ip": "146.75.47.42",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://open.spotify.com/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "open.spotify.com",
+        "ip": "146.75.47.42",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://encore.scdn.co/fonts/SpotifyMixUI-Regular-cc3b1de388efa4cbca6c75cebc24585e.woff2",
+      "type": "font",
       "ipinfo": {
         "domain": "encore.scdn.co",
-        "ip": "210.71.227.152",
+        "ip": "203.69.81.57",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -54,8 +100,8 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://open-exp.spotifycdn.com/cdn/generated-locales/web-player/en.c6cbf130.json",
-      "type": "link",
+      "originalUrl": "https://open-exp.spotifycdn.com/cdn/build/web-player/web-player.ccadcbaa.css",
+      "type": "stylesheet",
       "ipinfo": {
         "domain": "open-exp.spotifycdn.com",
         "ip": "199.232.114.251",
@@ -73,8 +119,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.204.36",
-        "hostname": "hkg07s38-in-f4.1e100.net",
+        "ip": "142.250.77.4",
+        "hostname": "nctsaa-ab-in-f4.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -134,7 +180,7 @@
     },
     {
       "originalUrl": "https://apresolve.spotify.com/?type=dealer-g2&type=spclient",
-      "type": "xmlhttprequest",
+      "type": "xhr",
       "ipinfo": {
         "domain": "apresolve.spotify.com",
         "ip": "35.186.224.24",
@@ -145,21 +191,6 @@
         "loc": "39.0997,-94.5786",
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
-      },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://open.spotify.com/api/token?reason=init&productType=web-player&totp=769844&totpServer=769844&totpVer=61",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "open.spotify.com",
-        "ip": "146.75.47.42",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
       },
       "category": "foreign/cloud"
     }

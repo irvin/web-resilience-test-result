@@ -2,7 +2,7 @@
   "url": "https://live.com",
   "canonicalURL": "https://live.com",
   "httpStatus": 200,
-  "timestamp": "2026-01-05T19:39:06.218Z",
+  "timestamp": "2026-01-07T20:06:51.963Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,22 +25,53 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 10,
-  "uniqueDomains": 1,
+  "requestCount": 17,
+  "uniqueDomains": 5,
   "test_results": {
     "domestic": {
-      "cloud": 1,
+      "cloud": 2,
       "direct": 0
     },
     "foreign": {
-      "cloud": 0,
-      "direct": 0
+      "cloud": 1,
+      "direct": 1
     }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.mail.runtime.cf4de167.js",
-      "type": "link",
+      "originalUrl": "https://live.com/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "live.com",
+        "ip": "204.79.197.212",
+        "hostname": "a-0010.a-msedge.net",
+        "city": "Redmond",
+        "region": "Washington",
+        "country": "US",
+        "loc": "47.6740,-122.1215",
+        "org": "AS8068 Microsoft Corporation",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/direct"
+    },
+    {
+      "originalUrl": "https://outlook.live.com/owa/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "outlook.live.com",
+        "ip": "40.104.20.50",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.mail.runtime.487c001a.js",
+      "type": "script",
       "ipinfo": {
         "domain": "res.public.onecdn.static.microsoft",
         "ip": "203.69.138.225",
@@ -53,6 +84,28 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "blob:https://outlook.live.com/273683b8-ba80-4376-8394-eee8b31135ae",
+      "type": "other",
+      "ipinfo": {
+        "domain": ""
+      }
+    },
+    {
+      "originalUrl": "https://login.microsoftonline.com/consumers/oauth2/v2.0/authorize?client_id=9199bf20-a13f-4107-85dc-02114787ef48&scope=service%3A%3Aoutlook.office.com%3A%3AMBI_SSL%20openid%20profile%20offline_access&redirect_uri=https%3A%2F%2Foutlook.live.com%2Fmail%2FoauthRedirect.html&client-request-id=bc53f026-c234-aa89-39a9-c7584a0c3090&response_mode=fragment&client_info=1&prompt=none&nonce=019b9a11-b97f-7822-909d-64df0fd146a6&state=eyJpZCI6IjAxOWI5YTExLWI5N2YtNzEwNy05ZmNmLTRjZGE2MjY3NDYwYSIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoic2lsZW50In19%7CaHR0cHM6Ly9vdXRsb29rLmxpdmUuY29tL21haWwvMC8&claims=%7B%22access_token%22%3A%7B%22xms_cc%22%3A%7B%22values%22%3A%5B%22CP1%22%5D%7D%7D%7D&x-client-SKU=msal.js.browser&x-client-VER=4.26.0&response_type=code&code_challenge=2jxpz4uS5k9gLH2uKQ_k5OxpgTlYY4Pfhj061hL4F-o&code_challenge_method=S256",
+      "type": "document",
+      "ipinfo": {
+        "domain": "login.microsoftonline.com",
+        "ip": "40.126.38.22",
+        "city": "Tokyo",
+        "region": "Tokyo",
+        "country": "JP",
+        "loc": "35.6895,139.6917",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "Asia/Tokyo"
+      },
+      "category": "foreign/cloud"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "url": "https://skype.com",
   "canonicalURL": "https://teams.live.com/free",
   "httpStatus": 200,
-  "timestamp": "2026-01-05T19:41:07.166Z",
+  "timestamp": "2026-01-07T20:09:27.045Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,25 +25,70 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 33,
-  "uniqueDomains": 3,
+  "requestCount": 39,
+  "uniqueDomains": 7,
   "test_results": {
     "domestic": {
       "cloud": 1,
       "direct": 0
     },
     "foreign": {
-      "cloud": 2,
-      "direct": 0
+      "cloud": 5,
+      "direct": 1
     }
   },
   "domainDetails": [
+    {
+      "originalUrl": "https://skype.com/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "skype.com",
+        "ip": "20.76.201.171",
+        "city": "Amsterdam",
+        "region": "North Holland",
+        "country": "NL",
+        "loc": "52.3740,4.8897",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "Europe/Amsterdam"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://www.skype.com/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "www.skype.com",
+        "ip": "52.123.129.14",
+        "city": "Redmond",
+        "region": "Washington",
+        "country": "US",
+        "loc": "47.6740,-122.1215",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://teams.live.com/free?source=skype",
+      "type": "document",
+      "ipinfo": {
+        "domain": "teams.live.com",
+        "ip": "52.113.194.132",
+        "city": "Redmond",
+        "region": "Washington",
+        "country": "US",
+        "loc": "47.6740,-122.1215",
+        "org": "AS8068 Microsoft Corporation",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/direct"
+    },
     {
       "originalUrl": "https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js",
       "type": "script",
       "ipinfo": {
         "domain": "wcpstatic.microsoft.com",
-        "ip": "13.107.213.73",
+        "ip": "13.107.246.73",
         "city": "Redmond",
         "region": "Washington",
         "country": "US",
@@ -55,7 +100,7 @@
     },
     {
       "originalUrl": "https://statics.teams.cdn.live.net/evergreen-assets/gather/videos/from_skype/hero-video-placeholder_4544x2566.webp",
-      "type": "link",
+      "type": "image",
       "ipinfo": {
         "domain": "statics.teams.cdn.live.net",
         "ip": "203.69.138.207",
@@ -71,14 +116,29 @@
     },
     {
       "originalUrl": "https://login.microsoftonline.com/consumers/oauth2/v2.0/authorize?client_id=4b3e8f46-56d3-427f-b1e2-d239b2ea6bca&response_type=token&scope=openid+profile&redirect_uri=https%3A%2F%2Fteams.live.com%2Fv2%2Fauth&prompt=none",
-      "type": "iframe",
+      "type": "document",
       "ipinfo": {
         "domain": "login.microsoftonline.com",
-        "ip": "40.126.13.8",
+        "ip": "20.190.141.35",
         "city": "Osaka",
         "region": "Osaka",
         "country": "JP",
         "loc": "34.6938,135.5011",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "Asia/Tokyo"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://login.live.com/oauth20_authorize.srf?client_id=4b3e8f46-56d3-427f-b1e2-d239b2ea6bca&scope=openid+profile&redirect_uri=https%3a%2f%2fteams.live.com%2fv2%2fauth&response_type=token&prompt=none&uaid=2c4e7a4c1af04308a2133041b06dfdac&msproxy=1&issuer=mso&tenant=consumers&ui_locales=en-US&epctrc=2CZaMxQC4KNbJB15U013T3H24em0wO5s3LiTuV7euMA%3d0%3a1%3aCANARY%3a4QXXn%2bqLF92Mrt0z5xx%2bWy6QPZL9NHXFTBwFa29sAVQ%3d&epct=PAQABDgEAAABlMNzVhAPUTrARzfQjWPtKIiIG9x0hvtAo1APdF5pu6cC9CqUtIwnhGY4XeWhoGxh_XERE9caPoVjsncjtJ7FveHmeNWzckLfMrUe3Y-l83MTqileixytwHE12ZNMrVWT7cYKC2_KZ8AeEBDtji-Iw9t7Pcwx8xOj6YsgEVygY682eCb81t8lZndXT_JnUcrGJXr-gXaapDfevZEwFp7zW6lDuADBG28If7IdVMtUQKCAA&jshs=0",
+      "type": "document",
+      "ipinfo": {
+        "domain": "login.live.com",
+        "ip": "20.190.166.131",
+        "city": "Tokyo",
+        "region": "Tokyo",
+        "country": "JP",
+        "loc": "35.6895,139.6917",
         "org": "AS8075 Microsoft Corporation",
         "timezone": "Asia/Tokyo"
       },

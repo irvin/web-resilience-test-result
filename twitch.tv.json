@@ -2,7 +2,7 @@
   "url": "https://twitch.tv",
   "canonicalURL": "https://www.twitch.tv/",
   "httpStatus": 200,
-  "timestamp": "2026-01-05T19:38:54.265Z",
+  "timestamp": "2026-01-07T20:06:32.678Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,26 +25,56 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 80,
-  "uniqueDomains": 3,
+  "requestCount": 89,
+  "uniqueDomains": 7,
   "test_results": {
     "domestic": {
-      "cloud": 2,
+      "cloud": 3,
       "direct": 0
     },
     "foreign": {
-      "cloud": 1,
+      "cloud": 3,
       "direct": 0
     }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://assets.twitch.tv/config/settings.68da5e6de6d5bdc7a8ca17481cf4361c.js",
+      "originalUrl": "https://twitch.tv/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "twitch.tv",
+        "ip": "151.101.2.167",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://www.twitch.tv/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "www.twitch.tv",
+        "ip": "199.232.114.214",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://assets.twitch.tv/config/settings.5b7ff28195b79fc4da1d3a93c3efeeb0.js",
       "type": "script",
       "ipinfo": {
         "domain": "assets.twitch.tv",
-        "ip": "3.169.36.49",
-        "hostname": "server-3-169-36-49.tpe53.r.cloudfront.net",
+        "ip": "3.169.121.37",
+        "hostname": "server-3-169-121-37.tpe53.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -70,6 +100,22 @@
       "category": "foreign/cloud"
     },
     {
+      "originalUrl": "https://gql.twitch.tv/gql",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "gql.twitch.tv",
+        "ip": "3.169.55.84",
+        "hostname": "server-3-169-55-84.tpe54.r.cloudfront.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
       "originalUrl": "https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1",
       "type": "script",
       "ipinfo": {
@@ -84,6 +130,13 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "blob:https://www.twitch.tv/f51f6c46-9298-4111-9da2-d5da624dfcea",
+      "type": "other",
+      "ipinfo": {
+        "domain": ""
+      }
     }
   ]
 }

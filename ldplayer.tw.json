@@ -2,7 +2,7 @@
   "url": "https://ldplayer.tw",
   "canonicalURL": "https://www.ldplayer.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-06T21:22:46.169Z",
+  "timestamp": "2026-01-07T21:35:54.770Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,22 +25,52 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 39,
-  "uniqueDomains": 4,
+  "requestCount": 58,
+  "uniqueDomains": 11,
   "test_results": {
     "domestic": {
       "cloud": 3,
-      "direct": 0
+      "direct": 4
     },
     "foreign": {
-      "cloud": 1,
+      "cloud": 3,
       "direct": 0
     }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://res.ldrescdn.com/fonts/LINE_Seed_Sans/woff2/LINESeedSans_W_Rg.woff2",
-      "type": "link",
+      "originalUrl": "https://ldplayer.tw/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "ldplayer.tw",
+        "ip": "210.71.227.185",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://www.ldplayer.tw/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "www.ldplayer.tw",
+        "ip": "210.71.227.145",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://res.ldrescdn.com/web/2600x2600.webp",
+      "type": "image",
       "ipinfo": {
         "domain": "res.ldrescdn.com",
         "ip": "203.69.138.233",
@@ -56,7 +86,7 @@
     },
     {
       "originalUrl": "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap",
-      "type": "css",
+      "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
         "ip": "142.250.198.74",
@@ -71,12 +101,27 @@
       "category": "domestic/cloud"
     },
     {
+      "originalUrl": "https://cmp.setupcmp.com/cmp/cmp/cmp-stub.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "cmp.setupcmp.com",
+        "ip": "104.26.5.6",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-NZGS3JT9",
-      "type": "link",
+      "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -87,19 +132,72 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://cmp.setupcmp.com/cmp/cmp/cmp-stub.js",
-      "type": "link",
+      "originalUrl": "blob:https://www.ldplayer.tw/89ee70b7-9f70-4de5-a303-aa9d1109a3a4",
+      "type": "other",
       "ipinfo": {
-        "domain": "cmp.setupcmp.com",
-        "ip": "172.67.70.36",
-        "city": "San Francisco",
-        "region": "California",
+        "domain": ""
+      }
+    },
+    {
+      "originalUrl": "https://bat.bing.com/bat.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "bat.bing.com",
+        "ip": "150.171.27.10",
+        "city": "Redmond",
+        "region": "Washington",
         "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
+        "loc": "47.6740,-122.1215",
+        "org": "AS8075 Microsoft Corporation",
         "timezone": "America/Los_Angeles"
       },
       "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "connect.facebook.net",
+        "ip": "31.13.87.5",
+        "hostname": "xx-fbcdn-shv-01-tpe1.fbcdn.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://sg-datahub.changzhi.top/collection/config?appId=9999",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "sg-datahub.changzhi.top",
+        "ip": "47.245.87.130",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS45102 Alibaba (US) Technology Co., Ltd.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://apitw.ldplayer.net/ows/tw/ip/checkIpArea",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "apitw.ldplayer.net",
+        "ip": "210.71.227.112",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
     }
   ]
 }

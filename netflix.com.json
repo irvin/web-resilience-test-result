@@ -2,7 +2,7 @@
   "url": "https://netflix.com",
   "canonicalURL": "https://netflix.com",
   "httpStatus": 200,
-  "timestamp": "2026-01-05T19:38:23.189Z",
+  "timestamp": "2026-01-07T20:05:59.708Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,22 +25,54 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 28,
-  "uniqueDomains": 7,
+  "requestCount": 47,
+  "uniqueDomains": 11,
   "test_results": {
     "domestic": {
-      "cloud": 1,
+      "cloud": 2,
       "direct": 1
     },
     "foreign": {
-      "cloud": 2,
+      "cloud": 5,
       "direct": 3
     }
   },
   "domainDetails": [
     {
+      "originalUrl": "https://netflix.com/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "netflix.com",
+        "ip": "44.234.232.238",
+        "hostname": "ec2-44-234-232-238.us-west-2.compute.amazonaws.com",
+        "city": "Boardman",
+        "region": "Oregon",
+        "country": "US",
+        "loc": "45.8399,-119.7006",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://www.netflix.com/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "www.netflix.com",
+        "ip": "44.242.13.161",
+        "hostname": "ec2-44-242-13-161.us-west-2.compute.amazonaws.com",
+        "city": "Boardman",
+        "region": "Oregon",
+        "country": "US",
+        "loc": "45.8399,-119.7006",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
       "originalUrl": "https://assets.nflxext.com/web/ffe/wp/ui/landingPages/nmhp/nmhpFrameworkClient.2ccd3a78b0b33cc7d7c5.js",
-      "type": "link",
+      "type": "script",
       "ipinfo": {
         "domain": "assets.nflxext.com",
         "ip": "45.57.90.1",
@@ -59,7 +91,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "help.nflxext.com",
-        "ip": "45.57.90.1",
+        "ip": "45.57.91.1",
         "hostname": "occ.a.nflxso.net",
         "city": "Wilmington",
         "region": "Delaware",
@@ -72,7 +104,7 @@
     },
     {
       "originalUrl": "https://occ.a.nflxso.net/genc/hawkins/5.10.0/font/netflix-sans-core-variable-full.woff2",
-      "type": "link",
+      "type": "font",
       "ipinfo": {
         "domain": "occ.a.nflxso.net",
         "ip": "45.57.91.1",
@@ -88,11 +120,11 @@
     },
     {
       "originalUrl": "https://logs.netflix.com/log/wwwhead/cl/2?fetchType=js&eventType=WebsiteDetect&modalView=nmLanding",
-      "type": "xmlhttprequest",
+      "type": "xhr",
       "ipinfo": {
         "domain": "logs.netflix.com",
-        "ip": "44.228.67.58",
-        "hostname": "ec2-44-228-67-58.us-west-2.compute.amazonaws.com",
+        "ip": "44.242.131.93",
+        "hostname": "ec2-44-242-131-93.us-west-2.compute.amazonaws.com",
         "city": "Boardman",
         "region": "Oregon",
         "country": "US",
@@ -103,26 +135,11 @@
       "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
-      "type": "xmlhttprequest",
-      "ipinfo": {
-        "domain": "geolocation.onetrust.com",
-        "ip": "104.18.32.137",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud"
-    },
-    {
       "originalUrl": "https://occ-0-3594-395.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABetZV_Qn1mqr8IbJyfZ_EGBZvHTzyoun3YNJSRJlM1vgNO0avhxoXq3sYRnbV0PgR8v0ZvfXdnfP_H7QQB8ZEG5bCJvinLHyDSM.webp?r=b55",
-      "type": "css",
+      "type": "image",
       "ipinfo": {
         "domain": "occ-0-3594-395.1.nflxso.net",
-        "ip": "203.75.84.4",
+        "ip": "203.75.84.12",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -133,12 +150,59 @@
       "category": "domestic/direct"
     },
     {
+      "originalUrl": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "geolocation.onetrust.com",
+        "ip": "172.64.155.119",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
       "originalUrl": "https://www.google.com/recaptcha/enterprise.js?render=6LdqW_EqAAAAAO87Fb_kcZfNzs0IqJRcKiJDYpUv",
       "type": "script",
       "ipinfo": {
         "domain": "www.google.com",
         "ip": "142.250.204.36",
         "hostname": "hkg07s38-in-f4.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://web.prod.cloud.netflix.com/graphql",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "web.prod.cloud.netflix.com",
+        "ip": "100.20.29.191",
+        "hostname": "ec2-100-20-29-191.us-west-2.compute.amazonaws.com",
+        "city": "Boardman",
+        "region": "Oregon",
+        "country": "US",
+        "loc": "45.8399,-119.7006",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://www.gstatic.com/recaptcha/releases/7gg7H51Q-naNfhmCP3_R47ho/recaptcha__en.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.gstatic.com",
+        "ip": "142.250.66.67",
+        "hostname": "hkg12s27-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",

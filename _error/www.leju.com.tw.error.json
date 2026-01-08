@@ -1,10 +1,10 @@
 {
   "url": "https://www.leju.com.tw/",
   "canonicalURL": "https://www.leju.com.tw/",
-  "httpStatus": 403,
-  "timestamp": "2026-01-06T20:15:33.902Z",
+  "httpStatus": 200,
+  "timestamp": "2026-01-07T20:13:41.341Z",
   "testParameters": {
-    "customDNS": null,
+    "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
       "https://filter.futa.gg/hosts_abp.txt",
@@ -13,15 +13,126 @@
     "useCache": true,
     "hasIPinfoToken": true
   },
-  "testingEnvironment": null,
-  "requestCount": 0,
-  "uniqueDomains": 0,
+  "testingEnvironment": {
+    "ip": "220.132.212.194",
+    "hostname": "220-132-212-194.hinet-ip.hinet.net",
+    "city": "Banqiao",
+    "region": "Taipei",
+    "country": "TW",
+    "loc": "25.0143,121.4672",
+    "org": "AS3462 Data Communication Business Group",
+    "timezone": "Asia/Taipei",
+    "source": "ipinfo json api (direct)",
+    "dnsServer": "168.95.1.1"
+  },
+  "requestCount": 118,
+  "uniqueDomains": 5,
+  "test_results": {
+    "domestic": {
+      "cloud": 2,
+      "direct": 0
+    },
+    "foreign": {
+      "cloud": 3,
+      "direct": 0
+    }
+  },
+  "domainDetails": [
+    {
+      "originalUrl": "https://www.leju.com.tw/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "www.leju.com.tw",
+        "ip": "104.18.7.16",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://cdn-storage-public.leju.com.tw/frontend/splide-2.4.21/dist/js/splide.min.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "cdn-storage-public.leju.com.tw",
+        "ip": "3.169.121.109",
+        "hostname": "server-3-169-121-109.tpe53.r.cloudfront.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://challenges.cloudflare.com/turnstile/v0/api.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "challenges.cloudflare.com",
+        "ip": "104.18.94.41",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "cdn.jsdelivr.net",
+        "ip": "151.101.129.229",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-WH3BBZP",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.googletagmanager.com",
+        "ip": "142.250.204.40",
+        "hostname": "hkg07s38-in-f8.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    }
+  ],
   "testError": true,
-  "errorReason": "HTTP 403 Error",
-  "errorDetails": {
-    "message": "HTTP 403 ",
-    "name": "Error",
-    "statusCode": "403",
-    "stack": "Error: HTTP 403 \n    at collectHARAndCanonical (/Users/Irvin/Coding/smc git/digital-service-resilience/no-global-connection-check.js:433:19)\n    at runNextTicks (node:internal/process/task_queues:64:5)\n    at process.processImmediate (node:internal/timers:472:9)\n    at async checkWebsiteResilience (/Users/Irvin/Coding/smc git/digital-service-resilience/no-global-connection-check.js:1031:41)\n    at async runWorker (/Users/Irvin/Coding/smc git/digital-service-resilience/batch-test.js:160:32)\n    at async Promise.all (index 3)\n    at async batchTest (/Users/Irvin/Coding/smc git/digital-service-resilience/batch-test.js:234:5)"
-  }
+  "errorReason": "Cloudflare Challenge",
+  "errorDetails": [
+    {
+      "originalUrl": "https://challenges.cloudflare.com/turnstile/v0/api.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "challenges.cloudflare.com",
+        "ip": "104.18.94.41",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    }
+  ]
 }

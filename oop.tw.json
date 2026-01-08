@@ -2,7 +2,7 @@
   "url": "https://oop.tw",
   "canonicalURL": "https://oop.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-06T21:01:11.746Z",
+  "timestamp": "2026-01-07T21:08:59.801Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,8 +25,8 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 4,
-  "uniqueDomains": 2,
+  "requestCount": 8,
+  "uniqueDomains": 3,
   "test_results": {
     "domestic": {
       "cloud": 0,
@@ -39,8 +39,23 @@
   },
   "domainDetails": [
     {
+      "originalUrl": "https://oop.tw/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "oop.tw",
+        "ip": "104.26.9.190",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
       "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css",
-      "type": "link",
+      "type": "stylesheet",
       "ipinfo": {
         "domain": "cdnjs.cloudflare.com",
         "ip": "104.17.25.14",
@@ -54,19 +69,11 @@
       "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://oop.tw/common.css?v=1",
-      "type": "link",
+      "originalUrl": "chrome-extension://invalid/",
+      "type": "script",
       "ipinfo": {
-        "domain": "oop.tw",
-        "ip": "172.67.75.111",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud"
+        "domain": "invalid"
+      }
     }
   ]
 }

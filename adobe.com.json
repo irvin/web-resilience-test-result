@@ -2,7 +2,7 @@
   "url": "https://adobe.com",
   "canonicalURL": "https://www.adobe.com/",
   "httpStatus": 200,
-  "timestamp": "2026-01-06T20:12:01.761Z",
+  "timestamp": "2026-01-07T20:14:06.011Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,11 +25,11 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 24,
-  "uniqueDomains": 2,
+  "requestCount": 18,
+  "uniqueDomains": 3,
   "test_results": {
     "domestic": {
-      "cloud": 0,
+      "cloud": 1,
       "direct": 1
     },
     "foreign": {
@@ -39,11 +39,27 @@
   },
   "domainDetails": [
     {
-      "originalUrl": "https://www.adobe.com/libs/utils/utils.js",
-      "type": "link",
+      "originalUrl": "https://adobe.com/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "adobe.com",
+        "ip": "203.69.138.209",
+        "hostname": "203-69-138-209.hinet-ip.hinet.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS20940 Akamai International B.V.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.adobe.com/",
+      "type": "document",
       "ipinfo": {
         "domain": "www.adobe.com",
-        "ip": "203.69.81.57",
+        "ip": "210.71.227.105",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -55,7 +71,7 @@
     },
     {
       "originalUrl": "https://adobeid-na1.services.adobe.com/ims/check/v6/token?jslVersion=v2-v0.48.0-1-g1e322cb",
-      "type": "xmlhttprequest",
+      "type": "xhr",
       "ipinfo": {
         "domain": "adobeid-na1.services.adobe.com",
         "ip": "172.66.0.163",

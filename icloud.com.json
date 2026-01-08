@@ -2,7 +2,7 @@
   "url": "https://icloud.com",
   "canonicalURL": "https://icloud.com",
   "httpStatus": 200,
-  "timestamp": "2026-01-05T19:40:32.629Z",
+  "timestamp": "2026-01-07T20:08:36.425Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,22 +25,38 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 12,
-  "uniqueDomains": 1,
+  "requestCount": 14,
+  "uniqueDomains": 4,
   "test_results": {
     "domestic": {
       "cloud": 1,
-      "direct": 0
+      "direct": 1
     },
     "foreign": {
       "cloud": 0,
-      "direct": 0
+      "direct": 1
     }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://www.icloud.com/system/icloud.com/2546Build34/en-us/main.js",
-      "type": "link",
+      "originalUrl": "https://icloud.com/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "icloud.com",
+        "ip": "17.253.144.10",
+        "hostname": "advertising.apple.com",
+        "city": "Cupertino",
+        "region": "California",
+        "country": "US",
+        "loc": "37.3230,-122.0322",
+        "org": "AS714 Apple Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/direct"
+    },
+    {
+      "originalUrl": "https://www.icloud.com/",
+      "type": "document",
       "ipinfo": {
         "domain": "www.icloud.com",
         "ip": "23.42.100.254",
@@ -53,6 +69,28 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://setup.icloud.com/setup/ws/1/validate?clientBuildNumber=2546Build54&clientMasteringNumber=2546Build54&clientId=1315a0f6-175b-4032-9efb-143e94e0e6ea&requestId=f5aad90e-834b-450e-b545-b9cac57efce8",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "setup.icloud.com",
+        "ip": "17.248.223.65",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS714 Apple Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "blob:https://www.icloud.com/82871490-1df4-431f-87a6-b45b542df991",
+      "type": "image",
+      "ipinfo": {
+        "domain": ""
+      }
     }
   ]
 }

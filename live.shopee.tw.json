@@ -2,7 +2,7 @@
   "url": "https://live.shopee.tw",
   "canonicalURL": "https://live.shopee.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-05T20:35:42.159Z",
+  "timestamp": "2026-01-07T21:39:51.774Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,22 +25,37 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 7,
-  "uniqueDomains": 2,
+  "requestCount": 9,
+  "uniqueDomains": 4,
   "test_results": {
     "domestic": {
       "cloud": 1,
-      "direct": 1
+      "direct": 0
     },
     "foreign": {
       "cloud": 0,
-      "direct": 0
+      "direct": 2
     }
   },
   "domainDetails": [
     {
+      "originalUrl": "https://live.shopee.tw/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "live.shopee.tw",
+        "ip": "143.92.75.63",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS138341 SHOPEE SINGAPORE PRIVATE LIMITED",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/direct"
+    },
+    {
       "originalUrl": "https://cdngarenanow-a.akamaihd.net/shopee/shopee-livestreaming-live-tw/static/css/main.5736d5a7.css",
-      "type": "link",
+      "type": "stylesheet",
       "ipinfo": {
         "domain": "cdngarenanow-a.akamaihd.net",
         "ip": "203.69.138.209",
@@ -56,18 +71,25 @@
     },
     {
       "originalUrl": "https://mall.shopee.tw/api/v2/user/login_status",
-      "type": "xmlhttprequest",
+      "type": "xhr",
       "ipinfo": {
         "domain": "mall.shopee.tw",
-        "ip": "103.117.4.112",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS131623 SHOPEE (TAIWAN) CO. LTD.",
-        "timezone": "Asia/Taipei"
+        "ip": "202.181.90.201",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS138341 SHOPEE SINGAPORE PRIVATE LIMITED",
+        "timezone": "Asia/Singapore"
       },
-      "category": "domestic/direct"
+      "category": "foreign/direct"
+    },
+    {
+      "originalUrl": "blob:https://live.shopee.tw/ad1da9ea-99dc-414b-a1e8-af0e074402c4",
+      "type": "other",
+      "ipinfo": {
+        "domain": ""
+      }
     }
   ]
 }
