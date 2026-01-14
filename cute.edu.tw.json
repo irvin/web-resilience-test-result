@@ -2,12 +2,11 @@
   "url": "https://cute.edu.tw",
   "canonicalURL": "https://cute.edu.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T21:36:32.370Z",
+  "timestamp": "2026-01-14T02:46:18.076Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 85,
+  "requestCount": 89,
   "uniqueDomains": 7,
   "test_results": {
     "domestic": {
-      "cloud": 4,
+      "cloud": 5,
       "direct": 1
     },
     "foreign": {
-      "cloud": 2,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -59,8 +58,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -75,8 +74,8 @@
       "type": "image",
       "ipinfo": {
         "domain": "imgcdn.cna.com.tw",
-        "ip": "203.66.32.106",
-        "hostname": "203-66-32-106.hinet-ip.hinet.net",
+        "ip": "203.66.32.198",
+        "hostname": "203-66-32-198.hinet-ip.hinet.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -91,7 +90,7 @@
       "type": "image",
       "ipinfo": {
         "domain": "pgw.udn.com.tw",
-        "ip": "104.18.4.34",
+        "ip": "104.18.5.34",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -99,7 +98,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9cd4cf8ddb846-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://m.cute.edu.tw/Campusbulletinboard/webshownews.aspx?option=1&showCategory=A",
@@ -118,27 +122,12 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css",
-      "type": "stylesheet",
-      "ipinfo": {
-        "domain": "code.jquery.com",
-        "ip": "151.101.130.137",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-P3916EEBFK&cid=1460252895.1767821790&gtm=45je6151v873951608za20g&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115583767~115938466~115938469~116514483&z=1044380380",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-P3916EEBFK&cid=821122314.1768358776&gtm=45je61c1v873951608za20g&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115938466~115938469~116682876~117041587~117091818&z=1535372660",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "ip": "142.250.77.3",
+        "hostname": "nctsaa-ab-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -147,6 +136,25 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css",
+      "type": "stylesheet",
+      "ipinfo": {
+        "domain": "code.jquery.com",
+        "ip": "151.101.66.137",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 34.666,
+        "detection_method": "rtt"
+      }
     }
   ]
 }

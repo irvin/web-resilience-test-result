@@ -2,12 +2,11 @@
   "url": "https://gimytv.tw",
   "canonicalURL": "https://gimytv.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T22:01:42.873Z",
+  "timestamp": "2026-01-14T03:31:33.886Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,16 +24,16 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 60,
+  "requestCount": 57,
   "uniqueDomains": 6,
   "test_results": {
     "domestic": {
-      "cloud": 1,
-      "direct": 0
+      "cloud": 2,
+      "direct": 1
     },
     "foreign": {
-      "cloud": 3,
-      "direct": 2
+      "cloud": 2,
+      "direct": 1
     }
   },
   "domainDetails": [
@@ -51,22 +50,11 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://netdown.jsyunjihui.com/20251771.jpg",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "netdown.jsyunjihui.com",
-        "ip": "119.36.225.182",
-        "city": "Wuhan",
-        "region": "Hubei",
-        "country": "CN",
-        "loc": "30.5833,114.2667",
-        "org": "AS4837 CHINA UNICOM China169 Backbone",
-        "timezone": "Asia/Shanghai"
-      },
-      "category": "foreign/direct"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 136.36,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-KMWNBF287N",
@@ -97,10 +85,29 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 134.218,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "https://img.avdb.me/chinaq/upload/vod/20260106-1/432e84ea95ad32c0b033a226616bfee5.jpg",
+      "originalUrl": "https://m.ykimg.com/050E00005729A660000000195504CDFC",
+      "type": "image",
+      "ipinfo": {
+        "domain": "m.ykimg.com",
+        "ip": "155.102.184.181",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS24429 Zhejiang Taobao Network Co.,Ltd",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://img.avdb.me/chinaq/upload/vod/20251227-1/626823ef89dad5f6859a68636803cf3d.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "img.avdb.me",
@@ -112,20 +119,24 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda0f9689984a91-TPE",
+        "detection_method": "header"
+      }
     },
     {
-      "originalUrl": "https://imgwolong.com/upload/vod/20251222-1/a72774ec077e69a257b358e58d0cd752.jpg",
+      "originalUrl": "https://pic3.yzzyimg.online/upload/vod/2026-01-01/202601011767245505.jpg",
       "type": "image",
       "ipinfo": {
-        "domain": "imgwolong.com",
-        "ip": "64.112.79.71",
-        "hostname": "customer.tatraservices.com",
-        "city": "Fremont",
+        "domain": "pic3.yzzyimg.online",
+        "ip": "216.180.225.93",
+        "city": "Los Angeles",
         "region": "California",
         "country": "US",
-        "loc": "37.5483,-121.9886",
-        "org": "AS6939 Hurricane Electric LLC",
+        "loc": "34.0522,-118.2437",
+        "org": "AS47191 blue tech technology Co., Limited",
         "timezone": "America/Los_Angeles"
       },
       "category": "foreign/direct"

@@ -2,12 +2,11 @@
   "url": "https://www.pcc.gov.tw/",
   "canonicalURL": "https://www.pcc.gov.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:24:50.625Z",
+  "timestamp": "2026-01-14T01:32:32.611Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 74,
-  "uniqueDomains": 8,
+  "requestCount": 59,
+  "uniqueDomains": 6,
   "test_results": {
     "domestic": {
-      "cloud": 1,
-      "direct": 4
+      "cloud": 3,
+      "direct": 2
     },
     "foreign": {
-      "cloud": 3,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -59,7 +58,7 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "cdnjs.cloudflare.com",
-        "ip": "104.17.24.14",
+        "ip": "104.17.25.14",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -67,7 +66,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9613da8f0a9b6-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://connect.facebook.net/zh_TW/sdk.js",
@@ -90,22 +94,26 @@
       "type": "script",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "104.16.175.226",
+        "ip": "151.101.129.229",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
         "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
+        "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 35.376,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-beta1/js/bootstrap.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "maxcdn.bootstrapcdn.com",
-        "ip": "104.18.10.207",
+        "ip": "104.18.11.207",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -113,10 +121,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.48,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "https://www.facebook.com/v14.0/plugins/page.php?adapt_container_width=true&app_id=&channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Dff0e69ed6c83802bf%26domain%3Dwww.pcc.gov.tw%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.pcc.gov.tw%252Ff8d961c2866840b42%26relation%3Dparent.parent&container_width=437&height=500&hide_cover=false&href=https%3A%2F%2Fwww.facebook.com%2Fey.pcc%3Fref%3Dembed_page&locale=zh_TW&sdk=joey&show_facepile=true&small_header=false&tabs=timeline&width=500",
+      "originalUrl": "https://www.facebook.com/v14.0/plugins/page.php?adapt_container_width=true&app_id=&channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Dfd88b407e762a7a60%26domain%3Dwww.pcc.gov.tw%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.pcc.gov.tw%252Ffcd4d1879efd7732a%26relation%3Dparent.parent&container_width=437&height=500&hide_cover=false&href=https%3A%2F%2Fwww.facebook.com%2Fey.pcc%3Fref%3Dembed_page&locale=zh_TW&sdk=joey&show_facepile=true&small_header=false&tabs=timeline&width=500",
       "type": "document",
       "ipinfo": {
         "domain": "www.facebook.com",
@@ -127,38 +140,6 @@
         "country": "TW",
         "loc": "25.0531,121.5264",
         "org": "AS32934 Facebook, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/direct"
-    },
-    {
-      "originalUrl": "https://static.xx.fbcdn.net/rsrc.php/v5/yr/l/1,cross/nbtmliI11We.css",
-      "type": "stylesheet",
-      "ipinfo": {
-        "domain": "static.xx.fbcdn.net",
-        "ip": "31.13.87.5",
-        "hostname": "xx-fbcdn-shv-01-tpe1.fbcdn.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS32934 Facebook, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/direct"
-    },
-    {
-      "originalUrl": "https://scontent.ftpe7-1.fna.fbcdn.net/v/t39.30808-1/277584100_351311343684486_4935776221790515628_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=110&ccb=1-7&_nc_sid=f907e8&_nc_ohc=629w97-fMA4Q7kNvwFTZM5T&_nc_oc=Adk2-Ay9ud2LN6gaw0zJmaMv0U5QI6vwmtOwT44PoGekHLb61A3Zf08mypXtHl8bwqbBMUEWbehuA8Jo_7HtgrfT&_nc_zt=24&_nc_ht=scontent.ftpe7-1.fna&edm=AGeEj18EAAAA&_nc_gid=V15vr7Ux5KN677CbLy_cYA&oh=00_AfqD1l9cHFkxpAKjfn_yODnt8UAHqA5y_JO79_jrsm5uvQ&oe=69649E50",
-      "type": "image",
-      "ipinfo": {
-        "domain": "scontent.ftpe7-1.fna.fbcdn.net",
-        "ip": "203.74.65.17",
-        "hostname": "203-74-65-17.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"

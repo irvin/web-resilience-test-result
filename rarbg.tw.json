@@ -2,12 +2,11 @@
   "url": "https://rarbg.tw",
   "canonicalURL": "https://rarbg.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T22:02:29.506Z",
+  "timestamp": "2026-01-14T03:32:14.499Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 27,
-  "uniqueDomains": 3,
+  "requestCount": 20,
+  "uniqueDomains": 2,
   "test_results": {
     "domestic": {
       "cloud": 0,
       "direct": 0
     },
     "foreign": {
-      "cloud": 3,
+      "cloud": 2,
       "direct": 0
     }
   },
@@ -43,21 +42,6 @@
       "type": "document",
       "ipinfo": {
         "domain": "rarbg.tw",
-        "ip": "104.21.35.93",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://ww3.rarbg.tw/",
-      "type": "document",
-      "ipinfo": {
-        "domain": "ww3.rarbg.tw",
         "ip": "172.67.217.12",
         "city": "San Francisco",
         "region": "California",
@@ -66,14 +50,18 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 142.209,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "https://keetsea5o2na8lwia4ccbwsug1e.com/f7/50/fb/f750fbf9f9cb20affeb0f97d1998d79c.js",
-      "type": "script",
+      "originalUrl": "https://ww4.rarbg.tw/",
+      "type": "document",
       "ipinfo": {
-        "domain": "keetsea5o2na8lwia4ccbwsug1e.com",
-        "ip": "172.67.168.87",
+        "domain": "ww4.rarbg.tw",
+        "ip": "104.21.35.93",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -81,7 +69,11 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 134.486,
+        "detection_method": "rtt"
+      }
     }
   ]
 }

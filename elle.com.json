@@ -2,12 +2,11 @@
   "url": "https://elle.com",
   "canonicalURL": "https://www.elle.com/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:09:17.284Z",
+  "timestamp": "2026-01-14T01:08:16.963Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,16 +24,16 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 195,
-  "uniqueDomains": 16,
+  "requestCount": 188,
+  "uniqueDomains": 14,
   "test_results": {
     "domestic": {
-      "cloud": 4,
+      "cloud": 7,
       "direct": 1
     },
     "foreign": {
-      "cloud": 10,
-      "direct": 1
+      "cloud": 6,
+      "direct": 0
     }
   },
   "domainDetails": [
@@ -43,7 +42,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "elle.com",
-        "ip": "151.101.0.155",
+        "ip": "151.101.192.155",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -51,13 +50,56 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 34.966,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.elle.com/",
       "type": "document",
       "ipinfo": {
         "domain": "www.elle.com",
+        "ip": "146.75.44.155",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 48.891,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "cdn.cookielaw.org",
+        "ip": "104.18.86.42",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd93dafeded8451-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://hips.hearstapps.com/hmg-prod/images/000188830023-69657198290b6.jpg?crop=1.00xw:0.332xh;0,0.516xh&resize=1120:*",
+      "type": "image",
+      "ipinfo": {
+        "domain": "hips.hearstapps.com",
         "ip": "199.232.112.155",
         "city": "Singapore",
         "region": "Singapore",
@@ -66,30 +108,19 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "cdn.cookielaw.org",
-        "ip": "104.18.87.42",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 48.842,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://sb.scorecardresearch.com/beacon.js",
       "type": "script",
       "ipinfo": {
         "domain": "sb.scorecardresearch.com",
-        "ip": "3.169.137.32",
-        "hostname": "server-3-169-137-32.tpe54.r.cloudfront.net",
+        "ip": "3.169.137.94",
+        "hostname": "server-3-169-137-94.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -98,36 +129,6 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://hips.hearstapps.com/hmg-prod/images/2417ca49-b7a2-4165-ab3c-c206cd0cc477.jpg?crop=1xw:0.43xh;0xw,0.251xh&resize=1120:*",
-      "type": "image",
-      "ipinfo": {
-        "domain": "hips.hearstapps.com",
-        "ip": "146.75.44.155",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://static-assets.hearstapps.com/design-tokens/manifest.json",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "static-assets.hearstapps.com",
-        "ip": "146.75.44.155",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
@@ -142,7 +143,31 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd93db0a87dae64-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://static-assets.hearstapps.com/design-tokens/manifest.json",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "static-assets.hearstapps.com",
+        "ip": "199.232.112.155",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 49.085,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://assets.hearstapps.com/commerce/release/affiliate-bundle.8.6.8.js",
@@ -157,7 +182,11 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 49.034,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://jam.hearstapps.com/rules/match/530bacd4-96b2-4cfe-a9a6-1fbd7c749e22?collections=%5B%5D&countryCode=TW&deviceType=desktop&displayType=undefined&entitlements=%5B%5D&excludePaywall=true&GDPR=NA&jamAb=undefined&journeyCampaign=null&path=%2F&isLanding=true&referrer=&section=home-page&signedIn=false&sponsored=false&subsection=undefined&tags=%5B%5D&themes=%5B%5D&contentId=undefined",
@@ -172,31 +201,19 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://accounts.google.com/gsi/client",
-      "type": "script",
-      "ipinfo": {
-        "domain": "accounts.google.com",
-        "ip": "64.233.188.84",
-        "hostname": "tk-in-f84.1e100.net",
-        "city": "Taichung",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "24.1469,120.6839",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 48.947,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-BTTN4BQHSS",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -220,7 +237,12 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.347,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
@@ -239,12 +261,28 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-BTTN4BQHSS&cid=1714402209.1767816554&gtm=45je6151v892600123za200zd892600123&aip=1&dma=0&gcs=G111&gcd=13t3t3t3t5l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115616985~115938465~115938468~116184924~116184926~116514482&z=522807475",
+      "originalUrl": "https://accounts.google.com/gsi/client",
+      "type": "script",
+      "ipinfo": {
+        "domain": "accounts.google.com",
+        "ip": "142.251.8.84",
+        "hostname": "tb-in-f84.1e100.net",
+        "city": "Chang-hua",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.0733,120.5628",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-BTTN4BQHSS&cid=365309494.1768352894&gtm=45je61c1v892600123za200zd892600123&aip=1&dma=0&gcs=G111&gcd=13t3t3t3t5l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115938465~115938469~116744867~117041587&z=992748544",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.204.35",
-        "hostname": "hkg07s38-in-f3.1e100.net",
+        "ip": "142.250.198.67",
+        "hostname": "lctsaa-ab-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -253,37 +291,6 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://cdn.parsely.com/keys/elle.com/p.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "cdn.parsely.com",
-        "ip": "192.0.66.2",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7749,-122.4194",
-        "org": "AS2635 Automattic, Inc",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/direct"
-    },
-    {
-      "originalUrl": "https://p1.parsely.com/px/?rand=1767816556120&plid=b9a20b92-758e-479b-838d-09c9145dfef8&idsite=elle.com&url=https%3A%2F%2Fwww.elle.com%2F&urlref=&screen=1280x720%7C1280x720%7C24&data=%7B%22login_status%22%3A%22not_logged_in%22%2C%22membership_status%22%3A%22member%22%2C%22parsely%3Ametadata-detection%22%3A%7B%22version%22%3A0%2C%22url%22%3A%22https%3A%2F%2Fwww.elle.com%2F%22%2C%22hash%22%3A811819326%7D%7D&sid=1&surl=https%3A%2F%2Fwww.elle.com%2F&sref=&sts=1767816556117&slts=0&title=Fashion+Magazine+-+Beauty+Tips%2C+Fashion+Trends%2C+%26+Celebrity+News+-+ELLE&date=Thu+Jan+08+2026+04%3A09%3A16+GMT%2B0800+(Taipei+Standard+Time)&action=pageview&pvid=bdba2b1a-a542-43a5-bac6-48c4042d1094&u=pid%3D5b3a72dc-b254-421a-a0e5-0fcaded6f581",
-      "type": "image",
-      "ipinfo": {
-        "domain": "p1.parsely.com",
-        "ip": "52.27.163.48",
-        "hostname": "ec2-52-27-163-48.us-west-2.compute.amazonaws.com",
-        "city": "Boardman",
-        "region": "Oregon",
-        "country": "US",
-        "loc": "45.8399,-119.7006",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud"
     }
   ]
 }

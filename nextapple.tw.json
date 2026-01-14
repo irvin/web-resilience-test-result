@@ -2,12 +2,11 @@
   "url": "https://nextapple.tw",
   "canonicalURL": "https://nextapple.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T21:29:09.390Z",
+  "timestamp": "2026-01-14T02:37:56.521Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -29,11 +28,11 @@
   "uniqueDomains": 3,
   "test_results": {
     "domestic": {
-      "cloud": 0,
-      "direct": 2
+      "cloud": 2,
+      "direct": 1
     },
     "foreign": {
-      "cloud": 1,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -52,18 +51,24 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.468,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://img1.wsimg.com/ceph-p3-01/website-builder-data-prod/static/widgets/UX.4.45.1.js",
       "type": "script",
       "ipinfo": {
         "domain": "img1.wsimg.com",
-        "ip": "210.71.227.211",
-        "city": "Taipei",
+        "ip": "203.74.95.72",
+        "hostname": "203-74-95-72.hinet-ip.hinet.net",
+        "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.1469,120.6839",
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
@@ -74,15 +79,16 @@
       "type": "media",
       "ipinfo": {
         "domain": "websites.godaddy.com",
-        "ip": "210.71.227.200",
-        "city": "Taipei",
+        "ip": "210.61.249.25",
+        "hostname": "210-61-249-25.hinet-ip.hinet.net",
+        "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS3462 Data Communication Business Group",
+        "loc": "24.1469,120.6839",
+        "org": "AS20940 Akamai International B.V.",
         "timezone": "Asia/Taipei"
       },
-      "category": "domestic/direct"
+      "category": "domestic/cloud"
     }
   ]
 }

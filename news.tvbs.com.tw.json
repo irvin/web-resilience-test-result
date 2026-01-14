@@ -2,12 +2,11 @@
   "url": "https://news.tvbs.com.tw",
   "canonicalURL": "https://news.tvbs.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:09:22.722Z",
+  "timestamp": "2026-01-14T01:08:27.921Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 235,
+  "requestCount": 201,
   "uniqueDomains": 17,
   "test_results": {
     "domestic": {
-      "cloud": 11,
+      "cloud": 14,
       "direct": 1
     },
     "foreign": {
-      "cloud": 5,
+      "cloud": 2,
       "direct": 0
     }
   },
@@ -107,8 +106,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.gstatic.com",
-        "ip": "142.250.66.67",
-        "hostname": "hkg12s27-in-f3.1e100.net",
+        "ip": "142.250.204.35",
+        "hostname": "hkg07s38-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -123,8 +122,8 @@
       "type": "image",
       "ipinfo": {
         "domain": "i.ytimg.com",
-        "ip": "142.250.198.86",
-        "hostname": "lctsaa-ab-in-f22.1e100.net",
+        "ip": "142.250.196.214",
+        "hostname": "nctsaa-ac-in-f22.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -147,29 +146,17 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 34.094,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://ampcid.google.com/v1/publisher:getClientId?key=AIzaSyA65lEHUEizIsNtlbNo-l2K18dT680nsaM",
       "type": "xhr",
       "ipinfo": {
         "domain": "ampcid.google.com",
-        "ip": "142.250.196.206",
-        "hostname": "nctsaa-ac-in-f14.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://fundingchoicesmessages.google.com/i/21697024903?ers=3",
-      "type": "script",
-      "ipinfo": {
-        "domain": "fundingchoicesmessages.google.com",
         "ip": "142.250.204.46",
         "hostname": "hkg07s38-in-f14.1e100.net",
         "city": "Banqiao",
@@ -210,14 +197,19 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd93dfdc87d826a-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "151.101.193.229",
+        "ip": "151.101.1.229",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -225,13 +217,19 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd93dfd2a5c4a6a-TPE",
+        "x-served-by": "cache-fra-eddf8230076-FRA, cache-hkg17925-HKG",
+        "detection_method": "header"
+      }
     },
     {
-      "originalUrl": "https://ampcid.google.com.tw/v1/publisher:getClientId?key=AIzaSyA65lEHUEizIsNtlbNo-l2K18dT680nsaM",
-      "type": "xhr",
+      "originalUrl": "https://fundingchoicesmessages.google.com/i/pub-9113503962104695?ers=1",
+      "type": "script",
       "ipinfo": {
-        "domain": "ampcid.google.com.tw",
+        "domain": "fundingchoicesmessages.google.com",
         "ip": "142.250.196.206",
         "hostname": "nctsaa-ac-in-f14.1e100.net",
         "city": "Banqiao",
@@ -244,28 +242,12 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://tagging.tvbs.com.tw/g/collect?v=2&tid=G-B8E0BLEGRH&gtm=45je6151v888492353z8811264440za20gzb811264440zd811264440&_p=1767816560786&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1758057705.1767816561&ecid=236162577&ul=en-us&sr=1280x720&_fplc=0&ir=1&ur=TW-TPQ&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=EA&sst.etld=google.com.tw&sst.tft=1767816560786&sst.lpc=104187679&sst.navt=n&sst.ude=0&sst.sw_exp=1&_s=1&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115938465~115938468~116744866&sid=1767816561&sct=1&seg=0&dl=https%3A%2F%2Fnews.tvbs.com.tw%2F&dt=TVBS%E6%96%B0%E8%81%9E%E7%B6%B2&_tu=DA&en=page_view&_fv=1&_ss=2&tfd=1189&richsstsse",
-      "type": "fetch",
+      "originalUrl": "https://ampcid.google.com.tw/v1/publisher:getClientId?key=AIzaSyA65lEHUEizIsNtlbNo-l2K18dT680nsaM",
+      "type": "xhr",
       "ipinfo": {
-        "domain": "tagging.tvbs.com.tw",
-        "ip": "216.239.32.21",
-        "hostname": "any-in-2015.1e100.net",
-        "city": "Mountain View",
-        "region": "California",
-        "country": "US",
-        "loc": "38.0088,-122.1175",
-        "org": "AS15169 Google LLC",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://www.google.com/pagead/1p-user-list/711931748/?random=1767816561117&cv=11&fst=1767816000000&bg=ffffff&guid=ON&async=1&gtm=45be6151v9200592570z8811264440za20gzb811264440zd811264440xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115583767~115938465~115938469~116744866&u_w=1280&u_h=720&url=https%3A%2F%2Fnews.tvbs.com.tw%2F&frm=0&tiba=TVBS%E6%96%B0%E8%81%9E%E7%B6%B2&hn=www.googleadservices.com&npa=0&pscdl=noapi&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&_tu=CA&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEAwksa0Xf8EMYsX-mpR3qOomKnAbqBSU0rnlmqvcA9dvkHPF5x3n-EIddvZxwSQM8LWD7cDMj7TWJjJBYDCY8FZvhCMnPMw_4xOfffW5PVO3Cj_wXfREqjgvBJj7bnCbD5-mWpcchdQxeA4m2yCAgCzN6sPhXa_fPEsOQPS1fkoBbeDuz_ZIVwcPI_&random=2178768739&rmt_tld=0&ipr=y",
-      "type": "image",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.198.68",
-        "hostname": "lctsaa-ab-in-f4.1e100.net",
+        "domain": "ampcid.google.com.tw",
+        "ip": "142.250.204.46",
+        "hostname": "hkg07s38-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -276,12 +258,49 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/711931748/?random=1767816561117&cv=11&fst=1767816000000&bg=ffffff&guid=ON&async=1&gtm=45be6151v9200592570z8811264440za20gzb811264440zd811264440xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115583767~115938465~115938469~116744866&u_w=1280&u_h=720&url=https%3A%2F%2Fnews.tvbs.com.tw%2F&frm=0&tiba=TVBS%E6%96%B0%E8%81%9E%E7%B6%B2&hn=www.googleadservices.com&npa=0&pscdl=noapi&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&_tu=CA&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEAwksa0Xf8EMYsX-mpR3qOomKnAbqBSU0rnlmqvcA9dvkHPF5x3n-EIddvZxwSQM8LWD7cDMj7TWJjJBYDCY8FZvhCMnPMw_4xOfffW5PVO3Cj_wXfREqjgvBJj7bnCbD5-mWpcchdQxeA4m2yCAgCzN6sPhXa_fPEsOQPS1fkoBbeDuz_ZIVwcPI_&random=2178768739&rmt_tld=1&ipr=y",
+      "originalUrl": "https://tagging.tvbs.com.tw/g/collect?v=2&tid=G-B8E0BLEGRH&gtm=45je61c1v888492353z8811264440za20gzb811264440zd811264440&_p=1768352905585&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1804088671.1768352906&ecid=690036338&ul=en-us&sr=1280x720&_fplc=0&ir=1&ur=TW-TPQ&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=EA&sst.etld=google.com.tw&sst.tft=1768352905585&sst.lpc=104187679&sst.navt=n&sst.ude=0&sst.sw_exp=1&_s=1&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115938466~115938468~117041588&sid=1768352905&sct=1&seg=0&dl=https%3A%2F%2Fnews.tvbs.com.tw%2F&dt=TVBS%E6%96%B0%E8%81%9E%E7%B6%B2&_tu=DA&en=page_view&_fv=1&_nsi=1&_ss=2&tfd=1083&richsstsse",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "tagging.tvbs.com.tw",
+        "ip": "216.239.36.21",
+        "hostname": "any-in-2415.1e100.net",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.472,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://www.google.com/pagead/1p-user-list/711931748/?random=1768352905867&cv=11&fst=1768352400000&bg=ffffff&guid=ON&async=1&gtm=45be61c1v9200592570z8811264440za20gzb811264440zd811264440xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115938466~115938469~117041588&u_w=1280&u_h=720&url=https%3A%2F%2Fnews.tvbs.com.tw%2F&frm=0&tiba=TVBS%E6%96%B0%E8%81%9E%E7%B6%B2&hn=www.googleadservices.com&npa=0&pscdl=noapi&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&_tu=CA&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEA56J1eRrXYUQmBZQnyZNFnpAqLCqN0V2HIek8z2wnF8NYClkSLZQzJXt-vyPpUTftF8U4Z2te6_odeoVecYYmqDK1J7nJYh8LXtUdZCniFWvRcnf7-qcH1vGyynd771oaFkfcCc99OLWr0T3UgENO5_JDKkBkY-F7VSCZE2xcN_plhHHqRDMfuyG7&random=4010158855&rmt_tld=0&ipr=y",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.250.204.36",
+        "hostname": "hkg07s38-in-f4.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/711931748/?random=1768352905867&cv=11&fst=1768352400000&bg=ffffff&guid=ON&async=1&gtm=45be61c1v9200592570z8811264440za20gzb811264440zd811264440xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115938466~115938469~117041588&u_w=1280&u_h=720&url=https%3A%2F%2Fnews.tvbs.com.tw%2F&frm=0&tiba=TVBS%E6%96%B0%E8%81%9E%E7%B6%B2&hn=www.googleadservices.com&npa=0&pscdl=noapi&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&_tu=CA&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEA56J1eRrXYUQmBZQnyZNFnpAqLCqN0V2HIek8z2wnF8NYClkSLZQzJXt-vyPpUTftF8U4Z2te6_odeoVecYYmqDK1J7nJYh8LXtUdZCniFWvRcnf7-qcH1vGyynd771oaFkfcCc99OLWr0T3UgENO5_JDKkBkY-F7VSCZE2xcN_plhHHqRDMfuyG7&random=4010158855&rmt_tld=1&ipr=y",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.66.67",
-        "hostname": "hkg12s27-in-f3.1e100.net",
+        "ip": "142.250.204.35",
+        "hostname": "hkg07s38-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -304,7 +323,11 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 44.172,
+        "detection_method": "rtt"
+      }
     }
   ]
 }

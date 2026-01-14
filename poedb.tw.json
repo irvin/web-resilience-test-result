@@ -2,12 +2,11 @@
   "url": "https://poedb.tw",
   "canonicalURL": "https://poedb.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:15:15.907Z",
+  "timestamp": "2026-01-14T01:16:21.938Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 123,
+  "requestCount": 136,
   "uniqueDomains": 8,
   "test_results": {
     "domestic": {
-      "cloud": 2,
+      "cloud": 5,
       "direct": 0
     },
     "foreign": {
-      "cloud": 6,
+      "cloud": 3,
       "direct": 0
     }
   },
@@ -43,7 +42,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "poedb.tw",
-        "ip": "172.67.218.74",
+        "ip": "104.21.38.30",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -51,14 +50,18 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 142.291,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "cdnjs.cloudflare.com",
-        "ip": "104.17.24.14",
+        "ip": "104.17.25.14",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -66,7 +69,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd949863cce8457-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://cdn.jsdelivr.net/npm/modal-video@2.4.6/css/modal-video.min.css",
@@ -81,14 +89,20 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd949870bf08a97-TPE",
+        "x-served-by": "cache-fra-eddf8230124-FRA, cache-nrt-rjtf7700050-NRT",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://cdn.poedb.tw/css/stdtheme.e7d72672bdd0bf8f.css",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "cdn.poedb.tw",
-        "ip": "104.21.38.30",
+        "ip": "172.67.218.74",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -96,15 +110,19 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 136.904,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-3B810SRKBH",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.77.8",
-        "hostname": "nctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -119,8 +137,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "ats-wrapper.privacymanager.io",
-        "ip": "3.169.121.9",
-        "hostname": "server-3-169-121-9.tpe53.r.cloudfront.net",
+        "ip": "3.169.121.41",
+        "hostname": "server-3-169-121-41.tpe53.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -143,23 +161,27 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 145.429,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://geo.privacymanager.io/",
       "type": "fetch",
       "ipinfo": {
         "domain": "geo.privacymanager.io",
-        "ip": "18.165.140.24",
-        "hostname": "server-18-165-140-24.hel51.r.cloudfront.net",
-        "city": "Helsinki",
-        "region": "Uusimaa",
-        "country": "FI",
-        "loc": "60.1695,24.9354",
+        "ip": "3.169.137.86",
+        "hostname": "server-3-169-137-86.tpe54.r.cloudfront.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
         "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Europe/Helsinki"
+        "timezone": "Asia/Taipei"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud"
     }
   ]
 }

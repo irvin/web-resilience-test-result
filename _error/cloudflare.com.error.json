@@ -2,7 +2,7 @@
   "url": "https://cloudflare.com",
   "canonicalURL": "https://www.cloudflare.com/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:08:19.859Z",
+  "timestamp": "2026-01-14T11:53:19.984Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -14,8 +14,8 @@
     "hasIPinfoToken": true
   },
   "testingEnvironment": {
-    "ip": "220.132.212.194",
-    "hostname": "220-132-212-194.hinet-ip.hinet.net",
+    "ip": "220.136.159.93",
+    "hostname": "220-136-159-93.dynamic-ip.hinet.net",
     "city": "Banqiao",
     "region": "Taipei",
     "country": "TW",
@@ -25,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 153,
-  "uniqueDomains": 10,
+  "requestCount": 137,
+  "uniqueDomains": 6,
   "test_results": {
     "domestic": {
-      "cloud": 2,
-      "direct": 1
+      "cloud": 5,
+      "direct": 0
     },
     "foreign": {
-      "cloud": 6,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -43,7 +43,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "cloudflare.com",
-        "ip": "104.16.132.229",
+        "ip": "104.16.133.229",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -51,7 +51,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bdceea0af5556ef-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.cloudflare.com/",
@@ -66,7 +71,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bdceea0e9eab846-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://cf-assets.www.cloudflare.com/dzlvafdwdttg/69wNwfiY5mFmgpd9eQFW6j/d5131c08085a977aa70f19e7aada3fa9/1pixel-down__1_.svg",
@@ -81,7 +91,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bdceea3b852b846-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://challenges.cloudflare.com/turnstile/v0/api.js",
@@ -96,7 +111,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bdceea42be66a86-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://ot.www.cloudflare.com/ot/scripttemplates/otSDKStub.js",
@@ -111,76 +131,19 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bdceea41935b846-TPE",
+        "detection_method": "header"
+      }
     },
     {
-      "originalUrl": "blob:https://challenges.cloudflare.com/4a7345a2-ffc1-4c5f-a06f-993af92382eb",
+      "originalUrl": "blob:https://challenges.cloudflare.com/be01e3cf-584a-4654-bbff-adef6b539c0e",
       "type": "other",
       "ipinfo": {
         "domain": ""
       }
-    },
-    {
-      "originalUrl": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "snap.licdn.com",
-        "ip": "203.69.81.48",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS3462 Data Communication Business Group",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/direct"
-    },
-    {
-      "originalUrl": "https://js.qualified.com/qualified.js?token=37pXYrro6wCZbsU7",
-      "type": "script",
-      "ipinfo": {
-        "domain": "js.qualified.com",
-        "ip": "104.18.17.5",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-NDGPDFZ",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.googletagmanager.com",
-        "ip": "142.250.77.8",
-        "hostname": "nctsaa-ab-in-f8.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://assets.adobedtm.com/f597f8065f97/1b1bbc99cd1a/launch-27d26806890f.min.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "assets.adobedtm.com",
-        "ip": "23.39.61.29",
-        "hostname": "a23-39-61-29.deploy.static.akamaitechnologies.com",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16625 Akamai Technologies, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
     }
   ],
   "testError": true,
@@ -199,10 +162,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bdceea42be66a86-TPE",
+        "detection_method": "header"
+      }
     },
     {
-      "originalUrl": "blob:https://challenges.cloudflare.com/4a7345a2-ffc1-4c5f-a06f-993af92382eb",
+      "originalUrl": "blob:https://challenges.cloudflare.com/be01e3cf-584a-4654-bbff-adef6b539c0e",
       "type": "other",
       "ipinfo": {
         "domain": ""

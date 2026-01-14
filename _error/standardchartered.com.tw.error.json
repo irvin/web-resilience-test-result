@@ -1,8 +1,8 @@
 {
   "url": "https://standardchartered.com.tw",
   "canonicalURL": "https://standardchartered.com.tw",
-  "httpStatus": null,
-  "timestamp": "2026-01-05T23:36:37.512Z",
+  "httpStatus": 403,
+  "timestamp": "2026-01-14T13:00:24.698Z",
   "testParameters": {
     "customDNS": null,
     "useAdblock": true,
@@ -17,11 +17,9 @@
   "requestCount": 0,
   "uniqueDomains": 0,
   "testError": true,
-  "errorReason": "Error: Error",
+  "errorReason": "HTTP 403 Error",
   "errorDetails": {
-    "message": "page.goto: net::ERR_CONNECTION_REFUSED at https://standardchartered.com.tw/\nCall log:\n\u001b[2m  - navigating to \"https://standardchartered.com.tw/\", waiting until \"domcontentloaded\"\u001b[22m\n",
-    "name": "Error",
-    "statusCode": null,
-    "stack": "page.goto: net::ERR_CONNECTION_REFUSED at https://standardchartered.com.tw/\nCall log:\n\u001b[2m  - navigating to \"https://standardchartered.com.tw/\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at collectHARAndCanonical (/Users/Irvin/Coding/smc git/digital-service-resilience/no-global-connection-check.js:416:37)\n    at async checkWebsiteResilience (/Users/Irvin/Coding/smc git/digital-service-resilience/no-global-connection-check.js:957:25)\n    at async runWorker (/Users/Irvin/Coding/smc git/digital-service-resilience/batch-test.js:160:32)\n    at async batchTest (/Users/Irvin/Coding/smc git/digital-service-resilience/batch-test.js:234:5)"
+    "message": "HTTP 403 ",
+    "statusCode": "403"
   }
 }

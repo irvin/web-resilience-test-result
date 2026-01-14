@@ -2,12 +2,11 @@
   "url": "https://hurawatch.tw",
   "canonicalURL": "https://hurawatch.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T21:33:24.224Z",
+  "timestamp": "2026-01-14T02:42:24.821Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -29,11 +28,11 @@
   "uniqueDomains": 11,
   "test_results": {
     "domestic": {
-      "cloud": 5,
+      "cloud": 6,
       "direct": 0
     },
     "foreign": {
-      "cloud": 5,
+      "cloud": 4,
       "direct": 1
     }
   },
@@ -51,7 +50,11 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 151.34,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css",
@@ -66,15 +69,20 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9c7528bcc6a84-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.google.com/recaptcha/api.js?render=6LfY9-4nAAAAAF1XAEEvsum_JdIVnZ-c1VnK2Qz3",
       "type": "script",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.198.68",
-        "hostname": "lctsaa-ab-in-f4.1e100.net",
+        "ip": "142.250.204.36",
+        "hostname": "hkg07s38-in-f4.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -113,7 +121,11 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 142.514,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js",
@@ -128,15 +140,19 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 34.197,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "https://www.gstatic.com/recaptcha/releases/7gg7H51Q-naNfhmCP3_R47ho/recaptcha__en.js",
+      "originalUrl": "https://www.gstatic.com/recaptcha/releases/9TiwnJFHeuIw_s0wSd3fiKfN/recaptcha__en.js",
       "type": "script",
       "ipinfo": {
         "domain": "www.gstatic.com",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "ip": "142.250.198.67",
+        "hostname": "lctsaa-ab-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -147,27 +163,12 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://wfrpphth.com/",
-      "type": "xhr",
-      "ipinfo": {
-        "domain": "wfrpphth.com",
-        "ip": "139.45.197.113",
-        "city": "Lelystad",
-        "region": "Flevoland",
-        "country": "NL",
-        "loc": "52.5083,5.4750",
-        "org": "AS9002 RETN Limited",
-        "timezone": "Europe/Amsterdam"
-      },
-      "category": "foreign/direct"
-    },
-    {
       "originalUrl": "https://buttons-config.sharethis.com/js/6433be364f61b7001240a339.js",
       "type": "script",
       "ipinfo": {
         "domain": "buttons-config.sharethis.com",
-        "ip": "3.169.55.116",
-        "hostname": "server-3-169-55-116.tpe54.r.cloudfront.net",
+        "ip": "3.169.55.96",
+        "hostname": "server-3-169-55-96.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -182,8 +183,8 @@
       "type": "image",
       "ipinfo": {
         "domain": "platform-cdn.sharethis.com",
-        "ip": "3.169.36.44",
-        "hostname": "server-3-169-36-44.tpe53.r.cloudfront.net",
+        "ip": "3.169.36.99",
+        "hostname": "server-3-169-36-99.tpe53.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -194,12 +195,27 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://sync.sharethis.com/openx?uid=46465c94-42d9-4693-9eec-099521748c70",
+      "originalUrl": "https://wvdoncfed.com/",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "wvdoncfed.com",
+        "ip": "139.45.197.102",
+        "city": "Lelystad",
+        "region": "Flevoland",
+        "country": "NL",
+        "loc": "52.5083,5.4750",
+        "org": "AS9002 RETN Limited",
+        "timezone": "Europe/Amsterdam"
+      },
+      "category": "foreign/direct"
+    },
+    {
+      "originalUrl": "https://sync.sharethis.com/panorama?uid=5ea6b626d455748a0a3fea661ed016d53938643638163c8015b2abb6633b7bef&stid=CgsCyWlnAoQAAAAKFbnxAw%3D%3D",
       "type": "image",
       "ipinfo": {
         "domain": "sync.sharethis.com",
-        "ip": "52.58.43.60",
-        "hostname": "ec2-52-58-43-60.eu-central-1.compute.amazonaws.com",
+        "ip": "18.198.65.87",
+        "hostname": "ec2-18-198-65-87.eu-central-1.compute.amazonaws.com",
         "city": "Frankfurt am Main",
         "region": "Hesse",
         "country": "DE",

@@ -2,12 +2,11 @@
   "url": "https://hermes.com.tw",
   "canonicalURL": "https://www.hermes.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T21:58:54.484Z",
+  "timestamp": "2026-01-14T03:26:29.860Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 159,
-  "uniqueDomains": 8,
+  "requestCount": 168,
+  "uniqueDomains": 12,
   "test_results": {
     "domestic": {
-      "cloud": 4,
-      "direct": 0
+      "cloud": 5,
+      "direct": 2
     },
     "foreign": {
-      "cloud": 3,
+      "cloud": 4,
       "direct": 0
     }
   },
@@ -71,7 +70,7 @@
       "category": "foreign/cloud"
     },
     {
-      "originalUrl": "blob:https://www.hermes.com.tw/f88c33cc-8827-472e-98bd-2b3e43023374",
+      "originalUrl": "blob:https://www.hermes.com.tw/22e07156-f0ed-4494-8136-6aa0bab296cb",
       "type": "other",
       "ipinfo": {
         "domain": ""
@@ -98,8 +97,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -114,7 +113,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "player.vimeo.com",
-        "ip": "162.159.128.61",
+        "ip": "162.159.138.60",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -122,31 +121,56 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda082d3a1e8f24-TPE",
+        "x-served-by": "cache-iad-kiad7000082-IAD, cache-hkg17935-HKG",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://img1.wsimg.com/traffic-assets/js/tccl-tti.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "img1.wsimg.com",
-        "ip": "203.69.138.26",
-        "hostname": "203-69-138-26.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "203.74.95.88",
+        "hostname": "203-74-95-88.hinet-ip.hinet.net",
+        "city": "Taichung",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS20940 Akamai International B.V.",
+        "loc": "24.1469,120.6839",
+        "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://f.vimeocdn.com/p/4.46.25/js/player.module.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "f.vimeocdn.com",
+        "ip": "146.75.44.217",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 44.073,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.youtube.com/iframe_api",
       "type": "script",
       "ipinfo": {
         "domain": "www.youtube.com",
-        "ip": "142.250.196.206",
-        "hostname": "nctsaa-ac-in-f14.1e100.net",
+        "ip": "142.250.204.46",
+        "hostname": "hkg07s38-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -155,6 +179,61 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://i.vimeocdn.com/video/1740531685-91970353d55ba35faeb9ac0cbb9af723166f488fcc0d6679abc6c76b7195d5ac-d",
+      "type": "image",
+      "ipinfo": {
+        "domain": "i.vimeocdn.com",
+        "ip": "199.232.112.217",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 43.222,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://arclight.vimeo.com/add/player-stats?beacon=1&session-id=010b4be43bb1dc968f0185a3f421c01837f6f0ce1768361187",
+      "type": "ping",
+      "ipinfo": {
+        "domain": "arclight.vimeo.com",
+        "ip": "34.120.202.204",
+        "hostname": "204.202.120.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.17,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://vod-adaptive-ak.vimeocdn.com/exp=1768364787~acl=%2Fa0e9110b-b88b-4a9e-853f-f8002791af14%2Fpsid%3Df5c312f8cfeea29b822ecc6d24ce0e59e73ae0050170b96fa902278af56b1e34%2F%2A~hmac=59b46beeb4b126f2fd0f9e87ffab486f871ad3953d62b9f6d2bcbe2d9c9db8f3/a0e9110b-b88b-4a9e-853f-f8002791af14/psid=f5c312f8cfeea29b822ecc6d24ce0e59e73ae0050170b96fa902278af56b1e34/v2/playlist/av/primary/prot/cXNyPTE/playlist.json?omit=av1-hevc&pathsig=8c953e4f~3gKwmvdV0ITaPChPnAPxYi6gEyv_neyw9BChmg0ATzE&qsr=1&r=dXM%3D&rh=3XduMO",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "vod-adaptive-ak.vimeocdn.com",
+        "ip": "210.71.227.161",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
     }
   ]
 }

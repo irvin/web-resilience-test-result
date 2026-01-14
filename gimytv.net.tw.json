@@ -2,12 +2,11 @@
   "url": "https://gimytv.net.tw",
   "canonicalURL": "https://gimytv.net.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T22:49:06.977Z",
+  "timestamp": "2026-01-14T04:18:36.540Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,7 +24,7 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 41,
+  "requestCount": 42,
   "uniqueDomains": 4,
   "test_results": {
     "domestic": {
@@ -33,8 +32,8 @@
       "direct": 0
     },
     "foreign": {
-      "cloud": 2,
-      "direct": 0
+      "cloud": 1,
+      "direct": 1
     }
   },
   "domainDetails": [
@@ -43,7 +42,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "gimytv.net.tw",
-        "ip": "172.67.144.44",
+        "ip": "104.21.47.32",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -51,15 +50,19 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 137.816,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-82GDX5RGYY",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -81,15 +84,16 @@
       "type": "script",
       "ipinfo": {
         "domain": "polyfill-js.cn",
-        "ip": "192.252.179.114",
+        "ip": "123.254.106.115",
+        "hostname": "mail.asiahostway.com",
         "city": "Hong Kong",
         "region": "Hong Kong",
         "country": "HK",
         "loc": "22.2783,114.1747",
-        "org": "AS152194 CTG Server Limited",
+        "org": "AS55933 Cloudie Limited",
         "timezone": "Asia/Hong_Kong"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/direct"
     }
   ]
 }

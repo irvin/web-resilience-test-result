@@ -2,12 +2,11 @@
   "url": "https://ispo.com.tw",
   "canonicalURL": "https://www.ispo.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T22:38:47.900Z",
+  "timestamp": "2026-01-14T04:07:48.990Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -29,11 +28,11 @@
   "uniqueDomains": 16,
   "test_results": {
     "domestic": {
-      "cloud": 11,
+      "cloud": 12,
       "direct": 2
     },
     "foreign": {
-      "cloud": 3,
+      "cloud": 2,
       "direct": 0
     }
   },
@@ -43,7 +42,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "ispo.com.tw",
-        "ip": "151.101.193.91",
+        "ip": "151.101.129.91",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -51,31 +50,39 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 36.204,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.ispo.com.tw/",
       "type": "document",
       "ipinfo": {
         "domain": "www.ispo.com.tw",
-        "ip": "76.223.48.4",
+        "ip": "13.248.163.129",
         "hostname": "ac1250c0a4b06682d.awsglobalaccelerator.com",
         "city": "Seattle",
         "region": "Washington",
         "country": "US",
-        "loc": "47.5413,-122.3129",
+        "loc": "47.6339,-122.3476",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 26.052,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "https://cms-static.cdn.91app.com/lib/cms-theme-core/3.87.1/css/desktop.default.css?v=3.87.1",
+      "originalUrl": "https://cms-static.cdn.91app.com/lib/cms-theme-core/3.88.1/css/desktop.default.css?v=3.88.1",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "cms-static.cdn.91app.com",
-        "ip": "3.169.36.43",
-        "hostname": "server-3-169-36-43.tpe53.r.cloudfront.net",
+        "ip": "3.169.36.67",
+        "hostname": "server-3-169-36-67.tpe53.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -90,8 +97,8 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "cms.cdn.91app.com",
-        "ip": "3.169.36.10",
-        "hostname": "server-3-169-36-10.tpe53.r.cloudfront.net",
+        "ip": "3.169.36.19",
+        "hostname": "server-3-169-36-19.tpe53.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -122,8 +129,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "tracking-client.91app.com",
-        "ip": "3.169.55.82",
-        "hostname": "server-3-169-55-82.tpe54.r.cloudfront.net",
+        "ip": "3.169.55.2",
+        "hostname": "server-3-169-55-2.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -138,8 +145,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "app.cdn.91app.com",
-        "ip": "3.169.137.13",
-        "hostname": "server-3-169-137-13.tpe54.r.cloudfront.net",
+        "ip": "3.169.137.20",
+        "hostname": "server-3-169-137-20.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -186,8 +193,8 @@
       "type": "fetch",
       "ipinfo": {
         "domain": "static.91app.com",
-        "ip": "3.169.36.47",
-        "hostname": "server-3-169-36-47.tpe53.r.cloudfront.net",
+        "ip": "3.169.36.117",
+        "hostname": "server-3-169-36-117.tpe53.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -202,7 +209,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "ispo.api.useinsider.com",
-        "ip": "162.159.134.61",
+        "ip": "162.159.133.61",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -210,15 +217,20 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda44b618154a12-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://webapi.91app.com/webapi/Activity/GetActivityList?shopId=41885&lang=zh-TW",
       "type": "xhr",
       "ipinfo": {
         "domain": "webapi.91app.com",
-        "ip": "3.169.121.67",
-        "hostname": "server-3-169-121-67.tpe53.r.cloudfront.net",
+        "ip": "3.169.121.22",
+        "hostname": "server-3-169-121-22.tpe53.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -229,12 +241,12 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&tid=AW-11002736538&en=page_view&dl=https%3A%2F%2Fwww.ispo.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=899208999.1767825527&dt=ISPO%2B%E5%AE%98%E6%96%B9%E6%97%97%E8%89%A6%E5%BA%97%20%7C%20%E6%85%A2%E8%B7%91%E9%9E%8B%E3%80%81%E7%99%BB%E5%B1%B1%E3%80%81%E9%9C%B2%E7%87%9F%E3%80%81%E6%B8%B8%E6%B3%B3%E8%A3%9D%E5%82%99%E4%B8%80%E7%AB%99%E8%B3%BC%E8%B6%B3&auid=1288396563.1767825527&navt=n&npa=0&_tu=QA&gtm=45be6160v895462314za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115938465~115938468~116682877&tft=1767825526732&tfd=936&apve=1&apvf=f",
+      "originalUrl": "https://www.google.com/ccm/collect?frm=0&tid=AW-11002736538&en=page_view&dl=https%3A%2F%2Fwww.ispo.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=567406734.1768363667&dt=ISPO%2B%E5%AE%98%E6%96%B9%E6%97%97%E8%89%A6%E5%BA%97%20%7C%20%E6%85%A2%E8%B7%91%E9%9E%8B%E3%80%81%E7%99%BB%E5%B1%B1%E3%80%81%E9%9C%B2%E7%87%9F%E3%80%81%E6%B8%B8%E6%B3%B3%E8%A3%9D%E5%82%99%E4%B8%80%E7%AB%99%E8%B3%BC%E8%B6%B3&auid=604878397.1768363667&navt=n&npa=0&_tu=QA&gtm=45be61c1v895462314za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115616986~115938465~115938468~115985661~117041587~117091818&tft=1768363666967&tfd=1190&apve=1&apvf=f",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.196.196",
-        "hostname": "nctsaa-ac-in-f4.1e100.net",
+        "ip": "142.250.204.36",
+        "hostname": "hkg07s38-in-f4.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -249,8 +261,8 @@
       "type": "xhr",
       "ipinfo": {
         "domain": "fts-api.91app.com",
-        "ip": "3.169.36.7",
-        "hostname": "server-3-169-36-7.tpe53.r.cloudfront.net",
+        "ip": "3.169.36.112",
+        "hostname": "server-3-169-36-112.tpe53.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -261,12 +273,12 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/11002736538/?random=1767825526745&cv=11&fst=1767823200000&bg=ffffff&guid=ON&async=1&en=view&gtm=45be6160v895462314za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115938465~115938468~116682877&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.ispo.com.tw%2F&frm=0&tiba=ISPO%2B%E5%AE%98%E6%96%B9%E6%97%97%E8%89%A6%E5%BA%97%20%7C%20%E6%85%A2%E8%B7%91%E9%9E%8B%E3%80%81%E7%99%BB%E5%B1%B1%E3%80%81%E9%9C%B2%E7%87%9F%E3%80%81%E6%B8%B8%E6%B3%B3%E8%A3%9D%E5%82%99%E4%B8%80%E7%AB%99%E8%B3%BC%E8%B6%B3&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1288396563.1767825527&_tu=QA&data=event%3Dview%3Bview_type%3DHome%3Bview_title%3DISPO%2B%E5%AE%98%E6%96%B9%E6%97%97%E8%89%A6%E5%BA%97%20%7C%20%E6%85%A2%E8%B7%91%E9%9E%8B%E3%80%81%E7%99%BB%E5%B1%B1%E3%80%81%E9%9C%B2%E7%87%9F%E3%80%81%E6%B8%B8%E6%B3%B3%E8%A3%9D%E5%82%99%E4%B8%80%E7%AB%99%E8%B3%BC%E8%B6%B3%3Bview_from%3Dunknown&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEAwksa0aLazGIMoQq4dfx9m5IAKWkJ2gVmpjwc9MNUc8PNHu9-QqVHGyO0uwyU7YkMm4-6MaZ1B5O4jF4eotAYuxiJ3h7rI0tFz6wFvuEm-c4VHYFhcuAA9Sdbn1RDfz-EMjhXV9QPsX4vUOvYgfdF8zGnbpqqa4i31BsYr-XG0ZhK0s44PZBT70Lf&random=3805514071&rmt_tld=1&ipr=y",
+      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/11002736538/?random=1768363666998&cv=11&fst=1768363200000&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45be61c1v895462314za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115616986~115938465~115938468~115985661~117041587~117091818&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.ispo.com.tw%2F&frm=0&tiba=ISPO%2B%E5%AE%98%E6%96%B9%E6%97%97%E8%89%A6%E5%BA%97%20%7C%20%E6%85%A2%E8%B7%91%E9%9E%8B%E3%80%81%E7%99%BB%E5%B1%B1%E3%80%81%E9%9C%B2%E7%87%9F%E3%80%81%E6%B8%B8%E6%B3%B3%E8%A3%9D%E5%82%99%E4%B8%80%E7%AB%99%E8%B3%BC%E8%B6%B3&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=604878397.1768363667&_tu=QA&data=event%3Dpage_view&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEA56J1eX_H0ICP-52tm2y_pAZIBDSHz6Nr5eu9vK0e6_QGqmnh73N4I950_p_D7H4hsfDCJF-ybX8kBFYkbvTGWilbP78jdzf6U9QMdf8PTC_fiNjkCVRN0ER2Dp-EH_YHpYFhZ51p2WIuOpyH-se-KoEUzXqqpnzVZhHNJo11JzX6Lbo4cLh8AO3p&random=1940436209&rmt_tld=1&ipr=y",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.198.67",
-        "hostname": "lctsaa-ab-in-f3.1e100.net",
+        "ip": "142.250.66.67",
+        "hostname": "hkg12s27-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -277,7 +289,7 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.facebook.com/v2.10/plugins/page.php?app_id=694954853352193&channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Dffd56753bd61124f6%26domain%3Dwww.ispo.com.tw%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.ispo.com.tw%252Ffeb417f4b434fa247%26relation%3Dparent.parent&container_width=378&height=130&hide_cover=false&href=https%3A%2F%2Fwww.facebook.com%2FISPOTW%2F&locale=zh_TW&sdk=joey&show_facepile=false&show_posts=false&width=342",
+      "originalUrl": "https://www.facebook.com/v2.10/plugins/page.php?app_id=694954853352193&channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df45f359a6e263699f%26domain%3Dwww.ispo.com.tw%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.ispo.com.tw%252Ff2db77c13e3371e24%26relation%3Dparent.parent&container_width=378&height=130&hide_cover=false&href=https%3A%2F%2Fwww.facebook.com%2FISPOTW%2F&locale=zh_TW&sdk=joey&show_facepile=false&show_posts=false&width=342",
       "type": "document",
       "ipinfo": {
         "domain": "www.facebook.com",

@@ -2,12 +2,11 @@
   "url": "https://www.kfcclub.com.tw/",
   "canonicalURL": "https://www.kfcclub.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T21:11:04.321Z",
+  "timestamp": "2026-01-14T02:17:13.985Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 136,
+  "requestCount": 149,
   "uniqueDomains": 10,
   "test_results": {
     "domestic": {
-      "cloud": 5,
+      "cloud": 8,
       "direct": 1
     },
     "foreign": {
-      "cloud": 4,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -43,11 +42,12 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.kfcclub.com.tw",
-        "ip": "210.71.227.203",
-        "city": "Taipei",
+        "ip": "203.74.95.57",
+        "hostname": "203-74-95-57.hinet-ip.hinet.net",
+        "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.1469,120.6839",
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
@@ -67,15 +67,20 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.222,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-NG7Q549F&gtm_auth=&gtm_preview=&gtm_cookies_win=x",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.77.8",
+        "hostname": "nctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -99,19 +104,24 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.289,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://d.line-scdn.net/n/line_tag/public/release/v1/lt.js",
       "type": "script",
       "ipinfo": {
         "domain": "d.line-scdn.net",
-        "ip": "23.39.61.163",
-        "hostname": "a23-39-61-163.deploy.static.akamaitechnologies.com",
-        "city": "Taipei",
+        "ip": "184.25.121.253",
+        "hostname": "a184-25-121-253.deploy.static.akamaitechnologies.com",
+        "city": "Yuanlin",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "23.9567,120.5761",
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -122,8 +132,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "maps.googleapis.com",
-        "ip": "142.250.66.74",
-        "hostname": "hkg12s27-in-f10.1e100.net",
+        "ip": "142.250.196.202",
+        "hostname": "nctsaa-ac-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -146,7 +156,11 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 215.068,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://sdk.iad-06.braze.com/api/v3/data/",
@@ -161,10 +175,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.202,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-922VN6L9X5&cid=719138732.1767820263&gtm=45je6151v9195365809z89195237484za20gzb9195237484zd9195237484&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115583767~115616985~115938466~115938468~116514482~116682876~116744866&z=2128015687",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-922VN6L9X5&cid=1497111816.1768357032&gtm=45je61c1v9195365809z89195237484za20gzb9195237484zd9195237484&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115938466~115938468~115985661~116491845~117041588&z=2038767920",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
@@ -180,12 +199,12 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/measurement/conversion?random=1767820263403&cv=11&tid=G-922VN6L9X5&fst=1767820263403&fmt=6&en=view_item_list&gtm=45je6151v9195365809z89195237484za20gzb9195237484zd9195237484xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115583767~115616985~115938466~115938468~116514482~116682876~116744866&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.kfcclub.com.tw%2F&gacid=719138732.1767820263&frm=0&tiba=%E8%82%AF%E5%BE%B7%E5%9F%BA%20KFC%EF%BD%9C%E7%82%B8%E9%9B%9E%E5%A4%96%E9%80%81%E5%A4%96%E5%B8%B6%E9%A6%96%E9%81%B8&npa=0&pscdl=noapi&auid=1769678783.1767820263&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0",
+      "originalUrl": "https://www.google.com/measurement/conversion?random=1768357032321&cv=11&tid=G-922VN6L9X5&fst=1768357032321&fmt=8&en=view_item_list&gtm=45je61c1v9195365809z89195237484za20gzb9195237484zd9195237484xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115938466~115938468~115985661~116491845~117041588&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.kfcclub.com.tw%2F&gacid=1497111816.1768357032&frm=0&tiba=%E8%82%AF%E5%BE%B7%E5%9F%BA%20KFC%EF%BD%9C%E7%82%B8%E9%9B%9E%E5%A4%96%E9%80%81%E5%A4%96%E5%B8%B6%E9%A6%96%E9%81%B8&npa=0&pscdl=noapi&auid=349517656.1768357032&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.196.196",
-        "hostname": "nctsaa-ac-in-f4.1e100.net",
+        "ip": "142.250.198.68",
+        "hostname": "lctsaa-ab-in-f4.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",

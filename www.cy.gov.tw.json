@@ -2,12 +2,11 @@
   "url": "https://www.cy.gov.tw/",
   "canonicalURL": "https://www.cy.gov.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T21:44:28.394Z",
+  "timestamp": "2026-01-14T02:52:58.029Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -29,11 +28,11 @@
   "uniqueDomains": 4,
   "test_results": {
     "domestic": {
-      "cloud": 2,
+      "cloud": 4,
       "direct": 0
     },
     "foreign": {
-      "cloud": 2,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -43,7 +42,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.cy.gov.tw",
-        "ip": "104.18.26.162",
+        "ip": "104.18.27.162",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -51,7 +50,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9d70eeabc80a4-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://maps.googleapis.com/maps/api/js?key=AIzaSyAo1MAXwJfl0q3fNU_5QyogEgyecOICpWs&libraries=places,drawing",
@@ -74,8 +78,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.77.8",
-        "hostname": "nctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -90,7 +94,7 @@
       "type": "image",
       "ipinfo": {
         "domain": "www-ws.cy.gov.tw",
-        "ip": "104.18.27.162",
+        "ip": "104.18.26.162",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -98,7 +102,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9d7108eb87aab-TPE",
+        "detection_method": "header"
+      }
     }
   ]
 }

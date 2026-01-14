@@ -2,12 +2,11 @@
   "url": "https://pcone.com.tw",
   "canonicalURL": "https://pcone.com.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T21:15:08.979Z",
+  "timestamp": "2026-01-14T02:22:35.463Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 122,
-  "uniqueDomains": 5,
+  "requestCount": 130,
+  "uniqueDomains": 7,
   "test_results": {
     "domestic": {
-      "cloud": 1,
+      "cloud": 5,
       "direct": 0
     },
     "foreign": {
-      "cloud": 3,
+      "cloud": 1,
       "direct": 1
     }
   },
@@ -43,7 +42,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "pcone.com.tw",
-        "ip": "172.67.68.211",
+        "ip": "104.26.3.7",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -51,7 +50,28 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9aa8e9f47b016-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-M027XHQ408",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.googletagmanager.com",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap",
@@ -74,7 +94,7 @@
       "type": "fetch",
       "ipinfo": {
         "domain": "webapi.pcone.com.tw",
-        "ip": "104.26.2.7",
+        "ip": "172.67.68.211",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -82,10 +102,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9aa9388418446-TPE",
+        "detection_method": "header"
+      }
     },
     {
-      "originalUrl": "https://twshopcom.com/Home/ProductImg/?type=small&fn=202601071317019809961.jpg",
+      "originalUrl": "https://twshopcom.com/Home/ProductImg/?type=small&fn=202601141020465405881.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "twshopcom.com",
@@ -100,11 +125,26 @@
       "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98x-lua46l9bdcs986",
+      "originalUrl": "https://images.pcone.com.tw/uploads/product_image/1713761/0e90db6c2f19632a4930af62c826208a/42087cf3cd3b4f0ee574d5e0064b8ff6.webp",
+      "type": "image",
+      "ipinfo": {
+        "domain": "images.pcone.com.tw",
+        "ip": "162.128.37.194",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS21859 Zenlayer Inc",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r990-luak7qlcrkl5df",
       "type": "image",
       "ipinfo": {
         "domain": "s-cf-tw.shopeesz.com",
-        "ip": "103.4.201.160",
+        "ip": "61.110.241.58",
         "city": "Hong Kong",
         "region": "Hong Kong",
         "country": "HK",

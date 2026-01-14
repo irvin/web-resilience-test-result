@@ -2,12 +2,11 @@
   "url": "https://roomie.tw",
   "canonicalURL": "https://www.roomie.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T21:57:49.899Z",
+  "timestamp": "2026-01-14T03:25:24.028Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 89,
-  "uniqueDomains": 14,
+  "requestCount": 91,
+  "uniqueDomains": 15,
   "test_results": {
     "domestic": {
-      "cloud": 5,
+      "cloud": 10,
       "direct": 1
     },
     "foreign": {
-      "cloud": 7,
+      "cloud": 3,
       "direct": 0
     }
   },
@@ -51,14 +50,18 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 136.444,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.roomie.tw/",
       "type": "document",
       "ipinfo": {
         "domain": "www.roomie.tw",
-        "ip": "172.67.132.157",
+        "ip": "104.21.13.55",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -66,7 +69,11 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 136.519,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://s.skimresources.com/js/217276X1751606.skimlinks.js",
@@ -81,7 +88,11 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 44.256,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/sdk.js",
@@ -100,12 +111,28 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://media.loom-app.com/roomie/dist/images/2025/01/20240110_LA7.jpeg?w=1024",
+      "originalUrl": "https://www.roomie.jp/wp-content/uploads/2025/12/harmynta-serving-bowl-white__1476848_pe999059_s5.jpg",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.roomie.jp",
+        "ip": "3.169.137.115",
+        "hostname": "server-3-169-137-115.tpe54.r.cloudfront.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://media.loom-app.com/roomie/dist/images/2025/12/251202_FUJIFILM_X-half_3-scaled.jpg?w=891",
       "type": "image",
       "ipinfo": {
         "domain": "media.loom-app.com",
-        "ip": "3.169.55.112",
-        "hostname": "server-3-169-55-112.tpe54.r.cloudfront.net",
+        "ip": "3.169.55.128",
+        "hostname": "server-3-169-55-128.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -120,8 +147,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "ajax.googleapis.com",
-        "ip": "142.250.196.202",
-        "hostname": "nctsaa-ac-in-f10.1e100.net",
+        "ip": "142.250.204.42",
+        "hostname": "hkg07s38-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -136,8 +163,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.youtube.com",
-        "ip": "142.250.204.46",
-        "hostname": "hkg07s38-in-f14.1e100.net",
+        "ip": "142.250.198.78",
+        "hostname": "lctsaa-ab-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -152,7 +179,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "player.vimeo.com",
-        "ip": "162.159.138.60",
+        "ip": "162.159.128.61",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -160,7 +187,13 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda0652be024a63-TPE",
+        "x-served-by": "cache-iad-kiad7000082-IAD, cache-hkg17932-HKG",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://r.skimresources.com/api/",
@@ -176,10 +209,15 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.018,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "https://t.skimresources.com/api/v2/robots.txt?__skimjs_preflight__please_ignore__=true&rnd=0.6441148716808198",
+      "originalUrl": "https://t.skimresources.com/api/v2/robots.txt?__skimjs_preflight__please_ignore__=true&rnd=0.7776962485184942",
       "type": "image",
       "ipinfo": {
         "domain": "t.skimresources.com",
@@ -192,10 +230,15 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 3.546,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "https://p.skimresources.com/px.gif?ch=1&rn=6.7975069347365356",
+      "originalUrl": "https://p.skimresources.com/px.gif?ch=1&rn=4.568602531387256",
       "type": "image",
       "ipinfo": {
         "domain": "p.skimresources.com",
@@ -208,10 +251,15 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.31,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "blob:https://www.roomie.tw/a3867fcd-a62a-41a7-a4ee-58bdf8e3d3b2",
+      "originalUrl": "blob:https://www.roomie.tw/3d1b8b3c-d8ba-4675-9728-3f0df53b70e9",
       "type": "other",
       "ipinfo": {
         "domain": ""
@@ -222,8 +270,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "sb.scorecardresearch.com",
-        "ip": "3.169.137.16",
-        "hostname": "server-3-169-137-16.tpe54.r.cloudfront.net",
+        "ip": "3.169.137.32",
+        "hostname": "server-3-169-137-32.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -234,12 +282,12 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-P5RN8ZLQ6E&cid=930044916.1767823066&gtm=45g92e6151h1v9183480134z89191710676za20kzb9191710676zd9191710676&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115583767~115616985~115938466~115938469~116744867~116910502&z=630797747",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-P5RN8ZLQ6E&cid=848251810.1768361121&gtm=45g92e61c1v9183480134z89191710676za20kzb9191710676zd9191710676&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115616985~115938466~115938468~116682876~117041587~117091818&z=1913775302",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "ip": "142.250.198.67",
+        "hostname": "lctsaa-ab-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",

@@ -2,7 +2,7 @@
   "url": "https://lancome.com.tw",
   "canonicalURL": "https://www.lancome.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-06T21:25:28.245Z",
+  "timestamp": "2026-01-14T12:31:56.660Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -14,8 +14,8 @@
     "hasIPinfoToken": true
   },
   "testingEnvironment": {
-    "ip": "220.132.212.194",
-    "hostname": "220-132-212-194.hinet-ip.hinet.net",
+    "ip": "220.136.159.93",
+    "hostname": "220-136-159-93.dynamic-ip.hinet.net",
     "city": "Banqiao",
     "region": "Taipei",
     "country": "TW",
@@ -25,22 +25,42 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 110,
-  "uniqueDomains": 6,
+  "requestCount": 205,
+  "uniqueDomains": 9,
   "test_results": {
     "domestic": {
-      "cloud": 1,
+      "cloud": 8,
       "direct": 0
     },
     "foreign": {
-      "cloud": 5,
+      "cloud": 0,
       "direct": 0
     }
   },
   "domainDetails": [
     {
-      "originalUrl": "https://www.lancome.com.tw/on/demandware.static/Sites-lancome-tw-ng-Site/-/zh_TW/v1767722427103/dist/fonts/HelveticaNeue-Light.woff2",
-      "type": "link",
+      "originalUrl": "https://lancome.com.tw/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "lancome.com.tw",
+        "ip": "104.18.35.166",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bdd2728bac6809e-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://www.lancome.com.tw/",
+      "type": "document",
       "ipinfo": {
         "domain": "www.lancome.com.tw",
         "ip": "172.64.152.90",
@@ -51,7 +71,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bdd2728dada809e-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
@@ -66,7 +91,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bdd272c0a6a4a2a-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://dev.visualwebsiteoptimizer.com//j.php?a=775090&u=https%3A%2F%2Fwww.lancome.com.tw%2F&vn=2",
@@ -82,15 +112,20 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.849,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://storage.googleapis.com/b-console-telligent/Scripts/mcs3.0.js",
       "type": "script",
       "ipinfo": {
         "domain": "storage.googleapis.com",
-        "ip": "142.250.204.59",
-        "hostname": "hkg07s38-in-f27.1e100.net",
+        "ip": "142.250.66.91",
+        "hostname": "hkg12s27-in-f27.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -102,7 +137,7 @@
     },
     {
       "originalUrl": "https://www.telligentcrm.com/communication/webindex?tenantId=779773e9-8f7a-11ef-a6c8-00ffaf2156c9&corporationId=7e4e9840-8f7a-11ef-a6c8-00ffaf2156c9&companyId=854c8cd2-a190-11ef-a2eb-00ffaf2156c9&companyCode=lancome&channelId=f3f06602-a718-11ef-8b8b-42010a29f030",
-      "type": "iframe",
+      "type": "document",
       "ipinfo": {
         "domain": "www.telligentcrm.com",
         "ip": "34.160.19.30",
@@ -114,11 +149,16 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.073,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
-      "type": "xmlhttprequest",
+      "type": "xhr",
       "ipinfo": {
         "domain": "geolocation.onetrust.com",
         "ip": "172.64.155.119",
@@ -129,7 +169,40 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bdd272ccb5d4a5e-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "blob:https://www.lancome.com.tw/be96bc1d-2e9c-47d5-87a4-dd085ca890d7",
+      "type": "other",
+      "ipinfo": {
+        "domain": ""
+      }
+    },
+    {
+      "originalUrl": "https://gw.telligentcrm.com/communication/api/v1/customer/web/initData/promoteAndEntrance?channelId=f3f06602-a718-11ef-8b8b-42010a29f030&customerId=4c39f021-00f8-4a7b-bd3b-200b2cfc13f0&companyId=854c8cd2-a190-11ef-a2eb-00ffaf2156c9&companyCode=lancome&accessToken=&richMenuType=0",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "gw.telligentcrm.com",
+        "ip": "34.160.19.30",
+        "hostname": "30.19.160.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.877,
+        "detection_method": "rtt"
+      }
     }
   ]
 }

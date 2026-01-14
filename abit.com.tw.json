@@ -2,12 +2,11 @@
   "url": "https://abit.com.tw",
   "canonicalURL": "https://abit.com.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T22:09:48.103Z",
+  "timestamp": "2026-01-14T03:40:07.329Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -29,11 +28,11 @@
   "uniqueDomains": 3,
   "test_results": {
     "domestic": {
-      "cloud": 1,
+      "cloud": 2,
       "direct": 0
     },
     "foreign": {
-      "cloud": 2,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -43,7 +42,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "abit.com.tw",
-        "ip": "172.67.211.240",
+        "ip": "104.21.59.33",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -51,30 +50,40 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 133.953,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://cdn.jsdelivr.net/npm/@minimal-analytics/ga4/dist/index.js",
       "type": "script",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "104.16.175.226",
+        "ip": "151.101.1.229",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
         "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
+        "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda1c234ff14a30-TPE",
+        "x-served-by": "cache-fra-eddf8230170-FRA, cache-hkg17924-HKG",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://fundingchoicesmessages.google.com/i/ca-pub-8543159550507237?href=https%3A%2F%2Fabit.com.tw&ers=2",
       "type": "script",
       "ipinfo": {
         "domain": "fundingchoicesmessages.google.com",
-        "ip": "142.250.204.46",
-        "hostname": "hkg07s38-in-f14.1e100.net",
+        "ip": "142.250.196.206",
+        "hostname": "nctsaa-ac-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",

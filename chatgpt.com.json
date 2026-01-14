@@ -2,12 +2,11 @@
   "url": "https://chatgpt.com",
   "canonicalURL": "https://chatgpt.com/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:05:56.672Z",
+  "timestamp": "2026-01-14T01:04:01.139Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 242,
-  "uniqueDomains": 3,
+  "requestCount": 64,
+  "uniqueDomains": 2,
   "test_results": {
     "domestic": {
-      "cloud": 1,
+      "cloud": 2,
       "direct": 0
     },
     "foreign": {
-      "cloud": 2,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -43,7 +42,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "chatgpt.com",
-        "ip": "104.18.32.47",
+        "ip": "172.64.155.209",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -51,10 +50,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd93775bb3c4a8b-TPE",
+        "detection_method": "header"
+      }
     },
     {
-      "originalUrl": "https://ab.chatgpt.com/v1/rgstr?k=client-nb0qtYlZuy2tCMN5s5ncnuIBCJncjRViT0IzFm7GqST&st=javascript-client&sv=3.26.0&t=1767816354985&sid=e2e6c2ef-3760-4bd6-a5fd-d0d4ef22878b&ec=102&gz=1",
+      "originalUrl": "https://ab.chatgpt.com/v1/rgstr?k=client-nb0qtYlZuy2tCMN5s5ncnuIBCJncjRViT0IzFm7GqST&st=javascript-client&sv=3.26.0&t=1768352639471&sid=5207bedc-e569-4ea0-a764-aec89660eb90&ec=3&gz=1",
       "type": "fetch",
       "ipinfo": {
         "domain": "ab.chatgpt.com",
@@ -66,23 +70,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-9SHBSK2D9J",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9377dadfb6a86-TPE",
+        "detection_method": "header"
+      }
     }
   ]
 }

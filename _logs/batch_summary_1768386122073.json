@@ -1,0 +1,214 @@
+{
+  "timestamp": "2026-01-14T10:22:02.073Z",
+  "argument": "node batch-test.js --adblock-url 'https://filter.futa.gg/hosts_abp.txt,https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt' manual_curated_list_tw.json",
+  "options": {
+    "testListPath": "manual_curated_list_tw.json",
+    "startFrom": 0,
+    "delayMs": 1000,
+    "concurrency": 4,
+    "customDNS": null,
+    "useAdblock": true,
+    "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
+      "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
+    ],
+    "useCache": true,
+    "headless": true,
+    "timeout": 120000
+  },
+  "statistics": {
+    "total": 12,
+    "success": 11,
+    "failed": 0,
+    "testErrors": 1,
+    "skipped": 0
+  },
+  "results": [
+    {
+      "website": "adr.npa.gov.tw",
+      "url": "https://adr.npa.gov.tw",
+      "status": "success",
+      "result": {
+        "domestic": {
+          "cloud": 2,
+          "direct": 1
+        },
+        "foreign": {
+          "cloud": 0,
+          "direct": 0
+        }
+      }
+    },
+    {
+      "website": "jihsun.com.tw",
+      "url": "https://jihsun.com.tw",
+      "status": "success",
+      "result": {
+        "domestic": {
+          "cloud": 0,
+          "direct": 0
+        },
+        "foreign": {
+          "cloud": 0,
+          "direct": 2
+        }
+      }
+    },
+    {
+      "website": "coscup.org",
+      "url": "https://coscup.org",
+      "status": "success",
+      "result": {
+        "domestic": {
+          "cloud": 3,
+          "direct": 0
+        },
+        "foreign": {
+          "cloud": 1,
+          "direct": 0
+        }
+      }
+    },
+    {
+      "website": "mail.google.com",
+      "url": "https://mail.google.com",
+      "status": "success",
+      "result": {
+        "domestic": {
+          "cloud": 3,
+          "direct": 0
+        },
+        "foreign": {
+          "cloud": 0,
+          "direct": 0
+        }
+      }
+    },
+    {
+      "website": "g0v.tw",
+      "url": "https://g0v.tw",
+      "status": "success",
+      "result": {
+        "domestic": {
+          "cloud": 2,
+          "direct": 7
+        },
+        "foreign": {
+          "cloud": 5,
+          "direct": 0
+        }
+      }
+    },
+    {
+      "website": "maps.google.com",
+      "url": "https://maps.google.com",
+      "status": "success",
+      "result": {
+        "domestic": {
+          "cloud": 4,
+          "direct": 0
+        },
+        "foreign": {
+          "cloud": 0,
+          "direct": 0
+        }
+      }
+    },
+    {
+      "website": "moztw.org",
+      "url": "https://moztw.org",
+      "status": "success",
+      "result": {
+        "domestic": {
+          "cloud": 5,
+          "direct": 0
+        },
+        "foreign": {
+          "cloud": 3,
+          "direct": 0
+        }
+      }
+    },
+    {
+      "website": "ocf.tw",
+      "url": "https://ocf.tw",
+      "status": "success",
+      "result": {
+        "domestic": {
+          "cloud": 2,
+          "direct": 0
+        },
+        "foreign": {
+          "cloud": 1,
+          "direct": 0
+        }
+      }
+    },
+    {
+      "website": "pbs.npa.gov.tw",
+      "url": "https://www.pbs.npa.gov.tw/ch/app/programList/list?module=programlist&id=18112",
+      "status": "success",
+      "result": {
+        "domestic": {
+          "cloud": 4,
+          "direct": 1
+        },
+        "foreign": {
+          "cloud": 0,
+          "direct": 0
+        }
+      }
+    },
+    {
+      "website": "sitcon.org",
+      "url": "https://sitcon.org",
+      "status": "error",
+      "errorReason": "ERR_NAME_NOT_RESOLVED",
+      "errorDetails": {
+        "message": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.sitcon.org/\nCall log:\n\u001b[2m  - navigating to \"https://www.sitcon.org/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+        "statusCode": null
+      }
+    },
+    {
+      "website": "voachinese.com",
+      "url": "https://www.voachinese.com",
+      "status": "success",
+      "result": {
+        "domestic": {
+          "cloud": 10,
+          "direct": 2
+        },
+        "foreign": {
+          "cloud": 0,
+          "direct": 0
+        }
+      }
+    },
+    {
+      "website": "mail.yahoo.com",
+      "url": "https://mail.yahoo.com",
+      "status": "success",
+      "result": {
+        "domestic": {
+          "cloud": 7,
+          "direct": 0
+        },
+        "foreign": {
+          "cloud": 2,
+          "direct": 0
+        }
+      }
+    }
+  ],
+  "errorSites": [
+    {
+      "website": "sitcon.org",
+      "url": "https://sitcon.org",
+      "errorReason": "ERR_NAME_NOT_RESOLVED",
+      "errorDetails": {
+        "message": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.sitcon.org/\nCall log:\n\u001b[2m  - navigating to \"https://www.sitcon.org/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+        "statusCode": null
+      }
+    }
+  ]
+}

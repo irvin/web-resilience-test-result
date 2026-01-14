@@ -2,12 +2,11 @@
   "url": "https://www.hsbc.com.tw/",
   "canonicalURL": "https://www.hsbc.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T21:28:57.137Z",
+  "timestamp": "2026-01-14T02:37:23.023Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,16 +24,16 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 115,
-  "uniqueDomains": 15,
+  "requestCount": 113,
+  "uniqueDomains": 14,
   "test_results": {
     "domestic": {
-      "cloud": 6,
-      "direct": 2
+      "cloud": 10,
+      "direct": 1
     },
     "foreign": {
-      "cloud": 6,
-      "direct": 1
+      "cloud": 3,
+      "direct": 0
     }
   },
   "domainDetails": [
@@ -43,23 +42,24 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.hsbc.com.tw",
-        "ip": "210.71.227.203",
-        "city": "Taipei",
+        "ip": "210.61.249.40",
+        "hostname": "210-61-249-40.hinet-ip.hinet.net",
+        "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS3462 Data Communication Business Group",
+        "loc": "24.1469,120.6839",
+        "org": "AS20940 Akamai International B.V.",
         "timezone": "Asia/Taipei"
       },
-      "category": "domestic/direct"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://tags.tiqcdn.com/utag/hsbc/tw-rbwm/prod/utag.sync.js",
       "type": "script",
       "ipinfo": {
         "domain": "tags.tiqcdn.com",
-        "ip": "3.169.55.78",
-        "hostname": "server-3-169-55-78.tpe54.r.cloudfront.net",
+        "ip": "3.169.121.91",
+        "hostname": "server-3-169-121-91.tpe53.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -82,7 +82,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9c02c8ae24a24-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://akamai.tiqcdn.com/location/location.js",
@@ -105,7 +110,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "a19069622224.cdn.optimizely.com",
-        "ip": "104.18.66.57",
+        "ip": "104.18.65.57",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -113,7 +118,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9c02cfb714a24-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://bat.bing.com/bat.js",
@@ -163,23 +173,27 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&tid=DC-8708701&en=page_view&dl=https%3A%2F%2Fwww.hsbc.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=409360685.1767821332&dt=%E6%BB%99%E8%B1%90(%E5%8F%B0%E7%81%A3)%20-%20%E4%BF%A1%E7%94%A8%E5%8D%A1%2C%20%E5%B8%B3%E6%88%B6%2C%20%E4%BF%A1%E7%94%A8%E8%B2%B8%E6%AC%BE%2C%20%E4%BF%9D%E9%9A%AA%2C%E8%B2%A1%E5%AF%8C%E7%AE%A1%E7%90%86&auid=451598225.1767821332&navt=n&npa=0&gtm=45fe6151v9190270532za200zd9190270532xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115583767~115616985~115938466~115938469&tft=1767821331815&tfd=968&apve=1&apvf=f",
+      "originalUrl": "https://www.google.com/ccm/collect?frm=0&tid=DC-8708701&en=page_view&dl=https%3A%2F%2Fwww.hsbc.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=507133787.1768358238&dt=%E6%BB%99%E8%B1%90(%E5%8F%B0%E7%81%A3)%20-%20%E4%BF%A1%E7%94%A8%E5%8D%A1%2C%20%E5%B8%B3%E6%88%B6%2C%20%E4%BF%A1%E7%94%A8%E8%B2%B8%E6%AC%BE%2C%20%E4%BF%9D%E9%9A%AA%2C%E8%B2%A1%E5%AF%8C%E7%AE%A1%E7%90%86&auid=1130006413.1768358238&navt=n&npa=0&gtm=45fe61c1h1v9190270532za200zd9190270532xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528501~104573694~104684208~104684211~105391252~115616985~115938465~115938469~116988315~117041587&tft=1768358238304&tfd=1229&apve=1&apvf=f",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.198.68",
-        "hostname": "lctsaa-ab-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
+        "ip": "142.251.154.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
         "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.088,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/745894633/?random=1767821331906&cv=11&fst=1767819600000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6151v884323588za200zb9190270532zd9190270532xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115616985~115938466~115938469~116988315&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.hsbc.com.tw%2F&frm=0&tiba=%E6%BB%99%E8%B1%90(%E5%8F%B0%E7%81%A3)%20-%20%E4%BF%A1%E7%94%A8%E5%8D%A1%2C%20%E5%B8%B3%E6%88%B6%2C%20%E4%BF%A1%E7%94%A8%E8%B2%B8%E6%AC%BE%2C%20%E4%BF%9D%E9%9A%AA%2C%E8%B2%A1%E5%AF%8C%E7%AE%A1%E7%90%86&userId=019b9a5cccb40017e404367564f5000810018079007e8&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=451598225.1767821332&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=3&is_vtc=1&cid=CAQSmQEAwksa0bom0nad8Lbm8lfI_5pab0A0PzVNxMjoeh9AP85e4_O3oh9GVPbuFBTY_I-CbfDrnyTRHe9U0mN-IUGd9zE6wSH5pXmB3YR1vOUZg8qfAfnAPSbIwV_hzQYPVIQCZsJDTvWGxzkSF8LOnMrklrogbgtGFKx8ep4m6WbFy4ccLnMpQdNS6LKjq2HOqnCj5-f26oBwMcg&random=2365329944&rmt_tld=1&ipr=y",
+      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/745894633/?random=1768358238386&cv=11&fst=1768356000000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be61c1h1v884323588za200zb9190270532zd9190270532xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115938465~115938469~117041587&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.hsbc.com.tw%2F&frm=0&tiba=%E6%BB%99%E8%B1%90(%E5%8F%B0%E7%81%A3)%20-%20%E4%BF%A1%E7%94%A8%E5%8D%A1%2C%20%E5%B8%B3%E6%88%B6%2C%20%E4%BF%A1%E7%94%A8%E8%B2%B8%E6%AC%BE%2C%20%E4%BF%9D%E9%9A%AA%2C%E8%B2%A1%E5%AF%8C%E7%AE%A1%E7%90%86&userId=019bba5d56b20039c049aefa0abc000810018079007e8&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1130006413.1768358238&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=3&is_vtc=1&cid=CAQSmQEA56J1eYVfpLyL0TGb9ItyJc-6_kwe2I5LtALYQoTc7fsrggHV7wcdUJ3CdQDwZH4rl28fO2T2MoR0--sBxG5sCfZ8Ko-LFafzMWxW8m5C9Lecz9KlFZos5hIkE-He8IzYUY6rLUGPPIhALhMHbLpXjqi66VhW_Cwtr2tXyiOqwBublu_ODAnRNtYPHEQxrtn5i1UCCoqYSs4&random=487817842&rmt_tld=1&ipr=y",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
@@ -208,14 +222,19 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.469,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://accdn-vip.lpsnmedia.net/api/account/5935210/configuration/setting/accountproperties/?cb=accountSettingsCB",
       "type": "script",
       "ipinfo": {
         "domain": "accdn-vip.lpsnmedia.net",
-        "ip": "47.239.213.164",
+        "ip": "47.238.75.110",
         "city": "Hong Kong",
         "region": "Hong Kong",
         "country": "HK",
@@ -230,7 +249,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "lpcdn-vip.lpsnmedia.net",
-        "ip": "47.239.213.164",
+        "ip": "47.238.75.110",
         "city": "Hong Kong",
         "region": "Hong Kong",
         "country": "HK",
@@ -239,21 +258,6 @@
         "timezone": "Asia/Hong_Kong"
       },
       "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://sy.v.liveperson.net/api/js/5935210?&cb=lpCb71330x56484&t=sp&ts=1767821334029&pid=247132025&tid=9922088756&pt=%E6%BB%99%E8%B1%90(%E5%8F%B0%E7%81%A3)%20-%20%E4%BF%A1%E7%94%A8%E5%8D%A1%2C%20%E5%B8%B3%E6%88%B6%2C%20%E4%BF%A1%E7%94%A8%E8%B2%B8%E6%AC%BE%2C%20%E4%BF%9D%E9%9A%AA%2C%E8%B2%A1%E5%AF%8C%E7%AE%A1%E7%90%86&u=https%3A%2F%2Fwww.hsbc.com.tw%2F&sec=%5B%22%22%5D&df=0&os=1&sdes=%5B%7B%22type%22%3A%22ctmrinfo%22%2C%22info%22%3A%7B%22ctype%22%3A%22zh_hant%22%7D%7D%2C%7B%22type%22%3A%22cart%22%2C%22numItems%22%3A0%2C%22products%22%3A%5B%7B%22product%22%3A%7B%22name%22%3A%22page_security_level-0%22%2C%22price%22%3Anull%7D%2C%22quantity%22%3Anull%7D%2C%7B%22product%22%3A%7B%22name%22%3A%22site_region-undefined_undefined_undefined_undefined_undefined%22%2C%22price%22%3Anull%7D%2C%22quantity%22%3Anull%7D%5D%7D%5D&identities=%5B%7B%22iss%22%3A%22HSBC%22%2C%22acr%22%3A%22loa1%22%2C%22sub%22%3A517045640588%7D%2C%7B%22iss%22%3A%22LivePerson%22%2C%22acr%22%3A%220%22%7D%5D",
-      "type": "script",
-      "ipinfo": {
-        "domain": "sy.v.liveperson.net",
-        "ip": "43.251.41.28",
-        "city": "Sydney",
-        "region": "New South Wales",
-        "country": "AU",
-        "loc": "-33.8678,151.2073",
-        "org": "AS11054 LivePerson, Inc.",
-        "timezone": "Australia/Sydney"
-      },
-      "category": "foreign/direct"
     },
     {
       "originalUrl": "https://cdn.appdynamics.com/adrum-ext.0086dbec5e8a6e717bf36d3a06b62042.js",

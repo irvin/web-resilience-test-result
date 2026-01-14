@@ -2,12 +2,11 @@
   "url": "https://wingzero.tw",
   "canonicalURL": "https://www.wingzero.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T22:13:54.264Z",
+  "timestamp": "2026-01-14T03:43:54.098Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -29,11 +28,11 @@
   "uniqueDomains": 6,
   "test_results": {
     "domestic": {
-      "cloud": 2,
+      "cloud": 4,
       "direct": 0
     },
     "foreign": {
-      "cloud": 4,
+      "cloud": 2,
       "direct": 0
     }
   },
@@ -43,7 +42,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "wingzero.tw",
-        "ip": "172.67.197.159",
+        "ip": "104.21.21.93",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -51,7 +50,11 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 135.896,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "http://www.wingzero.tw/",
@@ -66,7 +69,11 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 141.451,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css",
@@ -81,7 +88,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda21a94fe54a28-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap",
@@ -104,15 +116,20 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "151.101.193.229",
+        "ip": "104.16.174.226",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
         "loc": "37.7621,-122.3971",
-        "org": "AS54113 Fastly, Inc.",
+        "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.718,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-760C8G9X8G",

@@ -2,12 +2,11 @@
   "url": "https://commonhealth.com.tw",
   "canonicalURL": "https://www.commonhealth.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:08:54.528Z",
+  "timestamp": "2026-01-14T01:07:34.973Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 195,
-  "uniqueDomains": 22,
+  "requestCount": 168,
+  "uniqueDomains": 20,
   "test_results": {
     "domestic": {
-      "cloud": 11,
+      "cloud": 17,
       "direct": 2
     },
     "foreign": {
-      "cloud": 9,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -51,14 +50,19 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd93c8e5be64a8a-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.commonhealth.com.tw/",
       "type": "document",
       "ipinfo": {
         "domain": "www.commonhealth.com.tw",
-        "ip": "104.18.248.39",
+        "ip": "104.18.249.39",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -66,7 +70,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd93c8e6bed4a8a-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://cdn.qgraph.io/dist/aiqua-wp.js",
@@ -85,22 +94,6 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "ajax.googleapis.com",
-        "ip": "142.250.198.74",
-        "hostname": "lctsaa-ab-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
       "originalUrl": "https://as.chdev.tw/ch/v1/logo.svg",
       "type": "image",
       "ipinfo": {
@@ -113,15 +106,52 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd93c969d798f1b-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "ajax.googleapis.com",
+        "ip": "142.250.204.42",
+        "hostname": "hkg07s38-in-f10.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,700%7CRoboto:400,500",
+      "type": "stylesheet",
+      "ipinfo": {
+        "domain": "fonts.googleapis.com",
+        "ip": "142.250.196.202",
+        "hostname": "nctsaa-ac-in-f10.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://cdn.qgr.ph/qgraph.5f752526166dbbd2a8b5.js",
       "type": "script",
       "ipinfo": {
         "domain": "cdn.qgr.ph",
-        "ip": "3.169.121.108",
-        "hostname": "server-3-169-121-108.tpe53.r.cloudfront.net",
+        "ip": "3.169.121.17",
+        "hostname": "server-3-169-121-17.tpe53.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -136,8 +166,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.77.8",
-        "hostname": "nctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -161,7 +191,12 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 3.612,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://connect.facebook.net/zh_TW/sdk.js",
@@ -196,54 +231,6 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,700%7CRoboto:400,500",
-      "type": "stylesheet",
-      "ipinfo": {
-        "domain": "fonts.googleapis.com",
-        "ip": "142.250.204.42",
-        "hostname": "hkg07s38-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fwww.commonhealth.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=1004689022.1767816531&dt=%E5%BA%B7%E5%81%A5%20-%20%E6%9C%80%E5%80%BC%E5%BE%97%E4%BF%A1%E4%BB%BB%E7%9A%84%E5%81%A5%E5%BA%B7%E5%B9%B3%E5%8F%B0&auid=130379137.1767816531&navt=n&npa=0&gtm=45He6151v71867289za200zd71867289xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115583767~115616985~115938466~115938469&tft=1767816531436&tfd=1013&apve=1&apvf=f",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.196.196",
-        "hostname": "nctsaa-ac-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://sb.scorecardresearch.com/b?c1=2&c2=12333885&ns__t=1767816531437&ns_c=UTF-8&c8=%E5%BA%B7%E5%81%A5%20-%20%E6%9C%80%E5%80%BC%E5%BE%97%E4%BF%A1%E4%BB%BB%E7%9A%84%E5%81%A5%E5%BA%B7%E5%B9%B3%E5%8F%B0&c7=https%3A%2F%2Fwww.commonhealth.com.tw%2F&c9=",
-      "type": "image",
-      "ipinfo": {
-        "domain": "sb.scorecardresearch.com",
-        "ip": "3.169.137.16",
-        "hostname": "server-3-169-137-16.tpe54.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
       "originalUrl": "https://cdn-prd-gcp-jp0.aiqua.io/sdk/v3/r/aiqua.js",
       "type": "script",
       "ipinfo": {
@@ -260,17 +247,33 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-22BTHPFJ1Q&cid=673180443.1767816533&gtm=45je6151v875939053z871867289za20gzb71867289zd71867289&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115583767~115938466~115938469&z=2062553752",
-      "type": "image",
+      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fwww.commonhealth.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=272983639.1768352850&dt=%E5%BA%B7%E5%81%A5%20-%20%E6%9C%80%E5%80%BC%E5%BE%97%E4%BF%A1%E4%BB%BB%E7%9A%84%E5%81%A5%E5%BA%B7%E5%B9%B3%E5%8F%B0&auid=1177016856.1768352850&navt=n&npa=0&gtm=45He61c1v71867289za200zd71867289xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115938465~115938469~115985661~116744866~116988316~117041588&tft=1768352850200&tfd=3129&apve=1&apvf=f",
+      "type": "fetch",
       "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "domain": "www.google.com",
+        "ip": "142.250.204.36",
+        "hostname": "hkg07s38-in-f4.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
         "loc": "25.0143,121.4672",
         "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://sb.scorecardresearch.com/b?c1=2&c2=12333885&ns__t=1768352850201&ns_c=UTF-8&c8=%E5%BA%B7%E5%81%A5%20-%20%E6%9C%80%E5%80%BC%E5%BE%97%E4%BF%A1%E4%BB%BB%E7%9A%84%E5%81%A5%E5%BA%B7%E5%B9%B3%E5%8F%B0&c7=https%3A%2F%2Fwww.commonhealth.com.tw%2F&c9=",
+      "type": "image",
+      "ipinfo": {
+        "domain": "sb.scorecardresearch.com",
+        "ip": "3.169.137.16",
+        "hostname": "server-3-169-137-16.tpe54.r.cloudfront.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
@@ -288,7 +291,11 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 35.602,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://appier.commonhealth.com.tw/",
@@ -304,7 +311,49 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 3.973,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-22BTHPFJ1Q&cid=1306143946.1768352851&gtm=45je61c1v875939053z871867289za20gzb71867289zd71867289&aip=1&dma=0&gcs=G1--&gcd=13l3l3l3l5l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391252~115938465~115938468~115985661~116744866~117041587&z=434434340",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.198.67",
+        "hostname": "lctsaa-ab-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://api.quantumgraph.com/web/cm/",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "api.quantumgraph.com",
+        "ip": "34.110.163.49",
+        "hostname": "49.163.110.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.726,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.facebook.com/privacy_sandbox/topics/registration/?id=140282923329495",
@@ -323,53 +372,6 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://api.quantumgraph.com/web/cm/",
-      "type": "xhr",
-      "ipinfo": {
-        "domain": "api.quantumgraph.com",
-        "ip": "34.110.163.49",
-        "hostname": "49.163.110.34.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
-        "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
-      },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_287.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "s0.2mdn.net",
-        "ip": "142.250.198.70",
-        "hostname": "lctsaa-ab-in-f6.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://weather-ad-taiwan-658ba.web.app/weather.json",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "weather-ad-taiwan-658ba.web.app",
-        "ip": "199.36.158.100",
-        "city": "Mountain View",
-        "region": "California",
-        "country": "US",
-        "loc": "38.0088,-122.1175",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud"
-    },
-    {
       "originalUrl": "https://matomo.commonhealth.com.tw/matomo.js",
       "type": "script",
       "ipinfo": {
@@ -383,7 +385,12 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.008,
+        "detection_method": "rtt"
+      }
     }
   ]
 }

@@ -2,12 +2,11 @@
   "url": "https://ksnews.com.tw",
   "canonicalURL": "https://www.ksnews.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T21:36:46.213Z",
+  "timestamp": "2026-01-14T02:47:06.019Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 119,
+  "requestCount": 129,
   "uniqueDomains": 6,
   "test_results": {
     "domestic": {
-      "cloud": 3,
+      "cloud": 6,
       "direct": 0
     },
     "foreign": {
-      "cloud": 3,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -51,7 +50,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9cd8bff02a9ce-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.ksnews.com.tw/",
@@ -66,7 +70,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9cd940d82a9ce-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-59KWP29FQ1",
@@ -97,7 +106,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9cd99dac4a9ce-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://online.fliphtml5.com/zppkv/lswg/",
@@ -120,8 +134,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "static.fliphtml5.com",
-        "ip": "3.169.36.70",
-        "hostname": "server-3-169-36-70.tpe53.r.cloudfront.net",
+        "ip": "3.169.137.44",
+        "hostname": "server-3-169-137-44.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",

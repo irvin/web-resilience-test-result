@@ -2,12 +2,11 @@
   "url": "https://newbalance.com.tw",
   "canonicalURL": "https://newbalance.com.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T22:25:30.246Z",
+  "timestamp": "2026-01-14T03:54:43.672Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -29,8 +28,8 @@
   "uniqueDomains": 2,
   "test_results": {
     "domestic": {
-      "cloud": 0,
-      "direct": 1
+      "cloud": 1,
+      "direct": 0
     },
     "foreign": {
       "cloud": 1,
@@ -52,22 +51,27 @@
         "org": "AS20940 Akamai International B.V.",
         "timezone": "Asia/Hong_Kong"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 80.524,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.newbalance.com.tw/",
       "type": "document",
       "ipinfo": {
         "domain": "www.newbalance.com.tw",
-        "ip": "210.71.227.216",
-        "city": "Taipei",
-        "region": "Taiwan",
+        "ip": "203.69.138.43",
+        "hostname": "203-69-138-43.hinet-ip.hinet.net",
+        "city": "Banqiao",
+        "region": "Taipei",
         "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS3462 Data Communication Business Group",
+        "loc": "25.0143,121.4672",
+        "org": "AS20940 Akamai International B.V.",
         "timezone": "Asia/Taipei"
       },
-      "category": "domestic/direct"
+      "category": "domestic/cloud"
     }
   ]
 }

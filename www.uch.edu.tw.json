@@ -2,12 +2,11 @@
   "url": "https://www.uch.edu.tw/",
   "canonicalURL": "https://www.uch.edu.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:25:18.929Z",
+  "timestamp": "2026-01-14T01:33:09.059Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -29,11 +28,11 @@
   "uniqueDomains": 4,
   "test_results": {
     "domestic": {
-      "cloud": 2,
+      "cloud": 3,
       "direct": 0
     },
     "foreign": {
-      "cloud": 2,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -59,7 +58,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "code.jquery.com",
-        "ip": "151.101.194.137",
+        "ip": "151.101.66.137",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -67,7 +66,11 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 34.353,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js",
@@ -82,7 +85,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd96229284d8283-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-BYFV9BCH7M",

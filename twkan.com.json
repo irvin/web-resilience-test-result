@@ -2,12 +2,11 @@
   "url": "https://twkan.com",
   "canonicalURL": "https://twkan.com",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:06:45.163Z",
+  "timestamp": "2026-01-14T01:04:55.041Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 52,
+  "requestCount": 54,
   "uniqueDomains": 3,
   "test_results": {
     "domestic": {
-      "cloud": 1,
+      "cloud": 3,
       "direct": 0
     },
     "foreign": {
-      "cloud": 2,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -43,7 +42,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "twkan.com",
-        "ip": "172.67.74.245",
+        "ip": "104.26.2.116",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -51,26 +50,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd938cd6dc44a51-TPE",
+        "detection_method": "header"
+      }
     },
     {
-      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-PZVZJV07T9",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://ui-avatars.com/api/?name=xioet",
+      "originalUrl": "https://ui-avatars.com/api/?name=%E5%B1%80%E9%95%B7",
       "type": "image",
       "ipinfo": {
         "domain": "ui-avatars.com",
@@ -82,7 +70,28 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd938d47bff4a2a-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-PZVZJV07T9",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.googletagmanager.com",
+        "ip": "142.250.66.72",
+        "hostname": "hkg12s27-in-f8.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     }
   ]
 }

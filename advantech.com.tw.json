@@ -2,12 +2,11 @@
   "url": "https://advantech.com.tw",
   "canonicalURL": "https://www.advantech.com/zh-tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T21:35:58.471Z",
+  "timestamp": "2026-01-14T02:45:54.275Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 79,
+  "requestCount": 70,
   "uniqueDomains": 13,
   "test_results": {
     "domestic": {
-      "cloud": 2,
+      "cloud": 10,
       "direct": 0
     },
     "foreign": {
-      "cloud": 10,
+      "cloud": 2,
       "direct": 0
     }
   },
@@ -43,7 +42,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "advantech.com.tw",
-        "ip": "104.18.5.124",
+        "ip": "104.18.4.124",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -51,14 +50,19 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9ccb3e9504a6a-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.advantech.com/zh-tw",
       "type": "document",
       "ipinfo": {
         "domain": "www.advantech.com",
-        "ip": "104.18.4.133",
+        "ip": "104.18.5.133",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -66,15 +70,20 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9ccb72b028f00-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://fonts.googleapis.com/css2?family=Heebo:wght@100;400;500;700;800&display=swap",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.196.202",
-        "hostname": "nctsaa-ac-in-f10.1e100.net",
+        "ip": "142.250.198.74",
+        "hostname": "lctsaa-ab-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -97,14 +106,19 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9ccbddeef4a57-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://advcloudfiles.advantech.com/web/lib/jquery-owl-carousel/2.2.1/assets/owl.carousel.min.css",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "advcloudfiles.advantech.com",
-        "ip": "104.18.5.133",
+        "ip": "104.18.4.133",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -112,15 +126,20 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9ccb7c866b846-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-N4LS26",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -144,36 +163,26 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.085,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://atw-go.advantech.com/pdt.js?aid=1096702",
       "type": "script",
       "ipinfo": {
         "domain": "atw-go.advantech.com",
-        "ip": "3.215.172.219",
-        "hostname": "ec2-3-215-172-219.compute-1.amazonaws.com",
+        "ip": "18.208.125.13",
+        "hostname": "ec2-18-208-125-13.compute-1.amazonaws.com",
         "city": "Ashburn",
         "region": "Virginia",
         "country": "US",
         "loc": "39.0437,-77.4875",
         "org": "AS14618 Amazon.com, Inc.",
         "timezone": "America/New_York"
-      },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://cdn-cookieyes.com/client_data/4d21d9e68af395d626689a1b/script.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "cdn-cookieyes.com",
-        "ip": "104.18.19.62",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
       },
       "category": "foreign/cloud"
     },
@@ -197,7 +206,7 @@
       "type": "xhr",
       "ipinfo": {
         "domain": "apis-corp.advantech.com",
-        "ip": "104.18.4.133",
+        "ip": "104.18.5.133",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -205,14 +214,39 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9ccb94b21b846-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://cdn-cookieyes.com/client_data/4d21d9e68af395d626689a1b/script.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "cdn-cookieyes.com",
+        "ip": "104.18.19.62",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9ccbe0d68808c-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://ka-p.fontawesome.com/assets/4728a24d75/36540866/kit.css?token=4728a24d75",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "ka-p.fontawesome.com",
-        "ip": "172.64.147.188",
+        "ip": "104.18.40.68",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -220,10 +254,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9ccbf9c40842d-TPE",
+        "detection_method": "header"
+      }
     },
     {
-      "originalUrl": "blob:https://www.advantech.com/ef916b14-9464-41c0-a36b-ad711ab18215",
+      "originalUrl": "blob:https://www.advantech.com/c2e65526-31a8-43a4-b5d3-957c8fd6f6cd",
       "type": "other",
       "ipinfo": {
         "domain": ""

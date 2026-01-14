@@ -2,12 +2,11 @@
   "url": "https://yannick.com.tw",
   "canonicalURL": "https://yannick.com.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T22:28:41.021Z",
+  "timestamp": "2026-01-14T03:58:20.487Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 98,
-  "uniqueDomains": 17,
+  "requestCount": 120,
+  "uniqueDomains": 18,
   "test_results": {
     "domestic": {
-      "cloud": 11,
+      "cloud": 14,
       "direct": 3
     },
     "foreign": {
-      "cloud": 3,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -43,13 +42,12 @@
       "type": "document",
       "ipinfo": {
         "domain": "yannick.com.tw",
-        "ip": "61.222.8.210",
-        "hostname": "61-222-8-210.hinet-ip.hinet.net",
-        "city": "Taipei",
-        "region": "Taiwan",
+        "ip": "210.200.66.80",
+        "city": "Banqiao",
+        "region": "Taipei",
         "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS3462 Data Communication Business Group",
+        "loc": "25.0143,121.4672",
+        "org": "AS131142 Asia Pacific On-Line Service Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
@@ -75,8 +73,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.66.72",
-        "hostname": "hkg12s27-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -99,20 +97,25 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda36c7ea888088-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://s.yimg.com/wi/ytc.js",
       "type": "script",
       "ipinfo": {
         "domain": "s.yimg.com",
-        "ip": "180.222.106.12",
-        "hostname": "e2.ycpi.vip.tpb.yahoo.com",
+        "ip": "180.222.109.252",
+        "hostname": "e2-bmr.ycpi.vip.twb.yahoo.com",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
         "loc": "25.0143,121.4672",
-        "org": "AS38033 internet content provider",
+        "org": "AS24376 Yahoo China Datacenter",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
@@ -122,7 +125,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "bat.bing.com",
-        "ip": "150.171.28.10",
+        "ip": "150.171.27.10",
         "city": "Redmond",
         "region": "Washington",
         "country": "US",
@@ -149,32 +152,36 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fyannick.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=2037925042.1767824918&dt=%E4%BA%9E%E5%B0%BC%E5%85%8B&auid=1878198406.1767824918&navt=n&npa=0&gtm=45He6160h1v831808619za200zd831808619xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115616985~115938465~115938469&tft=1767824918178&tfd=1006&apve=1&apvf=f",
+      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fyannick.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=1506861183.1768363097&dt=%E4%BA%9E%E5%B0%BC%E5%85%8B&auid=1220141169.1768363097&navt=n&npa=0&gtm=45He61c1v831808619za200zd831808619xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115495940~115938466~115938469~117041587&tft=1768363096887&tfd=1171&apve=1&apvf=f",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.204.36",
-        "hostname": "hkg07s38-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
+        "ip": "142.251.150.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
         "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.886,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://d.line-scdn.net/n/line_tag/public/release/v1/lt.js",
       "type": "script",
       "ipinfo": {
         "domain": "d.line-scdn.net",
-        "ip": "23.39.61.163",
-        "hostname": "a23-39-61-163.deploy.static.akamaitechnologies.com",
-        "city": "Taipei",
+        "ip": "184.25.121.253",
+        "hostname": "a184-25-121-253.deploy.static.akamaitechnologies.com",
+        "city": "Yuanlin",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "23.9567,120.5761",
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -197,12 +204,12 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-R5MQD8V83N&cid=1310898517.1767824918&gtm=45je6160h1v894800237z8831808619za20gzb831808619zd831808619&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115616985~115938465~115938468&z=1650755882",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-R5MQD8V83N&cid=2001871136.1768363097&gtm=45je61c1v894800237za20g&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115938466~115938468~116988316~117041588&z=514319541",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "ip": "142.250.66.67",
+        "hostname": "hkg12s27-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -228,7 +235,7 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://cdn-asset.optimonk.com/script.esm/embedded.e0722f60.js",
+      "originalUrl": "https://cdn-asset.optimonk.com/script.esm/embedded.976655a9.js",
       "type": "script",
       "ipinfo": {
         "domain": "cdn-asset.optimonk.com",
@@ -301,7 +308,27 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.484,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://cdn-renderer.optimonk.com/ssr/132701/69534758beacb95927e9c570.html?v=1767345527&domain=yannick.com.tw&v2=1767345531",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "cdn-renderer.optimonk.com",
+        "ip": "192.169.120.162",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS21859 Zenlayer Inc",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     }
   ]
 }

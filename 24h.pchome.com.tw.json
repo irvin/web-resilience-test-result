@@ -2,12 +2,11 @@
   "url": "https://24h.pchome.com.tw",
   "canonicalURL": "https://24h.pchome.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:14:43.419Z",
+  "timestamp": "2026-01-14T01:15:45.961Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 209,
-  "uniqueDomains": 29,
+  "requestCount": 203,
+  "uniqueDomains": 28,
   "test_results": {
     "domestic": {
-      "cloud": 5,
+      "cloud": 27,
       "direct": 1
     },
     "foreign": {
-      "cloud": 23,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -52,10 +51,15 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.338,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "https://assets.pchome.com.tw/production/ecweb/build/static/js/main.fa18bc5b.js",
+      "originalUrl": "https://assets.pchome.com.tw/production/ecweb/build/static/js/main.14674f90.js",
       "type": "script",
       "ipinfo": {
         "domain": "assets.pchome.com.tw",
@@ -68,7 +72,12 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 3.696,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-TKSM5PF",
@@ -100,10 +109,15 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.999,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2F24h.pchome.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=1050304594.1767816882&dt=PChome%2024h%E8%B3%BC%E7%89%A9&auid=2140340686.1767816882&navt=n&npa=0&gtm=45He6151v79197709za200zd79197709xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115495940~115583767~115938466~115938469~116744866&tft=1767816881741&tfd=188&apve=1&apvf=f",
+      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2F24h.pchome.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=83549746.1768353341&dt=PChome%2024h%E8%B3%BC%E7%89%A9&auid=1783050774.1768353341&navt=n&npa=0&gtm=45He61c1v79197709za200zd79197709xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528500~104573694~104684208~104684211~105391252~115938465~115938468~116988315~117041587&tft=1768353340980&tfd=272&apve=1&apvf=f",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
@@ -147,26 +161,31 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9489df958828f-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://d.line-scdn.net/n/line_tag/public/release/v1/lt.js",
       "type": "script",
       "ipinfo": {
         "domain": "d.line-scdn.net",
-        "ip": "23.39.61.163",
-        "hostname": "a23-39-61-163.deploy.static.akamaitechnologies.com",
-        "city": "Taipei",
+        "ip": "104.116.17.150",
+        "hostname": "a104-116-17-150.deploy.static.akamaitechnologies.com",
+        "city": "Yuanlin",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "23.9567,120.5761",
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://engage.pchome.com.tw/?eventName=sessionStart&eventId=44f584be-a08a-4604-b2d8-f884406f9c81&timestamp=1767816881734&sessionId=8a30356c-1140-4fb4-a832-ab032b3cd6e9&deviceCategory=web.desktop&userAgent=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F133.0.6943.16%20Safari%2F537.36&deviceId=8eb930df-477d-4b24-a05d-cbffa0a62c8f&userId=null",
+      "originalUrl": "https://engage.pchome.com.tw/?eventName=sessionStart&eventId=beed438a-b40b-48dc-8cbb-c52072886b45&timestamp=1768353340973&sessionId=db3165b3-4179-4c41-b0fb-bc3d53cd5320&deviceCategory=web.desktop&userAgent=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F133.0.6943.16%20Safari%2F537.36&deviceId=2996b64d-a391-442c-8cc5-dfa8e98f58dd&userId=null",
       "type": "image",
       "ipinfo": {
         "domain": "engage.pchome.com.tw",
@@ -179,39 +198,12 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://eventapi.pchome.com.tw/g/collect?v=2&tid=G-9876543210&gtm=45je6151z879197709za20gzb79197709zd79197709&_p=1767816881634&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=718176692.1767816882&ecid=1348712232&ul=en-us&sr=1280x720&_fplc=0&ur=TW-TPQ&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&are=1&frm=0&pscdl=noapi&sst.etld=google.com.tw&sst.tft=1767816881634&sst.lpc=198273196&sst.navt=n&sst.ude=0&sst.sw_exp=1&_s=1&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115495939~115583767~115938466~115938468~116744866~116988315&sid=1767816881&sct=1&seg=0&dl=https%3A%2F%2F24h.pchome.com.tw%2F&dt=PChome%2024h%E8%B3%BC%E7%89%A9&_tu=BA&en=page_view&_fv=1&_nsi=1&_ss=1&ep.event_id=a95136d4-c15d-44ef-9f88-c04bdf2c2956_1767816881634.3&ep.event_name=PageView&tfd=258&richsstsse",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "eventapi.pchome.com.tw",
-        "ip": "142.250.204.51",
-        "hostname": "hkg07s38-in-f19.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-9CE1X6J1FG&cid=718176692.1767816882&gtm=45je6151v872609635z879197709za20gzb79197709zd79197709&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115938466~115938469~116744866&z=1083047478",
-      "type": "image",
-      "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.204.35",
-        "hostname": "hkg07s38-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.156,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://fs-f.ecimg.tw/img/h24/new/index/v1/images/logo/logo_pchome--24hWhiteMd-V2.svg",
@@ -227,58 +219,15 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.006,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "https://fs-a.ecimg.tw/img/h24/new/index/v1/images/img/img_shippingSign.svg",
-      "type": "image",
-      "ipinfo": {
-        "domain": "fs-a.ecimg.tw",
-        "ip": "34.107.130.45",
-        "hostname": "45.130.107.34.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
-        "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
-      },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://fs-e.ecimg.tw/img/h24/new/index/v1/fonts/Noto_Sans_TC/NotoSansTC-Regular.woff2",
-      "type": "font",
-      "ipinfo": {
-        "domain": "fs-e.ecimg.tw",
-        "ip": "34.107.130.45",
-        "hostname": "45.130.107.34.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
-        "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
-      },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://fs-d.ecimg.tw/img/h24/new/index/v1/fonts/Noto_Sans_TC/NotoSansTC-Bold.woff2",
-      "type": "font",
-      "ipinfo": {
-        "domain": "fs-d.ecimg.tw",
-        "ip": "34.107.130.45",
-        "hostname": "45.130.107.34.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
-        "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
-      },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://ecapi-cdn.pchome.com.tw/fsapi/edm/bank/v1/data&_callback=jsonp_edmbank&1767816882?_callback=jsonp_edmbank",
+      "originalUrl": "https://ecapi-cdn.pchome.com.tw/fsapi/edm/bank/v1/data&_callback=jsonp_edmbank&1768353341?_callback=jsonp_edmbank",
       "type": "script",
       "ipinfo": {
         "domain": "ecapi-cdn.pchome.com.tw",
@@ -291,7 +240,12 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://ecapi.pchome.com.tw/member/v2/member/islogin?_callback=jsonpcb_MemberIsLogin",
@@ -307,10 +261,15 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.22,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "https://ecssl-cart.pchome.com.tw/cart/index.php/prod/modify?data={%22TB%22:%2224H%22}&callback=jsonp_modshopcart&1767816882&_callback=jsonp_modshopcart",
+      "originalUrl": "https://ecssl-cart.pchome.com.tw/cart/index.php/prod/modify?data={%22TB%22:%2224H%22}&callback=jsonp_modshopcart&1768353341&_callback=jsonp_modshopcart",
       "type": "script",
       "ipinfo": {
         "domain": "ecssl-cart.pchome.com.tw",
@@ -323,10 +282,15 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.694,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "https://libs.pcloud.tw/js/current/venraaspt.min.js?_=20460",
+      "originalUrl": "https://libs.pcloud.tw/js/current/venraaspt.min.js?_=20467",
       "type": "script",
       "ipinfo": {
         "domain": "libs.pcloud.tw",
@@ -339,7 +303,75 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.953,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://fs-a.ecimg.tw/img/h24/new/index/v1/images/img/img_shippingSign.svg",
+      "type": "image",
+      "ipinfo": {
+        "domain": "fs-a.ecimg.tw",
+        "ip": "34.107.130.45",
+        "hostname": "45.130.107.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.67,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://fs-e.ecimg.tw/img/h24/new/index/v1/fonts/Noto_Sans_TC/NotoSansTC-Regular.woff2",
+      "type": "font",
+      "ipinfo": {
+        "domain": "fs-e.ecimg.tw",
+        "ip": "34.107.130.45",
+        "hostname": "45.130.107.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.22,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://fs-d.ecimg.tw/img/h24/new/index/v1/fonts/Noto_Sans_TC/NotoSansTC-Bold.woff2",
+      "type": "font",
+      "ipinfo": {
+        "domain": "fs-d.ecimg.tw",
+        "ip": "34.107.130.45",
+        "hostname": "45.130.107.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 3.654,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://sspap.pchome.tw/rpc/supply/ad?spaceId=cf34afa7d9e648d7&adGroupType=0&adContent=site&productCount=1",
@@ -355,26 +387,47 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.239,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "https://cs-f.ecimg.tw/cms/creatives/headerlogo/a36297f5-f802-4dfd-b03f-9425fb8c8b0a.gif",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-9CE1X6J1FG&cid=580956876.1768353341&gtm=45je61c1v872609635z879197709za20gzb79197709zd79197709&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115616985~115938465~115938468~116910503~116988316~117041587&z=1704011383",
       "type": "image",
       "ipinfo": {
-        "domain": "cs-f.ecimg.tw",
-        "ip": "34.160.217.38",
-        "hostname": "38.217.160.34.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
-        "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
+        "domain": "www.google.com.tw",
+        "ip": "142.250.198.67",
+        "hostname": "lctsaa-ab-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://img.pchome.com.tw/cs/cms/creatives/cover_sm/c30f81f7-a892-4269-b7b8-0b745f9152df.png",
+      "originalUrl": "https://eventapi.pchome.com.tw/g/collect?v=2&tid=G-9876543210&gtm=45je61c1z879197709za20gzb79197709zd79197709&_p=1768353340809&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=580956876.1768353341&ecid=1017859126&ul=en-us&sr=1280x720&_fplc=0&ur=TW-TPQ&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&are=1&frm=0&pscdl=noapi&sst.etld=google.com.tw&sst.tft=1768353340809&sst.lpc=198273196&sst.navt=n&sst.ude=0&sst.sw_exp=1&_s=1&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115616986~115938465~115938469~117041588&sid=1768353341&sct=1&seg=0&dl=https%3A%2F%2F24h.pchome.com.tw%2F&dt=PChome%2024h%E8%B3%BC%E7%89%A9%20%7C%20%E6%AF%8F%E5%A4%A9%E4%B8%80%E8%B5%B7%E8%AE%8A%E6%9B%B4%E5%A5%BD&_tu=BA&en=page_view&_fv=1&_ss=1&ep.event_id=a95136d4-c15d-44ef-9f88-c04bdf2c2956_1768353340809.3&ep.event_name=PageView&tfd=394&richsstsse",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "eventapi.pchome.com.tw",
+        "ip": "142.250.77.19",
+        "hostname": "nctsaa-ab-in-f19.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://img.pchome.com.tw/fs/img/h24/new/index/v1/images/img/mobile_loading.svg",
       "type": "image",
       "ipinfo": {
         "domain": "img.pchome.com.tw",
@@ -387,7 +440,12 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 3.905,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://fs-b.ecimg.tw/img/h24/new/index/v1/images/img/img_shippingSign.svg",
@@ -403,7 +461,12 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 3.778,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://fs-c.ecimg.tw/img/h24/new/index/v1/images/icon/icon_paying.svg",
@@ -419,10 +482,36 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.292,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "https://cs-a.ecimg.tw/cms/media-items/frame_a2/acdb7769-5476-44dc-9c17-552a5e4c47f1.png",
+      "originalUrl": "https://ecdmp.pchome.tw/api/v1/t?ts=1768353341&feedId=8864824f-7cd6-4280-9c7b-60d3ac09f862&random=312553496",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "ecdmp.pchome.tw",
+        "ip": "34.102.202.90",
+        "hostname": "90.202.102.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.644,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://cs-a.ecimg.tw/cms/media-items/frame_a2/9e0318e0-da31-4044-8a3a-dbd7384e7d37.png",
       "type": "image",
       "ipinfo": {
         "domain": "cs-a.ecimg.tw",
@@ -435,7 +524,12 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.632,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://apid.pcloud.tw/venapis/vengu",
@@ -451,10 +545,15 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.014,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "https://24h.m.pchome.com.tw/cdn/video/collection.htm/data&wt=json&_callback=jsonp_video&1767816882?_callback=jsonp_video",
+      "originalUrl": "https://24h.m.pchome.com.tw/cdn/video/collection.htm/data&wt=json&_callback=jsonp_video&1768353341?_callback=jsonp_video",
       "type": "script",
       "ipinfo": {
         "domain": "24h.m.pchome.com.tw",
@@ -467,7 +566,12 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.788,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://apih.pcloud.tw/hermes/api/goods/rank",
@@ -483,23 +587,12 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://ecdmp.pchome.tw/api/v1/t?ts=1767816883&feedId=8864824f-7cd6-4280-9c7b-60d3ac09f862&random=854159024",
-      "type": "xhr",
-      "ipinfo": {
-        "domain": "ecdmp.pchome.tw",
-        "ip": "34.102.202.90",
-        "hostname": "90.202.102.34.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
-        "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
-      },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.315,
+        "detection_method": "rtt"
+      }
     }
   ]
 }

@@ -1,13 +1,12 @@
 {
   "url": "https://timberland.com.tw",
-  "canonicalURL": "https://timberland.com.tw",
-  "httpStatus": 500,
-  "timestamp": "2026-01-07T22:01:09.854Z",
+  "canonicalURL": "https://www.timberland.com.tw/",
+  "httpStatus": 200,
+  "timestamp": "2026-01-14T03:31:16.604Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 2,
-  "uniqueDomains": 2,
+  "requestCount": 33,
+  "uniqueDomains": 7,
   "test_results": {
     "domestic": {
-      "cloud": 0,
+      "cloud": 6,
       "direct": 0
     },
     "foreign": {
-      "cloud": 2,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -68,7 +67,97 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.006,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://static.91app.com/design-cloud/static/userSite/resource/prod/latest/trinity-root.css",
+      "type": "stylesheet",
+      "ipinfo": {
+        "domain": "static.91app.com",
+        "ip": "3.169.36.47",
+        "hostname": "server-3-169-36-47.tpe53.r.cloudfront.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://cms.cdn.91app.com/cms/common/iconFonts/v1.1.15/nine1/nine1.css?timestamp=1731867560675",
+      "type": "stylesheet",
+      "ipinfo": {
+        "domain": "cms.cdn.91app.com",
+        "ip": "3.169.36.83",
+        "hostname": "server-3-169-36-83.tpe53.r.cloudfront.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://img.91app.com/webapi/imagesV3/Cropped/SalePage/6203850/0/639038942468100000?v=1",
+      "type": "image",
+      "ipinfo": {
+        "domain": "img.91app.com",
+        "ip": "3.169.55.16",
+        "hostname": "server-3-169-55-16.tpe54.r.cloudfront.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://cms-static.cdn.91app.com/images/original/1257/ceba28ab-66f5-4b51-a282-254ab800168b-1767174789-9i2fd7rxm3_m.png",
+      "type": "image",
+      "ipinfo": {
+        "domain": "cms-static.cdn.91app.com",
+        "ip": "3.169.36.20",
+        "hostname": "server-3-169-36-20.tpe53.r.cloudfront.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://design-api-gcp.91app.com/mweb/webapi/MemberInvite/PromoCodeMGOSetting?shopId=1257",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "design-api-gcp.91app.com",
+        "ip": "35.244.190.239",
+        "hostname": "239.190.244.35.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.031,
+        "detection_method": "rtt"
+      }
     }
   ]
 }

@@ -2,12 +2,11 @@
   "url": "https://moedict.tw",
   "canonicalURL": "https://moedict.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T21:33:13.461Z",
+  "timestamp": "2026-01-14T02:42:02.735Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -29,11 +28,11 @@
   "uniqueDomains": 8,
   "test_results": {
     "domestic": {
-      "cloud": 3,
+      "cloud": 6,
       "direct": 1
     },
     "foreign": {
-      "cloud": 4,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -43,21 +42,6 @@
       "type": "document",
       "ipinfo": {
         "domain": "moedict.tw",
-        "ip": "104.26.10.147",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://www.moedict.tw/",
-      "type": "document",
-      "ipinfo": {
-        "domain": "www.moedict.tw",
         "ip": "104.26.11.147",
         "city": "San Francisco",
         "region": "California",
@@ -66,7 +50,32 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9c70fdac9826a-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://www.moedict.tw/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "www.moedict.tw",
+        "ip": "104.26.10.147",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9c7105bff8098-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://connect.facebook.net/zh_TW/sdk.js",
@@ -89,8 +98,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.204.36",
-        "hostname": "hkg07s38-in-f4.1e100.net",
+        "ip": "142.250.196.196",
+        "hostname": "nctsaa-ac-in-f4.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -113,15 +122,19 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 80.767,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://cse.google.com/cse/cse.js?cx=007966820757635393756:sasf0rnevk4",
       "type": "script",
       "ipinfo": {
         "domain": "cse.google.com",
-        "ip": "142.250.66.78",
-        "hostname": "hkg12s27-in-f14.1e100.net",
+        "ip": "142.250.204.46",
+        "hostname": "hkg07s38-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -136,8 +149,8 @@
       "type": "image",
       "ipinfo": {
         "domain": "clients1.google.com",
-        "ip": "142.250.204.46",
-        "hostname": "hkg07s38-in-f14.1e100.net",
+        "ip": "142.250.196.206",
+        "hostname": "nctsaa-ac-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -148,7 +161,7 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://syndication.twitter.com/settings?session_id=7789747a601bc027c8c1aed27c5c411be753d5c5",
+      "originalUrl": "https://syndication.twitter.com/settings?session_id=3793b03c7f556fcc32ddcc5b80ef1523d24d05f4",
       "type": "fetch",
       "ipinfo": {
         "domain": "syndication.twitter.com",
@@ -160,7 +173,13 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9c7145cdf8446-TPE",
+        "x-served-by": "t4_p",
+        "detection_method": "header"
+      }
     }
   ]
 }

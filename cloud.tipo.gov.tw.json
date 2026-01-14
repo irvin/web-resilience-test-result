@@ -2,12 +2,11 @@
   "url": "https://cloud.tipo.gov.tw",
   "canonicalURL": "https://cloud.tipo.gov.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T22:26:18.262Z",
+  "timestamp": "2026-01-14T03:55:52.421Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -29,11 +28,11 @@
   "uniqueDomains": 1,
   "test_results": {
     "domestic": {
-      "cloud": 0,
+      "cloud": 1,
       "direct": 0
     },
     "foreign": {
-      "cloud": 1,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -43,7 +42,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "cloud.tipo.gov.tw",
-        "ip": "104.18.27.27",
+        "ip": "104.18.26.27",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -51,7 +50,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda3342bed7a339-TPE",
+        "detection_method": "header"
+      }
     }
   ]
 }

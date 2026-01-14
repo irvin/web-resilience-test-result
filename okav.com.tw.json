@@ -2,12 +2,11 @@
   "url": "https://okav.com.tw",
   "canonicalURL": "https://okav.com.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T22:37:19.957Z",
+  "timestamp": "2026-01-14T04:06:25.869Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 123,
+  "requestCount": 126,
   "uniqueDomains": 5,
   "test_results": {
     "domestic": {
-      "cloud": 0,
+      "cloud": 1,
       "direct": 1
     },
     "foreign": {
-      "cloud": 1,
+      "cloud": 0,
       "direct": 3
     }
   },
@@ -75,7 +74,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "ajax.aspnetcdn.com",
-        "ip": "210.71.227.112",
+        "ip": "203.69.81.40",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -86,11 +85,11 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://img.codrse.com/amountimages/201207/LA1468.jpg",
+      "originalUrl": "https://img.codrse.com/amountimages/201304/CA6965.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "img.codrse.com",
-        "ip": "104.26.15.181",
+        "ip": "104.26.14.181",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -98,7 +97,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda42a20a22b856-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://analytics.ozlinedsp.com/tracking/segment?key=duq6kfz",

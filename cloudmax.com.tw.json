@@ -2,12 +2,11 @@
   "url": "https://cloudmax.com.tw",
   "canonicalURL": "https://www.cloudmax.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T22:39:58.488Z",
+  "timestamp": "2026-01-14T04:09:19.768Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -29,11 +28,11 @@
   "uniqueDomains": 4,
   "test_results": {
     "domestic": {
-      "cloud": 1,
+      "cloud": 3,
       "direct": 0
     },
     "foreign": {
-      "cloud": 2,
+      "cloud": 0,
       "direct": 1
     }
   },
@@ -51,14 +50,19 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.703,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.cloudmax.com.tw/",
       "type": "document",
       "ipinfo": {
         "domain": "www.cloudmax.com.tw",
-        "ip": "172.66.161.47",
+        "ip": "104.20.24.5",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -66,7 +70,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.782,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg",

@@ -2,12 +2,11 @@
   "url": "https://dcard.tw",
   "canonicalURL": "https://www.dcard.tw/f",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:06:03.877Z",
+  "timestamp": "2026-01-14T01:04:11.482Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 72,
-  "uniqueDomains": 7,
+  "requestCount": 163,
+  "uniqueDomains": 11,
   "test_results": {
     "domestic": {
-      "cloud": 3,
+      "cloud": 11,
       "direct": 0
     },
     "foreign": {
-      "cloud": 4,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -51,7 +50,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd937b1ca494a6c-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.dcard.tw/",
@@ -66,15 +70,20 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd937b3ee256b62-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.198.74",
-        "hostname": "lctsaa-ab-in-f10.1e100.net",
+        "ip": "142.250.66.74",
+        "hostname": "hkg12s27-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -98,7 +107,12 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.093,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://sb.scorecardresearch.com/beacon.js",
@@ -121,8 +135,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -133,7 +147,7 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://bilanx.dcard.tw/v1/configs?appPlatform=web&appVersion=web%202.0.0&deviceId=b1debca4-9486-4656-bf75-c56857244446&deviceLanguage=zh-TW&manufacturer=Apple&memberId=0&model=Chrome%20133.0.0.0&osVersion=Mac%20OS%2010.15.7&privateMode=off&productName=Dcard&serviceRegion=TW",
+      "originalUrl": "https://bilanx.dcard.tw/v1/configs?appPlatform=web&appVersion=web%202.3.0&deviceId=6642c3a8-570c-4193-9791-01b604dadbc4&deviceLanguage=zh-TW&manufacturer=Apple&memberId=0&model=Chrome%20133.0.0.0&osVersion=Mac%20OS%2010.15.7&privateMode=off&productName=Dcard&serviceRegion=TW",
       "type": "fetch",
       "ipinfo": {
         "domain": "bilanx.dcard.tw",
@@ -145,7 +159,80 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd937bb9e0e8f09-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fwww.dcard.tw%2Ff&scrsrc=www.googletagmanager.com&rnd=835045616.1768352650&dt=Dcard&auid=335970856.1768352650&navt=n&npa=0&gtm=45He61c1v810931448za200zd810931448xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115938466~115938469~115985660~116744867~116988316~117041587&tft=1768352649581&tfd=1743&apve=1&apvf=f",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.156.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.277,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://megapx-assets.dcard.tw/videos/c81916f3-4fe8-4f52-bc47-81c003340b4c/thumbnails/360.jpeg",
+      "type": "image",
+      "ipinfo": {
+        "domain": "megapx-assets.dcard.tw",
+        "ip": "203.69.138.222",
+        "hostname": "203-69-138-222.hinet-ip.hinet.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS20940 Akamai International B.V.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://fundingchoicesmessages.google.com/i/146730420?ers=3",
+      "type": "script",
+      "ipinfo": {
+        "domain": "fundingchoicesmessages.google.com",
+        "ip": "142.250.204.46",
+        "hostname": "hkg07s38-in-f14.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-DSM1GSYX4C&cid=533334775.1768352650&gtm=45je61c1v869323592z8810931448za20gzb810931448zd810931448&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115616985~115938466~115938469~115985660~116744867~116910503~117041588&z=721186157",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.204.35",
+        "hostname": "hkg07s38-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     }
   ]
 }

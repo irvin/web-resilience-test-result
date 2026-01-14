@@ -1,8 +1,8 @@
 {
   "url": "https://edudns-c1.edu.tw",
   "canonicalURL": "https://edudns-c1.edu.tw",
-  "httpStatus": 403,
-  "timestamp": "2026-01-05T22:19:09.806Z",
+  "httpStatus": null,
+  "timestamp": "2026-01-14T11:59:50.719Z",
   "testParameters": {
     "customDNS": null,
     "useAdblock": true,
@@ -17,11 +17,9 @@
   "requestCount": 0,
   "uniqueDomains": 0,
   "testError": true,
-  "errorReason": "HTTP 403 Error",
+  "errorReason": "ERR_NAME_NOT_RESOLVED",
   "errorDetails": {
-    "message": "HTTP 403 Forbidden",
-    "name": "Error",
-    "statusCode": "403",
-    "stack": "Error: HTTP 403 Forbidden\n    at collectHARAndCanonical (/Users/Irvin/Coding/smc git/digital-service-resilience/no-global-connection-check.js:431:19)\n    at async checkWebsiteResilience (/Users/Irvin/Coding/smc git/digital-service-resilience/no-global-connection-check.js:957:25)\n    at async runWorker (/Users/Irvin/Coding/smc git/digital-service-resilience/batch-test.js:160:32)\n    at async Promise.all (index 0)\n    at async batchTest (/Users/Irvin/Coding/smc git/digital-service-resilience/batch-test.js:234:5)"
+    "message": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.edudns-c1.edu.tw/\nCall log:\n\u001b[2m  - navigating to \"https://www.edudns-c1.edu.tw/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "statusCode": null
   }
 }

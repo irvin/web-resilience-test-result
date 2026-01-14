@@ -2,12 +2,11 @@
   "url": "https://hinet.net",
   "canonicalURL": "https://hinet.net",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:08:16.594Z",
+  "timestamp": "2026-01-14T01:06:37.215Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 390,
+  "requestCount": 387,
   "uniqueDomains": 12,
   "test_results": {
     "domestic": {
-      "cloud": 3,
+      "cloud": 4,
       "direct": 5
     },
     "foreign": {
-      "cloud": 3,
+      "cloud": 2,
       "direct": 0
     }
   },
@@ -59,8 +58,8 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.hinet.net",
-        "ip": "203.66.32.98",
-        "hostname": "203-66-32-98.hinet-ip.hinet.net",
+        "ip": "203.66.32.196",
+        "hostname": "203-66-32-196.hinet-ip.hinet.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -75,8 +74,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.77.8",
+        "hostname": "nctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -91,8 +90,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "chat.cht.com.tw",
-        "ip": "35.72.170.180",
-        "hostname": "ec2-35-72-170-180.ap-northeast-1.compute.amazonaws.com",
+        "ip": "176.32.83.87",
+        "hostname": "ec2-176-32-83-87.ap-northeast-1.compute.amazonaws.com",
         "city": "Tokyo",
         "region": "Tokyo",
         "country": "JP",
@@ -135,7 +134,7 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://search.hinet.net/islogin?callback=islogin&_=1767816495210",
+      "originalUrl": "https://search.hinet.net/islogin?callback=islogin&_=1768352785769",
       "type": "script",
       "ipinfo": {
         "domain": "search.hinet.net",
@@ -151,12 +150,12 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-1552QGKE0S&cid=903087108.1767816495&gtm=45je6151h1v872913667z872449386za200zb72449386zd72449386&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115497441~115583767~115616985~115938466~115938468~116992597&z=1327322915",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-1552QGKE0S&cid=744296340.1768352786&gtm=45je61c1v872913667za200zd872913667&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115616986~115938466~115938468~115985660~116744866~116910502~117041587&z=277150928",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.77.3",
-        "hostname": "nctsaa-ab-in-f3.1e100.net",
+        "ip": "142.250.196.195",
+        "hostname": "nctsaa-ac-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -179,7 +178,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd93b11f98c843c-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://chat123.cht.com.tw/CustomerService/Files/Common/9af5aa86-4b8a-45c6-abfd-645d12a15e6a.o.png",
@@ -198,7 +202,7 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "blob:https://chat.cht.com.tw/af598d4b-e0e3-49c6-84f3-a6c616fe30ad",
+      "originalUrl": "blob:https://chat.cht.com.tw/a42153d0-785f-4447-8fb3-7ddd38149ae8",
       "type": "other",
       "ipinfo": {
         "domain": ""
@@ -209,7 +213,7 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "151.101.65.229",
+        "ip": "151.101.129.229",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -217,7 +221,11 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 37.988,
+        "detection_method": "rtt"
+      }
     }
   ]
 }

@@ -2,12 +2,11 @@
   "url": "https://www.coolloud.org.tw/",
   "canonicalURL": "https://www.coolloud.org.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T22:01:36.079Z",
+  "timestamp": "2026-01-14T03:31:28.258Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -29,11 +28,11 @@
   "uniqueDomains": 8,
   "test_results": {
     "domestic": {
-      "cloud": 3,
+      "cloud": 5,
       "direct": 2
     },
     "foreign": {
-      "cloud": 3,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -52,14 +51,18 @@
         "org": "AS63949 Akamai Connected Cloud",
         "timezone": "Asia/Tokyo"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 36.784,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "netdna.bootstrapcdn.com",
-        "ip": "104.18.10.207",
+        "ip": "104.18.11.207",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -67,7 +70,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda0f789c8d844b-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://connect.facebook.net/zh_TW/sdk.js",
@@ -90,8 +98,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.66.68",
-        "hostname": "hkg12s27-in-f4.1e100.net",
+        "ip": "142.250.196.196",
+        "hostname": "nctsaa-ac-in-f4.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -114,15 +122,20 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.163,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://cse.google.com/cse/cse.js?cx=001045943844002161735:lwssnloorte",
       "type": "script",
       "ipinfo": {
         "domain": "cse.google.com",
-        "ip": "142.250.77.14",
-        "hostname": "nctsaa-ab-in-f14.1e100.net",
+        "ip": "142.250.66.78",
+        "hostname": "hkg12s27-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -137,8 +150,8 @@
       "type": "image",
       "ipinfo": {
         "domain": "clients1.google.com",
-        "ip": "142.250.66.78",
-        "hostname": "hkg12s27-in-f14.1e100.net",
+        "ip": "142.250.204.46",
+        "hostname": "hkg07s38-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -149,7 +162,7 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.facebook.com/v2.0/plugins/page.php?adapt_container_width=true&app_id=106331524521&channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df51326a13364f2866%26domain%3Dwww.coolloud.org.tw%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.coolloud.org.tw%252Ffd0c4c8328cbd2794%26relation%3Dparent.parent&container_width=350&hide_cover=false&href=https%3A%2F%2Fwww.facebook.com%2Fcoolloud%2F&locale=zh_TW&sdk=joey&show_facepile=true&small_header=false&tabs=timeline&width=350",
+      "originalUrl": "https://www.facebook.com/v2.0/plugins/page.php?adapt_container_width=true&app_id=106331524521&channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df3c603c4b9f3630fc%26domain%3Dwww.coolloud.org.tw%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.coolloud.org.tw%252Ff6346e972d3b261c7%26relation%3Dparent.parent&container_width=350&hide_cover=false&href=https%3A%2F%2Fwww.facebook.com%2Fcoolloud%2F&locale=zh_TW&sdk=joey&show_facepile=true&small_header=false&tabs=timeline&width=350",
       "type": "document",
       "ipinfo": {
         "domain": "www.facebook.com",

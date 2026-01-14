@@ -2,12 +2,11 @@
   "url": "https://draytek.com.tw",
   "canonicalURL": "https://draytek.com.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T21:55:59.534Z",
+  "timestamp": "2026-01-14T03:22:25.320Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 85,
+  "requestCount": 83,
   "uniqueDomains": 6,
   "test_results": {
     "domestic": {
-      "cloud": 2,
+      "cloud": 6,
       "direct": 0
     },
     "foreign": {
-      "cloud": 4,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -43,21 +42,6 @@
       "type": "document",
       "ipinfo": {
         "domain": "draytek.com.tw",
-        "ip": "172.67.99.109",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://www.draytek.com.tw/",
-      "type": "document",
-      "ipinfo": {
-        "domain": "www.draytek.com.tw",
         "ip": "104.25.233.40",
         "city": "San Francisco",
         "region": "California",
@@ -66,15 +50,40 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda022a9e395706-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://www.draytek.com.tw/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "www.draytek.com.tw",
+        "ip": "104.25.234.40",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda023c1c4e5706-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=UA-130621813-1",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.77.8",
+        "hostname": "nctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -97,15 +106,20 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda0233cfc16b69-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.198.74",
-        "hostname": "lctsaa-ab-in-f10.1e100.net",
+        "ip": "142.250.204.42",
+        "hostname": "hkg07s38-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -120,7 +134,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "cdn.embedly.com",
-        "ip": "104.18.1.134",
+        "ip": "104.18.0.134",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -128,7 +142,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda02412b34843f-TPE",
+        "detection_method": "header"
+      }
     }
   ]
 }

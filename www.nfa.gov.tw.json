@@ -2,12 +2,11 @@
   "url": "https://www.nfa.gov.tw/",
   "canonicalURL": "https://www.nfa.gov.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T21:12:52.891Z",
+  "timestamp": "2026-01-14T02:19:48.077Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 243,
+  "requestCount": 297,
   "uniqueDomains": 17,
   "test_results": {
     "domestic": {
-      "cloud": 6,
+      "cloud": 9,
       "direct": 7
     },
     "foreign": {
-      "cloud": 4,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -59,8 +58,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.77.8",
-        "hostname": "nctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -75,7 +74,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "code.jquery.com",
-        "ip": "151.101.194.137",
+        "ip": "151.101.130.137",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -83,7 +82,11 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 37.61,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css",
@@ -98,15 +101,20 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9a6236cf282cd-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://cse.google.com/cse.js?cx=011679743884832203761:aigfjdwr3aj",
       "type": "script",
       "ipinfo": {
         "domain": "cse.google.com",
-        "ip": "142.250.77.14",
-        "hostname": "nctsaa-ab-in-f14.1e100.net",
+        "ip": "142.250.66.78",
+        "hostname": "hkg12s27-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -115,22 +123,6 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "connect.facebook.net",
-        "ip": "31.13.87.5",
-        "hostname": "xx-fbcdn-shv-01-tpe1.fbcdn.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS32934 Facebook, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://img.youtube.com/vi/v6-gOV2wync/0.jpg",
@@ -161,7 +153,28 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9a624ede54a91-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "connect.facebook.net",
+        "ip": "31.13.87.5",
+        "hostname": "xx-fbcdn-shv-01-tpe1.fbcdn.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://fonts.googleapis.com/earlyaccess/notosanstc.css",
@@ -200,23 +213,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.251.151.119",
-        "city": "Mountain View",
-        "region": "California",
-        "country": "US",
-        "loc": "38.0088,-122.1175",
-        "org": "AS15169 Google LLC",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://clients1.google.com/generate_204",
-      "type": "image",
-      "ipinfo": {
-        "domain": "clients1.google.com",
-        "ip": "142.250.66.78",
-        "hostname": "hkg12s27-in-f14.1e100.net",
+        "ip": "142.250.204.36",
+        "hostname": "hkg07s38-in-f4.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -227,7 +225,7 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://static.xx.fbcdn.net/rsrc.php/v5/yr/l/1,cross/nbtmliI11We.css",
+      "originalUrl": "https://static.xx.fbcdn.net/rsrc.php/v5/yp/l/1,cross/FAL9LK7-qlE.css",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "static.xx.fbcdn.net",
@@ -243,7 +241,7 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://scontent.ftpe7-3.fna.fbcdn.net/v/t39.30808-1/447296024_777395241241410_3988663618502746530_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=102&ccb=1-7&_nc_sid=f907e8&_nc_ohc=3iM0gR5ixLoQ7kNvwF0Zcs8&_nc_oc=AdkjRcxbLMtd4HoiLCJG4BEXVHDW8Z8ZUoRLbSPP2AvL_R0byG0G99pEUZ-jASAAj0M1xcr7GQe_Rq6bWGuiIyxa&_nc_zt=24&_nc_ht=scontent.ftpe7-3.fna&edm=ADwHzz8EAAAA&_nc_gid=VnFjPWzsD89VdX84j7ioFA&oh=00_AfrW_BKmcdLgGMrpYCZMf26o1E3lxqTAfCwANS5qLfyC8w&oe=69649537",
+      "originalUrl": "https://scontent.ftpe7-3.fna.fbcdn.net/v/t39.30808-1/447296024_777395241241410_3988663618502746530_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=102&ccb=1-7&_nc_sid=f907e8&_nc_ohc=YTFDWPVUFhAQ7kNvwGafH5e&_nc_oc=AdlqMK063QnYmfjS0CUBa-Poz8fWwSBjdSrxMtr2aCVAd_px5CESzLjjBwK73_KhL2idpKrArROle7YlP3P6_jO7&_nc_zt=24&_nc_ht=scontent.ftpe7-3.fna&edm=ADwHzz8EAAAA&_nc_gid=6FjalZfzUiKRDzrBYqbPmA&oh=00_AfoDmIg5z5HY_fn4lYSwPKiNSswwj-6xRuTwz1VQZI-_sg&oe=696CB677",
       "type": "image",
       "ipinfo": {
         "domain": "scontent.ftpe7-3.fna.fbcdn.net",
@@ -259,7 +257,23 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://scontent.ftpe7-1.fna.fbcdn.net/v/t39.30808-6/607650137_1200374782276785_4906340101395772750_n.jpg?stp=dst-jpg_p350x350_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=2CvZ6EqobLsQ7kNvwGyiVgX&_nc_oc=Adn_GG8u7AX8vkErQP7Kubn-NwdqxcixtiG-Io6yoK5XZO0BTUuKjCIrBL1-nWtT3dsS7ugUJ9wSEbrlFCqhDx9i&_nc_zt=23&_nc_ht=scontent.ftpe7-1.fna&_nc_gid=Ku4OqWo2TRyR-Df7uL9zzg&oh=00_Afqv0CR6igwfDMLmN7MFGzK87pFisCyz6Usd261i6lgtzA&oe=6964B748",
+      "originalUrl": "https://clients1.google.com/generate_204",
+      "type": "image",
+      "ipinfo": {
+        "domain": "clients1.google.com",
+        "ip": "142.250.198.78",
+        "hostname": "lctsaa-ab-in-f14.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://scontent.ftpe7-1.fna.fbcdn.net/v/t39.30808-6/615322710_1205795338401396_7908994302009446196_n.jpg?stp=dst-jpg_s526x395_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=5K-oKMjGGtsQ7kNvwGO1VAM&_nc_oc=Adkmyqc0ZqzezcKyw1s5eIwRN_4au89hJCBwUBK0xmZyzhN60ApL9M3n5hcKAi0stoM&_nc_zt=23&_nc_ht=scontent.ftpe7-1.fna&_nc_gid=kMDYn-mKEPzblls9cWAdAw&oh=00_Afr3kRRddopfHUKqbjcloWel0_eyiQjJFGLqq8YJy0Mhjw&oe=696CEADD",
       "type": "image",
       "ipinfo": {
         "domain": "scontent.ftpe7-1.fna.fbcdn.net",
@@ -275,10 +289,10 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://external.ftpe7-4.fna.fbcdn.net/emg1/v/t13/11545069292746466629?url=https%3A%2F%2Fprepare.nfa.gov.tw%2Fassets%2Fimages%2Fog.png%3Fv%3D7&fb_obo=1&utld=nfa.gov.tw&stp=c0.5000x0.5000f_dst-emg0_p476x249_q75_tt6_u&_nc_gid=Ku4OqWo2TRyR-Df7uL9zzg&_nc_oc=AdmRu7_W97AE4ao2xd_8H4WdyOw7G5naYcoJqE_Ca9to3FipSfL6NAzhzkyJ3Q31B_5uWiSCbcDBeH-xOsMJCMoT&ccb=13-1&oh=06_Q3-6AdbqA2ZFvGEN6HifhQz9FVG_bWG5QtwA392Saf7my9JX&oe=6960982B&_nc_sid=e42f53",
+      "originalUrl": "https://scontent.ftpe7-4.fna.fbcdn.net/v/t39.30808-6/615422462_1205795305068066_237531673266221846_n.jpg?stp=dst-jpg_s526x395_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=1gr_x5SQJVQQ7kNvwE5dHiR&_nc_oc=AdmXCG6SepooAAG31LoQncvCLmgToIq7102RULE4cAjKkNOoA_vprGtuYjoZgMsKMvk&_nc_zt=23&_nc_ht=scontent.ftpe7-4.fna&_nc_gid=kMDYn-mKEPzblls9cWAdAw&oh=00_AfpecbrcHVc3cPL5dZdZhwcFLhgkMETP3OiBQ7StihDp2Q&oe=696CCB68",
       "type": "image",
       "ipinfo": {
-        "domain": "external.ftpe7-4.fna.fbcdn.net",
+        "domain": "scontent.ftpe7-4.fna.fbcdn.net",
         "ip": "203.74.65.209",
         "hostname": "203-74-65-209.hinet-ip.hinet.net",
         "city": "Banqiao",
@@ -291,12 +305,12 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://scontent.ftpe7-4.fna.fbcdn.net/v/t39.30808-6/608880455_1198657385781858_4731538523839960916_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=ILQWTNxsw0MQ7kNvwH3kbIA&_nc_oc=AdkGw9RguBNm8ZDsQf9PyEd67HZW3NsnSSfHXclFzlGlUTDDFpDXzXHVfJO4Twn3HwRAqa0BTGs6OC6kGsJaAzp-&_nc_zt=23&_nc_ht=scontent.ftpe7-4.fna&_nc_gid=Ku4OqWo2TRyR-Df7uL9zzg&oh=00_Afqm_1K40Q5TJJ1F41vx8JhRNsbONBk-H7cnZznUdwz1Fw&oe=69649A8D",
+      "originalUrl": "https://scontent.ftpe7-2.fna.fbcdn.net/v/t39.30808-6/615483199_1205795408401389_1703508610991740852_n.jpg?stp=dst-jpg_p75x225_tt6&_nc_cat=104&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=8w1w67ahTBgQ7kNvwHSr-MR&_nc_oc=AdlrUcPfsH9_HU_jO-RlaRpZIODOcvEw4Og7jVTDj5-NG7kZFfIyZHf3ec8mJDpocZg&_nc_zt=23&_nc_ht=scontent.ftpe7-2.fna&_nc_gid=kMDYn-mKEPzblls9cWAdAw&oh=00_AfrmPFwijGCzb78wZf-Yp5D9Mc_artIU_htIu7Coiwc07A&oe=696CD338",
       "type": "image",
       "ipinfo": {
-        "domain": "scontent.ftpe7-4.fna.fbcdn.net",
-        "ip": "203.74.65.209",
-        "hostname": "203-74-65-209.hinet-ip.hinet.net",
+        "domain": "scontent.ftpe7-2.fna.fbcdn.net",
+        "ip": "203.74.65.81",
+        "hostname": "203-74-65-81.hinet-ip.hinet.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",

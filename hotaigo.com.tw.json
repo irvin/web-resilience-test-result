@@ -2,12 +2,11 @@
   "url": "https://hotaigo.com.tw",
   "canonicalURL": "https://hotaigo.com.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T22:26:02.360Z",
+  "timestamp": "2026-01-14T03:55:45.046Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 220,
+  "requestCount": 259,
   "uniqueDomains": 19,
   "test_results": {
     "domestic": {
-      "cloud": 7,
+      "cloud": 12,
       "direct": 1
     },
     "foreign": {
-      "cloud": 11,
+      "cloud": 6,
       "direct": 0
     }
   },
@@ -52,7 +51,12 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.497,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "http://www.hotaigo.com.tw/",
@@ -67,7 +71,11 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 50.335,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400..900&family=Outfit:wght@400..700&display=swap",
@@ -90,7 +98,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "unpkg.com",
-        "ip": "104.18.1.22",
+        "ip": "104.18.0.22",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -98,7 +106,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda32fe5f478285-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://static.klaviyo.com/onsite/js/Y2RS9L/klaviyo.js",
@@ -113,15 +126,19 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 55.85,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.gstatic.com/firebasejs/4.1.3/firebase-app.js",
       "type": "script",
       "ipinfo": {
         "domain": "www.gstatic.com",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "ip": "142.250.77.3",
+        "hostname": "nctsaa-ab-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -136,16 +153,20 @@
       "type": "script",
       "ipinfo": {
         "domain": "livesearch-metrics.magento-ds.com",
-        "ip": "65.8.180.13",
-        "hostname": "server-65-8-180-13.sfo53.r.cloudfront.net",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7749,-122.4194",
+        "ip": "3.174.113.93",
+        "hostname": "server-3-174-113-93.hel51.r.cloudfront.net",
+        "city": "Helsinki",
+        "region": "Uusimaa",
+        "country": "FI",
+        "loc": "60.1695,24.9354",
         "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "America/Los_Angeles"
+        "timezone": "Europe/Helsinki"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 296.41,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.2.0/purify.min.js",
@@ -160,19 +181,24 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda32ff5b264a7f-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://commerce.adobedtm.com/v6/ds.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "commerce.adobedtm.com",
-        "ip": "23.39.61.29",
-        "hostname": "a23-39-61-29.deploy.static.akamaitechnologies.com",
-        "city": "Taipei",
+        "ip": "184.25.121.86",
+        "hostname": "a184-25-121-86.deploy.static.akamaitechnologies.com",
+        "city": "Yuanlin",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "23.9567,120.5761",
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -183,8 +209,24 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fwww.hotaigo.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=794593914.1768362942&dt=HOTAI%E8%B3%BC%EF%BD%9C%20%E5%92%8C%E6%B3%B0Points%E5%85%8C%E6%8F%9B%E5%95%86%E5%9F%8E&auid=1808716651.1768362942&navt=n&npa=0&gtm=45He61c1v9200313590za200zd9200313590xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115616986~115938466~115938469~117041588&tft=1768362941904&tfd=11732&apve=1&apvf=f",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.250.198.68",
+        "hostname": "lctsaa-ab-in-f4.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -199,12 +241,12 @@
       "type": "script",
       "ipinfo": {
         "domain": "d.line-scdn.net",
-        "ip": "23.39.61.163",
-        "hostname": "a23-39-61-163.deploy.static.akamaitechnologies.com",
-        "city": "Taipei",
+        "ip": "184.25.121.253",
+        "hostname": "a184-25-121-253.deploy.static.akamaitechnologies.com",
+        "city": "Yuanlin",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "23.9567,120.5761",
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -231,7 +273,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "cdn.chichat.tw",
-        "ip": "172.67.72.20",
+        "ip": "104.26.4.147",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -239,31 +281,36 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda33035a527aab-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://commerce.adobe.io/recs/v1/precs/preconfigured",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "commerce.adobe.io",
+        "ip": "44.196.228.180",
+        "hostname": "ec2-44-196-228-180.compute-1.amazonaws.com",
+        "city": "Ashburn",
+        "region": "Virginia",
+        "country": "US",
+        "loc": "39.0437,-77.4875",
+        "org": "AS14618 Amazon.com, Inc.",
+        "timezone": "America/New_York"
+      },
       "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fwww.hotaigo.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=332094520.1767824761&dt=HOTAI%E8%B3%BC%EF%BD%9C%20%E5%92%8C%E6%B3%B0Points%E5%85%8C%E6%8F%9B%E5%95%86%E5%9F%8E&auid=1692292046.1767824761&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He6160v9200313590za200zd9200313590xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115495939~115583767~115616986~115938466~115938469~116682875&apve=1&apvf=f&apvc=1&tft=1767824760736&tfd=8778",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.77.4",
-        "hostname": "nctsaa-ab-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-JBH8N74HDG&cid=11786752.1767824761&gtm=45je6160v9200319694z89200313590za20gzb9200313590zd9200313590&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391252~115583767~115616986~115938466~115938469~116682875&z=224073389",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-JBH8N74HDG&cid=1772521739.1768362942&gtm=45je61c1v9200319694z89200313590za20gzb9200313590zd9200313590&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115938466~115938468~116988315~117041587&z=613434611",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.77.3",
-        "hostname": "nctsaa-ab-in-f3.1e100.net",
+        "ip": "142.250.198.67",
+        "hostname": "lctsaa-ab-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -278,7 +325,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "cdn.chat-marketing.tech",
-        "ip": "104.26.13.195",
+        "ip": "172.67.74.250",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -286,26 +333,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda33046d5da355-TPE",
+        "detection_method": "header"
+      }
     },
     {
-      "originalUrl": "https://commerce.adobe.io/recs/v1/precs/preconfigured",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "commerce.adobe.io",
-        "ip": "44.198.154.229",
-        "hostname": "ec2-44-198-154-229.compute-1.amazonaws.com",
-        "city": "Ashburn",
-        "region": "Virginia",
-        "country": "US",
-        "loc": "39.0437,-77.4875",
-        "org": "AS14618 Amazon.com, Inc.",
-        "timezone": "America/New_York"
-      },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://ttd.byurl.cc/ttdsync?ttd_puid=11786752.1767824761,www.hotaigo.com.tw&ttd_id=8d0b8052-5ff9-4d6b-8a0d-325042283896",
+      "originalUrl": "https://ttd.byurl.cc/ttdsync?ttd_puid=1772521739.1768362942,www.hotaigo.com.tw&ttd_id=fed4ccc3-bbd0-44fa-958c-55f863969f83",
       "type": "image",
       "ipinfo": {
         "domain": "ttd.byurl.cc",
@@ -320,7 +356,7 @@
       "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://c.bing.com/c.gif?ctsa=mr&CtsSyncId=AADB9BFDC3AD4EAAA69410EE3D2AC2A8&RedC=c.clarity.ms&MXFR=09733C4296976EBA39522A9892976018",
+      "originalUrl": "https://c.bing.com/c.gif?ctsa=mr&CtsSyncId=3048B95EA5FC4B5384947D298A97C2FE&RedC=c.clarity.ms&MXFR=2012F14E0873639910ABE7AF0C736D43",
       "type": "image",
       "ipinfo": {
         "domain": "c.bing.com",

@@ -2,12 +2,11 @@
   "url": "https://phone-book.tw",
   "canonicalURL": "https://phone-book.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T22:02:24.004Z",
+  "timestamp": "2026-01-14T03:32:08.288Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 26,
+  "requestCount": 25,
   "uniqueDomains": 3,
   "test_results": {
     "domestic": {
-      "cloud": 1,
+      "cloud": 3,
       "direct": 0
     },
     "foreign": {
-      "cloud": 2,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -43,7 +42,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "phone-book.tw",
-        "ip": "104.26.11.229",
+        "ip": "104.26.10.229",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -51,14 +50,19 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda10738d0df023-TPE",
+        "detection_method": "header"
+      }
     },
     {
-      "originalUrl": "https://img.phone-book.tw/3a.jpg",
+      "originalUrl": "https://img.phone-book.tw/%E8%B2%A1%E7%A5%9E.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "img.phone-book.tw",
-        "ip": "104.26.11.229",
+        "ip": "172.67.69.208",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -66,15 +70,20 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda1076bed2f023-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-PHBPRWB49C",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.77.8",
-        "hostname": "nctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",

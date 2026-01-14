@@ -2,12 +2,11 @@
   "url": "https://cna.com.tw",
   "canonicalURL": "https://www.cna.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:06:28.313Z",
+  "timestamp": "2026-01-14T01:04:38.930Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -29,11 +28,11 @@
   "uniqueDomains": 3,
   "test_results": {
     "domestic": {
-      "cloud": 0,
+      "cloud": 1,
       "direct": 1
     },
     "foreign": {
-      "cloud": 2,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -52,7 +51,11 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 15.391,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.cna.com.tw/",
@@ -68,15 +71,20 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.641,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://imgcdn.cna.com.tw/www/website/bundle_css/index.min.css?v=20260107v2",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "imgcdn.cna.com.tw",
-        "ip": "203.66.32.105",
-        "hostname": "203-66-32-105.hinet-ip.hinet.net",
+        "ip": "203.66.32.36",
+        "hostname": "203-66-32-36.hinet-ip.hinet.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",

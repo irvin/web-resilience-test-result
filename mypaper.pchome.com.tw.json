@@ -2,12 +2,11 @@
   "url": "https://mypaper.pchome.com.tw",
   "canonicalURL": "https://mypaper.pchome.com.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T21:57:14.364Z",
+  "timestamp": "2026-01-14T03:24:25.603Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -26,14 +25,14 @@
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 133,
-  "uniqueDomains": 10,
+  "uniqueDomains": 11,
   "test_results": {
     "domestic": {
-      "cloud": 6,
+      "cloud": 10,
       "direct": 1
     },
     "foreign": {
-      "cloud": 3,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -52,23 +51,12 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://apis.pchome.com.tw/js/idlead.js?v=202306121712",
-      "type": "script",
-      "ipinfo": {
-        "domain": "apis.pchome.com.tw",
-        "ip": "34.120.26.196",
-        "hostname": "196.26.120.34.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
-        "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
-      },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 3.853,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-TTXDX366",
@@ -87,6 +75,27 @@
       "category": "domestic/cloud"
     },
     {
+      "originalUrl": "https://apis.pchome.com.tw/js/idlead.js?v=202306121712",
+      "type": "script",
+      "ipinfo": {
+        "domain": "apis.pchome.com.tw",
+        "ip": "34.120.26.196",
+        "hostname": "196.26.120.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 3.94,
+        "detection_method": "rtt"
+      }
+    },
+    {
       "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
       "type": "script",
       "ipinfo": {
@@ -103,7 +112,7 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://kdcl.pchome.com.tw/adshow2.html?pfbxCustomerInfoId=PFBC20190424002&positionId=PFBP201907150010&padWidth=300&padHeight=250&keyword=&page=&precise=&_pa=xxx-6e82fe6b-c279-41e7-b2bc-b97099e98a59&screenX=1280&screenY=720&t=209&docurl=https://mypaper.pchome.com.tw/",
+      "originalUrl": "https://kdcl.pchome.com.tw/adshow2.html?pfbxCustomerInfoId=PFBC20190424002&positionId=PFBP201907150010&padWidth=300&padHeight=250&keyword=&page=&precise=&_pa=xxx-12a73b24-90f5-4fd8-bca8-dd951487fee3&screenX=1280&screenY=720&t=5&docurl=https://mypaper.pchome.com.tw/",
       "type": "script",
       "ipinfo": {
         "domain": "kdcl.pchome.com.tw",
@@ -119,26 +128,10 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-HQ4XGEW1W7&cid=1369591953.1767823031&gtm=45je6151v885043881z89137685187za20gzb9137685187zd9137685187&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115938466~115938469&z=364524214",
-      "type": "image",
+      "originalUrl": "https://onead.onevision.com.tw/v2/et/oid?cb=window.etag_callback_isip_2g0o4",
+      "type": "script",
       "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.204.35",
-        "hostname": "hkg07s38-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://onead-v6.onevision.com.tw/v2/poke?uuid=d18d93ba-ec13-11f0-9f23-42010a000008",
-      "type": "image",
-      "ipinfo": {
-        "domain": "onead-v6.onevision.com.tw",
+        "domain": "onead.onevision.com.tw",
         "ip": "107.178.241.176",
         "hostname": "176.241.178.107.bc.googleusercontent.com",
         "city": "Kansas City",
@@ -148,31 +141,20 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.393,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "https://pixel.omnisegment.com/track?cid=d18d93ba-ec13-11f0-9f23-42010a000008&to=https%3A%2F%2Fonead.onevision.com.tw%2Fv2%2Fpixel%2Fbb",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-HQ4XGEW1W7&cid=1117001973.1768361063&gtm=45je61c1v885043881z89137685187za20gzb9137685187zd9137685187&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115938466~115938468~115985661~117041588&z=1628634917",
       "type": "image",
       "ipinfo": {
-        "domain": "pixel.omnisegment.com",
-        "ip": "142.250.204.51",
-        "hostname": "hkg07s38-in-f19.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://fundingchoicesmessages.google.com/i/ca-pub-1328697381140864?href=https%3A%2F%2Fmypaper.pchome.com.tw&ers=2",
-      "type": "script",
-      "ipinfo": {
-        "domain": "fundingchoicesmessages.google.com",
-        "ip": "142.250.196.206",
-        "hostname": "nctsaa-ac-in-f14.1e100.net",
+        "domain": "www.google.com.tw",
+        "ip": "142.250.77.3",
+        "hostname": "nctsaa-ab-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -187,8 +169,61 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.204.42",
-        "hostname": "hkg07s38-in-f10.1e100.net",
+        "ip": "142.250.198.74",
+        "hostname": "lctsaa-ab-in-f10.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://fundingchoicesmessages.google.com/i/ca-pub-1328697381140864?href=https%3A%2F%2Fmypaper.pchome.com.tw&ers=2",
+      "type": "script",
+      "ipinfo": {
+        "domain": "fundingchoicesmessages.google.com",
+        "ip": "142.250.198.78",
+        "hostname": "lctsaa-ab-in-f14.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://onead-v6.onevision.com.tw/v2/poke?uuid=85aed272-f0f8-11f0-b886-42010a000006",
+      "type": "image",
+      "ipinfo": {
+        "domain": "onead-v6.onevision.com.tw",
+        "ip": "107.178.241.176",
+        "hostname": "176.241.178.107.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.514,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://pixel.omnisegment.com/track?cid=85aed272-f0f8-11f0-b886-42010a000006&to=https%3A%2F%2Fonead.onevision.com.tw%2Fv2%2Fpixel%2Fbb",
+      "type": "image",
+      "ipinfo": {
+        "domain": "pixel.omnisegment.com",
+        "ip": "142.250.204.51",
+        "hostname": "hkg07s38-in-f19.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",

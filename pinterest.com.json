@@ -2,12 +2,11 @@
   "url": "https://pinterest.com",
   "canonicalURL": "https://www.pinterest.com/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:14:10.141Z",
+  "timestamp": "2026-01-14T01:14:43.066Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 242,
+  "requestCount": 241,
   "uniqueDomains": 8,
   "test_results": {
     "domestic": {
-      "cloud": 4,
+      "cloud": 6,
       "direct": 1
     },
     "foreign": {
-      "cloud": 3,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -43,7 +42,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "pinterest.com",
-        "ip": "151.101.64.84",
+        "ip": "151.101.128.84",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -51,30 +50,35 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 34.907,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.pinterest.com/",
       "type": "document",
       "ipinfo": {
         "domain": "www.pinterest.com",
-        "ip": "146.75.44.84",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
+        "ip": "23.39.60.239",
+        "hostname": "a23-39-60-239.deploy.static.akamaitechnologies.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16625 Akamai Technologies, Inc.",
+        "timezone": "Asia/Taipei"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://s.pinimg.com/webapp/Pin-Sans-MacOS-Regular-708c49dd.woff2",
       "type": "font",
       "ipinfo": {
         "domain": "s.pinimg.com",
-        "ip": "23.220.196.240",
-        "hostname": "a23-220-196-240.deploy.static.akamaitechnologies.com",
+        "ip": "23.39.60.239",
+        "hostname": "a23-39-60-239.deploy.static.akamaitechnologies.com",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -89,23 +93,24 @@
       "type": "document",
       "ipinfo": {
         "domain": "ct.pinterest.com",
-        "ip": "199.232.112.84",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
+        "ip": "23.39.60.239",
+        "hostname": "a23-39-60-239.deploy.static.akamaitechnologies.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16625 Akamai Technologies, Inc.",
+        "timezone": "Asia/Taipei"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.recaptcha.net/recaptcha/enterprise.js?onload=onloadRecaptchaJsCallback&render=6Ldx7ZkUAAAAAF3SZ05DRL2Kdh911tCa3qFP0-0r",
       "type": "script",
       "ipinfo": {
         "domain": "www.recaptcha.net",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "ip": "142.250.204.35",
+        "hostname": "hkg07s38-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -120,12 +125,28 @@
       "type": "script",
       "ipinfo": {
         "domain": "accounts.google.com",
-        "ip": "64.233.187.84",
-        "hostname": "tj-in-f84.1e100.net",
-        "city": "Taichung",
+        "ip": "142.250.157.84",
+        "hostname": "ta-in-f84.1e100.net",
+        "city": "Chang-hua",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "24.1469,120.6839",
+        "loc": "24.0733,120.5628",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.gstatic.com/recaptcha/releases/9TiwnJFHeuIw_s0wSd3fiKfN/recaptcha__en.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.gstatic.com",
+        "ip": "142.250.204.35",
+        "hostname": "hkg07s38-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
@@ -145,22 +166,6 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
-    },
-    {
-      "originalUrl": "https://www.gstatic.com/recaptcha/releases/7gg7H51Q-naNfhmCP3_R47ho/recaptcha__en.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.gstatic.com",
-        "ip": "142.250.198.67",
-        "hostname": "lctsaa-ab-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
     }
   ]
 }

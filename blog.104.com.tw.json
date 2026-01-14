@@ -2,12 +2,11 @@
   "url": "https://blog.104.com.tw",
   "canonicalURL": "https://blog.104.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T22:32:33.873Z",
+  "timestamp": "2026-01-14T04:01:04.153Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 109,
+  "requestCount": 149,
   "uniqueDomains": 10,
   "test_results": {
     "domestic": {
-      "cloud": 4,
-      "direct": 2
+      "cloud": 8,
+      "direct": 1
     },
     "foreign": {
-      "cloud": 3,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -51,13 +50,11 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "blob:https://blog.104.com.tw/835911f9-dca9-4129-ae3e-b0fce84a5aae",
-      "type": "other",
-      "ipinfo": {
-        "domain": ""
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda3aceace24a2e-TPE",
+        "detection_method": "header"
       }
     },
     {
@@ -81,7 +78,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "unpkg.com",
-        "ip": "104.18.1.22",
+        "ip": "104.18.0.22",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -89,15 +86,27 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda3ad00b49f023-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "blob:https://blog.104.com.tw/551dc78d-7182-4a86-a22e-1897053ba2bf",
+      "type": "other",
+      "ipinfo": {
+        "domain": ""
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-PDM9GTR",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -108,12 +117,12 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fblog.104.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=1981382983.1767825153&dt=104%E8%81%B7%E5%A0%B4%E5%8A%9B%20-%20%E5%B1%A5%E6%AD%B7%E8%87%AA%E5%82%B3%E3%80%81%E9%9D%A2%E8%A9%A6%E3%80%81%E5%B7%A5%E4%BD%9C%E6%83%85%E5%A0%B1%EF%BC%8C%E4%BD%A0%E7%9A%84%E6%B1%82%E8%81%B7%2F%E8%81%B7%E6%B6%AF%E5%85%85%E9%9B%BB%E7%AB%99&auid=1043658115.1767825153&navt=n&npa=0&gtm=45He6160v830629149za200zd830629149xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115616985~115938466~115938468&tft=1767825152608&tfd=1258&apve=1&apvf=f&gap.plf=5",
+      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fblog.104.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=1839853134.1768363262&dt=104%E8%81%B7%E5%A0%B4%E5%8A%9B%20-%20%E5%B1%A5%E6%AD%B7%E8%87%AA%E5%82%B3%E3%80%81%E9%9D%A2%E8%A9%A6%E3%80%81%E5%B7%A5%E4%BD%9C%E6%83%85%E5%A0%B1%EF%BC%8C%E4%BD%A0%E7%9A%84%E6%B1%82%E8%81%B7%2F%E8%81%B7%E6%B6%AF%E5%85%85%E9%9B%BB%E7%AB%99&auid=1467201584.1768363262&navt=n&npa=0&gtm=45He61d0h2v830629149za200zd830629149xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115938465~115938469~116744867~117041587&tft=1768363261741&tfd=702&apve=1&apvf=f",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.204.36",
-        "hostname": "hkg07s38-in-f4.1e100.net",
+        "ip": "142.250.196.196",
+        "hostname": "nctsaa-ac-in-f4.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -140,7 +149,7 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-FJWMQR9J2K&cid=1279078737.1767825153&gtm=45je6160v872422518z8830629149za20gzb830629149zd830629149&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115616986~115938466~115938468~116184924~116184926&z=1938695007",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-FJWMQR9J2K&cid=303858983.1768363262&gtm=45je61d0h2v872422518z8830629149za20gzb830629149zd830629149&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115616986~115938465~115938468~116744867~116988315~117041588&z=1082416118",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
@@ -169,22 +178,27 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.62,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://static.104.com.tw/104i/js/api/log/e104.log.latest.js?v=20201022",
       "type": "script",
       "ipinfo": {
         "domain": "static.104.com.tw",
-        "ip": "202.8.14.29",
+        "ip": "122.147.53.29",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
         "loc": "25.0143,121.4672",
-        "org": "AS18410 104 Information Technology Co., Ltd.",
+        "org": "AS9919 New Century InfoComm Tech Co., Ltd.",
         "timezone": "Asia/Taipei"
       },
-      "category": "domestic/direct"
+      "category": "domestic/cloud"
     }
   ]
 }

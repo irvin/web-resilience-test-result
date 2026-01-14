@@ -2,12 +2,11 @@
   "url": "https://69shuba.tw",
   "canonicalURL": "https://69shuba.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:15:18.712Z",
+  "timestamp": "2026-01-14T01:16:21.466Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -29,11 +28,11 @@
   "uniqueDomains": 3,
   "test_results": {
     "domestic": {
-      "cloud": 0,
+      "cloud": 1,
       "direct": 0
     },
     "foreign": {
-      "cloud": 2,
+      "cloud": 1,
       "direct": 1
     }
   },
@@ -43,12 +42,13 @@
       "type": "document",
       "ipinfo": {
         "domain": "69shuba.tw",
-        "ip": "151.242.74.234",
-        "city": "Togoshi",
+        "ip": "142.91.108.62",
+        "hostname": "62.108.91.142.hosted.by.hostdzire.com",
+        "city": "Tokyo",
         "region": "Tokyo",
         "country": "JP",
-        "loc": "35.6170,139.7486",
-        "org": "AS63473 HostHatch, LLC",
+        "loc": "35.6895,139.6917",
+        "org": "AS134351 Leaseweb Japan K.K.",
         "timezone": "Asia/Tokyo"
       },
       "category": "foreign/direct"
@@ -66,7 +66,11 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 153.113,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js",
@@ -81,7 +85,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9498b6b36a378-TPE",
+        "detection_method": "header"
+      }
     }
   ]
 }

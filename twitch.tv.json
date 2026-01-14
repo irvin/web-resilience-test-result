@@ -2,12 +2,11 @@
   "url": "https://twitch.tv",
   "canonicalURL": "https://www.twitch.tv/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:06:32.678Z",
+  "timestamp": "2026-01-14T01:04:41.182Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 89,
+  "requestCount": 90,
   "uniqueDomains": 7,
   "test_results": {
     "domestic": {
-      "cloud": 3,
+      "cloud": 2,
       "direct": 0
     },
     "foreign": {
-      "cloud": 3,
+      "cloud": 4,
       "direct": 0
     }
   },
@@ -51,14 +50,18 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 35.2,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.twitch.tv/",
       "type": "document",
       "ipinfo": {
         "domain": "www.twitch.tv",
-        "ip": "199.232.114.214",
+        "ip": "146.75.46.214",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",
@@ -66,15 +69,19 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 48.973,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "https://assets.twitch.tv/config/settings.5b7ff28195b79fc4da1d3a93c3efeeb0.js",
+      "originalUrl": "https://assets.twitch.tv/config/settings.bb68124162af0618d962d30b3795e261.js",
       "type": "script",
       "ipinfo": {
         "domain": "assets.twitch.tv",
-        "ip": "3.169.121.37",
-        "hostname": "server-3-169-121-37.tpe53.r.cloudfront.net",
+        "ip": "3.169.55.41",
+        "hostname": "server-3-169-55-41.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -97,23 +104,30 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 49.735,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://gql.twitch.tv/gql",
       "type": "fetch",
       "ipinfo": {
         "domain": "gql.twitch.tv",
-        "ip": "3.169.55.84",
-        "hostname": "server-3-169-55-84.tpe54.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
+        "ip": "199.232.114.214",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
       },
-      "category": "domestic/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 48.989,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1",
@@ -132,7 +146,7 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "blob:https://www.twitch.tv/f51f6c46-9298-4111-9da2-d5da624dfcea",
+      "originalUrl": "blob:https://www.twitch.tv/7010a28d-955f-4863-8c3e-02d082be42e0",
       "type": "other",
       "ipinfo": {
         "domain": ""

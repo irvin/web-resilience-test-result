@@ -2,12 +2,11 @@
   "url": "https://xbanxia.cc",
   "canonicalURL": "https://xbanxia.cc",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:06:47.717Z",
+  "timestamp": "2026-01-14T01:04:54.846Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 26,
-  "uniqueDomains": 5,
+  "requestCount": 32,
+  "uniqueDomains": 9,
   "test_results": {
     "domestic": {
-      "cloud": 0,
+      "cloud": 6,
       "direct": 0
     },
     "foreign": {
-      "cloud": 5,
+      "cloud": 3,
       "direct": 0
     }
   },
@@ -51,14 +50,19 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd938ca0b45844b-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.xbanxia.cc/",
       "type": "document",
       "ipinfo": {
         "domain": "www.xbanxia.cc",
-        "ip": "104.26.0.132",
+        "ip": "172.67.74.149",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -66,7 +70,31 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd938ca2b6d844b-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://s.skimresources.com/js/297293X1784766.skimlinks.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "s.skimresources.com",
+        "ip": "146.75.45.91",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 48.833,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://faves.grow.me/main.js",
@@ -81,14 +109,81 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 49.049,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://r.skimresources.com/api/",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "r.skimresources.com",
+        "ip": "35.190.59.101",
+        "hostname": "101.59.190.35.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.657,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://t.skimresources.com/api/v2/robots.txt?__skimjs_preflight__please_ignore__=true&rnd=0.5482038506801314",
+      "type": "image",
+      "ipinfo": {
+        "domain": "t.skimresources.com",
+        "ip": "35.201.67.47",
+        "hostname": "47.67.201.35.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.838,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://p.skimresources.com/px.gif?ch=1&rn=10.595714695450823",
+      "type": "image",
+      "ipinfo": {
+        "domain": "p.skimresources.com",
+        "ip": "35.190.91.160",
+        "hostname": "160.91.190.35.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.167,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://image.xbanxia.cc/files/article/image/143/143300/143300s.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "image.xbanxia.cc",
-        "ip": "172.67.74.149",
+        "ip": "104.26.0.132",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -96,7 +191,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd938cdee05844b-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://api.grow.me/sites/U2l0ZTpjOTNkNmE3Ny0xMTNiLTRjMDQtYmQ3ZC0wZDMyN2I3MzNkZmU=/config",
@@ -111,7 +211,11 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 44.139,
+        "detection_method": "rtt"
+      }
     }
   ]
 }

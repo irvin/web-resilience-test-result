@@ -2,12 +2,11 @@
   "url": "https://twitter.com",
   "canonicalURL": "https://x.com/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:13:22.925Z",
+  "timestamp": "2026-01-14T01:13:18.525Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 75,
+  "requestCount": 77,
   "uniqueDomains": 8,
   "test_results": {
     "domestic": {
-      "cloud": 2,
+      "cloud": 6,
       "direct": 0
     },
     "foreign": {
-      "cloud": 5,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -43,7 +42,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "twitter.com",
-        "ip": "162.159.140.229",
+        "ip": "172.66.0.227",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -51,14 +50,20 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd94505ee3c8082-TPE",
+        "x-served-by": "t4_p",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://x.com/",
       "type": "document",
       "ipinfo": {
         "domain": "x.com",
-        "ip": "162.159.140.229",
+        "ip": "172.66.0.227",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -66,22 +71,33 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd945077ca30768-TPE",
+        "x-served-by": "t4_p",
+        "detection_method": "header"
+      }
     },
     {
-      "originalUrl": "https://abs.twimg.com/responsive-web/client-web/vendor.39bcba4a.js",
+      "originalUrl": "https://abs.twimg.com/responsive-web/client-web/vendor.a575caea.js",
       "type": "script",
       "ipinfo": {
         "domain": "abs.twimg.com",
-        "ip": "199.232.112.159",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
+        "ip": "172.64.148.197",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.516,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://abs-0.twimg.com/emoji/v2/svg/26a0.svg",
@@ -96,10 +112,14 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 47.018,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "blob:https://x.com/c2e16ee1-e367-406d-bcc1-efc70e4fdb20",
+      "originalUrl": "blob:https://x.com/cea223db-21a0-4f94-9d75-a66f00bc6bd7",
       "type": "script",
       "ipinfo": {
         "domain": ""
@@ -110,12 +130,12 @@
       "type": "script",
       "ipinfo": {
         "domain": "accounts.google.com",
-        "ip": "64.233.189.84",
-        "hostname": "tl-in-f84.1e100.net",
-        "city": "Taichung",
+        "ip": "142.251.8.84",
+        "hostname": "tb-in-f84.1e100.net",
+        "city": "Chang-hua",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "24.1469,120.6839",
+        "loc": "24.0733,120.5628",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
@@ -134,7 +154,13 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd94516cd770768-TPE",
+        "x-served-by": "t4_p",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js",

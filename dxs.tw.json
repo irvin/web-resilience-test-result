@@ -2,12 +2,11 @@
   "url": "https://dxs.tw",
   "canonicalURL": "https://dxs.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T21:08:35.098Z",
+  "timestamp": "2026-01-14T02:15:31.041Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -29,11 +28,11 @@
   "uniqueDomains": 3,
   "test_results": {
     "domestic": {
-      "cloud": 0,
+      "cloud": 3,
       "direct": 0
     },
     "foreign": {
-      "cloud": 3,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -51,14 +50,19 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9a03e8faf6a90-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.dxs.tw/style/pc/css/read.css",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "www.dxs.tw",
-        "ip": "104.26.1.240",
+        "ip": "104.26.0.240",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -66,10 +70,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9a03ef81a6a90-TPE",
+        "detection_method": "header"
+      }
     },
     {
-      "originalUrl": "https://img.dxs.tw/8160/8160617/8160617s.jpg",
+      "originalUrl": "https://img.dxs.tw/8279/8279067/8279067s.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "img.dxs.tw",
@@ -81,7 +90,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9a03f48586a90-TPE",
+        "detection_method": "header"
+      }
     }
   ]
 }

@@ -2,12 +2,11 @@
   "url": "https://www.trendmicro.com.tw/",
   "canonicalURL": "https://www.trendmicro.com/zh_tw/business.html",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T22:40:17.160Z",
+  "timestamp": "2026-01-14T04:09:38.911Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 124,
-  "uniqueDomains": 11,
+  "requestCount": 209,
+  "uniqueDomains": 18,
   "test_results": {
     "domestic": {
-      "cloud": 4,
-      "direct": 1
+      "cloud": 13,
+      "direct": 2
     },
     "foreign": {
-      "cloud": 5,
+      "cloud": 2,
       "direct": 1
     }
   },
@@ -58,12 +57,12 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.trendmicro.tw",
-        "ip": "23.39.60.137",
-        "hostname": "a23-39-60-137.deploy.static.akamaitechnologies.com",
-        "city": "Taipei",
+        "ip": "104.116.17.120",
+        "hostname": "a104-116-17-120.deploy.static.akamaitechnologies.com",
+        "city": "Yuanlin",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "23.9567,120.5761",
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -98,15 +97,20 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda47560a3e808e-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://customer.cludo.com/css/296/1798/cludo-search.min.css",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "customer.cludo.com",
-        "ip": "3.164.206.22",
-        "hostname": "server-3-164-206-22.hel51.r.cloudfront.net",
+        "ip": "3.164.206.14",
+        "hostname": "server-3-164-206-14.hel51.r.cloudfront.net",
         "city": "Helsinki",
         "region": "Uusimaa",
         "country": "FI",
@@ -114,15 +118,19 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Europe/Helsinki"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 289.384,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://tags.tiqcdn.com/utag/trendmicro/apaccms/prod/utag.sync.js",
       "type": "script",
       "ipinfo": {
         "domain": "tags.tiqcdn.com",
-        "ip": "3.169.55.26",
-        "hostname": "server-3-169-55-26.tpe54.r.cloudfront.net",
+        "ip": "3.169.121.3",
+        "hostname": "server-3-169-121-3.tpe53.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -137,7 +145,7 @@
       "type": "image",
       "ipinfo": {
         "domain": "trendmicro.scene7.com",
-        "ip": "210.71.227.168",
+        "ip": "203.69.81.41",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -152,8 +160,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.youtube.com",
-        "ip": "142.250.196.206",
-        "hostname": "nctsaa-ac-in-f14.1e100.net",
+        "ip": "142.250.66.78",
+        "hostname": "hkg12s27-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -176,7 +184,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda47577b786b86-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://cdn.bc0a.com/autopilot/f00000000017219/autopilot_sdk.js",
@@ -192,7 +205,12 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.355,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://ixfd2-api.bc0a.com/api/ixf/1.0.0/get_capsule/f00000000017219/0124792945?client=js_sdk&client_version=1.5.14",
@@ -208,7 +226,135 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.222,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-26GX0VHJ0F",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.googletagmanager.com",
+        "ip": "142.250.204.40",
+        "hostname": "hkg07s38-in-f8.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://static.addtoany.com/menu/page.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "static.addtoany.com",
+        "ip": "104.20.20.192",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.408,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "snap.licdn.com",
+        "ip": "203.69.81.41",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fwww.trendmicro.com%2Fzh_tw%2Fbusiness.html&scrsrc=www.googletagmanager.com&rnd=158958606.1768363776&dt=%E8%B6%A8%E5%8B%A2%E7%A7%91%E6%8A%80%20(TW)%20%7C%20%E5%85%A8%E7%90%83%E4%BC%81%E6%A5%AD%20AI%20%E7%B6%B2%E8%B7%AF%E8%B3%87%E5%AE%89%E5%B9%B3%E5%8F%B0&auid=780728856.1768363776&navt=n&npa=0&gtm=45He61c1v9180026880za200zd9180026880xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115938466~115938468~117041587&tft=1768363775527&tfd=6124&apve=1&apvf=f",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.250.198.68",
+        "hostname": "lctsaa-ab-in-f4.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-26GX0VHJ0F&cid=1875111704.1768363775&gtm=45je61c1v870047709za200zb9180026880zd9180026880&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=102015666~103116026~103200004~104527906~104528500~104684208~104684211~105391253~115938466~115938469~116910502~117041588&z=1604273747",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.66.67",
+        "hostname": "hkg12s27-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://epsilon.6sense.com/v3/company/details",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "epsilon.6sense.com",
+        "ip": "75.2.108.141",
+        "hostname": "afe865822f884bb48.awsglobalaccelerator.com",
+        "city": "Seattle",
+        "region": "Washington",
+        "country": "US",
+        "loc": "47.5413,-122.3129",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 42.033,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://www.linkedin.com/px/li_sync?redirect=https%3A%2F%2Fpx.ads.linkedin.com%2Fcollect%3Fv%3D2%26fmt%3Djs%26pid%3D8866%26time%3D1768363775661%26li_adsId%3D115d08ca-65ac-46f2-aa1f-60f1d4edb896%26url%3Dhttps%253A%252F%252Fwww.trendmicro.com%252Fzh_tw%252Fbusiness.html%26cookiesTest%3Dtrue%26liSync%3Dtrue",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.linkedin.com",
+        "ip": "172.64.146.215",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda476189b14a8e-TPE",
+        "detection_method": "header"
+      }
     }
   ]
 }

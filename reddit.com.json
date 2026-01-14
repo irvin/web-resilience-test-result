@@ -2,12 +2,11 @@
   "url": "https://reddit.com",
   "canonicalURL": "https://www.reddit.com/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:06:48.321Z",
+  "timestamp": "2026-01-14T01:04:58.421Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,11 +24,11 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 110,
-  "uniqueDomains": 11,
+  "requestCount": 374,
+  "uniqueDomains": 12,
   "test_results": {
     "domestic": {
-      "cloud": 3,
+      "cloud": 4,
       "direct": 0
     },
     "foreign": {
@@ -43,7 +42,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "reddit.com",
-        "ip": "151.101.1.140",
+        "ip": "151.101.193.140",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -51,14 +50,18 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 125.933,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.reddit.com/",
       "type": "document",
       "ipinfo": {
         "domain": "www.reddit.com",
-        "ip": "146.75.45.140",
+        "ip": "199.232.113.140",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",
@@ -66,43 +69,17 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 62.784,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "https://www.redditstatic.com/shreddit/zh-TW/We1lZEsNEC.js",
+      "originalUrl": "https://www.redditstatic.com/shreddit/zh-TW/5r73EsgItq.js",
       "type": "script",
       "ipinfo": {
         "domain": "www.redditstatic.com",
-        "ip": "199.232.113.140",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://external-preview.redd.it/warner-bros-discovery-rejects-paramounts-latest-offer-as-v0-tEJ6WHM8a_O6cupupPDAN1PhdimCPk1yszemTee-6WE.jpeg?width=320&crop=smart&auto=webp&s=6af85070b3404dc6389f09fe0563f86829ebc54f",
-      "type": "image",
-      "ipinfo": {
-        "domain": "external-preview.redd.it",
-        "ip": "199.232.113.140",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://styles.redditmedia.com/t5_2qh3s/styles/communityIcon_3hssuqq28v4e1.png?width=48&height=48&frame=1&auto=webp&crop=48%3A48%2Csmart&s=d3f3f2d984df24e945a96bf53dbb8a30d53918ed",
-      "type": "image",
-      "ipinfo": {
-        "domain": "styles.redditmedia.com",
         "ip": "146.75.45.140",
         "city": "Singapore",
         "region": "Singapore",
@@ -111,10 +88,71 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 159.691,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "https://preview.redd.it/first-image-from-enola-holmes-3-starring-millie-bobby-brown-v0-ta8tmoikqxbg1.jpeg?width=320&crop=smart&auto=webp&s=b9c03cce6061df043d762ccaf3d6ef3823d196a5",
+      "originalUrl": "https://external-preview.redd.it/greenlands-pm-has-a-blunt-message-for-trump-we-choose-v0-opHiNthvg8IlxjTpblbaFeJbPkYyXNZTRBLKgBfWoBs.jpeg?width=320&crop=smart&auto=webp&s=393d61ea4cb63a70710033d42f798a01e3a6aed2",
+      "type": "image",
+      "ipinfo": {
+        "domain": "external-preview.redd.it",
+        "ip": "146.75.45.140",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 49.938,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://styles.redditmedia.com/t5_2qh13/styles/communityIcon_pldiwqvsyns91.png?width=48&height=48&frame=1&auto=webp&crop=48%3A48%2Csmart&s=8273bba36ff5e6e307f967e93e4e104139b76b89",
+      "type": "image",
+      "ipinfo": {
+        "domain": "styles.redditmedia.com",
+        "ip": "199.232.113.140",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 148.113,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://b.thumbs.redditmedia.com/t622Aw3Yrn8EWLcC5tECrHEV-pvBAZDTJBFVBBFqUaI.png",
+      "type": "image",
+      "ipinfo": {
+        "domain": "b.thumbs.redditmedia.com",
+        "ip": "199.232.113.140",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 147.977,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://preview.redd.it/11nmnb5av4dg1.jpg?width=216&crop=smart&auto=webp&s=4d8af446962fb7fd829a8f31eee26e3e44a6d283",
       "type": "image",
       "ipinfo": {
         "domain": "preview.redd.it",
@@ -126,15 +164,39 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 62.078,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://emoji.redditmedia.com/9ypx1kyfihid1_t5_2qh3l/News",
+      "type": "image",
+      "ipinfo": {
+        "domain": "emoji.redditmedia.com",
+        "ip": "199.232.113.140",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd938d9cc73a355-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.google.com/recaptcha/enterprise.js?render=6LfirrMoAAAAAHZOipvza4kpp_VtTwLNuXVwURNQ",
       "type": "script",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.77.4",
-        "hostname": "nctsaa-ab-in-f4.1e100.net",
+        "ip": "142.250.204.36",
+        "hostname": "hkg07s38-in-f4.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -149,8 +211,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "accounts.google.com",
-        "ip": "108.177.97.84",
-        "hostname": "tm-in-f84.1e100.net",
+        "ip": "64.233.189.84",
+        "hostname": "tl-in-f84.1e100.net",
         "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
@@ -161,22 +223,7 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://i.redd.it/snoovatar/snoo_assets/marketing/bravo_40.png",
-      "type": "image",
-      "ipinfo": {
-        "domain": "i.redd.it",
-        "ip": "199.232.113.140",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://www.gstatic.com/recaptcha/releases/7gg7H51Q-naNfhmCP3_R47ho/recaptcha__zh_tw.js",
+      "originalUrl": "https://www.gstatic.com/recaptcha/releases/9TiwnJFHeuIw_s0wSd3fiKfN/recaptcha__zh_tw.js",
       "type": "script",
       "ipinfo": {
         "domain": "www.gstatic.com",
@@ -192,19 +239,23 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://emoji.redditmedia.com/bqd6q14ueynf1_t5_2xhvq/CCA",
+      "originalUrl": "https://i.redd.it/snoovatar/snoo_assets/marketing/mindblown_40.png",
       "type": "image",
       "ipinfo": {
-        "domain": "emoji.redditmedia.com",
-        "ip": "104.18.25.227",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
+        "domain": "i.redd.it",
+        "ip": "146.75.45.140",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 49.972,
+        "detection_method": "rtt"
+      }
     }
   ]
 }

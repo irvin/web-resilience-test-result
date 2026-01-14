@@ -2,12 +2,11 @@
   "url": "https://xiaoyakankan.com",
   "canonicalURL": "https://xiaoyakankan.com",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:13:57.013Z",
+  "timestamp": "2026-01-14T01:14:15.331Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -29,11 +28,11 @@
   "uniqueDomains": 4,
   "test_results": {
     "domestic": {
-      "cloud": 0,
+      "cloud": 4,
       "direct": 0
     },
     "foreign": {
-      "cloud": 4,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -43,7 +42,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "xiaoyakankan.com",
-        "ip": "104.26.0.55",
+        "ip": "104.26.1.55",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -51,7 +50,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9467f9fac8418-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://i1.xiaoyakankan.com/1/j6/r6o7.jpg",
@@ -66,14 +70,19 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd94680282a8418-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://i2.xiaoyakankan.com/b/f4/ic51.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "i2.xiaoyakankan.com",
-        "ip": "104.26.0.55",
+        "ip": "104.26.1.55",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -81,14 +90,19 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9468038348418-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://i3.xiaoyakankan.com/8/52/1m56.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "i3.xiaoyakankan.com",
-        "ip": "104.26.0.55",
+        "ip": "172.67.68.73",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -96,7 +110,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9468038318418-TPE",
+        "detection_method": "header"
+      }
     }
   ]
 }

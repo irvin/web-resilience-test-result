@@ -2,12 +2,11 @@
   "url": "https://opentable.com.tw",
   "canonicalURL": "https://www.opentable.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T22:14:11.917Z",
+  "timestamp": "2026-01-14T03:44:18.891Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 251,
+  "requestCount": 233,
   "uniqueDomains": 8,
   "test_results": {
     "domestic": {
-      "cloud": 1,
-      "direct": 3
+      "cloud": 5,
+      "direct": 2
     },
     "foreign": {
-      "cloud": 3,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -43,7 +42,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "opentable.com.tw",
-        "ip": "210.71.227.208",
+        "ip": "210.71.227.200",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -81,15 +80,20 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda224a8b32808e-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-Y77FR7F6XF&l=OT4DataLayer",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -104,15 +108,16 @@
       "type": "font",
       "ipinfo": {
         "domain": "cdn.otstatic.com",
-        "ip": "210.71.227.218",
-        "city": "Taipei",
+        "ip": "210.61.249.41",
+        "hostname": "210-61-249-41.hinet-ip.hinet.net",
+        "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS3462 Data Communication Business Group",
+        "loc": "24.1469,120.6839",
+        "org": "AS20940 Akamai International B.V.",
         "timezone": "Asia/Taipei"
       },
-      "category": "domestic/direct"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
@@ -127,15 +132,20 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda224c394c4a51-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://o4510144416514048.ingest.us.sentry.io/api/4510156458360833/envelope/?sentry_version=7&sentry_key=87ddeb68e9873ea164aff10bafdc623b&sentry_client=sentry.javascript.react%2F10.25.0",
       "type": "fetch",
       "ipinfo": {
         "domain": "o4510144416514048.ingest.us.sentry.io",
-        "ip": "34.120.195.249",
-        "hostname": "249.195.120.34.bc.googleusercontent.com",
+        "ip": "34.160.81.0",
+        "hostname": "0.81.160.34.bc.googleusercontent.com",
         "city": "Kansas City",
         "region": "Missouri",
         "country": "US",
@@ -143,10 +153,15 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.013,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "blob:https://www.opentable.com.tw/791b6df1-2eda-4286-a529-fc81e3910d12",
+      "originalUrl": "blob:https://www.opentable.com.tw/05e1487a-ffb7-4790-8e9a-ec2689c40f4b",
       "type": "other",
       "ipinfo": {
         "domain": ""

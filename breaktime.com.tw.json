@@ -2,12 +2,11 @@
   "url": "https://breaktime.com.tw",
   "canonicalURL": "https://www.breaktime.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T21:09:28.942Z",
+  "timestamp": "2026-01-14T02:16:20.527Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -29,11 +28,11 @@
   "uniqueDomains": 6,
   "test_results": {
     "domestic": {
-      "cloud": 1,
+      "cloud": 3,
       "direct": 0
     },
     "foreign": {
-      "cloud": 5,
+      "cloud": 3,
       "direct": 0
     }
   },
@@ -81,15 +80,20 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9a16959128098-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=auto&ver=6.5.7",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.204.42",
-        "hostname": "hkg07s38-in-f10.1e100.net",
+        "ip": "142.250.196.202",
+        "hostname": "nctsaa-ac-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -112,14 +116,19 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9a168db80a34f-TPE",
+        "detection_method": "header"
+      }
     },
     {
-      "originalUrl": "https://fastly.picsum.photos/id/404/1600/1200.jpg?hmac=cJ3CHeSdre4t95ria_T1G93qwOl26n13TueEcsbySfE",
+      "originalUrl": "https://fastly.picsum.photos/id/728/1600/1200.jpg?hmac=Bmg9cBEhA7_M_vyc6X9L7mvR1KR2ZX5dgeWoeYhhPow",
       "type": "image",
       "ipinfo": {
         "domain": "fastly.picsum.photos",
-        "ip": "146.75.45.91",
+        "ip": "199.232.113.91",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",
@@ -127,7 +136,11 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 45.308,
+        "detection_method": "rtt"
+      }
     }
   ]
 }

@@ -2,7 +2,7 @@
   "url": "https://csms.mohw.gov.tw",
   "canonicalURL": "https://csms.mohw.gov.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:51:54.137Z",
+  "timestamp": "2026-01-14T12:06:06.289Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -14,8 +14,8 @@
     "hasIPinfoToken": true
   },
   "testingEnvironment": {
-    "ip": "220.132.212.194",
-    "hostname": "220-132-212-194.hinet-ip.hinet.net",
+    "ip": "220.136.159.93",
+    "hostname": "220-136-159-93.dynamic-ip.hinet.net",
     "city": "Banqiao",
     "region": "Taipei",
     "country": "TW",
@@ -25,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 21,
-  "uniqueDomains": 4,
+  "requestCount": 20,
+  "uniqueDomains": 3,
   "test_results": {
     "domestic": {
-      "cloud": 2,
+      "cloud": 3,
       "direct": 0
     },
     "foreign": {
-      "cloud": 1,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -66,15 +66,20 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bdd015b7c678454-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=UA-120728652-1",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.77.8",
+        "hostname": "nctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -83,13 +88,6 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "blob:https://challenges.cloudflare.com/bda36886-c1b7-417a-8b03-018d4dd52e32",
-      "type": "other",
-      "ipinfo": {
-        "domain": ""
-      }
     }
   ],
   "testError": true,
@@ -108,13 +106,11 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "blob:https://challenges.cloudflare.com/bda36886-c1b7-417a-8b03-018d4dd52e32",
-      "type": "other",
-      "ipinfo": {
-        "domain": ""
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bdd015b7c678454-TPE",
+        "detection_method": "header"
       }
     }
   ]

@@ -2,12 +2,11 @@
   "url": "https://canva.com",
   "canonicalURL": "https://www.canva.com/zh_tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:07:09.047Z",
+  "timestamp": "2026-01-14T01:05:21.380Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 58,
-  "uniqueDomains": 12,
+  "requestCount": 60,
+  "uniqueDomains": 11,
   "test_results": {
     "domestic": {
-      "cloud": 3,
+      "cloud": 8,
       "direct": 2
     },
     "foreign": {
-      "cloud": 7,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -43,8 +42,8 @@
       "type": "document",
       "ipinfo": {
         "domain": "canva.com",
-        "ip": "3.169.36.68",
-        "hostname": "server-3-169-36-68.tpe53.r.cloudfront.net",
+        "ip": "3.169.36.106",
+        "hostname": "server-3-169-36-106.tpe53.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -59,21 +58,6 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.canva.com",
-        "ip": "104.16.102.112",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://static.canva.com/web/db8988a672dd5fc2.ltr.css",
-      "type": "stylesheet",
-      "ipinfo": {
-        "domain": "static.canva.com",
         "ip": "104.16.103.112",
         "city": "San Francisco",
         "region": "California",
@@ -82,15 +66,40 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd93965ea9d809e-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://static.canva.com/web/9903b2d331db2f94.ltr.css",
+      "type": "stylesheet",
+      "ipinfo": {
+        "domain": "static.canva.com",
+        "ip": "104.16.102.112",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9396a3915841c-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://o13855.ingest.sentry.io/api/5862012/envelope/?sentry_version=7&sentry_key=3e6b0deb414549c8901b5382885e478b&sentry_client=sentry.javascript.browser%2F8.55.0",
       "type": "fetch",
       "ipinfo": {
         "domain": "o13855.ingest.sentry.io",
-        "ip": "34.120.195.249",
-        "hostname": "249.195.120.34.bc.googleusercontent.com",
+        "ip": "34.160.81.0",
+        "hostname": "0.81.160.34.bc.googleusercontent.com",
         "city": "Kansas City",
         "region": "Missouri",
         "country": "US",
@@ -98,19 +107,24 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.221,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://accounts.google.com/gsi/client",
       "type": "script",
       "ipinfo": {
         "domain": "accounts.google.com",
-        "ip": "142.250.157.84",
-        "hostname": "ta-in-f84.1e100.net",
-        "city": "Chang-hua",
+        "ip": "108.177.125.84",
+        "hostname": "tp-in-f84.1e100.net",
+        "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "24.0733,120.5628",
+        "loc": "24.1469,120.6839",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
@@ -129,10 +143,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9396d99b1809e-TPE",
+        "detection_method": "header"
+      }
     },
     {
-      "originalUrl": "https://chunk-composing.canva.com/chunk-batch/ece8a5efdb31fc48.js+0ae02bc3b20ea33b.js+4ccdffdf7599146e.js+441f0b01d6c1635e.js+cbaf8ed0c990c4dd.js+d971de432dfca8d9.js+7676b0e0970b6293.js+3a7d68d0e9360258.js+bae716fac17ec3c1.js+186f4438ca4630bc.js+6f51f9d3c9bbbe06.js+93108b1a8e5c646f.js+20f509b378395f13.js+73302814652570f3.js+445223f320be3034.js+cab8d6a09a726118.js+060528236e28ad57.js+6cbcf60064b3724e.js+4226fc0a44a82fe3.js+030125e8ada3a0d4.js+a50a9a407e8114e0.js+83f949dc3813e1c7.js+28df915c75745a60.js+86254cf1ffb94c21.js+b3de6831bd4d63df.js+13edbd49595b3c8b.js+7a867b7b561897f3.js+7a13b06142cb8653.js+92d692c0c82e100a.js+d33ced7e8f52ee8c.strings.js+1a4c4b4d66a0b2fb.js+d170493512a8bd31.js+42ad526cdf624776.js+4556c7fd492d7a8e.strings.js+fc00d9d7b15e93b7.js+a2613e82c89b6651.js+0b4b1cb60d8c67a0.js+94366d7e05df2ba1.js+3467f46e5b231ecf.js+c5e9bc6d7b26b79b.js",
+      "originalUrl": "https://chunk-composing.canva.com/chunk-batch/6c6fd1a53f5f87d1.vendor.js+1bb0afb9d68bc6f4.js+6aac13bf07f24007.js+8887ce0ecc0d505e.js+c9c98b954e52335c.js+7632d188945bdd20.js+dadcb0232a2a8a3a.js+c600eb370e172c0f.js+906725fee064354f.js+635fd5bd19b95f04.js+0b5ee22bd125d671.js+851398225a41f611.js+4e6481a898b63d94.js+e081d8a85ce81333.js+2b03fc8d14fa4934.js+1f476a53ffcd9973.js+80680b6d27419ce2.js+126090d73024d39c.js+560639ba82066732.js+2f4760b98f741b5a.js+3259975ba5adbdea.js+ecb860d088d0c899.js+e14765ce2cf6c81d.js+378da53604092e0a.js+dc8d5c85261681db.js+eb2a42ed8cf0920b.js+43d380f9735ac9d1.js+45c18365fee1f3d3.js+a79a1385239a9025.js+bb6a72850614e6bf.js+d33ced7e8f52ee8c.strings.js+bb4e57631340f476.js+1e4788f3c8819419.js+f7f5ca2c17a3f221.js+1e86ce22233fafed.strings.js+7914b7cef2e1d91e.js+bff1f89636833535.js+c84396537525fb37.js+af9fe3e74db66b3a.js+57b86b7814520d3a.js",
       "type": "script",
       "ipinfo": {
         "domain": "chunk-composing.canva.com",
@@ -144,30 +163,19 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-TZPTKRR&l=dataLayer",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9396e8aa7809e-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "cdnjs.cloudflare.com",
-        "ip": "104.17.25.14",
+        "ip": "104.17.24.14",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -175,7 +183,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd93974587fae64-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",

@@ -2,12 +2,11 @@
   "url": "https://helloyishi.com.tw",
   "canonicalURL": "https://helloyishi.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:14:18.986Z",
+  "timestamp": "2026-01-14T01:15:04.009Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 350,
-  "uniqueDomains": 10,
+  "requestCount": 347,
+  "uniqueDomains": 9,
   "test_results": {
     "domestic": {
-      "cloud": 2,
+      "cloud": 7,
       "direct": 0
     },
     "foreign": {
-      "cloud": 8,
+      "cloud": 2,
       "direct": 0
     }
   },
@@ -43,7 +42,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "helloyishi.com.tw",
-        "ip": "104.26.7.46",
+        "ip": "172.67.71.162",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -51,13 +50,38 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd947a35e3656f4-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://hhg-common.helloyishi.com.tw/common/nav-icons/discover.svg",
       "type": "image",
       "ipinfo": {
         "domain": "hhg-common.helloyishi.com.tw",
+        "ip": "172.67.71.162",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd947a3ff0b56f4-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://cdn.helloyishi.com.tw/wp-content/uploads/2025/06/Hello%E9%86%AB%E5%B8%AB_Helloyishi_Logo-150x150.png",
+      "type": "image",
+      "ipinfo": {
+        "domain": "cdn.helloyishi.com.tw",
         "ip": "104.26.6.46",
         "city": "San Francisco",
         "region": "California",
@@ -66,22 +90,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://cdn.helloyishi.com.tw/wp-content/uploads/2025/06/Hello%E9%86%AB%E5%B8%AB_Helloyishi_Logo-150x150.png",
-      "type": "image",
-      "ipinfo": {
-        "domain": "cdn.helloyishi.com.tw",
-        "ip": "104.26.7.46",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd947a3ff0e56f4-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://wp.helloyishi.com.tw/wp-json/api/healthtools?ismenu=0",
@@ -96,7 +110,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd947a5ea4da9c2-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://api.ipify.org/",
@@ -111,7 +130,27 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 57.332,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://fundingchoicesmessages.google.com/i/21682272649?ers=3",
+      "type": "script",
+      "ipinfo": {
+        "domain": "fundingchoicesmessages.google.com",
+        "ip": "142.250.77.14",
+        "hostname": "nctsaa-ab-in-f14.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://akamai.my.id/helloyishi/rules.json",
@@ -126,30 +165,18 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://fundingchoicesmessages.google.com/i/21682272649?ers=3",
-      "type": "script",
-      "ipinfo": {
-        "domain": "fundingchoicesmessages.google.com",
-        "ip": "142.250.198.78",
-        "hostname": "lctsaa-ab-in-f14.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 139.837,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://cdn.jsdelivr.net/gh/prebid/shared-id/pubcid.js/docs/pubcid.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "151.101.65.229",
+        "ip": "151.101.1.229",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -157,15 +184,21 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd947ab3d5ba331-TPE",
+        "x-served-by": "cache-fra-eddf8230081-FRA, cache-hkg17931-HKG",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-KG8R4RT",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -174,21 +207,6 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://helloyishi.api.useinsider.com/ins.js?id=10004526",
-      "type": "script",
-      "ipinfo": {
-        "domain": "helloyishi.api.useinsider.com",
-        "ip": "162.159.134.61",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud"
     }
   ]
 }

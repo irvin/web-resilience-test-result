@@ -2,12 +2,11 @@
   "url": "https://www.ntmofa.gov.tw/",
   "canonicalURL": "https://www.ntmofa.gov.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T21:59:00.232Z",
+  "timestamp": "2026-01-14T03:26:38.327Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 129,
-  "uniqueDomains": 6,
+  "requestCount": 130,
+  "uniqueDomains": 8,
   "test_results": {
     "domestic": {
-      "cloud": 2,
-      "direct": 2
+      "cloud": 4,
+      "direct": 4
     },
     "foreign": {
-      "cloud": 2,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -43,7 +42,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.ntmofa.gov.tw",
-        "ip": "104.18.12.60",
+        "ip": "104.18.13.60",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -51,15 +50,20 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda085e1ccc4a82-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-ZMKCT5QNV3",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -74,7 +78,7 @@
       "type": "image",
       "ipinfo": {
         "domain": "file.moc.gov.tw",
-        "ip": "104.18.7.77",
+        "ip": "104.18.6.77",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -82,7 +86,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.858,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://event.culture.tw/mocweb/reg/userFiles/NTMOFA/JpgFile/01/55049/AD/55049_0_0_227534.png",
@@ -121,8 +130,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.gstatic.com",
-        "ip": "142.250.204.35",
-        "hostname": "hkg07s38-in-f3.1e100.net",
+        "ip": "142.250.198.67",
+        "hostname": "lctsaa-ab-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -131,6 +140,38 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://imedia-assets.s3.hicloud.net.tw/ntmofa/media/159761/image/image_8c975ccfefdf40a4ac993ea139bd3a0a-m.png",
+      "type": "image",
+      "ipinfo": {
+        "domain": "imedia-assets.s3.hicloud.net.tw",
+        "ip": "210.71.204.91",
+        "hostname": "s3.hicloud.net.tw",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://imedia-multimedias.s3.hicloud.net.tw/ntmofa/159761/c3f2fa4356fe492cbb4aa265f5666285-s.mp4?response-cache-control=no-cache%2C%20private%2C%20max-age%3D135&response-expires=Wed%20Jan%2014%2011%3A28%3A51%20CST%202026&Signature=g81LInVrmFRL5MeuXSa1MfUBqDE%3D&AWSAccessKeyId=SE41NTAxNjYzMjE0Njc3MDMwNjA1OTU&Expires=1768361331&response-content-type=video%2Fmp4",
+      "type": "media",
+      "ipinfo": {
+        "domain": "imedia-multimedias.s3.hicloud.net.tw",
+        "ip": "210.71.204.91",
+        "hostname": "s3.hicloud.net.tw",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
     }
   ]
 }

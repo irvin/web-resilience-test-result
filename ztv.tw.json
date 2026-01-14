@@ -2,12 +2,11 @@
   "url": "https://ztv.tw",
   "canonicalURL": "https://ztv.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T22:38:54.449Z",
+  "timestamp": "2026-01-14T04:07:54.281Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,16 +24,16 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 53,
-  "uniqueDomains": 5,
+  "requestCount": 50,
+  "uniqueDomains": 3,
   "test_results": {
     "domestic": {
-      "cloud": 1,
+      "cloud": 2,
       "direct": 0
     },
     "foreign": {
-      "cloud": 2,
-      "direct": 2
+      "cloud": 1,
+      "direct": 0
     }
   },
   "domainDetails": [
@@ -51,7 +50,11 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 142.783,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-FVN8074QED",
@@ -70,26 +73,11 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://netdown.jsyunjihui.com/20251771.jpg",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "netdown.jsyunjihui.com",
-        "ip": "123.148.116.199",
-        "city": "Hangzhou",
-        "region": "Zhejiang",
-        "country": "CN",
-        "loc": "30.2936,120.1614",
-        "org": "AS4837 CHINA UNICOM China169 Backbone",
-        "timezone": "Asia/Shanghai"
-      },
-      "category": "foreign/direct"
-    },
-    {
       "originalUrl": "https://img.avdb.me/777tv/upload/site/20221223-1/3344fea843f0ddf92c0d0d5ca68fc43d.png",
       "type": "image",
       "ipinfo": {
         "domain": "img.avdb.me",
-        "ip": "172.67.73.196",
+        "ip": "104.26.6.166",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -97,22 +85,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://imgwolong.com/upload/vod/20251222-1/a72774ec077e69a257b358e58d0cd752.jpg",
-      "type": "image",
-      "ipinfo": {
-        "domain": "imgwolong.com",
-        "ip": "142.248.96.91",
-        "city": "San Jose",
-        "region": "California",
-        "country": "US",
-        "loc": "37.3394,-121.8950",
-        "org": "AS6939 Hurricane Electric LLC",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/direct"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda44d21e1e8416-TPE",
+        "detection_method": "header"
+      }
     }
   ]
 }

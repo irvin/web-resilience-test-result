@@ -2,12 +2,11 @@
   "url": "https://sovio.com.tw",
   "canonicalURL": "https://sovio.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T22:47:30.943Z",
+  "timestamp": "2026-01-14T04:16:59.226Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 40,
-  "uniqueDomains": 3,
+  "requestCount": 43,
+  "uniqueDomains": 4,
   "test_results": {
     "domestic": {
-      "cloud": 1,
+      "cloud": 4,
       "direct": 0
     },
     "foreign": {
-      "cloud": 2,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -52,15 +51,20 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Toronto"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda52254b8ea9c7-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.204.42",
-        "hostname": "hkg07s38-in-f10.1e100.net",
+        "ip": "142.250.198.74",
+        "hostname": "lctsaa-ab-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -83,7 +87,32 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Toronto"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda522d1b378446-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://shop.app/pay/hop?analytics_trace_id=2b5e2f31-e59f-47b2-bfbc-b77727f71fef&target_origin=https%3A%2F%2Fsovio.com.tw&client_handle=am3rsy-an.myshopify.com",
+      "type": "document",
+      "ipinfo": {
+        "domain": "shop.app",
+        "ip": "185.146.173.20",
+        "city": "Stockholm",
+        "region": "Stockholm",
+        "country": "SE",
+        "loc": "59.3294,18.0687",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "Europe/Stockholm"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda522e695a072c-TPE",
+        "detection_method": "header"
+      }
     }
   ]
 }

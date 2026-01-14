@@ -2,12 +2,11 @@
   "url": "https://clibo.tw",
   "canonicalURL": "https://clibo.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T22:35:37.974Z",
+  "timestamp": "2026-01-14T04:04:34.817Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 59,
-  "uniqueDomains": 4,
+  "requestCount": 60,
+  "uniqueDomains": 5,
   "test_results": {
     "domestic": {
       "cloud": 2,
       "direct": 1
     },
     "foreign": {
-      "cloud": 1,
+      "cloud": 2,
       "direct": 0
     }
   },
@@ -55,11 +54,11 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://assets.clibo.tw/images/commissions/QFfdnj-THUE.jpg?v=2824b580ab9963e8687e52affc1f53fe&img_resize_type=commission-card-cover",
+      "originalUrl": "https://assets.clibo.tw/images/commissions/e8julf-dLs0.png?v=087ee1f216348d9c0124e54c5348f90c&img_resize_type=commission-card-cover",
       "type": "image",
       "ipinfo": {
         "domain": "assets.clibo.tw",
-        "ip": "104.21.72.218",
+        "ip": "172.67.155.160",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -67,15 +66,19 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 135.229,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-5545D6S",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.77.8",
+        "hostname": "nctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -100,6 +103,26 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://csi.gstatic.com/csi?v=2&s=pagead&action=csi_pagead&dmc=8&top=1&puid=1~mkdhybzz&c=488475332156310&e=31084127%2C31096044%2C95376583%2C95379215%2C31061691%2C31061693&ctx=1&met.6=6.1_CgkY1QIgPCoCEgAKCxizAyA5KgQIARIA",
+      "type": "ping",
+      "ipinfo": {
+        "domain": "csi.gstatic.com",
+        "ip": "142.250.178.67",
+        "hostname": "lcosln-ab-in-f3.1e100.net",
+        "city": "Stockholm",
+        "region": "Stockholm",
+        "country": "SE",
+        "loc": "59.3294,18.0687",
+        "org": "AS15169 Google LLC",
+        "timezone": "Europe/Stockholm"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 270.179,
+        "detection_method": "rtt"
+      }
     }
   ]
 }

@@ -2,12 +2,11 @@
   "url": "https://sentry.io",
   "canonicalURL": "https://sentry.io/welcome/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:10:02.196Z",
+  "timestamp": "2026-01-14T01:09:28.227Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -26,14 +25,14 @@
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 59,
-  "uniqueDomains": 5,
+  "uniqueDomains": 6,
   "test_results": {
     "domestic": {
-      "cloud": 2,
+      "cloud": 6,
       "direct": 0
     },
     "foreign": {
-      "cloud": 3,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -52,7 +51,12 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.113,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://plausible.io/js/script.tagged-events.js",
@@ -74,8 +78,8 @@
       "type": "image",
       "ipinfo": {
         "domain": "images.ctfassets.net",
-        "ip": "3.169.55.22",
-        "hostname": "server-3-169-55-22.tpe54.r.cloudfront.net",
+        "ip": "3.169.55.76",
+        "hostname": "server-3-169-55-76.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -99,7 +103,33 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.512,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://o1.ingest.us.sentry.io/api/162676/envelope/?sentry_version=7&sentry_key=df5aecd08ea9449f9a96a8f4e0a3a433&sentry_client=sentry.javascript.astro%2F10.28.0",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "o1.ingest.us.sentry.io",
+        "ip": "34.160.81.0",
+        "hostname": "0.81.160.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.507,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://unpkg.com/@rive-app/canvas@2.32.2/rive.wasm",
@@ -114,7 +144,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd93f79b9ac840f-TPE",
+        "detection_method": "header"
+      }
     }
   ]
 }

@@ -2,12 +2,11 @@
   "url": "https://3people.com.tw",
   "canonicalURL": "https://3people.com.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T22:27:47.363Z",
+  "timestamp": "2026-01-14T03:57:09.562Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 109,
+  "requestCount": 110,
   "uniqueDomains": 17,
   "test_results": {
     "domestic": {
-      "cloud": 7,
+      "cloud": 11,
       "direct": 1
     },
     "foreign": {
-      "cloud": 9,
+      "cloud": 5,
       "direct": 0
     }
   },
@@ -91,7 +90,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "code.jquery.com",
-        "ip": "151.101.66.137",
+        "ip": "151.101.194.137",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -99,15 +98,19 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 38.402,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.google.com/cse/brand?form=cse-search-box&lang=zh-Hant",
       "type": "script",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.198.68",
-        "hostname": "lctsaa-ab-in-f4.1e100.net",
+        "ip": "142.250.196.196",
+        "hostname": "nctsaa-ac-in-f4.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -122,8 +125,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.gstatic.com",
-        "ip": "142.250.77.3",
-        "hostname": "nctsaa-ab-in-f3.1e100.net",
+        "ip": "142.250.204.35",
+        "hostname": "hkg07s38-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -138,7 +141,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "netdna.bootstrapcdn.com",
-        "ip": "104.18.10.207",
+        "ip": "104.18.11.207",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -146,15 +149,20 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda34dcae8b4a60-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-N5SS4CC",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.77.8",
-        "hostname": "nctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -177,19 +185,24 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda34dc8a20a9cb-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://d.line-scdn.net/n/line_tag/public/release/v1/lt.js",
       "type": "script",
       "ipinfo": {
         "domain": "d.line-scdn.net",
-        "ip": "23.39.61.163",
-        "hostname": "a23-39-61-163.deploy.static.akamaitechnologies.com",
-        "city": "Taipei",
+        "ip": "184.25.121.253",
+        "hostname": "a184-25-121-253.deploy.static.akamaitechnologies.com",
+        "city": "Yuanlin",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "23.9567,120.5761",
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -231,7 +244,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "unpkg.com",
-        "ip": "104.18.1.22",
+        "ip": "104.18.0.22",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -239,26 +252,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda34dd5d8bf023-TPE",
+        "detection_method": "header"
+      }
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-X764DEX3XC&cid=1030947230.1767824866&gtm=45je6160v873309768z879671957za20gzb79671957zd79671957&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115616985~115938465~115938468~115985661&z=1837272273",
-      "type": "image",
-      "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.77.3",
-        "hostname": "nctsaa-ab-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://resources.3people.com.tw/res/Images/aa86a54f-ac0e-4ac7-9fa8-c71ae88bc48d_690_520_285_240.jpg",
+      "originalUrl": "https://resources.3people.com.tw/res/Images/6f182e11-bacd-48fa-a180-c3cf696c5f87_690_520_285_240.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "resources.3people.com.tw",
@@ -274,11 +276,27 @@
       "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://pixel.dcard.tw/api/v2/devices/init?id=d3179e8e-8a70-4219-bca3-ce8adec5413b&pixel=20aAkdNWuSX5Rw0MZpSor&createdAt=2026-01-07T22%3A27%3A45.900Z&clickId=&version=3.0.0-3p",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-X764DEX3XC&cid=1363706729.1768363018&gtm=45je61d0h2v873309768z879671957za20gzb79671957zd79671957&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115616986~115938466~115938468~117041587&z=805882507",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.77.3",
+        "hostname": "nctsaa-ab-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://pixel.dcard.tw/api/v2/devices/init?id=a45ce569-8ab0-4c99-96ec-6a41be3e460e&pixel=20aAkdNWuSX5Rw0MZpSor&createdAt=2026-01-14T03%3A56%3A57.991Z&clickId=&version=3.0.0-3p",
       "type": "image",
       "ipinfo": {
         "domain": "pixel.dcard.tw",
-        "ip": "104.19.247.7",
+        "ip": "104.19.248.7",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -286,15 +304,20 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.799,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://i.ytimg.com/vi/tNVmOVTZwgA/hqdefault.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "i.ytimg.com",
-        "ip": "142.250.196.214",
-        "hostname": "nctsaa-ac-in-f22.1e100.net",
+        "ip": "142.250.77.22",
+        "hostname": "nctsaa-ab-in-f22.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",

@@ -2,12 +2,11 @@
   "url": "https://28365365.tw",
   "canonicalURL": "https://28365365.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T21:56:41.972Z",
+  "timestamp": "2026-01-14T03:23:14.811Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,16 +24,16 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 47,
-  "uniqueDomains": 4,
+  "requestCount": 35,
+  "uniqueDomains": 3,
   "test_results": {
     "domestic": {
-      "cloud": 0,
+      "cloud": 1,
       "direct": 0
     },
     "foreign": {
-      "cloud": 1,
-      "direct": 3
+      "cloud": 0,
+      "direct": 2
     }
   },
   "domainDetails": [
@@ -52,51 +51,40 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.27,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "http://kyty1601.com/",
       "type": "document",
       "ipinfo": {
         "domain": "kyty1601.com",
-        "ip": "103.216.228.59",
-        "hostname": "unknown.itsidc.com",
-        "city": "Los Angeles",
-        "region": "California",
-        "country": "US",
-        "loc": "34.0522,-118.2437",
-        "org": "AS216047 INTECLOUD CDNK LTD",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/direct"
-    },
-    {
-      "originalUrl": "https://www.zezuzm.vip:9122/register59344?i_code=98341300",
-      "type": "document",
-      "ipinfo": {
-        "domain": "www.zezuzm.vip",
-        "ip": "119.42.35.61",
-        "city": "Tokyo",
-        "region": "Tokyo",
-        "country": "JP",
-        "loc": "35.6895,139.6917",
-        "org": "AS132825 MYTEK TRADING PTY LTD",
-        "timezone": "Asia/Tokyo"
-      },
-      "category": "foreign/direct"
-    },
-    {
-      "originalUrl": "https://pos3img.neiztcl.com/images/new_public/web/bg/fd/cs/d1v0clinghtku84vemb0_274902.png",
-      "type": "image",
-      "ipinfo": {
-        "domain": "pos3img.neiztcl.com",
-        "ip": "154.86.20.121",
+        "ip": "156.240.110.244",
         "city": "Hong Kong",
         "region": "Hong Kong",
         "country": "HK",
         "loc": "22.2783,114.1747",
         "org": "AS140227 Hong Kong Communications International Co., Limited",
         "timezone": "Asia/Hong_Kong"
+      },
+      "category": "foreign/direct"
+    },
+    {
+      "originalUrl": "https://www.xc5p0z.com:9143/register48057?i_code=98341300",
+      "type": "document",
+      "ipinfo": {
+        "domain": "www.xc5p0z.com",
+        "ip": "119.42.35.17",
+        "city": "Tokyo",
+        "region": "Tokyo",
+        "country": "JP",
+        "loc": "35.6895,139.6917",
+        "org": "AS132825 MYTEK TRADING PTY LTD",
+        "timezone": "Asia/Tokyo"
       },
       "category": "foreign/direct"
     }

@@ -2,7 +2,7 @@
   "url": "https://ebook.hyread.com.tw",
   "canonicalURL": "https://ebook.hyread.com.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T22:09:47.883Z",
+  "timestamp": "2026-01-14T12:44:40.630Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -14,8 +14,8 @@
     "hasIPinfoToken": true
   },
   "testingEnvironment": {
-    "ip": "220.132.212.194",
-    "hostname": "220-132-212-194.hinet-ip.hinet.net",
+    "ip": "220.136.159.93",
+    "hostname": "220-136-159-93.dynamic-ip.hinet.net",
     "city": "Banqiao",
     "region": "Taipei",
     "country": "TW",
@@ -25,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 503,
-  "uniqueDomains": 16,
+  "requestCount": 443,
+  "uniqueDomains": 17,
   "test_results": {
     "domestic": {
-      "cloud": 7,
-      "direct": 3
+      "cloud": 9,
+      "direct": 4
     },
     "foreign": {
-      "cloud": 5,
+      "cloud": 3,
       "direct": 0
     }
   },
@@ -59,8 +59,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.198.68",
-        "hostname": "lctsaa-ab-in-f4.1e100.net",
+        "ip": "142.250.204.36",
+        "hostname": "hkg07s38-in-f4.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -91,7 +91,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "challenges.cloudflare.com",
-        "ip": "104.18.94.41",
+        "ip": "104.18.95.41",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -99,7 +99,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bdd39875c20844b-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js",
@@ -114,10 +119,14 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 34.96,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "https://webcdn2.ebook.hyread.com.tw/bookcover/482038978957334384420252431111226.jpg",
+      "originalUrl": "https://webcdn2.ebook.hyread.com.tw/bookcover/482680978626434654220264609090102.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "webcdn2.ebook.hyread.com.tw",
@@ -132,12 +141,12 @@
       "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://www.gstatic.com/recaptcha/releases/7gg7H51Q-naNfhmCP3_R47ho/recaptcha__zh_tw.js",
+      "originalUrl": "https://www.gstatic.com/recaptcha/releases/9TiwnJFHeuIw_s0wSd3fiKfN/recaptcha__en.js",
       "type": "script",
       "ipinfo": {
         "domain": "www.gstatic.com",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "ip": "142.250.198.67",
+        "hostname": "lctsaa-ab-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -152,8 +161,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "cdn.qgr.ph",
-        "ip": "3.169.121.35",
-        "hostname": "server-3-169-121-35.tpe53.r.cloudfront.net",
+        "ip": "3.169.121.86",
+        "hostname": "server-3-169-121-86.tpe53.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -164,12 +173,48 @@
       "category": "domestic/cloud"
     },
     {
+      "originalUrl": "https://cdn-prd-gcp-jp0.aiqua.io/sdk/v3/c/aiqua.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "cdn-prd-gcp-jp0.aiqua.io",
+        "ip": "210.71.227.162",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://api.quantumgraph.com/web/cm/",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "api.quantumgraph.com",
+        "ip": "34.110.163.49",
+        "hostname": "49.163.110.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 3.658,
+        "detection_method": "rtt"
+      }
+    },
+    {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-TVTP73V",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.204.40",
+        "hostname": "hkg07s38-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -180,23 +225,27 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://cdn-prd-gcp-jp0.aiqua.io/sdk/v3/c/aiqua.js",
-      "type": "script",
+      "originalUrl": "https://recommendation.jp.aiqua.io/api/v1.0/app/bb1d895c2707ead042f7/scenarios/HkTUNQak3kg3pPkKsckkCQ/recommendation?agent=web",
+      "type": "xhr",
       "ipinfo": {
-        "domain": "cdn-prd-gcp-jp0.aiqua.io",
-        "ip": "203.69.138.209",
-        "hostname": "203-69-138-209.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS20940 Akamai International B.V.",
-        "timezone": "Asia/Taipei"
+        "domain": "recommendation.jp.aiqua.io",
+        "ip": "34.85.99.95",
+        "hostname": "95.99.85.34.bc.googleusercontent.com",
+        "city": "Tokyo",
+        "region": "Tokyo",
+        "country": "JP",
+        "loc": "35.6895,139.6917",
+        "org": "AS396982 Google LLC",
+        "timezone": "Asia/Tokyo"
       },
-      "category": "domestic/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 42.356,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "blob:https://challenges.cloudflare.com/1f598245-362d-420e-9294-be58c3a3f456",
+      "originalUrl": "blob:https://challenges.cloudflare.com/39980fd9-1648-4d92-b9ff-162f6e934cf0",
       "type": "other",
       "ipinfo": {
         "domain": ""
@@ -219,12 +268,12 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-2Q57ZVF476&cid=1996058488.1767823785&gtm=45je6160v873268290z8812562819za20gzb812562819zd812562819&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115583767~115938466~115938469~116184927~116184929~116514483&z=1076586918",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-2Q57ZVF476&cid=662352073.1768394668&gtm=45je61c1v873268290z8812562819za20gzb812562819zd812562819&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115938466~115938469~116682876~116910502~117041588&z=1721681680",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.77.3",
-        "hostname": "nctsaa-ab-in-f3.1e100.net",
+        "ip": "142.250.204.35",
+        "hostname": "hkg07s38-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -235,8 +284,8 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.facebook.com/privacy_sandbox/topics/registration/?id=556785667806098",
-      "type": "fetch",
+      "originalUrl": "https://www.facebook.com/tr/?id=556785667806098&ev=PageView&dl=https%3A%2F%2Febook.hyread.com.tw%2F&rl=&if=false&ts=1768394667980&sw=1280&sh=720&v=2.9.248&r=stable&ec=0&o=4126&fbp=fb.2.1768394667978.905844555749300003&ler=empty&pmd[title]=HyRead%20ebook%20%E9%9B%BB%E5%AD%90%E6%9B%B8%E5%BA%97&pmd[description]=HyRead%20ebook%E9%9B%BB%E5%AD%90%E6%9B%B8%E5%BA%97%E7%82%BA%E6%82%A8%E6%89%93%E9%80%A0%E9%9B%BB%E5%AD%90%E6%9B%B8%E9%96%B1%E8%AE%80%E9%9B%B6%E6%99%82%E5%B7%AE%E7%9A%84%E9%9B%BB%E5%AD%90%E6%9B%B8%E6%88%BF%EF%BC%8CHyRead%20ebook%E9%9B%BB%E5%AD%90%E6%9B%B8%E5%BA%97%E6%94%AF%E6%8F%B4PC%E9%9B%BB%E8%85%A6%E3%80%81iOS(iPhone%2FiPad)%E3%80%81android%E7%AD%89%E8%BC%89%E5%85%B7%EF%BC%8C%E8%AE%93%E6%82%A8%E7%B7%9A%E4%B8%8A%E9%96%B1%E8%AE%80%E9%9B%BB%E5%AD%90%E6%9B%B8%E6%88%96%E4%B8%8B%E8%BC%89%E9%9B%BB%E5%AD%90%E6%9B%B8%E7%84%A1%E7%85%A9%E6%83%B1%EF%BC%8C24%E5%B0%8F%E6%99%82%E9%9B%BB%E5%AD%90%E6%9B%B8%E5%B9%B3%E5%8F%B0%EF%BC%8C%E5%A4%9A%E6%A8%A3%E9%9B%BB%E5%AD%90%E6%9B%B8%E8%88%87%E9%9B%BB%E5%AD%90%E9%9B%9C%E8%AA%8C%EF%BC%8C%E9%9A%A8%E6%99%82%E9%AB%94%E9%A9%97%E9%9B%B2%E7%AB%AF%E9%96%B1%E8%AE%80%E7%9A%84%E6%A8%82%E8%B6%A3%E3%80%82&plt=1805.6000000089407&it=1768394667724&coo=false&expv2[0]=pl1&expv2[1]=el2&expv2[2]=bc1&expv2[3]=mr2&expv2[4]=ct3&rqm=GET",
+      "type": "image",
       "ipinfo": {
         "domain": "www.facebook.com",
         "ip": "31.13.87.36",
@@ -251,36 +300,20 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://api.quantumgraph.com/web/cm/",
-      "type": "xhr",
+      "originalUrl": "https://cdn-prd-gcp-jp0.qgraph.io/img/hosting/bb1d895c2707ead042f7/1okLjm2OjS8ujSUM1o1xjSex1S7O1owxjSwx1mwObm7-VcvOPLJrbl0u1o0-1SkM/original",
+      "type": "image",
       "ipinfo": {
-        "domain": "api.quantumgraph.com",
-        "ip": "34.110.163.49",
-        "hostname": "49.163.110.34.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
-        "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
+        "domain": "cdn-prd-gcp-jp0.qgraph.io",
+        "ip": "3.169.36.65",
+        "hostname": "server-3-169-36-65.tpe53.r.cloudfront.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
       },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://recommendation.jp.aiqua.io/api/v1.0/app/bb1d895c2707ead042f7/scenarios/HkTUNQak3kg3pPkKsckkCQ/recommendation?agent=web",
-      "type": "xhr",
-      "ipinfo": {
-        "domain": "recommendation.jp.aiqua.io",
-        "ip": "34.85.99.95",
-        "hostname": "95.99.85.34.bc.googleusercontent.com",
-        "city": "Tokyo",
-        "region": "Tokyo",
-        "country": "JP",
-        "loc": "35.6895,139.6917",
-        "org": "AS396982 Google LLC",
-        "timezone": "Asia/Tokyo"
-      },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud"
     }
   ],
   "testError": true,
@@ -291,7 +324,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "challenges.cloudflare.com",
-        "ip": "104.18.94.41",
+        "ip": "104.18.95.41",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -299,10 +332,15 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bdd39875c20844b-TPE",
+        "detection_method": "header"
+      }
     },
     {
-      "originalUrl": "blob:https://challenges.cloudflare.com/1f598245-362d-420e-9294-be58c3a3f456",
+      "originalUrl": "blob:https://challenges.cloudflare.com/39980fd9-1648-4d92-b9ff-162f6e934cf0",
       "type": "other",
       "ipinfo": {
         "domain": ""

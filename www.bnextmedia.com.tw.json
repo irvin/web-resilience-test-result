@@ -2,12 +2,11 @@
   "url": "https://www.bnextmedia.com.tw/",
   "canonicalURL": "https://www.bnextmedia.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T21:02:45.063Z",
+  "timestamp": "2026-01-14T02:08:48.610Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -29,11 +28,11 @@
   "uniqueDomains": 8,
   "test_results": {
     "domestic": {
-      "cloud": 1,
+      "cloud": 5,
       "direct": 0
     },
     "foreign": {
-      "cloud": 7,
+      "cloud": 3,
       "direct": 0
     }
   },
@@ -75,8 +74,8 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "edm.bnext.com.tw",
-        "ip": "35.78.10.67",
-        "hostname": "ec2-35-78-10-67.ap-northeast-1.compute.amazonaws.com",
+        "ip": "13.192.45.36",
+        "hostname": "ec2-13-192-45-36.ap-northeast-1.compute.amazonaws.com",
         "city": "Tokyo",
         "region": "Tokyo",
         "country": "JP",
@@ -91,22 +90,28 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "104.16.174.226",
+        "ip": "151.101.65.229",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
         "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
+        "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9962a3af96e87-TPE",
+        "x-served-by": "cache-fra-etou8220090-FRA, cache-hkg17930-HKG",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://unpkg.com/aos@2.3.1/dist/aos.css",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "unpkg.com",
-        "ip": "104.18.0.22",
+        "ip": "104.18.1.22",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -114,7 +119,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9962a28086b78-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://player.vimeo.com/api/player.js",
@@ -129,7 +139,13 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9962ae9724a6d-TPE",
+        "x-served-by": "cache-iad-kiad7000082-IAD, cache-hkg17931-HKG",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js",
@@ -144,14 +160,19 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9962addaf4a4d-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://f.vimeocdn.com/p/4.46.25/js/player.module.js",
       "type": "script",
       "ipinfo": {
         "domain": "f.vimeocdn.com",
-        "ip": "146.75.44.217",
+        "ip": "199.232.112.217",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",
@@ -159,7 +180,11 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 44.361,
+        "detection_method": "rtt"
+      }
     }
   ]
 }

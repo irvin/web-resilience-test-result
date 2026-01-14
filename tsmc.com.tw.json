@@ -2,12 +2,11 @@
   "url": "https://tsmc.com.tw",
   "canonicalURL": "https://www.tsmc.com/english",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T21:39:26.697Z",
+  "timestamp": "2026-01-14T02:48:29.495Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -29,11 +28,11 @@
   "uniqueDomains": 8,
   "test_results": {
     "domestic": {
-      "cloud": 2,
+      "cloud": 5,
       "direct": 0
     },
     "foreign": {
-      "cloud": 5,
+      "cloud": 2,
       "direct": 0
     }
   },
@@ -51,14 +50,19 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9d080bb590768-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.tsmc.com/chinese",
       "type": "document",
       "ipinfo": {
         "domain": "www.tsmc.com",
-        "ip": "162.159.140.3",
+        "ip": "172.66.0.3",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -66,15 +70,20 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9d080fe5f8a97-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,500,500italic,700,700italic,900,900italic,italic,regular|Roboto+Condensed:300,300italic,700,italic,700italic,regular|Roboto+Mono:100,100italic,300,500,300italic,500italic,700,700italic,italic,regular|Roboto+Slab:100,200,300,500,700,600,800,900,regular&subset=cyrillic-ext,greek-ext,latin,latin-ext,vietnamese,cyrillic,greek&display=swap",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.196.202",
-        "hostname": "nctsaa-ac-in-f10.1e100.net",
+        "ip": "142.250.204.42",
+        "hostname": "hkg07s38-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -97,15 +106,19 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 134.6,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=UA-18588755-28",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.204.40",
+        "hostname": "hkg07s38-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -128,10 +141,14 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 34.775,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "blob:https://www.tsmc.com/f07b04b2-f708-46f0-87fd-6091c261db0d",
+      "originalUrl": "blob:https://www.tsmc.com/d7e5463e-9d07-4a68-b413-b49d633932b3",
       "type": "other",
       "ipinfo": {
         "domain": ""
@@ -142,7 +159,7 @@
       "type": "xhr",
       "ipinfo": {
         "domain": "pr.tsmc.com",
-        "ip": "162.159.140.3",
+        "ip": "172.66.0.3",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -150,7 +167,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9d0856daa4a8c-TPE",
+        "detection_method": "header"
+      }
     }
   ]
 }

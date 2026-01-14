@@ -2,12 +2,11 @@
   "url": "https://kiehls.com.tw",
   "canonicalURL": "https://www.kiehls.com.tw/promo/homepage1.html",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T21:57:35.861Z",
+  "timestamp": "2026-01-14T03:25:02.245Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 261,
-  "uniqueDomains": 12,
+  "requestCount": 248,
+  "uniqueDomains": 9,
   "test_results": {
     "domestic": {
-      "cloud": 1,
+      "cloud": 8,
       "direct": 0
     },
     "foreign": {
-      "cloud": 10,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -43,7 +42,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "kiehls.com.tw",
-        "ip": "104.18.39.131",
+        "ip": "172.64.148.125",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -51,7 +50,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda0607183a4a2a-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.kiehls.com.tw/",
@@ -66,14 +70,19 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda0607284f4a2a-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
       "type": "script",
       "ipinfo": {
         "domain": "cdn.cookielaw.org",
-        "ip": "104.18.87.42",
+        "ip": "104.18.86.42",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -81,7 +90,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda0609d9e8842d-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://dev.visualwebsiteoptimizer.com//j.php?a=775102&u=https%3A%2F%2Fwww.kiehls.com.tw%2F&vn=2",
@@ -97,45 +111,20 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "cdnjs.cloudflare.com",
-        "ip": "104.17.24.14",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://i.countdownmail.com/4qlfut.gif",
-      "type": "image",
-      "ipinfo": {
-        "domain": "i.countdownmail.com",
-        "ip": "172.67.68.102",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 3.851,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://storage.googleapis.com/b-console-telligent/Scripts/mcs3.0.js",
       "type": "script",
       "ipinfo": {
         "domain": "storage.googleapis.com",
-        "ip": "142.250.77.27",
-        "hostname": "nctsaa-ab-in-f27.1e100.net",
+        "ip": "142.250.204.59",
+        "hostname": "hkg07s38-in-f27.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -144,6 +133,26 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "cdnjs.cloudflare.com",
+        "ip": "104.17.25.14",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda0609ec214a97-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.telligentcrm.com/communication/webindex?tenantId=779773e9-8f7a-11ef-a6c8-00ffaf2156c9&corporationId=7e4e9840-8f7a-11ef-a6c8-00ffaf2156c9&companyId=6bbeba66-a193-11ef-a2eb-00ffaf2156c9&companyCode=kiehls&channelId=000b09f9-a719-11ef-8b8b-42010a29f030",
@@ -159,13 +168,11 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "blob:https://www.kiehls.com.tw/8dc230dd-82d2-4e66-8627-20dea5946856",
-      "type": "other",
-      "ipinfo": {
-        "domain": ""
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.133,
+        "detection_method": "rtt"
       }
     },
     {
@@ -173,7 +180,7 @@
       "type": "xhr",
       "ipinfo": {
         "domain": "geolocation.onetrust.com",
-        "ip": "172.64.155.119",
+        "ip": "104.18.32.137",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -181,38 +188,19 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda060b9b68841e-TPE",
+        "detection_method": "header"
+      }
     },
     {
-      "originalUrl": "https://gw.telligentcrm.com/communication/api/v1/customer/web/initData/promoteAndEntrance?channelId=000b09f9-a719-11ef-8b8b-42010a29f030&customerId=7c0dc007-dc2c-4356-9e45-4334146a4b50&companyId=6bbeba66-a193-11ef-a2eb-00ffaf2156c9&companyCode=kiehls&accessToken=&richMenuType=0",
-      "type": "xhr",
+      "originalUrl": "blob:https://www.kiehls.com.tw/854a1e67-09af-4e6d-a23b-2bb6876d3bb3",
+      "type": "other",
       "ipinfo": {
-        "domain": "gw.telligentcrm.com",
-        "ip": "34.160.19.30",
-        "hostname": "30.19.160.34.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
-        "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
-      },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://oatm.kiehls.com.tw/gtm.js?id=GTM-WVPLD9&l=dataLayer",
-      "type": "script",
-      "ipinfo": {
-        "domain": "oatm.kiehls.com.tw",
-        "ip": "172.64.148.125",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud"
+        "domain": ""
+      }
     }
   ]
 }

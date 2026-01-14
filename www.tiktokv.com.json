@@ -2,12 +2,11 @@
   "url": "https://www.tiktokv.com/",
   "canonicalURL": "https://www.tiktokv.com/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:08:52.533Z",
+  "timestamp": "2026-01-14T01:07:34.473Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 82,
-  "uniqueDomains": 5,
+  "requestCount": 298,
+  "uniqueDomains": 15,
   "test_results": {
     "domestic": {
-      "cloud": 1,
-      "direct": 2
+      "cloud": 7,
+      "direct": 3
     },
     "foreign": {
-      "cloud": 2,
+      "cloud": 5,
       "direct": 0
     }
   },
@@ -43,7 +42,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.tiktokv.com",
-        "ip": "210.71.227.98",
+        "ip": "210.71.227.168",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -58,8 +57,8 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.tiktok.com",
-        "ip": "23.209.45.10",
-        "hostname": "a23-209-45-10.deploy.static.akamaitechnologies.com",
+        "ip": "23.56.0.179",
+        "hostname": "a23-56-0-179.deploy.static.akamaitechnologies.com",
         "city": "Tokyo",
         "region": "Tokyo",
         "country": "JP",
@@ -67,7 +66,11 @@
         "org": "AS20940 Akamai International B.V.",
         "timezone": "Asia/Tokyo"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 43.699,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_privacy_protection_framework/loader/1.0.0.933/index.js",
@@ -86,12 +89,44 @@
       "category": "domestic/cloud"
     },
     {
+      "originalUrl": "https://p16-sign-va.tiktokcdn.com/tos-maliva-p-85c255/o8224CJBpBrxOppiicjKGEE8wBhcfX8QuBIblf~tplv-photomode-zoomcover:720:720.jpeg?dr=14555&x-expires=1768525200&x-signature=rl3Y6B1KWBFwv8JkbunmGyu3rUQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my&ftpl=1",
+      "type": "image",
+      "ipinfo": {
+        "domain": "p16-sign-va.tiktokcdn.com",
+        "ip": "203.69.138.233",
+        "hostname": "203-69-138-233.hinet-ip.hinet.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS20940 Akamai International B.V.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://p16-sign-sg.tiktokcdn.com/tos-alisg-p-0037/oMHARp1YYrQEEeJTBAQ68khftmUgNFIDC4UBsH~tplv-photomode-zoomcover:720:720.jpeg?dr=14555&x-expires=1768525200&x-signature=3GqqD7ud2BwqCsMv%2BNWIfyLqcnM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my&ftpl=1",
+      "type": "image",
+      "ipinfo": {
+        "domain": "p16-sign-sg.tiktokcdn.com",
+        "ip": "203.69.138.214",
+        "hostname": "203-69-138-214.hinet-ip.hinet.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS20940 Akamai International B.V.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
       "originalUrl": "https://libraweb-sg.tiktok.com/service/2/abtest_config/",
       "type": "xhr",
       "ipinfo": {
         "domain": "libraweb-sg.tiktok.com",
-        "ip": "23.209.45.75",
-        "hostname": "a23-209-45-75.deploy.static.akamaitechnologies.com",
+        "ip": "23.56.0.205",
+        "hostname": "a23-56-0-205.deploy.static.akamaitechnologies.com",
         "city": "Tokyo",
         "region": "Tokyo",
         "country": "JP",
@@ -99,14 +134,34 @@
         "org": "AS20940 Akamai International B.V.",
         "timezone": "Asia/Tokyo"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 42.131,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://mcs-sg.tiktokv.com/v1/list",
       "type": "xhr",
       "ipinfo": {
         "domain": "mcs-sg.tiktokv.com",
-        "ip": "210.71.227.210",
+        "ip": "203.69.138.17",
+        "hostname": "203-69-138-17.hinet-ip.hinet.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS20940 Akamai International B.V.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://v16-webapp.tiktok.com/869ba134ebfca683c4271cb76c8efadf/69698f5a/video/tos/maliva/tos-maliva-v-85c255-us/o8VCFSffhccSFCJjQtcsDrdDgEqgSdgd5DuOIe/?a=1988&bti=ODszNWYuMDE6&ch=0&cr=3&dr=0&lr=all&cd=0%7C0%7C0%7C&cv=1&br=4992&bt=2496&cs=0&ds=6&ft=gKSYZ8Zmo0Pqqo3RkVQWpDp~Tr4jD0.35SY&mime_type=video_mp4&qs=0&rc=NjZkNzg4OjxlOGgzOWU2OkBpM2g5ZWs5cmlkODQzNzM2M0BgXmA1XjUuX2MxMGE2NC4wYSNvZmhyMmRzb2JhLS1kLTZzcw%3D%3D&vvpl=1&l=20260114090729FB3A7A1503D4EE2F902D&btag=e000b0000",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "v16-webapp.tiktok.com",
+        "ip": "210.71.227.96",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -115,6 +170,128 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://p16-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/ogIbYpzEyBGavgRO0SIAtFEDkaDXrWBRefm4US~tplv-tiktokx-origin.image?dr=14575&x-expires=1768525200&x-signature=6t7zAVMznl8tcq8kGjM9RhViSy4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+      "type": "image",
+      "ipinfo": {
+        "domain": "p16-sign.tiktokcdn-us.com",
+        "ip": "184.30.148.80",
+        "hostname": "a184-30-148-80.deploy.static.akamaitechnologies.com",
+        "city": "El Segundo",
+        "region": "California",
+        "country": "US",
+        "loc": "33.9192,-118.4165",
+        "org": "AS20940 Akamai International B.V.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 134.371,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://p19-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oohNILGLGROUaQyFl3IQneFADNwAeRrfblei8a~tplv-tiktokx-origin.image?dr=14575&x-expires=1768525200&x-signature=0ovHhJq7K%2F6ZVeYliAuFRY0aNkI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+      "type": "image",
+      "ipinfo": {
+        "domain": "p19-sign.tiktokcdn-us.com",
+        "ip": "151.101.202.73",
+        "city": "Palo Alto",
+        "region": "California",
+        "country": "US",
+        "loc": "37.4419,-122.1430",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 144.534,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://webcast.tiktok.com/webcast/wallet_api_tiktok/recharge/check_external_entry?WebIdLastTime=1768352847&aid=1988&app_language=en&app_name=tiktok_web&browser_language=en-US&browser_name=Mozilla&browser_online=true&browser_platform=MacIntel&browser_version=5.0%20%28Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome%2F133.0.6943.16%20Safari%2F537.36&channel=tiktok_web&cookie_enabled=true&data_collection_enabled=false&device_id=7595017621307049479&device_platform=web_pc&focus_state=true&from_page=&history_len=2&is_experiment_group=false&is_fullscreen=false&is_page_visible=true&odinId=7595017406478337031&os=mac&page_source=0&priority_region=&referer=&region=TW&screen_height=720&screen_width=1280&tz_name=Asia%2FTaipei&user_is_login=false&webcast_language=en&msToken=&X-Bogus=DFSzsIRORsbANCtCCzKYM4ZoVC9R&X-Gnarly=Ma8oJN2pXvN5gRof4O07ycRCOtZgotc-T6UZTP1O/IsSo0R7T-atLRGsWAeJ/YS0YpFxjYFlEtWQGhHPLYalN9HxE9NWWaLtExi7W9UhO7hUemMBW/EWCwpwhSIFIoRkztmcU0cUPZu6MKbfxciVKDaAFbpCeElLLmt-/-/Nw-La2AZDn0TDas6fy2nANgK-JNTUqcrqLGDRCBQk3Ee/1OHpNTSH0affnUUiHt1kqXZv9Vr3zNpiH8e1jMwtVwdLb-G9y-GCYnZ2ukVNSQcwkJ1orH/0WxbpUMl6dlx6dkTrJC8meuLugMQJz99hCrUCr8A=",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "webcast.tiktok.com",
+        "ip": "203.74.95.32",
+        "hostname": "203-74-95-32.hinet-ip.hinet.net",
+        "city": "Taichung",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.1469,120.6839",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://p16-pu-sign-no.tiktokcdn-eu.com/tos-no1a-p-0037-no/oUqDIfkVACXOABDqFAgFJYC0Ef6KplECnAgqgA~tplv-tiktokx-origin.image?dr=14575&x-expires=1768525200&x-signature=w52lBujjpmhAOUlaepawoS6dfmY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+      "type": "image",
+      "ipinfo": {
+        "domain": "p16-pu-sign-no.tiktokcdn-eu.com",
+        "ip": "203.69.138.214",
+        "hostname": "203-69-138-214.hinet-ip.hinet.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS20940 Akamai International B.V.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://mssdk-sg.tiktok.com/web/resource?eq=oL1NwlAXTm/Sijz75FZKMiOkSknkv94FosvmlHtoHr4n-54wXwN-OJKq67/pgrU2H8SKpuTCAI5off==",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "mssdk-sg.tiktok.com",
+        "ip": "203.69.138.9",
+        "hostname": "203-69-138-9.hinet-ip.hinet.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS20940 Akamai International B.V.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://v19-web-newkey.tiktokcdn.com/cd065ff9ee6b1c9e413ec3c05b2a2570/696740bd/video/tos/maliva/tos-maliva-v-85c255-us/o8VCFSffhccSFCJjQtcsDrdDgEqgSdgd5DuOIe/?a=1988&bti=bGRuZHxvMXIxcm53Zm1cYF9ebWFzaHFmOg%3D%3D&ch=0&cr=0&dr=0&er=0&cd=0%7C0%7C0%7C0&cv=1&br=4992&bt=2496&cs=0&ds=6&ft=XteF_qq3mXbPD128mDns3wUUgoI5EeF~O5&mime_type=video_mp4&qs=0&rc=NjZkNzg4OjxlOGgzOWU2OkBpM2g5ZWs5cmlkODQzNzM2M0BgXmA1XjUuX2MxMGE2NC4wYSNvZmhyMmRzb2JhLS1kLTZzcw%3D%3D&vvpl=1&l=20260114090732048627077A5E44334564&btag=e000b0000",
+      "type": "media",
+      "ipinfo": {
+        "domain": "v19-web-newkey.tiktokcdn.com",
+        "ip": "199.232.114.113",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 44.31,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://starling-sg.tiktokv.com/check_and_get_text/2e1fcc60aeaa11e99ef535aeebd27c9b/normal/account_server?lang=en,zh",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "starling-sg.tiktokv.com",
+        "ip": "203.69.138.9",
+        "hostname": "203-69-138-9.hinet-ip.hinet.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS20940 Akamai International B.V.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     }
   ]
 }

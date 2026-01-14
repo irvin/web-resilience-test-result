@@ -2,12 +2,11 @@
   "url": "https://www.greenvines.com.tw/",
   "canonicalURL": "https://www.greenvines.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T21:59:22.914Z",
+  "timestamp": "2026-01-14T03:27:55.213Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 177,
+  "requestCount": 180,
   "uniqueDomains": 23,
   "test_results": {
     "domestic": {
-      "cloud": 13,
+      "cloud": 17,
       "direct": 1
     },
     "foreign": {
-      "cloud": 9,
+      "cloud": 5,
       "direct": 0
     }
   },
@@ -43,8 +42,8 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.greenvines.com.tw",
-        "ip": "3.169.121.44",
-        "hostname": "server-3-169-121-44.tpe53.r.cloudfront.net",
+        "ip": "3.169.121.22",
+        "hostname": "server-3-169-121-22.tpe53.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -59,8 +58,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "cdn.shoplineapp.com",
-        "ip": "3.169.137.37",
-        "hostname": "server-3-169-137-37.tpe54.r.cloudfront.net",
+        "ip": "3.169.137.126",
+        "hostname": "server-3-169-137-126.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -75,7 +74,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "browser.sentry-cdn.com",
-        "ip": "151.101.130.217",
+        "ip": "151.101.194.217",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -83,30 +82,40 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 33.789,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "104.16.174.226",
+        "ip": "151.101.193.229",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
         "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
+        "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda0a3afa0b6b86-TPE",
+        "x-served-by": "cache-fra-etou8220026-FRA, cache-hkg17929-HKG",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://cdn.greenvines.com.tw/shopline/2021-rebrand/css-min/product-list-min.css",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "cdn.greenvines.com.tw",
-        "ip": "3.169.137.68",
-        "hostname": "server-3-169-137-68.tpe54.r.cloudfront.net",
+        "ip": "3.169.137.7",
+        "hostname": "server-3-169-137-7.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -121,8 +130,8 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.198.74",
-        "hostname": "lctsaa-ab-in-f10.1e100.net",
+        "ip": "142.250.77.10",
+        "hostname": "nctsaa-ab-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -137,7 +146,7 @@
       "type": "image",
       "ipinfo": {
         "domain": "gvcdn.s3-ap-northeast-1.amazonaws.com",
-        "ip": "52.219.162.34",
+        "ip": "52.219.200.2",
         "hostname": "s3-ap-northeast-1-r-w.amazonaws.com",
         "city": "Tokyo",
         "region": "Tokyo",
@@ -146,14 +155,18 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Tokyo"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 36.991,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://code.jquery.com/jquery-3.4.1.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "code.jquery.com",
-        "ip": "151.101.194.137",
+        "ip": "151.101.66.137",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -161,14 +174,18 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 33.808,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "cdnjs.cloudflare.com",
-        "ip": "104.17.25.14",
+        "ip": "104.17.24.14",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -176,15 +193,20 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda0a3be8ffa3a0-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://r2cdn.myshopline.com/static/rs/adff/prod/latest/bundle.iife.js",
       "type": "script",
       "ipinfo": {
         "domain": "r2cdn.myshopline.com",
-        "ip": "3.169.121.93",
-        "hostname": "server-3-169-121-93.tpe53.r.cloudfront.net",
+        "ip": "3.169.121.48",
+        "hostname": "server-3-169-121-48.tpe53.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -199,8 +221,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -231,8 +253,8 @@
       "type": "image",
       "ipinfo": {
         "domain": "gvcdn.s3.amazonaws.com",
-        "ip": "3.5.156.160",
-        "hostname": "s3-w.ap-northeast-1.amazonaws.com",
+        "ip": "3.5.159.123",
+        "hostname": "s3-website.ap-northeast-1.amazonaws.com",
         "city": "Tokyo",
         "region": "Tokyo",
         "country": "JP",
@@ -240,7 +262,11 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Tokyo"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 36.047,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://bat.bing.com/bat.js",
@@ -274,12 +300,12 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&tid=AW-763452568&en=page_view&dl=https%3A%2F%2Fwww.greenvines.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=1164485931.1767823161&dt=%E7%B6%A0%E8%97%A4%E7%94%9F%E6%A9%9F%20Greenvines%EF%BD%9C%E6%B2%92%E6%9C%89%E6%B8%9B%E6%B3%95%EF%BC%8C%E4%BD%95%E4%BE%86%E7%B2%BE%E8%8F%AF&auid=1405839140.1767823161&navt=n&npa=0&gtm=45be6151v868817186za200zd868817186xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115583767~115616986~115938466~115938468&tft=1767823161296&tfd=1248&apve=1&apvf=f",
-      "type": "fetch",
+      "originalUrl": "https://www.google.com/ccm/form-data/763452568?gtm=45be61c1h1v868817186za200zd868817186xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115616986~115938466~115938468~115985660~116682875~117041588&npa=0&frm=0&pscdl=noapi&auid=236649440.1768361273&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0",
+      "type": "ping",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.198.68",
-        "hostname": "lctsaa-ab-in-f4.1e100.net",
+        "ip": "142.250.204.36",
+        "hostname": "hkg07s38-in-f4.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -294,8 +320,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.recaptcha.net",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "ip": "142.250.204.35",
+        "hostname": "hkg07s38-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -310,24 +336,24 @@
       "type": "script",
       "ipinfo": {
         "domain": "d.line-scdn.net",
-        "ip": "23.39.61.163",
-        "hostname": "a23-39-61-163.deploy.static.akamaitechnologies.com",
-        "city": "Taipei",
+        "ip": "104.116.17.150",
+        "hostname": "a104-116-17-150.deploy.static.akamaitechnologies.com",
+        "city": "Yuanlin",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "23.9567,120.5761",
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/763452568/?random=1767823161301&cv=11&fst=1767819600000&bg=ffffff&guid=ON&async=1&en=home&gtm=45be6151v868817186za200zd868817186xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115583767~115616986~115938466~115938468&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.greenvines.com.tw%2F&frm=0&tiba=%E7%B6%A0%E8%97%A4%E7%94%9F%E6%A9%9F%20Greenvines%EF%BD%9C%E6%B2%92%E6%9C%89%E6%B8%9B%E6%B3%95%EF%BC%8C%E4%BD%95%E4%BE%86%E7%B2%BE%E8%8F%AF&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1405839140.1767823161&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&data=event%3Dhome%3Becomm_pagetype%3Dhome&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEAwksa0eEGPbO7yGbi8Kde7ohV_U3CwfMLsFFOjnTcp9I2T4q-QuWQxCvaT2IlFoFGb1NKPAuUbGmPAX8-5zxX5CVb9TrFSq5Dcbp9aOmEh-MtIGK8zeTc-R070V-CMwRCN1IkYorAgnX4tTy4vDPDIy4bvfCnbHtqwb7CNUX92k3VtgNeXeOF1PdH&random=1141448019&rmt_tld=1&ipr=y",
+      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/763452568/?random=1768361272995&cv=11&fst=1768359600000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be61c1h1v868817186za200zd868817186xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115616986~115938466~115938468~115985660~116682875~117041588&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.greenvines.com.tw%2F&frm=0&tiba=%E7%B6%A0%E8%97%A4%E7%94%9F%E6%A9%9F%20Greenvines%EF%BD%9C%E6%B2%92%E6%9C%89%E6%B8%9B%E6%B3%95%EF%BC%8C%E4%BD%95%E4%BE%86%E7%B2%BE%E8%8F%AF&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=236649440.1768361273&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEA56J1ecFFyJdNBcYtzzDg3dieYOwkSeuNLksrASYed8NKJd8lcnQ_X4RMu2yCdDCwd5HAi1Bb233RhQz5uB97m4r4xuaFyLKenzlft9yMFSDxCQT2fjMoe5IxKAIuB8LJgI9qDz1UzpzG-cxt5IvzXOFNmQdsAQLtNUJ2uveCqi8S9GFce7SQ6Xjm&random=1362885958&rmt_tld=1&ipr=y",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.198.67",
-        "hostname": "lctsaa-ab-in-f3.1e100.net",
+        "ip": "142.250.66.67",
+        "hostname": "hkg12s27-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -338,7 +364,7 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.gstatic.com/recaptcha/releases/7gg7H51Q-naNfhmCP3_R47ho/recaptcha__en.js",
+      "originalUrl": "https://www.gstatic.com/recaptcha/releases/9TiwnJFHeuIw_s0wSd3fiKfN/recaptcha__en.js",
       "type": "script",
       "ipinfo": {
         "domain": "www.gstatic.com",
@@ -358,13 +384,13 @@
       "type": "script",
       "ipinfo": {
         "domain": "s.yimg.com",
-        "ip": "180.222.106.12",
-        "hostname": "e2.ycpi.vip.tpb.yahoo.com",
+        "ip": "180.222.109.252",
+        "hostname": "e2-bmr.ycpi.vip.twb.yahoo.com",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
         "loc": "25.0143,121.4672",
-        "org": "AS38033 internet content provider",
+        "org": "AS24376 Yahoo China Datacenter",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
@@ -382,14 +408,19 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.495,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://greenvinestw.api.useinsider.com/ins.js?id=10008723",
       "type": "script",
       "ipinfo": {
         "domain": "greenvinestw.api.useinsider.com",
-        "ip": "162.159.134.61",
+        "ip": "162.159.133.61",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -397,7 +428,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 3.878,
+        "detection_method": "rtt"
+      }
     }
   ]
 }

@@ -2,12 +2,11 @@
   "url": "https://intercom.io",
   "canonicalURL": "https://www.intercom.com/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:14:37.423Z",
+  "timestamp": "2026-01-14T01:15:37.386Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,11 +24,11 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 39,
-  "uniqueDomains": 4,
+  "requestCount": 44,
+  "uniqueDomains": 5,
   "test_results": {
     "domestic": {
-      "cloud": 3,
+      "cloud": 4,
       "direct": 0
     },
     "foreign": {
@@ -43,8 +42,8 @@
       "type": "document",
       "ipinfo": {
         "domain": "intercom.io",
-        "ip": "3.169.36.33",
-        "hostname": "server-3-169-36-33.tpe53.r.cloudfront.net",
+        "ip": "3.169.36.60",
+        "hostname": "server-3-169-36-60.tpe53.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -59,8 +58,8 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.intercom.com",
-        "ip": "3.169.121.73",
-        "hostname": "server-3-169-121-73.tpe53.r.cloudfront.net",
+        "ip": "3.169.121.54",
+        "hostname": "server-3-169-121-54.tpe53.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -75,8 +74,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -99,7 +98,31 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 48.923,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "cdn.cookielaw.org",
+        "ip": "104.18.86.42",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 3.843,
+        "detection_method": "rtt"
+      }
     }
   ]
 }

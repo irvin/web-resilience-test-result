@@ -2,12 +2,11 @@
   "url": "https://marieclaire.com.tw",
   "canonicalURL": "https://www.marieclaire.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:23:51.995Z",
+  "timestamp": "2026-01-14T01:31:29.685Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 66,
+  "requestCount": 59,
   "uniqueDomains": 12,
   "test_results": {
     "domestic": {
-      "cloud": 4,
+      "cloud": 10,
       "direct": 1
     },
     "foreign": {
-      "cloud": 6,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -52,7 +51,12 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.251,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.marieclaire.com.tw/",
@@ -68,7 +72,12 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.967,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://il.marieclaire.com.tw/build/css/mobile-a2545332.css",
@@ -84,7 +93,12 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.198,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://ia.marieclaire.com.tw/assets/www/prebid/8.29.0/prebid.js",
@@ -100,15 +114,20 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 3.976,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans+TC:wght@200;300;400;500;600;700&family=Noto+Serif+TC:wght@200;300;400;500;600;700&display=swap",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.196.202",
-        "hostname": "nctsaa-ac-in-f10.1e100.net",
+        "ip": "142.250.198.74",
+        "hostname": "lctsaa-ab-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -117,6 +136,27 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://iam.marieclaire.com.tw/s599c337h100b0webp100/assets/mc/202512/69535A370D8441767070263.jpeg",
+      "type": "image",
+      "ipinfo": {
+        "domain": "iam.marieclaire.com.tw",
+        "ip": "35.241.47.28",
+        "hostname": "28.47.241.35.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.322,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://sb.scorecardresearch.com/cs/14383407/beacon.js",
@@ -139,8 +179,8 @@
       "type": "image",
       "ipinfo": {
         "domain": "im.marieclaire.com.tw",
-        "ip": "3.169.55.122",
-        "hostname": "server-3-169-55-122.tpe54.r.cloudfront.net",
+        "ip": "3.169.55.5",
+        "hostname": "server-3-169-55-5.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -149,22 +189,6 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://iam.marieclaire.com.tw/s584c329h100b0webp100/assets/mc/202601/695B2606A8BFA1767581190.jpeg",
-      "type": "image",
-      "ipinfo": {
-        "domain": "iam.marieclaire.com.tw",
-        "ip": "35.241.47.28",
-        "hostname": "28.47.241.35.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
-        "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
-      },
-      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://player.vimeo.com/progressive_redirect/playback/1150578099/rendition/720p/file.mp4%20%28720p%29.mp4?loc=external&signature=6e044d0ce3ec61ccb40b2a574403793ed50b371384e4f2676c07408585f1ce06",
@@ -179,15 +203,21 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd95fbbdac8a39f-TPE",
+        "x-served-by": "cache-iad-kcgs7200117-IAD, cache-nrt-rjtf7700020-NRT",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://fundingchoicesmessages.google.com/i/7682122?ers=3",
       "type": "script",
       "ipinfo": {
         "domain": "fundingchoicesmessages.google.com",
-        "ip": "142.250.196.206",
-        "hostname": "nctsaa-ac-in-f14.1e100.net",
+        "ip": "142.250.198.78",
+        "hostname": "lctsaa-ab-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -198,11 +228,11 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://download-video-ak.vimeocdn.com/v3-1/playback/42880922-d8d4-4c2f-b2c7-215bdd5c3ba2/f9f4e306-01b9fbf1?__token__=st=1767817430~exp=1767821030~acl=%2Fv3-1%2Fplayback%2F42880922-d8d4-4c2f-b2c7-215bdd5c3ba2%2Ff9f4e306-01b9fbf1%2A~hmac=c26967349fb2fee66dee750038ffad74ecd9e6dde477883bfb7f1dddd39a636e&r=dXMtY2VudHJhbDE%3D",
+      "originalUrl": "https://download-video-ak.vimeocdn.com/v3-1/playback/42880922-d8d4-4c2f-b2c7-215bdd5c3ba2/f9f4e306-01b9fbf1?__token__=st=1768354288~exp=1768357888~acl=%2Fv3-1%2Fplayback%2F42880922-d8d4-4c2f-b2c7-215bdd5c3ba2%2Ff9f4e306-01b9fbf1%2A~hmac=b155a6e2d02733bbc3d5c428610bc4317d9516cffe31a3b8a8595fddc0368ddc&r=dXMtY2VudHJhbDE%3D",
       "type": "media",
       "ipinfo": {
         "domain": "download-video-ak.vimeocdn.com",
-        "ip": "210.71.227.57",
+        "ip": "210.71.227.88",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -213,7 +243,7 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "blob:https://www.marieclaire.com.tw/0d25092a-c512-4761-b81c-2523ff28352c",
+      "originalUrl": "blob:https://www.marieclaire.com.tw/f632d687-ea88-4f2f-8b88-61cee9d901a5",
       "type": "other",
       "ipinfo": {
         "domain": ""

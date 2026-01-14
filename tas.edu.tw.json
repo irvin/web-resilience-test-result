@@ -2,12 +2,11 @@
   "url": "https://tas.edu.tw",
   "canonicalURL": "https://www.tas.edu.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T22:06:27.357Z",
+  "timestamp": "2026-01-14T03:36:54.527Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -29,11 +28,11 @@
   "uniqueDomains": 11,
   "test_results": {
     "domestic": {
-      "cloud": 4,
+      "cloud": 10,
       "direct": 1
     },
     "foreign": {
-      "cloud": 6,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -51,14 +50,19 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda175d1fe34a09-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.tas.edu.tw/",
       "type": "document",
       "ipinfo": {
         "domain": "www.tas.edu.tw",
-        "ip": "104.17.163.123",
+        "ip": "104.17.166.123",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -66,15 +70,20 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda17650f2c4a30-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-P3BGC7",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.204.40",
+        "hostname": "hkg07s38-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -89,7 +98,7 @@
       "type": "image",
       "ipinfo": {
         "domain": "resources.finalsite.net",
-        "ip": "104.16.79.6",
+        "ip": "104.16.78.6",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -97,15 +106,20 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda1766890949fa-TPE",
+        "detection_method": "header"
+      }
     },
     {
-      "originalUrl": "https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800|Playfair+Display:400,400i,600,600i,700,700i&font-display=swap",
+      "originalUrl": "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Lato:wght@400;500;600;700&display=swap",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.198.74",
-        "hostname": "lctsaa-ab-in-f10.1e100.net",
+        "ip": "142.250.66.74",
+        "hostname": "hkg12s27-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -132,11 +146,43 @@
       "category": "domestic/direct"
     },
     {
+      "originalUrl": "https://www.google.com/measurement/conversion?random=1768361811110&cv=11&tid=G-6MM2DD0YHR&fst=1768361811110&fmt=8&en=page_view&gtm=45je61c1v895987202z871340260za20gzb71340260zd71340260xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=102015666~103116026~103200004~104527906~104528501~104684208~104684211~105391252~115616985~115938465~115938468~115985661~117041587&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.tas.edu.tw%2F&gacid=1736717942.1768361811&_dbg=1&frm=0&tiba=Home%20-%20Taipei%20American%20School&npa=0&pscdl=noapi&auid=463952521.1768361811&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&_tu=QA",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.250.198.68",
+        "hostname": "lctsaa-ab-in-f4.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-6MM2DD0YHR&cid=1736717942.1768361811&gtm=45je61c1v895987202z871340260za20gzb71340260zd71340260&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=102015666~103116026~103200004~104527906~104528501~104684208~104684211~105391252~115616985~115938465~115938468~115985661~117041587&z=1902035226",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.196.195",
+        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
       "originalUrl": "https://assets.juicer.io/embed.css",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "assets.juicer.io",
-        "ip": "104.26.12.87",
+        "ip": "172.67.71.67",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -144,14 +190,19 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda176b1810843c-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "cdnjs.cloudflare.com",
-        "ip": "104.17.24.14",
+        "ip": "104.17.25.14",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -159,7 +210,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda1769789c0758-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.juicer.io/api/feeds/267239?filter=486162",
@@ -174,39 +230,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://www.google.com/measurement/conversion?random=1767823585320&cv=11&tid=G-6MM2DD0YHR&fst=1767823585320&fmt=6&en=page_view&gtm=45je6160v895987202z871340260za20gzb71340260zd71340260xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115616986~115938465~115938468~116682876&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.tas.edu.tw%2F&gacid=341407867.1767823585&_dbg=1&frm=0&tiba=Home%20-%20Taipei%20American%20School&npa=0&pscdl=noapi&auid=819400605.1767823585&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&_tu=QA",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.204.36",
-        "hostname": "hkg07s38-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-6MM2DD0YHR&cid=341407867.1767823585&gtm=45je6160v895987202z871340260za20gzb71340260zd71340260&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115583767~115616986~115938465~115938468~116682876&z=2060825020",
-      "type": "image",
-      "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.77.3",
-        "hostname": "nctsaa-ab-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda17701d308f01-TPE",
+        "detection_method": "header"
+      }
     }
   ]
 }

@@ -2,12 +2,11 @@
   "url": "https://findcompany.com.tw",
   "canonicalURL": "https://www.findcompany.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T21:32:55.259Z",
+  "timestamp": "2026-01-14T02:41:37.891Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -29,11 +28,11 @@
   "uniqueDomains": 6,
   "test_results": {
     "domestic": {
-      "cloud": 1,
+      "cloud": 3,
       "direct": 0
     },
     "foreign": {
-      "cloud": 5,
+      "cloud": 3,
       "direct": 0
     }
   },
@@ -51,7 +50,11 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 147.931,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.findcompany.com.tw/",
@@ -66,10 +69,14 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 136.537,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "https://cloud.tipo.gov.tw/S282/S282WV1/pic/20251206/114/046/410/pic_114046410_20250703_1.jpg",
+      "originalUrl": "https://cloud.tipo.gov.tw/S282/S282WV1/pic/20250227/114/011/479/pic_114011479_20250226_1.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "cloud.tipo.gov.tw",
@@ -81,7 +88,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9c66bea1556f5-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=UA-1133963-23",
@@ -100,11 +112,11 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://img.findcompany.com.tw/company/product/695c998785cbd_300.jpg",
+      "originalUrl": "https://img.findcompany.com.tw/company/product/6911ac30dbd6e_300.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "img.findcompany.com.tw",
-        "ip": "172.67.135.161",
+        "ip": "104.21.26.78",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -112,14 +124,18 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 136.42,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "cdnjs.cloudflare.com",
-        "ip": "104.17.25.14",
+        "ip": "104.17.24.14",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -127,7 +143,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.975,
+        "detection_method": "rtt"
+      }
     }
   ]
 }

@@ -2,12 +2,11 @@
   "url": "https://openai.com",
   "canonicalURL": "https://openai.com/zh-Hant/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:12:41.309Z",
+  "timestamp": "2026-01-14T01:12:15.934Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 84,
-  "uniqueDomains": 5,
+  "requestCount": 83,
+  "uniqueDomains": 7,
   "test_results": {
     "domestic": {
-      "cloud": 2,
+      "cloud": 6,
       "direct": 0
     },
     "foreign": {
-      "cloud": 3,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -43,7 +42,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "openai.com",
-        "ip": "104.18.33.45",
+        "ip": "172.64.154.211",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -51,7 +50,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd943884964a3a9-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-KJ7QK4SN",
@@ -74,7 +78,7 @@
       "type": "font",
       "ipinfo": {
         "domain": "cdn.openai.com",
-        "ip": "13.107.246.73",
+        "ip": "13.107.213.73",
         "city": "Redmond",
         "region": "Washington",
         "country": "US",
@@ -85,12 +89,12 @@
       "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://images.ctfassets.net/kftzwdyauwt9/2zlj1v5fup8IPQFeD0HI8j/908a1aafec67c13ee67a62163e3c3c35/OAI_ChatGPT_Health_SEO.png?w=1920&q=90&fm=webp",
+      "originalUrl": "https://images.ctfassets.net/kftzwdyauwt9/2zlj1v5fup8IPQFeD0HI8j/908a1aafec67c13ee67a62163e3c3c35/OAI_ChatGPT_Health_SEO.png?w=1920&q=80&fm=webp",
       "type": "image",
       "ipinfo": {
         "domain": "images.ctfassets.net",
-        "ip": "3.169.55.41",
-        "hostname": "server-3-169-55-41.tpe54.r.cloudfront.net",
+        "ip": "3.169.55.76",
+        "hostname": "server-3-169-55-76.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -105,7 +109,7 @@
       "type": "fetch",
       "ipinfo": {
         "domain": "chatgpt.com",
-        "ip": "104.18.32.47",
+        "ip": "172.64.155.209",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -113,7 +117,53 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9438c1bdeb856-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://prodregistryv2.org/v1/rgstr?k=client-TkMBNbA46IALRLvxaXzViDknf0Zwj24gHWFC8PedoNI&st=javascript-client&sv=3.30.2&t=1768353134453&sid=02c6b337-90b4-4c81-814b-6b1f86add7e2&ec=2&gz=1",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "prodregistryv2.org",
+        "ip": "34.128.128.0",
+        "hostname": "0.128.128.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 3.948,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://cloudflareinsights.com/cdn-cgi/rum",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "cloudflareinsights.com",
+        "ip": "104.16.80.73",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.415,
+        "detection_method": "rtt"
+      }
     }
   ]
 }

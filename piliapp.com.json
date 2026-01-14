@@ -2,12 +2,11 @@
   "url": "https://piliapp.com",
   "canonicalURL": "https://tw.piliapp.com/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:14:39.930Z",
+  "timestamp": "2026-01-14T01:15:38.161Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 38,
-  "uniqueDomains": 10,
+  "requestCount": 34,
+  "uniqueDomains": 8,
   "test_results": {
     "domestic": {
-      "cloud": 4,
+      "cloud": 7,
       "direct": 0
     },
     "foreign": {
-      "cloud": 6,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -43,7 +42,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "piliapp.com",
-        "ip": "172.66.40.203",
+        "ip": "172.66.43.53",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -51,7 +50,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9487d9fca5700-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://tw.piliapp.com/",
@@ -66,23 +70,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-0F12YFHR4B",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9487e580a5700-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/timelinejs/2.36.0/css/blank.gif",
@@ -97,29 +90,19 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://pili.app/logger.txt?pageview=/",
-      "type": "image",
-      "ipinfo": {
-        "domain": "pili.app",
-        "ip": "172.67.183.23",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9487edc1a6a96-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://assets.piliapp.com/s3pxy/thumbs/random/wheel/thumb-100x75.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "assets.piliapp.com",
-        "ip": "172.66.40.203",
+        "ip": "172.66.43.53",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -127,31 +110,39 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9487ee83b5700-TPE",
+        "detection_method": "header"
+      }
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-0F12YFHR4B&cid=1373345886.1767816879&gtm=45je6151v892053910za200zd892053910&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115583767~115938465~115938468~115985661&z=1990784878",
+      "originalUrl": "https://pili.app/logger.txt?pageview=/",
       "type": "image",
       "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.77.3",
-        "hostname": "nctsaa-ab-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "domain": "pili.app",
+        "ip": "104.21.18.178",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 141.037,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://fundingchoicesmessages.google.com/i/39741531?ers=3",
       "type": "script",
       "ipinfo": {
         "domain": "fundingchoicesmessages.google.com",
-        "ip": "142.250.77.14",
-        "hostname": "nctsaa-ab-in-f14.1e100.net",
+        "ip": "142.250.204.46",
+        "hostname": "hkg07s38-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -166,8 +157,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "cdn.prod.euid.eu",
-        "ip": "3.169.121.112",
-        "hostname": "server-3-169-121-112.tpe53.r.cloudfront.net",
+        "ip": "3.169.121.105",
+        "hostname": "server-3-169-121-105.tpe53.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -190,7 +181,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 3.884,
+        "detection_method": "rtt"
+      }
     }
   ]
 }

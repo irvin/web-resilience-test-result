@@ -2,12 +2,11 @@
   "url": "https://intel.com.tw",
   "canonicalURL": "https://www.intel.com/content/www/tw/zh/homepage.html",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T21:30:40.109Z",
+  "timestamp": "2026-01-14T02:39:24.542Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 102,
+  "requestCount": 81,
   "uniqueDomains": 6,
   "test_results": {
     "domestic": {
-      "cloud": 2,
+      "cloud": 4,
       "direct": 1
     },
     "foreign": {
-      "cloud": 3,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -98,29 +97,19 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://cdn.cookielaw.org/consent/3f220e23-e2ea-4b3b-bace-5c92dc27275d/otSDKStub.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "cdn.cookielaw.org",
-        "ip": "104.18.86.42",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9c33cee387db2-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://intelcorp.scene7.com/is/image/intelcorp/homepage-hero-core-ultra-series3?req=set,json",
       "type": "xhr",
       "ipinfo": {
         "domain": "intelcorp.scene7.com",
-        "ip": "210.71.227.168",
+        "ip": "203.69.81.41",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -129,6 +118,26 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://cdn.cookielaw.org/consent/3f220e23-e2ea-4b3b-bace-5c92dc27275d/otSDKStub.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "cdn.cookielaw.org",
+        "ip": "104.18.87.42",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9c33ec8c04a2d-TPE",
+        "detection_method": "header"
+      }
     }
   ]
 }

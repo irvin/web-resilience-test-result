@@ -2,12 +2,11 @@
   "url": "https://corp.com.tw",
   "canonicalURL": "https://www.domain.com/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:15:41.605Z",
+  "timestamp": "2026-01-14T01:16:39.892Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 74,
+  "requestCount": 81,
   "uniqueDomains": 12,
   "test_results": {
     "domestic": {
-      "cloud": 4,
+      "cloud": 10,
       "direct": 1
     },
     "foreign": {
-      "cloud": 7,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -59,7 +58,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.domain.com",
-        "ip": "104.18.42.197",
+        "ip": "172.64.145.59",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -67,7 +66,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd949bb3bfc4a15-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://fonts.googleapis.com/icon?family=Material+Icons&display=swap",
@@ -90,7 +94,7 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "www.networksolutions.com",
-        "ip": "162.159.134.53",
+        "ip": "162.159.133.53",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -98,19 +102,24 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd949c15df6a9c2-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://assets.adobedtm.com/530368109655/f1f8bc547915/launch-7859547d8660.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "assets.adobedtm.com",
-        "ip": "23.39.61.29",
-        "hostname": "a23-39-61-29.deploy.static.akamaitechnologies.com",
-        "city": "Taipei",
+        "ip": "184.25.121.86",
+        "hostname": "a184-25-121-86.deploy.static.akamaitechnologies.com",
+        "city": "Yuanlin",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "23.9567,120.5761",
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -121,7 +130,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "geolocation.onetrust.com",
-        "ip": "172.64.155.119",
+        "ip": "104.18.32.137",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -129,7 +138,32 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd949c0df414a8d-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "cdn.cookielaw.org",
+        "ip": "104.18.87.42",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd949c1aea54a8a-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://newfold.scene7.com/is/content/NewfoldDigital/loggedin-home?ts=1764790281140&dpr=off",
@@ -147,7 +181,7 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://sfbff.newfold.com/getProductPrice/product/WEBSITE?bs=jarvis&brand=NETWORKSOLUTIONS",
+      "originalUrl": "https://sfbff.newfold.com/getProductPrice/product/com?bs=jarvis&brand=NETWORKSOLUTIONS",
       "type": "fetch",
       "ipinfo": {
         "domain": "sfbff.newfold.com",
@@ -159,29 +193,19 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "cdn.cookielaw.org",
-        "ip": "104.18.86.42",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd949cb09fe827c-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://wsv3cdn.audioeye.com/bootstrap.js?h=6f5f43722214df91f8097a76fbf3cfd3",
       "type": "script",
       "ipinfo": {
         "domain": "wsv3cdn.audioeye.com",
-        "ip": "104.18.28.155",
+        "ip": "104.18.29.155",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -189,15 +213,20 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd949ca88074a98-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-CML5H85QT0",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -208,11 +237,11 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://registercom.sc.omtrdc.net/b/ss/registerweb.com-parent-production/1/JS-2.27.0-LEWM/s66489407865965?AQB=1&ndh=1&pf=1&t=8%2F0%2F2026%204%3A15%3A40%204%20-480&mid=48257205616991425250838825068352224637&aamlh=11&ce=UTF-8&pageName=domain.com%2F&g=https%3A%2F%2Fwww.domain.com%2F&cc=USD&ch=homepage&server=www.domain.com&events=event4&aamb=6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y&c1=D%3Dv1&v1=https%3A%2F%2Fwww.domain.com%2F&v2=%2F&c3=D%3Dv3&v3=www.domain.com&c6=https%3A%2F%2Fwww.domain.com%2F&v8=domain.com%2F&c12=year%3D2026%20%7C%20month%3DJanuary%20%7C%20date%3D7%20%7C%20day%3DWednesday%20%7C%20time%3D3%3A15%20PM&c13=production&v32=false&v44=%2CC0001%2CC0002%2CC0003%2CC0004%2C&v78=null&v82=en-US&v83=USD&s=1280x720&c=30&j=1.6&v=N&k=Y&bw=1280&bh=720&mcorgid=A8B5776A5245B4360A490D44%40AdobeOrg&AQE=1",
+      "originalUrl": "https://registercom.sc.omtrdc.net/b/ss/registerweb.com-parent-production/1/JS-2.27.0-LEWM/s62103077123931?AQB=1&ndh=1&pf=1&t=14%2F0%2F2026%209%3A16%3A29%203%20-480&mid=45046412844419795480243012235720796430&aamlh=11&ce=UTF-8&pageName=domain.com%2F&g=https%3A%2F%2Fwww.domain.com%2F&cc=USD&ch=homepage&server=www.domain.com&events=event4&aamb=6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y&c1=D%3Dv1&v1=https%3A%2F%2Fwww.domain.com%2F&v2=%2F&c3=D%3Dv3&v3=www.domain.com&c6=https%3A%2F%2Fwww.domain.com%2F&v8=domain.com%2F&c12=year%3D2026%20%7C%20month%3DJanuary%20%7C%20date%3D13%20%7C%20day%3DTuesday%20%7C%20time%3D8%3A16%20PM&c13=production&v32=false&v44=%2CC0001%2CC0002%2CC0003%2CC0004%2C&v78=null&v82=en-US&v83=USD&s=1280x720&c=24&j=1.6&v=N&k=Y&bw=1280&bh=720&mcorgid=A8B5776A5245B4360A490D44%40AdobeOrg&AQE=1",
       "type": "image",
       "ipinfo": {
         "domain": "registercom.sc.omtrdc.net",
-        "ip": "63.140.48.235",
+        "ip": "63.140.48.110",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",

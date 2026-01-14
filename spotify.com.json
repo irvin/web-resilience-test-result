@@ -2,12 +2,11 @@
   "url": "https://spotify.com",
   "canonicalURL": "https://open.spotify.com/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:09:06.815Z",
+  "timestamp": "2026-01-14T01:07:59.079Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 40,
-  "uniqueDomains": 10,
+  "requestCount": 135,
+  "uniqueDomains": 17,
   "test_results": {
     "domestic": {
-      "cloud": 3,
-      "direct": 1
+      "cloud": 12,
+      "direct": 2
     },
     "foreign": {
-      "cloud": 6,
+      "cloud": 3,
       "direct": 0
     }
   },
@@ -52,7 +51,12 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.988,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.spotify.com/",
@@ -67,14 +71,18 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 49.618,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://open.spotify.com/",
       "type": "document",
       "ipinfo": {
         "domain": "open.spotify.com",
-        "ip": "146.75.47.42",
+        "ip": "199.232.115.42",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",
@@ -82,14 +90,18 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 49.607,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://encore.scdn.co/fonts/SpotifyMixUI-Regular-cc3b1de388efa4cbca6c75cebc24585e.woff2",
       "type": "font",
       "ipinfo": {
         "domain": "encore.scdn.co",
-        "ip": "203.69.81.57",
+        "ip": "210.71.227.161",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -100,7 +112,7 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://open-exp.spotifycdn.com/cdn/build/web-player/web-player.ccadcbaa.css",
+      "originalUrl": "https://open-exp.spotifycdn.com/cdn/build/web-player/web-player.a8e521f9.css",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "open-exp.spotifycdn.com",
@@ -112,15 +124,19 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 54.146,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.google.com/recaptcha/enterprise.js?render=6LfCVLAUAAAAALFwwRnnCJ12DalriUGbj8FW_J39",
       "type": "script",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.77.4",
-        "hostname": "nctsaa-ab-in-f4.1e100.net",
+        "ip": "142.250.204.36",
+        "hostname": "hkg07s38-in-f4.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -147,7 +163,7 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.gstatic.com/recaptcha/releases/7gg7H51Q-naNfhmCP3_R47ho/recaptcha__en.js",
+      "originalUrl": "https://www.gstatic.com/recaptcha/releases/9TiwnJFHeuIw_s0wSd3fiKfN/recaptcha__en.js",
       "type": "script",
       "ipinfo": {
         "domain": "www.gstatic.com",
@@ -167,8 +183,8 @@
       "type": "fetch",
       "ipinfo": {
         "domain": "o22381.ingest.sentry.io",
-        "ip": "34.120.195.249",
-        "hostname": "249.195.120.34.bc.googleusercontent.com",
+        "ip": "34.160.81.0",
+        "hostname": "0.81.160.34.bc.googleusercontent.com",
         "city": "Kansas City",
         "region": "Missouri",
         "country": "US",
@@ -176,7 +192,12 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.739,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://apresolve.spotify.com/?type=dealer-g2&type=spclient",
@@ -192,7 +213,146 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.044,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://gae2-spclient.spotify.com/remote-config-resolver/v3/unauth/configuration",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "gae2-spclient.spotify.com",
+        "ip": "35.186.224.22",
+        "hostname": "22.224.186.35.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.842,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://clienttoken.spotify.com/v1/clienttoken",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "clienttoken.spotify.com",
+        "ip": "35.186.224.24",
+        "hostname": "24.224.186.35.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.183,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "cdn.cookielaw.org",
+        "ip": "104.18.87.42",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd93d42dfaa4a84-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-PZHN3VD",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.googletagmanager.com",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "geolocation.onetrust.com",
+        "ip": "172.64.155.119",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd93d45c810841b-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://api-partner.spotify.com/pathfinder/v2/query",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "api-partner.spotify.com",
+        "ip": "35.186.224.24",
+        "hostname": "24.224.186.35.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.277,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://i.scdn.co/image/ab67616d00001e02e2887a1b6b98fc6c73bab12b",
+      "type": "image",
+      "ipinfo": {
+        "domain": "i.scdn.co",
+        "ip": "210.71.227.161",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
     }
   ]
 }

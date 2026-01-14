@@ -2,12 +2,11 @@
   "url": "https://tfc-taiwan.org.tw",
   "canonicalURL": "https://tfc-taiwan.org.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T21:35:52.481Z",
+  "timestamp": "2026-01-14T02:45:43.829Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 111,
-  "uniqueDomains": 6,
+  "requestCount": 112,
+  "uniqueDomains": 7,
   "test_results": {
     "domestic": {
-      "cloud": 4,
+      "cloud": 6,
       "direct": 0
     },
     "foreign": {
-      "cloud": 2,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -51,15 +50,41 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.031,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?ver=10",
+      "type": "stylesheet",
+      "ipinfo": {
+        "domain": "cdn.jsdelivr.net",
+        "ip": "151.101.129.229",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9cc748b7e56e9-TPE",
+        "x-served-by": "cache-fra-etou8220147-FRA, cache-hkg17932-HKG",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://cdn-images.mailchimp.com/embedcode/classic-061523.css",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "cdn-images.mailchimp.com",
-        "ip": "3.169.137.63",
-        "hostname": "server-3-169-137-63.tpe54.r.cloudfront.net",
+        "ip": "3.169.137.116",
+        "hostname": "server-3-169-137-116.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -74,23 +99,28 @@
       "type": "script",
       "ipinfo": {
         "domain": "s3.amazonaws.com",
-        "ip": "16.15.180.97",
+        "ip": "52.217.132.80",
+        "hostname": "s3-1.amazonaws.com",
         "city": "Ashburn",
         "region": "Virginia",
         "country": "US",
         "loc": "39.0437,-77.4875",
-        "org": "AS14618 Amazon.com, Inc.",
+        "org": "AS16509 Amazon.com, Inc.",
         "timezone": "America/New_York"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 203.208,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-5N6HR9K",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.77.8",
+        "hostname": "nctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -101,12 +131,12 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Ftfc-taiwan.org.tw%2F&scrsrc=www.googletagmanager.com&rnd=1599714335.1767821751&dt=Home%20-%20%E5%8F%B0%E7%81%A3%E4%BA%8B%E5%AF%A6%E6%9F%A5%E6%A0%B8%E4%B8%AD%E5%BF%83&auid=440347250.1767821751&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He6151v9100387212za200zd9100387212xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115583767~115938465~115938468~116682875&apve=1&apvf=f&apvc=1&tft=1767821750975&tfd=1151",
+      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Ftfc-taiwan.org.tw%2F&scrsrc=www.googletagmanager.com&rnd=1324788277.1768358741&dt=Home%20-%20%E5%8F%B0%E7%81%A3%E4%BA%8B%E5%AF%A6%E6%9F%A5%E6%A0%B8%E4%B8%AD%E5%BF%83&auid=861153323.1768358741&navt=n&npa=0&gtm=45He61c1v9100387212za200zd9100387212xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528501~104573694~104684208~104684211~105391253~115616985~115938465~115938468~117041587&tft=1768358741341&tfd=1244&apve=1&apvf=f&gap.plf=5",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.66.68",
-        "hostname": "hkg12s27-in-f4.1e100.net",
+        "ip": "142.250.196.196",
+        "hostname": "nctsaa-ac-in-f4.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -117,12 +147,12 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-C71VJ2DZD9&cid=1895886529.1767821751&gtm=45je6151v894975582z89100387212za20gzb9100387212zd9100387212&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115497442~115583767~115616986~115938465~115938469~116682875~116988315&z=388117338",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-C71VJ2DZD9&cid=1826962911.1768358741&gtm=45je61c1v894975582z89100387212za20gzb9100387212zd9100387212&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115616985~115938465~115938468~117041587~117091819&z=1727883129",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.77.3",
-        "hostname": "nctsaa-ab-in-f3.1e100.net",
+        "ip": "142.250.196.195",
+        "hostname": "nctsaa-ac-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",

@@ -2,12 +2,11 @@
   "url": "https://wfxs.tw",
   "canonicalURL": "https://wfxs.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:14:44.347Z",
+  "timestamp": "2026-01-14T01:15:41.977Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 25,
-  "uniqueDomains": 3,
+  "requestCount": 22,
+  "uniqueDomains": 2,
   "test_results": {
     "domestic": {
-      "cloud": 1,
+      "cloud": 2,
       "direct": 0
     },
     "foreign": {
-      "cloud": 2,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -43,7 +42,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "wfxs.tw",
-        "ip": "104.26.0.238",
+        "ip": "172.67.70.148",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -51,23 +50,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-MYJDC08SPG",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd948947ee24a00-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://img.wfxs.tw/0/1/1s.jpg",
@@ -82,7 +70,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd9489acc074a00-TPE",
+        "detection_method": "header"
+      }
     }
   ]
 }

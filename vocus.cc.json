@@ -2,12 +2,11 @@
   "url": "https://vocus.cc",
   "canonicalURL": "https://vocus.cc/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:07:48.848Z",
+  "timestamp": "2026-01-14T01:06:10.486Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,15 +24,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 96,
+  "requestCount": 73,
   "uniqueDomains": 7,
   "test_results": {
     "domestic": {
-      "cloud": 1,
+      "cloud": 5,
       "direct": 0
     },
     "foreign": {
-      "cloud": 5,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -43,21 +42,6 @@
       "type": "document",
       "ipinfo": {
         "domain": "vocus.cc",
-        "ip": "172.67.69.137",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://images.vocus.cc/006faecc-26dc-40de-a8f6-628aefbc5b33.jpg",
-      "type": "image",
-      "ipinfo": {
-        "domain": "images.vocus.cc",
         "ip": "104.26.6.124",
         "city": "San Francisco",
         "region": "California",
@@ -66,14 +50,19 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd93a4b5862843a-TPE",
+        "detection_method": "header"
+      }
     },
     {
-      "originalUrl": "https://wpimg.vocus.cc/uploads/2017/02/39988_102809576443361_3541172_n.jpg",
+      "originalUrl": "https://images.vocus.cc/02264bfb-7208-4ae8-81e5-b79327e89ae3.jpg",
       "type": "image",
       "ipinfo": {
-        "domain": "wpimg.vocus.cc",
-        "ip": "172.67.69.137",
+        "domain": "images.vocus.cc",
+        "ip": "104.26.7.124",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -81,7 +70,66 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd93a608c92a33d-TPE",
+        "x-amz-cf-pop": "TPE54-P1",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://wpimg.vocus.cc/uploads/2017/08/13240069_1608254372820788_4513436603682024017_n.jpg",
+      "type": "image",
+      "ipinfo": {
+        "domain": "wpimg.vocus.cc",
+        "ip": "104.26.6.124",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd93a5f9b138f06-TPE",
+        "x-amz-cf-pop": "HKG54-P2",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://lh6.googleusercontent.com/-dTe8CRfsBXY/AAAAAAAAAAI/AAAAAAAAAI4/khOop82696M/photo.jpg",
+      "type": "image",
+      "ipinfo": {
+        "domain": "lh6.googleusercontent.com",
+        "ip": "142.250.196.193",
+        "hostname": "nctsaa-ac-in-f1.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://lh3.googleusercontent.com/a/AGNmyxavRhYCC8NZOwzB2-qYP9-NVgU0KLpu1AOAzzWp=s96-c",
+      "type": "image",
+      "ipinfo": {
+        "domain": "lh3.googleusercontent.com",
+        "ip": "142.250.77.1",
+        "hostname": "nctsaa-ab-in-f1.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://sentry.vocus.cc/api/2/envelope/?sentry_version=7&sentry_key=956a3d66b24c161c9b04cc1948448e66&sentry_client=sentry.javascript.nextjs%2F10.30.0",
@@ -100,43 +148,11 @@
       "category": "foreign/cloud"
     },
     {
-      "originalUrl": "blob:https://vocus.cc/ff604538-33df-4a00-9eef-150998a699c5",
+      "originalUrl": "blob:https://vocus.cc/c3008d2f-9196-4b5f-8e82-802615907e34",
       "type": "other",
       "ipinfo": {
         "domain": ""
       }
-    },
-    {
-      "originalUrl": "https://api.vocus.cc/api/hot-articles?from=2026-01-07T04:07:48&to=2026-01-08T04:07:48&num=5&isPay=false",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "api.vocus.cc",
-        "ip": "13.115.178.87",
-        "hostname": "ec2-13-115-178-87.ap-northeast-1.compute.amazonaws.com",
-        "city": "Tokyo",
-        "region": "Tokyo",
-        "country": "JP",
-        "loc": "35.6895,139.6917",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Tokyo"
-      },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-PWPRXFR&gtm_auth=&gtm_preview=&gtm_cookies_win=x",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
     }
   ]
 }

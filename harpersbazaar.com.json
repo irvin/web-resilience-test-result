@@ -2,12 +2,11 @@
   "url": "https://harpersbazaar.com",
   "canonicalURL": "https://www.harpersbazaar.com/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T20:13:41.000Z",
+  "timestamp": "2026-01-14T01:13:42.347Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,16 +24,16 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 154,
-  "uniqueDomains": 12,
+  "requestCount": 200,
+  "uniqueDomains": 20,
   "test_results": {
     "domestic": {
-      "cloud": 2,
+      "cloud": 10,
       "direct": 1
     },
     "foreign": {
-      "cloud": 9,
-      "direct": 0
+      "cloud": 8,
+      "direct": 1
     }
   },
   "domainDetails": [
@@ -43,7 +42,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "harpersbazaar.com",
-        "ip": "151.101.128.155",
+        "ip": "151.101.0.155",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -51,7 +50,11 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 34.147,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.harpersbazaar.com/",
@@ -66,14 +69,18 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 49.637,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "https://hips.hearstapps.com/hmg-prod/images/0106-basics-00-695d2bd7a7b02.jpg?crop=0.563xw:1.00xh;0.220xw,0&resize=1400:*",
+      "originalUrl": "https://hips.hearstapps.com/hmg-prod/images/screenshot-2026-01-12-at-3-57-00-pm-696560255a916-lg-6965742632460.jpg?crop=0.6648xw:1xh;center,top&resize=1400:*",
       "type": "image",
       "ipinfo": {
         "domain": "hips.hearstapps.com",
-        "ip": "199.232.112.155",
+        "ip": "146.75.44.155",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",
@@ -81,14 +88,18 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 49.371,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
       "type": "script",
       "ipinfo": {
         "domain": "cdn.cookielaw.org",
-        "ip": "104.18.86.42",
+        "ip": "104.18.87.42",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -96,15 +107,20 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd94555a80077f1-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://sb.scorecardresearch.com/beacon.js",
       "type": "script",
       "ipinfo": {
         "domain": "sb.scorecardresearch.com",
-        "ip": "3.169.137.63",
-        "hostname": "server-3-169-137-63.tpe54.r.cloudfront.net",
+        "ip": "3.169.137.32",
+        "hostname": "server-3-169-137-32.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -127,7 +143,12 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bd94558f9e94a07-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://static-assets.hearstapps.com/design-tokens/manifest.json",
@@ -142,14 +163,18 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 49.553,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://assets.hearstapps.com/commerce/release/affiliate-bundle.8.6.8.js",
       "type": "script",
       "ipinfo": {
         "domain": "assets.hearstapps.com",
-        "ip": "199.232.112.155",
+        "ip": "146.75.44.155",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",
@@ -157,30 +182,19 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://jam.hearstapps.com/rules/match/229d0812-d901-44db-87b0-24674345b9e5?collections=%5B%5D&countryCode=TW&deviceType=desktop&displayType=undefined&entitlements=%5B%5D&excludePaywall=true&GDPR=NA&jamAb=undefined&journeyCampaign=null&path=%2F&isLanding=true&referrer=&section=home-page&signedIn=false&sponsored=false&subsection=undefined&tags=%5B%5D&themes=%5B%5D&contentId=undefined",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "jam.hearstapps.com",
-        "ip": "199.232.112.155",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 49.195,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-B7PEEPD04J",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.66.72",
-        "hostname": "hkg12s27-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -204,7 +218,12 @@
         "org": "AS396982 Google LLC",
         "timezone": "America/Chicago"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.246,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
@@ -221,6 +240,170 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://jam.hearstapps.com/rules/match/229d0812-d901-44db-87b0-24674345b9e5?collections=%5B%5D&countryCode=TW&deviceType=desktop&displayType=undefined&entitlements=%5B%5D&excludePaywall=true&GDPR=NA&jamAb=undefined&journeyCampaign=null&path=%2F&isLanding=true&referrer=&section=home-page&signedIn=false&sponsored=false&subsection=undefined&tags=%5B%5D&themes=%5B%5D&contentId=undefined",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "jam.hearstapps.com",
+        "ip": "199.232.112.155",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 49.732,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://www.google.com/ccm/collect?frm=0&tid=AW-824559003&en=page_view&dl=https%3A%2F%2Fwww.harpersbazaar.com%2F&scrsrc=www.googletagmanager.com&rnd=1036869919.1768353210&dt=Harper%27s%20BAZAAR%20-%20Your%20Source%20for%20Fashion%20Trends%2C%20Beauty%20Tips%2C%20Pop%20Culture%20News%2C%20and%20Celebrity%20Style&auid=1566044356.1768353210&navt=n&npa=0&did=dYWJhMj&gdid=dYWJhMj&_tu=BAg&gtm=45je61c1v892600669za200zd892600669xec&gcs=G111&gcd=13t3t3t2t5l1&dma=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115938465~115938469~116910503~117041588~117091818&tft=1768353209944&tfd=4516&apve=1&apvf=f",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.250.204.36",
+        "hostname": "hkg07s38-in-f4.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-B7PEEPD04J&cid=547178720.1768353210&gtm=45je61c1v892600669za200zd892600669&aip=1&dma=0&gcs=G111&gcd=13t3t3t2t5l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115938465~115938469~116910503~117041588~117091818&z=457002399",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.204.35",
+        "hostname": "hkg07s38-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://cdn.parsely.com/keys/harpersbazaar.com/p.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "cdn.parsely.com",
+        "ip": "192.0.66.2",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7749,-122.4194",
+        "org": "AS2635 Automattic, Inc",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/direct"
+    },
+    {
+      "originalUrl": "https://p1.parsely.com/px/?rand=1768353211024&plid=c0f92c71-cee8-4711-b5b6-fa644fc2482c&idsite=harpersbazaar.com&url=https%3A%2F%2Fwww.harpersbazaar.com%2F&urlref=&screen=1280x720%7C1280x720%7C24&data=%7B%22login_status%22%3A%22not_logged_in%22%2C%22membership_status%22%3A%22member%22%2C%22parsely%3Ametadata-detection%22%3A%7B%22version%22%3A0%2C%22url%22%3A%22https%3A%2F%2Fwww.harpersbazaar.com%2F%22%2C%22hash%22%3A1016515168%7D%7D&sid=1&surl=https%3A%2F%2Fwww.harpersbazaar.com%2F&sref=&sts=1768353211022&slts=0&title=Harper%27s+BAZAAR+-+Your+Source+for+Fashion+Trends%2C+Beauty+Tips%2C+Pop+Culture+News%2C+and+Celebrity+Style&date=Wed+Jan+14+2026+09%3A13%3A31+GMT%2B0800+(Taipei+Standard+Time)&action=pageview&pvid=171d1346-8fb5-49d9-a134-599321318e92&u=pid%3D7f1255cb-c667-4cde-89d5-44d93f878d23",
+      "type": "image",
+      "ipinfo": {
+        "domain": "p1.parsely.com",
+        "ip": "52.27.163.48",
+        "hostname": "ec2-52-27-163-48.us-west-2.compute.amazonaws.com",
+        "city": "Boardman",
+        "region": "Oregon",
+        "country": "US",
+        "loc": "45.8399,-119.7006",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://s.skimresources.com/js/74968X1525079.skimlinks.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "s.skimresources.com",
+        "ip": "146.75.45.91",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 48.901,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://t.skimresources.com/api/v2/robots.txt?__skimjs_preflight__please_ignore__=true&rnd=0.9889444622092634",
+      "type": "image",
+      "ipinfo": {
+        "domain": "t.skimresources.com",
+        "ip": "35.201.67.47",
+        "hostname": "47.67.201.35.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.018,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://p.skimresources.com/px.gif?ch=1&rn=2.1362998432321385",
+      "type": "image",
+      "ipinfo": {
+        "domain": "p.skimresources.com",
+        "ip": "35.190.91.160",
+        "hostname": "160.91.190.35.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.738,
+        "detection_method": "rtt"
+      }
+    },
+    {
+      "originalUrl": "https://r.skimresources.com/api/",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "r.skimresources.com",
+        "ip": "35.190.59.101",
+        "hostname": "101.59.190.35.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.688,
+        "detection_method": "rtt"
+      }
     }
   ]
 }

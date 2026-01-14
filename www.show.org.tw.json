@@ -2,12 +2,11 @@
   "url": "https://www.show.org.tw/",
   "canonicalURL": "https://www.show.org.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-07T22:50:55.389Z",
+  "timestamp": "2026-01-14T04:19:04.834Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
-      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -29,11 +28,11 @@
   "uniqueDomains": 8,
   "test_results": {
     "domestic": {
-      "cloud": 3,
+      "cloud": 6,
       "direct": 2
     },
     "foreign": {
-      "cloud": 3,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -58,15 +57,21 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "104.16.175.226",
+        "ip": "151.101.65.229",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
         "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
+        "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda5531cc858f06-TPE",
+        "x-served-by": "cache-fra-eddf8230109-FRA, cache-hkg17920-HKG",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.css",
@@ -81,15 +86,20 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda5531e9a68416-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://cdn.kendostatic.com/2023.1.117/styles/kendo.common.min.css",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "cdn.kendostatic.com",
-        "ip": "3.169.137.46",
-        "hostname": "server-3-169-137-46.tpe54.r.cloudfront.net",
+        "ip": "3.169.137.106",
+        "hostname": "server-3-169-137-106.tpe54.r.cloudfront.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -104,8 +114,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -120,7 +130,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "cdn.weglot.com",
-        "ip": "172.64.149.114",
+        "ip": "104.18.38.142",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -128,7 +138,13 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "9bda5532b8ae8460-TPE",
+        "x-amz-cf-pop": "TPE54-P1",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.scmh.org.tw/internet/Backstage/Upload/PHOTO/ALL/20250219135740.jpg",
@@ -146,7 +162,7 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-MV2GCB9H09&cid=1603590287.1767826252&gtm=45je6160v879706964za200zd879706964&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=102015666~103116026~103200004~104527906~104528501~104684208~104684211~105391252~115938466~115938469&z=1467563201",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-MV2GCB9H09&cid=658522468.1768364343&gtm=45je61c1v879706964za200zd879706964&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115616985~115938465~115938469~117041587&z=686249940",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
