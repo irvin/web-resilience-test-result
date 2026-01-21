@@ -1,279 +1,34 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>海纜斷掉時網站會動嗎？</title>
-    
-    <!-- Open Graph 標籤 -->
-    <meta property="og:title" content="海纜斷掉時網站會動嗎？">
-    <meta property="og:description" content="檢測網站在台灣對外海纜斷掉時的可用性">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://irvin.github.io/web-resilience-test-result/">
-    <meta property="og:canonical" content="https://irvin.github.io/web-resilience-test-result/">
-    <link id="canonical" rel="canonical" href="https://irvin.github.io/web-resilience-test-result/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>頁面已搬遷</title>
+  <script>
+    (function() {
+      var base = 'https://irvin.github.io/web-resilience-test-profile/';
+      var search = window.location.search || '';
+      var target = base + search;
 
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            line-height: 1.6;
-        }
-        .result-card {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            background-color: #fff;
-        }
-        .score-container {
-            margin: 0 6px;
-            padding: 12px;
-            background-color: #f8f9fa;
-            border-radius: 6px;
-        }
-        .score-container p {
-            font-size: 0.9em;
-            line-height: 1.5em;
-            margin: 0;
-            margin-bottom: 0.5em;
-        }
-        .score-container .score {
-            display: inline-block;
-            padding: 4px 8px;
-            border-radius: 4px;
-            margin-bottom: 10px;
-            font-size: 1em;
-            min-width: 100px;
-            text-align: center;
-        }
-        .score-O { background-color: #d4edda; color: #155724; }
-        .score-Q { background-color: #fff3cd; color: #856404; }
-        .score-X { background-color: #f8d7da; color: #721c24; }
-        pre {
-            background-color: #f5f5f5;
-            padding: 15px;
-            border-radius: 4px;
-            overflow-x: auto;
-            margin: 1em 0;
-        }
-        
-        code {
-            font-size: 0.7em;
-            font-family: Monaco, Consolas, "Courier New", monospace;
-        }
-        
-        .message {
-            padding: 20px;
-            background-color: #f8f9fa;
-            border-radius: 8px;
-            border: 1px solid #dee2e6;
-        }
-        
-        .message code {
-            background-color: #e9ecef;
-            padding: 2px 4px;
-            border-radius: 4px;
-        }
+      var link = document.createElement('link');
+      link.rel = 'canonical';
+      link.href = target;
+      document.head.appendChild(link);
 
-        .raw-json-link {
-            color: #0366d6;
-            text-decoration: none;
-        }
-
-        .raw-json-link:hover {
-            text-decoration: underline;
-        }
-
-        .test-site {
-            margin: 0 0.25em;
-        }
-
-        .summary {
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        .summary.will-work {
-            background-color: #d4edda;
-            color: #155724;
-        }
-
-        .summary.might-work {
-            background-color: #fff3cd;
-            color: #856404;
-        }
-
-        .summary.wont-work {
-            background-color: #f8d7da;
-            color: #721c24;
-        }
-
-        .summary h2 {
-            margin: 0;
-        }
-
-        .site-link {
-            text-decoration: none;
-        }
-
-        .site-link:hover,
-        .site-link:focus {
-            text-decoration: underline;
-        }
-    </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"></script>
+      window.location.replace(target);
+    })();
+  </script>
 </head>
 <body>
-    <h1>海纜斷掉時，網站會動嗎？</h1>
-    <template id="title-template">
-        <h1>海纜斷掉時，<a href="https://{{url}}" target="_blank">{{url}}</a> 會動嗎？</h1>
-    </template>
-
-    <div id="results"></div>
-
-    <template id="result-card-template">
-        <div class="result-card">
-            <div class="summary {{summaryClass}}">
-                <h2>{{summaryText}}</h2>
-            </div>
-            <p>最後一次測試時間：{{testTime}}</p>
-            <div class="score-container">
-                <p class="score score-O">境內連線 (O): {{domesticCount}}</p><br>
-                <p class="score score-Q">具有國內節點的雲 (?): {{cloudCount}}</p><br>
-                <p class="score score-X">境外連線 (X): {{foreignCount}}</p>
-                <p>在開啟 {{url}} 時，我們總共鑑別出 {{totalConnections}} 項連線。<br>
-                其中 {{domesticCount}} 項為境內資源，{{cloudCount}} 項為具有國內節點的雲端服務（尚不清楚在對外斷線是否可用），{{foreignCount}} 項為境外資源。</p>
-            </div>
-            <div class="details-container">
-                <p><a href="{{rawDataUrl}}" target="_blank">原始資料</a></p>
-                <pre><code>{{detailsJson}}</code></pre>
-            </div>
-        </div>
-    </template>
-
-    <template id="not-found-template">
-        <div class="message">
-            <p>找不到 {{url}} 的測試結果</p>
-            <p>目前已測試的所有頁面資料：<a href="https://github.com/irvin/web-resilience-test-result" target="_blank">github.com/irvin/web-resilience-test-result</a></p>
-            <p>你可以按照<a href="https://github.com/irvin/digital-service-resilience" target="_blank">這邊的方式</a>進行測試。</p>
-        </div>
-    </template>
-
-    <footer>
-      <p><a href="https://github.com/irvin/digital-service-resilience" target="_blank">研究方法</a></p>
-      <p><a href="https://g0v.hackmd.io/@paulpengtw/DigiResiTh0n-home" target="_blank">g0v 數位韌性松</a></p>
-      <img src="g0v_logo.png" alt="g0v.tw 台灣零時政府" style="width: 100px; height: 100px;">
-    </footer>
-
-    <script>
-        const GITHUB_RAW_URL = 'https://raw.githubusercontent.com/irvin/web-resilience-test-result/refs/heads/main/';
-        const GITHUB_WEB_URL = 'https://github.com/irvin/web-resilience-test-result/blob/main/';
-
-        const templates = {
-            title: Handlebars.compile(document.getElementById('title-template').innerHTML),
-            resultCard: Handlebars.compile(document.getElementById('result-card-template').innerHTML),
-            notFound: Handlebars.compile(document.getElementById('not-found-template').innerHTML)
-        };
-
-        async function fetchTestResult(filename) {
-            try {
-                const response = await fetch(GITHUB_RAW_URL + filename);
-                return await response.json();
-            } catch (error) {
-                console.error('Error fetching result:', error);
-                return null;
-            }
-        }
-
-        function formatDate(isoString) {
-            return new Date(isoString).toLocaleString('zh-TW');
-        }
-
-        function getSummaryText(result) {
-            if (result.test_results.foreign > 0) {
-                return '不會動';
-            } else if (result.test_results.cloud_w_domestic_node > 0) {
-                return '不確定';
-            } else {
-                return '會動';
-            }
-        }
-
-        // 從 URL 參數取得要顯示的網址
-        function getUrlParam() {
-            return window.location.search.substring(5);
-        }
-
-        // 將網址轉換為對應的 JSON 檔名
-        function urlToFilename(url) {
-            const urlObj = new URL('https://' + url.replace(/^https?:\/\//, ''));
-            let filename = urlObj.hostname + urlObj.pathname.replace(/\//g, '_');
-            if (urlObj.search) filename += '__' + urlObj.search.substring(1).replace(/[&=]/g, '_');
-            filename = filename.replace(/_+$/, '');
-            if (filename.length > 95) {
-                filename = filename.slice(0, 95);
-            }
-            return filename + '.json';
-        }
-
-        async function loadResults() {
-            const urlParam = getUrlParam();
-            
-            // 如果沒有指定網址，轉址到 g0v.tw 測試結果
-            if (!urlParam) {
-                window.location.href = window.location.href + (window.location.href.endsWith('/') ? '' : '/') + '?url=g0v.tw';
-                return;
-            }
-
-            const cleanUrl = urlParam.replace(/^https?:\/\//, '');
-            document.querySelector('h1').outerHTML = templates.title({ url: cleanUrl });
-
-            // 更新 meta 標籤
-            const baseUrl = 'https://irvin.github.io/web-resilience-test-result/';
-            const currentUrl = urlParam ? `${baseUrl}?url=${urlParam}` : baseUrl;
-            
-            document.querySelector('link[rel="canonical"]').href = currentUrl;
-            document.querySelector('meta[property="og:canonical"]').content = currentUrl;
-            document.querySelector('meta[property="og:url"]').content = currentUrl;
-            document.title = urlParam ? `海纜斷掉時，${urlParam} 會動嗎？` : '海纜斷掉時網站會動嗎？';
-            document.querySelector('meta[property="og:title"]').content = document.title;
-
-            // 顯示測試結果
-            const result = await fetchTestResult(urlToFilename(urlParam));
-            if (result) {
-                const totalConnections = result.test_results.domestic + 
-                                       result.test_results.cloud_w_domestic_node + 
-                                       result.test_results.foreign;
-
-                document.getElementById('results').innerHTML = templates.resultCard({
-                    url: result.url,
-                    summaryText: getSummaryText(result),
-                    summaryClass: result.test_results.foreign > 0 ? 'wont-work' :
-                                result.test_results.cloud_w_domestic_node > 0 ? 'might-work' : 
-                                'will-work',
-                    testTime: formatDate(result.timestamp),
-                    domesticCount: result.test_results.domestic,
-                    cloudCount: result.test_results.cloud_w_domestic_node,
-                    foreignCount: result.test_results.foreign,
-                    totalConnections,
-                    rawDataUrl: GITHUB_WEB_URL + urlToFilename(result.url),
-                    detailsJson: JSON.stringify(result.domainDetails, null, 2)
-                });
-
-            } 
-            else {
-                document.getElementById('results').innerHTML = templates.notFound({ url: urlParam });
-            }
-            document.querySelector('meta[property="og:description"]').content = getSummaryText(result);
-          }
-
-        // 載入測試結果
-        loadResults();
-    </script>
+  <p>此頁面已搬遷至 <a id="new-url" href="#">新位置</a>，如果沒有自動跳轉，請點擊連結。</p>
+  <script>
+    (function() {
+      var base = 'https://irvin.github.io/web-resilience-test-profile/';
+      var search = window.location.search || '';
+      var target = base + search;
+      document.getElementById('new-url').href = target;
+      document.getElementById('new-url').textContent = target;
+    })();
+  </script>
 </body>
 </html>
