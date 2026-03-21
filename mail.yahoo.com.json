@@ -2,7 +2,7 @@
   "url": "https://mail.yahoo.com",
   "canonicalURL": "https://mail.yahoo.com",
   "httpStatus": 200,
-  "timestamp": "2026-03-08T06:09:56.393Z",
+  "timestamp": "2026-03-21T10:02:34.969Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -14,26 +14,26 @@
     "hasIPinfoToken": true
   },
   "testingEnvironment": {
-    "ip": "111.241.154.19",
-    "hostname": "111-241-154-19.dynamic-ip.hinet.net",
-    "city": "Taipei",
-    "region": "Taiwan",
+    "ip": "220.132.212.194",
+    "hostname": "220-132-212-194.hinet-ip.hinet.net",
+    "city": "Banqiao",
+    "region": "Taipei",
     "country": "TW",
-    "loc": "25.0531,121.5264",
+    "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 26,
-  "uniqueDomains": 8,
+  "requestCount": 42,
+  "uniqueDomains": 5,
   "test_results": {
     "domestic": {
-      "cloud": 4,
+      "cloud": 2,
       "direct": 0
     },
     "foreign": {
-      "cloud": 4,
+      "cloud": 3,
       "direct": 0
     }
   },
@@ -55,44 +55,28 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://login.yahoo.com/?.src=ym&pspid=159600001&activity=mail-direct&.lang=en-US&.intl=us&.done=https%3A%2F%2Fmail.yahoo.com%2Fd%2F",
-      "type": "document",
-      "ipinfo": {
-        "domain": "login.yahoo.com",
-        "ip": "180.222.106.11",
-        "hostname": "e1.ycpi.vip.tpb.yahoo.com",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS38033 internet content provider",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://s.yimg.com/wm/mbr/535b380809b91a5649ab0ecc04c5cbea1cee4d2a/yahoo-main.css",
-      "type": "stylesheet",
+      "originalUrl": "https://s.yimg.com/oa/consent-1.0.383.js",
+      "type": "script",
       "ipinfo": {
         "domain": "s.yimg.com",
-        "ip": "180.222.106.12",
-        "hostname": "e2.ycpi.vip.tpb.yahoo.com",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "180.222.109.252",
+        "hostname": "unknown.yahoo.com",
+        "city": "Taipei",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS38033 internet content provider",
+        "loc": "25.0531,121.5264",
+        "org": "AS24376 Yahoo China Datacenter",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://consent.cmp.oath.com/cmp.js",
+      "originalUrl": "https://consent.cmp.oath.com/cmpStub.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "consent.cmp.oath.com",
-        "ip": "108.156.22.126",
-        "hostname": "server-108-156-22-126.hel51.r.cloudfront.net",
+        "ip": "13.33.235.40",
+        "hostname": "server-13-33-235-40.hel51.r.cloudfront.net",
         "city": "Helsinki",
         "region": "Uusimaa",
         "country": "FI",
@@ -102,12 +86,28 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 307.476,
+        "rtt": 302.399,
         "detection_method": "rtt"
       }
     },
     {
-      "originalUrl": "https://udc.yahoo.com/v2/public/yql?yhlVer=2&yhlClient=rapid&yhlS=794200123&yhlCT=2&yhlBTMS=1772950184865&yhlClientVer=3.76.0&yhlRnd=NM1Wa4KNtDeszMsN&yhlCompressed=0",
+      "originalUrl": "https://guce.yahoo.com/v1/consentRecord?consentTypes=iab%2CiabCCPA%2Cgpp%2CgppSid",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "guce.yahoo.com",
+        "ip": "13.213.111.163",
+        "hostname": "ec2-13-213-111-163.ap-southeast-1.compute.amazonaws.com",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud"
+    },
+    {
+      "originalUrl": "https://udc.yahoo.com/v2/public/yql?yhlVer=2&yhlClient=rapid&yhlS=1197802296&yhlCT=2&yhlBTMS=1774087343812&yhlClientVer=3.53.41&yhlRnd=DJJJSIe33uuzI9Je&yhlCompressed=0",
       "type": "xhr",
       "ipinfo": {
         "domain": "udc.yahoo.com",
@@ -121,54 +121,6 @@
         "timezone": "Asia/Singapore"
       },
       "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-P9C3W3ESF1",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
-        "city": "Mountain View",
-        "region": "California",
-        "country": "US",
-        "loc": "38.0088,-122.1175",
-        "org": "AS15169 Google LLC",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://guce.yahoo.com/v1/consentRecord?consentTypes=iab%2CiabCCPA%2Cgpp%2CgppSid",
-      "type": "xhr",
-      "ipinfo": {
-        "domain": "guce.yahoo.com",
-        "ip": "18.138.105.28",
-        "hostname": "ec2-18-138-105-28.ap-southeast-1.compute.amazonaws.com",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://gpt.mail.yahoo.net/sandbox?client=login&version=0.1&limited=0&headerBidder=1&haq=1&benji=1",
-      "type": "document",
-      "ipinfo": {
-        "domain": "gpt.mail.yahoo.net",
-        "ip": "180.222.106.12",
-        "hostname": "e2.ycpi.vip.tpb.yahoo.com",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS38033 internet content provider",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
     }
   ]
 }

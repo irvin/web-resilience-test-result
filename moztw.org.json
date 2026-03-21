@@ -2,7 +2,7 @@
   "url": "https://moztw.org",
   "canonicalURL": "https://moztw.org",
   "httpStatus": 200,
-  "timestamp": "2026-03-08T06:09:56.470Z",
+  "timestamp": "2026-03-21T10:02:26.073Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -14,12 +14,12 @@
     "hasIPinfoToken": true
   },
   "testingEnvironment": {
-    "ip": "111.241.154.19",
-    "hostname": "111-241-154-19.dynamic-ip.hinet.net",
-    "city": "Taipei",
-    "region": "Taiwan",
+    "ip": "220.132.212.194",
+    "hostname": "220-132-212-194.hinet-ip.hinet.net",
+    "city": "Banqiao",
+    "region": "Taipei",
     "country": "TW",
-    "loc": "25.0531,121.5264",
+    "loc": "25.0143,121.4672",
     "org": "AS3462 Data Communication Business Group",
     "timezone": "Asia/Taipei",
     "source": "ipinfo json api (direct)",
@@ -29,11 +29,11 @@
   "uniqueDomains": 8,
   "test_results": {
     "domestic": {
-      "cloud": 3,
+      "cloud": 5,
       "direct": 0
     },
     "foreign": {
-      "cloud": 5,
+      "cloud": 3,
       "direct": 0
     }
   },
@@ -43,8 +43,8 @@
       "type": "document",
       "ipinfo": {
         "domain": "moztw.org",
-        "ip": "185.199.108.153",
-        "hostname": "cdn-185-199-108-153.github.com",
+        "ip": "185.199.111.153",
+        "hostname": "cdn-185-199-111-153.github.com",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -52,7 +52,11 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 54.096,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://i.creativecommons.org/l/by-sa/3.0/tw/80x15.png",
@@ -67,35 +71,35 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.713,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://www.google.com/jsapi",
       "type": "script",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.196.196",
-        "hostname": "nctsaa-ac-in-f4.1e100.net",
-        "city": "Mountain View",
-        "region": "California",
-        "country": "US",
-        "loc": "38.0088,-122.1175",
+        "ip": "142.250.77.4",
+        "hostname": "nctsaa-ab-in-f4.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
         "org": "AS15169 Google LLC",
-        "timezone": "America/Los_Angeles"
+        "timezone": "Asia/Taipei"
       },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "rtt": 5.695,
-        "detection_method": "rtt"
-      }
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://code.jquery.com/jquery-1.12.4.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "code.jquery.com",
-        "ip": "151.101.66.137",
+        "ip": "151.101.130.137",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -103,15 +107,19 @@
         "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 34.816,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "https://www.gstatic.com/charts/loader.js",
+      "originalUrl": "https://www.gstatic.com/prose/brandjs.js",
       "type": "script",
       "ipinfo": {
         "domain": "www.gstatic.com",
-        "ip": "142.250.66.67",
-        "hostname": "hkg12s27-in-f3.1e100.net",
+        "ip": "142.250.198.67",
+        "hostname": "lctsaa-ab-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -126,16 +134,36 @@
       "type": "script",
       "ipinfo": {
         "domain": "cse.google.com",
-        "ip": "142.250.77.14",
-        "hostname": "nctsaa-ab-in-f14.1e100.net",
-        "city": "Mountain View",
+        "ip": "142.250.66.78",
+        "hostname": "hkg12s27-in-f14.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://moztw.github.io/planet-rss-json/planet.json",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "moztw.github.io",
+        "ip": "185.199.110.153",
+        "hostname": "cdn-185-199-110-153.github.com",
+        "city": "San Francisco",
         "region": "California",
         "country": "US",
-        "loc": "38.0088,-122.1175",
-        "org": "AS15169 Google LLC",
+        "loc": "37.7621,-122.3971",
+        "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 54.301,
+        "detection_method": "rtt"
+      }
     },
     {
       "originalUrl": "https://licensebuttons.net/l/by-sa/3.0/tw/80x15.png",
@@ -153,25 +181,9 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.395,
+        "rtt": 4.665,
         "detection_method": "rtt"
       }
-    },
-    {
-      "originalUrl": "https://moztw.github.io/planet-rss-json/planet.json",
-      "type": "xhr",
-      "ipinfo": {
-        "domain": "moztw.github.io",
-        "ip": "185.199.108.153",
-        "hostname": "cdn-185-199-108-153.github.com",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud"
     }
   ]
 }

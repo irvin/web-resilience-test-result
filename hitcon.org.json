@@ -1,8 +1,8 @@
 {
-  "url": "https://www.nsysu.edu.tw",
-  "canonicalURL": "https://www.nsysu.edu.tw",
+  "url": "https://hitcon.org",
+  "canonicalURL": "https://hitcon.org",
   "httpStatus": 200,
-  "timestamp": "2026-03-21T10:03:15.582Z",
+  "timestamp": "2026-03-21T10:02:43.628Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,12 +25,12 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 59,
-  "uniqueDomains": 3,
+  "requestCount": 27,
+  "uniqueDomains": 2,
   "test_results": {
     "domestic": {
       "cloud": 2,
-      "direct": 1
+      "direct": 0
     },
     "foreign": {
       "cloud": 0,
@@ -39,27 +39,31 @@
   },
   "domainDetails": [
     {
-      "originalUrl": "https://www.nsysu.edu.tw/",
+      "originalUrl": "https://hitcon.org/",
       "type": "document",
       "ipinfo": {
-        "domain": "www.nsysu.edu.tw",
-        "ip": "140.117.13.241",
-        "hostname": "math.nsysu.edu.tw",
-        "city": "Kaohsiung",
-        "region": "Takao",
-        "country": "TW",
-        "loc": "22.6163,120.3133",
-        "org": "AS17713 Ministry of Education Computer Center",
-        "timezone": "Asia/Taipei"
+        "domain": "hitcon.org",
+        "ip": "172.66.169.227",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/direct"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 13.95,
+        "detection_method": "rtt"
+      }
     },
     {
-      "originalUrl": "https://www.google.com/uds/?file=search&v=1&hl=zh-Hant&async=2",
-      "type": "script",
+      "originalUrl": "https://www.google.com/ads/ga-audiences?t=sr&aip=1&_r=4&v=1&_v=j86&tid=G-8555TD5W6W&cid=fa6bb8c0-0b71-4b2e-b06e-87e06743624b&_u=KGDAAEADQAAAAC%7E&z=1354229707&slf_rd=1",
+      "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.251.157.119",
+        "ip": "142.251.152.119",
         "city": "Mountain View",
         "region": "California",
         "country": "US",
@@ -70,25 +74,9 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.774,
+        "rtt": 6.319,
         "detection_method": "rtt"
       }
-    },
-    {
-      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-N2G4M1W1HT",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
     }
   ]
 }
