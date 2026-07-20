@@ -2,11 +2,12 @@
   "url": "https://rarbg.tw",
   "canonicalURL": "https://rarbg.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T03:32:14.499Z",
+  "timestamp": "2026-07-20T15:35:50.950Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 20,
-  "uniqueDomains": 2,
+  "requestCount": 59,
+  "uniqueDomains": 4,
   "test_results": {
     "domestic": {
-      "cloud": 0,
+      "cloud": 4,
       "direct": 0
     },
     "foreign": {
-      "cloud": 2,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -42,25 +43,6 @@
       "type": "document",
       "ipinfo": {
         "domain": "rarbg.tw",
-        "ip": "172.67.217.12",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": 142.209,
-        "detection_method": "rtt"
-      }
-    },
-    {
-      "originalUrl": "https://ww4.rarbg.tw/",
-      "type": "document",
-      "ipinfo": {
-        "domain": "ww4.rarbg.tw",
         "ip": "104.21.35.93",
         "city": "San Francisco",
         "region": "California",
@@ -69,11 +51,137 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 134.486,
-        "detection_method": "rtt"
+        "cf-ray": "a1e309935f38f932-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "104.21.35.93",
+          "prefix": "104.21.35.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 55,
+          "location_count": 55,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
+    },
+    {
+      "originalUrl": "https://www1.rarbg.tw/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "www1.rarbg.tw",
+        "ip": "104.21.35.93",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "cf-ray": "a1e30996cabff932-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "104.21.35.93",
+          "prefix": "104.21.35.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 55,
+          "location_count": 55,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "originalUrl": "https://cdn.redgarto.com/sb/notifications/gambling/default/custom-banner/8-1/css/animate.css",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "cdn.redgarto.com",
+        "ip": "172.67.151.144",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "cf-ray": "a1e309ad8890823a-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "172.67.151.144",
+          "prefix": "172.67.151.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 57,
+          "location_count": 57,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "originalUrl": "https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap",
+      "type": "stylesheet",
+      "ipinfo": {
+        "domain": "fonts.googleapis.com",
+        "ip": "142.250.204.42",
+        "hostname": "hkg07s38-in-f10.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     }
   ]
 }

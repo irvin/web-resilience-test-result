@@ -2,11 +2,12 @@
   "url": "https://health.tvbs.com.tw",
   "canonicalURL": "https://health.tvbs.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:53:55.907Z",
+  "timestamp": "2026-07-20T13:34:14.721Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 148,
-  "uniqueDomains": 4,
+  "requestCount": 236,
+  "uniqueDomains": 25,
   "test_results": {
     "domestic": {
-      "cloud": 4,
-      "direct": 0
+      "cloud": 20,
+      "direct": 2
     },
     "foreign": {
-      "cloud": 0,
+      "cloud": 3,
       "direct": 0
     }
   },
@@ -42,45 +43,117 @@
       "type": "document",
       "ipinfo": {
         "domain": "health.tvbs.com.tw",
-        "ip": "203.69.138.217",
-        "hostname": "203-69-138-217.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS20940 Akamai International B.V.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://static.tvbs.com.tw/health2.0/images/uploads/2026/01/20260106160051-u3Hk21QO.webp",
-      "type": "image",
-      "ipinfo": {
-        "domain": "static.tvbs.com.tw",
         "ip": "203.69.138.215",
         "hostname": "203-69-138-215.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "city": "Taipei",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "25.0531,121.5264",
         "org": "AS20940 Akamai International B.V.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://cc.tvbs.com.tw/img/program/upload/health/health_body/20221122110829_637c3d2d28d76_xs.svg",
+      "originalUrl": "https://health-asset.tvbs.com.tw/images/2026/01/20260116144352-NNjjg65W.webp",
       "type": "image",
       "ipinfo": {
-        "domain": "cc.tvbs.com.tw",
-        "ip": "203.69.138.233",
-        "hostname": "203-69-138-233.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "domain": "health-asset.tvbs.com.tw",
+        "ip": "203.69.138.215",
+        "hostname": "203-69-138-215.hinet-ip.hinet.net",
+        "city": "Taipei",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "25.0531,121.5264",
         "org": "AS20940 Akamai International B.V.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://o4509291793547264.ingest.us.sentry.io/api/4511149114654720/envelope/?sentry_version=7&sentry_key=12d6c18913d8a993f6a55c03ff77d56f&sentry_client=sentry.javascript.nextjs%2F10.27.0",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "o4509291793547264.ingest.us.sentry.io",
+        "ip": "34.160.81.0",
+        "hostname": "0.81.160.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.037,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.160.81.0",
+          "prefix": "34.160.81.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 65,
+          "location_count": 65
+        }
+      }
+    },
+    {
+      "originalUrl": "https://browser.sentry-cdn.com/10.27.0/replay.min.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "browser.sentry-cdn.com",
+        "ip": "151.101.194.217",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 38.411,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "151.101.194.217",
+          "prefix": "151.101.194.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 55,
+          "location_count": 55
+        }
+      }
+    },
+    {
+      "originalUrl": "https://sdk.tvbs.com.tw/idsync/tvbs-idsync.min.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "sdk.tvbs.com.tw",
+        "ip": "54.192.248.108",
+        "hostname": "server-54-192-248-108.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
@@ -90,8 +163,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -100,6 +173,502 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://firebaseinstallations.googleapis.com/v1/projects/health-tvbs-1101f/installations",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "firebaseinstallations.googleapis.com",
+        "ip": "172.217.115.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.972,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "172.217.115.4",
+          "prefix": "172.217.115.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
+    },
+    {
+      "originalUrl": "https://unpkg.com/web-vitals/dist/web-vitals.iife.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "unpkg.com",
+        "ip": "104.18.0.22",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e25779e8b60758-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "connect.facebook.net",
+        "ip": "31.13.87.5",
+        "hostname": "xx-fbcdn-shv-01-tpe1.fbcdn.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://www.google.com/ccm/collect?rcb=11&frm=0&ae=g&auid=1675031673.1784554448&dt=%E5%81%A5%E5%BA%B72.0&en=page_view&dl=https%3A%2F%2Fhealth.tvbs.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=1923966650.1784554448&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He67f0v812091751za200zd812091751xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118395334~118897920~118897930~119724320&apve=1&apvf=f&apvc=1&tft=1784554448424&tfd=1457&fmt=8",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.153.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.824,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.153.119",
+          "prefix": "142.251.153.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
+    },
+    {
+      "originalUrl": "https://tagging.tvbs.com.tw/g/collect?v=2&tid=G-1FMGPY6X2V&gtm=45je67f0v877616020z8812091751za200zb812091751zd812091751&_p=1784554448120&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=690816599&_eu=EAAAAGA&_fplc=0&are=1&cid=205575558.1784554449&frm=0&ir=1&pscdl=noapi&rcb=10&sr=1280x720&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uam=&uamb=0&uap=macOS&uapv=10_15_7&uaw=0&ul=zh-tw&ur=TW-TPQ&sst.etld=google.com.tw&sst.tft=1784554448120&sst.lpc=104426905&sst.navt=n&sst.ude=0&sst.sw_exp=1&gaf=2&_s=1&tag_exp=115938466~115938468~118897920~118897930~118981136~119724320~119773332&sid=1784554448&sct=1&seg=0&dl=https%3A%2F%2Fhealth.tvbs.com.tw%2F&dt=%E5%81%A5%E5%BA%B72.0&_tu=BA&en=page_view&_fv=1&_nsi=1&_ss=1&ep.content_category=index&ep.article_category=index&tfd=1636&richsstsse",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "tagging.tvbs.com.tw",
+        "ip": "216.239.36.21",
+        "hostname": "any-in-2415.1e100.net",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 7.8,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "216.239.36.21",
+          "prefix": "216.239.36.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 9,
+          "location_count": 9
+        }
+      }
+    },
+    {
+      "originalUrl": "https://sb.scorecardresearch.com/cs/18400300/beacon.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "sb.scorecardresearch.com",
+        "ip": "3.169.137.16",
+        "hostname": "server-3-169-137-16.tpe54.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://fundingchoicesmessages.google.com/i/21697024903?ers=3",
+      "type": "script",
+      "ipinfo": {
+        "domain": "fundingchoicesmessages.google.com",
+        "ip": "142.250.66.78",
+        "hostname": "hkg12s27-in-f14.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-PT43NBSMZN&cid=205575558.1784554449&gtm=45je67f0h1v9188311053za20g&rcb=0&aip=1&dma=0&gcd=13l3l3l3l2l1&npa=0&frm=0&tag_exp=115938466~115938468~118897920~118897930~119724320~119773331&z=1093669522",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.192.131",
+        "hostname": "bom12s18-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://cdn.jsdelivr.net/gh/prebid/shared-id/pubcid.js/docs/pubcid.min.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "cdn.jsdelivr.net",
+        "ip": "104.17.207.5",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "x-served-by": "cache-fra-etou8220083-FRA, cache-sin-wsat1880066-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "104.17.207.5",
+          "prefix": "104.17.207.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 76,
+          "location_count": 76,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "originalUrl": "https://firebaseremoteconfig.googleapis.com/v1/projects/health-tvbs-1101f/namespaces/firebase:fetch?key=AIzaSyA-0cc885yBWDLngQ_vXXZKjvxjEvG61eo",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "firebaseremoteconfig.googleapis.com",
+        "ip": "172.217.116.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.881,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "172.217.116.4",
+          "prefix": "172.217.116.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
+    },
+    {
+      "originalUrl": "https://identity.mparticle.com/v1/identify",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "identity.mparticle.com",
+        "ip": "199.232.114.133",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "x-served-by": "cache-sin-wsss1830048-SIN",
+        "rtt": 65.076,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "199.232.114.133",
+          "prefix": "199.232.114.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 2,
+          "location_count": 2
+        }
+      }
+    },
+    {
+      "originalUrl": "https://jssdks.mparticle.com/v3/JS/au1-2487ae4f36b34449970f7aee23d7ac03/events",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "jssdks.mparticle.com",
+        "ip": "151.101.2.133",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "x-served-by": "cache-sin-wsat1880040-SIN",
+        "rtt": 35.203,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "151.101.2.133",
+          "prefix": "151.101.2.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 54,
+          "location_count": 54
+        }
+      }
+    },
+    {
+      "originalUrl": "https://tvbs.api.useinsider.com/ins.js?id=10007658",
+      "type": "script",
+      "ipinfo": {
+        "domain": "tvbs.api.useinsider.com",
+        "ip": "162.159.134.61",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e25782cc044a5b-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://mpc2-prod-25-is5qnl632q-wl.a.run.app/events?cee=no",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "mpc2-prod-25-is5qnl632q-wl.a.run.app",
+        "ip": "34.143.73.2",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.841,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.143.73.2",
+          "prefix": "34.143.73.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.facebook.com/tr/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://carrier.useinsider.com/y/v2/z",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "carrier.useinsider.com",
+        "ip": "162.159.134.61",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e25785b9555706-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://segment.api.useinsider.com/v4/segments/1784554450394d9d2c1a5e5.41bc8c45?partnerid=10007658&fields=7724a63f3f5ca6352e5cc45fb89403c2,43e4e540147dea7ab5fa5510875b4c7a&",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "segment.api.useinsider.com",
+        "ip": "162.159.133.61",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e257843b2a076c-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://locationv2.api.useinsider.com/?v=2&pId=10007658&",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "locationv2.api.useinsider.com",
+        "ip": "162.159.133.61",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e25784490e80a3-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://unification.useinsider.com/api/identity/v1/get",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "unification.useinsider.com",
+        "ip": "162.159.133.61",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e25785d9ca4a5d-TPE",
+        "detection_method": "header"
+      }
     }
   ]
 }

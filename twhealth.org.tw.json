@@ -2,11 +2,12 @@
   "url": "https://twhealth.org.tw",
   "canonicalURL": "https://twhealth.org.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T03:58:19.153Z",
+  "timestamp": "2026-07-20T14:39:23.228Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 34,
+  "requestCount": 35,
   "uniqueDomains": 8,
   "test_results": {
     "domestic": {
-      "cloud": 6,
+      "cloud": 8,
       "direct": 0
     },
     "foreign": {
-      "cloud": 2,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -42,7 +43,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "twhealth.org.tw",
-        "ip": "104.21.47.57",
+        "ip": "172.67.144.219",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -50,10 +51,34 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 134.737,
-        "detection_method": "rtt"
+        "cf-ray": "a1e2b6f99fe0c51a-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "172.67.144.219",
+          "prefix": "172.67.144.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 59,
+          "location_count": 59,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -73,12 +98,127 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.youtube.com/embed/7-qDcPZOxoM",
+      "originalUrl": "https://www.youtube.com/embed/UKmZ22e2uHk",
       "type": "document",
       "ipinfo": {
         "domain": "www.youtube.com",
-        "ip": "142.250.77.14",
-        "hostname": "nctsaa-ab-in-f14.1e100.net",
+        "ip": "142.251.150.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.051,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.150.4",
+          "prefix": "142.251.150.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.twhealth.org.tw/uploadfile/fileadv_link01/1_1781745100.png",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.twhealth.org.tw",
+        "ip": "104.21.47.57",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "cf-ray": "a1e2b6fe58f2c51a-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "104.21.47.57",
+          "prefix": "104.21.47.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 55,
+          "location_count": 55,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.google.com/js/th/8uIar4J4-RenYUa4HtG5DFVcni3D6dGneJv1JZIjHfM.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.153.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.056,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.153.119",
+          "prefix": "142.251.153.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
+    },
+    {
+      "originalUrl": "https://i.ytimg.com/vi/UKmZ22e2uHk/maxresdefault.jpg",
+      "type": "image",
+      "ipinfo": {
+        "domain": "i.ytimg.com",
+        "ip": "142.250.198.86",
+        "hostname": "lctsaa-ab-in-f22.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -89,12 +229,12 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://i.ytimg.com/vi/7-qDcPZOxoM/maxresdefault.jpg",
-      "type": "image",
+      "originalUrl": "https://www.gstatic.com/youtube/img/icons/mweb/youtube_fill/logo/v2/67px.svg",
+      "type": "fetch",
       "ipinfo": {
-        "domain": "i.ytimg.com",
-        "ip": "142.250.198.86",
-        "hostname": "lctsaa-ab-in-f22.1e100.net",
+        "domain": "www.gstatic.com",
+        "ip": "142.250.192.131",
+        "hostname": "bom12s18-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -111,57 +251,6 @@
         "domain": "yt3.ggpht.com",
         "ip": "142.250.66.65",
         "hostname": "hkg12s27-in-f1.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.gstatic.com/cv/js/sender/v1/cast_sender.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.gstatic.com",
-        "ip": "142.250.66.67",
-        "hostname": "hkg12s27-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.twhealth.org.tw/uploadfile/fileadv_link01/1_1768272265.jpg",
-      "type": "image",
-      "ipinfo": {
-        "domain": "www.twhealth.org.tw",
-        "ip": "172.67.144.219",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": 136.045,
-        "detection_method": "rtt"
-      }
-    },
-    {
-      "originalUrl": "https://www.google.com/js/th/VQRLE1nj_w3YOUr9bDT-SZkrXPV28X05Wh6hb2M3ukQ.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.77.4",
-        "hostname": "nctsaa-ab-in-f4.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",

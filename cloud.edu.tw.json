@@ -2,11 +2,12 @@
   "url": "https://cloud.edu.tw",
   "canonicalURL": "https://cloud.edu.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T02:33:54.050Z",
+  "timestamp": "2026-07-20T13:58:58.439Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,7 +25,7 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 172,
+  "requestCount": 171,
   "uniqueDomains": 4,
   "test_results": {
     "domestic": {
@@ -54,8 +55,24 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.808,
-        "detection_method": "rtt"
+        "rtt": 7.724,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "35.241.63.34",
+          "prefix": "35.241.63.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 65,
+          "location_count": 65
+        }
       }
     },
     {
@@ -75,12 +92,12 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://storage.googleapis.com/cloudedu-web-prod/resource/00/00/00/10/%E5%9B%A0%E6%9D%90%E7%B6%B2_%E6%9F%A5%E8%A9%A2%E9%A0%81%E7%B8%AE%E5%9C%96411x233px.png",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-1J3T86D0L7&cid=277439218.1784555935&gtm=45je67f0v892777186za200zd892777186&rcb=13&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938465~115938469~118897920~118897930~119527019~119724320~119773331&z=321025965",
       "type": "image",
       "ipinfo": {
-        "domain": "storage.googleapis.com",
-        "ip": "142.250.198.91",
-        "hostname": "lctsaa-ab-in-f27.1e100.net",
+        "domain": "www.google.com.tw",
+        "ip": "142.250.198.67",
+        "hostname": "lctsaa-ab-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -91,16 +108,16 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-1J3T86D0L7&cid=1138505376.1768358032&gtm=45je61c1v892777186za200zd892777186&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115938465~115938468~116682875~116744867~117041588&z=1236746118",
+      "originalUrl": "https://storage.googleapis.com/cloudedu-web-prod/resource/00/00/00/10/%E5%9B%A0%E6%9D%90%E7%B6%B2_%E6%9F%A5%E8%A9%A2%E9%A0%81%E7%B8%AE%E5%9C%96411x233px.png",
       "type": "image",
       "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "domain": "storage.googleapis.com",
+        "ip": "108.177.125.207",
+        "hostname": "tp-in-f207.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "24.1469,120.6839",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },

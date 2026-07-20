@@ -2,7 +2,7 @@
   "url": "https://www.ncc.gov.tw/",
   "canonicalURL": "https://www.ncc.gov.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T12:31:52.544Z",
+  "timestamp": "2026-07-20T14:29:14.536Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -14,8 +14,8 @@
     "hasIPinfoToken": true
   },
   "testingEnvironment": {
-    "ip": "220.136.159.93",
-    "hostname": "220-136-159-93.dynamic-ip.hinet.net",
+    "ip": "220.132.212.194",
+    "hostname": "220-132-212-194.hinet-ip.hinet.net",
     "city": "Banqiao",
     "region": "Taipei",
     "country": "TW",
@@ -25,7 +25,7 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 8,
+  "requestCount": 11,
   "uniqueDomains": 2,
   "test_results": {
     "domestic": {
@@ -54,7 +54,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bdd27186b3d6a99-TPE",
+        "cf-ray": "a1e2a824ffdc6b63-TPE",
         "detection_method": "header"
       }
     },
@@ -74,8 +74,30 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 3.622,
-        "detection_method": "rtt"
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "172.65.90.66",
+          "prefix": "172.65.90.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 77,
+          "location_count": 77,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     }
   ]

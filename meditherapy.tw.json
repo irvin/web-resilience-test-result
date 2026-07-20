@@ -2,11 +2,12 @@
   "url": "https://meditherapy.tw",
   "canonicalURL": "https://www.meditherapy.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T04:10:32.660Z",
+  "timestamp": "2026-07-20T15:44:51.229Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 121,
-  "uniqueDomains": 16,
+  "requestCount": 125,
+  "uniqueDomains": 18,
   "test_results": {
     "domestic": {
-      "cloud": 12,
-      "direct": 1
+      "cloud": 14,
+      "direct": 2
     },
     "foreign": {
-      "cloud": 3,
+      "cloud": 2,
       "direct": 0
     }
   },
@@ -42,40 +43,35 @@
       "type": "document",
       "ipinfo": {
         "domain": "meditherapy.tw",
-        "ip": "3.33.212.249",
-        "hostname": "afe4b3ad1d4b71479.awsglobalaccelerator.com",
-        "city": "Seattle",
-        "region": "Washington",
-        "country": "US",
-        "loc": "47.6339,-122.3476",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "rtt": 5.54,
-        "detection_method": "rtt"
-      }
-    },
-    {
-      "originalUrl": "https://cdn.shoplineapp.com/s/javascripts/currencies.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "cdn.shoplineapp.com",
-        "ip": "3.169.137.126",
-        "hostname": "server-3-169-137-126.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "3.169.55.112",
+        "hostname": "server-3-169-55-112.tpe54.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://browser.sentry-cdn.com/6.8.0/bundle.tracing.min.js",
+      "originalUrl": "https://cdn.shoplineapp.com/s/javascripts/currencies.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "cdn.shoplineapp.com",
+        "ip": "54.192.248.76",
+        "hostname": "server-54-192-248-76.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://browser.sentry-cdn.com/7.120.4/bundle.tracing.replay.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "browser.sentry-cdn.com",
@@ -89,8 +85,44 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 34.038,
-        "detection_method": "rtt"
+        "rtt": 36.066,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "151.101.130.217",
+          "prefix": "151.101.130.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 56,
+          "location_count": 56
+        }
+      }
+    },
+    {
+      "originalUrl": "https://static2.zotabox.com/widgets.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "static2.zotabox.com",
+        "ip": "172.67.75.122",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e316a609358416-TPE",
+        "detection_method": "header"
       }
     },
     {
@@ -98,12 +130,12 @@
       "type": "script",
       "ipinfo": {
         "domain": "r2cdn.myshopline.com",
-        "ip": "3.169.121.48",
-        "hostname": "server-3-169-121-48.tpe53.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "54.192.248.67",
+        "hostname": "server-54-192-248-67.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -114,8 +146,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.192.136",
+        "hostname": "bom12s18-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -130,8 +162,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "sc-chat-widget.shoplineapp.com",
-        "ip": "54.251.115.27",
-        "hostname": "ec2-54-251-115-27.ap-southeast-1.compute.amazonaws.com",
+        "ip": "47.128.0.68",
+        "hostname": "ec2-47-128-0-68.ap-southeast-1.compute.amazonaws.com",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",
@@ -139,7 +171,25 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": null,
+        "detection_method": "rtt",
+        "rtt_error": "timeout",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "47.128.0.68",
+          "prefix": "47.128.0.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
@@ -162,38 +212,131 @@
       "type": "image",
       "ipinfo": {
         "domain": "shoplineimg.com",
-        "ip": "3.169.36.82",
-        "hostname": "server-3-169-36-82.tpe53.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "54.192.248.17",
+        "hostname": "server-54-192-248-17.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://static.shoplineapp.com/web/assets/payment/visa.svg",
-      "type": "image",
-      "ipinfo": {
-        "domain": "static.shoplineapp.com",
-        "ip": "3.169.55.79",
-        "hostname": "server-3-169-55-79.tpe54.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-CL23XH7C90&cid=1404311022.1768363821&gtm=45je61c1v882142937za200zd882142937&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115938466~115938469~116682876~117041587~117091819&z=1088915966",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-CL23XH7C90&cid=614658516.1784562279&gtm=45je67f0v882142937za200zd882142937&rcb=4&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115616986~115938465~115938468~118897920~118897930&z=1789403560",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
+        "ip": "142.250.77.195",
+        "hostname": "del11s08-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com/rmkt/collect/10879199845/?random=1784562279242&cv=11&fst=1784562279242&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67f0h1v889277072za200zb882142937zd882142937xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~118131809~118897920~118897930~118981135~119996999&u_w=1280&u_h=720&url=https%3A%2F%2Fmeditherapy.tw%2F&rcb=3&frm=0&tiba=MEDITHERAPY%20%E5%8F%B0%E7%81%A3%E5%AE%98%E6%96%B9%E7%B6%B2%E7%AB%99&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1858602202.1784562279&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.150.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 7.085,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.150.119",
+          "prefix": "142.251.150.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
+    },
+    {
+      "originalUrl": "https://static.zbcdn.net/framework.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "static.zbcdn.net",
+        "ip": "104.26.12.36",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e316ab79e7076c-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://o769852.ingest.sentry.io/api/5797752/envelope/?sentry_key=aec31088a6fb4f6eafac028a91e1cf21&sentry_version=7&sentry_client=sentry.javascript.browser%2F7.120.4",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "o769852.ingest.sentry.io",
+        "ip": "34.160.81.0",
+        "hostname": "0.81.160.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.137,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.160.81.0",
+          "prefix": "34.160.81.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 65,
+          "location_count": 65
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.recaptcha.net/recaptcha/api.js?onload=onRecaptchaLoaded&render=explicit",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.recaptcha.net",
         "ip": "142.250.198.67",
         "hostname": "lctsaa-ab-in-f3.1e100.net",
         "city": "Banqiao",
@@ -206,64 +349,28 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&tid=AW-10879199845&en=page_view&dl=https%3A%2F%2Fmeditherapy.tw%2F&scrsrc=www.googletagmanager.com&rnd=942730419.1768363821&dt=MEDITHERAPY%20%E5%8F%B0%E7%81%A3%E5%AE%98%E6%96%B9%E7%B6%B2%E7%AB%99&auid=1953878509.1768363821&navt=n&npa=0&gtm=45be61c1v889277072za200zb882142937zd882142937xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=102015666~103116026~103200004~104527907~104528501~104684208~104684211~105391252~115938466~115938468~116682876~116910503~117041587&tft=1768363821037&tfd=920&apve=1&apvf=f",
-      "type": "fetch",
+      "originalUrl": "https://www.facebook.com/tr/?id=673230083886233&ev=PageView&dl=https%3A%2F%2Fmeditherapy.tw&rl=&if=false&ts=1784562280366&iw=false&sw=1280&sh=720&v=2.9.357&r=stable&a=plShopline&ec=0&o=4124&aems=0%3B0&fbp=fb.1.1784562280365.59860754798893076&pm=1&hrl=70e0c5&ler=empty&cdl=API_unavailable&plt=1689.199999999255&ups[pv]=%7B%7D&ups[rpv]=%7B%7D&it=1784562279793&coo=false&cs_cc=1&cas=27933923039630276%2C26875742255438865%2C37098469963131100%2C27826349493626579%2C27399634663037304%2C28288234284111276%2C27567615579515205%2C37373133052333529%2C27437038345945154%2C27498254553174149%2C28029661989991669%2C36776339398676807%2C27185582274428593%2C10037469276312272%2C24189071600698833%2C9391996987544420%2C29189694764007492%2C9686977241346219%2C9091649337600080%2C9742757982418754%2C7703707462998732%2C7537824962952740%2C7866192703412796%2C7853619508031531%2C7581713841923214%2C8151662658199989%2C7935019043279250%2C7336873249754535%2C7045704892197511%2C7446000025453867%2C25441514608797506%2C7516975055017626%2C7550544431730433%2C6230263247098357%2C25227601336884199%2C7610276152344688%2C25812685671655928%2C7626676264125877%2C7554942091260355%2C7462156317207091%2C7399749490115712%2C7370498936367949%2C7750947451630815%2C7118193168214132%2C9575137089228336%2C6329376013775074%2C8920319391342849%2C8297644423609727%2C5782670285084880%2C5379859048776039%2C5361171707300822%2C7759216000820300%2C8119149134792685%2C5490087341041702%2C5382823411785072%2C5340191116076402%2C6011345458892396%2C7522650691140362%2C4670356519731468&dlc=1&expv2[0]=pl0&expv2[1]=el2&expv2[2]=bc1&expv2[3]=ra0&expv2[4]=rp0&expv2[5]=ct2&expv2[6]=hf0&rqm=GET",
+      "type": "image",
       "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.198.68",
-        "hostname": "lctsaa-ab-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://static2.zotabox.com/widgets.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "static2.zotabox.com",
-        "ip": "172.67.75.122",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "cf-ray": "9bda487bc924b856-TPE",
-        "detection_method": "header"
-      }
-    },
-    {
-      "originalUrl": "https://www.recaptcha.net/recaptcha/api.js?onload=onRecaptchaLoaded&render=explicit",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.recaptcha.net",
-        "ip": "142.250.204.35",
-        "hostname": "hkg07s38-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.gstatic.com/recaptcha/releases/9TiwnJFHeuIw_s0wSd3fiKfN/recaptcha__en.js",
+      "originalUrl": "https://www.gstatic.com/recaptcha/releases/A7KpaEASfhDcK0nXxgQEyyYv/recaptcha__zh_tw.js",
       "type": "script",
       "ipinfo": {
         "domain": "www.gstatic.com",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "ip": "142.250.198.67",
+        "hostname": "lctsaa-ab-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -272,25 +379,6 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://stats-v2.zotabox.com/log",
-      "type": "xhr",
-      "ipinfo": {
-        "domain": "stats-v2.zotabox.com",
-        "ip": "104.26.13.201",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": 55.166,
-        "detection_method": "rtt"
-      }
     },
     {
       "originalUrl": "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap",
@@ -304,6 +392,22 @@
         "country": "TW",
         "loc": "25.0143,121.4672",
         "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://img.shoplineapp.com/media/image_clips/68ddd7567f100600101d374b/original.png?1759369045=&owner_id=61c3ce8b9cb22c0040a74363",
+      "type": "other",
+      "ipinfo": {
+        "domain": "img.shoplineapp.com",
+        "ip": "54.192.248.7",
+        "hostname": "server-54-192-248-7.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"

@@ -1,12 +1,13 @@
 {
   "url": "https://carrefour.com.tw",
-  "canonicalURL": "https://www.carrefour.com.tw/",
+  "canonicalURL": "https://www.uni-prosperity.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:32:25.222Z",
+  "timestamp": "2026-07-20T13:30:08.687Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,11 +25,11 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 163,
-  "uniqueDomains": 11,
+  "requestCount": 194,
+  "uniqueDomains": 12,
   "test_results": {
     "domestic": {
-      "cloud": 8,
+      "cloud": 10,
       "direct": 2
     },
     "foreign": {
@@ -54,51 +55,31 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.4,
-        "detection_method": "rtt"
+        "rtt": 5.986,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "35.227.228.89",
+          "prefix": "35.227.228.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 63,
+          "location_count": 63
+        }
       }
     },
     {
-      "originalUrl": "https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400|Roboto:300,400&display=swap",
-      "type": "stylesheet",
+      "originalUrl": "https://www.uni-prosperity.com.tw/",
+      "type": "document",
       "ipinfo": {
-        "domain": "fonts.googleapis.com",
-        "ip": "142.250.198.74",
-        "hostname": "lctsaa-ab-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css",
-      "type": "stylesheet",
-      "ipinfo": {
-        "domain": "cdnjs.cloudflare.com",
-        "ip": "104.17.24.14",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "cf-ray": "9bd961106c337db2-TPE",
-        "detection_method": "header"
-      }
-    },
-    {
-      "originalUrl": "https://www.carrefour.com.tw/wp-includes/css/dist/block-library/style.css?ver=6.6.2",
-      "type": "stylesheet",
-      "ipinfo": {
-        "domain": "www.carrefour.com.tw",
+        "domain": "www.uni-prosperity.com.tw",
         "ip": "35.227.228.89",
         "hostname": "89.228.227.35.bc.googleusercontent.com",
         "city": "Kansas City",
@@ -111,8 +92,60 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.175,
-        "detection_method": "rtt"
+        "rtt": 5.837,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "35.227.228.89",
+          "prefix": "35.227.228.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 63,
+          "location_count": 63
+        }
+      }
+    },
+    {
+      "originalUrl": "https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400|Roboto:300,400&display=swap",
+      "type": "stylesheet",
+      "ipinfo": {
+        "domain": "fonts.googleapis.com",
+        "ip": "108.177.97.95",
+        "hostname": "tm-in-f95.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.1469,120.6839",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css",
+      "type": "stylesheet",
+      "ipinfo": {
+        "domain": "cdnjs.cloudflare.com",
+        "ip": "104.17.25.14",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e25173bdb36b6c-TPE",
+        "detection_method": "header"
       }
     },
     {
@@ -132,14 +165,7 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "blob:https://carrefour.com.tw/766539d2-12d2-4ee5-8195-b08938d25105",
-      "type": "other",
-      "ipinfo": {
-        "domain": ""
-      }
-    },
-    {
-      "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-K2PW7WV",
+      "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-59BXW4R",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
@@ -155,10 +181,10 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://carrefourtwbrand.api.useinsider.com/ins.js?id=10003268",
+      "originalUrl": "https://uniprosperitybrand.api.useinsider.com/ins.js?id=10014622",
       "type": "script",
       "ipinfo": {
-        "domain": "carrefourtwbrand.api.useinsider.com",
+        "domain": "uniprosperitybrand.api.useinsider.com",
         "ip": "162.159.134.61",
         "city": "San Francisco",
         "region": "California",
@@ -170,17 +196,17 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd961142b43d4e1-TPE",
+        "cf-ray": "a1e2517c2e5c841c-TPE",
         "detection_method": "header"
       }
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-RRRCDPRJ3K&cid=1472280828.1768354343&gtm=45je61c1v9122664015z89122654609za20gzb9122654609zd9122654609&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115938465~115938469~117041587&z=1841397224",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-35QLWDRGVW&cid=32941479.1784554203&gtm=45je67f0v9104031279z878486634za20gzb78486634zd78486634&rcb=19&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938465~115938468~118395335~118897920~118897930~119793972~119996999&z=152119268",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.198.67",
-        "hostname": "lctsaa-ab-in-f3.1e100.net",
+        "ip": "142.250.196.195",
+        "hostname": "nctsaa-ac-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -191,7 +217,83 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.facebook.com/tr/?eid=1768354343029&id=404012299753340&ev=PageView&dl=https%3A%2F%2Fcarrefour.com.tw%2F&rl=&if=false&ts=1768354343025&sw=1280&sh=720&v=2.9.44&r=stable&fbp=fb.1.1768354343023.62460333&it=1768354343023&rqm=GET",
+      "originalUrl": "https://www.google.com/rmkt/collect/645004364/?random=1784554203282&cv=11&fst=1784554203282&fmt=8&bg=ffffff&guid=ON&async=1&gtm=45be67f0v9178008772z878486634za20gzb78486634zd78486634xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118131808~118395335~118897920~118897930~119527019~119709550&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.uni-prosperity.com.tw%2F&rcb=16&frm=0&tiba=%E6%AD%A1%E8%BF%8E%E5%85%89%E8%87%A8%20%E8%90%AC%E5%AE%B6%E7%A6%8F%20%7C%20Welcome%20to%20Uni-PROSPERiTY&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1569694079.1784554203&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&_tu=CA&ept=68&gcp=5",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.153.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.081,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.153.119",
+          "prefix": "142.251.153.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
+    },
+    {
+      "originalUrl": "https://segment.api.useinsider.com/v4/segments/1784554203561526b620d35.be400134?partnerid=10014622&fields=9fc185b8e7f5745483e098784a2ea80a,0343da044d739eb813783b47eabaa06b,b36f73e9ef3993e018774ea7018e9787&",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "segment.api.useinsider.com",
+        "ip": "162.159.134.61",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e25181ecdc4a96-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://locationv2.api.useinsider.com/?v=2&pId=10014622&",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "locationv2.api.useinsider.com",
+        "ip": "162.159.134.61",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e2517d9a19fac4-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://www.facebook.com/tr/?eid=1784554203566&id=404012299753340&ev=PageView&dl=https%3A%2F%2Fwww.uni-prosperity.com.tw%2F&rl=&if=false&ts=1784554203563&sw=1282&sh=800&v=2.9.44&r=stable&fbp=fb.2.1784554203560.972723337&it=1784554203560&rqm=GET",
       "type": "image",
       "ipinfo": {
         "domain": "www.facebook.com",
@@ -205,22 +307,6 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
-    },
-    {
-      "originalUrl": "https://www.google.com/pagead/1p-user-list/645004364/?random=1768354342888&cv=11&fst=1768352400000&bg=ffffff&guid=ON&async=1&gtm=45be61c1v9178008772z89122654609za20gzb9122654609zd9122654609xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115616985~115938465~115938468~117041588&u_w=1280&u_h=720&url=https%3A%2F%2Fcarrefour.com.tw%2F&frm=0&tiba=%E6%AD%A1%E8%BF%8E%E5%9B%9E%E5%AE%B6%20%E5%AE%B6%E6%A8%82%E7%A6%8F%20%7C%20Carrefour%20Taiwan&hn=www.googleadservices.com&npa=0&pscdl=noapi&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&_tu=CA&gap.plf=5&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEA56J1eXPk62gcC48LMCauFdO92g26omYLOQiTyp62fpv5gONy7_gu4WIm5eG-wtrv_35HRch1UoomkpivP8DkoeLWWBkBxyIR50Ry_DsHpRpwwtqCv8bDC0xbhwPz5Ai998FnjeuGULLnwY7tpgqx9sFDDZyewPZv-Ug7j15RibYdctSmxRLXlyEb&random=2430474117&rmt_tld=0&ipr=y",
-      "type": "image",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.196.196",
-        "hostname": "nctsaa-ac-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
     }
   ]
 }

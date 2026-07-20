@@ -2,11 +2,12 @@
   "url": "https://bmw.com.tw",
   "canonicalURL": "https://www.bmw.com.tw/zh/index.html",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T02:16:20.864Z",
+  "timestamp": "2026-07-20T14:46:35.644Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 96,
-  "uniqueDomains": 12,
+  "requestCount": 115,
+  "uniqueDomains": 16,
   "test_results": {
     "domestic": {
-      "cloud": 5,
-      "direct": 4
+      "cloud": 7,
+      "direct": 7
     },
     "foreign": {
-      "cloud": 2,
+      "cloud": 1,
       "direct": 1
     }
   },
@@ -42,7 +43,8 @@
       "type": "document",
       "ipinfo": {
         "domain": "bmw.com.tw",
-        "ip": "160.46.226.165",
+        "ip": "160.46.244.54",
+        "hostname": "redirect.bmwgroup.com",
         "city": "Munich",
         "region": "Bavaria",
         "country": "DE",
@@ -53,11 +55,11 @@
       "category": "foreign/direct"
     },
     {
-      "originalUrl": "https://www.bmw.com.tw/zh/index.html",
+      "originalUrl": "https://www.bmw.com.tw/",
       "type": "document",
       "ipinfo": {
         "domain": "www.bmw.com.tw",
-        "ip": "210.71.227.200",
+        "ip": "210.71.227.208",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -72,7 +74,39 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.bmw.com",
-        "ip": "210.71.227.218",
+        "ip": "203.74.95.169",
+        "hostname": "203-74-95-169.hinet-ip.hinet.net",
+        "city": "Taichung",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.1469,120.6839",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://tron.bmwgroup.com/generic-all-aem/archive/v2/TRONgenericAllAEMTracking.min.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "tron.bmwgroup.com",
+        "ip": "203.74.95.169",
+        "hostname": "203-74-95-169.hinet-ip.hinet.net",
+        "city": "Taichung",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.1469,120.6839",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://bmw.scene7.com/is/image/BMW/g65_bev_home-teaser_dsk_fb?qlt=80&wid=1024&fmt=webp",
+      "type": "image",
+      "ipinfo": {
+        "domain": "bmw.scene7.com",
+        "ip": "210.71.227.147",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -99,19 +133,40 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://bmw.scene7.com/is/image/BMW/1125_G70_M_Edition_2560x1102:16to7?fmt=webp&wid=1504&hei=658",
-      "type": "image",
+      "originalUrl": "https://bmw.app.baqend.com/v1/speedkit/install.js?d=production-tw",
+      "type": "script",
       "ipinfo": {
-        "domain": "bmw.scene7.com",
-        "ip": "203.69.81.51",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS3462 Data Communication Business Group",
-        "timezone": "Asia/Taipei"
+        "domain": "bmw.app.baqend.com",
+        "ip": "151.101.194.8",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/direct"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "x-served-by": "cache-sin-wsap440039-SIN, cache-sin-wsat1880021-SIN",
+        "rtt": 35.913,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "151.101.194.8",
+          "prefix": "151.101.194.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 55,
+          "location_count": 55
+        }
+      }
     },
     {
       "originalUrl": "https://d.line-scdn.net/n/line_tag/public/release/v1/lt.js",
@@ -128,40 +183,6 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://bmw.app.baqend.com/v1/speedkit/install.js?d=production-tw",
-      "type": "script",
-      "ipinfo": {
-        "domain": "bmw.app.baqend.com",
-        "ip": "151.101.194.8",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": 35.719,
-        "detection_method": "rtt"
-      }
-    },
-    {
-      "originalUrl": "https://bmwag.d3.sc.omtrdc.net/b/ss/bmwgroup.group.global.epaas/1/JS-1.7.0-D7QN/s1768356968598",
-      "type": "ping",
-      "ipinfo": {
-        "domain": "bmwag.d3.sc.omtrdc.net",
-        "ip": "63.140.48.110",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
@@ -184,8 +205,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -196,12 +217,63 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&tid=AW-17095657498&en=page_view&dl=https%3A%2F%2Fwww.bmw.com.tw%2Fzh%2Findex.html&scrsrc=www.googletagmanager.com&rnd=1620390675.1768356969&dt=BMW%E5%8F%B0%E7%81%A3%E7%B8%BD%E4%BB%A3%E7%90%86%E6%B1%8E%E5%BE%B7&auid=1792959897.1768356969&navt=n&npa=0&gtm=45be61c1v9228345644za200zd9228345644xec&gcs=G111&gcd=13r3r3r3r5l1&dma=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391252~115938465~115938468~117041588&tft=1768356968725&tfd=2583&apve=1&apvf=f",
+      "originalUrl": "https://stream.bmw.com.cn/hls-vod/BMW/_media_/db2/db2b5afa-ffef-4847-9147-c107c9e4ace1.mp4.m3u8",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "stream.bmw.com.cn",
+        "ip": "210.71.227.152",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://www.google.com/rmkt/collect/17095657498/?random=1784558790590&cv=11&fst=1784558790590&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67f0v9228345644za200zd9228345644xec&gcd=13r3r3r3r5l1&dma=0&tag_exp=115938465~115938469~118897920~118897930~119709549&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.bmw.com.tw%2Fzh%2Findex.html&rcb=14&frm=0&tiba=BMW%E5%8F%B0%E7%81%A3%E7%B8%BD%E4%BB%A3%E7%90%86%E6%B1%8E%E5%BE%B7&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=151944887.1784558791&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.77.4",
-        "hostname": "nctsaa-ab-in-f4.1e100.net",
+        "ip": "142.251.154.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.628,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.154.119",
+          "prefix": "142.251.154.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 60,
+          "location_count": 60
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/17095657498/?random=1784558790590&cv=11&fst=1784556000000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67f0v9228345644za200zd9228345644xec&gcd=13r3r3r3r5l1&dma=0&tag_exp=115938465~115938469~118897920~118897930~119709549&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.bmw.com.tw%2Fzh%2Findex.html&rcb=14&frm=0&tiba=BMW%E5%8F%B0%E7%81%A3%E7%B8%BD%E4%BB%A3%E7%90%86%E6%B1%8E%E5%BE%B7&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=151944887.1784558791&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS7AEAEQoqgW5Pu8UFT1CHYF8jG0xsP0rDysAQKeHIAoOinsRcDofVLQPCmhdV5MalshPyEbGm3v_b5xtydpsqOvrqy5PNOTjxxc73lmx-cLqTK1_mg3akqiJT6AZ9-vc4ot3bAnurt26yA3GoFbm6D_uHikqTUeh5OwFODXBpXwy9lwrPEfjUweHCAVoUfRRpoCq0pz4pWa1RkrOeQlhLgqpYWpBIE70rmmvRAQaZjLL4KnWlaevwEwF1W92259hgqa-KgZ8Ck5MnbFRYL7MkQ8-8mUsnwwW575nSImM0cskmmooEEETbrCJxTI9q3g&random=2440277710&rmt_tld=1&ipr=y",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.77.195",
+        "hostname": "del11s08-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -212,20 +284,92 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/17095657498/?random=1768356968722&cv=11&fst=1768356000000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be61c1v9228345644za200zd9228345644xec&gcd=13r3r3r3r5l1&dma=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391252~115938465~115938468~117041588&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.bmw.com.tw%2Fzh%2Findex.html&frm=0&tiba=BMW%E5%8F%B0%E7%81%A3%E7%B8%BD%E4%BB%A3%E7%90%86%E6%B1%8E%E5%BE%B7&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1792959897.1768356969&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEA56J1eaBskAS2nJoN_QaKbcppiXNCNdWbPU-pyGuwQD0uXS88zqVqXkm2YQHVZUXG8Z4rdCX6Y4kHDzdGSDI2E25K9wNubO1i4G_XdBqXXZwlNFOFaEcEqkLiaNma9cYsJd6tEFixyi_6kFKPQWIsHFWEwwQSKXtAeJqf3QUzNXiblmyuX8dmEV64&random=4059371939&rmt_tld=1&ipr=y",
-      "type": "image",
+      "originalUrl": "https://mpc2-prod-26-is5qnl632q-uc.a.run.app/events?cee=no",
+      "type": "fetch",
       "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "domain": "mpc2-prod-26-is5qnl632q-uc.a.run.app",
+        "ip": "34.143.73.2",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.022,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.143.73.2",
+          "prefix": "34.143.73.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.facebook.com/tr/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://mpc-prod-23-s6uit34pua-ue.a.run.app/events?cee=no",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "mpc-prod-23-s6uit34pua-ue.a.run.app",
+        "ip": "34.143.79.2",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.781,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.143.79.2",
+          "prefix": "34.143.79.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
     }
   ]
 }

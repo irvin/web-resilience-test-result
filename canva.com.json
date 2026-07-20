@@ -2,11 +2,12 @@
   "url": "https://canva.com",
   "canonicalURL": "https://www.canva.com/zh_tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:05:21.380Z",
+  "timestamp": "2026-07-20T13:03:30.879Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 60,
-  "uniqueDomains": 11,
+  "requestCount": 73,
+  "uniqueDomains": 14,
   "test_results": {
     "domestic": {
-      "cloud": 8,
+      "cloud": 12,
       "direct": 2
     },
     "foreign": {
-      "cloud": 1,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -42,12 +43,12 @@
       "type": "document",
       "ipinfo": {
         "domain": "canva.com",
-        "ip": "3.169.36.106",
-        "hostname": "server-3-169-36-106.tpe53.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "3.169.137.19",
+        "hostname": "server-3-169-137-19.tpe54.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -58,7 +59,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.canva.com",
-        "ip": "104.16.103.112",
+        "ip": "104.16.102.112",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -69,12 +70,12 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd93965ea9d809e-TPE",
+        "cf-ray": "a1e22a7c790080a3-TPE",
         "detection_method": "header"
       }
     },
     {
-      "originalUrl": "https://static.canva.com/web/9903b2d331db2f94.ltr.css",
+      "originalUrl": "https://static.canva.com/web/764d2ffa0c0fdb31.ltr.css",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "static.canva.com",
@@ -89,12 +90,12 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd9396a3915841c-TPE",
+        "cf-ray": "a1e22a803ad09688-TPE",
         "detection_method": "header"
       }
     },
     {
-      "originalUrl": "https://o13855.ingest.sentry.io/api/5862012/envelope/?sentry_version=7&sentry_key=3e6b0deb414549c8901b5382885e478b&sentry_client=sentry.javascript.browser%2F8.55.0",
+      "originalUrl": "https://o13855.ingest.sentry.io/api/5862012/envelope/?sentry_version=7&sentry_key=3e6b0deb414549c8901b5382885e478b&sentry_client=sentry.javascript.browser%2F10.34.0",
       "type": "fetch",
       "ipinfo": {
         "domain": "o13855.ingest.sentry.io",
@@ -110,8 +111,24 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 5.221,
-        "detection_method": "rtt"
+        "rtt": 10.413,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.160.81.0",
+          "prefix": "34.160.81.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 65,
+          "location_count": 65
+        }
       }
     },
     {
@@ -119,8 +136,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "accounts.google.com",
-        "ip": "108.177.125.84",
-        "hostname": "tp-in-f84.1e100.net",
+        "ip": "108.177.97.84",
+        "hostname": "tm-in-f84.1e100.net",
         "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
@@ -131,11 +148,11 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://content-management-files.canva.com/77798897-ea9f-47e1-a51c-970b9908bb84/fonts.png",
+      "originalUrl": "https://content-management-files.canva.com/67d58c37-ef51-49d2-a73d-d9c16bbb2e9f/floating-elements-font.png",
       "type": "image",
       "ipinfo": {
         "domain": "content-management-files.canva.com",
-        "ip": "104.16.102.112",
+        "ip": "104.16.103.112",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -146,12 +163,12 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd9396d99b1809e-TPE",
+        "cf-ray": "a1e22a826f2e80a3-TPE",
         "detection_method": "header"
       }
     },
     {
-      "originalUrl": "https://chunk-composing.canva.com/chunk-batch/6c6fd1a53f5f87d1.vendor.js+1bb0afb9d68bc6f4.js+6aac13bf07f24007.js+8887ce0ecc0d505e.js+c9c98b954e52335c.js+7632d188945bdd20.js+dadcb0232a2a8a3a.js+c600eb370e172c0f.js+906725fee064354f.js+635fd5bd19b95f04.js+0b5ee22bd125d671.js+851398225a41f611.js+4e6481a898b63d94.js+e081d8a85ce81333.js+2b03fc8d14fa4934.js+1f476a53ffcd9973.js+80680b6d27419ce2.js+126090d73024d39c.js+560639ba82066732.js+2f4760b98f741b5a.js+3259975ba5adbdea.js+ecb860d088d0c899.js+e14765ce2cf6c81d.js+378da53604092e0a.js+dc8d5c85261681db.js+eb2a42ed8cf0920b.js+43d380f9735ac9d1.js+45c18365fee1f3d3.js+a79a1385239a9025.js+bb6a72850614e6bf.js+d33ced7e8f52ee8c.strings.js+bb4e57631340f476.js+1e4788f3c8819419.js+f7f5ca2c17a3f221.js+1e86ce22233fafed.strings.js+7914b7cef2e1d91e.js+bff1f89636833535.js+c84396537525fb37.js+af9fe3e74db66b3a.js+57b86b7814520d3a.js",
+      "originalUrl": "https://chunk-composing.canva.com/chunk-batch/f3a530e534612a52.js+8d34eab1f71cdfe4.js+c01bf8d7315db946.js+5d0689cb7126f2d5.vendor.js+4d66ebe078dc5b0a.js+3c7603a49f88049c.js+addcf46f9a8fea9a.js+4637b2118adc2e07.js+9c23d2a98a3d1623.js+2687091abc24fcbf.js+7392b06e791dff10.js+b7ff970d9e06c977.js+07a1e8f7bf385f7e.js+a500ee5b85cfeb69.js+930d05e288a5cc79.js+8bbda5fdafb15b92.js+2609b23239794ab2.js+0e161db9a6219f3c.js+1803adddc1943db5.js+3ce84d3128f84a86.js+9bb48b893fd0fbd9.js+fc05cb8ed4fc38ba.js+8ef5e96f4e2c9a74.js+3fc7b1ade271550e.js+b5caa14c8e0fe00b.js+bc3ce1db3d3a49ca.js+b6ed31be8bea2261.js+723c2d71c7a977d2.js+f3c5cf10ceb1d3b0.js+0d7bfcbbddae9d1c.js+b6ae3bc2757a25be.js+cfc0c7c958f84862.strings.js+75945c686b8e94a9.js+90ed400008a04bae.js+f61b7d480dbc52ba.js+12fa985e35b1e5a9.strings.js+ea7f9c7e61c1bea4.js+4a60c12ea16ff712.js+3d2c66246a4db869.js+0afd90ed79ed9fab.js",
       "type": "script",
       "ipinfo": {
         "domain": "chunk-composing.canva.com",
@@ -166,9 +183,25 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd9396e8aa7809e-TPE",
+        "cf-ray": "a1e22a82ffda80a3-TPE",
         "detection_method": "header"
       }
+    },
+    {
+      "originalUrl": "https://google.com/.well-known/web-identity",
+      "type": "fedcm",
+      "ipinfo": {
+        "domain": "google.com",
+        "ip": "142.250.204.46",
+        "hostname": "hkg07s38-in-f14.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js",
@@ -186,9 +219,25 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd93974587fae64-TPE",
+        "cf-ray": "a1e22a89ac07a337-TPE",
         "detection_method": "header"
       }
+    },
+    {
+      "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-TZPTKRR&gtg_health=1",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.googletagmanager.com",
+        "ip": "142.250.204.40",
+        "hostname": "hkg07s38-in-f8.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
@@ -207,26 +256,43 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
-      "type": "script",
+      "originalUrl": "https://www.facebook.com/tr/?id=844585682227065&ev=ViewContent&dl=https%3A%2F%2Fwww.canva.com%2Fzh_tw%2F&rl=&if=false&ts=1784552609177&iw=false&sw=1280&sh=720&v=2.9.357&r=stable&ec=0&o=4125&aems=0%3B0&fbp=fb.1.1784552609176.46232746355824322&ler=empty&cdl=API_unavailable&plt=1754.7999999999884&tz=480&it=1784552609000&coo=false&eid=1784552791750_178455329311955&tm=1&exp=s0&expv2[0]=pl1&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra0&expv2[4]=rp0&expv2[5]=im1&expv2[6]=hf0&rqm=GET",
+      "type": "image",
       "ipinfo": {
-        "domain": "snap.licdn.com",
-        "ip": "203.69.81.48",
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
         "loc": "25.0531,121.5264",
-        "org": "AS3462 Data Communication Business Group",
+        "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "snap.licdn.com",
+        "ip": "203.69.138.225",
+        "hostname": "203-69-138-225.hinet-ip.hinet.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS20940 Akamai International B.V.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://bat.bing.com/bat.js",
       "type": "script",
       "ipinfo": {
         "domain": "bat.bing.com",
-        "ip": "150.171.27.10",
+        "ip": "150.171.28.10",
         "city": "Redmond",
         "region": "Washington",
         "country": "US",
@@ -234,7 +300,34 @@
         "org": "AS8075 Microsoft Corporation",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "150.171.28.10",
+          "prefix": "150.171.28.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            8075
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 57,
+          "location_count": 57,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
+      }
     }
   ]
 }

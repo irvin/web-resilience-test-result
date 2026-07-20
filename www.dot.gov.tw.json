@@ -2,11 +2,12 @@
   "url": "https://www.dot.gov.tw/",
   "canonicalURL": "https://www.dot.gov.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T03:57:17.432Z",
+  "timestamp": "2026-07-20T14:46:10.963Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,7 +25,7 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 96,
+  "requestCount": 93,
   "uniqueDomains": 5,
   "test_results": {
     "domestic": {
@@ -42,12 +43,12 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.dot.gov.tw",
-        "ip": "203.66.32.134",
-        "hostname": "203-66-32-134.hinet-ip.hinet.net",
-        "city": "Taipei",
+        "ip": "203.66.34.44",
+        "hostname": "203-66-34-44.hinet-ip.hinet.net",
+        "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.1469,120.6839",
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
@@ -74,8 +75,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "cse.google.com",
-        "ip": "142.250.198.78",
-        "hostname": "lctsaa-ab-in-f14.1e100.net",
+        "ip": "142.250.204.46",
+        "hostname": "hkg07s38-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -86,28 +87,48 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/cse/static/element/f71e4ed980f4c082/cse_element__zh_tw.js?usqp=CAI%3D",
+      "originalUrl": "https://www.google.com/cse/static/element/d4d17fc91fc77275/cse_element__zh_tw.js?usqp=CAI%3D",
       "type": "script",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.204.36",
-        "hostname": "hkg07s38-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
+        "ip": "142.251.150.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
         "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.248,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.150.119",
+          "prefix": "142.251.150.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
     },
     {
       "originalUrl": "https://clients1.google.com/generate_204",
       "type": "image",
       "ipinfo": {
         "domain": "clients1.google.com",
-        "ip": "142.250.196.206",
-        "hostname": "nctsaa-ac-in-f14.1e100.net",
+        "ip": "142.250.192.142",
+        "hostname": "bom12s18-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",

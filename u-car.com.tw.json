@@ -2,11 +2,12 @@
   "url": "https://u-car.com.tw",
   "canonicalURL": "https://u-car.com.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T02:08:07.635Z",
+  "timestamp": "2026-07-20T13:29:38.284Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 312,
-  "uniqueDomains": 19,
+  "requestCount": 466,
+  "uniqueDomains": 21,
   "test_results": {
     "domestic": {
-      "cloud": 9,
-      "direct": 1
+      "cloud": 16,
+      "direct": 2
     },
     "foreign": {
-      "cloud": 8,
+      "cloud": 2,
       "direct": 0
     }
   },
@@ -50,10 +51,34 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 133.76,
-        "detection_method": "rtt"
+        "cf-ray": "a1e250b3294c2f2a-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "172.67.203.79",
+          "prefix": "172.67.203.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 60,
+          "location_count": 60,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -61,8 +86,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "ajax.googleapis.com",
-        "ip": "142.250.66.74",
-        "hostname": "hkg12s27-in-f10.1e100.net",
+        "ip": "142.250.204.42",
+        "hostname": "hkg07s38-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -77,7 +102,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "code.jquery.com",
-        "ip": "151.101.194.137",
+        "ip": "151.101.193.155",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -87,8 +112,25 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 36.703,
-        "detection_method": "rtt"
+        "x-served-by": "cache-lga21931-LGA, cache-sin-wsat1880091-SIN",
+        "rtt": 36.684,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "151.101.193.155",
+          "prefix": "151.101.193.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 54,
+          "location_count": 54
+        }
       }
     },
     {
@@ -96,12 +138,12 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.gstatic.com",
-        "ip": "142.250.66.67",
-        "hostname": "hkg12s27-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "64.233.188.94",
+        "hostname": "tk-in-f94.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "24.1469,120.6839",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
@@ -112,6 +154,49 @@
       "type": "script",
       "ipinfo": {
         "domain": "ad.u-car.com.tw",
+        "ip": "172.67.203.79",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "cf-ray": "a1e250b5df8e2f2a-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "172.67.203.79",
+          "prefix": "172.67.203.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 60,
+          "location_count": 60,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "originalUrl": "https://image.u-car.com.tw/carheadlinethumb1_71135.jpg",
+      "type": "image",
+      "ipinfo": {
+        "domain": "image.u-car.com.tw",
         "ip": "104.21.22.66",
         "city": "San Francisco",
         "region": "California",
@@ -120,26 +205,35 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 134.098,
-        "detection_method": "rtt"
+        "cf-ray": "a1e250b699572f2a-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "104.21.22.66",
+          "prefix": "104.21.22.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 58,
+          "location_count": 58,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
-    },
-    {
-      "originalUrl": "https://image.u-car.com.tw/carheadlinethumb1_69213.jpg",
-      "type": "image",
-      "ipinfo": {
-        "domain": "image.u-car.com.tw",
-        "ip": "23.101.27.182",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS8075 Microsoft Corporation",
-        "timezone": "Asia/Singapore"
-      },
-      "category": "foreign/cloud"
     },
     {
       "originalUrl": "https://appmatomo.azurewebsites.net/matomo.js",
@@ -154,7 +248,24 @@
         "org": "AS8075 Microsoft Corporation",
         "timezone": "Asia/Singapore"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 52.371,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "52.187.36.104",
+          "prefix": "52.187.36.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-P2QLPTQ",
@@ -177,8 +288,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagservices.com",
-        "ip": "142.250.196.194",
-        "hostname": "nctsaa-ac-in-f2.1e100.net",
+        "ip": "142.250.66.66",
+        "hostname": "hkg12s27-in-f2.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -208,10 +319,34 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 133.87,
-        "detection_method": "rtt"
+        "cf-ray": "a1e250b7ebf72f2a-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "172.67.203.79",
+          "prefix": "172.67.203.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 60,
+          "location_count": 60,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -219,35 +354,58 @@
       "type": "script",
       "ipinfo": {
         "domain": "sb.scorecardresearch.com",
-        "ip": "3.169.137.32",
-        "hostname": "server-3-169-137-32.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "3.169.137.16",
+        "hostname": "server-3-169-137-16.tpe54.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://r.adgeek.net/analytics.min.js",
-      "type": "script",
+      "originalUrl": "https://www.u-car.com.tw/images/medaibrilliancesystem_logo.gif",
+      "type": "image",
       "ipinfo": {
-        "domain": "r.adgeek.net",
-        "ip": "54.248.70.223",
-        "hostname": "ec2-54-248-70-223.ap-northeast-1.compute.amazonaws.com",
-        "city": "Tokyo",
-        "region": "Tokyo",
-        "country": "JP",
-        "loc": "35.6895,139.6917",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Tokyo"
+        "domain": "www.u-car.com.tw",
+        "ip": "172.67.203.79",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 36.126,
-        "detection_method": "rtt"
+        "cf-ray": "a1e250b87d282f2a-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "172.67.203.79",
+          "prefix": "172.67.203.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 60,
+          "location_count": 60,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -255,12 +413,12 @@
       "type": "script",
       "ipinfo": {
         "domain": "fundingchoicesmessages.google.com",
-        "ip": "142.250.196.206",
-        "hostname": "nctsaa-ac-in-f14.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "64.233.189.138",
+        "hostname": "tl-in-f138.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "24.1469,120.6839",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
@@ -271,13 +429,13 @@
       "type": "script",
       "ipinfo": {
         "domain": "s.yimg.com",
-        "ip": "180.222.106.11",
-        "hostname": "e1.ycpi.vip.tpb.yahoo.com",
+        "ip": "180.222.109.252",
+        "hostname": "e2-bmr.ycpi.vip.twd.yahoo.com",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
         "loc": "25.0143,121.4672",
-        "org": "AS38033 internet content provider",
+        "org": "AS24376 Yahoo China Datacenter",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
@@ -299,12 +457,48 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fu-car.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=388994654.1768356483&dt=U-CAR%20Find%20your%20car.&auid=257334609.1768356483&navt=n&npa=0&gtm=45be61c1za200xec&gcs=G1--&gcd=13l3l3l3l5l1&dma=0&tcfd=10000&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115938466~115938468~116682875~116744867~116988315~117041588&apve=1&apvf=f&apvc=1&tids=AW-798510288&tid=AW-798510288&tft=1768356483464&tfd=19657",
+      "originalUrl": "https://www.google.com/rmkt/collect/663068457/?random=1784554173705&cv=11&fst=1784554173705&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67f0za200zb813192821zd813192821xec&gcd=13l3l3l3l5l1&dma=0&tcfd=10000&tag_exp=115616986~115938466~115938469~118395333~118897920~118897930&u_w=1280&u_h=720&url=https%3A%2F%2Fu-car.com.tw%2F&rcb=13&frm=0&tiba=U-CAR%20Find%20your%20car.&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1680247265.1784554174&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.198.68",
-        "hostname": "lctsaa-ab-in-f4.1e100.net",
+        "ip": "142.251.153.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.423,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.153.119",
+          "prefix": "142.251.153.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
+    },
+    {
+      "originalUrl": "https://s0.2mdn.net/879366/dfa7banner_html_inpage_rendering_lib_200_268.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "s0.2mdn.net",
+        "ip": "142.250.77.6",
+        "hostname": "nctsaa-ab-in-f6.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -315,12 +509,12 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/663068457/?random=1768356483473&cv=11&fst=1768356000000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be61c1za200xec&gcd=13l3l3l3l5l1&dma=0&tcfd=10000&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115616985~115938466~115938468~116682875~116744867~116910503~117041588&u_w=1280&u_h=720&url=https%3A%2F%2Fu-car.com.tw%2F&frm=0&tiba=U-CAR%20Find%20your%20car.&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=257334609.1768356483&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=3&is_vtc=1&cid=CAQSmQEA56J1ec1NdEO8x2zSlUdqwz4ib0l7qj03c_V5C5U2MquP4HQmdze7xzmw3BBfzH67HoKZ_f2of_4p44aU2gZCryMM-Mbof-yPpRYkFrWJKYJqd_hp2rx9BwMmSPq99ubVDoCu0NfjdNPfHADtk_a4q8NDzSjj4nShfto6HRvLuCYE4D3H93DWZPR1_3Q_0xG4dpIJdUuZyHM&random=2075530601&rmt_tld=1&ipr=y",
+      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/663068457/?random=1784554173705&cv=11&fst=1784552400000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67f0za200zb813192821zd813192821xec&gcd=13l3l3l3l5l1&dma=0&tcfd=10000&tag_exp=115616986~115938466~115938469~118395333~118897920~118897930&u_w=1280&u_h=720&url=https%3A%2F%2Fu-car.com.tw%2F&rcb=13&frm=0&tiba=U-CAR%20Find%20your%20car.&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1680247265.1784554174&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS7AEAEQoqgT872nYg5jNYKaPiSVDMoh_DHmiA5caDUqJag2Ape2Rot6_CIzTRK_w65VL78mD-0mGqjpu-KBISUOsfJGIiLAbGPJnG8P7iGjdA85uQXyDFH-6HzfBK0SqkDXku3o7FbNAZOPRx5S1P1WqfV_cI9R02X3Z2dynpLGbmgjn5ronXZ2pgSG5ocFAMxUmn-qlHtJxNhw4j_zDzPiyHzn3yx8jqieqPoxKQf9lXOxOEMyeP7R64dp2WslNijg8G6s0rQsWoCYJrTKto9i5AvpGe_VmVJVzEaWsexHUZNYwfcutrmu0zVXyzCQ&random=1757548126&rmt_tld=1&ipr=y",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.198.67",
-        "hostname": "lctsaa-ab-in-f3.1e100.net",
+        "ip": "142.250.204.35",
+        "hostname": "hkg07s38-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -331,22 +525,56 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.u-car.com.tw/images/medaibrilliancesystem_logo.gif",
+      "originalUrl": "https://www.facebook.com/tr?id=166170211276554&pId=20348&cd%5Bpixel_id%5D=20348&ud%5Bexternal_id%5D=0acf8026843f11f1ab6206cf01e34cbc&ud%5Buid%5D=aac9e3f6-42db-4cae-bc26-df897731f694&ud%5Bga%5D=GA1.3.1097109362.1784554172&ev=PageView",
       "type": "image",
       "ipinfo": {
-        "domain": "www.u-car.com.tw",
-        "ip": "104.21.22.66",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://pioneer.ghtinc.com/cm?cn=dentsu&a=145&ckType=18",
+      "type": "image",
+      "ipinfo": {
+        "domain": "pioneer.ghtinc.com",
+        "ip": "34.120.102.202",
+        "hostname": "202.102.120.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 134.374,
-        "detection_method": "rtt"
+        "country": "tw",
+        "rtt": 9.889,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "34.120.102.202",
+          "prefix": "34.120.102.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
       }
     }
   ]

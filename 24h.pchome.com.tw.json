@@ -2,11 +2,12 @@
   "url": "https://24h.pchome.com.tw",
   "canonicalURL": "https://24h.pchome.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:15:45.961Z",
+  "timestamp": "2026-07-20T13:12:57.748Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,12 +25,12 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 203,
-  "uniqueDomains": 28,
+  "requestCount": 211,
+  "uniqueDomains": 30,
   "test_results": {
     "domestic": {
-      "cloud": 27,
-      "direct": 1
+      "cloud": 28,
+      "direct": 2
     },
     "foreign": {
       "cloud": 0,
@@ -54,12 +55,28 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 5.338,
-        "detection_method": "rtt"
+        "rtt": 9.151,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.149.253.14",
+          "prefix": "34.149.253.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
       }
     },
     {
-      "originalUrl": "https://assets.pchome.com.tw/production/ecweb/build/static/js/main.14674f90.js",
+      "originalUrl": "https://assets.pchome.com.tw/production/ecweb/build/static/js/main.e26f3869.js",
       "type": "script",
       "ipinfo": {
         "domain": "assets.pchome.com.tw",
@@ -75,8 +92,24 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 3.696,
-        "detection_method": "rtt"
+        "rtt": 8.302,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.111.40.219",
+          "prefix": "34.111.40.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 65,
+          "location_count": 65
+        }
       }
     },
     {
@@ -84,8 +117,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.192.136",
+        "hostname": "bom12s18-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -112,25 +145,25 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.999,
-        "detection_method": "rtt"
+        "rtt": 7.194,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "35.186.196.228",
+          "prefix": "35.186.196.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 64,
+          "location_count": 64
+        }
       }
-    },
-    {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2F24h.pchome.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=83549746.1768353341&dt=PChome%2024h%E8%B3%BC%E7%89%A9&auid=1783050774.1768353341&navt=n&npa=0&gtm=45He61c1v79197709za200zd79197709xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528500~104573694~104684208~104684211~105391252~115938465~115938468~116988315~117041587&tft=1768353340980&tfd=272&apve=1&apvf=f",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.198.68",
-        "hostname": "lctsaa-ab-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
@@ -164,7 +197,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd9489df958828f-TPE",
+        "cf-ray": "a1e2385f5f656b63-TPE",
         "detection_method": "header"
       }
     },
@@ -173,19 +206,19 @@
       "type": "script",
       "ipinfo": {
         "domain": "d.line-scdn.net",
-        "ip": "104.116.17.150",
-        "hostname": "a104-116-17-150.deploy.static.akamaitechnologies.com",
-        "city": "Yuanlin",
-        "region": "Taiwan",
+        "ip": "23.46.90.8",
+        "hostname": "a23-46-90-8.deploy.static.akamaitechnologies.com",
+        "city": "Kaohsiung",
+        "region": "Takao",
         "country": "TW",
-        "loc": "23.9567,120.5761",
+        "loc": "22.6163,120.3133",
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://engage.pchome.com.tw/?eventName=sessionStart&eventId=beed438a-b40b-48dc-8cbb-c52072886b45&timestamp=1768353340973&sessionId=db3165b3-4179-4c41-b0fb-bc3d53cd5320&deviceCategory=web.desktop&userAgent=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F133.0.6943.16%20Safari%2F537.36&deviceId=2996b64d-a391-442c-8cc5-dfa8e98f58dd&userId=null",
+      "originalUrl": "https://engage.pchome.com.tw/?eventName=sessionStart&eventId=d12db41a-1208-473e-b87d-27fa266c03b6&timestamp=1784553174421&sessionId=5fc0246b-3051-4666-b683-784690701d54&deviceCategory=web.desktop&userAgent=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F143.0.0.0%20Safari%2F537.36&deviceId=54895972-3e71-47a2-a633-8d8d9aad0e19&userId=null",
       "type": "image",
       "ipinfo": {
         "domain": "engage.pchome.com.tw",
@@ -201,9 +234,77 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 5.156,
-        "detection_method": "rtt"
+        "rtt": 9.319,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.149.125.61",
+          "prefix": "34.149.125.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 63,
+          "location_count": 63
+        }
       }
+    },
+    {
+      "originalUrl": "https://www.google.com/ccm/collect?rcb=18&frm=0&ae=g&auid=624844830.1784553174&dt=PChome%2024h%E8%B3%BC%E7%89%A9&en=page_view&dl=https%3A%2F%2F24h.pchome.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=1459245067.1784553174&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He67g0h2v79197709za200zd79197709xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930&apve=1&apvf=f&apvc=1&tft=1784553174438&tfd=302&fmt=8",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.151.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 7.657,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.151.119",
+          "prefix": "142.251.151.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-9CE1X6J1FG&cid=1552300413.1784553175&gtm=45je67g0h2v872609635z879197709za20gzb79197709zd79197709&rcb=14&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938466~115938468~118897920~118897930~119896803&z=645431950",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.196.195",
+        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://fs-f.ecimg.tw/img/h24/new/index/v1/images/logo/logo_pchome--24hWhiteMd-V2.svg",
@@ -222,92 +323,24 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.006,
-        "detection_method": "rtt"
-      }
-    },
-    {
-      "originalUrl": "https://ecapi-cdn.pchome.com.tw/fsapi/edm/bank/v1/data&_callback=jsonp_edmbank&1768353341?_callback=jsonp_edmbank",
-      "type": "script",
-      "ipinfo": {
-        "domain": "ecapi-cdn.pchome.com.tw",
-        "ip": "35.190.116.207",
-        "hostname": "207.116.190.35.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
-        "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "rtt": 5,
-        "detection_method": "rtt"
-      }
-    },
-    {
-      "originalUrl": "https://ecapi.pchome.com.tw/member/v2/member/islogin?_callback=jsonpcb_MemberIsLogin",
-      "type": "script",
-      "ipinfo": {
-        "domain": "ecapi.pchome.com.tw",
-        "ip": "34.120.86.142",
-        "hostname": "142.86.120.34.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
-        "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "rtt": 5.22,
-        "detection_method": "rtt"
-      }
-    },
-    {
-      "originalUrl": "https://ecssl-cart.pchome.com.tw/cart/index.php/prod/modify?data={%22TB%22:%2224H%22}&callback=jsonp_modshopcart&1768353341&_callback=jsonp_modshopcart",
-      "type": "script",
-      "ipinfo": {
-        "domain": "ecssl-cart.pchome.com.tw",
-        "ip": "34.96.94.183",
-        "hostname": "183.94.96.34.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
-        "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "rtt": 5.694,
-        "detection_method": "rtt"
-      }
-    },
-    {
-      "originalUrl": "https://libs.pcloud.tw/js/current/venraaspt.min.js?_=20467",
-      "type": "script",
-      "ipinfo": {
-        "domain": "libs.pcloud.tw",
-        "ip": "35.190.46.118",
-        "hostname": "118.46.190.35.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
-        "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "rtt": 4.953,
-        "detection_method": "rtt"
+        "rtt": 11.041,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.107.130.45",
+          "prefix": "34.107.130.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 65,
+          "location_count": 65
+        }
       }
     },
     {
@@ -327,8 +360,24 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.67,
-        "detection_method": "rtt"
+        "rtt": 9.338,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.107.130.45",
+          "prefix": "34.107.130.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 65,
+          "location_count": 65
+        }
       }
     },
     {
@@ -348,8 +397,24 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.22,
-        "detection_method": "rtt"
+        "rtt": 9.823,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.107.130.45",
+          "prefix": "34.107.130.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 65,
+          "location_count": 65
+        }
       }
     },
     {
@@ -369,8 +434,172 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 3.654,
-        "detection_method": "rtt"
+        "rtt": 6.506,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.107.130.45",
+          "prefix": "34.107.130.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 65,
+          "location_count": 65
+        }
+      }
+    },
+    {
+      "originalUrl": "https://ecapi-cdn.pchome.com.tw/fsapi/edm/bank/v1/data&_callback=jsonp_edmbank&1784553174?_callback=jsonp_edmbank",
+      "type": "script",
+      "ipinfo": {
+        "domain": "ecapi-cdn.pchome.com.tw",
+        "ip": "35.190.116.207",
+        "hostname": "207.116.190.35.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 10.455,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "35.190.116.207",
+          "prefix": "35.190.116.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 64,
+          "location_count": 64
+        }
+      }
+    },
+    {
+      "originalUrl": "https://ecapi.pchome.com.tw/fsapi/hotkeyword/v3/hotkeyword",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "ecapi.pchome.com.tw",
+        "ip": "34.120.86.142",
+        "hostname": "142.86.120.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 9.097,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.120.86.142",
+          "prefix": "34.120.86.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 64,
+          "location_count": 64
+        }
+      }
+    },
+    {
+      "originalUrl": "https://ecssl-cart.pchome.com.tw/cart/index.php/prod/modify?data={%22TB%22:%2224H%22}&callback=jsonp_modshopcart&1784553174&_callback=jsonp_modshopcart",
+      "type": "script",
+      "ipinfo": {
+        "domain": "ecssl-cart.pchome.com.tw",
+        "ip": "34.96.94.183",
+        "hostname": "183.94.96.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 8.04,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.96.94.183",
+          "prefix": "34.96.94.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
+    },
+    {
+      "originalUrl": "https://libs.pcloud.tw/js/current/venraaspt.min.js?_=20654",
+      "type": "script",
+      "ipinfo": {
+        "domain": "libs.pcloud.tw",
+        "ip": "35.190.46.118",
+        "hostname": "118.46.190.35.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 10.163,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "35.190.46.118",
+          "prefix": "35.190.46.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
       }
     },
     {
@@ -390,41 +619,115 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.239,
-        "detection_method": "rtt"
+        "rtt": 8.094,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.54.0.249",
+          "prefix": "34.54.0.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 65,
+          "location_count": 65
+        }
       }
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-9CE1X6J1FG&cid=580956876.1768353341&gtm=45je61c1v872609635z879197709za20gzb79197709zd79197709&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115616985~115938465~115938468~116910503~116988316~117041587&z=1704011383",
-      "type": "image",
+      "originalUrl": "https://eventapi.pchome.com.tw/g/collect?v=2&tid=G-9876543210&gtm=45je67g0h2z879197709za20gzb79197709zd79197709&_p=1784553174280&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=190615325&_fplc=0&are=1&cid=1552300413.1784553175&frm=0&pscdl=noapi&rcb=12&sr=1280x720&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uam=&uamb=0&uap=macOS&uapv=10_15_7&uaw=0&ul=zh-tw&ur=TW-TPQ&sst.etld=google.com.tw&sst.tft=1784553174280&sst.lpc=198273196&sst.navt=n&sst.ude=0&sst.sw_exp=1&_s=1&tag_exp=115938466~115938469~118897920~118897930~119381663~119896803&sid=1784553174&sct=1&seg=0&dl=https%3A%2F%2F24h.pchome.com.tw%2F&dt=PChome%2024h%E8%B3%BC%E7%89%A9%20%7C%20%E6%AF%8F%E5%A4%A9%E4%B8%80%E8%B5%B7%E8%AE%8A%E6%9B%B4%E5%A5%BD&_tu=BA&en=page_view&_fv=1&_ss=1&evnid=a95136d4-c15d-44ef-9f88-c04bdf2c2956_1784553174280.3&ep.event_name=PageView&tfd=511&richsstsse",
+      "type": "fetch",
       "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.198.67",
-        "hostname": "lctsaa-ab-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "domain": "eventapi.pchome.com.tw",
+        "ip": "74.125.204.121",
+        "hostname": "ti-in-f121.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "24.1469,120.6839",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://eventapi.pchome.com.tw/g/collect?v=2&tid=G-9876543210&gtm=45je61c1z879197709za20gzb79197709zd79197709&_p=1768353340809&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=580956876.1768353341&ecid=1017859126&ul=en-us&sr=1280x720&_fplc=0&ur=TW-TPQ&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&are=1&frm=0&pscdl=noapi&sst.etld=google.com.tw&sst.tft=1768353340809&sst.lpc=198273196&sst.navt=n&sst.ude=0&sst.sw_exp=1&_s=1&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115616986~115938465~115938469~117041588&sid=1768353341&sct=1&seg=0&dl=https%3A%2F%2F24h.pchome.com.tw%2F&dt=PChome%2024h%E8%B3%BC%E7%89%A9%20%7C%20%E6%AF%8F%E5%A4%A9%E4%B8%80%E8%B5%B7%E8%AE%8A%E6%9B%B4%E5%A5%BD&_tu=BA&en=page_view&_fv=1&_ss=1&ep.event_id=a95136d4-c15d-44ef-9f88-c04bdf2c2956_1768353340809.3&ep.event_name=PageView&tfd=394&richsstsse",
-      "type": "fetch",
+      "originalUrl": "https://cs-f.ecimg.tw/cms/creatives/headerlogo/3a3f4861-1b97-4763-a0fe-8c3d0cb69ab5.gif",
+      "type": "image",
       "ipinfo": {
-        "domain": "eventapi.pchome.com.tw",
-        "ip": "142.250.77.19",
-        "hostname": "nctsaa-ab-in-f19.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "domain": "cs-f.ecimg.tw",
+        "ip": "34.160.217.38",
+        "hostname": "38.217.160.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 9.14,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.160.217.38",
+          "prefix": "34.160.217.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
+    },
+    {
+      "originalUrl": "https://cs-a.ecimg.tw/cms/media-items/frame_a2/5458beaf-ae02-4519-b562-f6df4ef33c16.png",
+      "type": "image",
+      "ipinfo": {
+        "domain": "cs-a.ecimg.tw",
+        "ip": "34.160.217.38",
+        "hostname": "38.217.160.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 9.856,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.160.217.38",
+          "prefix": "34.160.217.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
     },
     {
       "originalUrl": "https://img.pchome.com.tw/fs/img/h24/new/index/v1/images/img/mobile_loading.svg",
@@ -443,8 +746,24 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 3.905,
-        "detection_method": "rtt"
+        "rtt": 6.68,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.54.44.133",
+          "prefix": "34.54.44.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 63,
+          "location_count": 63
+        }
       }
     },
     {
@@ -464,8 +783,24 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 3.778,
-        "detection_method": "rtt"
+        "rtt": 8.434,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.107.130.45",
+          "prefix": "34.107.130.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 65,
+          "location_count": 65
+        }
       }
     },
     {
@@ -485,12 +820,28 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 5.292,
-        "detection_method": "rtt"
+        "rtt": 6.352,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.107.130.45",
+          "prefix": "34.107.130.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 65,
+          "location_count": 65
+        }
       }
     },
     {
-      "originalUrl": "https://ecdmp.pchome.tw/api/v1/t?ts=1768353341&feedId=8864824f-7cd6-4280-9c7b-60d3ac09f862&random=312553496",
+      "originalUrl": "https://ecdmp.pchome.tw/api/v1/t?ts=1784553175&feedId=8864824f-7cd6-4280-9c7b-60d3ac09f862&random=620680812",
       "type": "xhr",
       "ipinfo": {
         "domain": "ecdmp.pchome.tw",
@@ -506,54 +857,28 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.644,
-        "detection_method": "rtt"
+        "rtt": 9.126,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.102.202.90",
+          "prefix": "34.102.202.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 64,
+          "location_count": 64
+        }
       }
     },
     {
-      "originalUrl": "https://cs-a.ecimg.tw/cms/media-items/frame_a2/9e0318e0-da31-4044-8a3a-dbd7384e7d37.png",
-      "type": "image",
-      "ipinfo": {
-        "domain": "cs-a.ecimg.tw",
-        "ip": "34.160.217.38",
-        "hostname": "38.217.160.34.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
-        "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "rtt": 5.632,
-        "detection_method": "rtt"
-      }
-    },
-    {
-      "originalUrl": "https://apid.pcloud.tw/venapis/vengu",
-      "type": "document",
-      "ipinfo": {
-        "domain": "apid.pcloud.tw",
-        "ip": "35.201.113.102",
-        "hostname": "102.113.201.35.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
-        "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "rtt": 5.014,
-        "detection_method": "rtt"
-      }
-    },
-    {
-      "originalUrl": "https://24h.m.pchome.com.tw/cdn/video/collection.htm/data&wt=json&_callback=jsonp_video&1768353341?_callback=jsonp_video",
+      "originalUrl": "https://24h.m.pchome.com.tw/cdn/video/collection.htm/data&wt=json&_callback=jsonp_video&1784553174?_callback=jsonp_video",
       "type": "script",
       "ipinfo": {
         "domain": "24h.m.pchome.com.tw",
@@ -569,8 +894,24 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.788,
-        "detection_method": "rtt"
+        "rtt": 10.657,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.149.253.14",
+          "prefix": "34.149.253.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
       }
     },
     {
@@ -590,9 +931,78 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.315,
-        "detection_method": "rtt"
+        "rtt": 8.571,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "130.211.17.193",
+          "prefix": "130.211.17.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 64,
+          "location_count": 64
+        }
       }
+    },
+    {
+      "originalUrl": "https://apid.pcloud.tw/venapis/vengu",
+      "type": "document",
+      "ipinfo": {
+        "domain": "apid.pcloud.tw",
+        "ip": "35.201.113.102",
+        "hostname": "102.113.201.35.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 8.1,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "35.201.113.102",
+          "prefix": "35.201.113.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 64,
+          "location_count": 64
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.facebook.com/tr/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
     }
   ]
 }

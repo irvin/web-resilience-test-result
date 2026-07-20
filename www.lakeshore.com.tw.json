@@ -2,11 +2,12 @@
   "url": "https://www.lakeshore.com.tw/",
   "canonicalURL": "https://www.lakeshore.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T03:33:53.460Z",
+  "timestamp": "2026-07-20T15:12:36.685Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,12 +25,12 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 148,
+  "requestCount": 153,
   "uniqueDomains": 13,
   "test_results": {
     "domestic": {
       "cloud": 9,
-      "direct": 1
+      "direct": 2
     },
     "foreign": {
       "cloud": 2,
@@ -58,8 +59,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "websdk.fastbooking-services.com",
-        "ip": "52.18.243.150",
-        "hostname": "ec2-52-18-243-150.eu-west-1.compute.amazonaws.com",
+        "ip": "108.132.182.68",
+        "hostname": "ec2-108-132-182-68.eu-west-1.compute.amazonaws.com",
         "city": "Dublin",
         "region": "Leinster",
         "country": "IE",
@@ -67,14 +68,32 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Europe/Dublin"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": null,
+        "detection_method": "rtt",
+        "rtt_error": "timeout",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "108.132.182.68",
+          "prefix": "108.132.182.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
     },
     {
       "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "cdnjs.cloudflare.com",
-        "ip": "104.17.24.14",
+        "ip": "104.17.25.14",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -85,7 +104,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bda12aced7b4a1c-TPE",
+        "cf-ray": "a1e2e700683ba9cb-TPE",
         "detection_method": "header"
       }
     },
@@ -94,12 +113,12 @@
       "type": "script",
       "ipinfo": {
         "domain": "staticaws.fbwebprogram.com",
-        "ip": "3.169.36.55",
-        "hostname": "server-3-169-36-55.tpe53.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "54.192.248.52",
+        "hostname": "server-54-192-248-52.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -110,16 +129,36 @@
       "type": "script",
       "ipinfo": {
         "domain": "maps.googleapis.com",
-        "ip": "142.250.204.42",
-        "hostname": "hkg07s38-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
+        "ip": "172.217.116.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
         "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.522,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "172.217.116.4",
+          "prefix": "172.217.116.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-KKD942Q",
@@ -138,11 +177,20 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "blob:https://www.lakeshore.com.tw/1627da45-89bb-40b4-91d4-b4707c043a9f",
-      "type": "other",
+      "originalUrl": "https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap",
+      "type": "stylesheet",
       "ipinfo": {
-        "domain": ""
-      }
+        "domain": "fonts.googleapis.com",
+        "ip": "142.250.66.74",
+        "hostname": "hkg12s27-in-f10.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css",
@@ -160,41 +208,9 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bda12ad19c6a34f-TPE",
+        "cf-ray": "a1e2e7009e0856f5-TPE",
         "detection_method": "header"
       }
-    },
-    {
-      "originalUrl": "https://fonts.googleapis.com/css?family=Raleway:700,400,300",
-      "type": "stylesheet",
-      "ipinfo": {
-        "domain": "fonts.googleapis.com",
-        "ip": "142.250.204.42",
-        "hostname": "hkg07s38-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-NZR3LPEZLT&cid=950043578.1768361619&gtm=45je61c1v877772744z8812354649za20gzb812354649zd812354649&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115938466~115938469~116988315~117041587~117091818&z=1080449423",
-      "type": "image",
-      "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.204.35",
-        "hostname": "hkg07s38-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
@@ -217,8 +233,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "d.line-scdn.net",
-        "ip": "104.116.17.150",
-        "hostname": "a104-116-17-150.deploy.static.akamaitechnologies.com",
+        "ip": "184.25.121.253",
+        "hostname": "a184-25-121-253.deploy.static.akamaitechnologies.com",
         "city": "Yuanlin",
         "region": "Taiwan",
         "country": "TW",
@@ -229,12 +245,28 @@
       "category": "domestic/cloud"
     },
     {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-NZR3LPEZLT&cid=1385364300.1784560329&gtm=45je67f0v877772744z8812354649za20gzb812354649zd812354649&rcb=14&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115616986~115938466~115938469~118395335~118897920~118897930~119724322&z=1421765416",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.196.195",
+        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
       "originalUrl": "https://mediastore.hotelcontent.net/647a7343f05986b30da118147657a1df/79521cdea3eff83/2342b7837454f1beaf8c7110a179d3e0.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "mediastore.hotelcontent.net",
-        "ip": "18.203.240.226",
-        "hostname": "ec2-18-203-240-226.eu-west-1.compute.amazonaws.com",
+        "ip": "3.254.23.242",
+        "hostname": "ec2-3-254-23-242.eu-west-1.compute.amazonaws.com",
         "city": "Dublin",
         "region": "Leinster",
         "country": "IE",
@@ -242,7 +274,41 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Europe/Dublin"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": null,
+        "detection_method": "rtt",
+        "rtt_error": "timeout",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "3.254.23.242",
+          "prefix": "3.254.23.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.facebook.com/tr/?id=200206861237643&ev=PageView&dl=https%3A%2F%2Fwww.lakeshore.com.tw%2F&rl=&if=false&ts=1784560330114&iw=false&sw=1280&sh=720&v=2.9.357&r=stable&ec=0&o=4126&aems=0%3B0&fbp=fb.2.1784560330109.960381503990079787&ler=empty&cdl=API_unavailable&pmd[title]=%E7%85%99%E6%B3%A2%E5%9C%8B%E9%9A%9B%E8%A7%80%E5%85%89%E9%9B%86%E5%9C%98%20%7C%20%E5%8F%B0%E7%81%A3%E9%80%A3%E9%8E%96%E9%A3%AF%E5%BA%97&pmd[locale]=zh_TW&pmd[description]=%E7%85%99%E6%B3%A2%E5%9C%8B%E9%9A%9B%E8%A7%80%E5%85%89%E9%9B%86%E5%9C%98%E7%82%BA%E5%8F%B0%E7%81%A3%E9%80%A3%E9%8E%96%E9%A3%AF%E5%BA%97%E9%9B%86%E5%9C%98%EF%BC%8C%E7%B6%93%E7%87%9F%E8%A6%AA%E5%AD%90%E3%80%81%E5%95%86%E5%8B%99%E5%8F%8A%E5%BA%A6%E5%81%87%E9%A3%AF%E5%BA%97%EF%BC%8C%E4%B8%A6%E4%B8%8D%E5%AE%9A%E6%9C%9F%E6%8E%A8%E5%87%BA%E4%BD%8F%E5%AE%BF%E5%84%AA%E6%83%A0%E3%80%82%E6%97%97%E4%B8%8B%E6%93%81%E6%9C%8910%E5%AE%B6%E9%A3%AF%E5%BA%97%EF%BC%8C%E6%96%B0%E7%AB%B9%E6%B9%96%E6%BF%B1%E9%A4%A8%E3%80%81%E6%96%B0%E7%AB%B9%E9%83%BD%E6%9C%83%E9%A4%A8%E3%80%81%E8%8A%B1%E8%93%AE%E9%A4%A8%E3%80%81%E8%98%87%E6%BE%B3%E9%A4%A8%E3%80%81%E5%AE%9C%E8%98%AD%E9%A4%A8%E3%80%81%E5%8F%B0%E5%8D%97%E9%A4%A8%E3%80%81%E8%8A%B1%E8%93%AE%E5%A4%AA%E9%AD%AF%E9%96%A3%EF%BC%8C%E4%BB%A5%E5%8F%8A%E7%85%99%E6%B3%A2%E8%8A%B1%E6%99%82%E9%96%93%20%E5%AE%9C%E8%98%AD%E5%82%B3%E8%97%9D%E3%80%81%E7%85%99%E6%B3%A2%E8%8A%B1%E6%99%82%E9%96%93%20%E8%8A%B1%E8%93%AE%EF%BC%8C%E4%BB%A5%E5%B0%88%E6%A5%AD%E6%85%8B%E5%BA%A6%E6%8F%90%E4%BE%9B%E6%9C%8D%E5%8B%99%EF%BC%8C%E4%B8%A6%E4%B8%8D%E5%AE%9A%E6%9C%9F%E6%8E%A8%E5%87%BA%E9%A3%AF%E5%BA%97%E5%84%AA%E6%83%A0%E3%80%82&plt=1424.7000000001863&iss=1&imft=1&tz=480&it=1784560329712&coo=false&expv2[0]=pl1&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=im1&expv2[6]=hf1&rqm=GET",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
     }
   ]
 }

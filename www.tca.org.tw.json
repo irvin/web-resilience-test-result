@@ -2,11 +2,12 @@
   "url": "https://www.tca.org.tw/",
   "canonicalURL": "https://www.tca.org.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T02:43:46.753Z",
+  "timestamp": "2026-07-20T14:06:20.071Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,11 +25,11 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 44,
-  "uniqueDomains": 3,
+  "requestCount": 36,
+  "uniqueDomains": 4,
   "test_results": {
     "domestic": {
-      "cloud": 1,
+      "cloud": 2,
       "direct": 1
     },
     "foreign": {
@@ -43,21 +44,37 @@
       "ipinfo": {
         "domain": "www.tca.org.tw",
         "ip": "210.242.150.16",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "city": "Taipei",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "25.0531,121.5264",
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
     },
     {
+      "originalUrl": "https://fonts.googleapis.com/css2?family=Cossette+Texte:wght@400;700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Italiana&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&family=Nata+Sans:wght@100..900&family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&family=TASA+Orbiter:wght@400..800&display=swap",
+      "type": "stylesheet",
+      "ipinfo": {
+        "domain": "fonts.googleapis.com",
+        "ip": "142.250.157.95",
+        "hostname": "ta-in-f95.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.1469,120.6839",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
       "originalUrl": "https://code.jquery.com/jquery-3.7.1.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "code.jquery.com",
-        "ip": "151.101.66.137",
+        "ip": "151.101.65.155",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -67,8 +84,25 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 34.425,
-        "detection_method": "rtt"
+        "x-served-by": "cache-lga21978-LGA, cache-sin-wsss1830028-SIN",
+        "rtt": 36.996,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "151.101.65.155",
+          "prefix": "151.101.65.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 57,
+          "location_count": 57
+        }
       }
     },
     {

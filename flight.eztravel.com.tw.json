@@ -2,11 +2,12 @@
   "url": "https://flight.eztravel.com.tw",
   "canonicalURL": "https://flight.eztravel.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:58:19.317Z",
+  "timestamp": "2026-07-20T13:39:33.112Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,12 +25,12 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 152,
-  "uniqueDomains": 19,
+  "requestCount": 158,
+  "uniqueDomains": 17,
   "test_results": {
     "domestic": {
-      "cloud": 14,
-      "direct": 1
+      "cloud": 11,
+      "direct": 2
     },
     "foreign": {
       "cloud": 4,
@@ -53,12 +54,12 @@
       "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://static.cdn-eztravel.com/www/api/3901a15/css/commonhf.css",
+      "originalUrl": "https://assets.eztravel.com.tw/www/home/dc4f9b3/_next/static/css/951cf58261068ea1.css",
       "type": "stylesheet",
       "ipinfo": {
-        "domain": "static.cdn-eztravel.com",
-        "ip": "35.186.195.220",
-        "hostname": "220.195.186.35.bc.googleusercontent.com",
+        "domain": "assets.eztravel.com.tw",
+        "ip": "34.8.233.227",
+        "hostname": "227.233.8.34.bc.googleusercontent.com",
         "city": "Kansas City",
         "region": "Missouri",
         "country": "US",
@@ -69,16 +70,32 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.572,
-        "detection_method": "rtt"
+        "rtt": 4.706,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.8.233.227",
+          "prefix": "34.8.233.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 65,
+          "location_count": 65
+        }
       }
     },
     {
-      "originalUrl": "https://image.cdn-eztravel.com.tw/dow6JJdWPnJIRL0ijkkzugCaKTM1zoC4mSv5b1L57Ng/g:ce/q:100/aHR0cHM6Ly9zdGF0aWMuY2RuLWV6dHJhdmVsLmNvbS9mbGlnaHQvc3RhdGljL2ltYWdlcy9haXJfaWNvbi9haXJfbC9tbV9sLnBuZw.png",
+      "originalUrl": "https://image.cdn-eztravel.com.tw/TYK0XlE9NpBQ8_p6KFxmdOFa4O5UyyGQEhZMuc-Df0w/g:ce/q:100/aHR0cHM6Ly9hc3NldHMuZXp0cmF2ZWwuY29tLnR3L2ZsaWdodC9zdGF0aWMvaW1hZ2VzL2Fpcl9pY29uL2Fpcl9sL2drX2wucG5n.png",
       "type": "image",
       "ipinfo": {
         "domain": "image.cdn-eztravel.com.tw",
-        "ip": "172.66.167.249",
+        "ip": "104.20.32.111",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -88,9 +105,32 @@
       },
       "category": "domestic/cloud",
       "cloud_provider": {
+        "cf-ray": "a1e25f538c5287d2-SIN",
         "country": "tw",
-        "rtt": 5.165,
-        "detection_method": "rtt"
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "104.20.32.111",
+          "prefix": "104.20.32.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 62,
+          "location_count": 62,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -98,19 +138,19 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.204.42",
-        "hostname": "hkg07s38-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "64.233.189.95",
+        "hostname": "tl-in-f95.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "24.1469,120.6839",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://member.eztravel.com.tw/auth/loginRoleCheck?secure=true&_=1768355894525",
+      "originalUrl": "https://member.eztravel.com.tw/auth/loginRoleCheck?secure=true&_=1784554770246",
       "type": "fetch",
       "ipinfo": {
         "domain": "member.eztravel.com.tw",
@@ -125,7 +165,7 @@
       "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://hpapi-c.eztravel.com.tw/v1/api/record/search?client_id=tHaA8icElK3cyM&ltype=flight",
+      "originalUrl": "https://hpapi-c.eztravel.com.tw/v1/api/record/search?client_id=Kvojluoixnv8tz&ltype=flight",
       "type": "xhr",
       "ipinfo": {
         "domain": "hpapi-c.eztravel.com.tw",
@@ -156,36 +196,16 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://static.cdn-eztravel.com.tw/assets/ubt/v3/modern/rsa.min.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "static.cdn-eztravel.com.tw",
-        "ip": "104.20.32.111",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "rtt": 4.577,
-        "detection_method": "rtt"
-      }
-    },
-    {
       "originalUrl": "https://cdn.qgr.ph/qgraph.8bef3e3e0190f65726e7.js",
       "type": "script",
       "ipinfo": {
         "domain": "cdn.qgr.ph",
-        "ip": "3.169.121.108",
-        "hostname": "server-3-169-121-108.tpe53.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "3.169.121.17",
+        "hostname": "server-3-169-121-17.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -208,8 +228,24 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.674,
-        "detection_method": "rtt"
+        "rtt": 5.662,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "35.244.216.206",
+          "prefix": "35.244.216.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 65,
+          "location_count": 65
+        }
       }
     },
     {
@@ -229,49 +265,53 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.google.com/measurement/conversion?random=1768355894799&cv=11&tid=G-XS4XWTQS4B&fst=1768355894799&fmt=6&en=session_start&gtm=45je61c1v885827543z8812456384za20gzb812456384zd812456384xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115938466~115938469~115985660~116744866~117041588&u_w=1280&u_h=720&url=https%3A%2F%2Fflight.eztravel.com.tw%2F&gacid=435074008.1768355895&frm=0&tiba=%E6%A9%9F%E7%A5%A8%20%7C%20%E6%AF%94%E5%83%B9%E9%A0%90%E8%A8%82%E3%80%81%E8%88%AA%E7%8F%AD%E6%90%9C%E5%B0%8B%E3%80%81%E8%88%AA%E7%A9%BA%E5%85%AC%E5%8F%B8%E4%BE%BF%E5%AE%9C%E6%A9%9F%E7%A5%A8%20%7C%20ezTravel%E6%98%93%E9%81%8A%E7%B6%B2&npa=0&pscdl=noapi&auid=1593184530.1768355895&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&_tu=QA",
+      "originalUrl": "https://www.google.com/measurement/conversion?random=1784554770964&cv=11&tid=G-XS4XWTQS4B&fst=1784554770964&fmt=8&en=session_start&gtm=45je67f0v885827543z8812456384za20gzb812456384zd812456384xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118395335~118897920~118897930~119527020~119724322&u_w=1280&u_h=720&url=https%3A%2F%2Fflight.eztravel.com.tw%2F&gacid=1861301236.1784554771&frm=0&tiba=%E6%A9%9F%E7%A5%A8%20%7C%20%E6%AF%94%E5%83%B9%E9%A0%90%E8%A8%82%E3%80%81%E8%88%AA%E7%8F%AD%E6%90%9C%E5%B0%8B%E3%80%81%E8%88%AA%E7%A9%BA%E5%85%AC%E5%8F%B8%E4%BE%BF%E5%AE%9C%E6%A9%9F%E7%A5%A8%20%7C%20ezTravel%E6%98%93%E9%81%8A%E7%B6%B2&npa=0&pscdl=noapi&auid=19306715.1784554771&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&_tu=QA&rcb=0",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.204.36",
-        "hostname": "hkg07s38-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
+        "ip": "142.251.154.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
         "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.532,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.154.119",
+          "prefix": "142.251.154.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 60,
+          "location_count": 60
+        }
+      }
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-XS4XWTQS4B&cid=435074008.1768355895&gtm=45je61c1v885827543z8812456384za20gzb812456384zd812456384&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115938466~115938469~115985660~116744866~117041588&z=1898855284",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-XS4XWTQS4B&cid=1861301236.1784554771&gtm=45je67f0v885827543z8812456384za20gzb812456384zd812456384&rcb=0&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938466~115938469~118395335~118897920~118897930~119527020~119724322&z=1720020147",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.66.67",
-        "hostname": "hkg12s27-in-f3.1e100.net",
+        "ip": "142.250.192.131",
+        "hostname": "bom12s18-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
         "loc": "25.0143,121.4672",
         "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://cdn-prd-gcp-jp0.aiqua.io/sdk/v3/r/aiqua.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "cdn-prd-gcp-jp0.aiqua.io",
-        "ip": "203.69.138.209",
-        "hostname": "203-69-138-209.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS20940 Akamai International B.V.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
@@ -281,12 +321,12 @@
       "type": "xhr",
       "ipinfo": {
         "domain": "api.rudderstack.com",
-        "ip": "3.169.137.54",
-        "hostname": "server-3-169-137-54.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "3.169.137.24",
+        "hostname": "server-3-169-137-24.tpe54.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -308,43 +348,6 @@
       "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://f1.zenclerk.com/publish/force/eztravel-com-tw",
-      "type": "script",
-      "ipinfo": {
-        "domain": "f1.zenclerk.com",
-        "ip": "3.169.137.29",
-        "hostname": "server-3-169-137-29.tpe54.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://api.quantumgraph.com/web/cm/",
-      "type": "xhr",
-      "ipinfo": {
-        "domain": "api.quantumgraph.com",
-        "ip": "34.110.163.49",
-        "hostname": "49.163.110.34.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
-        "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "rtt": 5.319,
-        "detection_method": "rtt"
-      }
-    },
-    {
       "originalUrl": "https://rud.eztravel.dev/v1/page",
       "type": "xhr",
       "ipinfo": {
@@ -361,9 +364,57 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.668,
-        "detection_method": "rtt"
+        "rtt": 5.848,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.111.142.11",
+          "prefix": "34.111.142.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 63,
+          "location_count": 63
+        }
       }
+    },
+    {
+      "originalUrl": "https://cdn-prd-gcp-jp0.aiqua.io/sdk/v3/r/aiqua.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "cdn-prd-gcp-jp0.aiqua.io",
+        "ip": "203.69.138.209",
+        "hostname": "203-69-138-209.hinet-ip.hinet.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS20940 Akamai International B.V.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.facebook.com/tr/?id=370168706668521&ev=PageView&dl=https%3A%2F%2Fflight.eztravel.com.tw%2F&rl=&if=false&ts=1784554771637&iw=false&sw=1280&sh=720&v=2.9.357&r=stable&ec=0&o=4126&aems=0%3B0&fbp=fb.2.1784554771632.934120413657283415&ler=empty&cdl=API_unavailable&pmd[title]=%E6%A9%9F%E7%A5%A8%20%7C%20%E6%AF%94%E5%83%B9%E9%A0%90%E8%A8%82%E3%80%81%E8%88%AA%E7%8F%AD%E6%90%9C%E5%B0%8B%E3%80%81%E8%88%AA%E7%A9%BA%E5%85%AC%E5%8F%B8%E4%BE%BF%E5%AE%9C%E6%A9%9F%E7%A5%A8%20%7C%20ezTravel%E6%98%93%E9%81%8A%E7%B6%B2&pmd[locale]=zh-Hant-TW&pmd[description]=%27%E4%B8%80%E7%AB%99%E5%BF%AB%E6%90%9C%E8%8F%AF%E8%88%AA%E3%80%81%E9%95%B7%E6%A6%AE%E3%80%81%E6%98%9F%E5%AE%87%E3%80%81%E8%8F%AF%E4%BF%A1%E3%80%81%E7%AB%8B%E6%A6%AE%E2%80%A6%E7%AD%89%E8%88%AA%E7%A9%BA%E5%85%AC%E5%8F%B8%E5%8F%8A%E5%90%84%E5%AE%B6%E5%BB%89%E5%83%B9%E8%88%AA%E7%A9%BA%E4%BE%BF%E5%AE%9C%E6%A9%9F%E7%A5%A8%EF%BC%8C%E8%BC%95%E9%AC%86%E5%AE%8C%E6%88%90%E6%AF%94%E5%83%B9%E8%88%87%E8%A8%82%E4%BD%8D%EF%BC%9B%E7%B4%AF%E7%A9%8D%E8%88%AA%E7%A9%BA%E5%85%AC%E5%8F%B8%E5%93%A9%E7%A8%8B%E6%95%B8%E5%86%8D%E5%8A%A0%E8%B4%88eMoney%E9%BB%9E%E6%95%B8%E2%80%A6%E6%A9%9F%E7%A5%A8%E6%AF%94%E5%83%B9%E9%A0%90%E8%A8%82%E4%B8%80%E7%AB%99%E5%B0%B1GO&plt=1262.6000000000931&iss=1&ss=%7B%22page_title%22%3A%5B%7B%22rid%22%3A%2226192215553732941%22%2C%22v%22%3A%5B%22%E5%8F%B0%E5%8C%97-%E9%A6%99%E6%B8%AF%22%5D%7D%5D%7D&imft=1&tz=480&it=1784554771476&coo=false&expv2[0]=pl0&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=ct3&expv2[6]=hf1&rqm=GET",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
     }
   ]
 }

@@ -2,11 +2,12 @@
   "url": "https://www.hotelroyal.com.tw/",
   "canonicalURL": "https://www.hotelroyal.com.tw/zh-tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T03:23:31.462Z",
+  "timestamp": "2026-07-20T14:35:17.090Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,7 +25,7 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 84,
+  "requestCount": 97,
   "uniqueDomains": 7,
   "test_results": {
     "domestic": {
@@ -50,14 +51,31 @@
         "org": "AS8075 Microsoft Corporation",
         "timezone": "Asia/Hong_Kong"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 19.214,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "23.99.126.191",
+          "prefix": "23.99.126.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
     },
     {
       "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/promise-polyfill/8.2.1/polyfill.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "cdnjs.cloudflare.com",
-        "ip": "104.17.25.14",
+        "ip": "104.17.24.14",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -68,7 +86,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bda03da2af9b856-TPE",
+        "cf-ray": "a1e2b0e7dc598088-TPE",
         "detection_method": "header"
       }
     },
@@ -77,7 +95,7 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "use.typekit.net",
-        "ip": "210.71.227.88",
+        "ip": "210.71.227.184",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -88,7 +106,7 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://imagedelivery.net/a6-OYZSpZSiOriMeuFHR3w/c7cc5247-b77d-4f06-de4f-b919064a2500/public",
+      "originalUrl": "https://imagedelivery.net/a6-OYZSpZSiOriMeuFHR3w/beea473a-025d-4f34-bcbf-df3e17d64400/public",
       "type": "image",
       "ipinfo": {
         "domain": "imagedelivery.net",
@@ -103,7 +121,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bda03dc9ab18448-TPE",
+        "cf-ray": "a1e2b0ea9e36ae64-TPE",
         "detection_method": "header"
       }
     },
@@ -112,7 +130,7 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "p.typekit.net",
-        "ip": "210.71.227.57",
+        "ip": "210.71.227.104",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -127,12 +145,12 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.77.10",
-        "hostname": "nctsaa-ab-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "173.194.174.95",
+        "hostname": "td-in-f95.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "24.1469,120.6839",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
@@ -143,16 +161,36 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.youtube.com",
-        "ip": "142.250.198.78",
-        "hostname": "lctsaa-ab-in-f14.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
+        "ip": "142.251.153.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
         "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.264,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.153.4",
+          "prefix": "142.251.153.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
     }
   ]
 }

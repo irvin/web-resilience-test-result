@@ -2,11 +2,12 @@
   "url": "https://www.ksml.edu.tw/",
   "canonicalURL": "https://www.ksml.edu.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T03:07:41.754Z",
+  "timestamp": "2026-07-20T14:23:43.920Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,12 +25,12 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 122,
-  "uniqueDomains": 16,
+  "requestCount": 163,
+  "uniqueDomains": 15,
   "test_results": {
     "domestic": {
-      "cloud": 8,
-      "direct": 8
+      "cloud": 6,
+      "direct": 9
     },
     "foreign": {
       "cloud": 0,
@@ -53,20 +54,40 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.youtube.com/embed/ZOo8ne3fqYI?rel=0",
+      "originalUrl": "https://www.youtube.com/embed/DXEspfpnHr4?rel=0",
       "type": "document",
       "ipinfo": {
         "domain": "www.youtube.com",
-        "ip": "142.250.66.78",
-        "hostname": "hkg12s27-in-f14.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
+        "ip": "142.251.153.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
         "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.905,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.153.4",
+          "prefix": "142.251.153.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
     },
     {
       "originalUrl": "https://www.facebook.com/plugins/likebox.php?href=https://www.facebook.com/KSMLMain/&width=350px&colorscheme=light&show_faces=false&border_color&stream=true&header=true&height=258",
@@ -89,8 +110,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.77.8",
-        "hostname": "nctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.77.200",
+        "hostname": "del11s08-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -101,12 +122,12 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-X2D1XC90RG&cid=119106751.1768360058&gtm=45je61c1v9124687173za20g&aip=1&dma=0&gcd=13l3l3l3l2l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528500~104573694~104684208~104684211~105391252~115616985~115938465~115938468~116682877~117041588&z=514681446",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-X2D1XC90RG&cid=861059938.1784557421&gtm=45je67f0v9124687173za20g&rcb=0&aip=1&dma=0&gcd=13l3l3l3l2l1&npa=0&frm=0&tag_exp=115938465~115938468~118897920~118897930~118981135~119724320~119773331&z=184286506",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.198.67",
-        "hostname": "lctsaa-ab-in-f3.1e100.net",
+        "ip": "142.250.192.131",
+        "hostname": "bom12s18-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -117,12 +138,12 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://i.ytimg.com/vi/ZOo8ne3fqYI/sddefault.jpg?sqp=-oaymwEmCIAFEOAD8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgQyhMMA8=&rs=AOn4CLBdjDwjRwJ8IvONLjH_NTOs6-3iOg",
+      "originalUrl": "https://i.ytimg.com/vi_webp/DXEspfpnHr4/sddefault.webp",
       "type": "image",
       "ipinfo": {
         "domain": "i.ytimg.com",
-        "ip": "142.250.77.22",
-        "hostname": "nctsaa-ab-in-f22.1e100.net",
+        "ip": "142.250.198.86",
+        "hostname": "lctsaa-ab-in-f22.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -133,71 +154,79 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://yt3.ggpht.com/yewKrEAMBMLN0qMQdaKWjgMTVwR2FM8Ow3XR6OiCUuDCoNTpj5lOx9mcroqGXuqXYjfxx3qFQw=s68-c-k-c0x00ffffff-no-rj",
-      "type": "image",
-      "ipinfo": {
-        "domain": "yt3.ggpht.com",
-        "ip": "142.250.196.193",
-        "hostname": "nctsaa-ac-in-f1.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.gstatic.com/cv/js/sender/v1/cast_sender.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.gstatic.com",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.google.com/js/th/VQRLE1nj_w3YOUr9bDT-SZkrXPV28X05Wh6hb2M3ukQ.js",
+      "originalUrl": "https://www.google.com/js/th/8uIar4J4-RenYUa4HtG5DFVcni3D6dGneJv1JZIjHfM.js",
       "type": "script",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.198.68",
-        "hostname": "lctsaa-ab-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
+        "ip": "142.251.151.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
         "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.665,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.151.119",
+          "prefix": "142.251.151.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
     },
     {
       "originalUrl": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
       "type": "xhr",
       "ipinfo": {
         "domain": "jnn-pa.googleapis.com",
-        "ip": "142.250.196.202",
-        "hostname": "nctsaa-ac-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
+        "ip": "172.217.113.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
         "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.288,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "172.217.113.4",
+          "prefix": "172.217.113.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
     },
     {
-      "originalUrl": "https://static.xx.fbcdn.net/rsrc.php/v5/yN/l/1,cross/8OB0YQlOgty.css",
+      "originalUrl": "https://static.xx.fbcdn.net/rsrc.php/v5/yU/l/1,cross/iVmwkZA0KAu.css",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "static.xx.fbcdn.net",
@@ -213,81 +242,97 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://scontent.ftpe7-1.fna.fbcdn.net/v/t39.30808-1/497488190_1129232265896968_8515232179940695436_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=110&ccb=1-7&_nc_sid=f907e8&_nc_ohc=H2nAvrips5kQ7kNvwErnODd&_nc_oc=AdkgPFJz3WKwLfDXSOAwnBRKGhmWCVmyLZgsBYn8jsxjun6H5qoraIJe4WypIvoe0amcTqnHlBNYtGx8Rb4oj39u&_nc_zt=24&_nc_ht=scontent.ftpe7-1.fna&edm=AEDRbFQEAAAA&_nc_gid=pIEbSsFprs5Br5Fb7P9gIg&oh=00_AfqomB_aWE0lKe4Nu5AfE-WR8PyPAXtg5vaXDOAfsAkGGw&oe=696CC153",
+      "originalUrl": "https://scontent.ftpe7-1.fna.fbcdn.net/v/t39.30808-1/497488190_1129232265896968_8515232179940695436_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=110&ccb=1-7&_nc_sid=f907e8&_nc_ohc=dXjSsjeMbA8Q7kNvwH5iTZ4&_nc_oc=AdqvyHv_RauaCh8z5H9HTu5lHMd39EnTVRQYnQWQBSuJPNM-pXzUc0LCrsmk-r9WQ7Os7K1rgyS1zgdQPvCjfZZG&_nc_zt=24&_nc_ht=scontent.ftpe7-1.fna&edm=AEDRbFQEAAAA&_nc_gid=VyWvia3d8McZ8WGCzo5ZZA&oh=00_AQBOxKPspZhS840Vs3pWJqgYShvJ7YMo_DUlysV-HbDXtA&oe=6A63F293",
       "type": "image",
       "ipinfo": {
         "domain": "scontent.ftpe7-1.fna.fbcdn.net",
         "ip": "203.74.65.17",
         "hostname": "203-74-65-17.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "city": "Taipei",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "25.0531,121.5264",
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://scontent.ftpe7-2.fna.fbcdn.net/v/t39.30808-6/615350116_1328845952602264_1256993731216896029_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=104&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=4g3kQgsKKNMQ7kNvwFX14cM&_nc_oc=AdmqQe6FF2cMIFrmZt5jRxYZKs85L3pXNzyI2vnEt07TaR21tF6PccWs1o0XcGR0AVRFFN7A5SpVz0NAL2JhQUq1&_nc_zt=23&_nc_ht=scontent.ftpe7-2.fna&edm=AEDRbFQEAAAA&_nc_gid=pIEbSsFprs5Br5Fb7P9gIg&oh=00_AfriBV92yjqz8_DaWyFdHeqxx5ZUTwsIjzunQNOkLBC97g&oe=696CF684",
+      "originalUrl": "https://scontent.ftpe7-2.fna.fbcdn.net/v/t39.30808-6/748552201_122187087992907463_4591582154704077485_n.jpg?stp=dst-jpg_s350x350_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=3WNoJ-d0UkEQ7kNvwGIXa_6&_nc_oc=AdqAq7C8BkgpUlgDqFgy9X_Ks0oIx1LuojbHviICTxpBX7auVHR75iVximSFE3P32yaQYLXGBAtFdbvrJfPOtI5L&_nc_zt=23&_nc_ht=scontent.ftpe7-2.fna&edm=AEDRbFQEAAAA&_nc_gid=VyWvia3d8McZ8WGCzo5ZZA&oh=00_AQCLhA-mBQUdyYkb1JC0q5i1jzOcr3qZw3XwlxqKwkJroA&oe=6A63F4D9",
       "type": "image",
       "ipinfo": {
         "domain": "scontent.ftpe7-2.fna.fbcdn.net",
         "ip": "203.74.65.81",
         "hostname": "203-74-65-81.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "city": "Taichung",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "24.1469,120.6839",
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://external.ftpe7-3.fna.fbcdn.net/emg1/v/t13/15411650688209002130?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FSyHeNTt4BRI%2Fmaxresdefault.jpg&fb_obo=1&utld=ytimg.com&stp=c0.5000x0.5000f_dst-emg0_p476x249_q75_tt6_u&edm=AEDRbFQEAAAA&_nc_gid=pIEbSsFprs5Br5Fb7P9gIg&_nc_oc=Adn-O5iH8c830zA88N56-sIIMtdzOoieQ_-5zoxNfdKEYMwJFVd7Z2Adizm-TsZ0Ponu3vM2gZkv7HDakxm5ZrUv&ccb=13-1&oh=06_Q3-7ATlJUAASloQJxwpdOgx3UcxSEScvzICbdsDUoffta4pC&oe=6968E6C9&_nc_sid=e42f53",
+      "originalUrl": "https://scontent.ftpe7-4.fna.fbcdn.net/v/t39.30808-6/749651997_1489337819886409_4057706720260835315_n.jpg?stp=dst-jpg_s526x395_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=lEdL2LKtSbQQ7kNvwHYRIK6&_nc_oc=AdqPRvjYqN5IHod9A_9qXpnC-XWnc7CKVof4g1Eg7D-XB1THDEMqxR7fu3iGea1jzBw2_w1iABFvHdEJN14RaN-0&_nc_zt=23&_nc_ht=scontent.ftpe7-4.fna&edm=AEDRbFQEAAAA&_nc_gid=VyWvia3d8McZ8WGCzo5ZZA&oh=00_AQBZFyXoQ5bnV45hwBXmY2YJnK4pyZQZ8AWgghv4apR5rQ&oe=6A641ADD",
       "type": "image",
       "ipinfo": {
-        "domain": "external.ftpe7-3.fna.fbcdn.net",
-        "ip": "203.74.65.145",
-        "hostname": "203-74-65-145.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "domain": "scontent.ftpe7-4.fna.fbcdn.net",
+        "ip": "203.74.65.209",
+        "hostname": "203-74-65-209.hinet-ip.hinet.net",
+        "city": "Taichung",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "24.1469,120.6839",
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://scontent.ftpe7-3.fna.fbcdn.net/v/t39.30808-6/608976062_1322283029925223_8823157909738746816_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=103&ccb=1-7&_nc_sid=e21142&_nc_ohc=L3SOmeBZNkcQ7kNvwG_zFi4&_nc_oc=AdlDXqOek4uZ-fNoBlyKpVuPCn_v4-WsbUenRtx3YLlheuEGiXbNuk6qiSPlc1cTHQB4lc-BsbJPn0HmDTwAVP3k&_nc_zt=23&_nc_ht=scontent.ftpe7-3.fna&edm=AEDRbFQEAAAA&_nc_gid=pIEbSsFprs5Br5Fb7P9gIg&oh=00_Afqhtdtu4gOiJhtomNewiImzmYajuJNWGvsepyen0sP7AQ&oe=696CDA40",
-      "type": "image",
+      "originalUrl": "https://video.ftpe7-3.fna.fbcdn.net/o1/v/t2/f2/m366/AQN7lQ9DfVHlsCD5ON4jHV1SOAphsim9ZOVLe6Nzn1zvGAZu87CHKEsknaUC1o06JM8b28IqI7-WHo8C9ijTQlOpXTqo2XBvJN2B3pIWn82tOQ.mp4?_nc_cat=102&_nc_oc=Adq5xurYMOOHqJ11cvQSzYlR_xlRhqDlaltz4vBa8C_5Fcc1x9rrI0mtfDlYTRr7FnW2rmuHB7Y_2ZvmNPLAVlwh&_nc_sid=9ca052&_nc_ht=video.ftpe7-3.fna.fbcdn.net&_nc_ohc=7zcdITerzsEQ7kNvwFbY6dh&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfMTA4MHAiLCJ2aWRlb19pZCI6MTU2OTgxMjI4NzgyMzM0Miwib2lsX3VybGdlbl9hcHBfaWQiOjAsImNsaWVudF9uYW1lIjoidW5rbm93biIsInhwdl9hc3NldF9pZCI6MjU2OTQ4ODM5MDE3MDY4MCwiYXNzZXRfYWdlX2RheXMiOjIsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjozMCwiYml0cmF0ZSI6Mzg4NzI1MiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=VyWvia3d8McZ8WGCzo5ZZA&edm=AEDRbFQEAAAA&_nc_zt=28&oh=00_AQBhd6Thyi0nleR3qYs6QBCZ-T4nu_7vTIEgYkYzvMc4rg&oe=6A640BB2&bytestart=0&byteend=817",
+      "type": "fetch",
       "ipinfo": {
-        "domain": "scontent.ftpe7-3.fna.fbcdn.net",
-        "ip": "203.74.65.145",
-        "hostname": "203-74-65-145.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS3462 Data Communication Business Group",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/direct"
-    },
-    {
-      "originalUrl": "https://scontent.xx.fbcdn.net/hads-ak-prn2/1487645_6012475414660_1439393861_n.png",
-      "type": "image",
-      "ipinfo": {
-        "domain": "scontent.xx.fbcdn.net",
-        "ip": "31.13.87.5",
-        "hostname": "xx-fbcdn-shv-01-tpe1.fbcdn.net",
+        "domain": "video.ftpe7-3.fna.fbcdn.net",
+        "ip": "203.74.65.146",
+        "hostname": "203-74-65-146.hinet-ip.hinet.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
         "loc": "25.0531,121.5264",
-        "org": "AS32934 Facebook, Inc.",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://video.ftpe7-4.fna.fbcdn.net/o1/v/t2/f2/m412/AQPirnv2DyPo76dXFin-yNB7pqTERvVv5xwUF65t04Ijqycmfpuz6UVHfAaCAs0DblEEXtyjQygBLNgluShl5658AjtkT-XlKUul69g.mp4?_nc_cat=107&_nc_oc=Ado3JGqBbmmX8OxLJqpdjs6vLF2oHNc5JntlUFy_V1ImgBrfWR4SQnDqZJhyl61iq4UDBplEYRoB4BSXnGoXyXo_&_nc_sid=9ca052&_nc_ht=video.ftpe7-4.fna.fbcdn.net&_nc_ohc=o0r4uz-UbccQ7kNvwFJ23r6&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfbG5faGVhYWNfdmJyM19hdWRpbyIsInZpZGVvX2lkIjoxNTY5ODEyMjg3ODIzMzQyLCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoyNTY5NDg4MzkwMTcwNjgwLCJhc3NldF9hZ2VfZGF5cyI6MiwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjMwLCJiaXRyYXRlIjo3ODUxMywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=VyWvia3d8McZ8WGCzo5ZZA&edm=AEDRbFQEAAAA&_nc_zt=28&oh=00_AQDVEbCYVqiKUWdMiOodowe_EtKLSJjb3HnJsdjcunmh1A&oe=6A640388&bytestart=0&byteend=823",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "video.ftpe7-4.fna.fbcdn.net",
+        "ip": "203.74.65.210",
+        "hostname": "203-74-65-210.hinet-ip.hinet.net",
+        "city": "Taichung",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.1469,120.6839",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://video.ftpe7-1.fna.fbcdn.net/o1/v/t2/f2/m366/AQMlHxi2riHgy_DdR19IHkVI2iWe1p4L4K78XVGzV_grdUELaBpdJOMpoBiMiOQT3KA4h7bNW0s7OSxBCGlkb_4iGrmnbF5YMOYoY82N5l0Mtw.mp4?_nc_cat=106&_nc_oc=AdrdlRTMcFuthYVFVC1vmxvDTST3-MARx-3HjYuLyVS3VRvJmvRZWu3f9SKOtKI9KKzJw7cZQHPIzWiq6L_LEjjQ&_nc_sid=9ca052&_nc_ht=video.ftpe7-1.fna.fbcdn.net&_nc_ohc=BVRdoJqV_zYQ7kNvwGT4eQ0&efg=eyJ2ZW5jb2RlX3RhZyI6ImRhc2hfdnA5LWJhc2ljLWdlbjJfMzYwcCIsInZpZGVvX2lkIjoxNTY5ODEyMjg3ODIzMzQyLCJvaWxfdXJsZ2VuX2FwcF9pZCI6MCwiY2xpZW50X25hbWUiOiJ1bmtub3duIiwieHB2X2Fzc2V0X2lkIjoyNTY5NDg4MzkwMTcwNjgwLCJhc3NldF9hZ2VfZGF5cyI6MiwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjMwLCJiaXRyYXRlIjo1NzAyODYsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=VyWvia3d8McZ8WGCzo5ZZA&edm=AEDRbFQEAAAA&_nc_zt=28&oh=00_AQA4mquz1_cJJ1PTu4Vm8p3tZMiY1Z_UMXOJV3p5lUO51Q&oe=6A641C6A&bytestart=818&byteend=933",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "video.ftpe7-1.fna.fbcdn.net",
+        "ip": "203.74.65.18",
+        "hostname": "203-74-65-18.hinet-ip.hinet.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"

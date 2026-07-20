@@ -2,11 +2,12 @@
   "url": "https://openai.com",
   "canonicalURL": "https://openai.com/zh-Hant/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:12:15.934Z",
+  "timestamp": "2026-07-20T13:04:42.257Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 83,
-  "uniqueDomains": 7,
+  "requestCount": 116,
+  "uniqueDomains": 5,
   "test_results": {
     "domestic": {
-      "cloud": 6,
+      "cloud": 5,
       "direct": 0
     },
     "foreign": {
-      "cloud": 1,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -53,62 +54,71 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd943884964a3a9-TPE",
+        "cf-ray": "a1e22c3d78864a57-TPE",
         "detection_method": "header"
       }
     },
     {
-      "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-KJ7QK4SN",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-Medium.woff2",
-      "type": "font",
-      "ipinfo": {
-        "domain": "cdn.openai.com",
-        "ip": "13.107.213.73",
-        "city": "Redmond",
-        "region": "Washington",
-        "country": "US",
-        "loc": "47.6740,-122.1215",
-        "org": "AS8075 Microsoft Corporation",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://images.ctfassets.net/kftzwdyauwt9/2zlj1v5fup8IPQFeD0HI8j/908a1aafec67c13ee67a62163e3c3c35/OAI_ChatGPT_Health_SEO.png?w=1920&q=80&fm=webp",
+      "originalUrl": "https://images.ctfassets.net/kftzwdyauwt9/5uOBQ9CN3HA6yzWugjzzYZ/b5fe018bce4814a145bb9c8e57422db6/gpt-5-6-poster.png?w=1920&q=80&fm=webp",
       "type": "image",
       "ipinfo": {
         "domain": "images.ctfassets.net",
-        "ip": "3.169.55.76",
-        "hostname": "server-3-169-55-76.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "54.192.248.68",
+        "hostname": "server-54-192-248-68.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
+      "originalUrl": "https://cdn.openai.com/common/fonts/openai-sans/v4/zh-hant/OpenAISansTC-Variable-002.woff2",
+      "type": "font",
+      "ipinfo": {
+        "domain": "cdn.openai.com",
+        "ip": "150.171.110.65",
+        "city": "Hong Kong",
+        "region": "Hong Kong",
+        "country": "HK",
+        "loc": "22.2783,114.1747",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "Asia/Hong_Kong"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "x-azure-ref": "20260720T130439Z-15d9487b58ckzkpkhC1TPEcq8000000019u00000000093fz",
+        "detection_method": "header"
+      }
+    },
+    {
       "originalUrl": "https://chatgpt.com/ces/v1/projects/oai/settings",
       "type": "fetch",
       "ipinfo": {
         "domain": "chatgpt.com",
+        "ip": "104.18.32.47",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e22c4a9d264a36-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://ab.chatgpt.com/v1/initialize?k=client-TkMBNbA46IALRLvxaXzViDknf0Zwj24gHWFC8PedoNI&st=javascript-client&sv=3.33.1&t=1784552679797&sid=acab8d2a-f92a-47df-b74c-c234a178142e&se=1",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "ab.chatgpt.com",
         "ip": "172.64.155.209",
         "city": "San Francisco",
         "region": "California",
@@ -120,49 +130,8 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd9438c1bdeb856-TPE",
+        "cf-ray": "a1e22c4a88dec4ed-TPE",
         "detection_method": "header"
-      }
-    },
-    {
-      "originalUrl": "https://prodregistryv2.org/v1/rgstr?k=client-TkMBNbA46IALRLvxaXzViDknf0Zwj24gHWFC8PedoNI&st=javascript-client&sv=3.30.2&t=1768353134453&sid=02c6b337-90b4-4c81-814b-6b1f86add7e2&ec=2&gz=1",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "prodregistryv2.org",
-        "ip": "34.128.128.0",
-        "hostname": "0.128.128.34.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
-        "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "rtt": 3.948,
-        "detection_method": "rtt"
-      }
-    },
-    {
-      "originalUrl": "https://cloudflareinsights.com/cdn-cgi/rum",
-      "type": "xhr",
-      "ipinfo": {
-        "domain": "cloudflareinsights.com",
-        "ip": "104.16.80.73",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "rtt": 4.415,
-        "detection_method": "rtt"
       }
     }
   ]

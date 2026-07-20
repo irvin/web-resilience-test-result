@@ -2,7 +2,7 @@
   "url": "https://t4u.com.tw",
   "canonicalURL": "https://t4u.com.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T12:56:12.333Z",
+  "timestamp": "2026-07-20T15:09:35.471Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -14,8 +14,8 @@
     "hasIPinfoToken": true
   },
   "testingEnvironment": {
-    "ip": "220.136.159.93",
-    "hostname": "220-136-159-93.dynamic-ip.hinet.net",
+    "ip": "220.132.212.194",
+    "hostname": "220-132-212-194.hinet-ip.hinet.net",
     "city": "Banqiao",
     "region": "Taipei",
     "country": "TW",
@@ -25,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 5,
+  "requestCount": 4,
   "uniqueDomains": 2,
   "test_results": {
     "domestic": {
-      "cloud": 0,
+      "cloud": 2,
       "direct": 0
     },
     "foreign": {
-      "cloud": 2,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -43,7 +43,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "t4u.com.tw",
-        "ip": "172.67.186.85",
+        "ip": "104.21.68.42",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -51,10 +51,34 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 132.119,
-        "detection_method": "rtt"
+        "cf-ray": "a1e2e3380e2dfd2e-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "104.21.68.42",
+          "prefix": "104.21.68.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 57,
+          "location_count": 57,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -62,7 +86,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.t4u.com.tw",
-        "ip": "172.67.186.85",
+        "ip": "104.21.68.42",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -70,10 +94,34 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 132.469,
-        "detection_method": "rtt"
+        "cf-ray": "a1e2e33dfa21f8e8-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "104.21.68.42",
+          "prefix": "104.21.68.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 57,
+          "location_count": 57,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     }
   ]

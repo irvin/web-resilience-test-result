@@ -2,11 +2,12 @@
   "url": "https://www.twnch.org.tw/",
   "canonicalURL": "https://www.twnch.org.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T02:41:14.008Z",
+  "timestamp": "2026-07-20T15:08:19.628Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,11 +25,11 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 71,
-  "uniqueDomains": 5,
+  "requestCount": 75,
+  "uniqueDomains": 6,
   "test_results": {
     "domestic": {
-      "cloud": 4,
+      "cloud": 5,
       "direct": 1
     },
     "foreign": {
@@ -42,8 +43,8 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.twnch.org.tw",
-        "ip": "60.251.73.34",
-        "hostname": "60-251-73-34.hinet-ip.hinet.net",
+        "ip": "59.124.55.99",
+        "hostname": "59-124-55-99.hinet-ip.hinet.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -58,24 +59,44 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.youtube.com",
-        "ip": "142.250.196.206",
-        "hostname": "nctsaa-ac-in-f14.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
+        "ip": "142.251.152.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
         "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.101,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.152.4",
+          "prefix": "142.251.152.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
     },
     {
-      "originalUrl": "https://i.ytimg.com/vi/lXtqrw223nE/sddefault.jpg?sqp=-oaymwEmCIAFEOAD8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEYgWyhyMA8=&rs=AOn4CLARlMlsSkwaVRMcXDUXZUUytJ2uLQ",
+      "originalUrl": "https://i.ytimg.com/vi/lXtqrw223nE/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEYgWyhyMA8=&rs=AOn4CLAWuH8wIZIV89xpVLuQrkq7KL2Bxw",
       "type": "image",
       "ipinfo": {
         "domain": "i.ytimg.com",
-        "ip": "142.250.196.214",
-        "hostname": "nctsaa-ac-in-f22.1e100.net",
+        "ip": "142.250.204.54",
+        "hostname": "hkg07s38-in-f22.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -86,28 +107,84 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://yt3.ggpht.com/ytc/AIdro_kOgPfD3yeQFY6IL9sAYPHRW9rZZBoVPqObqwQIGxjB3w=s68-c-k-c0x00ffffff-no-rj",
-      "type": "image",
-      "ipinfo": {
-        "domain": "yt3.ggpht.com",
-        "ip": "142.250.198.65",
-        "hostname": "lctsaa-ab-in-f1.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.gstatic.com/cv/js/sender/v1/cast_sender.js",
+      "originalUrl": "https://www.google.com/js/th/8uIar4J4-RenYUa4HtG5DFVcni3D6dGneJv1JZIjHfM.js",
       "type": "script",
       "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.154.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.223,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.154.119",
+          "prefix": "142.251.154.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 60,
+          "location_count": 60
+        }
+      }
+    },
+    {
+      "originalUrl": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "jnn-pa.googleapis.com",
+        "ip": "172.217.119.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.771,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "172.217.119.4",
+          "prefix": "172.217.119.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.gstatic.com/youtube/img/icons/mweb/youtube_fill/logo/v2/67px.svg",
+      "type": "fetch",
+      "ipinfo": {
         "domain": "www.gstatic.com",
-        "ip": "142.250.204.35",
-        "hostname": "hkg07s38-in-f3.1e100.net",
+        "ip": "142.250.196.195",
+        "hostname": "nctsaa-ac-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",

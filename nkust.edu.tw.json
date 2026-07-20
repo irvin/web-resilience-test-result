@@ -2,11 +2,12 @@
   "url": "https://nkust.edu.tw",
   "canonicalURL": "https://nkust.edu.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T02:14:16.313Z",
+  "timestamp": "2026-07-20T13:42:10.711Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,11 +25,11 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 135,
-  "uniqueDomains": 11,
+  "requestCount": 129,
+  "uniqueDomains": 9,
   "test_results": {
     "domestic": {
-      "cloud": 8,
+      "cloud": 6,
       "direct": 3
     },
     "foreign": {
@@ -74,8 +75,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
+        "ip": "142.250.192.136",
+        "hostname": "bom12s18-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -90,16 +91,36 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.youtube.com",
-        "ip": "142.250.196.206",
-        "hostname": "nctsaa-ac-in-f14.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
+        "ip": "142.251.151.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
         "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.176,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.151.4",
+          "prefix": "142.251.151.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
     },
     {
       "originalUrl": "https://cc.nkust.edu.tw/var/file/25/1025/img/412/2022-01-20_102942.png",
@@ -118,28 +139,12 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&tid=AW-619207031&en=page_view&dl=https%3A%2F%2Fwww.nkust.edu.tw%2F&scrsrc=www.googletagmanager.com&rnd=216696416.1768356850&dt=%E5%9C%8B%E7%AB%8B%E9%AB%98%E9%9B%84%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8%20-%20%E5%9C%8B%E7%AB%8B%E9%AB%98%E9%9B%84%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8%2CNKUST%2CNational%20Kaohsiung%20University%20of%20Science%20and%20Technology&auid=279821429.1768356850&navt=n&npa=0&gtm=45be61c1za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115938466~115938468~116744867~117041588~117091819&tft=1768356849579&tfd=1966&apve=1&apvf=f",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.204.36",
-        "hostname": "hkg07s38-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-33XL30PD8V&cid=786648693.1768356850&gtm=45je61c1v882299705za20g&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115616985~115938466~115938469~116744867~116910502~117041588~117091819&z=1456161973",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-33XL30PD8V&cid=1845940586.1784554919&gtm=45je67f0v882299705za20g&rcb=16&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938466~115938469~118395335~118897920~118897930~119996999&z=1774406552",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "ip": "142.250.204.35",
+        "hostname": "hkg07s38-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -150,44 +155,48 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://i.ytimg.com/vi/VnPuL8r0y2s/default.jpg?sqp=-oaymwEkCHgQWvKriqkDGvABAfgB_gmAAtAFigIMCAAQARhbIGAoZTAP&rs=AOn4CLDjfHCkCq3DAgoANPO2GsiwDJhAGw",
+      "originalUrl": "https://www.google.com/rmkt/collect/619207031/?random=1784554919020&cv=11&fst=1784554919020&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67f0h1za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118897920~118897930~119896803&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.nkust.edu.tw%2F&rcb=17&frm=0&tiba=%E5%9C%8B%E7%AB%8B%E9%AB%98%E9%9B%84%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8%20-%20%E5%9C%8B%E7%AB%8B%E9%AB%98%E9%9B%84%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8%2CNKUST%2CNational%20Kaohsiung%20University%20of%20Science%20and%20Technology&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=881721895.1784554919&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.155.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.929,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.155.119",
+          "prefix": "142.251.155.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
+    },
+    {
+      "originalUrl": "https://i.ytimg.com/vi/QLvp4_YbWXI/sddefault.jpg?sqp=-oaymwEmCIAFEOAD8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgVShUMA8=&rs=AOn4CLAVhxIRnWmLaf2jx07ny2uBPyCaAw",
       "type": "image",
       "ipinfo": {
         "domain": "i.ytimg.com",
-        "ip": "142.250.196.214",
-        "hostname": "nctsaa-ac-in-f22.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://yt3.ggpht.com/ytc/AIdro_ls14EP_Up9rb3MIHvp_mHpLRSul5ESyxbGStpCL6gEGjI=s68-c-k-c0x00ffffff-no-rj",
-      "type": "image",
-      "ipinfo": {
-        "domain": "yt3.ggpht.com",
-        "ip": "142.250.77.1",
-        "hostname": "nctsaa-ab-in-f1.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.gstatic.com/cv/js/sender/v1/cast_sender.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.gstatic.com",
-        "ip": "142.250.204.35",
-        "hostname": "hkg07s38-in-f3.1e100.net",
+        "ip": "142.250.204.54",
+        "hostname": "hkg07s38-in-f22.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -202,16 +211,36 @@
       "type": "xhr",
       "ipinfo": {
         "domain": "jnn-pa.googleapis.com",
-        "ip": "142.250.204.42",
-        "hostname": "hkg07s38-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
+        "ip": "172.217.113.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
         "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.72,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "172.217.113.4",
+          "prefix": "172.217.113.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
     }
   ]
 }

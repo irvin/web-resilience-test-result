@@ -1,12 +1,13 @@
 {
   "url": "https://twitch.tv",
-  "canonicalURL": "https://www.twitch.tv/",
+  "canonicalURL": "https://www.twitch.tv/?lang=zh-tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:04:41.182Z",
+  "timestamp": "2026-07-20T13:03:02.291Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 90,
-  "uniqueDomains": 7,
+  "requestCount": 105,
+  "uniqueDomains": 6,
   "test_results": {
     "domestic": {
-      "cloud": 2,
+      "cloud": 1,
       "direct": 0
     },
     "foreign": {
-      "cloud": 4,
+      "cloud": 5,
       "direct": 0
     }
   },
@@ -42,7 +43,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "twitch.tv",
-        "ip": "151.101.2.167",
+        "ip": "151.101.130.167",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -52,8 +53,25 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 35.2,
-        "detection_method": "rtt"
+        "x-served-by": "cache-nrt-rjaa8190027-NRT",
+        "rtt": 35.964,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "151.101.130.167",
+          "prefix": "151.101.130.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 56,
+          "location_count": 56
+        }
       }
     },
     {
@@ -71,25 +89,60 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 48.973,
-        "detection_method": "rtt"
+        "rtt": 60.118,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "146.75.46.214",
+          "prefix": "146.75.46.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 2,
+          "location_count": 2
+        }
       }
     },
     {
-      "originalUrl": "https://assets.twitch.tv/config/settings.bb68124162af0618d962d30b3795e261.js",
+      "originalUrl": "https://assets.twitch.tv/config/settings.1c614f361eb0408365c5a3fce34f6bf7.js",
       "type": "script",
       "ipinfo": {
         "domain": "assets.twitch.tv",
-        "ip": "3.169.55.41",
-        "hostname": "server-3-169-55-41.tpe54.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
+        "ip": "151.101.194.214",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 35.833,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "151.101.194.214",
+          "prefix": "151.101.194.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 55,
+          "location_count": 55
+        }
+      }
     },
     {
       "originalUrl": "https://k.twitchcdn.net/149e9513-01fa-4fb0-aad4-566afd725d1b/2d206a39-8ed7-437e-a3be-862e0f06eea3/p.js",
@@ -106,8 +159,25 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 49.735,
-        "detection_method": "rtt"
+        "x-served-by": "cache-nrt-rjtf7700058-NRT",
+        "rtt": 62.213,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "199.232.114.167",
+          "prefix": "199.232.114.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 2,
+          "location_count": 2
+        }
       }
     },
     {
@@ -115,7 +185,7 @@
       "type": "fetch",
       "ipinfo": {
         "domain": "gql.twitch.tv",
-        "ip": "199.232.114.214",
+        "ip": "146.75.46.214",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",
@@ -125,8 +195,24 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 48.989,
-        "detection_method": "rtt"
+        "rtt": 60.891,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "146.75.46.214",
+          "prefix": "146.75.46.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 2,
+          "location_count": 2
+        }
       }
     },
     {
@@ -134,8 +220,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.gstatic.com",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "ip": "142.250.77.195",
+        "hostname": "del11s08-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -144,13 +230,6 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "blob:https://www.twitch.tv/7010a28d-955f-4863-8c3e-02d082be42e0",
-      "type": "other",
-      "ipinfo": {
-        "domain": ""
-      }
     }
   ]
 }

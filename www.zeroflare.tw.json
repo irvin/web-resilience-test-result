@@ -2,7 +2,7 @@
   "url": "https://www.zeroflare.tw",
   "canonicalURL": "https://www.zeroflare.tw",
   "httpStatus": 200,
-  "timestamp": "2026-03-21T10:03:25.036Z",
+  "timestamp": "2026-07-20T17:23:25.134Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 5,
+  "requestCount": 6,
   "uniqueDomains": 1,
   "test_results": {
     "domestic": {
-      "cloud": 0,
+      "cloud": 1,
       "direct": 0
     },
     "foreign": {
-      "cloud": 1,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -43,7 +43,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.zeroflare.tw",
-        "ip": "172.67.134.39",
+        "ip": "104.18.3.174",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -51,10 +51,11 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 61.31,
-        "detection_method": "rtt"
+        "country": "tw",
+        "cf-ray": "a1e3a754cf35843f-TPE",
+        "detection_method": "header"
       }
     }
   ]

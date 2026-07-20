@@ -2,11 +2,12 @@
   "url": "https://www.tku.edu.tw/",
   "canonicalURL": "https://www.tku.edu.tw/tku/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:23:36.854Z",
+  "timestamp": "2026-07-20T13:14:28.402Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 261,
-  "uniqueDomains": 7,
+  "requestCount": 254,
+  "uniqueDomains": 6,
   "test_results": {
     "domestic": {
-      "cloud": 3,
+      "cloud": 4,
       "direct": 2
     },
     "foreign": {
-      "cloud": 1,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -44,10 +45,10 @@
         "domain": "www.tku.edu.tw",
         "ip": "203.145.221.108",
         "hostname": "203-145-221-108.twcc.ai",
-        "city": "Taichung",
+        "city": "Tainan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "24.1469,120.6839",
+        "loc": "22.9908,120.2133",
         "org": "AS7539 National Center for High-performance Computing",
         "timezone": "Asia/Taipei"
       },
@@ -69,7 +70,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd95427ddd54a0d-TPE",
+        "cf-ray": "a1e23a7c1eda4a4b-TPE",
         "detection_method": "header"
       }
     },
@@ -78,7 +79,7 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "use.fontawesome.com",
-        "ip": "172.67.142.245",
+        "ip": "104.21.27.152",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -86,10 +87,34 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 129.406,
-        "detection_method": "rtt"
+        "cf-ray": "a1e23a7f7c9afe8b-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "104.21.27.152",
+          "prefix": "104.21.27.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 59,
+          "location_count": 59,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -97,20 +122,42 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "151.101.129.229",
+        "ip": "104.17.207.5",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
         "loc": "37.7621,-122.3971",
-        "org": "AS54113 Fastly, Inc.",
+        "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
       "category": "domestic/cloud",
       "cloud_provider": {
+        "x-served-by": "cache-fra-eddf8230052-FRA, cache-sin-wsss1830091-SIN",
         "country": "tw",
-        "cf-ray": "9bd95427e99e4a60-TPE",
-        "x-served-by": "cache-fra-eddf8230143-FRA, cache-hkg17926-HKG",
-        "detection_method": "header"
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "104.17.207.5",
+          "prefix": "104.17.207.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 76,
+          "location_count": 76,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -118,26 +165,19 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.77.8",
-        "hostname": "nctsaa-ab-in-f8.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "64.233.189.97",
+        "hostname": "tl-in-f97.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "24.1469,120.6839",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "blob:https://www.tku.edu.tw/d63fe53e-0476-40b6-9e16-3123c89a46d7",
-      "type": "other",
-      "ipinfo": {
-        "domain": ""
-      }
-    },
-    {
-      "originalUrl": "https://photo.tkutimes.tku.edu.tw/api/jpgpath/Photos_2026-01_m_f2dd7ba8-c084-40fb-bf61-d84472482980.jpg",
+      "originalUrl": "https://photo.tkutimes.tku.edu.tw/api/jpgpath/Photos_2026-07_m_2a6dbf5e-d7d8-4fed-9e69-fd00ba42427c.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "photo.tkutimes.tku.edu.tw",

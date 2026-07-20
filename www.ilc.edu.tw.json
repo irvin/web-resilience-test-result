@@ -2,11 +2,12 @@
   "url": "https://www.ilc.edu.tw/",
   "canonicalURL": "https://www.ilc.edu.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:59:31.356Z",
+  "timestamp": "2026-07-20T13:21:09.528Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,12 +25,12 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 187,
-  "uniqueDomains": 16,
+  "requestCount": 108,
+  "uniqueDomains": 6,
   "test_results": {
     "domestic": {
-      "cloud": 9,
-      "direct": 5
+      "cloud": 5,
+      "direct": 1
     },
     "foreign": {
       "cloud": 0,
@@ -42,11 +43,11 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.ilc.edu.tw",
-        "ip": "140.111.67.82",
-        "city": "Taipei",
+        "ip": "140.111.67.81",
+        "city": "Yilan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.7570,121.7530",
         "org": "AS1659 Taiwan Academic Network (TANet) Information Center",
         "timezone": "Asia/Taipei"
       },
@@ -57,7 +58,7 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "unpkg.com",
-        "ip": "104.18.0.22",
+        "ip": "104.18.1.22",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -68,21 +69,21 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd988b48f804a9f-TPE",
+        "cf-ray": "a1e2445228968271-TPE",
         "detection_method": "header"
       }
     },
     {
-      "originalUrl": "https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=auto&ver=6.6.4",
+      "originalUrl": "https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=auto&ver=6.6.5",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.198.74",
-        "hostname": "lctsaa-ab-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "173.194.174.95",
+        "hostname": "td-in-f95.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "24.1469,120.6839",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
@@ -93,7 +94,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "cdnjs.cloudflare.com",
-        "ip": "104.17.24.14",
+        "ip": "104.17.25.14",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -104,15 +105,8 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd988b49ce54a6d-TPE",
+        "cf-ray": "a1e24451e98e6b72-TPE",
         "detection_method": "header"
-      }
-    },
-    {
-      "originalUrl": "blob:https://www.ilc.edu.tw/55497b28-17ce-4334-a920-90c13eef101f",
-      "type": "other",
-      "ipinfo": {
-        "domain": ""
       }
     },
     {
@@ -120,79 +114,46 @@
       "type": "script",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "151.101.193.229",
+        "ip": "104.17.207.5",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
         "loc": "37.7621,-122.3971",
-        "org": "AS54113 Fastly, Inc.",
+        "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
       "category": "domestic/cloud",
       "cloud_provider": {
+        "x-served-by": "cache-fra-eddf8230150-FRA, cache-sin-wsss1830067-SIN",
         "country": "tw",
-        "cf-ray": "9bd988b50aa04a84-TPE",
-        "x-served-by": "cache-fra-etou8220054-FRA, cache-hkg17934-HKG",
-        "detection_method": "header"
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "104.17.207.5",
+          "prefix": "104.17.207.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 76,
+          "location_count": 76,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
-      "originalUrl": "https://docs.google.com/presentation/d/e/2PACX-1vQGEM1uWHrGmVsDGF70SODtrEjTYVEg6g5xH8DYTa2ADtb4Nv64gNlWZuP55gLdqMOgMRjdJBoZPrdF/embed?start=true&loop=true&delayms=5000&rm=minimal",
-      "type": "document",
-      "ipinfo": {
-        "domain": "docs.google.com",
-        "ip": "142.250.198.78",
-        "hostname": "lctsaa-ab-in-f14.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://connect.facebook.net/zh_TW/sdk.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "connect.facebook.net",
-        "ip": "31.13.87.5",
-        "hostname": "xx-fbcdn-shv-01-tpe1.fbcdn.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS32934 Facebook, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/direct"
-    },
-    {
-      "originalUrl": "https://csp.withgoogle.com/csp/frame-ancestors/26981ed0d57bbad37e728ff58134270c",
-      "type": "other",
-      "ipinfo": {
-        "domain": "csp.withgoogle.com",
-        "ip": "142.250.66.81",
-        "hostname": "hkg12s27-in-f17.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "chrome-extension://ghbmnnjooekpmoecnnnilnnbdlolhkhi/page_embed_script.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "ghbmnnjooekpmoecnnnilnnbdlolhkhi"
-      }
-    },
-    {
-      "originalUrl": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUfOdS-FtExVtpLv01DMYtwnRPiCRs_TZtxl6pTBwY65XQvrvztAL9G3LfhgTz17xHS6rPNA6BYC1s78sS9S7-QVTMkRTMY_mYxdP3uqTOz9S0uhB7AqqCLa9RzgsuPQ0g=s2048?key=wtuWA3g9ArBORlrQTtiONA",
+      "originalUrl": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUeqTKIRgvVYLwhsTWTHXKns-JKAfuwSbG91KsKgngI4LeeLFQi9ln5jSO6j48n6coY2RyY_kVK5bHYFHrom62G9zUJpU5kGvoWU8zj_Pyme5kgfzAHm2_hsWzfCJ0T5WA=s2048?key=wtuWA3g9ArBORlrQTtiONA",
       "type": "image",
       "ipinfo": {
         "domain": "lh7-rt.googleusercontent.com",
@@ -206,86 +167,6 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://ssl.gstatic.com/docs/common/netcheck.gif?zx=ircldj3hxod8",
-      "type": "image",
-      "ipinfo": {
-        "domain": "ssl.gstatic.com",
-        "ip": "142.250.66.67",
-        "hostname": "hkg12s27-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://play.google.com/log?format=json&hasfast=true&authuser=0",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "play.google.com",
-        "ip": "142.250.66.78",
-        "hostname": "hkg12s27-in-f14.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.facebook.com/v2.10/plugins/page.php?app_id=&channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df3ce2b24740431d1e%26domain%3Dwww.ilc.edu.tw%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.ilc.edu.tw%252Ff9ecb8b86ca154fa3%26relation%3Dparent.parent&container_width=383&height=1000&hide_cover=true&hide_cta=true&href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100091735121028&locale=zh_TW&sdk=joey&show_facepile=false&small_header=true&tabs=timeline&width=500px",
-      "type": "document",
-      "ipinfo": {
-        "domain": "www.facebook.com",
-        "ip": "31.13.87.36",
-        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS32934 Facebook, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/direct"
-    },
-    {
-      "originalUrl": "https://static.xx.fbcdn.net/rsrc.php/v5/yp/l/1,cross/FAL9LK7-qlE.css",
-      "type": "stylesheet",
-      "ipinfo": {
-        "domain": "static.xx.fbcdn.net",
-        "ip": "31.13.87.5",
-        "hostname": "xx-fbcdn-shv-01-tpe1.fbcdn.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS32934 Facebook, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/direct"
-    },
-    {
-      "originalUrl": "https://scontent.ftpe7-3.fna.fbcdn.net/v/t39.30808-1/341125331_245082481245246_1619886805768280363_n.jpg?stp=c125.0.750.750a_dst-jpg_s100x100_tt6&_nc_cat=108&ccb=1-7&_nc_sid=f907e8&_nc_ohc=BgFOHqIe-QoQ7kNvwHwQBdZ&_nc_oc=Adk2TbG54laurarUVvyJaR9ItuNvxIrs3oUtJZcMMDmNAzf_nLCnJAKKJSuFRHOk4WWGLBpgEXrvZu0IKdZ5j3Ei&_nc_zt=24&_nc_ht=scontent.ftpe7-3.fna&edm=AFugn8MEAAAA&_nc_gid=7uGnMniIV8w83tCbVqxGWw&oh=00_Afp812bg2eJ2VWfZL4iJEzmkxenCCdY6_ZvlkZ0D6NWSYw&oe=696CE10B",
-      "type": "image",
-      "ipinfo": {
-        "domain": "scontent.ftpe7-3.fna.fbcdn.net",
-        "ip": "203.74.65.145",
-        "hostname": "203-74-65-145.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS3462 Data Communication Business Group",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/direct"
     }
   ]
 }

@@ -2,11 +2,12 @@
   "url": "https://steampowered.com",
   "canonicalURL": "https://store.steampowered.com/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:12:42.476Z",
+  "timestamp": "2026-07-20T13:07:45.567Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 90,
+  "requestCount": 125,
   "uniqueDomains": 5,
   "test_results": {
     "domestic": {
       "cloud": 2,
-      "direct": 0
+      "direct": 3
     },
     "foreign": {
-      "cloud": 3,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -70,61 +71,49 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://store.fastly.steamstatic.com/public/shared/css/motiva_sans.css?v=YzJgj1FjzW34&l=english&_cdn=fastly",
+      "originalUrl": "https://store.akamai.steamstatic.com/public/shared/css/motiva_sans.css?v=4Vj7bvhvv_UL&l=tchinese&_cdn=akamai",
       "type": "stylesheet",
       "ipinfo": {
-        "domain": "store.fastly.steamstatic.com",
-        "ip": "199.232.115.52",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
+        "domain": "store.akamai.steamstatic.com",
+        "ip": "210.71.227.122",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
       },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": 54.942,
-        "detection_method": "rtt"
-      }
+      "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://cdn.fastly.steamstatic.com/store/steamdeck/steamdeck_promo_413150.png?v=4",
+      "originalUrl": "https://cdn.akamai.steamstatic.com/store/home/gc_fan.webp",
       "type": "image",
       "ipinfo": {
-        "domain": "cdn.fastly.steamstatic.com",
-        "ip": "146.75.47.52",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
+        "domain": "cdn.akamai.steamstatic.com",
+        "ip": "210.71.227.136",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
       },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": 45.138,
-        "detection_method": "rtt"
-      }
+      "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/clusters/sale_autumn2019_assets/54b5034d397baccb93181cc6/deck_banner_animated_static_english.jpg?t=1765400249",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1295660/67d1e25be716706a00d1e0534882a11bb5ba973a/capsule_616x353.jpg?t=1782256730",
       "type": "image",
       "ipinfo": {
-        "domain": "shared.fastly.steamstatic.com",
-        "ip": "199.232.115.52",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
+        "domain": "shared.akamai.steamstatic.com",
+        "ip": "210.71.227.145",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
       },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": 54.56,
-        "detection_method": "rtt"
-      }
+      "category": "domestic/direct"
     }
   ]
 }

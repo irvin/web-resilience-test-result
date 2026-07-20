@@ -2,11 +2,12 @@
   "url": "https://weddingday.com.tw",
   "canonicalURL": "https://www.weddingday.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T02:50:50.428Z",
+  "timestamp": "2026-07-20T14:47:19.643Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 284,
-  "uniqueDomains": 17,
+  "requestCount": 303,
+  "uniqueDomains": 19,
   "test_results": {
     "domestic": {
-      "cloud": 13,
-      "direct": 3
+      "cloud": 15,
+      "direct": 4
     },
     "foreign": {
-      "cloud": 1,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -42,12 +43,12 @@
       "type": "document",
       "ipinfo": {
         "domain": "weddingday.com.tw",
-        "ip": "3.169.137.85",
-        "hostname": "server-3-169-137-85.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "3.169.137.83",
+        "hostname": "server-3-169-137-83.tpe54.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -58,12 +59,12 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.weddingday.com.tw",
-        "ip": "3.169.137.83",
-        "hostname": "server-3-169-137-83.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "3.169.137.25",
+        "hostname": "server-3-169-137-25.tpe54.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -74,8 +75,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagservices.com",
-        "ip": "142.250.77.2",
-        "hostname": "nctsaa-ab-in-f2.1e100.net",
+        "ip": "142.250.198.66",
+        "hostname": "lctsaa-ab-in-f2.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -90,13 +91,29 @@
       "type": "image",
       "ipinfo": {
         "domain": "rcdn.weddingday.com.tw",
-        "ip": "3.169.137.31",
-        "hostname": "server-3-169-137-31.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "65.9.180.42",
+        "hostname": "server-65-9-180-42.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-MZKZBP",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.googletagmanager.com",
+        "ip": "142.250.77.8",
+        "hostname": "nctsaa-ab-in-f8.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
@@ -118,28 +135,100 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-MZKZBP",
+      "originalUrl": "https://unpkg.com/@dcard/web-ad-tracking-sdk/build/dadk.iife.js",
       "type": "script",
       "ipinfo": {
-        "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "domain": "unpkg.com",
+        "ip": "104.18.1.22",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e2c298c8c64a87-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://d.line-scdn.net/n/line_tag/public/release/v1/lt.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "d.line-scdn.net",
+        "ip": "184.25.121.253",
+        "hostname": "a184-25-121-253.deploy.static.akamaitechnologies.com",
+        "city": "Yuanlin",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
+        "loc": "23.9567,120.5761",
+        "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com/ccm/collect?rcb=9&frm=0&ae=g&auid=1633852778.1784558836&dt=%E8%AE%93%E6%96%B0%E5%A8%98%E6%9B%B4%E5%84%AA%E9%9B%85%E8%BC%95%E9%AC%86%E5%9C%B0%E5%AE%8C%E6%88%90%E5%A9%9A%E7%A6%AE%20%7C%20WeddingDay%E5%A5%BD%E5%A9%9A%E5%B8%82%E9%9B%86&en=page_view&dl=https%3A%2F%2Fwww.weddingday.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=137411497.1784558836&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He67g0h2v6609739za200zd6609739xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118395335~118897920~118897930~119709550&apve=1&apvf=f&apvc=1&tft=1784558835887&tfd=2401&fmt=8",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.156.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.899,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.156.119",
+          "prefix": "142.251.156.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
     },
     {
       "originalUrl": "https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.198.74",
-        "hostname": "lctsaa-ab-in-f10.1e100.net",
+        "ip": "74.125.203.95",
+        "hostname": "th-in-f95.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.1469,120.6839",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/449338377/?random=1784558836022&cv=11&fst=1784556000000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67g0h2v877461329z86609739za20gzb6609739zd6609739xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118897920~118897930&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.weddingday.com.tw%2F&rcb=12&frm=0&tiba=%E8%AE%93%E6%96%B0%E5%A8%98%E6%9B%B4%E5%84%AA%E9%9B%85%E8%BC%95%E9%AC%86%E5%9C%B0%E5%AE%8C%E6%88%90%E5%A9%9A%E7%A6%AE%20%7C%20WeddingDay%E5%A5%BD%E5%A9%9A%E5%B8%82%E9%9B%86&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1633852778.1784558836&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS7AEAEQoqgfwmMp5Eqm7em7hpNz9kZp9e6cue0qXweGMYPBz0OdOMfR9HQY5zFhu5i6TZAw5rLQ9IsnFVC4UOH4W_h-EjwwvT6UM2Xr5m_KplHYV3c-SJKeXGGZjSx_to0e5ePvNygquVsfidYWW-yOKMZ_X1sYzP7dYdLtkzoVA12iIWtf9RPrgsPFYzQ7vnipyHoANq0ivBOz3WJEZM66qgREzP-AtSHNDPd_alEQCXjLxJqB4_LX9VCLL2ptMNbToP-DP5tpjfAIdn3e3-F8unlBIUqFlHAFZB0u56Lp4s3pnx2TWXBjRJUoS1dQ&random=2000026710&rmt_tld=1&ipr=y",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.198.67",
+        "hostname": "lctsaa-ab-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -154,26 +243,7 @@
       "type": "font",
       "ipinfo": {
         "domain": "use.fontawesome.com",
-        "ip": "172.67.142.245",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": 129.455,
-        "detection_method": "rtt"
-      }
-    },
-    {
-      "originalUrl": "https://unpkg.com/@dcard/web-ad-tracking-sdk/build/dadk.iife.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "unpkg.com",
-        "ip": "104.18.0.22",
+        "ip": "104.21.27.152",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -183,45 +253,36 @@
       },
       "category": "domestic/cloud",
       "cloud_provider": {
+        "cf-ray": "a1e2c29befaefe19-SIN",
         "country": "tw",
-        "cf-ray": "9bd9d3ea6d6a8265-TPE",
-        "detection_method": "header"
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "104.21.27.152",
+          "prefix": "104.21.27.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 59,
+          "location_count": 59,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
-      "originalUrl": "https://d.line-scdn.net/n/line_tag/public/release/v1/lt.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "d.line-scdn.net",
-        "ip": "104.116.17.150",
-        "hostname": "a104-116-17-150.deploy.static.akamaitechnologies.com",
-        "city": "Yuanlin",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "23.9567,120.5761",
-        "org": "AS16625 Akamai Technologies, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&tid=AW-11025302718&en=page_view&dl=https%3A%2F%2Fwww.weddingday.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=827082699.1768359047&dt=%E8%AE%93%E6%96%B0%E5%A8%98%E6%9B%B4%E5%84%AA%E9%9B%85%E8%BC%95%E9%AC%86%E5%9C%B0%E5%AE%8C%E6%88%90%E5%A9%9A%E7%A6%AE%20%7C%20WeddingDay%E5%A5%BD%E5%A9%9A%E5%B8%82%E9%9B%86&auid=731421426.1768359047&navt=n&npa=0&gtm=45be61d0h2v897856621z86609739za20gzb6609739zd6609739xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115938465~115938468~115985661~117041588&tft=1768359046806&tfd=1629&apve=1&apvf=f",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.204.36",
-        "hostname": "hkg07s38-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=173399133410768&height=200&width=200&ext=1770951046&hash=AT8Ebm7gqnk2AVbgSXdg0fCj",
+      "originalUrl": "https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=5470333653043872&height=200&width=200&ext=1787150836&hash=AfuZgX1AgRlLySDhqGe_2EtL",
       "type": "image",
       "ipinfo": {
         "domain": "platform-lookaside.fbsbx.com",
@@ -237,11 +298,11 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://pixel.dcard.tw/api/v2/devices/init?id=f46849a0-d075-4de6-9cbf-66e2cabe1500&pixel=rRq7Tbw6havErLySSOxKy&createdAt=2026-01-14T02%3A50%3A46.886Z&clickId=&version=3.0.0-3p",
+      "originalUrl": "https://pixel.dcard.tw/api/v2/devices/init?id=d1a27197-6cb7-4117-bac4-686deed9220c&pixel=rRq7Tbw6havErLySSOxKy&createdAt=2026-07-20T14%3A47%3A16.630Z&clickId=&version=3.0.0-3p",
       "type": "image",
       "ipinfo": {
         "domain": "pixel.dcard.tw",
-        "ip": "104.19.248.7",
+        "ip": "104.19.247.7",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -252,8 +313,8 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.542,
-        "detection_method": "rtt"
+        "cf-ray": "a1e2c29afa0a6b72-TPE",
+        "detection_method": "header"
       }
     },
     {
@@ -273,52 +334,114 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/11025302718/?random=1768359046803&cv=11&fst=1768356000000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be61d0h2v897856621z86609739za20gzb6609739zd6609739xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115938465~115938468~115985661~117041588&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.weddingday.com.tw%2F&frm=0&tiba=%E8%AE%93%E6%96%B0%E5%A8%98%E6%9B%B4%E5%84%AA%E9%9B%85%E8%BC%95%E9%AC%86%E5%9C%B0%E5%AE%8C%E6%88%90%E5%A9%9A%E7%A6%AE%20%7C%20WeddingDay%E5%A5%BD%E5%A9%9A%E5%B8%82%E9%9B%86&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=731421426.1768359047&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEA56J1eZI1emuJmOjJJz6WT5s7qDhmOJUEh0pWFw1NEPiM5OtBocIsgAAqhcKa43uqSF_JparcJCvosvQi18TO-lvmPMKo4qUGbJlCWoTuJuHQmQFQuR8WqhGayNNaFwHXmhHP0dv9VU45VJoHQuDcJZsOyLguhJxiqWOsNWCMkOAqaNkFfKETAyyp&random=3995282702&rmt_tld=1&ipr=y",
-      "type": "image",
+      "originalUrl": "https://mpc2-prod-25-is5qnl632q-wl.a.run.app/events?cee=no",
+      "type": "fetch",
       "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.204.35",
-        "hostname": "hkg07s38-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "domain": "mpc2-prod-25-is5qnl632q-wl.a.run.app",
+        "ip": "34.143.75.2",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.536,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.143.75.2",
+          "prefix": "34.143.75.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.facebook.com/tr/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://img.shoplineapp.com/media/image_clips/5d5e60c3e0e53d001abf2230/original.jpg?1566466242",
       "type": "image",
       "ipinfo": {
         "domain": "img.shoplineapp.com",
-        "ip": "3.169.137.124",
-        "hostname": "server-3-169-137-124.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "54.192.248.15",
+        "hostname": "server-54-192-248-15.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://shoplineimg.com/media/5f33a926ebfee1002d75747c/original.webp?source_format=jpg",
+      "originalUrl": "https://c.bing.com/c.gif?ctsa=mr&CtsSyncId=8FFB633FC5CB4FCEADDEB722CCAB9566&RedC=c.clarity.ms&MXFR=0DB9D21AC25366462FCCC586C6536889",
       "type": "image",
       "ipinfo": {
-        "domain": "shoplineimg.com",
-        "ip": "3.169.36.82",
-        "hostname": "server-3-169-36-82.tpe53.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
+        "domain": "c.bing.com",
+        "ip": "150.171.27.10",
+        "city": "Redmond",
+        "region": "Washington",
+        "country": "US",
+        "loc": "47.6740,-122.1215",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "150.171.27.10",
+          "prefix": "150.171.27.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            8075
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 57,
+          "location_count": 57,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
+      }
     }
   ]
 }

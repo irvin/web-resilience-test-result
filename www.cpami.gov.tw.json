@@ -2,11 +2,12 @@
   "url": "https://www.cpami.gov.tw/",
   "canonicalURL": "https://www.cpami.gov.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T02:35:53.142Z",
+  "timestamp": "2026-07-20T14:00:04.724Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 4,
-  "uniqueDomains": 2,
+  "requestCount": 155,
+  "uniqueDomains": 8,
   "test_results": {
     "domestic": {
-      "cloud": 0,
+      "cloud": 5,
       "direct": 2
     },
     "foreign": {
-      "cloud": 0,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -44,10 +45,10 @@
         "domain": "www.cpami.gov.tw",
         "ip": "223.200.122.41",
         "hostname": "223-200-122-41.hinet-ip.hinet.net",
-        "city": "Taipei",
+        "city": "Nantou",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "23.9157,120.6639",
         "org": "AS4782 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
@@ -58,8 +59,8 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.nlma.gov.tw",
-        "ip": "223.200.122.51",
-        "hostname": "223-200-122-51.hinet-ip.hinet.net",
+        "ip": "117.56.12.134",
+        "hostname": "117-56-12-134.hinet-ip.hinet.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -68,6 +69,142 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://www.google.com/recaptcha/api.js?render=6LctqDUqAAAAAAx8kOtvTNIqCu1iD1PzpcVSwcbn",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.157.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 7.643,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.157.119",
+          "prefix": "142.251.157.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
+    },
+    {
+      "originalUrl": "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400..700&display=swap",
+      "type": "stylesheet",
+      "ipinfo": {
+        "domain": "fonts.googleapis.com",
+        "ip": "142.250.157.95",
+        "hostname": "ta-in-f95.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.1469,120.6839",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.gstatic.com/recaptcha/releases/A7KpaEASfhDcK0nXxgQEyyYv/recaptcha__zh_tw.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.gstatic.com",
+        "ip": "142.250.77.195",
+        "hostname": "del11s08-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-DR4XCM59GJ",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.googletagmanager.com",
+        "ip": "142.250.192.136",
+        "hostname": "bom12s18-in-f8.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://cse.google.com/cse.js?cx=03156262782304e6c",
+      "type": "script",
+      "ipinfo": {
+        "domain": "cse.google.com",
+        "ip": "142.250.204.46",
+        "hostname": "hkg07s38-in-f14.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://noembed.com/embed?url=https://www.youtube.com/embed/ZOynt6N5zwg/?autoplay=1&null",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "noembed.com",
+        "ip": "151.101.1.91",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "x-served-by": "cache-ewr-kewr1740074-EWR, cache-sin-wsss1830072-SIN",
+        "rtt": 35.705,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "151.101.1.91",
+          "prefix": "151.101.1.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 54,
+          "location_count": 54
+        }
+      }
     }
   ]
 }

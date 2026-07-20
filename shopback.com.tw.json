@@ -2,11 +2,12 @@
   "url": "https://shopback.com.tw",
   "canonicalURL": "https://www.shopback.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T02:31:44.266Z",
+  "timestamp": "2026-07-20T13:40:43.817Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 155,
-  "uniqueDomains": 12,
+  "requestCount": 172,
+  "uniqueDomains": 13,
   "test_results": {
     "domestic": {
-      "cloud": 8,
-      "direct": 1
+      "cloud": 11,
+      "direct": 2
     },
     "foreign": {
-      "cloud": 3,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -42,7 +43,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "shopback.com.tw",
-        "ip": "104.26.8.209",
+        "ip": "104.18.15.9",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -50,10 +51,11 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 69.41,
-        "detection_method": "rtt"
+        "country": "tw",
+        "cf-ray": "a1e261007ecbae64-TPE",
+        "detection_method": "header"
       }
     },
     {
@@ -61,7 +63,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.shopback.com.tw",
-        "ip": "104.26.9.209",
+        "ip": "104.18.15.9",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -69,10 +71,11 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 69.754,
-        "detection_method": "rtt"
+        "country": "tw",
+        "cf-ray": "a1e2610c0d51ae64-TPE",
+        "detection_method": "header"
       }
     },
     {
@@ -96,12 +99,12 @@
       "type": "image",
       "ipinfo": {
         "domain": "cloud.shopback.com",
-        "ip": "23.39.61.140",
-        "hostname": "a23-39-61-140.deploy.static.akamaitechnologies.com",
-        "city": "Taipei",
+        "ip": "104.116.17.127",
+        "hostname": "a104-116-17-127.deploy.static.akamaitechnologies.com",
+        "city": "Yuanlin",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "23.9567,120.5761",
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -112,7 +115,7 @@
       "type": "image",
       "ipinfo": {
         "domain": "static-common.shopback.com",
-        "ip": "104.26.14.122",
+        "ip": "104.18.28.103",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -123,30 +126,9 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd9b7f61dc06b69-TPE",
+        "cf-ray": "a1e261067eed2beb-TPE",
         "x-amz-cf-pop": "TPE53-P2",
         "detection_method": "header"
-      }
-    },
-    {
-      "originalUrl": "https://o27075.ingest.us.sentry.io/api/4509349084856320/envelope/?sentry_version=7&sentry_key=b0d19f4a5676ab888eafb6350f9a510f&sentry_client=sentry.javascript.browser%2F9.47.1",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "o27075.ingest.us.sentry.io",
-        "ip": "34.160.81.0",
-        "hostname": "0.81.160.34.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
-        "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "rtt": 4.948,
-        "detection_method": "rtt"
       }
     },
     {
@@ -166,28 +148,48 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fwww.shopback.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=845410170.1768357902&dt=%E7%B6%B2%E8%B7%AF%E8%B3%BC%E7%89%A9%E8%BF%94%E5%88%A9%2B%E7%8F%BE%E9%87%91%E5%9B%9E%E9%A5%8B%E5%B9%B3%E5%8F%B0%EF%BD%9C%E6%8A%98%E5%83%B9%E5%88%B8%2F%E4%BF%83%E9%8A%B7%2F%E5%A5%BD%E5%BA%B7%E5%84%AA%E6%83%A0%EF%BC%8DShopBack&auid=1888206144.1768357902&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He61d0h2v71746143za200zd71746143xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115495939~115616986~115938465~115938469~116491845~116682875~117041587&apve=1&apvf=f&apvc=1&tft=1768357901712&tfd=1228",
+      "originalUrl": "https://www.google.com/ccm/collect?rcb=14&frm=0&ae=g&auid=1830086601.1784554840&dt=%E7%B6%B2%E8%B7%AF%E8%B3%BC%E7%89%A9%E8%BF%94%E5%88%A9%2B%E7%8F%BE%E9%87%91%E5%9B%9E%E9%A5%8B%E5%B9%B3%E5%8F%B0%EF%BD%9C%E6%8A%98%E5%83%B9%E5%88%B8%2F%E4%BF%83%E9%8A%B7%2F%E5%A5%BD%E5%BA%B7%E5%84%AA%E6%83%A0%EF%BC%8DShopBack&en=page_view&dl=https%3A%2F%2Fwww.shopback.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=1769498814.1784554840&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He67f0v71746143za200zd71746143xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938465~115938468~118395335~118897920~118897930&apve=1&apvf=f&apvc=1&tft=1784554839674&tfd=810&fmt=8",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.196.196",
-        "hostname": "nctsaa-ac-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
+        "ip": "142.251.152.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
         "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.862,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.152.119",
+          "prefix": "142.251.152.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
     },
     {
-      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/949662838/?random=1768357901781&cv=11&fst=1768356000000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be61d0h2v898292524z871746143za20gzb71746143zd71746143xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115938465~115938469~116491845~116682875~116988316~117041588&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.shopback.com.tw%2F&frm=0&tiba=%E7%B6%B2%E8%B7%AF%E8%B3%BC%E7%89%A9%E8%BF%94%E5%88%A9%2B%E7%8F%BE%E9%87%91%E5%9B%9E%E9%A5%8B%E5%B9%B3%E5%8F%B0%EF%BD%9C%E6%8A%98%E5%83%B9%E5%88%B8%2F%E4%BF%83%E9%8A%B7%2F%E5%A5%BD%E5%BA%B7%E5%84%AA%E6%83%A0%EF%BC%8DShopBack&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1888206144.1768357902&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEA56J1eXcaHgW44lpxvTCvmY6WchRPqErPAtRqzwNVpsj_VEM39dyVySDdVnZbjdmhSXQB_MgBlsq9TxRHJa1f4CIDXillKQ6zbv_eSL-oIijZZIr01OrTwQ1k59vSJYsh_kq7z3vwP3JRoTZTXLZNjUsp70k6wnEfKw4WPT5947JSdmcP-nSI_LkL&random=3885935902&rmt_tld=1&ipr=y",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&ngs=1&ibt=1&tid=G-MF157SKJW2&cid=624333781.1784554840&gtm=45je67f0v9123554268z871746143za20gzb71746143zd71746143&rcb=19&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115616986~115938465~115938469~118897920~118897930~119896803&z=2061530182",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "ip": "142.250.77.195",
+        "hostname": "del11s08-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -202,8 +204,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "accounts.google.com",
-        "ip": "64.233.187.84",
-        "hostname": "tj-in-f84.1e100.net",
+        "ip": "173.194.174.84",
+        "hostname": "td-in-f84.1e100.net",
         "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
@@ -214,12 +216,12 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://marketingplatform.google.com/about/enterprise/",
-      "type": "fetch",
+      "originalUrl": "https://google.com/.well-known/web-identity",
+      "type": "fedcm",
       "ipinfo": {
-        "domain": "marketingplatform.google.com",
-        "ip": "142.250.198.78",
-        "hostname": "lctsaa-ab-in-f14.1e100.net",
+        "domain": "google.com",
+        "ip": "142.250.192.142",
+        "hostname": "bom12s18-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -230,11 +232,43 @@
       "category": "domestic/cloud"
     },
     {
+      "originalUrl": "https://marketingplatform.google.com/about/enterprise/",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "marketingplatform.google.com",
+        "ip": "142.250.77.206",
+        "hostname": "del11s08-in-f14.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.facebook.com/tr/?id=1115971541802487&ev=PageView&dl=https%3A%2F%2Fwww.shopback.com.tw%2F&rl=&if=false&ts=1784554840982&iw=false&sw=1280&sh=720&v=2.9.357&r=stable&ec=0&o=4126&aems=0%3B0&fbp=fb.2.1784554840979.510538465232652429&ler=empty&cdl=API_unavailable&pmd[title]=%E7%B6%B2%E8%B7%AF%E8%B3%BC%E7%89%A9%E8%BF%94%E5%88%A9%2B%E7%8F%BE%E9%87%91%E5%9B%9E%E9%A5%8B%E5%B9%B3%E5%8F%B0%EF%BD%9C%E6%8A%98%E5%83%B9%E5%88%B8%2F%E4%BF%83%E9%8A%B7%2F%E5%A5%BD%E5%BA%B7%E5%84%AA%E6%83%A0%EF%BC%8DShopBack&pmd[locale]=zh&pmd[description]=ShopBack%EF%BC%8D%E5%85%A8%E5%8F%B0%E7%81%A3%E6%9C%80%E7%9C%81%E9%8C%A2%E7%9A%84%E7%8F%BE%E9%87%91%E5%9B%9E%E9%A5%8B%E5%84%AA%E6%83%A0%E7%B6%B2%E7%AB%99%EF%BC%8C%E9%9B%86%E5%90%88%E5%9C%8B%E5%85%A7%E5%A4%96%E7%B6%B2%E7%AB%99%E6%9C%80%E6%96%B0%E5%84%AA%E6%83%A0%E5%88%B8%E3%80%81%E6%8A%98%E5%83%B9%E5%88%B8%E3%80%81%E6%8A%98%E6%89%A3%E4%BB%A3%E7%A2%BC%E5%92%8C%E5%A5%BD%E5%BA%B7%E7%89%B9%E5%83%B9%E6%83%85%E5%A0%B1%EF%BC%8C%E8%B3%BC%E7%89%A9%E5%B0%B1%E5%8A%A0%E9%80%81%E7%8F%BE%E9%87%91%E5%9B%9E%E9%A5%8B%EF%BC%8C%E4%B8%80%E7%9C%81%E5%86%8D%E7%9C%81%EF%BC%8C%E7%B5%95%E5%B0%8D%E6%9C%80%E4%BD%8E%E5%83%B9%EF%BC%81&plt=744.2999999998137&iss=1&ss=%7B%22price%22%3A%5B%7B%22rid%22%3A%221589546245629241%22%2C%22v%22%3A%5B%22Trip.com%5Cn%5Cn%E6%9C%80%E9%AB%9818%25%E7%8F%BE%E9%87%91%E5%9B%9E%E9%A5%8B%5Cn%5Cn18%25%5Cn%E2%80%A2%202%E5%B0%8F%E6%99%82%E5%BE%8C%E7%B5%90%E6%9D%9F%22%5D%7D%5D%7D&imft=1&tz=480&it=1784554840277&coo=false&expv2[0]=pl0&expv2[1]=el2&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=ct2&expv2[6]=hf0&rqm=GET",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
       "originalUrl": "https://tracking-aps1.shopback.com/client/v1/web_events",
       "type": "xhr",
       "ipinfo": {
         "domain": "tracking-aps1.shopback.com",
-        "ip": "104.26.14.122",
+        "ip": "104.18.28.103",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -242,10 +276,33 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 64.336,
-        "detection_method": "rtt"
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "104.18.28.103",
+          "prefix": "104.18.28.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 72,
+          "location_count": 72,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     }
   ]

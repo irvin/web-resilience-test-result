@@ -2,11 +2,12 @@
   "url": "https://ikea.com.tw",
   "canonicalURL": "https://www.ikea.com.tw/zh",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:11:33.548Z",
+  "timestamp": "2026-07-20T13:09:52.502Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 375,
-  "uniqueDomains": 20,
+  "requestCount": 287,
+  "uniqueDomains": 23,
   "test_results": {
     "domestic": {
-      "cloud": 14,
+      "cloud": 18,
       "direct": 3
     },
     "foreign": {
-      "cloud": 3,
+      "cloud": 2,
       "direct": 0
     }
   },
@@ -42,19 +43,36 @@
       "type": "document",
       "ipinfo": {
         "domain": "ikea.com.tw",
-        "ip": "18.172.52.26",
-        "hostname": "server-18-172-52-26.nrt20.r.cloudfront.net",
-        "city": "Tokyo",
-        "region": "Tokyo",
-        "country": "JP",
-        "loc": "35.6895,139.6917",
+        "ip": "13.35.238.54",
+        "hostname": "server-13-35-238-54.sin2.r.cloudfront.net",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
         "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Tokyo"
+        "timezone": "Asia/Singapore"
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 45.996,
-        "detection_method": "rtt"
+        "x-amz-cf-pop": "NRT20-P2",
+        "rtt": 196.342,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "13.35.238.54",
+          "prefix": "13.35.238.0/24",
+          "anycast": true,
+          "confidence": "low_confidence",
+          "partial": false,
+          "asns": [
+            16509
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 2,
+          "location_count": 0
+        }
       }
     },
     {
@@ -62,12 +80,12 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.ikea.com.tw",
-        "ip": "3.169.121.112",
-        "hostname": "server-3-169-121-112.tpe53.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "54.192.248.112",
+        "hostname": "server-54-192-248-112.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -78,20 +96,42 @@
       "type": "script",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "151.101.193.229",
+        "ip": "104.17.207.5",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
         "loc": "37.7621,-122.3971",
-        "org": "AS54113 Fastly, Inc.",
+        "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
       "category": "domestic/cloud",
       "cloud_provider": {
+        "x-served-by": "cache-fra-etou8220087-FRA, cache-sin-wsat1880088-SIN",
         "country": "tw",
-        "cf-ray": "9bd9427b9fc94a86-TPE",
-        "x-served-by": "cache-fra-eddf8230024-FRA, cache-hkg17935-HKG",
-        "detection_method": "header"
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "104.17.207.5",
+          "prefix": "104.17.207.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 76,
+          "location_count": 76,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -99,8 +139,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -115,12 +155,12 @@
       "type": "script",
       "ipinfo": {
         "domain": "d.line-scdn.net",
-        "ip": "104.116.17.150",
-        "hostname": "a104-116-17-150.deploy.static.akamaitechnologies.com",
-        "city": "Yuanlin",
-        "region": "Taiwan",
+        "ip": "23.46.90.8",
+        "hostname": "a23-46-90-8.deploy.static.akamaitechnologies.com",
+        "city": "Kaohsiung",
+        "region": "Takao",
         "country": "TW",
-        "loc": "23.9567,120.5761",
+        "loc": "22.6163,120.3133",
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -147,45 +187,13 @@
       "type": "script",
       "ipinfo": {
         "domain": "cdn.dynamicyield.com",
-        "ip": "3.169.36.20",
-        "hostname": "server-3-169-36-20.tpe53.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "54.192.248.84",
+        "hostname": "server-54-192-248-84.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.surveygizmo.eu/runtimejs/intercept/intercept.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.surveygizmo.eu",
-        "ip": "3.169.55.61",
-        "hostname": "server-3-169-55-61.tpe54.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fwww.ikea.com.tw%2Fzh&scrsrc=www.googletagmanager.com&rnd=1335660162.1768353090&dt=IKEA%E5%AE%9C%E5%AE%B6%E5%AE%B6%E5%B1%85%E7%B7%9A%E4%B8%8A%E8%B3%BC%E7%89%A9-%E7%B5%A6%E4%BD%A0%E6%9B%B4%E5%A4%9A%E5%B1%85%E5%AE%B6%E4%BD%88%E7%BD%AE%E9%9D%88%E6%84%9F&auid=1042518613.1768353090&navt=n&npa=0&gtm=45He61c1v812385456za200zd812385456xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115938465~115938469~117041587~117091818&tft=1768353089987&tfd=1186&apve=1&apvf=f",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.198.68",
-        "hostname": "lctsaa-ab-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
@@ -195,8 +203,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "pixel.onead.com.tw",
-        "ip": "203.66.32.204",
-        "hostname": "203-66-32-204.hinet-ip.hinet.net",
+        "ip": "203.66.32.4",
+        "hostname": "203-66-32-4.hinet-ip.hinet.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -219,7 +227,153 @@
         "org": "AS8075 Microsoft Corporation",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "x-msedge-ref": "Ref A: 4D4C2F219C8C4D33AA4470E11BCF2269 Ref B: TPE201050221023 Ref C: 2026-07-20T13:09:48Z",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://dev.visualwebsiteoptimizer.com/j.php?a=1187620&u=https%3A%2F%2Fwww.ikea.com.tw%2Fzh&vn=2.2&ph=1&st=1786.9000000000233&x=true",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "dev.visualwebsiteoptimizer.com",
+        "ip": "34.107.218.251",
+        "hostname": "251.218.107.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.908,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.107.218.251",
+          "prefix": "34.107.218.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 63,
+          "location_count": 63
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.google.com/ccm/collect?rcb=9&frm=0&ae=g&auid=1783874232.1784552988&dt=IKEA%E5%AE%9C%E5%AE%B6%E5%AE%B6%E5%B1%85%E7%B7%9A%E4%B8%8A%E8%B3%BC%E7%89%A9-%E7%B5%A6%E4%BD%A0%E6%9B%B4%E5%A4%9A%E5%B1%85%E5%AE%B6%E4%BD%88%E7%BD%AE%E9%9D%88%E6%84%9F&en=page_view&dl=https%3A%2F%2Fwww.ikea.com.tw%2Fzh&scrsrc=www.googletagmanager.com&rnd=1986843212.1784552988&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He67f0v812385456za200zd812385456xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938468~118395333~118897920~118897930~119724320~119896802~119996999&apve=1&apvf=f&apvc=1&tft=1784552988012&tfd=1788&fmt=8",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.155.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.807,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.155.119",
+          "prefix": "142.251.155.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.facebook.com/tr/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://www.surveygizmo.eu/runtimejs/intercept/intercept.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.surveygizmo.eu",
+        "ip": "54.192.248.63",
+        "hostname": "server-54-192-248-63.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://mpc2-prod-29-is5qnl632q-uc.a.run.app/events?cee=no",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "mpc2-prod-29-is5qnl632q-uc.a.run.app",
+        "ip": "34.143.75.2",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.544,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.143.75.2",
+          "prefix": "34.143.75.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
     },
     {
       "originalUrl": "https://ikeatw.api.useinsider.com/ins.js?id=10011204",
@@ -237,17 +391,17 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd9427f79b68097-TPE",
+        "cf-ray": "a1e233d4fd14f22a-TPE",
         "detection_method": "header"
       }
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-816Q2QZJXD&cid=2106380893.1768353090&gtm=45je61c1v882040572z8812385456za20gzb812385456zd812385456&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115616985~115938465~115938469~116910502~117041588&z=2101844081",
+      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/667473642/?random=1784552988159&cv=11&fst=1784552400000&bg=ffffff&guid=ON&async=1&gtm=45be67f0v869662757z8812385456za20gzb812385456zd812385456xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938468~118897920~118897930~119724320&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.ikea.com.tw%2Fzh&rcb=18&frm=0&tiba=IKEA%E5%AE%9C%E5%AE%B6%E5%AE%B6%E5%B1%85%E7%B7%9A%E4%B8%8A%E8%B3%BC%E7%89%A9-%E7%B5%A6%E4%BD%A0%E6%9B%B4%E5%A4%9A%E5%B1%85%E5%AE%B6%E4%BD%88%E7%BD%AE%E9%9D%88%E6%84%9F&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1783874232.1784552988&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&_tu=CA&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS7AEAEQoqgUiqmHtURJDl9Djc68e_-tAFF-z6V1aZv0nMWdUNMEWwG-80rmRXV7vzauMHwD2KHu9JbYZCmJZ_kYCgS5p94YiaICqCr-w7SZZlfnB_MJiJGcgS1Wqq-RlwANkba0pqdYPPu_6TI-kV1AyLmkSUWKjB4AvDARJioZ8FdcPotdnCiYSvzUuewWmK_YFWAI48x6TGVjDeh63FyqIC93g-XmSSjBND1o5gf3YW7HEHBmD4k8ku0rOHTWvJL5zfzT4srMiX-upre7uwXltf4r_yhh24SL-F9DLqjEJZ9ChW6wUZIEyaBt8-GQ&random=936984805&rmt_tld=1&ipr=y",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.66.67",
-        "hostname": "hkg12s27-in-f3.1e100.net",
+        "ip": "142.250.198.67",
+        "hostname": "lctsaa-ab-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -258,24 +412,39 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://onead.onevision.com.tw/v2/et/oid?cb=window.ONEAD_etag_cscb",
-      "type": "script",
+      "originalUrl": "https://mpc2-prod-25-is5qnl632q-wl.a.run.app/events?cee=no",
+      "type": "fetch",
       "ipinfo": {
-        "domain": "onead.onevision.com.tw",
-        "ip": "107.178.241.176",
-        "hostname": "176.241.178.107.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
+        "domain": "mpc2-prod-25-is5qnl632q-wl.a.run.app",
+        "ip": "34.143.77.2",
+        "city": "Mountain View",
+        "region": "California",
         "country": "US",
-        "loc": "39.0997,-94.5786",
+        "loc": "38.0088,-122.1175",
         "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
+        "timezone": "America/Los_Angeles"
       },
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.88,
-        "detection_method": "rtt"
+        "rtt": 6.294,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.143.77.2",
+          "prefix": "34.143.77.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
       }
     },
     {
@@ -283,8 +452,7 @@
       "type": "xhr",
       "ipinfo": {
         "domain": "widgixeu-beacon.s3.amazonaws.com",
-        "ip": "52.219.169.47",
-        "hostname": "s3-w.eu-central-1.amazonaws.com",
+        "ip": "3.5.122.92",
         "city": "Frankfurt am Main",
         "region": "Hesse",
         "country": "DE",
@@ -294,28 +462,25 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 238.727,
-        "detection_method": "rtt"
+        "rtt": 257.595,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "3.5.122.92",
+          "prefix": "3.5.122.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
       }
     },
     {
-      "originalUrl": "https://www.facebook.com/tr?id=1308491386209100&ev=PageView&dl=https%253A%252F%252Fwww.ikea.com.tw%252Fzh&rl=&if=false&ts=1768353090312&fbp=fb.3.1768353090312.1483872282",
-      "type": "image",
-      "ipinfo": {
-        "domain": "www.facebook.com",
-        "ip": "31.13.87.36",
-        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS32934 Facebook, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/direct"
-    },
-    {
-      "originalUrl": "https://segment.api.useinsider.com/v4/segments/17683530905541d6a60b9db.dc5e24e7?partnerid=10011204&fields=43e3a64fb6cc55de03396d0f3df479b4,1cb2e968bca64a26ffd59156f664f2f0,d3bc2d8c5d2da439aec62047ecf93473&",
+      "originalUrl": "https://segment.api.useinsider.com/v4/segments/1784552988949b6b049e793.52b41de4?partnerid=10011204&fields=43e3a64fb6cc55de03396d0f3df479b4,1cb2e968bca64a26ffd59156f664f2f0,d3bc2d8c5d2da439aec62047ecf93473&",
       "type": "xhr",
       "ipinfo": {
         "domain": "segment.api.useinsider.com",
@@ -330,7 +495,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd942803a4e77f1-TPE",
+        "cf-ray": "a1e233d70b6a8276-TPE",
         "detection_method": "header"
       }
     },
@@ -339,7 +504,7 @@
       "type": "xhr",
       "ipinfo": {
         "domain": "locationv2.api.useinsider.com",
-        "ip": "162.159.134.61",
+        "ip": "162.159.133.61",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -350,25 +515,67 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd942804f174a6a-TPE",
+        "cf-ray": "a1e233d77bde8276-TPE",
         "detection_method": "header"
       }
     },
     {
-      "originalUrl": "https://rcom.dynamicyield.com/v3/recommend/8772208?_=1768353090799",
+      "originalUrl": "https://rcom.dynamicyield.com/v3/recommend/8772208?_=1784552989264",
       "type": "xhr",
       "ipinfo": {
         "domain": "rcom.dynamicyield.com",
-        "ip": "3.169.121.43",
-        "hostname": "server-3-169-121-43.tpe53.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "65.9.180.115",
+        "hostname": "server-65-9-180-115.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://zny324fb1j2nnll1d-interikeacx.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_Y324fb1j2NnLl1D",
+      "type": "script",
+      "ipinfo": {
+        "domain": "zny324fb1j2nnll1d-interikeacx.siteintercept.qualtrics.com",
+        "ip": "104.17.209.240",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "104.17.209.240",
+          "prefix": "104.17.209.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 79,
+          "location_count": 79,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
+      }
     },
     {
       "originalUrl": "https://unpkg.com/web-vitals/dist/web-vitals.iife.js",
@@ -386,8 +593,30 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 5.105,
-        "detection_method": "rtt"
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "104.18.0.22",
+          "prefix": "104.18.0.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 73,
+          "location_count": 73,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     }
   ]

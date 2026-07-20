@@ -2,11 +2,12 @@
   "url": "https://www.firstbank.com.tw/",
   "canonicalURL": "https://www.firstbank.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T02:17:55.677Z",
+  "timestamp": "2026-07-20T13:53:41.746Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,12 +25,12 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 3,
-  "uniqueDomains": 2,
+  "requestCount": 82,
+  "uniqueDomains": 7,
   "test_results": {
     "domestic": {
-      "cloud": 1,
-      "direct": 0
+      "cloud": 3,
+      "direct": 2
     },
     "foreign": {
       "cloud": 1,
@@ -53,25 +54,109 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 42.491,
-        "detection_method": "rtt"
+        "rtt": 42.089,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "23.42.78.200",
+          "prefix": "23.42.78.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
       }
     },
     {
-      "originalUrl": "https://fcberror-object.akamaized.net/service/wafpageimg/logo.png",
-      "type": "image",
+      "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-T9D4NNF",
+      "type": "script",
       "ipinfo": {
-        "domain": "fcberror-object.akamaized.net",
-        "ip": "203.69.138.224",
-        "hostname": "203-69-138-224.hinet-ip.hinet.net",
+        "domain": "www.googletagmanager.com",
+        "ip": "142.250.204.40",
+        "hostname": "hkg07s38-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
         "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://bdtag.firstbank.com.tw/jscollection/WebConnector-fbweb.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "bdtag.firstbank.com.tw"
+      }
+    },
+    {
+      "originalUrl": "https://www.ileolife.com/?rest_route=/wp/v2/posts",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "www.ileolife.com",
+        "ip": "65.9.180.30",
+        "hostname": "server-65-9-180-30.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "connect.facebook.net",
+        "ip": "31.13.87.5",
+        "hostname": "xx-fbcdn-shv-01-tpe1.fbcdn.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://fcb-object.akamaized.net/sites/FirstBankWebRevision/webfonts/fa-duotone-900.woff2",
+      "type": "font",
+      "ipinfo": {
+        "domain": "fcb-object.akamaized.net",
+        "ip": "203.69.138.233",
+        "hostname": "203-69-138-233.hinet-ip.hinet.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
         "org": "AS20940 Akamai International B.V.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.facebook.com/tr/?id=1468567077238808&ev=PageView&dl=https%3A%2F%2Fwww.firstbank.com.tw&rl=&if=false&ts=1784555619075&iw=false&sw=1280&sh=720&v=2.9.357&r=stable&a=tmSimo-GTM-WebTemplate&ec=0&o=4124&aems=0%3B0&fbp=fb.2.1784555619074.748164721713469844&pm=1&hrl=7faae0&ler=empty&cdl=API_unavailable&plt=1096.5999999996275&ups[pv]=%7B%7D&ups[rpv]=%7B%7D&it=1784555618839&coo=false&tm=1&cs_cc=1&cas=7751529144899217%2C6287241591366871&dlc=1&expv2[0]=pl0&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra0&expv2[4]=rp0&expv2[5]=im1&expv2[6]=hf1&rqm=GET",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
     }
   ]
 }

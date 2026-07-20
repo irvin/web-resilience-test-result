@@ -2,11 +2,12 @@
   "url": "https://mcdonalds.com",
   "canonicalURL": "https://www.mcdonalds.com/tw/zh-tw.html",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:12:17.094Z",
+  "timestamp": "2026-07-20T13:06:24.719Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 103,
+  "requestCount": 124,
   "uniqueDomains": 12,
   "test_results": {
     "domestic": {
-      "cloud": 6,
-      "direct": 3
+      "cloud": 5,
+      "direct": 4
     },
     "foreign": {
-      "cloud": 2,
+      "cloud": 3,
       "direct": 0
     }
   },
@@ -51,35 +52,52 @@
         "org": "AS14618 Amazon.com, Inc.",
         "timezone": "America/New_York"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": null,
+        "detection_method": "rtt",
+        "rtt_error": "timeout",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "44.208.147.61",
+          "prefix": "44.208.147.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
     },
     {
       "originalUrl": "https://www.mcdonalds.com/",
       "type": "document",
       "ipinfo": {
         "domain": "www.mcdonalds.com",
-        "ip": "203.69.138.10",
-        "hostname": "203-69-138-10.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "203.69.81.83",
+        "city": "Taipei",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS20940 Akamai International B.V.",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://assets.adobedtm.com/da51ad226ecd/0cb9d52798ad/launch-5c800394df92.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "assets.adobedtm.com",
-        "ip": "184.25.121.86",
-        "hostname": "a184-25-121-86.deploy.static.akamaitechnologies.com",
-        "city": "Yuanlin",
-        "region": "Taiwan",
+        "ip": "23.46.89.90",
+        "hostname": "a23-46-89-90.deploy.static.akamaitechnologies.com",
+        "city": "Kaohsiung",
+        "region": "Takao",
         "country": "TW",
-        "loc": "23.9567,120.5761",
+        "loc": "22.6163,120.3133",
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -90,7 +108,7 @@
       "type": "image",
       "ipinfo": {
         "domain": "s7d1.scene7.com",
-        "ip": "210.71.227.168",
+        "ip": "210.71.227.139",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -105,8 +123,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.192.136",
+        "hostname": "bom12s18-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -121,12 +139,12 @@
       "type": "script",
       "ipinfo": {
         "domain": "d.line-scdn.net",
-        "ip": "184.25.121.253",
-        "hostname": "a184-25-121-253.deploy.static.akamaitechnologies.com",
-        "city": "Yuanlin",
-        "region": "Taiwan",
+        "ip": "23.46.90.8",
+        "hostname": "a23-46-90-8.deploy.static.akamaitechnologies.com",
+        "city": "Kaohsiung",
+        "region": "Takao",
         "country": "TW",
-        "loc": "23.9567,120.5761",
+        "loc": "22.6163,120.3133",
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -153,7 +171,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "mp-eu1.mcdonalds.com",
-        "ip": "146.75.46.133",
+        "ip": "199.232.114.133",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",
@@ -163,33 +181,70 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 140.322,
-        "detection_method": "rtt"
+        "x-served-by": "cache-fra-eddf8230152-FRA, cache-sin-wsat1880047-SIN, cache-sin-wsss1830060-SIN",
+        "rtt": 64.389,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "199.232.114.133",
+          "prefix": "199.232.114.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 2,
+          "location_count": 2
+        }
       }
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fwww.mcdonalds.com%2Ftw%2Fzh-tw.html&scrsrc=www.googletagmanager.com&rnd=1846855128.1768353132&dt=%E9%BA%A5%E7%95%B6%E5%8B%9E%E5%8F%B0%E7%81%A3%E5%AE%98%E7%B6%B2%E9%A6%96%E9%A0%81%EF%BD%9C%E9%BA%A5%E7%95%B6%E5%8B%9E%20McDonald%27s&auid=15498.1768353132&navt=n&npa=0&gtm=45He61c1v831288505za200zd831288505xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115938465~115938468~116682876~117041587~117091819&tft=1768353132120&tfd=2228&apve=1&apvf=f",
+      "originalUrl": "https://www.google.com/ccm/collect?rcb=6&frm=0&ae=g&auid=1596290847.1784552772&dt=%E9%BA%A5%E7%95%B6%E5%8B%9E%E5%8F%B0%E7%81%A3%E5%AE%98%E7%B6%B2%E9%A6%96%E9%A0%81%EF%BD%9C%E9%BA%A5%E7%95%B6%E5%8B%9E%20McDonald%27s&en=page_view&dl=https%3A%2F%2Fwww.mcdonalds.com%2Ftw%2Fzh-tw.html&scrsrc=www.googletagmanager.com&rnd=319399885.1784552772&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He67f0v831288505za200zd831288505xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118395333~118897920~118897930~119381662~119709549&apve=1&apvf=f&apvc=1&tft=1784552771835&tfd=3355&fmt=8",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.196.196",
-        "hostname": "nctsaa-ac-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
+        "ip": "142.251.151.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
         "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.017,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.151.119",
+          "prefix": "142.251.151.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-R581W7LRYF&cid=735492920.1768353132&gtm=45je61c1v880200530z8831288505za20gzb831288505zd831288505&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391252~115616985~115938465~115938468~116682876~117041587&z=1238613079",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-R581W7LRYF&cid=235753111.1784552772&gtm=45je67f0v880200530z8831288505za20gzb831288505zd831288505&rcb=14&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938466~115938469~118395335~118897920~118897930~119896802&z=1761049978",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.66.67",
-        "hostname": "hkg12s27-in-f3.1e100.net",
+        "ip": "142.250.198.67",
+        "hostname": "lctsaa-ab-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -200,7 +255,7 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.facebook.com/tr?id=1354291791581911&ev=PageView&dl=https%253A%252F%252Fwww.mcdonalds.com%252Ftw%252Fzh-tw.html&rl=&if=false&ts=1768353132244&fbp=fb.2.1768353132244.1601164419",
+      "originalUrl": "https://www.facebook.com/tr?id=1354291791581911&ev=PageView&dl=https%253A%252F%252Fwww.mcdonalds.com%252Ftw%252Fzh-tw.html&rl=&if=false&ts=1784552772348&fbp=fb.2.1784552772348.1695133811",
       "type": "image",
       "ipinfo": {
         "domain": "www.facebook.com",
@@ -216,10 +271,37 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "blob:https://www.mcdonalds.com/ad6afbce-ce8b-4b5d-b5f5-439f1e96d393",
-      "type": "script",
+      "originalUrl": "https://2c-1138a2e087744ef69e662051fe044c44.ecs.us-west-1.on.aws/events?cee=no",
+      "type": "fetch",
       "ipinfo": {
-        "domain": ""
+        "domain": "2c-1138a2e087744ef69e662051fe044c44.ecs.us-west-1.on.aws",
+        "ip": "184.169.157.77",
+        "hostname": "ec2-184-169-157-77.us-west-1.compute.amazonaws.com",
+        "city": "San Jose",
+        "region": "California",
+        "country": "US",
+        "loc": "37.3394,-121.8950",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": null,
+        "detection_method": "rtt",
+        "rtt_error": "timeout",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "184.169.157.77",
+          "prefix": "184.169.157.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
       }
     }
   ]

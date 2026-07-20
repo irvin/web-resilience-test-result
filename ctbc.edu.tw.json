@@ -1,0 +1,136 @@
+{
+  "url": "https://ctbc.edu.tw",
+  "canonicalURL": "https://ctbc.edu.tw",
+  "httpStatus": 200,
+  "timestamp": "2026-07-20T15:39:18.319Z",
+  "testParameters": {
+    "customDNS": "168.95.1.1",
+    "useAdblock": true,
+    "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
+      "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
+    ],
+    "useCache": true,
+    "hasIPinfoToken": true
+  },
+  "testingEnvironment": {
+    "ip": "220.132.212.194",
+    "hostname": "220-132-212-194.hinet-ip.hinet.net",
+    "city": "Banqiao",
+    "region": "Taipei",
+    "country": "TW",
+    "loc": "25.0143,121.4672",
+    "org": "AS3462 Data Communication Business Group",
+    "timezone": "Asia/Taipei",
+    "source": "ipinfo json api (direct)",
+    "dnsServer": "168.95.1.1"
+  },
+  "requestCount": 25,
+  "uniqueDomains": 3,
+  "test_results": {
+    "domestic": {
+      "cloud": 2,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 0,
+      "direct": 0
+    }
+  },
+  "domainDetails": [
+    {
+      "originalUrl": "https://ctbc.edu.tw/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "ctbc.edu.tw",
+        "ip": "192.83.182.24",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS1659 Taiwan Academic Network (TANet) Information Center",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://static.addtoany.com/menu/page.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "static.addtoany.com",
+        "ip": "104.20.20.192",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "cf-ray": "a1e30ebf39873e60-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "104.20.20.192",
+          "prefix": "104.20.20.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 65,
+          "location_count": 65,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "originalUrl": "https://maps.googleapis.com/maps/api/js?key=AIzaSyDy6frzySz8BOjvAqBgM7TAH8vooNffUdU&ver=6.8.2",
+      "type": "script",
+      "ipinfo": {
+        "domain": "maps.googleapis.com",
+        "ip": "172.217.116.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 8.248,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "172.217.116.4",
+          "prefix": "172.217.116.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
+    }
+  ]
+}

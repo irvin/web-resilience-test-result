@@ -2,11 +2,12 @@
   "url": "https://pornhoarder.tw",
   "canonicalURL": "https://ww2.pornhoarder.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T02:07:38.156Z",
+  "timestamp": "2026-07-20T13:55:28.840Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 32,
+  "requestCount": 33,
   "uniqueDomains": 3,
   "test_results": {
     "domestic": {
-      "cloud": 0,
+      "cloud": 3,
       "direct": 0
     },
     "foreign": {
-      "cloud": 3,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -42,7 +43,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "pornhoarder.tw",
-        "ip": "104.21.93.120",
+        "ip": "172.67.209.212",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -50,10 +51,34 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 134.463,
-        "detection_method": "rtt"
+        "cf-ray": "a1e276a68bd2c49b-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "172.67.209.212",
+          "prefix": "172.67.209.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 55,
+          "location_count": 55,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -69,14 +94,38 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 134.263,
-        "detection_method": "rtt"
+        "cf-ray": "a1e276a9be68c49b-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "172.67.209.212",
+          "prefix": "172.67.209.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 55,
+          "location_count": 55,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
-      "originalUrl": "https://pornhoarder.pictures/img/small/44/4433367c1443e03e20_1.jpg",
+      "originalUrl": "https://pornhoarder.pictures/img/small/88/8863069c500265f79d_1.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "pornhoarder.pictures",
@@ -88,10 +137,33 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 134.063,
-        "detection_method": "rtt"
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "172.67.157.39",
+          "prefix": "172.67.157.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 57,
+          "location_count": 57,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     }
   ]

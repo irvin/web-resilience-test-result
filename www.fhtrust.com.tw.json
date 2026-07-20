@@ -2,11 +2,12 @@
   "url": "https://www.fhtrust.com.tw/",
   "canonicalURL": "https://www.fhtrust.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T02:48:32.788Z",
+  "timestamp": "2026-07-20T14:39:55.443Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 155,
+  "requestCount": 157,
   "uniqueDomains": 14,
   "test_results": {
     "domestic": {
       "cloud": 9,
-      "direct": 3
+      "direct": 4
     },
     "foreign": {
-      "cloud": 2,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -58,24 +59,24 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.198.74",
-        "hostname": "lctsaa-ab-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "142.251.170.95",
+        "hostname": "tc-in-f95.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "24.1469,120.6839",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://i.ytimg.com/vi/WXfRiItRu8c/mqdefault.jpg",
+      "originalUrl": "https://i.ytimg.com/vi/BtT9gZwqRk8/mqdefault.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "i.ytimg.com",
-        "ip": "142.250.196.214",
-        "hostname": "nctsaa-ac-in-f22.1e100.net",
+        "ip": "142.250.198.86",
+        "hostname": "lctsaa-ab-in-f22.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -90,24 +91,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fwww.fhtrust.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=834417282.1768358910&dt=%E9%A6%96%E9%A0%81%20%7C%20%E5%BE%A9%E8%8F%AF%E6%8A%95%E4%BF%A1&auid=448286357.1768358910&navt=n&npa=0&gtm=45He61c1h1v78931983za200zd78931983xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115938466~115938468~116682877~117041587&tft=1768358910244&tfd=559&apve=1&apvf=f",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.198.68",
-        "hostname": "lctsaa-ab-in-f4.1e100.net",
+        "ip": "142.250.66.72",
+        "hostname": "hkg12s27-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -146,7 +131,12 @@
         "org": "AS8075 Microsoft Corporation",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "x-msedge-ref": "Ref A: 030F4E9B26E0406D9F5368C275A1BDE1 Ref B: TPE201080401040 Ref C: 2026-07-20T14:39:52Z",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://d.line-scdn.net/n/line_tag/public/release/v1/lt.js",
@@ -181,8 +171,60 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.154,
-        "detection_method": "rtt"
+        "rtt": 5.965,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.117.195.210",
+          "prefix": "34.117.195.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 64,
+          "location_count": 64
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.google.com/ccm/collect?rcb=11&frm=0&ae=g&auid=1784858159.1784558392&dt=%E9%A6%96%E9%A0%81%20%7C%20%E5%BE%A9%E8%8F%AF%E6%8A%95%E4%BF%A1&en=page_view&dl=https%3A%2F%2Fwww.fhtrust.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=1100849344.1784558392&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He67f0v78931983za200zd78931983xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~118012008~118395333~118897920~118897930~119896802&apve=1&apvf=f&apvc=1&tft=1784558391522&tfd=640&fmt=8",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.154.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.6,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.154.119",
+          "prefix": "142.251.154.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 60,
+          "location_count": 60
+        }
       }
     },
     {
@@ -190,8 +232,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "pixel.onead.com.tw",
-        "ip": "203.66.32.140",
-        "hostname": "203-66-32-140.hinet-ip.hinet.net",
+        "ip": "203.66.32.37",
+        "hostname": "203-66-32-37.hinet-ip.hinet.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -218,17 +260,33 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.845,
-        "detection_method": "rtt"
+        "rtt": 5.18,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.49.93.142",
+          "prefix": "34.49.93.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
       }
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-YWVV9Y5Y0G&cid=1704143203.1768358910&gtm=45je61c1h1v875017974za20gzb78931983zd78931983&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391252~115616986~115938466~115938469~116682877~117041587&z=692496205",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-YWVV9Y5Y0G&cid=544343579.1784558392&gtm=45je67f0v875017974za20gzb78931983zd78931983&rcb=14&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938465~115938469~118897920~118897930~119709549~119773331~119896802&z=277866034",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.77.3",
-        "hostname": "nctsaa-ab-in-f3.1e100.net",
+        "ip": "142.250.196.195",
+        "hostname": "nctsaa-ac-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -239,28 +297,7 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://onead.onevision.com.tw/v2/et/oid?cb=window.ONEAD_etag_cscb",
-      "type": "script",
-      "ipinfo": {
-        "domain": "onead.onevision.com.tw",
-        "ip": "107.178.241.176",
-        "hostname": "176.241.178.107.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
-        "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "rtt": 4.952,
-        "detection_method": "rtt"
-      }
-    },
-    {
-      "originalUrl": "https://trace.popin.cc/api/bidder/track/pixel/pageview?tn=f9f2b1ef23fe2759c2cad0953029a94b&spd=&mgd=30c221c665874b5e8fe0ec08fcb84e61&ptd=&tkd=&acd=&cpid=&v=216178889",
+      "originalUrl": "https://trace.popin.cc/api/bidder/track/pixel/pageview?tn=f9f2b1ef23fe2759c2cad0953029a94b&spd=&mgd=a901cdf111eb4ad8aac677a709b853e8&ptd=&tkd=&acd=&cpid=&v=244089662",
       "type": "ping",
       "ipinfo": {
         "domain": "trace.popin.cc",
@@ -270,14 +307,43 @@
         "region": "Tokyo",
         "country": "JP",
         "loc": "35.6895,139.6917",
-        "org": "AS15169 Google LLC",
+        "org": "AS19527 Google LLC",
         "timezone": "Asia/Tokyo"
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 62.711,
-        "detection_method": "rtt"
+        "rtt": 52.668,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "35.213.89.133",
+          "prefix": "35.213.89.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
       }
+    },
+    {
+      "originalUrl": "https://www.facebook.com/tr/?id=1738889859746535&ev=PageView&dl=https%3A%2F%2Fwww.fhtrust.com.tw&rl=&if=false&ts=1784558393625&iw=false&sw=1280&sh=720&v=2.9.357&r=stable&ec=0&o=4124&aems=0%3B0&fbp=fb.2.1784558393622.13009458174499503&pm=1&hrl=cca190&ler=empty&cdl=API_unavailable&plt=1735.0999999996275&ups[pv]=%7B%7D&ups[rpv]=%7B%7D&it=1784558392089&coo=false&cs_cc=1&cas=27519950984326187%2C27876497408649988%2C28336031059331995%2C27848270044862813%2C27200666996302482%2C27669196839433043%2C37144375808508985%2C26506602442315750%2C25125851307085075%2C25710305508599585%2C25152024414408292%2C25175237395499949%2C24196606766618707%2C9628361603860689%2C24087867687533574%2C8779532752143951%2C8896562770391756%2C8947253268673329%2C9269580263054618%2C28399286203049992%2C8021379454573732%2C7688278081281736%2C8015339535154748%2C6336049709853017%2C7001393209988128%2C7593360037412664%2C7362004900573329%2C5333328456770110%2C7122433967825468%2C7309219445786013%2C8384629071552222%2C4765162900196385%2C2497118727019487&dlc=1&expv2[0]=pl0&expv2[1]=el2&expv2[2]=bc1&expv2[3]=ra0&expv2[4]=rp0&expv2[5]=ct3&expv2[6]=hf0&rqm=GET",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
     }
   ]
 }

@@ -2,11 +2,12 @@
   "url": "https://sci-hub.tw",
   "canonicalURL": "https://sci-hub.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T02:31:55.329Z",
+  "timestamp": "2026-07-20T13:55:42.174Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,16 +25,16 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 16,
+  "requestCount": 5,
   "uniqueDomains": 4,
   "test_results": {
     "domestic": {
-      "cloud": 2,
+      "cloud": 1,
       "direct": 0
     },
     "foreign": {
-      "cloud": 1,
-      "direct": 0
+      "cloud": 2,
+      "direct": 1
     }
   },
   "domainDetails": [
@@ -53,43 +54,69 @@
       "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/adsense/domains/caf.js?abp=1&adsdeli=true",
+      "originalUrl": "https://euob.northwavepoint.com/sxp/i/636f8b858f681acb7bfa6f583a96630a.js",
       "type": "script",
       "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.77.4",
-        "hostname": "nctsaa-ab-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "domain": "euob.northwavepoint.com",
+        "ip": "3.169.137.122",
+        "hostname": "server-3-169-137-122.tpe54.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://afs.googleusercontent.com/ad_icons/standard/publisher_icon_image/search.svg?c=%23ffffff",
-      "type": "image",
+      "originalUrl": "https://obseu.northwavepoint.com/ct",
+      "type": "xhr",
       "ipinfo": {
-        "domain": "afs.googleusercontent.com",
-        "ip": "142.250.204.33",
-        "hostname": "hkg07s38-in-f1.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "domain": "obseu.northwavepoint.com",
+        "ip": "3.248.162.96",
+        "hostname": "ec2-3-248-162-96.eu-west-1.compute.amazonaws.com",
+        "city": "Dublin",
+        "region": "Leinster",
+        "country": "IE",
+        "loc": "53.3331,-6.2489",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Europe/Dublin"
       },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "blob:https://sci-hub.tw/ce7fee16-681f-4b05-b4e6-f8bf37374e13",
-      "type": "other",
-      "ipinfo": {
-        "domain": ""
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": null,
+        "detection_method": "rtt",
+        "rtt_error": "timeout",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "3.248.162.96",
+          "prefix": "3.248.162.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
       }
+    },
+    {
+      "originalUrl": "https://yfdpco4.com/sk-park.php?pid=9PO15V947&dn=sci-hub.tw&ua=Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_15_7%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F143.0.0.0+Safari%2F537.36&requrl=http%3A%2F%2Fsci-hub.tw%2F&al=zh-TW%2Czh%3Bq%3D0.9&kwd=free+scientific+article+download%2Cresearch+paper+PDF+access%2Cacademic+journal+full+text",
+      "type": "document",
+      "ipinfo": {
+        "domain": "yfdpco4.com",
+        "ip": "208.91.196.46",
+        "city": "Dallas",
+        "region": "Texas",
+        "country": "US",
+        "loc": "32.7831,-96.8067",
+        "org": "AS40034 Confluence Networks Inc",
+        "timezone": "America/Chicago"
+      },
+      "category": "foreign/direct"
     }
   ]
 }

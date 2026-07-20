@@ -2,11 +2,12 @@
   "url": "https://www.ndc.gov.tw/",
   "canonicalURL": "https://www.ndc.gov.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T02:17:03.231Z",
+  "timestamp": "2026-07-20T13:44:00.330Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,11 +25,11 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 70,
-  "uniqueDomains": 8,
+  "requestCount": 67,
+  "uniqueDomains": 6,
   "test_results": {
     "domestic": {
-      "cloud": 8,
+      "cloud": 6,
       "direct": 0
     },
     "foreign": {
@@ -53,32 +54,16 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd9a27bc930b856-TPE",
+        "cf-ray": "a1e265df2a696a93-TPE",
         "detection_method": "header"
       }
     },
     {
-      "originalUrl": "https://www.youtube.com/embed/gPa0dEkpNkY?si=Etx9uWG6bUdE_bLr?rel=0",
-      "type": "document",
-      "ipinfo": {
-        "domain": "www.youtube.com",
-        "ip": "142.250.196.206",
-        "hostname": "nctsaa-ac-in-f14.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://ws.ndc.gov.tw/001/administrator/10/relpic/5857/746/6069efc5-3a85-4d84-bf9a-e0fcd8449280.jpg",
+      "originalUrl": "https://ws.ndc.gov.tw/001/administrator/10/relpic/5857/754/1cbf6c07-1dda-44d3-97eb-8857e4aaca9e.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "ws.ndc.gov.tw",
-        "ip": "104.18.20.69",
+        "ip": "104.18.21.69",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -89,8 +74,44 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd9a27d5e744a8e-TPE",
+        "cf-ray": "a1e265e08cd4827f-TPE",
         "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://www.youtube.com/embed/gPa0dEkpNkY?si=Etx9uWG6bUdE_bLr?rel=0",
+      "type": "document",
+      "ipinfo": {
+        "domain": "www.youtube.com",
+        "ip": "142.251.155.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 7.765,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.155.4",
+          "prefix": "142.251.155.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
       }
     },
     {
@@ -98,24 +119,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-DBVKS45R77&cid=100743731.1768357022&gtm=45je61c1v878699302za200zd878699302&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115938465~115938468~117041587~117091819&z=310898353",
-      "type": "image",
-      "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.66.67",
-        "hostname": "hkg12s27-in-f3.1e100.net",
+        "ip": "142.250.192.136",
+        "hostname": "bom12s18-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -130,8 +135,8 @@
       "type": "image",
       "ipinfo": {
         "domain": "i.ytimg.com",
-        "ip": "142.250.66.86",
-        "hostname": "hkg12s27-in-f22.1e100.net",
+        "ip": "142.250.204.54",
+        "hostname": "hkg07s38-in-f22.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -142,28 +147,12 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://yt3.ggpht.com/ytc/AIdro_kFrnTGwVMPJFcdQtcIfVovz0cfVFj-OxQbKeDMTSK2szg=s68-c-k-c0x00ffffff-no-rj",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-DBVKS45R77&cid=530117303.1784555039&gtm=45je67f0v878699302za200zd878699302&rcb=16&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938466~115938468~118897920~118897930~119896802&z=984678676",
       "type": "image",
       "ipinfo": {
-        "domain": "yt3.ggpht.com",
-        "ip": "142.250.204.33",
-        "hostname": "hkg07s38-in-f1.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.gstatic.com/cv/js/sender/v1/cast_sender.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.gstatic.com",
-        "ip": "142.250.77.3",
-        "hostname": "nctsaa-ab-in-f3.1e100.net",
+        "domain": "www.google.com.tw",
+        "ip": "142.250.77.195",
+        "hostname": "del11s08-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",

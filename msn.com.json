@@ -2,11 +2,12 @@
   "url": "https://msn.com",
   "canonicalURL": "https://msn.com",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:04:35.481Z",
+  "timestamp": "2026-07-20T13:03:22.868Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,16 +25,16 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 16,
-  "uniqueDomains": 3,
+  "requestCount": 412,
+  "uniqueDomains": 26,
   "test_results": {
     "domestic": {
-      "cloud": 1,
-      "direct": 1
+      "cloud": 14,
+      "direct": 2
     },
     "foreign": {
-      "cloud": 0,
-      "direct": 1
+      "cloud": 5,
+      "direct": 5
     }
   },
   "domainDetails": [
@@ -69,11 +70,11 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://assets.msn.com/bundles/v1/homePage/latest/experience.0a88315e064ab2e4f456.css",
-      "type": "stylesheet",
+      "originalUrl": "https://assets.msn.com/bundles/v1/homePage/latest/vendors.62ad0db3ddae77dc.js",
+      "type": "script",
       "ipinfo": {
         "domain": "assets.msn.com",
-        "ip": "210.71.227.145",
+        "ip": "210.71.227.99",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -82,6 +83,496 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://browser.events.data.msn.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream&client-id=NO_AUTH&client-version=1DS-Web-JS-3.2.8&apikey=0ded60c75e44443aa3484c42c1c43fe8-9fc57d3f-fdac-4bcf-b927-75eafe60192e-7279&upload-time=1784552595768&time-delta-to-apply-millis=use-collector-delta&w=0&NoResponseBody=true",
+      "type": "ping",
+      "ipinfo": {
+        "domain": "browser.events.data.msn.com",
+        "ip": "4.150.223.102",
+        "city": "Des Moines",
+        "region": "Iowa",
+        "country": "US",
+        "loc": "41.6005,-93.6091",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "America/Chicago"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 166.774,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "4.150.223.102",
+          "prefix": "4.150.223.0/24",
+          "anycast": true,
+          "confidence": "low_confidence",
+          "partial": false,
+          "asns": [
+            8075
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 2,
+          "location_count": 0
+        }
+      }
+    },
+    {
+      "originalUrl": "https://c.msn.com/c.gif?rnd=1784552595769&udc=true&pg.n=startpage&pg.t=hp&pg.c=11&pg.p=feedmsn&rf=&tp=https%3A%2F%2Fwww.msn.com%2Fzh-tw%3Focid%3Dhpmsn&cvs=Browser&di=13041&st.dpt=&st.sdpt=hpmsn&subcvs=homepage&lng=zh-tw&rid=6a5e1c938fe94362b45945d2ef1a5124&activityId=6a5e1c938fe94362b45945d2ef1a5124&d.imd=false&scr=1280x720&anoncknm=app_anon&issso=false&aadState=0",
+      "type": "image",
+      "ipinfo": {
+        "domain": "c.msn.com",
+        "ip": "150.171.110.68",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://sb.scorecardresearch.com/b?rn=1784552595769&c1=2&c2=3000001&cs_ucfr=1&c7=https%3A%2F%2Fwww.msn.com%2Fzh-tw%3Focid%3Dhpmsn%26content%3D1%26mkt%3Dzh-tw&c8=MSN&c9=&cs_fpid=1D9055DCAAEB659E2E744240ABFC64C7&cs_fpit=o&cs_fpdm=*null&cs_fpdt=*null",
+      "type": "image",
+      "ipinfo": {
+        "domain": "sb.scorecardresearch.com",
+        "ip": "3.169.137.16",
+        "hostname": "server-3-169-137-16.tpe54.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://c.bing.com/c.gif?Red3=MSNLI_pd&rid=6a5e1c938fe94362b45945d2ef1a5124&lang=zh-tw&dgk=chrome&imd=1&pn=hp&rf=&tp=https://www.msn.com/zh-tw&gdpr=0&gdpr_consent=",
+      "type": "image",
+      "ipinfo": {
+        "domain": "c.bing.com",
+        "ip": "150.171.28.10",
+        "city": "Redmond",
+        "region": "Washington",
+        "country": "US",
+        "loc": "47.6740,-122.1215",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "x-msedge-ref": "Ref A: 7FFD2C8E235141E5BE5722A2BEFCB228 Ref B: TPE201080401042 Ref C: 2026-07-20T13:03:16Z",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1TEoNK.img?w=612&h=328&q=90&m=6&f=jpg&x=228&y=268&u=t",
+      "type": "image",
+      "ipinfo": {
+        "domain": "img-s-msn-com.akamaized.net",
+        "ip": "203.69.138.222",
+        "hostname": "203-69-138-222.hinet-ip.hinet.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS20940 Akamai International B.V.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://srtb.msn.com/auction",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "srtb.msn.com",
+        "ip": "204.79.197.203",
+        "hostname": "a-0003.a-msedge.net",
+        "city": "Redmond",
+        "region": "Washington",
+        "country": "US",
+        "loc": "47.6740,-122.1215",
+        "org": "AS8068 Microsoft Corporation",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/direct"
+    },
+    {
+      "originalUrl": "https://www.bing.com/th?id=OSB.FIFA2026V2.png&pid=MSports&w=72&h=72&qlt=90&c=0&rs=1&dpr=1&p=1",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.bing.com",
+        "ip": "210.71.227.209",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=d7b530a4-7680-4c23-a8bf-c52c121d2e87&scope=User.Read%20openid%20profile%20offline_access&redirect_uri=https%3A%2F%2Fwww.msn.com%2Fstaticsb%2Fstatics%2Flatest%2Fauth%2Fauth-redirect-blank-bridge.html&client-request-id=6a5e1c93-8fe9-4362-b459-45d2ef1a5124&response_mode=fragment&client_info=1&clidata=1&prompt=none&nonce=019f7f9f-a4cd-742a-b17f-444fc4448d4b&state=eyJpZCI6IjAxOWY3ZjlmLWE0Y2QtNzc3Ni05OWYyLTFmOGJlYzU0YzM4NyIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoic2lsZW50In19&x-client-SKU=msal.js.browser&x-client-VER=5.6.3&response_type=code&code_challenge=-3eTbUAG8xFX-eGGthrBTPAUP_Y_vqAmmcRwfQzd15Y&code_challenge_method=S256",
+      "type": "document",
+      "ipinfo": {
+        "domain": "login.microsoftonline.com",
+        "ip": "40.126.13.9",
+        "city": "Osaka",
+        "region": "Osaka",
+        "country": "JP",
+        "loc": "34.6938,135.5011",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "Asia/Tokyo"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 44.908,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "40.126.13.9",
+          "prefix": "40.126.13.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
+    },
+    {
+      "originalUrl": "https://api.msn.com/msn/v0/pages/LiveRamp/getLiveRampId?apikey=0QfOX3Vn51YCzitbLaRkTTBadtWpgTN8NZLW0C1SEM&activityId=6a5e1c93-8fe9-4362-b459-45d2ef1a5124&ocid=peregrine&cm=zh-tw&it=web&user=m-1D9055DCAAEB659E2E744240ABFC64C7&scn=ANON",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "api.msn.com",
+        "ip": "150.171.28.12",
+        "city": "Redmond",
+        "region": "Washington",
+        "country": "US",
+        "loc": "47.6740,-122.1215",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "x-msedge-ref": "Ref A: BEEB7DB99C524BE881D6706F5C2C9A7C Ref B: TPE201080402060 Ref C: 2026-07-20T13:03:17Z",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://arc.msn.com/v4/api/selection?nct=1&fmt=json&nocookie=0&locale=zh-tw&country=TW&muid=1D9055DCAAEB659E2E744240ABFC64C7&ISSIGNEDIN=0&MSN_CANVAS=1&OPSYS=MACOS&ISMOBILE=0&BROWSER=2&placement=10837393&bcnt=1&asid=6db64d29282f474adf66fe78937a9c96",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "arc.msn.com",
+        "ip": "172.179.80.7",
+        "city": "Moses Lake",
+        "region": "Washington",
+        "country": "US",
+        "loc": "47.1301,-119.2781",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 132.59,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "172.179.80.7",
+          "prefix": "172.179.80.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
+    },
+    {
+      "originalUrl": "https://aadcdnjp.msftauth.net/shared/1.0/content/js/BssoInterrupt_Core_l_chUU-5ZYSVgQoZAiHKxw2.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "aadcdnjp.msftauth.net",
+        "ip": "23.211.113.19",
+        "hostname": "a23-211-113-19.deploy.static.akamaitechnologies.com",
+        "city": "Yuanlin",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "23.9567,120.5761",
+        "org": "AS20940 Akamai International B.V.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://ib.msn.com/ut/v3",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "ib.msn.com",
+        "ip": "103.43.91.18",
+        "hostname": "1018.bm-nginx-loadbalancer.mgmt.sin3.adnexus.net",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS29990 Xandr Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/direct"
+    },
+    {
+      "originalUrl": "https://res.public.onecdn.static.microsoft/creativeservice/9c6e7ead-bff6-2b01-fa23-ca14c17b14c2_8353863567095989496_128000000005141289_assets__image1_1727808726889.png",
+      "type": "image",
+      "ipinfo": {
+        "domain": "res.public.onecdn.static.microsoft",
+        "ip": "203.69.138.225",
+        "hostname": "203-69-138-225.hinet-ip.hinet.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS20940 Akamai International B.V.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://login.live.com/Me.htm?v=3",
+      "type": "document",
+      "ipinfo": {
+        "domain": "login.live.com",
+        "ip": "40.126.38.22",
+        "city": "Tokyo",
+        "region": "Tokyo",
+        "country": "JP",
+        "loc": "35.6895,139.6917",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "Asia/Tokyo"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 34.216,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "40.126.38.22",
+          "prefix": "40.126.38.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
+    },
+    {
+      "originalUrl": "https://ap-b.trk.rixbeedesk.com/rix/track?event=1&info=AAADwiRcjIcP0OmdnHR_W8oLwzrrn7eErZzVcbN1Jg0hnOlELqJCy_Gp0ZtO6JmNSr7YeJ9Zjab1GfHDXvxTZUof8SZt230aiJNCRrxoO5uMaJ9yvn2lZVysK6PIHNhO_7jF1GDkRjZ5u97ztDXOPD6FGXio_0hOfE4kFWMHulSeedLXlRVV47bxC8a9jlwouTpmPxzdJsGv8clGOLQd6hyIpxgDmyo0Zap2dmsvzoaCk40bzc_SFfDCwJYT1QhgwusyTUR_IVqtPzutQtB3JWoo3yRhqWEMBiarHv56yvYhumZWiD2Z5erdAk1PzTqiyhhiTVNsNzetJupbyNVV128qlrbooCxTiPILFg61n07PDon8uwy1is5JQS4nshEhhoOHSyGu-stLddE8y2m2qy9ZvzfhlHElu8JezcXQPhTIoRnULKCvE8_lDawDu6E1fxu5svPPxGHI9tG71HPxtvD3E2xpxIcbJ7sazRb3_iQOjXZPWheOnXZvJRrS6UOREZRWEoRh_i5GZBsLvAWmTIbwe9B_sJ39VtHrELj08_d9E6D-pOUC1IVP9WQ9hnFy3BSORvi7bf4cD5wYBrRWANjLQkgcDR96p4mUTU03M5vX2lkpCsRH6DSc40ON4BBwIw9EvhvFl_IhqoA0hAQHiI--YvVLxwjOixgupaK0dV1WwrSKCKP1XyWAz6yIJJnT2UGUiugzJCvw1KLoUs3YIVB4gxnBi4uMoUwOaVMh96BuH3d8Crsj1AL8ZdCH7iA7AvGza280oHco7lm8tImOK5mofJFuODO_s03BqLxOjyL6ssqBTAVkzZXUa-p4ZxUymQJdXgFdShhoUS1UAZXWB3y0kodGVzVNm24BV3oVSC4F5yJ_A_7O_3PX68drQTSlImpRlaBphUqLoNZqAB_R7HoByaZiSfmRpVJZGoGbo9DM3AXJrrhnvX3eLGoCbulW-iRZJeDuvv75GBFZARfouBaES9Xz98uHTRYThUbQ2z_AAAAAAAAIs4H",
+      "type": "image",
+      "ipinfo": {
+        "domain": "ap-b.trk.rixbeedesk.com",
+        "ip": "35.186.252.80",
+        "hostname": "80.252.186.35.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.002,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "35.186.252.80",
+          "prefix": "35.186.252.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 64,
+          "location_count": 64
+        }
+      }
+    },
+    {
+      "originalUrl": "https://ecn.dev.virtualearth.net/REST/v1/Imagery/Map/roadondemandfull/24.993,121.494/5?mapSize=268,136&shading=terrain&key=AnTcaqBi2ypp0xI-OZNi4W_ik2KhjgpqioTAtXLC8GzkMBQRMlyxvxyTnd5b73im&c=zh-tw&maxAge=86400&st=me|lv:0_vg|v:0_nh|lv:0_pp|lv:1_cp|v:0_trs|v:1;lv:0;strokeWidthScale:0.2_wt|fc:B3E5FC_cst|v:0&logo=n&da=n&sftr=newweather&userregion=TW",
+      "type": "image",
+      "ipinfo": {
+        "domain": "ecn.dev.virtualearth.net",
+        "ip": "203.69.138.215",
+        "hostname": "203-69-138-215.hinet-ip.hinet.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS20940 Akamai International B.V.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://adsdkprod.azureedge.net/assets/sf/v1.0.0-1/safeframe-v2.html",
+      "type": "document",
+      "ipinfo": {
+        "domain": "adsdkprod.azureedge.net",
+        "ip": "150.171.110.65",
+        "city": "Hong Kong",
+        "region": "Hong Kong",
+        "country": "HK",
+        "loc": "22.2783,114.1747",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "Asia/Hong_Kong"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "x-azure-ref": "20260720T130319Z-15d9487b58ctcsq2hC1TPEm4d40000001a7g0000000078bd",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://mem.gfx.ms/meversion?partner=msnews&market=zh-tw",
+      "type": "script",
+      "ipinfo": {
+        "domain": "mem.gfx.ms",
+        "ip": "13.107.246.73",
+        "city": "Redmond",
+        "region": "Washington",
+        "country": "US",
+        "loc": "47.6740,-122.1215",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "x-azure-ref": "20260720T130319Z-16f54f76b64v6x5whC1TPEh3tg0000001700000000000h8a",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://imageaws.popin.cc/ML/9a57135ee1961dc783b506c008e60c95__scv1__300x175.png",
+      "type": "image",
+      "ipinfo": {
+        "domain": "imageaws.popin.cc",
+        "ip": "202.232.100.206",
+        "city": "Osaka",
+        "region": "Osaka",
+        "country": "JP",
+        "loc": "34.6938,135.5011",
+        "org": "AS2497 Internet Initiative Japan Inc.",
+        "timezone": "Asia/Tokyo"
+      },
+      "category": "foreign/direct"
+    },
+    {
+      "originalUrl": "https://sin3-ib.msn.com/rd_log?an_audit=0&referrer=https%3A%2F%2Fwww.msn.com%2Fzh-tw&e=wqT_3QLLCPBDSwQAAAMA1gAFAQiVufjSBhD5sJrGqO6ItloY9YOC0PWWj6hGKjYJ0EICRpc3yz8R0EICRpc3yz8ZAAAAwPUovD8h0EIJGwApESTQMQAAAEDheoQ_MN2j3RA4mAJAuGhIkQRQl8Tw3wJYrvcVYABo7gJ4qNQFgAEBigEDVVNEkgEBBvRIAZgBrAKgAfoBqAEBsAEAuAEBwAEFyAEC0AEA2AEA4AEA8AEA-gEMTVNOSFAyVFdaSDAxsgIgMUQ5MDU1RENBQUVCNjU5RTJFNzQ0MjQwQUJGQzY0QzfYAgHgApz3WuoCGWh0dHBzOi8vd3d3Lm1zbi5jb20vemgtdHeAAwCIAwGQAwCYAxegAwGqAwJIAMAD2ATIAwDYA9XuoQHgAwDoAwD4AwGABACSBAYvdXQvdjOYBACiBA8yMjAuMTMyLjIxMi4xOTSoBACyBBIIABABGMoHIPoBKAAwADgCQgC4BADABOLZvCLIBADaBAIIAeAEAfAEl8Tw3wKIBQGYBQCgBfTg-s6S6YPJW8AFAMkFAAAAAAAA8D_SBQkJAAAAAAAAAADYBQHgBQHqBTEKBmZsaWdodBInYWRzLXhkci1jbGt1bm11dGVfYyxhDRTwYXd0Y2gtZGt2LXJm6gURCgxtc2Z0X3JlZnJlc2gSATDqBRkKC2RldmljZV90eXBlEgpkZXNrdG9wd2Vi6gUWCgtwcm92aWRlcl9pZBIHN0hENjZGQ-oFGwoPc2FsZXNfcGFnDTkQCGhvbWUBD_BA6gUnCgNyaWQSIDZhNWUxYzkzOGZlOTQzNjJiNDU5NDVkMmVmMWE1MTI06gUMCgZtYXJrZXQSAnR36gUQCglzYWwBV3BvcxIDQVRG6gVICg9hZHMtc2RrLWZsaWdodHMSNRERPGFmZC1jZG46Y29udHJvbCwRGFBpbXBidXMtaXQtZ2lmLXBpeGVsLXQFXgGgAF8F6EADaHAy6gUKCgRsYW5nEgJ6aAENfANwdWISA21zbvAFvcdN-gUECAAQAJAGAJgGALgGAMEGIY40AADwP9AG1K8F2gYWChAJEhkBqBAAGADgBgHyBgYIABgAIACABwGIBwCgBwGqBwc0NDEwMDU0yAeo1AXSBw810gE0ECAA2gcGAW7wvhgA4AcA6gcCCADwB-qYlhOKCIkBCoQBAAABn3-fpghabCNyiMaYeXZM5SzOfz451QaKLus3ApAZWelx1TwrWFthB7gj-70F_-3Rdilcpa57JXBcdIbzfTugATkMM2IFoaN9Afl1YFCw6sTHO7O1ilKyW2XAHPg9KGbb14CA1hN-aKtBDCCDfd_QYkw9tBRm0vBxB3p-SG1TYisAEAGVCAAAgD-YCAHACAHSCAYIABAAGADaCAQIACAA4AgA6AgA&s=c6a87a1d55e2d7577ef8aed09216ca1502f3483e&bdref=https%3A%2F%2Fwww.msn.com%2F&bdtop=true&bdifs=1&bstk=https%3A%2F%2Fwww.msn.com%2F,https%3A%2F%2Fadsdkprod.azureedge.net%2Fassets%2Fsf%2Fv1.0.0-1%2Fsafeframe-v2.html&",
+      "type": "script",
+      "ipinfo": {
+        "domain": "sin3-ib.msn.com",
+        "ip": "103.43.91.139",
+        "hostname": "1019.bm-nginx-loadbalancer.mgmt.sin3.adnexus.net",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS29990 Xandr Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/direct"
+    },
+    {
+      "originalUrl": "https://trace.popin.cc/ju/ic?tn=d0f4902b616cc5c38cbe0a08676d0ed9&trackingid=6dc842bdb295cf55870e94263ff80201&acid=29194&data=gub5OS8nGFwlP7g-pMt0hh3OntjGC-d7GxNCwPeMaXAPbmkf8Ck3ghrYG_0c46siFpZuRIKBnROMwFUKeijKTI9I3CTsCZYqempv6T7U19guPzpURBFrli6DkbXKuFz8JP1Hx8OghS7kdhPCDaatRoP4R25QqI7VAMcHspSBhyJTUc8yz7v8Vk3xHz7fRad1IkgIkC9hmtxJVmEhbL4xEXFbO-NjqgMJ3SGaBmb6Afo-Q4hxZoXKUxvAC00nbBqq444DldMCYIkryhCUi66zAf6T8yXPHM1VkZmEbe0pBqr7__yxvzUk6ROy2SVx-ZUOr4tyngVMmmnS4TX5dG2WklgXOVjsFXJLxNotkG4lFnmohFj8ixoquRwSkJFI_RRbtnIOB5Pyft4LDyK1LCZousuaAeCfmwBc3558rRwpTlgWLGBj9D5yLppucI1OvV0I2znHIhykVy_XGqUq4AZy3Lk3FT8Ab3lQM3AsraRHQ0yUlutwEIPu2AL99uGCRqHZcJ3Wbk_UoMPcjJoaGqWXWk2E3oKTULkxZ6M07zceFtxlpXHqqQWTektTo55XYOV74WUC8TdmzGVljq3ZUTw9y8shcI5_TDrePPets0wny58-sxOniKLRwiv2dGPe2meAjJJWTeeW3_tvlh4kmnrElpOcVHqaoLlst81ZSLsvlO0YtfKpwsxeigXNSFQBFzGfHOmGje_NAQ5WZa8532LQnqj1qv6wWiw_j9PARAU7OnKotvThHLqJ4cEZTYMjHLm8g58Kdr7UxzFQOcssEAIHD9euyLoYp45TgseWluu2kDIq3uRTNlWt88dST2jrlFZBqK3IAyWe1HvEqDRudNN8lMydjLh68BA8PXeU-Z25OIbP1gJPpAqQGP-yblaZAkAA5yUSaOmhkUrbVZnum_9Tl98jCp0ihavDltcO7U8seGPCPxd10UkpteFA5P7Nelqhjq1ZyIVUE8Y1gwNTZDY47U24rbUmH6Ct-sW6j6zK-GBubrvwfbs-WEy_dWIc3lUW1KjDYIrH3lpI4eb4kXP44prTpL2hsTkaVsBGB0rIZDl80ub3DR8yvuwxeiq4b12S4nITG5ZcqoxKq3UeK8gSeUdf9zDosjpc741jPMDaOVDbHVMRt2A9WspW_8nEgcJ1o2OPdPAxnBjPDWaA5haGqZIi1AOSKlcKTgwpo5r2C0rG8Z0KqrwshQ-XbzyBB9fhhTj0AkxD2FyiAkUh4EJ4smuDxoYrb_eBEDwOFymipeVbeSRJ8UA1_3hdXoXlJ8vtmMx4L_kdHhKrhZNG2TUy5mBqwALDXiRjkuzuYvig1Fu7xPuGLQnMrrIq2fY7kbE5m_nd4UpxcEEHiEau4vwcbg1pe94XH5NCdz1oIGxdqCbrhID8z-9bCFO9MUhSQxUH&uid=5066616338978472437&mguid=&ap={AUCTION_PRICE}&tid=4&c_sync=1",
+      "type": "image",
+      "ipinfo": {
+        "domain": "trace.popin.cc",
+        "ip": "35.213.89.133",
+        "hostname": "133.89.213.35.bc.googleusercontent.com",
+        "city": "Tokyo",
+        "region": "Tokyo",
+        "country": "JP",
+        "loc": "35.6895,139.6917",
+        "org": "AS19527 Google LLC",
+        "timezone": "Asia/Tokyo"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 52.823,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "35.213.89.133",
+          "prefix": "35.213.89.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
+    },
+    {
+      "originalUrl": "https://js.monitor.azure.com/scripts/c/ms.shared.analytics.mectrl-3.gbl.min.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "js.monitor.azure.com",
+        "ip": "150.171.110.65",
+        "city": "Hong Kong",
+        "region": "Hong Kong",
+        "country": "HK",
+        "loc": "22.2783,114.1747",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "Asia/Hong_Kong"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "x-azure-ref": "20260720T130319Z-15d9487b58c9llbnhC1TPEh5500000001atg000000007fzb",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://cdn.ampproject.org/rtv/012607061538000/amp4ads-v0.mjs",
+      "type": "script",
+      "ipinfo": {
+        "domain": "cdn.ampproject.org",
+        "ip": "108.177.125.132",
+        "hostname": "tp-in-f132.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.1469,120.6839",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     }
   ]
 }

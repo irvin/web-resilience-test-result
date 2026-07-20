@@ -2,11 +2,12 @@
   "url": "https://poedb.tw",
   "canonicalURL": "https://poedb.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:16:21.938Z",
+  "timestamp": "2026-07-20T13:36:45.216Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 136,
+  "requestCount": 133,
   "uniqueDomains": 8,
   "test_results": {
     "domestic": {
-      "cloud": 5,
+      "cloud": 7,
       "direct": 0
     },
     "foreign": {
-      "cloud": 3,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -50,10 +51,34 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 142.291,
-        "detection_method": "rtt"
+        "cf-ray": "a1e25b2d1cd4fcf7-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "104.21.38.30",
+          "prefix": "104.21.38.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 58,
+          "location_count": 58,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -61,7 +86,7 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "cdnjs.cloudflare.com",
-        "ip": "104.17.25.14",
+        "ip": "104.17.24.14",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -72,7 +97,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd949863cce8457-TPE",
+        "cf-ray": "a1e25b305b679688-TPE",
         "detection_method": "header"
       }
     },
@@ -81,7 +106,43 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "104.16.175.226",
+        "ip": "151.101.193.229",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "x-served-by": "cache-fra-eddf8230197-FRA, cache-sin-wsss1830037-SIN",
+        "rtt": 37.78,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "151.101.193.229",
+          "prefix": "151.101.193.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 54,
+          "location_count": 54
+        }
+      }
+    },
+    {
+      "originalUrl": "https://cdn.poedb.tw/css/stdtheme.80f86f8d795885a7.css",
+      "type": "stylesheet",
+      "ipinfo": {
+        "domain": "cdn.poedb.tw",
+        "ip": "104.21.38.30",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -91,29 +152,32 @@
       },
       "category": "domestic/cloud",
       "cloud_provider": {
+        "cf-ray": "a1e25b30a905fcf7-SIN",
         "country": "tw",
-        "cf-ray": "9bd949870bf08a97-TPE",
-        "x-served-by": "cache-fra-eddf8230124-FRA, cache-nrt-rjtf7700050-NRT",
-        "detection_method": "header"
-      }
-    },
-    {
-      "originalUrl": "https://cdn.poedb.tw/css/stdtheme.e7d72672bdd0bf8f.css",
-      "type": "stylesheet",
-      "ipinfo": {
-        "domain": "cdn.poedb.tw",
-        "ip": "172.67.218.74",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": 136.904,
-        "detection_method": "rtt"
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "104.21.38.30",
+          "prefix": "104.21.38.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 58,
+          "location_count": 58,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -137,12 +201,28 @@
       "type": "script",
       "ipinfo": {
         "domain": "ats-wrapper.privacymanager.io",
-        "ip": "3.169.121.41",
-        "hostname": "server-3-169-121-41.tpe53.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "3.169.121.128",
+        "hostname": "server-3-169-121-128.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://geo.privacymanager.io/",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "geo.privacymanager.io",
+        "ip": "65.9.180.110",
+        "hostname": "server-65-9-180-110.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -153,7 +233,7 @@
       "type": "xhr",
       "ipinfo": {
         "domain": "consent.nitrocnct.com",
-        "ip": "104.21.33.230",
+        "ip": "172.67.193.156",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -161,27 +241,35 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 145.429,
-        "detection_method": "rtt"
+        "cf-ray": "a1e25b38ca35aedc-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "172.67.193.156",
+          "prefix": "172.67.193.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 60,
+          "location_count": 60,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
-    },
-    {
-      "originalUrl": "https://geo.privacymanager.io/",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "geo.privacymanager.io",
-        "ip": "3.169.137.86",
-        "hostname": "server-3-169-137-86.tpe54.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
     }
   ]
 }

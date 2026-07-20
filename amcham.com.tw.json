@@ -2,11 +2,12 @@
   "url": "https://amcham.com.tw",
   "canonicalURL": "https://amcham.com.tw/homepage-2/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T03:52:38.192Z",
+  "timestamp": "2026-07-20T14:37:34.557Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 101,
+  "requestCount": 98,
   "uniqueDomains": 8,
   "test_results": {
     "domestic": {
-      "cloud": 6,
+      "cloud": 8,
       "direct": 0
     },
     "foreign": {
-      "cloud": 1,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -42,7 +43,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "amcham.com.tw",
-        "ip": "104.21.49.244",
+        "ip": "172.67.197.66",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -50,10 +51,34 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 136.703,
-        "detection_method": "rtt"
+        "cf-ray": "a1e2b42b981a9d1d-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "172.67.197.66",
+          "prefix": "172.67.197.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 57,
+          "location_count": 57,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -61,12 +86,12 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.204.42",
-        "hostname": "hkg07s38-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "142.251.8.95",
+        "hostname": "tb-in-f95.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "24.1469,120.6839",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
@@ -89,13 +114,6 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "blob:https://amcham.com.tw/20d30715-efa4-47f5-88eb-3367a9759eab",
-      "type": "other",
-      "ipinfo": {
-        "domain": ""
-      }
-    },
-    {
       "originalUrl": "https://assets.mailerlite.com/js/universal.js",
       "type": "script",
       "ipinfo": {
@@ -111,7 +129,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bda2e75684eae64-TPE",
+        "cf-ray": "a1e2b4593d284a24-TPE",
         "detection_method": "header"
       }
     },
@@ -131,7 +149,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bda2e7ca9ffb856-TPE",
+        "cf-ray": "a1e2b45c5e9a4a10-TPE",
         "detection_method": "header"
       }
     },
@@ -140,6 +158,26 @@
       "type": "script",
       "ipinfo": {
         "domain": "groot.mailerlite.com",
+        "ip": "172.64.150.190",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e2b45beff84a24-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://static.mailerlite.com/js/w/ml_jQuery.inputmask.bundle.min.js?v3.3.1",
+      "type": "script",
+      "ipinfo": {
+        "domain": "static.mailerlite.com",
         "ip": "104.18.37.66",
         "city": "San Francisco",
         "region": "California",
@@ -151,7 +189,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bda2e7b9d30ae64-TPE",
+        "cf-ray": "a1e2b45c48554a24-TPE",
         "detection_method": "header"
       }
     },
@@ -160,7 +198,7 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.mailerlite.com",
-        "ip": "104.18.37.66",
+        "ip": "172.64.150.190",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -171,7 +209,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bda2e7ce81bae64-TPE",
+        "cf-ray": "a1e2b45ca8c34a24-TPE",
         "detection_method": "header"
       }
     }

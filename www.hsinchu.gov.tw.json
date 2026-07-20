@@ -2,11 +2,12 @@
   "url": "https://www.hsinchu.gov.tw/",
   "canonicalURL": "https://www.hsinchu.gov.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T02:44:08.007Z",
+  "timestamp": "2026-07-20T13:58:34.254Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,11 +25,11 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 201,
-  "uniqueDomains": 13,
+  "requestCount": 207,
+  "uniqueDomains": 10,
   "test_results": {
     "domestic": {
-      "cloud": 7,
+      "cloud": 5,
       "direct": 5
     },
     "foreign": {
@@ -43,11 +44,10 @@
       "ipinfo": {
         "domain": "www.hsinchu.gov.tw",
         "ip": "163.29.185.106",
-        "hostname": "dda.hsinchu.gov.tw",
-        "city": "Taipei",
+        "city": "Hsinchu",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.8036,120.9686",
         "org": "AS4782 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
@@ -70,42 +70,55 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://ws.hsinchu.gov.tw/001/Upload/1/relpic/8727/276425/07838d6b-418b-45da-8833-b2490af0e312@710x470.jpg",
+      "originalUrl": "https://ws.hsinchu.gov.tw/001/Upload/1/relpic/8727/312459/7f693a95-fbcd-4300-a9ce-f0fb8e260696@710x470.png",
       "type": "image",
       "ipinfo": {
         "domain": "ws.hsinchu.gov.tw",
         "ip": "163.29.185.107",
-        "city": "Taipei",
+        "city": "Hsinchu",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.8036,120.9686",
         "org": "AS4782 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "blob:https://www.hsinchu.gov.tw/aeca62f0-4b3c-45d3-ab7c-79a43c3db731",
-      "type": "other",
-      "ipinfo": {
-        "domain": ""
-      }
-    },
-    {
-      "originalUrl": "https://www.youtube.com/embed/sE5aEiljW7E",
+      "originalUrl": "https://www.youtube.com/embed/Rj-z9jykQ00",
       "type": "document",
       "ipinfo": {
         "domain": "www.youtube.com",
-        "ip": "142.250.77.14",
-        "hostname": "nctsaa-ab-in-f14.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
+        "ip": "142.251.151.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
         "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 9.567,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.151.4",
+          "prefix": "142.251.151.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
     },
     {
       "originalUrl": "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fccchchg%2F&tabs=timeline&width=250&height=492&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1125964780835222",
@@ -124,12 +137,12 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://i.ytimg.com/vi/nSf3zj18jAY/sddefault.jpg",
+      "originalUrl": "https://i.ytimg.com/vi/cadv8goFynY/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEogZSg3MA8=&rs=AOn4CLDATiXP72HoPmPPWqsRs5uzTLF9HA",
       "type": "image",
       "ipinfo": {
         "domain": "i.ytimg.com",
-        "ip": "142.250.196.214",
-        "hostname": "nctsaa-ac-in-f22.1e100.net",
+        "ip": "142.250.192.150",
+        "hostname": "bom12s18-in-f22.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -140,39 +153,7 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://yt3.ggpht.com/ytc/AIdro_nlxpLQ4A3YFf-3wOdduL9Sg05Yyw8LCJf81cMdEM0J4Fs=s68-c-k-c0x00ffffff-no-rj",
-      "type": "image",
-      "ipinfo": {
-        "domain": "yt3.ggpht.com",
-        "ip": "142.250.196.193",
-        "hostname": "nctsaa-ac-in-f1.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.gstatic.com/cv/js/sender/v1/cast_sender.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.gstatic.com",
-        "ip": "142.250.66.67",
-        "hostname": "hkg12s27-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://static.xx.fbcdn.net/rsrc.php/v5/yp/l/1,cross/FAL9LK7-qlE.css",
+      "originalUrl": "https://static.xx.fbcdn.net/rsrc.php/v5/yk/l/1,cross/8xrc6E6blQ-.css",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "static.xx.fbcdn.net",
@@ -188,52 +169,92 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://scontent.ftpe7-1.fna.fbcdn.net/v/t39.30808-1/493101398_982181450738724_7848282285031933650_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=110&ccb=1-7&_nc_sid=f907e8&_nc_ohc=vP2qsJIDmKMQ7kNvwET6Dp4&_nc_oc=AdmM0htZp67X9WrF_XYMFNJfOENvQGOa1Zi7ISacdEUponoPodptqmN5BIu2TMZvB1m2dVMjiLQsWMX-q9z4uICg&_nc_zt=24&_nc_ht=scontent.ftpe7-1.fna&edm=ADwHzz8EAAAA&_nc_gid=mih45P4QWuC60YFVPN6IJw&oh=00_AfoWF_tJpShNDGuzWP8ItDjkaR4Q4EgVom7IYdl3XkzIJA&oe=696CBA8B",
+      "originalUrl": "https://scontent.ftpe7-1.fna.fbcdn.net/v/t39.30808-1/493101398_982181450738724_7848282285031933650_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=110&ccb=1-7&_nc_sid=f907e8&_nc_ohc=5CSA7uNZIhkQ7kNvwEzbfkn&_nc_oc=AdoPGKteKz_5jTpVz8cudu1QB2SaVKdoe5EckIWbJMCiJCySaXeS03AuJsyyjzAWUpqyEruSpsCe8148Alw3aTIr&_nc_zt=24&_nc_ht=scontent.ftpe7-1.fna&edm=ADwHzz8EAAAA&_nc_gid=RctQsPx5_r0Yo5f5z1dDqw&oh=00_AQDFP46GlUCEddzoc1PvvIXXFD0nRI5sMDZusS9PuAlV3Q&oe=6A63EBCB",
       "type": "image",
       "ipinfo": {
         "domain": "scontent.ftpe7-1.fna.fbcdn.net",
         "ip": "203.74.65.17",
         "hostname": "203-74-65-17.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "city": "Taipei",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "25.0531,121.5264",
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.google.com/js/th/VQRLE1nj_w3YOUr9bDT-SZkrXPV28X05Wh6hb2M3ukQ.js",
+      "originalUrl": "https://www.google.com/js/th/8uIar4J4-RenYUa4HtG5DFVcni3D6dGneJv1JZIjHfM.js",
       "type": "script",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.66.68",
-        "hostname": "hkg12s27-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
+        "ip": "142.251.151.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
         "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.488,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.151.119",
+          "prefix": "142.251.151.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
     },
     {
       "originalUrl": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
       "type": "xhr",
       "ipinfo": {
         "domain": "jnn-pa.googleapis.com",
-        "ip": "142.250.196.202",
-        "hostname": "nctsaa-ac-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
+        "ip": "172.217.115.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
         "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.839,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "172.217.115.4",
+          "prefix": "172.217.115.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
     }
   ]
 }

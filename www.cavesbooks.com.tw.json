@@ -2,11 +2,12 @@
   "url": "https://www.cavesbooks.com.tw/",
   "canonicalURL": "https://www.cavesbooks.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T03:21:00.064Z",
+  "timestamp": "2026-07-20T14:43:21.058Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,12 +25,12 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 40,
-  "uniqueDomains": 6,
+  "requestCount": 152,
+  "uniqueDomains": 12,
   "test_results": {
     "domestic": {
-      "cloud": 4,
-      "direct": 1
+      "cloud": 8,
+      "direct": 3
     },
     "foreign": {
       "cloud": 1,
@@ -50,47 +51,84 @@
         "org": "AS8075 Microsoft Corporation",
         "timezone": "Asia/Hong_Kong"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 23.173,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "20.2.55.175",
+          "prefix": "20.2.55.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
     },
     {
-      "originalUrl": "https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500&family=Noto+Serif+TC:wght@300;400;600&family=Ubuntu:wght@300;400;500;700&display=swap",
+      "originalUrl": "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&family=Frank+Ruhl+Libre:wght@300;400;500&family=Noto+Serif+TC:wght@300;400;600;700&family=Ubuntu:wght@300;400;500;700&display=swap",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.66.74",
-        "hostname": "hkg12s27-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "74.125.203.95",
+        "hostname": "th-in-f95.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "24.1469,120.6839",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://pic1.cavesbooks.com.tw/fleget/CktPicShow.ashx?typ=ECAdPicUrl&GDT=ad&DIR=SLIDE&nme=ADP2026071709453182A.jpg",
+      "type": "image",
+      "ipinfo": {
+        "domain": "pic1.cavesbooks.com.tw",
+        "ip": "125.227.140.106",
+        "hostname": "125-227-140-106.hinet-ip.hinet.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://kit.fontawesome.com/52d8ccd9f0.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "kit.fontawesome.com",
+        "ip": "104.18.40.68",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e2bc9e4db6b016-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-KWKH7D68",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fwww.cavesbooks.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=1857261349.1768360858&dt=%E6%95%A6%E7%85%8C%E6%9B%B8%E5%B1%80&auid=976417852.1768360858&navt=n&npa=0&gtm=45He61c1v9164989895za200zd9164989895xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115938465~115938469~116988315~117041588&tft=1768360857675&tfd=485&apve=1&apvf=f",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.77.4",
-        "hostname": "nctsaa-ab-in-f4.1e100.net",
+        "ip": "142.250.77.200",
+        "hostname": "del11s08-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -105,8 +143,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "d.line-scdn.net",
-        "ip": "104.116.17.150",
-        "hostname": "a104-116-17-150.deploy.static.akamaitechnologies.com",
+        "ip": "184.25.121.253",
+        "hostname": "a184-25-121-253.deploy.static.akamaitechnologies.com",
         "city": "Yuanlin",
         "region": "Taiwan",
         "country": "TW",
@@ -123,6 +161,135 @@
         "domain": "connect.facebook.net",
         "ip": "31.13.87.5",
         "hostname": "xx-fbcdn-shv-01-tpe1.fbcdn.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://www.google.com/ccm/collect?rcb=16&frm=0&ae=g&auid=1154690266.1784558592&dt=%E6%95%A6%E7%85%8C%E6%9B%B8%E5%B1%80&en=page_view&dl=https%3A%2F%2Fwww.cavesbooks.com.tw%2Fzh&scrsrc=www.googletagmanager.com&rnd=370865525.1784558592&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He67f0v9164989895za200zd9164989895xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118131809~118897920~118897930&apve=1&apvf=f&apvc=1&tft=1784558592292&tfd=1996&fmt=8",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.152.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 10.172,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.152.119",
+          "prefix": "142.251.152.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
+    },
+    {
+      "originalUrl": "https://websdk.cresclab.com/latest/default-ui/dist/default.css",
+      "type": "stylesheet",
+      "ipinfo": {
+        "domain": "websdk.cresclab.com",
+        "ip": "104.18.4.188",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e2bca42b348279-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://webchat-bridge.cresclab.com/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "webchat-bridge.cresclab.com",
+        "ip": "104.18.4.188",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e2bca7793ac4ed-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://wccs-api.cresclab.com/api/v1/clients/CL-3D98D4FF/config",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "wccs-api.cresclab.com",
+        "ip": "34.117.129.81",
+        "hostname": "81.129.117.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 7.583,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.117.129.81",
+          "prefix": "34.117.129.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 64,
+          "location_count": 64
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.facebook.com/tr/?id=138595958409586&ev=PageView&dl=https%3A%2F%2Fwww.cavesbooks.com.tw%2Fzh&rl=&if=false&ts=1784558593311&iw=false&sw=1280&sh=720&v=2.9.357&r=stable&ec=0&o=4126&aems=0%3B0&fbp=fb.2.1784558593303.4336604432141451&ler=empty&cdl=API_unavailable&pmd[title]=%E6%95%A6%E7%85%8C%E6%9B%B8%E5%B1%80&pmd[locale]=zh-Hant-TW&plt=1453.6000000005588&iss=1&imft=1&tz=480&it=1784558592921&coo=false&ss=%7B%22pricing_price%22%3A%5B%7B%22rid%22%3A%2226775842828772190%22%2C%22v%22%3A%5B%22%24215%22%2C%22%24103%22%2C%22%24660%22%2C%22%24770%22%2C%22%24800%22%2C%22%24199%22%2C%22%242%2C350%22%2C%22%24815%22%5D%7D%5D%2C%22entity_name%22%3A%5B%7B%22rid%22%3A%221425944212776598%22%2C%22v%22%3A%5B%22%E6%95%A6%E7%85%8C%E7%B6%B2%E8%B7%AF%E6%9B%B8%E5%B1%80%20E-CAVES%22%5D%7D%5D%7D&ss_rks=%7B%22currency%22%3A%7B%22tv%22%3A1%2C%22rules%22%3A%7B%221967098024173129%22%3A1%7D%7D%7D&expv2[0]=pl0&expv2[1]=el2&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=ct2&expv2[6]=hf0&rqm=GET",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",

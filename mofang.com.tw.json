@@ -2,11 +2,12 @@
   "url": "https://mofang.com.tw",
   "canonicalURL": "https://mofang.com.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:32:39.730Z",
+  "timestamp": "2026-07-20T13:37:04.196Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 98,
-  "uniqueDomains": 17,
+  "requestCount": 96,
+  "uniqueDomains": 15,
   "test_results": {
     "domestic": {
-      "cloud": 11,
-      "direct": 1
+      "cloud": 10,
+      "direct": 2
     },
     "foreign": {
-      "cloud": 4,
+      "cloud": 3,
       "direct": 0
     }
   },
@@ -58,7 +59,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "code.jquery.com",
-        "ip": "151.101.2.137",
+        "ip": "151.101.129.155",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -68,8 +69,25 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 33.41,
-        "detection_method": "rtt"
+        "x-served-by": "cache-lga21931-LGA, cache-sin-wsss1830036-SIN",
+        "rtt": 34.87,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "151.101.129.155",
+          "prefix": "151.101.129.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 55,
+          "location_count": 55
+        }
       }
     },
     {
@@ -77,8 +95,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.192.136",
+        "hostname": "bom12s18-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -109,7 +127,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "hcaptcha.com",
-        "ip": "104.19.229.21",
+        "ip": "104.19.230.21",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -120,7 +138,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd96096cce0f023-TPE",
+        "cf-ray": "a1e25b61bea06b74-TPE",
         "detection_method": "header"
       }
     },
@@ -145,8 +163,8 @@
       "type": "xhr",
       "ipinfo": {
         "domain": "id.twitch.tv",
-        "ip": "34.208.237.25",
-        "hostname": "ec2-34-208-237-25.us-west-2.compute.amazonaws.com",
+        "ip": "184.32.122.98",
+        "hostname": "ec2-184-32-122-98.us-west-2.compute.amazonaws.com",
         "city": "Boardman",
         "region": "Oregon",
         "country": "US",
@@ -154,10 +172,28 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": null,
+        "detection_method": "rtt",
+        "rtt_error": "timeout",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "184.32.122.98",
+          "prefix": "184.32.122.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
     },
     {
-      "originalUrl": "https://betabg.mofang.com.tw/admin/20201209/uploads/2026-01-13/images/%E5%9C%961.jpg",
+      "originalUrl": "https://betabg.mofang.com.tw/admin/20201209/uploads/2023-11-03/images/230x0w.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "betabg.mofang.com.tw",
@@ -173,46 +209,10 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://lh7-us.googleusercontent.com/ErqPBXjRCIk79BconXqSGiJEuqcVpl8WLc9JbEwPWmM3DVwLnfkCzpkanXfUyvCGi7NAPH9AuGKXGo9zVI9GBluC7tQOuPqOGuLDeTp6JbyphAEqOQHhieptzAJs9dbi9vXn3yixUiES6jBa80s2kg",
-      "type": "image",
-      "ipinfo": {
-        "domain": "lh7-us.googleusercontent.com",
-        "ip": "142.250.66.65",
-        "hostname": "hkg12s27-in-f1.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://newassets.hcaptcha.com/captcha/v1/6e937500c6861f1c062311c9544857646f7e58aa/static/hcaptcha.html",
-      "type": "document",
-      "ipinfo": {
-        "domain": "newassets.hcaptcha.com",
-        "ip": "104.19.229.21",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "cf-ray": "9bd96097bac2b3a4-TPE",
-        "detection_method": "header"
-      }
-    },
-    {
-      "originalUrl": "https://3b4a8c66079e.w.hcaptcha.com/logo.png",
+      "originalUrl": "https://4aedae4dc73e.w.hcaptcha.com/logo.png",
       "type": "fetch",
       "ipinfo": {
-        "domain": "3b4a8c66079e.w.hcaptcha.com",
+        "domain": "4aedae4dc73e.w.hcaptcha.com",
         "ip": "104.18.12.205",
         "city": "San Francisco",
         "region": "California",
@@ -224,16 +224,16 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd960987b296b78-TPE",
+        "cf-ray": "a1e25b651b464aa5-TPE",
         "detection_method": "header"
       }
     },
     {
-      "originalUrl": "https://0a27b745b50e.w.hcaptcha.com/logo.png",
-      "type": "fetch",
+      "originalUrl": "https://newassets.hcaptcha.com/captcha/v1/451a37f73f610ddb24b43e498d4539e54eee3e40/static/i18n/zh-TW.json",
+      "type": "xhr",
       "ipinfo": {
-        "domain": "0a27b745b50e.w.hcaptcha.com",
-        "ip": "104.18.13.205",
+        "domain": "newassets.hcaptcha.com",
+        "ip": "104.19.230.21",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -244,12 +244,68 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd9609deb1db016-TPE",
+        "cf-ray": "a1e25b650883ed1d-TPE",
         "detection_method": "header"
       }
     },
     {
-      "originalUrl": "https://api.hcaptcha.com/checksiteconfig?v=6e937500c6861f1c062311c9544857646f7e58aa&host=mofang.com.tw&sitekey=2f56fe4d-3fea-484e-bf91-4d9f2a27dc2b&sc=1&swa=1&spst=1",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource125/v4/ec/7d/20/ec7d2036-7fff-5a44-60ee-2e75d1aef19f/867f11cf-b25a-4f14-9eb7-60cbc66ed535_iOS_12.9inch_title_2048x2732_v18.png/576x768bb.png",
+      "type": "image",
+      "ipinfo": {
+        "domain": "is1-ssl.mzstatic.com",
+        "ip": "146.75.47.6",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "x-served-by": "cache-sin-wsss1830084-SIN",
+        "rtt": 61.736,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "146.75.47.6",
+          "prefix": "146.75.47.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 2,
+          "location_count": 2
+        }
+      }
+    },
+    {
+      "originalUrl": "https://7baa083b0a42.w.hcaptcha.com/logo.png",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "7baa083b0a42.w.hcaptcha.com",
+        "ip": "104.18.12.205",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e25b671bca809a-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://api.hcaptcha.com/checksiteconfig?v=451a37f73f610ddb24b43e498d4539e54eee3e40&host=mofang.com.tw&sitekey=2f56fe4d-3fea-484e-bf91-4d9f2a27dc2b&sc=1&swa=1&spst=1",
       "type": "xhr",
       "ipinfo": {
         "domain": "api.hcaptcha.com",
@@ -264,53 +320,8 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd960989c56b3a4-TPE",
+        "cf-ray": "a1e25b661f474a0f-TPE",
         "detection_method": "header"
-      }
-    },
-    {
-      "originalUrl": "blob:https://newassets.hcaptcha.com/13600ce5-fc57-42c2-9eb4-e11949041bab",
-      "type": "script",
-      "ipinfo": {
-        "domain": ""
-      }
-    },
-    {
-      "originalUrl": "https://is4-ssl.mzstatic.com/image/thumb/PurpleSource125/v4/b4/40/07/b4400778-0801-6e30-cea3-52b8bc2590db/fb75f7c9-f328-4b1a-a844-3e9411116766_a1.jpg/552x414bb.jpg",
-      "type": "image",
-      "ipinfo": {
-        "domain": "is4-ssl.mzstatic.com",
-        "ip": "199.232.115.6",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": 49.282,
-        "detection_method": "rtt"
-      }
-    },
-    {
-      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource125/v4/ec/7d/20/ec7d2036-7fff-5a44-60ee-2e75d1aef19f/867f11cf-b25a-4f14-9eb7-60cbc66ed535_iOS_12.9inch_title_2048x2732_v18.png/576x768bb.png",
-      "type": "image",
-      "ipinfo": {
-        "domain": "is1-ssl.mzstatic.com",
-        "ip": "199.232.115.6",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": 49.509,
-        "detection_method": "rtt"
       }
     },
     {
@@ -318,16 +329,32 @@
       "type": "xhr",
       "ipinfo": {
         "domain": "api.twitch.tv",
-        "ip": "3.169.121.52",
-        "hostname": "server-3-169-121-52.tpe53.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "54.192.248.37",
+        "hostname": "server-54-192-248-37.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.facebook.com/tr/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
     }
   ]
 }

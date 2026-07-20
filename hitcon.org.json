@@ -2,7 +2,7 @@
   "url": "https://hitcon.org",
   "canonicalURL": "https://hitcon.org",
   "httpStatus": 200,
-  "timestamp": "2026-03-21T10:02:43.628Z",
+  "timestamp": "2026-07-20T17:22:21.349Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,7 +25,7 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 27,
+  "requestCount": 31,
   "uniqueDomains": 2,
   "test_results": {
     "domestic": {
@@ -53,17 +53,40 @@
       },
       "category": "domestic/cloud",
       "cloud_provider": {
+        "cf-ray": "a1e3a5bc7b35a02d-SIN",
         "country": "tw",
-        "rtt": 13.95,
-        "detection_method": "rtt"
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "172.66.169.227",
+          "prefix": "172.66.169.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 63,
+          "location_count": 63,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
-      "originalUrl": "https://www.google.com/ads/ga-audiences?t=sr&aip=1&_r=4&v=1&_v=j86&tid=G-8555TD5W6W&cid=fa6bb8c0-0b71-4b2e-b06e-87e06743624b&_u=KGDAAEADQAAAAC%7E&z=1354229707&slf_rd=1",
+      "originalUrl": "https://www.google.com/ads/ga-audiences?t=sr&aip=1&_r=4&v=1&_v=j86&tid=G-8555TD5W6W&cid=941ea597-db1a-401d-99c2-d2909a545b61&_u=KGDAAEADQAAAAC%7E&z=2068536453&slf_rd=1",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.251.152.119",
+        "ip": "142.251.150.119",
         "city": "Mountain View",
         "region": "California",
         "country": "US",
@@ -74,8 +97,24 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 6.319,
-        "detection_method": "rtt"
+        "rtt": 5.4,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.150.119",
+          "prefix": "142.251.150.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
       }
     }
   ]

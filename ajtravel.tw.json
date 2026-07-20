@@ -2,11 +2,12 @@
   "url": "https://ajtravel.tw",
   "canonicalURL": "https://ajtravel.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T03:55:35.888Z",
+  "timestamp": "2026-07-20T15:01:00.173Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,16 +25,16 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 122,
-  "uniqueDomains": 12,
+  "requestCount": 222,
+  "uniqueDomains": 13,
   "test_results": {
     "domestic": {
-      "cloud": 3,
-      "direct": 7
+      "cloud": 6,
+      "direct": 4
     },
     "foreign": {
-      "cloud": 1,
-      "direct": 0
+      "cloud": 2,
+      "direct": 1
     }
   },
   "domainDetails": [
@@ -42,7 +43,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "ajtravel.tw",
-        "ip": "172.67.139.245",
+        "ip": "104.21.70.220",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -50,10 +51,34 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 130.167,
-        "detection_method": "rtt"
+        "cf-ray": "a1e2d6771c842fbd-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "104.21.70.220",
+          "prefix": "104.21.70.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 57,
+          "location_count": 57,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -61,8 +86,8 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.198.74",
-        "hostname": "lctsaa-ab-in-f10.1e100.net",
+        "ip": "142.250.77.202",
+        "hostname": "del11s08-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -77,8 +102,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.77.8",
+        "hostname": "nctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -109,8 +134,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "ajax.googleapis.com",
-        "ip": "142.250.198.74",
-        "hostname": "lctsaa-ab-in-f10.1e100.net",
+        "ip": "142.250.77.202",
+        "hostname": "del11s08-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -119,13 +144,6 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "blob:https://ajtravel.tw/b930534b-5330-4362-9975-05e6f58e7b05",
-      "type": "other",
-      "ipinfo": {
-        "domain": ""
-      }
     },
     {
       "originalUrl": "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fajtravelmap&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId",
@@ -144,7 +162,7 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://static.xx.fbcdn.net/rsrc.php/v5/yp/l/1,cross/FAL9LK7-qlE.css",
+      "originalUrl": "https://static.xx.fbcdn.net/rsrc.php/v5/yk/l/1,cross/8xrc6E6blQ-.css",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "static.xx.fbcdn.net",
@@ -160,68 +178,138 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://scontent.ftpe7-1.fna.fbcdn.net/v/t39.30808-1/382168636_209912055438711_3607383354655921222_n.jpg?stp=dst-jpg_p100x100_tt6&_nc_cat=100&ccb=1-7&_nc_sid=f907e8&_nc_ohc=f146jE4_9aoQ7kNvwHvNQlR&_nc_oc=AdnYPFAi3B3JBAk6W-1VDDfRrA1L_MXAwX8VnqQcPlRTrm3SunHAQaTmq5f0776R-SC-lx_f0mEF2AHnjJzyFNil&_nc_zt=24&_nc_ht=scontent.ftpe7-1.fna&edm=ADwHzz8EAAAA&_nc_gid=soD6RsRAKlBUoIJJ76RRNw&oh=00_AfrchifpucO2x6y4S88cpsUcvFpGYnnnA7AumfVzKpmhPg&oe=696CF7B7",
+      "originalUrl": "https://scontent.ftpe7-1.fna.fbcdn.net/v/t39.30808-1/382168636_209912055438711_3607383354655921222_n.jpg?stp=dst-jpg_p100x100_tt6&_nc_cat=100&ccb=1-7&_nc_sid=f907e8&_nc_ohc=5-ObwREyolYQ7kNvwHH209J&_nc_oc=AdoG1Wh-iiF8HaeVO20qGAC510FteGZ56jQAVL-JASQXC80-_GCmTCPPbF6Mu3bItwZaN_Hhie9mgMxLZKzzR-AG&_nc_zt=24&_nc_ht=scontent.ftpe7-1.fna&edm=ADwHzz8EAAAA&_nc_gid=gkPjdPS_z5tnoP6sJbO3DA&oh=00_AQDejVaNLjWgVY7yGKJYW1E6S_Ad2Ch1ZAtSvifTWb2xIw&oe=6A63F0B7",
       "type": "image",
       "ipinfo": {
         "domain": "scontent.ftpe7-1.fna.fbcdn.net",
         "ip": "203.74.65.17",
         "hostname": "203-74-65-17.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "city": "Taipei",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "25.0531,121.5264",
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://scontent.ftpe7-3.fna.fbcdn.net/v/t39.30808-6/615728147_1411931960296348_705232058070020940_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e21142&_nc_ohc=wECIOGPTn44Q7kNvwExrmsJ&_nc_oc=AdmL8g_9jdYd4eLO0dN5O083rOWg6lYKgBpvGMZHie9aM6QSC0NY7P6_n77TyuvIhO3nmvUHJS1HeNA0NRIiYMST&_nc_zt=23&_nc_ht=scontent.ftpe7-3.fna&_nc_gid=WPiZJdtjiF1gNcz3rAOyaA&oh=00_AfqzOkL9POA3yTsqyOVGq-Nq1j0aGjYWTh0gfnrZCtM-pA&oe=696CE2F0",
-      "type": "image",
+      "originalUrl": "https://ss-sg2.appiersig.com/winshowimg?bidobjid=XGa_nErwDNyhLPeDJjheag&cid=39LTVvJZSQq6aK0WkT-y4g&crid=IdRKXEfNQFGygwJPNd3EtQ&crpid=e7-FP5D6SQ6t1QpVXOl4nQ&soid=WYaH&partner_id=03mSf3HNecb-&bx=Cylxwnu_oroVKqoRordQ206m7PGQ7PI-uY79uqa1w8ERZYSm38x9JLZ1K4lNU1u_uYSXJLlNJYi-KjtDu1x1c8sRuqaVK4lNZLM12qu-uYOPuqa1U8Squ1x1U8A121uVo4u-uYOPJ1u_uqGxKqGsKqZ9o4lO&ui=CylYc8Myuqa1oqdxorE1o0GV2qoQo0u_2qa_ord1eM&consent=1&ddhh=oqdWox&billing=170486252553&price_encoded=al44JgANDh8FFsk8ADgdll7cxo7vvZY6xwGcmQ&cachebust=2143131818",
+      "type": "fetch",
       "ipinfo": {
-        "domain": "scontent.ftpe7-3.fna.fbcdn.net",
-        "ip": "203.74.65.145",
-        "hostname": "203-74-65-145.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS3462 Data Communication Business Group",
-        "timezone": "Asia/Taipei"
+        "domain": "ss-sg2.appiersig.com",
+        "ip": "15.235.222.84",
+        "hostname": "ns5031772.ip-15-235-222.net",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS16276 OVH SAS",
+        "timezone": "Asia/Singapore"
       },
-      "category": "domestic/direct"
+      "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://scontent.ftpe7-4.fna.fbcdn.net/v/t39.30808-6/615402114_1410909593731918_5938157121631133715_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e21142&_nc_ohc=Tp85Filuq4QQ7kNvwFOfcIO&_nc_oc=AdkyYBw0NoNU_Bow8JrHf82v1qKz_BUuN5NVGG7gf73wjD-OpjtLT1rS5yjFcn9MMAsEBi741vU6KF8OcOtFxsWT&_nc_zt=23&_nc_ht=scontent.ftpe7-4.fna&_nc_gid=WPiZJdtjiF1gNcz3rAOyaA&oh=00_AfqT5UC4s5sJsCBzmxsuFLI7O4ptO66OgYxr8kT-6pklbA&oe=696CE6C1",
-      "type": "image",
+      "originalUrl": "https://mt-usw.appiersig.com/event?bidobjid=XGa_nErwDNyhLPeDJjheag&cid=39LTVvJZSQq6aK0WkT-y4g&oid=TbOw08gTQ3SyhML0FPS_pA&partner_id=03mSf3HNecb-&s2s=0&event=show&loc=show&dm=&osv=10.15.7.0&adj=0&cn=0w8ERZYSm38x9JLZ&url=cLtRZLo_KyONwju93mIBMbsNZbVgZDtBZjgDUDl-3LoBwHTxc8iy5m7-c87FHmgf5rozrSt8JfEcIsSV7YSKoSJFi4sz7bZ98GJNHmzSZjJGrjgarSTgtGEXcbiN3y3PJ8lec8MOwHTxc8iyHmlyUmSflj7swgOE3SAV5rdPUi7YoRN23871Kn3PJ8lec8teoqRxJPNSIgE3ImRP2L6znfVclY7NUHTNc8J95rGWoiOjUSORJsAy7rdRoqMYwmSWZbSE3mzec8MOonRVHmJ-HDtDHPus20Zso8oV30uR20gNlYSfHm7y38SRcH3g58J-HmSyJbS-3iOsZbteUHi-J8zjlYSfHm7y38SRcH3gHmgf58IDKI3M7IMmIsGmJ0StZS3wrmxRUgGYw8te3DlBJHdOwHTxc8iyHmlyUmSflYSfHmJyUDixHmgf58SxZbggZgO1ZYON30SN7Pus2bGDwqiYon3qUmzR38zR5HTqHDtDljlBJHtEUYJeZmNBZjtec8MOJYtaoqg-ljtgZYRO3mVewHlRw8VgHDix3SOWJ8VsUYZYJLlNwmWEUYJeJbiWZbVNJbiec8MOorMVwruy30wmoqtY7PMR7qlq3qMm3qIs20wy7mGR7YoYw8teJLgx3rsmc8iDlgONJLlFHmoOoPgoiS3mngErIHGmwI-ximWIKHfR3y3ewHtycsOqZqsl3SlK8GiYrgSbtDgjJREMrYMPtHttlgONJLlFHDTR5rdPUi7YoRN23871Kn3ewHtycsO1crswtmSeUfiyJRt2C8NoIbiGnYEa38Sj",
+      "type": "fetch",
       "ipinfo": {
-        "domain": "scontent.ftpe7-4.fna.fbcdn.net",
-        "ip": "203.74.65.209",
-        "hostname": "203-74-65-209.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS3462 Data Communication Business Group",
-        "timezone": "Asia/Taipei"
+        "domain": "mt-usw.appiersig.com",
+        "ip": "34.36.231.211",
+        "hostname": "211.231.36.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
       },
-      "category": "domestic/direct"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.414,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.36.231.211",
+          "prefix": "34.36.231.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 64,
+          "location_count": 64
+        }
+      }
     },
     {
-      "originalUrl": "https://scontent.ftpe7-2.fna.fbcdn.net/v/t39.30808-6/615345154_1410909767065234_433062258714856556_n.jpg?stp=dst-jpg_p75x225_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e21142&_nc_ohc=mZ7JYjxD7WQQ7kNvwHK2jE5&_nc_oc=AdkUJGclFXcAT2ZSXOJcbgph8ld73OmQ53Je0hH3-f9YKv9C79HPpjhnUBRx-Poz7Yv6GoJBn_U8c3Wrs-oiw2I_&_nc_zt=23&_nc_ht=scontent.ftpe7-2.fna&_nc_gid=WPiZJdtjiF1gNcz3rAOyaA&oh=00_AfrK26aR1iIh9CG1IGJ86Evgt3Zz0E0UewZu5FjjiPfc3g&oe=696D01E9",
-      "type": "image",
+      "originalUrl": "https://abr.ge/@maplestoryworlds/appier?click_id=39LTVvJZSQq6aK0WkT-y4g.XGa_nErwDNyhLPeDJjheag&sub_id=appier_broad&sub_id_1=03mSf3HNecb-&sub_id_2=0w8ERZYSm38x9JLZ&campaign=1-1_gl_tw_250424&campaign_id=1-1_gl_tw_258751c1d2489a&ad_creative=gl_artale_upd_mulung&ad_creative_id=e7-FP5D6SQ6t1QpVXOl4nQ&ad_group=appier_broad&ad_group_id=appier_broad1a7258a7b5f1&content=pc_tw&routing_short_id=vdh29l&term=gl_artale_upd_mulung&tracking_template_id=141a22d6624f74462cf46f558627a46c&ad_type=view&_atrk_c=39LTVvJZSQq6aK0WkT-y4g&_atrk_cr=IdRKXEfNQFGygwJPNd3EtQ&_atrk_pt=03mSf3HNecb-&_atrk_bi=XGa_nErwDNyhLPeDJjheag",
+      "type": "fetch",
       "ipinfo": {
-        "domain": "scontent.ftpe7-2.fna.fbcdn.net",
-        "ip": "203.74.65.81",
-        "hostname": "203-74-65-81.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "domain": "abr.ge",
+        "ip": "3.169.55.19",
+        "hostname": "server-3-169-55-19.tpe54.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS3462 Data Communication Business Group",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "category": "domestic/direct"
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://mweb.ck.inmobi.com/sync/3?redirect=https%3A%2F%2Fcm.g.doubleclick.net%2Fpixel%3Fgoogle_nid%3Dinmobi_pte_limited%26google_hm%3D%24DSP_CKID&google_gid=CAESEDlETfA3KGMWP-GwD4HTX24&google_cver=1&google_push=AXcoOmQiE4AzSE8-t5pThCV4qtj-truj6WrPy_Wv4862wn_1EMDOsaHsX0AMRZgcVabXqRUajsAwtAFVRzYHjyJnBG5w6I40H4Ca",
+      "type": "image",
+      "ipinfo": {
+        "domain": "mweb.ck.inmobi.com",
+        "ip": "35.212.100.6",
+        "hostname": "6.100.212.35.bc.googleusercontent.com",
+        "city": "Washington",
+        "region": "District of Columbia",
+        "country": "US",
+        "loc": "38.8951,-77.0364",
+        "org": "AS43515 Google Ireland Limited",
+        "timezone": "America/New_York"
+      },
+      "category": "foreign/direct"
+    },
+    {
+      "originalUrl": "https://trace.popin.cc/ju/cs/google?google_gid=CAESEEkayc3E81BevC6EUOgTvYw&google_cver=1&google_push=AXcoOmT7gVBLZM7BJH1iuLeu7a9mND1MFJr1VFXkl8R08tkdzAd9hfI1LRybhxE1KlWGOLETVKWa3-p_U7uYVg5lrSjNQG97mle-Fh4",
+      "type": "image",
+      "ipinfo": {
+        "domain": "trace.popin.cc",
+        "ip": "35.213.89.133",
+        "hostname": "133.89.213.35.bc.googleusercontent.com",
+        "city": "Tokyo",
+        "region": "Tokyo",
+        "country": "JP",
+        "loc": "35.6895,139.6917",
+        "org": "AS19527 Google LLC",
+        "timezone": "Asia/Tokyo"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 50.943,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "35.213.89.133",
+          "prefix": "35.213.89.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
     }
   ]
 }

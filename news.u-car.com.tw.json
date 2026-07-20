@@ -2,11 +2,12 @@
   "url": "https://news.u-car.com.tw",
   "canonicalURL": "https://news.u-car.com.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T03:46:59.792Z",
+  "timestamp": "2026-07-20T14:51:20.461Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 132,
-  "uniqueDomains": 13,
+  "requestCount": 407,
+  "uniqueDomains": 21,
   "test_results": {
     "domestic": {
-      "cloud": 7,
-      "direct": 0
+      "cloud": 16,
+      "direct": 3
     },
     "foreign": {
-      "cloud": 5,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -50,10 +51,34 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 134.637,
-        "detection_method": "rtt"
+        "cf-ray": "a1e2c86a8d03a8fd-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "172.67.203.79",
+          "prefix": "172.67.203.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 60,
+          "location_count": 60,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -61,7 +86,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "code.jquery.com",
-        "ip": "151.101.66.137",
+        "ip": "151.101.193.155",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -71,8 +96,25 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 33.554,
-        "detection_method": "rtt"
+        "x-served-by": "cache-lga21983-LGA, cache-nrt-rjtf7700025-NRT",
+        "rtt": 35.153,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "151.101.193.155",
+          "prefix": "151.101.193.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 54,
+          "location_count": 54
+        }
       }
     },
     {
@@ -80,7 +122,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "tags-assets.mlytics.com",
-        "ip": "104.26.0.25",
+        "ip": "104.26.1.25",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -91,7 +133,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bda2633eb864a60-TPE",
+        "cf-ray": "a1e2c870fa854a10-TPE",
         "detection_method": "header"
       }
     },
@@ -108,38 +150,90 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 133.842,
-        "detection_method": "rtt"
+        "cf-ray": "a1e2c86d5fc5a8fd-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "104.21.22.66",
+          "prefix": "104.21.22.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 58,
+          "location_count": 58,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
-      "originalUrl": "https://image.u-car.com.tw/articlethumb_1_86695.jpg",
+      "originalUrl": "https://image.u-car.com.tw/articlethumb_1_89210.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "image.u-car.com.tw",
-        "ip": "23.101.27.182",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS8075 Microsoft Corporation",
-        "timezone": "Asia/Singapore"
+        "ip": "172.67.203.79",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "cf-ray": "a1e2c86d5fc6a8fd-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "172.67.203.79",
+          "prefix": "172.67.203.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 60,
+          "location_count": 60,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
+      }
     },
     {
       "originalUrl": "https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.204.42",
-        "hostname": "hkg07s38-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "64.233.188.95",
+        "hostname": "tk-in-f95.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "24.1469,120.6839",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
@@ -150,8 +244,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.192.136",
+        "hostname": "bom12s18-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -160,6 +254,29 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://sb.scorecardresearch.com/beacon.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "sb.scorecardresearch.com",
+        "ip": "3.169.137.63",
+        "hostname": "server-3-169-137-63.tpe54.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://d31qbv1cthcecs.cloudfront.net/atrk.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "d31qbv1cthcecs.cloudfront.net"
+      }
     },
     {
       "originalUrl": "https://www.googletagservices.com/tag/js/gpt.js",
@@ -178,55 +295,12 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://sb.scorecardresearch.com/beacon.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "sb.scorecardresearch.com",
-        "ip": "3.169.137.32",
-        "hostname": "server-3-169-137-32.tpe54.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://d31qbv1cthcecs.cloudfront.net/atrk.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "d31qbv1cthcecs.cloudfront.net"
-      }
-    },
-    {
-      "originalUrl": "https://r.adgeek.net/analytics.min.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "r.adgeek.net",
-        "ip": "52.195.130.156",
-        "hostname": "ec2-52-195-130-156.ap-northeast-1.compute.amazonaws.com",
-        "city": "Tokyo",
-        "region": "Tokyo",
-        "country": "JP",
-        "loc": "35.6895,139.6917",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Tokyo"
-      },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": 36.291,
-        "detection_method": "rtt"
-      }
-    },
-    {
       "originalUrl": "https://fundingchoicesmessages.google.com/i/424536528?ers=3",
       "type": "script",
       "ipinfo": {
         "domain": "fundingchoicesmessages.google.com",
-        "ip": "142.250.66.78",
-        "hostname": "hkg12s27-in-f14.1e100.net",
+        "ip": "142.250.77.206",
+        "hostname": "del11s08-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -237,17 +311,226 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://s.yimg.com/av/yap/ga/yap.js",
+      "originalUrl": "https://s.yimg.com/wi/ytc.js",
       "type": "script",
       "ipinfo": {
         "domain": "s.yimg.com",
         "ip": "180.222.109.251",
-        "hostname": "e1-bmr.ycpi.vip.twb.yahoo.com",
+        "hostname": "e1-bmr.ycpi.vip.twd.yahoo.com",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
         "loc": "25.0143,121.4672",
         "org": "AS24376 Yahoo China Datacenter",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "connect.facebook.net",
+        "ip": "31.13.87.5",
+        "hostname": "xx-fbcdn-shv-01-tpe1.fbcdn.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://www.google.com/rmkt/collect/663068457/?random=1784559077483&cv=11&fst=1784559077483&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67g0h2za200xec&gcd=13l3l3l3l5l1&dma=0&tcfd=10000&tag_exp=115938465~115938469~118395333~118897920~118897930~119709550~119724320~119773332&u_w=1280&u_h=720&url=https%3A%2F%2Fnews.u-car.com.tw%2Fnews%2Farticles&rcb=16&frm=0&tiba=U-CAR%E6%96%B0%E8%81%9E&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=2095658309.1784559077&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.154.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.813,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.154.119",
+          "prefix": "142.251.154.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 60,
+          "location_count": 60
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/734077354/?random=1784559077505&cv=11&fst=1784556000000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67g0h2v9105860946za200xec&gcd=13l3l3l3l5l1&dma=0&tcfd=10000&tag_exp=115938465~115938469~118395335~118897920~118897930~119709549~119724320~119996999&u_w=1280&u_h=720&url=https%3A%2F%2Fnews.u-car.com.tw%2Fnews%2Farticles&rcb=14&frm=0&tiba=U-CAR%E6%96%B0%E8%81%9E&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=2095658309.1784559077&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS7AEAEQoqgW6-2CUp0FRm3G7Bxd8gSE88yFKygAMzlPn5QHapy4LkY9ijK3z3jfjN3P7Wsnt9hBFepeOfj1Zw98uOGnYg7HQ1hvgMnSZwqYgjV52b76QLg9HdM3kmLsbqhdRcLJEhF1P-ZZihzIcnnhxxAv3m9fXHnft4RW7DPV5b2XQ_2nvx_radIOy0WloEoI4RcyY_SFRr7y5eMbhNk8SfrBUGyjEsScZ9WxAYzSH8zXjQ8RHFsHUUDbAU2wpClspp1Y_ZWsQogp8s_knbjjDtb2dyAqbayVs0Po5_xdYVMRt-VHatoY3L-WqnKw&random=1536771457&rmt_tld=1&ipr=y",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.77.195",
+        "hostname": "del11s08-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://api.aigc.mlytics.com/js/aigc_app_s3.min.js?v=20260709",
+      "type": "script",
+      "ipinfo": {
+        "domain": "api.aigc.mlytics.com",
+        "ip": "210.61.181.20",
+        "hostname": "210-61-181-20.hinet-ip.hinet.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://pioneer.ghtinc.com/cm?cn=dentsu&a=145&ckType=18",
+      "type": "image",
+      "ipinfo": {
+        "domain": "pioneer.ghtinc.com",
+        "ip": "34.120.102.202",
+        "hostname": "202.102.120.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.135,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.120.102.202",
+          "prefix": "34.120.102.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
+    },
+    {
+      "originalUrl": "https://cookie-matching-redirect-707829737723.asia-east1.run.app/?domain=https%3A%2F%2Fpioneer.ghtinc.com%2Fcmg%3Fcn%3Ddentsu%26a%3D145%26ckType%3D18%26&google_gid=CAESEGUR3ATsyCwj6NX8OO9YwrI&google_cver=1",
+      "type": "image",
+      "ipinfo": {
+        "domain": "cookie-matching-redirect-707829737723.asia-east1.run.app",
+        "ip": "34.143.79.2",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.304,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.143.79.2",
+          "prefix": "34.143.79.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.facebook.com/tr?id=166170211276554&pId=20348&cd%5Bpixel_id%5D=20348&ud%5Bexternal_id%5D=7621d062844a11f1ba9e06ae90954a2e&ud%5Buid%5D=e943e02e-fe15-43ab-8301-76b038aedacb&ud%5Bga%5D=GA1.3.1498955932.1784559076&ev=PageView",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://cdn.aralego.net/ucfad/sdk/apac-sg/cookiesync",
+      "type": "script",
+      "ipinfo": {
+        "domain": "cdn.aralego.net",
+        "ip": "172.67.69.195",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e2c880ecf74a28-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://secure-assets.rubiconproject.com/utils/xapi/multi-sync.html?p=adiiix",
+      "type": "document",
+      "ipinfo": {
+        "domain": "secure-assets.rubiconproject.com",
+        "ip": "118.214.250.218",
+        "hostname": "a118-214-250-218.deploy.static.akamaitechnologies.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"

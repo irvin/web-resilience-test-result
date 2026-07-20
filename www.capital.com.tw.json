@@ -2,11 +2,12 @@
   "url": "https://www.capital.com.tw/",
   "canonicalURL": "https://www.capital.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T02:30:59.580Z",
+  "timestamp": "2026-07-20T13:46:17.289Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,12 +25,12 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 14,
-  "uniqueDomains": 2,
+  "requestCount": 104,
+  "uniqueDomains": 7,
   "test_results": {
     "domestic": {
-      "cloud": 1,
-      "direct": 1
+      "cloud": 5,
+      "direct": 2
     },
     "foreign": {
       "cloud": 0,
@@ -44,10 +45,10 @@
         "domain": "www.capital.com.tw",
         "ip": "203.66.204.44",
         "hostname": "203-66-204-44.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "city": "Taoyuan",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "24.9937,121.2970",
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
@@ -58,8 +59,96 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.204.42",
-        "hostname": "hkg07s38-in-f10.1e100.net",
+        "ip": "64.233.189.95",
+        "hostname": "tl-in-f95.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.1469,120.6839",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-556PDXR",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.googletagmanager.com",
+        "ip": "142.250.77.8",
+        "hostname": "nctsaa-ab-in-f8.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://stock.capital.com.tw/z/skv.djhtm?ASPID=capital&showAll=0&overlay=1&showTable=0&showLogo=1&w=340&h=240&PID=TSE.TW",
+      "type": "document",
+      "ipinfo": {
+        "domain": "stock.capital.com.tw",
+        "ip": "211.72.241.118",
+        "hostname": "aiservices.capital.com.tw",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://api.ipify.org/?format=json",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "api.ipify.org",
+        "ip": "104.26.12.205",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e2693b69d98421-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://capitalfile.capital.com.tw/4df47794-794b-4d25-9cbc-f021ba172d4b/20260626_900x333.jpg",
+      "type": "image",
+      "ipinfo": {
+        "domain": "capitalfile.capital.com.tw",
+        "ip": "150.171.110.65",
+        "city": "Hong Kong",
+        "region": "Hong Kong",
+        "country": "HK",
+        "loc": "22.2783,114.1747",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "Asia/Hong_Kong"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "x-azure-ref": "20260720T134616Z-15d9487b58c4rrcjhC1TPEkq0s00000019wg000000008qab",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-26BDDWYJ3X&cid=1794457308.1784555176&gtm=45je67f0v9119095770z8859918616za20gzb859918616zd859918616&rcb=18&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938466~115938468~118897920~118897930&z=1049045317",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.196.195",
+        "hostname": "nctsaa-ac-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",

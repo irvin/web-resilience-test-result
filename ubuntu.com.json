@@ -2,11 +2,12 @@
   "url": "https://ubuntu.com",
   "canonicalURL": "https://ubuntu.com/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:09:51.926Z",
+  "timestamp": "2026-07-20T13:07:30.761Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 38,
-  "uniqueDomains": 4,
+  "requestCount": 68,
+  "uniqueDomains": 5,
   "test_results": {
     "domestic": {
-      "cloud": 1,
+      "cloud": 3,
       "direct": 0
     },
     "foreign": {
-      "cloud": 1,
+      "cloud": 0,
       "direct": 2
     }
   },
@@ -58,8 +59,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "assets.ubuntu.com",
-        "ip": "185.125.190.21",
-        "hostname": "website-content-cache-2.ps5.canonical.com",
+        "ip": "185.125.190.20",
+        "hostname": "website-content-cache-1.ps5.canonical.com",
         "city": "London",
         "region": "England",
         "country": "GB",
@@ -70,43 +71,55 @@
       "category": "foreign/direct"
     },
     {
-      "originalUrl": "https://res.cloudinary.com/canonical/image/fetch/f_svg,q_auto,fl_sanitize,w_197/https%3A%2F%2Fassets.ubuntu.com%2Fv1%2F33b5133c-Noble-Numbat-optimised.svg",
+      "originalUrl": "https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_197/https%3A%2F%2Fassets.ubuntu.com%2Fv1%2F21bcdd1e-resolute_raccoon_white.png",
       "type": "image",
       "ipinfo": {
         "domain": "res.cloudinary.com",
-        "ip": "199.232.113.137",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
+        "ip": "23.220.196.41",
+        "hostname": "a23-220-196-41.deploy.static.akamaitechnologies.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16625 Akamai Technologies, Inc.",
+        "timezone": "Asia/Taipei"
       },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": 55.012,
-        "detection_method": "rtt"
-      }
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://jspm.dev/uuid",
+      "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-K92JCQ",
       "type": "script",
       "ipinfo": {
-        "domain": "jspm.dev",
-        "ip": "34.117.232.58",
-        "hostname": "58.232.117.34.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
+        "domain": "www.googletagmanager.com",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://bat.bing.com/bat.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "bat.bing.com",
+        "ip": "150.171.28.10",
+        "city": "Redmond",
+        "region": "Washington",
         "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
+        "loc": "47.6740,-122.1215",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "America/Los_Angeles"
       },
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.593,
-        "detection_method": "rtt"
+        "x-msedge-ref": "Ref A: 4B4F2E2E054F4766819830C48C57988C Ref B: TPE201080402054 Ref C: 2026-07-20T13:07:28Z",
+        "detection_method": "header"
       }
     }
   ]

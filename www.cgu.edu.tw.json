@@ -2,11 +2,12 @@
   "url": "https://www.cgu.edu.tw/",
   "canonicalURL": "https://www.cgu.edu.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:33:29.152Z",
+  "timestamp": "2026-07-20T13:23:34.374Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,12 +25,12 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 137,
-  "uniqueDomains": 6,
+  "requestCount": 140,
+  "uniqueDomains": 10,
   "test_results": {
     "domestic": {
-      "cloud": 5,
-      "direct": 1
+      "cloud": 8,
+      "direct": 2
     },
     "foreign": {
       "cloud": 0,
@@ -44,10 +45,10 @@
         "domain": "www.cgu.edu.tw",
         "ip": "163.25.114.30",
         "hostname": "www.cgu.edu.tw",
-        "city": "Taoyuan City",
+        "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "24.9937,121.2970",
+        "loc": "25.0531,121.5264",
         "org": "AS1659 Taiwan Academic Network (TANet) Information Center",
         "timezone": "Asia/Taipei"
       },
@@ -58,8 +59,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "cse.google.com",
-        "ip": "142.250.196.206",
-        "hostname": "nctsaa-ac-in-f14.1e100.net",
+        "ip": "142.250.204.46",
+        "hostname": "hkg07s38-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -74,8 +75,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -90,6 +91,78 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.youtube.com",
+        "ip": "142.251.157.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.926,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.157.4",
+          "prefix": "142.251.157.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.google.com/cse/static/element/d4d17fc91fc77275/cse_element__zh_tw.js?usqp=CAI%3D",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.152.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.766,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.152.119",
+          "prefix": "142.251.152.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.youtube-nocookie.com/embed/?modestbranding=1&autoplay=0&controls=0&showinfo=0&rel=0&enablejsapi=1&version=3&playerapiid=iframe_OIZJFhEX4DQ&origin=https%3A%2F%2Fwww.cgu.edu.tw&allowfullscreen=true&wmode=transparent&iv_load_policy=3&cc_load_policy=0&playsinline=0&html5=1&widgetid=1&forigin=https%3A%2F%2Fwww.cgu.edu.tw%2F&aoriginsup=1&vf=4",
+      "type": "document",
+      "ipinfo": {
+        "domain": "www.youtube-nocookie.com",
         "ip": "142.250.196.206",
         "hostname": "nctsaa-ac-in-f14.1e100.net",
         "city": "Banqiao",
@@ -102,12 +175,28 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/cse/static/element/f71e4ed980f4c082/cse_element__zh_tw.js?usqp=CAI%3D",
-      "type": "script",
+      "originalUrl": "https://rr6---sn-ipoxu-un5el.googlevideo.com/videoplayback?expire=1784575410&ei=UiFeaqjUL_unvcAP4erTqQU&ip=2001%3Ab011%3A3802%3A7be8%3Af17b%3Aef25%3A8516%3A8cfa&id=o-ALCk_Za3MNn-Ul5eIVSQCgr83gUn29wICTuc3NRNKjYN&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=378&met=1784553810%2C&mh=EV&mm=31%2C29&mn=sn-ipoxu-un5el%2Csn-ojun55-55&ms=au%2Crdu&mv=m&mvi=6&pcm2cms=yes&pl=52&rms=au%2Cau&initcwndbps=2481250&spc=SQ-umgaYOAxtsKeknHcxaOnKbJBHPZZfFegikf0hRfsvG1zbu6nC8Um-tsZ13Ym0mjnB5Q&svpuc=1&ns=tjqIH8cpXLtLFwidBJENuYcW&sabr=1&rqh=1&mt=1784553430&fvip=5&keepalive=yes&fexp=51565115&c=WEB_EMBEDDED_PLAYER&n=qp3PrO8QuH2x5g&sparams=expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Cspc%2Csvpuc%2Cns%2Csabr%2Crqh&sig=AE0s2JYwRQIhALZOFkVfZBV-5tawUWnXT9P0Uasd-o77XO41d2rQkGr7AiA7UDt3jqs2ihdc_ZUcPnaSKRpJQHQ4YS2cD9vY9RTcAg%3D%3D&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpcm2cms%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIgB1vnOGT1quJakc7m1TH0jrP2EmQ7ttbYzzfddQKYcUwCIQDNUzBia3k3w6m2puGIAzk9WdFdSUxSpcSr4UbpiVRMaQ%3D%3D&cpn=sHCm4-K7_hwPBFl7&cver=2.20260717.01.00&rn=1&alr=yes",
+      "type": "fetch",
       "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.196.196",
-        "hostname": "nctsaa-ac-in-f4.1e100.net",
+        "domain": "rr6---sn-ipoxu-un5el.googlevideo.com",
+        "ip": "203.66.169.81",
+        "hostname": "203-66-169-81.hinet-ip.hinet.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://i.ytimg.com/vi/OIZJFhEX4DQ/sddefault.jpg?sqp=-oaymwEmCIAFEOAD8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGAgZShXMA8=&rs=AOn4CLAvQadOL-S-yTb1EQ8WXeF9XkA61w",
+      "type": "image",
+      "ipinfo": {
+        "domain": "i.ytimg.com",
+        "ip": "142.250.66.86",
+        "hostname": "hkg12s27-in-f22.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -118,12 +207,48 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.youtube-nocookie.com/embed/?modestbranding=1&autoplay=0&controls=0&showinfo=0&rel=0&enablejsapi=1&version=3&playerapiid=iframe_OIZJFhEX4DQ&origin=https%3A%2F%2Fwww.cgu.edu.tw&allowfullscreen=true&wmode=transparent&iv_load_policy=3&cc_load_policy=0&playsinline=0&html5=1&widgetid=1&forigin=https%3A%2F%2Fwww.cgu.edu.tw%2F&aoriginsup=1&vf=4",
-      "type": "document",
+      "originalUrl": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "type": "xhr",
       "ipinfo": {
-        "domain": "www.youtube-nocookie.com",
-        "ip": "142.250.204.46",
-        "hostname": "hkg07s38-in-f14.1e100.net",
+        "domain": "jnn-pa.googleapis.com",
+        "ip": "172.217.116.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.291,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "172.217.116.4",
+          "prefix": "172.217.116.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.gstatic.com/youtube/img/icons/mweb/youtube_fill/logo/v2/67px.svg",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.gstatic.com",
+        "ip": "142.250.77.3",
+        "hostname": "nctsaa-ab-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",

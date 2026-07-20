@@ -2,11 +2,12 @@
   "url": "https://greenbox.tw",
   "canonicalURL": "https://greenbox.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T03:52:48.381Z",
+  "timestamp": "2026-07-20T15:00:48.278Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,12 +25,12 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 115,
-  "uniqueDomains": 10,
+  "requestCount": 106,
+  "uniqueDomains": 11,
   "test_results": {
     "domestic": {
       "cloud": 6,
-      "direct": 1
+      "direct": 2
     },
     "foreign": {
       "cloud": 3,
@@ -50,15 +51,68 @@
         "org": "AS8075 Microsoft Corporation",
         "timezone": "Asia/Hong_Kong"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 19.19,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "207.46.147.148",
+          "prefix": "207.46.147.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
     },
     {
       "originalUrl": "https://www.google.com/recaptcha/api.js",
       "type": "script",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.198.68",
-        "hostname": "lctsaa-ab-in-f4.1e100.net",
+        "ip": "142.251.152.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.513,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.152.119",
+          "prefix": "142.251.152.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=AW-1007812345",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.googletagmanager.com",
+        "ip": "142.250.77.200",
+        "hostname": "del11s08-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -73,7 +127,7 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "cdnjs.cloudflare.com",
-        "ip": "104.17.25.14",
+        "ip": "104.17.24.14",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -84,40 +138,43 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bda2eb48e8a8469-TPE",
+        "cf-ray": "a1e2d60c88ad6a84-TPE",
         "detection_method": "header"
       }
     },
     {
-      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=AW-1007812345",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://greenboxcdn.azureedge.net/scripts/platform/sidebar/index.js?v=130.0",
+      "originalUrl": "https://greenboxcdn.azureedge.net/scripts/platform/sidebar/index.js?v=134.0",
       "type": "script",
       "ipinfo": {
         "domain": "greenboxcdn.azureedge.net",
-        "ip": "13.107.246.73",
-        "city": "Redmond",
-        "region": "Washington",
-        "country": "US",
-        "loc": "47.6740,-122.1215",
+        "ip": "150.171.110.70",
+        "city": "Hong Kong",
+        "region": "Hong Kong",
+        "country": "HK",
+        "loc": "22.2783,114.1747",
         "org": "AS8075 Microsoft Corporation",
-        "timezone": "America/Los_Angeles"
+        "timezone": "Asia/Hong_Kong"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "x-azure-ref": "20260720T150033Z-15d4f96b558wxpf9hC1HKGx4a40000000zn000000000f2ch",
+        "rtt": null,
+        "detection_method": "rtt",
+        "rtt_error": "timeout",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "150.171.110.70",
+          "prefix": "150.171.110.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
     },
     {
       "originalUrl": "https://fruitbox.blob.core.windows.net/pagematerials/shared/2022_logo.svg",
@@ -132,10 +189,28 @@
         "org": "AS8075 Microsoft Corporation",
         "timezone": "Asia/Hong_Kong"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": null,
+        "detection_method": "rtt",
+        "rtt_error": "timeout",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "20.60.131.228",
+          "prefix": "20.60.131.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
     },
     {
-      "originalUrl": "https://www.gstatic.com/recaptcha/releases/9TiwnJFHeuIw_s0wSd3fiKfN/recaptcha__en.js",
+      "originalUrl": "https://www.gstatic.com/recaptcha/releases/A7KpaEASfhDcK0nXxgQEyyYv/recaptcha__zh_tw.js",
       "type": "script",
       "ipinfo": {
         "domain": "www.gstatic.com",
@@ -155,8 +230,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "d.line-scdn.net",
-        "ip": "184.25.121.253",
-        "hostname": "a184-25-121-253.deploy.static.akamaitechnologies.com",
+        "ip": "104.116.17.150",
+        "hostname": "a104-116-17-150.deploy.static.akamaitechnologies.com",
         "city": "Yuanlin",
         "region": "Taiwan",
         "country": "TW",
@@ -183,12 +258,12 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-JWCYLM2XTY&cid=124109471.1768362766&gtm=45je61d0h2v894073444z8894054158za20gzb894054158zd894054158&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115616986~115938465~115938468~117041587&z=2072421322",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&ngs=1&ibt=1&tid=G-DTESE4PVPJ&cid=1164867288.1784559633&gtm=45be67f0v9133356469za200zb894054158zd894054158&rcb=8&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115616985~115938465~115938469~118897920~118897930~119709549~119724322&z=1281790325",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.204.35",
-        "hostname": "hkg07s38-in-f3.1e100.net",
+        "ip": "142.250.192.131",
+        "hostname": "bom12s18-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -197,6 +272,22 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.facebook.com/tr/?id=378211592357729&ev=PageView&dl=https%3A%2F%2Fgreenbox.tw%2F&rl=&if=false&ts=1784559636039&iw=false&cd[currency]=TWD&sw=1280&sh=720&v=2.9.357&r=stable&ec=0&o=4126&aems=0%3B0&fbp=fb.1.1784559636031.23237046190085010&hmd=e68dcdbc2e0142988608396d&pl=https%3A%2F%2Fgreenbox.tw%2F&ler=empty&cdl=API_unavailable&pmd[title]=&pmd[locale]=zh-Hant-TW&plt=971.0999999996275&iss=1&imft=1&tz=480&coo=false&tm=1&ss=%7B%7D&ss_rks=%7B%22currency%22%3A%7B%22tv%22%3A1%2C%22rules%22%3A%7B%22937052599405947%22%3A1%7D%7D%7D&expv2[0]=pl0&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=im2&expv2[6]=hf0&rqm=GET",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
     }
   ]
 }

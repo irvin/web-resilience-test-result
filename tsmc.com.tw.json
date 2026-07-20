@@ -2,11 +2,12 @@
   "url": "https://tsmc.com.tw",
   "canonicalURL": "https://www.tsmc.com/english",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T02:48:29.495Z",
+  "timestamp": "2026-07-20T14:37:29.835Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -25,14 +26,14 @@
     "dnsServer": "168.95.1.1"
   },
   "requestCount": 37,
-  "uniqueDomains": 8,
+  "uniqueDomains": 7,
   "test_results": {
     "domestic": {
-      "cloud": 5,
+      "cloud": 7,
       "direct": 0
     },
     "foreign": {
-      "cloud": 2,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -53,7 +54,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd9d080bb590768-TPE",
+        "cf-ray": "a1e2b4353927841c-TPE",
         "detection_method": "header"
       }
     },
@@ -73,7 +74,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd9d080fe5f8a97-TPE",
+        "cf-ray": "a1e2b4369b578446-TPE",
         "detection_method": "header"
       }
     },
@@ -82,23 +83,23 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.204.42",
-        "hostname": "hkg07s38-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "142.251.170.95",
+        "hostname": "tc-in-f95.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "24.1469,120.6839",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://use.fontawesome.com/releases/v5.10.0/css/all.css",
+      "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css",
       "type": "stylesheet",
       "ipinfo": {
-        "domain": "use.fontawesome.com",
-        "ip": "104.21.27.152",
+        "domain": "cdnjs.cloudflare.com",
+        "ip": "104.17.25.14",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -106,10 +107,11 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 134.6,
-        "detection_method": "rtt"
+        "country": "tw",
+        "cf-ray": "a1e2b438ce9e8445-TPE",
+        "detection_method": "header"
       }
     },
     {
@@ -117,8 +119,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -133,25 +135,20 @@
       "type": "script",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "151.101.1.229",
+        "ip": "104.17.208.5",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
         "loc": "37.7621,-122.3971",
-        "org": "AS54113 Fastly, Inc.",
+        "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 34.775,
-        "detection_method": "rtt"
-      }
-    },
-    {
-      "originalUrl": "blob:https://www.tsmc.com/d7e5463e-9d07-4a68-b413-b49d633932b3",
-      "type": "other",
-      "ipinfo": {
-        "domain": ""
+        "country": "tw",
+        "cf-ray": "a1e2b4371d2a49f7-TPE",
+        "x-served-by": "cache-fra-etou8220111-FRA, cache-nrt-rjtt7900064-NRT",
+        "detection_method": "header"
       }
     },
     {
@@ -170,8 +167,30 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd9d0856daa4a8c-TPE",
-        "detection_method": "header"
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "172.66.0.3",
+          "prefix": "172.66.0.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 77,
+          "location_count": 77,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     }
   ]

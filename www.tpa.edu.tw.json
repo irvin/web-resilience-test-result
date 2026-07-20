@@ -2,11 +2,12 @@
   "url": "https://www.tpa.edu.tw/",
   "canonicalURL": "https://www.tpa.edu.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T04:11:11.006Z",
+  "timestamp": "2026-07-20T15:22:10.114Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,11 +25,11 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 58,
-  "uniqueDomains": 2,
+  "requestCount": 64,
+  "uniqueDomains": 4,
   "test_results": {
     "domestic": {
-      "cloud": 1,
+      "cloud": 3,
       "direct": 1
     },
     "foreign": {
@@ -54,12 +55,64 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-46R8BMVHB6",
+      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=AW-17970965621",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.77.200",
+        "hostname": "del11s08-in-f8.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com/rmkt/collect/17970965621/?random=1784560921331&cv=11&fst=1784560921331&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67f0h1v9244374681za200zd9244374681xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938468~118395334~118897920~118897930~119381664~119773331~119896803&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.tpa.edu.tw%2F&rcb=10&frm=0&tiba=%E8%87%BA%E7%81%A3%E8%AD%A6%E5%AF%9F%E5%B0%88%E7%A7%91%E5%AD%B8%E6%A0%A1%20-%20%E8%87%BA%E7%81%A3%E8%AD%A6%E5%AF%9F%E5%B0%88%E7%A7%91%E5%AD%B8%E6%A0%A1&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=344433924.1784560921&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.153.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.886,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.153.119",
+          "prefix": "142.251.153.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/17970965621/?random=1784560921331&cv=11&fst=1784559600000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67f0h1v9244374681za200zd9244374681xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938468~118395334~118897920~118897930~119381664~119773331~119896803&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.tpa.edu.tw%2F&rcb=10&frm=0&tiba=%E8%87%BA%E7%81%A3%E8%AD%A6%E5%AF%9F%E5%B0%88%E7%A7%91%E5%AD%B8%E6%A0%A1%20-%20%E8%87%BA%E7%81%A3%E8%AD%A6%E5%AF%9F%E5%B0%88%E7%A7%91%E5%AD%B8%E6%A0%A1&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=344433924.1784560921&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS7AEAEQoqgeaOYUZoYTzaz4w7vv8iDjBjk83d2__vnGUcbgkTPnD28vD4G2ulEaVEJ8mArBNMf_YMRrJc1WlLMpzbeXn4d3VWHzKzVYrh8qMHDqYzKRMIcO-GInbscIovDSTr-u8SYyK4RhXZgWiTRWDYfwgyu0cecU8DfKdVVzhVLxfUnHc7NSgGsYW3PczwjKIjgn53RvA2USESORG8uZ2pfLKQkagwbCtNvMDrWR486IsLvdwPlEXxHQtF8iEAFxczp_k2EyS1SI0T8ZcZOiodoPZ8sV1UL1WXZjMciNWdQT-Pq1ddl4qdYMnNdg&random=4103072406&rmt_tld=1&ipr=y",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.196.195",
+        "hostname": "nctsaa-ac-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",

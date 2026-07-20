@@ -1,12 +1,13 @@
 {
   "url": "https://www.ehanlin.com.tw/",
-  "canonicalURL": "https://www.ehanlin.com.tw/",
+  "canonicalURL": "https://www.ehanlin.com.tw/app/index.html",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T02:16:27.564Z",
+  "timestamp": "2026-07-20T13:57:13.395Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 160,
-  "uniqueDomains": 17,
+  "requestCount": 143,
+  "uniqueDomains": 15,
   "test_results": {
     "domestic": {
-      "cloud": 15,
-      "direct": 1
+      "cloud": 13,
+      "direct": 2
     },
     "foreign": {
-      "cloud": 1,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -54,28 +55,24 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.616,
-        "detection_method": "rtt"
-      }
-    },
-    {
-      "originalUrl": "https://unpkg.com/aos@2.3.1/dist/aos.css",
-      "type": "stylesheet",
-      "ipinfo": {
-        "domain": "unpkg.com",
-        "ip": "104.18.1.22",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "cf-ray": "9bd9a1929a7c8416-TPE",
-        "detection_method": "header"
+        "rtt": 7.678,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "35.241.6.175",
+          "prefix": "35.241.6.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 63,
+          "location_count": 63
+        }
       }
     },
     {
@@ -90,58 +87,6 @@
         "country": "TW",
         "loc": "25.0143,121.4672",
         "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://ehanlin-web-public-resource.s3-ap-northeast-1.amazonaws.com/web/index-experience/01.png",
-      "type": "image",
-      "ipinfo": {
-        "domain": "ehanlin-web-public-resource.s3-ap-northeast-1.amazonaws.com",
-        "ip": "3.5.157.126",
-        "hostname": "s3-website.ap-northeast-1.amazonaws.com",
-        "city": "Tokyo",
-        "region": "Tokyo",
-        "country": "JP",
-        "loc": "35.6895,139.6917",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Tokyo"
-      },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": 37.549,
-        "detection_method": "rtt"
-      }
-    },
-    {
-      "originalUrl": "https://public.ehanlin.com.tw/web/eh-navbar/ehanlin-logo-pc.svg",
-      "type": "image",
-      "ipinfo": {
-        "domain": "public.ehanlin.com.tw",
-        "ip": "3.169.55.31",
-        "hostname": "server-3-169-55-31.tpe54.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://asset.botbonnie.com/sdk/sdk.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "asset.botbonnie.com",
-        "ip": "3.169.137.81",
-        "hostname": "server-3-169-137-81.tpe54.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
@@ -194,12 +139,44 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd9a1948b178421-TPE",
+        "cf-ray": "a1e2792ecabb6e87-TPE",
         "detection_method": "header"
       }
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-KQP8HNH5GP&cid=833760497.1768356985&gtm=45je61c1v9102003249z8830366820za20gzb830366820zd830366820&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~104869650~105391252~115938465~115938469~116910502~117041587&z=1615949289",
+      "originalUrl": "https://public.ehanlin.com.tw/web/eh-navbar/icon-chart-gray.svg",
+      "type": "image",
+      "ipinfo": {
+        "domain": "public.ehanlin.com.tw",
+        "ip": "65.9.180.19",
+        "hostname": "server-65-9-180-19.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://asset.botbonnie.com/sdk/sdk.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "asset.botbonnie.com",
+        "ip": "54.192.248.80",
+        "hostname": "server-54-192-248-80.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-KQP8HNH5GP&cid=2102184042.1784555830&gtm=45je67f0v9102003249za200zd9102003249&rcb=12&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938465~115938469~118897920~118897930~119527019~119896803~119996999&z=1940440350",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
@@ -215,11 +192,47 @@
       "category": "domestic/cloud"
     },
     {
+      "originalUrl": "https://www.google.com/rmkt/collect/16639420447/?random=1784555829748&cv=11&fst=1784555829748&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67f0za200zb830366820zd830366820xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~119896802&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.ehanlin.com.tw%2Fapp%2Findex.html&rcb=8&frm=0&tiba=%E7%BF%B0%E6%9E%97%E9%9B%B2%E7%AB%AF%E5%AD%B8%E9%99%A2%20-%20%E7%B7%9A%E4%B8%8A%E5%AD%B8%E7%BF%92%E9%A6%96%E9%81%B8%20-%20%E5%85%8D%E8%B2%BB%E8%A9%A6%E7%94%A8%E5%B0%8F%E4%B8%AD%E9%AB%98%E8%AA%B2%E7%A8%8B&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=321126075.1784555830&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.152.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.102,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.152.119",
+          "prefix": "142.251.152.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
+    },
+    {
       "originalUrl": "https://webchat-bridge.cresclab.com/",
       "type": "document",
       "ipinfo": {
         "domain": "webchat-bridge.cresclab.com",
-        "ip": "104.18.4.188",
+        "ip": "104.18.5.188",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -230,7 +243,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd9a1966c838421-TPE",
+        "cf-ray": "a1e2793289d6f22a-TPE",
         "detection_method": "header"
       }
     },
@@ -251,25 +264,25 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.2,
-        "detection_method": "rtt"
+        "rtt": 5.81,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.117.129.81",
+          "prefix": "34.117.129.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 64,
+          "location_count": 64
+        }
       }
-    },
-    {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&tid=AW-16639420447&en=page_view&dl=https%3A%2F%2Fwww.ehanlin.com.tw%2Fapp%2Findex.html&scrsrc=www.googletagmanager.com&rnd=1721499661.1768356985&dt=%E7%BF%B0%E6%9E%97%E9%9B%B2%E7%AB%AF%E5%AD%B8%E9%99%A2%20-%20%E7%B7%9A%E4%B8%8A%E5%AD%B8%E7%BF%92%E9%A6%96%E9%81%B8%20-%20%E5%85%8D%E8%B2%BB%E8%A9%A6%E7%94%A8%E5%B0%8F%E4%B8%AD%E9%AB%98%E8%AA%B2%E7%A8%8B&auid=1672996264.1768356985&navt=n&npa=0&gtm=45be61c1h1za200zb830366820zd830366820xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528501~104573694~104684208~104684211~105391252~115616985~115938465~115938469~116910502~117041587~117091818&tft=1768356985376&tfd=1019&apve=1&apvf=f",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.66.68",
-        "hostname": "hkg12s27-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://bb-webchat-api.appier.com/api/v2/user-api/login",
@@ -286,22 +299,61 @@
       },
       "category": "domestic/cloud",
       "cloud_provider": {
+        "cf-ray": "a1e27937b919cdd2-SIN",
         "country": "tw",
-        "rtt": 4.974,
-        "detection_method": "rtt"
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "104.20.28.239",
+          "prefix": "104.20.28.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 62,
+          "location_count": 62,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
-      "originalUrl": "https://chat.botbonnie.com/?appId=page-44f22a3e26ae4cae9d4ae88a&userId=bb-ZeaiR-1EzgRMt2nwXHSxQ&isNewUser=true&",
-      "type": "document",
+      "originalUrl": "https://www.facebook.com/tr/?id=173626790647861&ev=PageView&dl=https%3A%2F%2Fwww.ehanlin.com.tw%2Fapp%2Findex.html&rl=&if=false&ts=1784555830746&iw=false&cd[eventId]=none_1784555829333&sw=1280&sh=720&v=2.9.357&r=stable&ec=0&o=4126&aems=0%3B0&fbp=fb.2.1784555830739.284014690594183591&cs_est=true&ler=empty&cdl=API_unavailable&pmd[title]=%E7%BF%B0%E6%9E%97%E9%9B%B2%E7%AB%AF%E5%AD%B8%E9%99%A2%20-%20%E7%B7%9A%E4%B8%8A%E5%AD%B8%E7%BF%92%E9%A6%96%E9%81%B8%20-%20%E5%85%8D%E8%B2%BB%E8%A9%A6%E7%94%A8%E5%B0%8F%E4%B8%AD%E9%AB%98%E8%AA%B2%E7%A8%8B&pmd[locale]=zh_TW&pmd[description]=%E7%BF%B0%E6%9E%97%E9%9B%B2%E7%AB%AF%E5%AD%B8%E9%99%A2%E5%85%A8%E8%87%BA%E5%9C%8B%E5%B0%8F%E3%80%81%E5%9C%8B%E4%B8%AD%E3%80%81%E9%AB%98%E4%B8%AD%E7%B7%9A%E4%B8%8A%E5%AD%B8%E7%BF%92%E7%AC%AC%E4%B8%80%E5%93%81%E7%89%8C%EF%BC%8C%E8%B6%85%E9%81%8E1300%E9%96%93%E5%AD%B8%E6%A0%A1%E7%9A%84%E5%AD%B8%E7%94%9F%E5%AE%B6%E9%95%B7%E8%80%81%E5%B8%AB%E5%94%AF%E4%B8%80%E6%8E%A8%E8%96%A6%E3%80%82e%E8%A9%95%E9%87%8F%E3%80%81e%E5%90%8D%E5%B8%AB%E3%80%81e%E5%AE%B6%E6%95%99%E8%B2%BC%E5%90%88108%E6%96%B0%E8%AA%B2%E7%B6%B1%EF%BC%8C%E5%88%87%E5%90%88%E6%9C%83%E8%80%83%E5%AD%B8%E6%B8%AC%E6%9C%80%E6%96%B0%E8%B6%A8%E5%8B%A2%EF%BC%8C%E5%B9%AB%E5%8A%A9%E5%AD%A9%E5%AD%90%E6%9C%89%E6%95%88%E8%A6%8F%E5%8A%83%E5%AD%B8%E7%BF%92%EF%BC%8C%E9%A0%86%E5%88%A9%E5%9F%B9%E9%A4%8A%E8%87%AA%E4%B8%BB%E5%AD%B8%E7%BF%92%E5%8A%9B%EF%BC%81%E6%9C%8D%E5%8B%99%E9%9B%BB%E8%A9%B102-82282575&plt=679.2000000001863&iss=1&ss=%7B%22entity_name%22%3A%5B%7B%22rid%22%3A%22781073645067553%22%2C%22v%22%3A%5B%22eHanlin%20%E7%BF%B0%E6%9E%97%E9%9B%B2%E7%AB%AF%E5%AD%B8%E9%99%A2%22%5D%7D%5D%7D&imft=1&tz=480&it=1784555830206&coo=false&eid=none_1784555829333&expv2[0]=pl0&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=im1&expv2[6]=hf1&rqm=GET",
+      "type": "image",
       "ipinfo": {
-        "domain": "chat.botbonnie.com",
-        "ip": "3.169.36.77",
-        "hostname": "server-3-169-36-77.tpe53.r.cloudfront.net",
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
         "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://chat.botbonnie.com/?appId=page-44f22a3e26ae4cae9d4ae88a&userId=bb-J9LjkByNFewk8O8LFGPow&isNewUser=true&",
+      "type": "document",
+      "ipinfo": {
+        "domain": "chat.botbonnie.com",
+        "ip": "54.192.248.60",
+        "hostname": "server-54-192-248-60.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -312,29 +364,13 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.66.74",
-        "hostname": "hkg12s27-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "64.233.189.95",
+        "hostname": "tl-in-f95.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "24.1469,120.6839",
         "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://cdn.botbonnie.com/image/lFhqfWio9.png",
-      "type": "image",
-      "ipinfo": {
-        "domain": "cdn.botbonnie.com",
-        "ip": "203.69.138.208",
-        "hostname": "203-69-138-208.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS20940 Akamai International B.V.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"

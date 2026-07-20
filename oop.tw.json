@@ -1,12 +1,13 @@
 {
   "url": "https://oop.tw",
-  "canonicalURL": "https://oop.tw",
+  "canonicalURL": "https://www.oop.tw/www.oop.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T02:15:48.175Z",
+  "timestamp": "2026-07-20T13:14:07.460Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,11 +25,11 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 8,
-  "uniqueDomains": 3,
+  "requestCount": 22,
+  "uniqueDomains": 4,
   "test_results": {
     "domestic": {
-      "cloud": 2,
+      "cloud": 4,
       "direct": 0
     },
     "foreign": {
@@ -42,7 +43,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "oop.tw",
-        "ip": "104.26.8.190",
+        "ip": "172.67.75.111",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -53,7 +54,27 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd9a09f084c4a94-TPE",
+        "cf-ray": "a1e23a118b6c93ae-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://www.oop.tw/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "www.oop.tw",
+        "ip": "172.67.75.111",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e23a135cde93ae-TPE",
         "detection_method": "header"
       }
     },
@@ -62,7 +83,7 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "cdnjs.cloudflare.com",
-        "ip": "104.17.24.14",
+        "ip": "104.17.25.14",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -73,16 +94,25 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd9a0a978856a99-TPE",
+        "cf-ray": "a1e23a196f5fa339-TPE",
         "detection_method": "header"
       }
     },
     {
-      "originalUrl": "chrome-extension://invalid/",
+      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-QN7W2Q3RKW",
       "type": "script",
       "ipinfo": {
-        "domain": "invalid"
-      }
+        "domain": "www.googletagmanager.com",
+        "ip": "142.250.77.200",
+        "hostname": "del11s08-in-f8.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     }
   ]
 }

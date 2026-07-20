@@ -2,11 +2,12 @@
   "url": "https://hamimall.com.tw",
   "canonicalURL": "https://hamimall.com.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T02:29:18.073Z",
+  "timestamp": "2026-07-20T14:04:14.997Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 1,
-  "uniqueDomains": 1,
+  "requestCount": 201,
+  "uniqueDomains": 12,
   "test_results": {
     "domestic": {
-      "cloud": 0,
-      "direct": 0
+      "cloud": 9,
+      "direct": 3
     },
     "foreign": {
-      "cloud": 1,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -42,6 +43,49 @@
       "type": "document",
       "ipinfo": {
         "domain": "hamimall.com.tw",
+        "ip": "104.21.2.206",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "cf-ray": "a1e281ffca4487e3-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "104.21.2.206",
+          "prefix": "104.21.2.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 60,
+          "location_count": 60,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.hamimall.com.tw/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "www.hamimall.com.tw",
         "ip": "172.67.152.231",
         "city": "San Francisco",
         "region": "California",
@@ -50,11 +94,249 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 135.806,
-        "detection_method": "rtt"
+        "cf-ray": "a1e28201cbda87e3-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "172.67.152.231",
+          "prefix": "172.67.152.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 60,
+          "location_count": 60,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
+    },
+    {
+      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=UA-11220921-3",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.googletagmanager.com",
+        "ip": "142.250.192.136",
+        "hostname": "bom12s18-in-f8.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://adc.tamedia.com.tw/rmadp/static/js/gm-sdk8-mobile.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "adc.tamedia.com.tw",
+        "ip": "124.29.140.130",
+        "city": "Taichung",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.1469,120.6839",
+        "org": "AS24158 Taiwan Mobile Co., Ltd.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css",
+      "type": "stylesheet",
+      "ipinfo": {
+        "domain": "cdn.jsdelivr.net",
+        "ip": "104.17.208.5",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "x-served-by": "cache-fra-etou8220025-FRA, cache-sin-wsat1880063-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "104.17.208.5",
+          "prefix": "104.17.208.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 76,
+          "location_count": 76,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "originalUrl": "https://img.sopower.com.tw/market260719215945_20260719215945.png",
+      "type": "image",
+      "ipinfo": {
+        "domain": "img.sopower.com.tw",
+        "ip": "104.26.8.251",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e282085baec4ed-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap",
+      "type": "stylesheet",
+      "ipinfo": {
+        "domain": "fonts.googleapis.com",
+        "ip": "108.177.125.95",
+        "hostname": "tp-in-f95.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.1469,120.6839",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-22SXJ882C2&cid=314669815.1784556192&gtm=45je67f0v9104642739za200zd9104642739&rcb=19&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115616985~115938465~115938469~118897920~118897930&z=1281262372",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.204.35",
+        "hostname": "hkg07s38-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://hamimall.api.useinsider.com/ins.js?id=10007204",
+      "type": "script",
+      "ipinfo": {
+        "domain": "hamimall.api.useinsider.com",
+        "ip": "162.159.134.61",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e2820b9f26827f-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "connect.facebook.net",
+        "ip": "31.13.87.5",
+        "hostname": "xx-fbcdn-shv-01-tpe1.fbcdn.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://www.google.com/rmkt/collect/10822017212/?random=1784556192265&cv=11&fst=1784556192265&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67f0h1v883830646za200zb9104642739zd9104642739xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938469~118395334~118897920~118897930~118981136~119896802&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.hamimall.com.tw%2F&rcb=18&frm=0&tiba=%E5%A5%BD%E8%B2%B7%E5%B8%82%E9%9B%86%20-%20%E6%9C%89%E9%BB%9E%E5%A5%BD%E8%B2%B7&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=503151640.1784556192&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.150.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.381,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.150.119",
+          "prefix": "142.251.150.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.facebook.com/tr/?id=491498286292913&ev=PageView&dl=https%3A%2F%2Fwww.hamimall.com.tw%2F&rl=&if=false&ts=1784556192903&iw=false&sw=1280&sh=720&v=2.9.357&r=stable&ec=0&o=4126&aems=0%3B0&fbp=fb.2.1784556192900.919552619619104219&ler=empty&cdl=API_unavailable&pmd[title]=%E5%A5%BD%E8%B2%B7%E5%B8%82%E9%9B%86%20-%20%E6%9C%89%E9%BB%9E%E5%A5%BD%E8%B2%B7&pmd[locale]=zh_TW&pmd[description]=%E5%A5%BD%E8%B2%B7%E5%B8%82%E9%9B%86%EF%BC%8CHami%20Point%E5%B0%88%E5%B1%AC%E8%B3%BC%E7%89%A9%E7%B6%B2%E7%AB%99%EF%BC%8C%E5%8F%AF%E4%BD%BF%E7%94%A8%E4%B8%AD%E8%8F%AF%E9%9B%BB%E4%BF%A1%E6%9C%83%E5%93%A1%E5%B0%88%E5%B1%AC%E7%9A%84%E3%80%90Hami%20Point%E3%80%91%E9%BB%9E%E6%95%B8%E6%8A%98%E6%8A%B5%E6%B6%88%E8%B2%BB%E9%87%91%E9%A1%8D%EF%BC%8C%E8%AE%93%E6%82%A8%E6%9C%89%E3%80%8C%E9%BB%9E%E3%80%8D%E6%9B%B4%E5%A5%BD%E8%B2%B7%EF%BC%81%20%E5%85%A8%E7%AB%99%E6%B6%88%E8%B2%BB%E5%9B%9E%E9%A5%8B1%25%20Hami%20Point%20(%E5%9B%9E%E9%A5%8B%E7%84%A1%E4%B8%8A%E9%99%90)%EF%BC%81%E5%85%A8%E7%AB%99%E4%B8%8D%E9%99%90%E9%87%91%E9%A1%8D%E5%85%8D%E9%81%8B%E8%B2%BB%EF%BC%8C%E8%BC%95%E9%AC%86%E6%B6%88%E8%B2%BB%EF%BC%8C%E7%9C%81%E5%BF%83%E7%84%A1%E8%B2%A0%E6%93%94%EF%BC%81&pmd[keywords]=%E5%A5%BD%E8%B2%B7%E5%B8%82%E9%9B%86%2C%20%E6%9C%89%E9%BB%9E%E5%A5%BD%E8%B2%B7%2C%20Hami%20Point%2C%20%E4%B8%AD%E8%8F%AF%E9%9B%BB%E4%BF%A1%E6%9C%83%E5%93%A1&plt=2243.5999999996275&iss=1&imft=1&tz=480&it=1784556192785&coo=false&expv2[0]=pl0&expv2[1]=el2&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=ct3&expv2[6]=hf0&rqm=GET",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
     }
   ]
 }

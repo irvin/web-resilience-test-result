@@ -2,11 +2,12 @@
   "url": "https://pda.104.com.tw",
   "canonicalURL": "https://pda.104.com.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:58:16.465Z",
+  "timestamp": "2026-07-20T13:36:12.778Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 187,
+  "requestCount": 295,
   "uniqueDomains": 19,
   "test_results": {
     "domestic": {
-      "cloud": 13,
+      "cloud": 14,
       "direct": 4
     },
     "foreign": {
-      "cloud": 2,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -53,7 +54,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd986b18cb76a99-TPE",
+        "cf-ray": "a1e25a1d8c15a355-TPE",
         "detection_method": "header"
       }
     },
@@ -63,26 +64,26 @@
       "ipinfo": {
         "domain": "static.104.com.tw",
         "ip": "202.8.14.29",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "city": "Taipei",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "25.0531,121.5264",
         "org": "AS18410 104 Information Technology Co., Ltd.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://cdn.104.com.tw/category-tool/css/category-picker-2.0.0.css",
+      "originalUrl": "https://cdn.104.com.tw/category-tool/3.0.3/css/category-picker.css",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "cdn.104.com.tw",
-        "ip": "3.169.121.94",
-        "hostname": "server-3-169-121-94.tpe53.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "54.192.248.78",
+        "hostname": "server-54-192-248-78.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -93,12 +94,12 @@
       "type": "script",
       "ipinfo": {
         "domain": "msc.adsmart.104.com.tw",
-        "ip": "3.169.137.25",
-        "hostname": "server-3-169-137-25.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "65.9.180.114",
+        "hostname": "server-65-9-180-114.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -125,8 +126,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "translate.google.com",
-        "ip": "142.250.198.78",
-        "hostname": "lctsaa-ab-in-f14.1e100.net",
+        "ip": "142.250.204.46",
+        "hostname": "hkg07s38-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -141,8 +142,8 @@
       "type": "xhr",
       "ipinfo": {
         "domain": "aidma.adsmart.104.com.tw",
-        "ip": "18.182.78.81",
-        "hostname": "ec2-18-182-78-81.ap-northeast-1.compute.amazonaws.com",
+        "ip": "57.181.124.134",
+        "hostname": "ec2-57-181-124-134.ap-northeast-1.compute.amazonaws.com",
         "city": "Tokyo",
         "region": "Tokyo",
         "country": "JP",
@@ -150,30 +151,73 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Tokyo"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": null,
+        "detection_method": "rtt",
+        "rtt_error": "timeout",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "57.181.124.134",
+          "prefix": "57.181.124.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
     },
     {
       "originalUrl": "https://login.104.com.tw/login?checkService=1&return_url=https://pda.104.com.tw/",
       "type": "document",
       "ipinfo": {
         "domain": "login.104.com.tw",
-        "ip": "122.147.53.142",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS9919 New Century InfoComm Tech Co., Ltd.",
-        "timezone": "Asia/Taipei"
+        "ip": "104.18.9.226",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/direct"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e25a240b426a81-TPE",
+        "detection_method": "header"
+      }
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&tid=AW-992115811&en=page_view&dl=https%3A%2F%2Fpda.104.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=32477418.1768355884&dt=104%E4%BA%BA%E5%8A%9B%E9%8A%80%E8%A1%8C%20-%20%E6%9C%83%E5%93%A1%E4%B8%AD%E5%BF%83&auid=1940046092.1768355884&navt=n&npa=0&gtm=45be61c1v892183527za200zd892183527xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115938466~115938469~116682876~116910502~117041587&tft=1768355884133&tfd=471&apve=1&apvf=f",
-      "type": "fetch",
+      "originalUrl": "https://oidc.104.com.tw/oauth2/auth?nonce=u2r9CxYiJaxh8EBjJpkxMEa66o1VexZm2PGmPhw0ciB39&state=9SlKz7QngvDKhjzwCFt65UJRkzyofv9khz07UO5iy6Hwg&redirect_uri=https%3A%2F%2Flogin.104.com.tw%2Fcallback&scope=openid&response_type=code&code_challenge=ibrAzQ4XigIs_kve_xeKT1UwO2f_aNO0EcJYowm9Vsc&code_challenge_method=S256&ac_third_party_target_uri=https%3A%2F%2Fpda.104.com.tw%2F&client_id=my104",
+      "type": "document",
       "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.198.68",
-        "hostname": "lctsaa-ab-in-f4.1e100.net",
+        "domain": "oidc.104.com.tw",
+        "ip": "104.18.8.226",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e25a2aacaf4aa5-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.zZZZhVqDDCw.L.W.O/am=BIAABw/d=0/rs=AN8SPfpWxivXbFD2WhpIdS-DPbQSwnZZjQ/m=el_main_css",
+      "type": "stylesheet",
+      "ipinfo": {
+        "domain": "www.gstatic.com",
+        "ip": "142.250.77.195",
+        "hostname": "del11s08-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -184,11 +228,63 @@
       "category": "domestic/cloud"
     },
     {
+      "originalUrl": "https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.zh_TW.V9GY5NeK2rY.O/am=BIAABw/d=1/exm=el_conf/ed=1/rs=AN8SPfqQjRyQvZtH9ab1yxoV_TjTa1b3tw/m=el_main",
+      "type": "script",
+      "ipinfo": {
+        "domain": "translate.googleapis.com",
+        "ip": "142.250.77.10",
+        "hostname": "nctsaa-ab-in-f10.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com/rmkt/collect/992115811/?random=1784554558782&cv=11&fst=1784554558782&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67f0v892183527za200zd892183527xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118897920~118897930~119381664&u_w=1280&u_h=720&url=https%3A%2F%2Fpda.104.com.tw%2F&rcb=9&frm=0&tiba=My104%20%E6%9C%83%E5%93%A1%E4%B8%AD%E5%BF%83%EF%BC%8D104%20%E4%BA%BA%E5%8A%9B%E9%8A%80%E8%A1%8C&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=689457575.1784554559&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.152.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.691,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.152.119",
+          "prefix": "142.251.152.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
+    },
+    {
       "originalUrl": "https://api.ipify.org/?format=jsonp&callback=getIP",
       "type": "script",
       "ipinfo": {
         "domain": "api.ipify.org",
-        "ip": "104.26.13.205",
+        "ip": "104.26.12.205",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -196,10 +292,11 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 57.538,
-        "detection_method": "rtt"
+        "country": "tw",
+        "cf-ray": "a1e25a2a7c0c7234-TPE",
+        "detection_method": "header"
       }
     },
     {
@@ -219,109 +316,41 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://uts.104.com.tw/log/send?lus=%7B%22sourcepage%22%3A%22https%3A%2F%2Fpda.104.com.tw%2F%22%2C%22querystring%22%3A%22%22%7D&lua=%7B%22track_action%22%3A%22viewPage%22%2C%22websource%22%3A%22104_bank%22%7D&lue=%7B%22gcid%22%3A%22false%22%2C%22pkey%22%3A%22%22%7D&lur=%7B%22referrer%22%3A%22%22%2C%22querystring%22%3A%22%22%7D&luf=js&luauid=1306600414&lurrc=5035849152215&luc=5035849152215&luv=1&lub=webkit/537.36&lut=1768355884152",
+      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/992115811/?random=1784554558782&cv=11&fst=1784552400000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67f0v892183527za200zd892183527xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118897920~118897930~119381664&u_w=1280&u_h=720&url=https%3A%2F%2Fpda.104.com.tw%2F&rcb=9&frm=0&tiba=My104%20%E6%9C%83%E5%93%A1%E4%B8%AD%E5%BF%83%EF%BC%8D104%20%E4%BA%BA%E5%8A%9B%E9%8A%80%E8%A1%8C&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=689457575.1784554559&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS7AEAEQoqgSGhjalx-b8PzrAuuZAk9AAPaqB7TyRYkvcS20WvqB1mj9jbj1oMhP0R4s7uoLC4LjdMwyHJilRJdKidhfoxk4YO17EHkdD05LtLjnvrsiTWRQ8zMGrZazkelUeMuXvmBMffUHpCQucTaLjc5vCntieNpsOfav1U-dFAcOMIub5012egGH5t8FAVdK2gBN2xUCcPt-r3llzgExIRuaIsc5_Lpd08ZFenkoTP2u6bQhXk7kwoVVabFBpGXpchK6FY9vZk7jAqZhwKvORYJc_ZuAipv2Vi4FpbH1zFPG2PPeGBOWPkhBfc0w&random=2068209351&rmt_tld=1&ipr=y",
       "type": "image",
       "ipinfo": {
-        "domain": "uts.104.com.tw",
-        "ip": "202.8.14.51",
+        "domain": "www.google.com.tw",
+        "ip": "142.250.196.195",
+        "hostname": "nctsaa-ac-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
         "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://uts.104.com.tw/log/send?lus=%7B%22sourcepage%22%3A%22https%3A%2F%2Fpda.104.com.tw%2F%22%2C%22querystring%22%3A%22%22%7D&lua=%7B%22track_action%22%3A%22viewPage%22%2C%22websource%22%3A%22104_bank%22%7D&lue=%7B%22pkey%22%3A%22%22%7D&lur=%7B%22referrer%22%3A%22%22%2C%22querystring%22%3A%22%22%7D&luf=js&luauid=924781661&lurrc=5035849152215&luc=5035849152215&luv=1&lub=webkit/537.36&lut=1784554559022",
+      "type": "image",
+      "ipinfo": {
+        "domain": "uts.104.com.tw",
+        "ip": "202.8.14.51",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
         "org": "AS18410 104 Information Technology Co., Ltd.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.2f3WBw8L4SI.L.W.O/am=AAQD/d=0/rs=AN8SPfrXXtxuFpMMBoYgp93jo68L3iC3ZQ/m=el_main_css",
-      "type": "stylesheet",
-      "ipinfo": {
-        "domain": "www.gstatic.com",
-        "ip": "142.250.77.3",
-        "hostname": "nctsaa-ab-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.zh_TW.mPZtFini1uw.O/am=AAAQ/d=1/exm=el_conf/ed=1/rs=AN8SPfrFEj4P46YIAGu0tYi2StDX-D3hWw/m=el_main",
-      "type": "script",
-      "ipinfo": {
-        "domain": "translate.googleapis.com",
-        "ip": "142.250.77.10",
-        "hostname": "nctsaa-ab-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/992115811/?random=1768355884130&cv=11&fst=1768352400000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be61c1v892183527za200zd892183527xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115938466~115938469~116682876~116910502~117041587&u_w=1280&u_h=720&url=https%3A%2F%2Fpda.104.com.tw%2F&frm=0&tiba=104%E4%BA%BA%E5%8A%9B%E9%8A%80%E8%A1%8C%20-%20%E6%9C%83%E5%93%A1%E4%B8%AD%E5%BF%83&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1940046092.1768355884&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEA56J1eUkxnSHDoUeFBBBWJSISuLm1Wqyyw9omW5u3Ulm2rqHkXSgiQ89dkjVWNvY8pU6YrCSzrxy_csuIOBRlFTFeeSq0jRbBCA7rSzqjVVB4N66bE9vB6mAhFv46Kp_GmtopLrodnwvyERmpY0Ip97OxOk0J7nMN47F2cSbNSbn4mLmOmuM54j64&random=3489922494&rmt_tld=1&ipr=y",
-      "type": "image",
-      "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.66.67",
-        "hostname": "hkg12s27-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://oidc.104.com.tw/oauth2/auth?nonce=x1eJF2Nbp6VbB2a0cRGScVv3bXzKhtivS3dfm73ewBhZm&state=vTENEkjEstlqhWwd4DDdJWk0B1bdKLa5agJ8DHkyrrgve&redirect_uri=https%3A%2F%2Flogin.104.com.tw%2Fcallback&scope=openid&response_type=code&code_challenge=E0UzS6MbIq-CufqoJTs2MLnoD-Hr8OEOYCE2u4PgHSQ&code_challenge_method=S256&ac_third_party_target_uri=https%3A%2F%2Fpda.104.com.tw%2F&client_id=my104",
+      "originalUrl": "https://signin.104.com.tw/oidc?login_challenge=6aeb1292cca545c384ca2257d09b540b",
       "type": "document",
       "ipinfo": {
-        "domain": "oidc.104.com.tw",
-        "ip": "104.18.9.226",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "cf-ray": "9bd986b5397ba9c1-TPE",
-        "detection_method": "header"
-      }
-    },
-    {
-      "originalUrl": "https://translate-pa.googleapis.com/v1/supportedLanguages?client=te&display_language=zh-TW&key=AIzaSyBWDj0QJvVIx8XOhRegXX5_SrRWxhT5Hs4&callback=callback",
-      "type": "script",
-      "ipinfo": {
-        "domain": "translate-pa.googleapis.com",
-        "ip": "142.250.198.74",
-        "hostname": "lctsaa-ab-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://api.signin.104.com.tw/oidc?login_challenge=74858118b98742059b379f0d4dd7a005",
-      "type": "document",
-      "ipinfo": {
-        "domain": "api.signin.104.com.tw",
+        "domain": "signin.104.com.tw",
         "ip": "104.18.5.84",
         "city": "San Francisco",
         "region": "California",
@@ -333,25 +362,61 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd986b60b35a343-TPE",
+        "cf-ray": "a1e25a2d78518451-TPE",
         "detection_method": "header"
       }
     },
     {
-      "originalUrl": "https://signin.104.com.tw/",
-      "type": "document",
+      "originalUrl": "https://translate-pa.googleapis.com/v1/supportedLanguages?client=te&display_language=zh-TW&key=AIzaSyBWDj0QJvVIx8XOhRegXX5_SrRWxhT5Hs4&callback=callback",
+      "type": "script",
       "ipinfo": {
-        "domain": "signin.104.com.tw",
-        "ip": "3.169.121.122",
-        "hostname": "server-3-169-121-122.tpe53.r.cloudfront.net",
+        "domain": "translate-pa.googleapis.com",
+        "ip": "172.217.116.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.913,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "172.217.116.4",
+          "prefix": "172.217.116.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.facebook.com/tr/?id=1607446572852316&ev=PageView&dl=https%3A%2F%2Fsignin.104.com.tw%2F&rl=https%3A%2F%2Fpda.104.com.tw%2F&if=false&ts=1784554560525&iw=false&sw=1280&sh=720&v=2.9.357&r=stable&ec=0&o=4126&aems=0%3B0&fbp=fb.2.1784554560522.550540357999927836&ler=other&cdl=API_unavailable&pmd[title]=%E7%AB%8B%E5%8D%B3%E7%99%BB%E5%85%A5%EF%BD%9C%E6%AD%A1%E8%BF%8E%E4%BD%BF%E7%94%A8%20104%20%E6%9C%8D%E5%8B%99&pmd[locale]=zh-Hant-TW&plt=2628.6999999997206&iss=1&imft=1&tz=480&it=1784554560128&coo=false&expv2[0]=pl1&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=im1&expv2[6]=hf1&rqm=GET",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
         "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
+        "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/direct"
     }
   ]
 }

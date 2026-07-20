@@ -2,11 +2,12 @@
   "url": "https://shein.tw",
   "canonicalURL": "https://www.shein.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T02:04:30.815Z",
+  "timestamp": "2026-07-20T13:54:24.668Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 296,
-  "uniqueDomains": 16,
+  "requestCount": 291,
+  "uniqueDomains": 17,
   "test_results": {
     "domestic": {
-      "cloud": 1,
-      "direct": 11
+      "cloud": 6,
+      "direct": 9
     },
     "foreign": {
-      "cloud": 4,
+      "cloud": 2,
       "direct": 0
     }
   },
@@ -42,8 +43,8 @@
       "type": "document",
       "ipinfo": {
         "domain": "shein.tw",
-        "ip": "52.39.206.44",
-        "hostname": "ec2-52-39-206-44.us-west-2.compute.amazonaws.com",
+        "ip": "52.39.90.56",
+        "hostname": "ec2-52-39-90-56.us-west-2.compute.amazonaws.com",
         "city": "Boardman",
         "region": "Oregon",
         "country": "US",
@@ -51,31 +52,49 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": null,
+        "detection_method": "rtt",
+        "rtt_error": "timeout",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "52.39.90.56",
+          "prefix": "52.39.90.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
     },
     {
       "originalUrl": "https://www.shein.tw/",
       "type": "document",
       "ipinfo": {
         "domain": "www.shein.tw",
-        "ip": "203.74.95.35",
-        "hostname": "203-74-95-35.hinet-ip.hinet.net",
+        "ip": "210.61.249.40",
+        "hostname": "210-61-249-40.hinet-ip.hinet.net",
         "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
         "loc": "24.1469,120.6839",
-        "org": "AS3462 Data Communication Business Group",
+        "org": "AS20940 Akamai International B.V.",
         "timezone": "Asia/Taipei"
       },
-      "category": "domestic/direct"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://armor.ltwebstatic.com/she_dist/armor-libs/antiin/antiin.1.9.1.min.js",
       "type": "other",
       "ipinfo": {
         "domain": "armor.ltwebstatic.com",
-        "ip": "203.74.95.146",
-        "hostname": "203-74-95-146.hinet-ip.hinet.net",
+        "ip": "203.74.95.178",
+        "hostname": "203-74-95-178.hinet-ip.hinet.net",
         "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
@@ -90,8 +109,8 @@
       "type": "other",
       "ipinfo": {
         "domain": "sc.ltwebstatic.com",
-        "ip": "203.74.95.139",
-        "hostname": "203-74-95-139.hinet-ip.hinet.net",
+        "ip": "203.74.95.170",
+        "hostname": "203-74-95-170.hinet-ip.hinet.net",
         "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
@@ -106,8 +125,8 @@
       "type": "other",
       "ipinfo": {
         "domain": "common.ltwebstatic.com",
-        "ip": "203.74.95.91",
-        "hostname": "203-74-95-91.hinet-ip.hinet.net",
+        "ip": "203.74.95.50",
+        "hostname": "203-74-95-50.hinet-ip.hinet.net",
         "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
@@ -118,12 +137,12 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://img.ltwebstatic.com/v4/p/ccc/2025/07/22/a6/1753155365decb0c2727c01d822e531f570728405d_thumbnail_2000x.webp",
+      "originalUrl": "https://img.ltwebstatic.com/v4/p/ccc/2025/07/22/ca/1753167507387a524d78a380f1105ff2cdcba09dcb_thumbnail_432x.webp",
       "type": "image",
       "ipinfo": {
         "domain": "img.ltwebstatic.com",
-        "ip": "203.74.95.91",
-        "hostname": "203-74-95-91.hinet-ip.hinet.net",
+        "ip": "203.74.95.123",
+        "hostname": "203-74-95-123.hinet-ip.hinet.net",
         "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
@@ -138,32 +157,32 @@
       "type": "fetch",
       "ipinfo": {
         "domain": "cinfo-v4.shein.com",
-        "ip": "203.74.95.26",
-        "hostname": "203-74-95-26.hinet-ip.hinet.net",
+        "ip": "210.61.249.35",
+        "hostname": "210-61-249-35.hinet-ip.hinet.net",
         "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
         "loc": "24.1469,120.6839",
-        "org": "AS3462 Data Communication Business Group",
+        "org": "AS20940 Akamai International B.V.",
         "timezone": "Asia/Taipei"
       },
-      "category": "domestic/direct"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://cinfo-v6.shein.com/",
       "type": "fetch",
       "ipinfo": {
         "domain": "cinfo-v6.shein.com",
-        "ip": "203.74.95.58",
-        "hostname": "203-74-95-58.hinet-ip.hinet.net",
+        "ip": "210.61.249.41",
+        "hostname": "210-61-249-41.hinet-ip.hinet.net",
         "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
         "loc": "24.1469,120.6839",
-        "org": "AS3462 Data Communication Business Group",
+        "org": "AS20940 Akamai International B.V.",
         "timezone": "Asia/Taipei"
       },
-      "category": "domestic/direct"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://cjs.ltwebstatic.com/unpkg/@shein-aidc/basis-sada@1.0.7/dist/sada.umd.js",
@@ -186,8 +205,8 @@
       "type": "xhr",
       "ipinfo": {
         "domain": "shein.ltwebstatic.com",
-        "ip": "203.74.95.91",
-        "hostname": "203-74-95-91.hinet-ip.hinet.net",
+        "ip": "203.74.95.123",
+        "hostname": "203-74-95-123.hinet-ip.hinet.net",
         "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
@@ -198,16 +217,15 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://api-service.shein.com/cmc/queryNameSpaceConfigForWeb?platform=pc&brand=shein&nameSpaceCode=customer&nameSpaceVersion=0",
+      "originalUrl": "https://api-cmc.shein.com/cmc/queryNameSpaceConfigForWeb?platform=pc&brand=shein&nameSpaceCode=customer&nameSpaceVersion=0&siteUid=tw&appLanguage=zh-tw",
       "type": "fetch",
       "ipinfo": {
-        "domain": "api-service.shein.com",
-        "ip": "203.74.95.26",
-        "hostname": "203-74-95-26.hinet-ip.hinet.net",
-        "city": "Taichung",
+        "domain": "api-cmc.shein.com",
+        "ip": "210.71.227.120",
+        "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "24.1469,120.6839",
+        "loc": "25.0531,121.5264",
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
@@ -218,7 +236,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "bat.bing.com",
-        "ip": "150.171.28.10",
+        "ip": "150.171.27.10",
         "city": "Redmond",
         "region": "Washington",
         "country": "US",
@@ -226,15 +244,42 @@
         "org": "AS8075 Microsoft Corporation",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "150.171.27.10",
+          "prefix": "150.171.27.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            8075
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 57,
+          "location_count": 57,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=AW-968149230",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
+        "ip": "142.250.192.136",
+        "hostname": "bom12s18-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -265,19 +310,32 @@
       "type": "script",
       "ipinfo": {
         "domain": "static.gateway.shein.com",
-        "ip": "13.227.74.4",
-        "hostname": "server-13-227-74-4.sfo20.r.cloudfront.net",
-        "city": "San Francisco",
+        "ip": "18.164.174.34",
+        "hostname": "server-18-164-174-34.lax53.r.cloudfront.net",
+        "city": "Los Angeles",
         "region": "California",
         "country": "US",
-        "loc": "37.7749,-122.4194",
+        "loc": "34.0522,-118.2437",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "America/Los_Angeles"
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 138.904,
-        "detection_method": "rtt"
+        "rtt": 133.593,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "18.164.174.34",
+          "prefix": "18.164.174.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
       }
     },
     {
@@ -285,19 +343,31 @@
       "type": "script",
       "ipinfo": {
         "domain": "s.pinimg.com",
-        "ip": "199.232.112.84",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
+        "ip": "210.71.227.105",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
       },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": 44.21,
-        "detection_method": "rtt"
-      }
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://accounts.google.com/gsi/client",
+      "type": "script",
+      "ipinfo": {
+        "domain": "accounts.google.com",
+        "ip": "64.233.189.84",
+        "hostname": "tl-in-f84.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.1469,120.6839",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     }
   ]
 }

@@ -2,11 +2,12 @@
   "url": "https://gimytv.tw",
   "canonicalURL": "https://gimytv.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T03:31:33.886Z",
+  "timestamp": "2026-07-20T14:52:55.847Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,16 +25,16 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 57,
-  "uniqueDomains": 6,
+  "requestCount": 60,
+  "uniqueDomains": 4,
   "test_results": {
     "domestic": {
-      "cloud": 2,
-      "direct": 1
+      "cloud": 4,
+      "direct": 0
     },
     "foreign": {
-      "cloud": 2,
-      "direct": 1
+      "cloud": 0,
+      "direct": 0
     }
   },
   "domainDetails": [
@@ -42,7 +43,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "gimytv.tw",
-        "ip": "104.21.45.237",
+        "ip": "172.67.220.186",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -50,10 +51,34 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 136.36,
-        "detection_method": "rtt"
+        "cf-ray": "a1e2cac7ba1afce4-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "172.67.220.186",
+          "prefix": "172.67.220.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 58,
+          "location_count": 58,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -61,8 +86,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -77,7 +102,7 @@
       "type": "image",
       "ipinfo": {
         "domain": "img.129cdn.com",
-        "ip": "172.67.211.142",
+        "ip": "104.21.61.159",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -85,33 +110,42 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 134.218,
-        "detection_method": "rtt"
+        "cf-ray": "a1e2cad43d5afe15-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "104.21.61.159",
+          "prefix": "104.21.61.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 56,
+          "location_count": 56,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
-      "originalUrl": "https://m.ykimg.com/050E00005729A660000000195504CDFC",
-      "type": "image",
-      "ipinfo": {
-        "domain": "m.ykimg.com",
-        "ip": "155.102.184.181",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS24429 Zhejiang Taobao Network Co.,Ltd",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/direct"
-    },
-    {
-      "originalUrl": "https://img.avdb.me/chinaq/upload/vod/20251227-1/626823ef89dad5f6859a68636803cf3d.jpg",
+      "originalUrl": "https://img.avdb.me/chinaq/upload/vod/20260719-1/8d4d9b1d5847d982ac8ab4d80f648355.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "img.avdb.me",
-        "ip": "104.26.7.166",
+        "ip": "104.26.6.166",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -122,24 +156,9 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bda0f9689984a91-TPE",
+        "cf-ray": "a1e2cacddb2d4a33-TPE",
         "detection_method": "header"
       }
-    },
-    {
-      "originalUrl": "https://pic3.yzzyimg.online/upload/vod/2026-01-01/202601011767245505.jpg",
-      "type": "image",
-      "ipinfo": {
-        "domain": "pic3.yzzyimg.online",
-        "ip": "216.180.225.93",
-        "city": "Los Angeles",
-        "region": "California",
-        "country": "US",
-        "loc": "34.0522,-118.2437",
-        "org": "AS47191 blue tech technology Co., Limited",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/direct"
     }
   ]
 }

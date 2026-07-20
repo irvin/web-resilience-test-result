@@ -1,12 +1,13 @@
 {
   "url": "https://cookpad.com",
-  "canonicalURL": "https://cookpad.com/jp",
+  "canonicalURL": "https://cookpad.com/tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:07:48.895Z",
+  "timestamp": "2026-07-20T13:09:56.769Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,7 +25,7 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 79,
+  "requestCount": 64,
   "uniqueDomains": 7,
   "test_results": {
     "domestic": {
@@ -42,7 +43,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "cookpad.com",
-        "ip": "151.101.193.55",
+        "ip": "151.101.129.55",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -52,21 +53,38 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 35.181,
-        "detection_method": "rtt"
+        "x-served-by": "cache-sin-wsat1880064-SIN",
+        "rtt": 35.333,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "151.101.129.55",
+          "prefix": "151.101.129.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 55,
+          "location_count": 55
+        }
       }
     },
     {
-      "originalUrl": "https://global-web-assets.cpcdn.com/packs/css/application-v2-39c6f269.css",
+      "originalUrl": "https://global-web-assets.cpcdn.com/packs/css/application-v2-91968ed6.css",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "global-web-assets.cpcdn.com",
-        "ip": "3.169.137.5",
-        "hostname": "server-3-169-137-5.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "65.9.180.81",
+        "hostname": "server-65-9-180-81.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -77,7 +95,7 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "use.typekit.net",
-        "ip": "210.71.227.88",
+        "ip": "210.71.227.16",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -92,8 +110,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.77.8",
-        "hostname": "nctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -102,6 +120,58 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://img-global.cpcdn.com/contest_banners/6b3e721d30e73a8a/966x183cq80/banner.webp",
+      "type": "image",
+      "ipinfo": {
+        "domain": "img-global.cpcdn.com",
+        "ip": "65.9.180.61",
+        "hostname": "server-65-9-180-61.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://static.cookpad.com/global/assets/images/zh-TW/button_google_play_store.svg",
+      "type": "image",
+      "ipinfo": {
+        "domain": "static.cookpad.com",
+        "ip": "146.75.45.55",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "x-served-by": "cache-sin-wsat1880064-SIN",
+        "rtt": 61.754,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "146.75.45.55",
+          "prefix": "146.75.45.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 2,
+          "location_count": 2
+        }
+      }
     },
     {
       "originalUrl": "https://p.typekit.net/p.css?s=1&k=zbz2cyk&ht=tk&f=40409.40410.40411.40412.40413.40414&a=63657241&app=typekit&e=css",
@@ -117,41 +187,6 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
-    },
-    {
-      "originalUrl": "https://img-global-jp.cpcdn.com/recipes/1283342/280x96cq50/photo.webp",
-      "type": "image",
-      "ipinfo": {
-        "domain": "img-global-jp.cpcdn.com",
-        "ip": "3.169.137.65",
-        "hostname": "server-3-169-137-65.tpe54.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://static.cookpad.com/global/assets/images/ja/button_google_play_store.svg",
-      "type": "image",
-      "ipinfo": {
-        "domain": "static.cookpad.com",
-        "ip": "146.75.45.55",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": 44.962,
-        "detection_method": "rtt"
-      }
     }
   ]
 }

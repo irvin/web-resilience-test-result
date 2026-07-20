@@ -2,11 +2,12 @@
   "url": "https://icook.tw",
   "canonicalURL": "https://icook.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:08:57.799Z",
+  "timestamp": "2026-07-20T13:05:39.774Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,7 +25,7 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 158,
+  "requestCount": 149,
   "uniqueDomains": 16,
   "test_results": {
     "domestic": {
@@ -52,9 +53,32 @@
       },
       "category": "domestic/cloud",
       "cloud_provider": {
+        "cf-ray": "a1e22d7c1f5c4116-SIN",
         "country": "tw",
-        "rtt": 4.602,
-        "detection_method": "rtt"
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "104.20.28.74",
+          "prefix": "104.20.28.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 62,
+          "location_count": 62,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -62,12 +86,12 @@
       "type": "font",
       "ipinfo": {
         "domain": "assets-icook.icook.network",
-        "ip": "3.169.121.33",
-        "hostname": "server-3-169-121-33.tpe53.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "65.9.180.6",
+        "hostname": "server-65-9-180-6.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -78,7 +102,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "yb-codesnippet.s3.ap-northeast-1.amazonaws.com",
-        "ip": "3.5.157.148",
+        "ip": "3.5.157.169",
         "city": "Tokyo",
         "region": "Tokyo",
         "country": "JP",
@@ -88,8 +112,21 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 35.087,
-        "detection_method": "rtt"
+        "rtt": 34.958,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "3.5.157.169",
+          "prefix": "3.5.157.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
       }
     },
     {
@@ -97,8 +134,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagservices.com",
-        "ip": "142.250.198.66",
-        "hostname": "lctsaa-ab-in-f2.1e100.net",
+        "ip": "142.250.77.194",
+        "hostname": "del11s08-in-f2.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -115,10 +152,10 @@
         "domain": "ats-wrapper.privacymanager.io",
         "ip": "3.169.121.41",
         "hostname": "server-3-169-121-41.tpe53.r.cloudfront.net",
-        "city": "Taipei",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -129,8 +166,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.77.8",
-        "hostname": "nctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.192.136",
+        "hostname": "bom12s18-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -145,56 +182,76 @@
       "type": "image",
       "ipinfo": {
         "domain": "tokyo-kitchen.icook.network",
-        "ip": "3.169.55.22",
-        "hostname": "server-3-169-55-22.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "3.169.55.124",
+        "hostname": "server-3-169-55-124.tpe54.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://imgproxy.icook.network/safe/rt:fit/w:800/el:0/q:80/plain/http://tokyo-kitchen.icook.tw.s3.amazonaws.com/uploads/recipe/cover/103597/9eab80936950ea65.jpg",
+      "originalUrl": "https://imgproxy.icook.network/safe/rt:fit/w:800/el:0/q:80/plain/http://tokyo-kitchen.icook.tw.s3.amazonaws.com/uploads/recipe/cover/305378/96d84f361bc3dd30.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "imgproxy.icook.network",
-        "ip": "3.169.121.9",
-        "hostname": "server-3-169-121-9.tpe53.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "54.192.248.70",
+        "hostname": "server-54-192-248-70.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/measurement/conversion?random=1768352934152&cv=11&tid=G-Q65WJCEHK3&fst=1768352934152&fmt=6&en=first_visit&gtm=45je61c1v881727890za200zd881727890xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115938466~115938468~116682875~116744867~117041587&u_w=1280&u_h=720&url=https%3A%2F%2Ficook.tw%2F&gacid=248185432.1768352934&frm=0&tiba=%E6%84%9B%E6%96%99%E7%90%86%20-%20300%2C000%20%E9%81%93%E9%A3%9F%E8%AD%9C%EF%BC%8C%E6%AF%8F%E5%A4%A9%E9%83%BD%E6%9C%89%E6%96%B0%E9%A3%9F%E8%AD%9C%EF%BC%81&gdid=dY2E1Nz&gtm_ee=1&npa=0&pscdl=noapi&auid=801002390.1768352934&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0",
+      "originalUrl": "https://www.google.com/measurement/conversion?random=1784552730382&cv=11&tid=G-Q65WJCEHK3&fst=1784552730382&fmt=8&en=first_visit&gtm=45je67f0v881727890za200zd881727890xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938465~115938468~118897920~118897930&u_w=1280&u_h=720&url=https%3A%2F%2Ficook.tw%2F&gacid=1386453989.1784552730&frm=0&tiba=%E6%84%9B%E6%96%99%E7%90%86%20-%20300%2C000%20%E9%81%93%E9%A3%9F%E8%AD%9C%EF%BC%8C%E6%AF%8F%E5%A4%A9%E9%83%BD%E6%9C%89%E6%96%B0%E9%A3%9F%E8%AD%9C%EF%BC%81&gdid=dY2E1Nz&gtm_ee=1&npa=0&pscdl=noapi&auid=1497436918.1784552730&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&rcb=17",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.196.196",
-        "hostname": "nctsaa-ac-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
+        "ip": "142.251.150.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
         "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 8.379,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.150.119",
+          "prefix": "142.251.150.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-Q65WJCEHK3&cid=248185432.1768352934&gtm=45je61c1v881727890za200zd881727890&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115938466~115938468~116682875~116744867~117041587&z=1897704352",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-Q65WJCEHK3&cid=1386453989.1784552730&gtm=45je67f0v881727890za200zd881727890&rcb=17&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115616985~115938465~115938468~118897920~118897930&z=479351854",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.198.67",
-        "hostname": "lctsaa-ab-in-f3.1e100.net",
+        "ip": "142.250.77.195",
+        "hostname": "del11s08-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -220,7 +277,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd93eaf5a1a8421-TPE",
+        "cf-ray": "a1e22d888c1e77f1-TPE",
         "detection_method": "header"
       }
     },
@@ -229,12 +286,12 @@
       "type": "script",
       "ipinfo": {
         "domain": "sb.scorecardresearch.com",
-        "ip": "3.169.137.16",
-        "hostname": "server-3-169-137-16.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "3.169.137.32",
+        "hostname": "server-3-169-137-32.tpe54.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -261,12 +318,12 @@
       "type": "fetch",
       "ipinfo": {
         "domain": "geo.privacymanager.io",
-        "ip": "3.169.137.31",
-        "hostname": "server-3-169-137-31.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "65.9.180.7",
+        "hostname": "server-65-9-180-7.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -277,8 +334,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "fundingchoicesmessages.google.com",
-        "ip": "142.250.196.206",
-        "hostname": "nctsaa-ac-in-f14.1e100.net",
+        "ip": "142.250.204.46",
+        "hostname": "hkg07s38-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",

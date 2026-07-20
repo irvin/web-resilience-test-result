@@ -2,11 +2,12 @@
   "url": "https://sentry.io",
   "canonicalURL": "https://sentry.io/welcome/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:09:28.227Z",
+  "timestamp": "2026-07-20T13:06:29.681Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,11 +25,11 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 59,
-  "uniqueDomains": 6,
+  "requestCount": 55,
+  "uniqueDomains": 7,
   "test_results": {
     "domestic": {
-      "cloud": 6,
+      "cloud": 7,
       "direct": 0
     },
     "foreign": {
@@ -54,8 +55,24 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.113,
-        "detection_method": "rtt"
+        "rtt": 6.256,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "35.186.247.156",
+          "prefix": "35.186.247.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 63,
+          "location_count": 63
+        }
       }
     },
     {
@@ -69,22 +86,6 @@
         "country": "TW",
         "loc": "25.0531,121.5264",
         "org": "AS21859 Zenlayer Inc",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://images.ctfassets.net/em6l9zw4tzag/77sa8xwR8vlsEHcLYM4KnY/c2dcf097b5120d72a2c18a844af929b7/github-mark_1.png?fm=webp&fit=fill&w=24",
-      "type": "image",
-      "ipinfo": {
-        "domain": "images.ctfassets.net",
-        "ip": "3.169.55.76",
-        "hostname": "server-3-169-55-76.tpe54.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
@@ -106,12 +107,28 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.512,
-        "detection_method": "rtt"
+        "rtt": 6.986,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.160.100.224",
+          "prefix": "34.160.100.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 65,
+          "location_count": 65
+        }
       }
     },
     {
-      "originalUrl": "https://o1.ingest.us.sentry.io/api/162676/envelope/?sentry_version=7&sentry_key=df5aecd08ea9449f9a96a8f4e0a3a433&sentry_client=sentry.javascript.astro%2F10.28.0",
+      "originalUrl": "https://o1.ingest.us.sentry.io/api/4511259601338368/envelope/?sentry_version=7&sentry_key=2567d41bb9a2f124a8572951ffcb0275&sentry_client=sentry.javascript.astro%2F10.58.0",
       "type": "fetch",
       "ipinfo": {
         "domain": "o1.ingest.us.sentry.io",
@@ -127,12 +144,80 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.507,
-        "detection_method": "rtt"
+        "rtt": 5.868,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.160.81.0",
+          "prefix": "34.160.81.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 65,
+          "location_count": 65
+        }
       }
     },
     {
-      "originalUrl": "https://unpkg.com/@rive-app/canvas@2.32.2/rive.wasm",
+      "originalUrl": "https://www.google.com/recaptcha/api.js?render=6LdQHE0eAAAAAG9v3SYa7KNTHbwICjsM3WxQr-3H",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.156.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.177,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.156.119",
+          "prefix": "142.251.156.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.gstatic.com/recaptcha/releases/A7KpaEASfhDcK0nXxgQEyyYv/recaptcha__zh_tw.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.gstatic.com",
+        "ip": "142.250.192.131",
+        "hostname": "bom12s18-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://unpkg.com/@rive-app/canvas@2.37.8/rive.wasm",
       "type": "fetch",
       "ipinfo": {
         "domain": "unpkg.com",
@@ -147,7 +232,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd93f79b9ac840f-TPE",
+        "cf-ray": "a1e22eef996056f4-TPE",
         "detection_method": "header"
       }
     }

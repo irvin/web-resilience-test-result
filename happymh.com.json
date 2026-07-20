@@ -2,11 +2,12 @@
   "url": "https://happymh.com",
   "canonicalURL": "https://www.happymh.com/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:08:44.382Z",
+  "timestamp": "2026-07-20T13:06:02.299Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,16 +25,16 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 88,
-  "uniqueDomains": 8,
+  "requestCount": 53,
+  "uniqueDomains": 6,
   "test_results": {
     "domestic": {
-      "cloud": 2,
+      "cloud": 5,
       "direct": 0
     },
     "foreign": {
-      "cloud": 3,
-      "direct": 3
+      "cloud": 0,
+      "direct": 1
     }
   },
   "domainDetails": [
@@ -42,25 +43,6 @@
       "type": "document",
       "ipinfo": {
         "domain": "happymh.com",
-        "ip": "104.18.49.138",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": 141.524,
-        "detection_method": "rtt"
-      }
-    },
-    {
-      "originalUrl": "https://m.happymh.com/",
-      "type": "document",
-      "ipinfo": {
-        "domain": "m.happymh.com",
         "ip": "104.18.53.169",
         "city": "San Francisco",
         "region": "California",
@@ -69,26 +51,78 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 141.795,
-        "detection_method": "rtt"
+        "cf-ray": "a1e22e2e8cfa797f-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "104.18.53.169",
+          "prefix": "104.18.53.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 70,
+          "location_count": 70,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
-      "originalUrl": "https://telegram.org/js/telegram-web-app.js?59",
-      "type": "script",
+      "originalUrl": "https://m.happymh.com/",
+      "type": "document",
       "ipinfo": {
-        "domain": "telegram.org",
-        "ip": "149.154.167.99",
-        "city": "Amsterdam",
-        "region": "North Holland",
-        "country": "NL",
-        "loc": "52.3740,4.8897",
-        "org": "AS62041 Telegram Messenger Inc",
-        "timezone": "Europe/Amsterdam"
+        "domain": "m.happymh.com",
+        "ip": "104.18.49.138",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/direct"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "cf-ray": "a1e22e322c0f3231-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "104.18.49.138",
+          "prefix": "104.18.49.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 70,
+          "location_count": 70,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
+      }
     },
     {
       "originalUrl": "https://munqu.com/sdk.js",
@@ -110,8 +144,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
+        "ip": "142.250.192.136",
+        "hostname": "bom12s18-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -134,19 +168,43 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 141.413,
-        "detection_method": "rtt"
+        "cf-ray": "a1e22e3f2d2b3231-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "104.18.49.138",
+          "prefix": "104.18.49.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 70,
+          "location_count": 70,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-E2G2LX2SKZ&cid=278053365.1768352921&gtm=45je61c1v879443488za200zd879443488&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115938466~115938469~115985660~117041587&z=1259120523",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-E2G2LX2SKZ&cid=2072613923.1784552760&gtm=45je67f0v879443488za200zd879443488&rcb=19&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938465~115938469~118897920~118897930&z=1946467893",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "ip": "142.250.192.131",
+        "hostname": "bom12s18-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -155,21 +213,6 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://d3rem.com/401/9614229?oo=1&sw_version=v1.773.0&oaid=0802be9ba6b944ceecf838f8c94f5d0b&tgp=unknown",
-      "type": "xhr",
-      "ipinfo": {
-        "domain": "d3rem.com",
-        "ip": "139.45.197.114",
-        "city": "Lelystad",
-        "region": "Flevoland",
-        "country": "NL",
-        "loc": "52.5083,5.4750",
-        "org": "AS9002 RETN Limited",
-        "timezone": "Europe/Amsterdam"
-      },
-      "category": "foreign/direct"
     }
   ]
 }

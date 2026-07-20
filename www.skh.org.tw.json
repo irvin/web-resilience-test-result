@@ -2,11 +2,12 @@
   "url": "https://www.skh.org.tw/",
   "canonicalURL": "https://www.skh.org.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T02:48:38.272Z",
+  "timestamp": "2026-07-20T14:32:38.476Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,12 +25,12 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 175,
-  "uniqueDomains": 10,
+  "requestCount": 186,
+  "uniqueDomains": 12,
   "test_results": {
     "domestic": {
-      "cloud": 8,
-      "direct": 2
+      "cloud": 9,
+      "direct": 3
     },
     "foreign": {
       "cloud": 0,
@@ -73,40 +74,44 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.youtube.com",
-        "ip": "142.250.66.78",
-        "hostname": "hkg12s27-in-f14.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
+        "ip": "142.251.156.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
         "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.223,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.156.4",
+          "prefix": "142.251.156.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
     },
     {
       "originalUrl": "https://maps.google.com.tw/maps?f=q&hl=zh-TW&geocode=&q=%E5%8F%B0%E5%8C%97%E5%B8%82%E5%A3%AB%E6%9E%97%E5%8D%80%E6%96%87%E6%98%8C%E8%B7%AF95%E8%99%9F&z=16&output=embed&t=",
       "type": "document",
       "ipinfo": {
         "domain": "maps.google.com.tw",
-        "ip": "142.250.198.67",
-        "hostname": "lctsaa-ab-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dr=www.skh.org.tw&dl=https%3A%2F%2Fwww.skh.org.tw%2Fskh%2Findex.html&scrsrc=www.googletagmanager.com&rnd=1970445491.1768358916&dt=%E9%A6%96%E9%A0%81%20-%20%E6%96%B0%E5%85%89%E9%86%AB%E9%99%A2&auid=173340049.1768358916&navt=n&npa=0&gtm=45He61c1v838061301za200zd838061301xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115938466~115938469~116744866~117041588&tft=1768358916282&tfd=1963&apve=1&apvf=f",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.204.36",
-        "hostname": "hkg07s38-in-f4.1e100.net",
+        "ip": "142.250.196.195",
+        "hostname": "nctsaa-ac-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -149,12 +154,48 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-NG34P2NW9Q&cid=271390970.1768358915&gtm=45je61c1v881744999z8838061301za20gzb838061301zd838061301&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115938466~115938469~116744866~117041587&z=1857290028",
+      "originalUrl": "https://www.google.com/ccm/collect?rcb=5&frm=0&apvc=1&ae=g&auid=306508433.1784557956&dt=%E9%A6%96%E9%A0%81%20-%20%E6%96%B0%E5%85%89%E9%86%AB%E9%99%A2&en=page_view&dl=https%3A%2F%2Fwww.skh.org.tw%2Fskh%2Findex.html&dr=www.skh.org.tw&scrsrc=www.googletagmanager.com&rnd=425777490.1784557956&navt=n&npa=0&ep.ads_data_redaction=0&gcd=13l3l3l3l1l1&tft=1784557955687&tfd=5531&gtm=45He67f0v838061301za200zd838061301xea&dma=0&tag_exp=115938466~115938469~118395335~118897920~118897930~119709549~119724322~119773332&apve=1&apvf=f&fmt=8",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.152.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.541,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.152.119",
+          "prefix": "142.251.152.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-NG34P2NW9Q&cid=810862098.1784557956&gtm=45je67f0v881744999z8838061301za20gzb838061301zd838061301&rcb=17&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938466~115938468~118395335~118897920~118897930~119724322&z=1870643521",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.66.67",
-        "hostname": "hkg12s27-in-f3.1e100.net",
+        "ip": "142.250.192.131",
+        "hostname": "bom12s18-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -165,12 +206,12 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://maps.gstatic.com/maps-api-v3/embed/js/63/10a/intl/zh_tw/init_embed.js",
+      "originalUrl": "https://maps.gstatic.com/maps-api-v3/embed/js/65/6a/intl/zh_tw/init_embed.js",
       "type": "script",
       "ipinfo": {
         "domain": "maps.gstatic.com",
-        "ip": "142.250.66.67",
-        "hostname": "hkg12s27-in-f3.1e100.net",
+        "ip": "142.250.196.195",
+        "hostname": "nctsaa-ac-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -181,20 +222,72 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://maps.googleapis.com/maps/api/js?client=google-maps-embed&paint_origin=&libraries=geometry,search&v=weekly&loading=async&language=zh_TW&callback=onApiLoad",
+      "originalUrl": "https://maps.googleapis.com/maps/api/js?key=AIzaSyCmL18misQw9KdwqGaw3zHkitj8vG6QF2Y&paint_origin=&libraries=geometry,search&v=weekly&loading=async&language=zh_TW&experimentation=allowed&callback=onApiLoad",
       "type": "script",
       "ipinfo": {
         "domain": "maps.googleapis.com",
-        "ip": "142.250.66.74",
-        "hostname": "hkg12s27-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "172.217.117.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.315,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "172.217.117.4",
+          "prefix": "172.217.117.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
+    },
+    {
+      "originalUrl": "https://fonts.googleapis.com/css?family=Google+Sans+Text:400&text=%E2%86%90%E2%86%92%E2%86%91%E2%86%93&lang=zh",
+      "type": "stylesheet",
+      "ipinfo": {
+        "domain": "fonts.googleapis.com",
+        "ip": "173.194.174.95",
+        "hostname": "td-in-f95.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "24.1469,120.6839",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.facebook.com/tr/?id=734920000771530&ev=PageView&dl=https%3A%2F%2Fwww.skh.org.tw&rl=https%3A%2F%2Fwww.skh.org.tw&if=false&ts=1784557956853&iw=false&sw=1280&sh=720&v=2.9.357&r=stable&ec=0&o=4124&aems=0%3B0&fbp=fb.2.1784557956850.524596744595140872&cs_est=true&pm=1&hrl=3f5370&cdl=API_unavailable&plt=1431&ups[pv]=%7B%7D&ups[rpv]=%7B%7D&it=1784557956472&coo=false&cs_cc=1&cas=7691275867600926%2C5929501177063538&dlc=1&rlc=1&expv2[0]=pl0&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra0&expv2[4]=rp0&expv2[5]=im0&expv2[6]=hf0&rqm=GET",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
     }
   ]
 }

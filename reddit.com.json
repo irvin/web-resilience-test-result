@@ -1,12 +1,13 @@
 {
   "url": "https://reddit.com",
-  "canonicalURL": "https://www.reddit.com/",
+  "canonicalURL": "https://reddit.com",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:04:58.421Z",
+  "timestamp": "2026-07-20T13:02:23.036Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 374,
-  "uniqueDomains": 12,
+  "requestCount": 3,
+  "uniqueDomains": 2,
   "test_results": {
     "domestic": {
-      "cloud": 4,
+      "cloud": 0,
       "direct": 0
     },
     "foreign": {
-      "cloud": 8,
+      "cloud": 2,
       "direct": 0
     }
   },
@@ -42,7 +43,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "reddit.com",
-        "ip": "151.101.193.140",
+        "ip": "151.101.65.140",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -52,8 +53,24 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 125.933,
-        "detection_method": "rtt"
+        "rtt": 39.428,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "151.101.65.140",
+          "prefix": "151.101.65.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 57,
+          "location_count": 57
+        }
       }
     },
     {
@@ -61,25 +78,6 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.reddit.com",
-        "ip": "199.232.113.140",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": 62.784,
-        "detection_method": "rtt"
-      }
-    },
-    {
-      "originalUrl": "https://www.redditstatic.com/shreddit/zh-TW/5r73EsgItq.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.redditstatic.com",
         "ip": "146.75.45.140",
         "city": "Singapore",
         "region": "Singapore",
@@ -90,171 +88,24 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 159.691,
-        "detection_method": "rtt"
-      }
-    },
-    {
-      "originalUrl": "https://external-preview.redd.it/greenlands-pm-has-a-blunt-message-for-trump-we-choose-v0-opHiNthvg8IlxjTpblbaFeJbPkYyXNZTRBLKgBfWoBs.jpeg?width=320&crop=smart&auto=webp&s=393d61ea4cb63a70710033d42f798a01e3a6aed2",
-      "type": "image",
-      "ipinfo": {
-        "domain": "external-preview.redd.it",
-        "ip": "146.75.45.140",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": 49.938,
-        "detection_method": "rtt"
-      }
-    },
-    {
-      "originalUrl": "https://styles.redditmedia.com/t5_2qh13/styles/communityIcon_pldiwqvsyns91.png?width=48&height=48&frame=1&auto=webp&crop=48%3A48%2Csmart&s=8273bba36ff5e6e307f967e93e4e104139b76b89",
-      "type": "image",
-      "ipinfo": {
-        "domain": "styles.redditmedia.com",
-        "ip": "199.232.113.140",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": 148.113,
-        "detection_method": "rtt"
-      }
-    },
-    {
-      "originalUrl": "https://b.thumbs.redditmedia.com/t622Aw3Yrn8EWLcC5tECrHEV-pvBAZDTJBFVBBFqUaI.png",
-      "type": "image",
-      "ipinfo": {
-        "domain": "b.thumbs.redditmedia.com",
-        "ip": "199.232.113.140",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": 147.977,
-        "detection_method": "rtt"
-      }
-    },
-    {
-      "originalUrl": "https://preview.redd.it/11nmnb5av4dg1.jpg?width=216&crop=smart&auto=webp&s=4d8af446962fb7fd829a8f31eee26e3e44a6d283",
-      "type": "image",
-      "ipinfo": {
-        "domain": "preview.redd.it",
-        "ip": "199.232.113.140",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": 62.078,
-        "detection_method": "rtt"
-      }
-    },
-    {
-      "originalUrl": "https://emoji.redditmedia.com/9ypx1kyfihid1_t5_2qh3l/News",
-      "type": "image",
-      "ipinfo": {
-        "domain": "emoji.redditmedia.com",
-        "ip": "199.232.113.140",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "cf-ray": "9bd938d9cc73a355-TPE",
-        "detection_method": "header"
-      }
-    },
-    {
-      "originalUrl": "https://www.google.com/recaptcha/enterprise.js?render=6LfirrMoAAAAAHZOipvza4kpp_VtTwLNuXVwURNQ",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.204.36",
-        "hostname": "hkg07s38-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://accounts.google.com/gsi/client",
-      "type": "script",
-      "ipinfo": {
-        "domain": "accounts.google.com",
-        "ip": "64.233.189.84",
-        "hostname": "tl-in-f84.1e100.net",
-        "city": "Taichung",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "24.1469,120.6839",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.gstatic.com/recaptcha/releases/9TiwnJFHeuIw_s0wSd3fiKfN/recaptcha__zh_tw.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.gstatic.com",
-        "ip": "142.250.77.3",
-        "hostname": "nctsaa-ab-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://i.redd.it/snoovatar/snoo_assets/marketing/mindblown_40.png",
-      "type": "image",
-      "ipinfo": {
-        "domain": "i.redd.it",
-        "ip": "146.75.45.140",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": 49.972,
-        "detection_method": "rtt"
+        "rtt": 68.257,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "146.75.45.140",
+          "prefix": "146.75.45.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 2,
+          "location_count": 2
+        }
       }
     }
   ]

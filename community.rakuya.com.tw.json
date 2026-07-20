@@ -2,11 +2,12 @@
   "url": "https://community.rakuya.com.tw",
   "canonicalURL": "https://community.rakuya.com.tw/sell",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T02:28:52.024Z",
+  "timestamp": "2026-07-20T13:56:24.271Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 282,
-  "uniqueDomains": 17,
+  "requestCount": 311,
+  "uniqueDomains": 19,
   "test_results": {
     "domestic": {
-      "cloud": 12,
-      "direct": 5
+      "cloud": 15,
+      "direct": 3
     },
     "foreign": {
-      "cloud": 0,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -42,7 +43,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "community.rakuya.com.tw",
-        "ip": "104.20.25.161",
+        "ip": "172.66.155.48",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -52,9 +53,32 @@
       },
       "category": "domestic/cloud",
       "cloud_provider": {
+        "cf-ray": "a1e277efa8b88808-SIN",
         "country": "tw",
-        "rtt": 4.788,
-        "detection_method": "rtt"
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "172.66.155.48",
+          "prefix": "172.66.155.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 64,
+          "location_count": 64,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -62,8 +86,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "accounts.google.com",
-        "ip": "108.177.97.84",
-        "hostname": "tm-in-f84.1e100.net",
+        "ip": "142.251.8.84",
+        "hostname": "tb-in-f84.1e100.net",
         "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
@@ -122,8 +146,24 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.594,
-        "detection_method": "rtt"
+        "rtt": 6.556,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.36.122.87",
+          "prefix": "34.36.122.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 64,
+          "location_count": 64
+        }
       }
     },
     {
@@ -131,12 +171,12 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.196.202",
-        "hostname": "nctsaa-ac-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "64.233.188.95",
+        "hostname": "tk-in-f95.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "24.1469,120.6839",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
@@ -147,8 +187,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.77.8",
-        "hostname": "nctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -175,6 +215,58 @@
       "category": "domestic/cloud"
     },
     {
+      "originalUrl": "https://sb.scorecardresearch.com/cs/41493098/beacon.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "sb.scorecardresearch.com",
+        "ip": "3.169.137.63",
+        "hostname": "server-3-169-137-63.tpe54.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com/ccm/collect?rcb=14&frm=0&ae=g&auid=249407421.1784555779&dt=%E7%A4%BE%E5%8D%80%E5%88%97%E8%A1%A8%EF%BC%9A%E7%A4%BE%E5%8D%80%E5%84%AA%E8%B3%AA%E7%89%A9%E4%BB%B6%E3%80%81%E5%AF%A6%E5%83%B9%E7%99%BB%E9%8C%84%E3%80%81%E6%88%BF%E5%83%B9%E5%88%86%E6%9E%90%20%7C%20%E6%A8%82%E5%B1%8B%E7%B6%B2%E7%A4%BE%E5%8D%80%E8%A1%8C&en=page_view&dl=https%3A%2F%2Fcommunity.rakuya.com.tw%2Fsell&dr=community.rakuya.com.tw&scrsrc=community.rakuya.com.tw&rnd=1638710635.1784555779&navt=n&npa=0&ep.ads_data_redaction=0&gdid=dY2E1Nz.dNzQzZD&gtm=45E92e67f0v853176373za204zd853176373xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~119896803&apve=1&apvf=f&gap.gtb=1&apvc=1&tft=1784555779194&tfd=717&fmt=8",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.156.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.351,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.156.119",
+          "prefix": "142.251.156.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
+    },
+    {
       "originalUrl": "https://ma.rakuya.com.tw/matomo.js",
       "type": "script",
       "ipinfo": {
@@ -191,68 +283,47 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dr=community.rakuya.com.tw&dl=https%3A%2F%2Fcommunity.rakuya.com.tw%2Fsell&scrsrc=www.googletagmanager.com&rnd=1576967433.1768357730&dt=%E7%A4%BE%E5%8D%80%E5%88%97%E8%A1%A8%EF%BC%9A%E7%A4%BE%E5%8D%80%E5%84%AA%E8%B3%AA%E7%89%A9%E4%BB%B6%E3%80%81%E5%AF%A6%E5%83%B9%E7%99%BB%E9%8C%84%E3%80%81%E6%88%BF%E5%83%B9%E5%88%86%E6%9E%90%20%7C%20%E6%A8%82%E5%B1%8B%E7%B6%B2%E7%A4%BE%E5%8D%80%E8%A1%8C&auid=1632263866.1768357730&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He61c1h1v853176373za200zd853176373xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115616985~115938466~115938468~116682875~116744867~116910502~116988315~117041588&apve=1&apvf=f&apvc=1&tft=1768357729805&tfd=400",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.198.68",
-        "hostname": "lctsaa-ab-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://mposition.rakuya.com.tw/position?task=listScreen&channel=COMMUNITY&tagId=sidebarCommunity&tagFlag=0",
-      "type": "xhr",
-      "ipinfo": {
-        "domain": "mposition.rakuya.com.tw",
-        "ip": "202.55.254.171",
-        "hostname": "171-254-55-202-static.chief.net.tw",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS17408 AboveNet Communications Taiwan",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/direct"
-    },
-    {
       "originalUrl": "https://member.rakuya.com.tw/favorite/api/get-count?type[]=community",
       "type": "xhr",
       "ipinfo": {
         "domain": "member.rakuya.com.tw",
-        "ip": "202.55.254.162",
-        "hostname": "162-254-55-202-static.chief.net.tw",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS17408 AboveNet Communications Taiwan",
-        "timezone": "Asia/Taipei"
+        "ip": "172.66.155.48",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/direct"
-    },
-    {
-      "originalUrl": "https://www.rakuya.com.tw/item-history/sell",
-      "type": "xhr",
-      "ipinfo": {
-        "domain": "www.rakuya.com.tw",
-        "ip": "202.55.254.160",
-        "hostname": "160-254-55-202-static.chief.net.tw",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS17408 AboveNet Communications Taiwan",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/direct"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "cf-ray": "a1e277fa5b0acdd6-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "172.66.155.48",
+          "prefix": "172.66.155.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 64,
+          "location_count": 64,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
+      }
     },
     {
       "originalUrl": "https://webmsg.rakuya.com.tw/passive/passive_message/check?url=https%3A%2F%2Fcommunity.rakuya.com.tw%2Fsell",
@@ -271,27 +342,7 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://server-side-tagging-4amklidimq-uc.a.run.app/g/collect?v=2&tid=G-HVBNC2NJZE&gtm=45je61c1h1v9167067160z8853176373za20gzb853176373zd853176373&_p=1768357729616&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=589995399.1768357730&ecid=460135731&ul=en-us&sr=1280x720&_fplc=0&ur=TW-TPQ&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AAAAAAQ&sst.etld=google.com.tw&sst.tft=1768357729616&sst.lpc=89787145&sst.navt=n&sst.ude=0&sst.sw_exp=1&_s=2&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115938466~115938468~116682875~116744867~116988316~117041588&sid=1768357729&sct=1&seg=0&dl=https%3A%2F%2Fcommunity.rakuya.com.tw%2Fsell&dr=https%3A%2F%2Fcommunity.rakuya.com.tw%2F&dt=%E7%A4%BE%E5%8D%80%E5%88%97%E8%A1%A8%EF%BC%9A%E7%A4%BE%E5%8D%80%E5%84%AA%E8%B3%AA%E7%89%A9%E4%BB%B6%E3%80%81%E5%AF%A6%E5%83%B9%E7%99%BB%E9%8C%84%E3%80%81%E6%88%BF%E5%83%B9%E5%88%86%E6%9E%90%20%7C%20%E6%A8%82%E5%B1%8B%E7%B6%B2%E7%A4%BE%E5%8D%80%E8%A1%8C%E6%83%85&_tu=RA&en=PageView&ep.site_group=A&ep.utm_creative_format=&ep.utm_marketing_tropic=&ep.rakuya_platform=web&ep.page_pathvar=%2Fsell&ep.x-line-deduplication_key=17683577298011&ep.x-line-hashed_phone=&ep.x-line-hashed_email=&ep.page_hostname=community.rakuya.com.tw&ep.PageView=true&ep.LINECAPI=true&_et=13&tfd=574&richsstsse",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "server-side-tagging-4amklidimq-uc.a.run.app",
-        "ip": "34.143.73.2",
-        "city": "Mountain View",
-        "region": "California",
-        "country": "US",
-        "loc": "38.0088,-122.1175",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "rtt": 4.29,
-        "detection_method": "rtt"
-      }
-    },
-    {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-HVBNC2NJZE&cid=589995399.1768357730&gtm=45je61c1h1v9167067160z8853176373za20gzb853176373zd853176373&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115938466~115938468~116682875~116744867~116988316~117041588&z=437121644",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-RX72HKQ587&cid=707072296.1784555780&gtm=45g92e67f0v885868412z8853176373za20kzb853176373zd853176373&rcb=13&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938465~115938468~118897920~118897930~118981135~119709549&z=499888573",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
@@ -307,20 +358,147 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://static.rakuya.com.tw/community_image/906/64475a0b8de59.jpeg",
+      "originalUrl": "https://server-side-tagging-4amklidimq-uc.a.run.app/g/collect?v=2&tid=G-HVBNC2NJZE&gtm=45g92e67f0v9167067160z8853176373za20kzb853176373zd853176373&_p=1784555779096&gcd=13l3l3l3l1l1&npa=0&dma=0&gdid=dY2E1Nz&ecid=1251568274&_eu=AAAAAGQ&_fplc=0&are=1&cid=707072296.1784555780&frm=0&pscdl=noapi&rcb=9&sr=1280x720&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uam=&uamb=0&uap=macOS&uapv=10_15_7&uaw=0&ul=zh-tw&ur=TW-TPE&sst.etld=google.com.tw&sst.tft=1784555779096&sst.lpc=89787145&sst.navt=n&sst.ude=0&sst.sw_exp=1&gaf=2&_s=2&tag_exp=115938465~115938469~118897920~118897930~119793973&sid=1784555780&sct=1&seg=0&dl=https%3A%2F%2Fcommunity.rakuya.com.tw%2Fsell&dr=https%3A%2F%2Fcommunity.rakuya.com.tw%2F&dt=%E7%A4%BE%E5%8D%80%E5%88%97%E8%A1%A8%EF%BC%9A%E7%A4%BE%E5%8D%80%E5%84%AA%E8%B3%AA%E7%89%A9%E4%BB%B6%E3%80%81%E5%AF%A6%E5%83%B9%E7%99%BB%E9%8C%84%E3%80%81%E6%88%BF%E5%83%B9%E5%88%86%E6%9E%90%20%7C%20%E6%A8%82%E5%B1%8B%E7%B6%B2%E7%A4%BE%E5%8D%80%E8%A1%8C%E6%83%85&_tu=RA&en=PageView&gap.gtb=2&ep.from=%20-%20%20-%20model%3A%20&ep.site_group=A%20-%20realprice%3A%20&ep.utm_creative_format=&ep.utm_marketing_tropic=&ep.rakuya_platform=web&ep.rakuya_from2=%20-%20%20-%20&ep.page_pathvar=%2Fsell&ep.x-line-deduplication_key=pv_17845557791882&ep.x-line-hashed_phone=&ep.x-line-hashed_email=&ep.page_hostname=community.rakuya.com.tw&ep.PageView=true&ep.LINECAPI=true&_et=16&tfd=1551&richsstsse",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "server-side-tagging-4amklidimq-uc.a.run.app",
+        "ip": "34.143.74.2",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.75,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.143.74.2",
+          "prefix": "34.143.74.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
+    },
+    {
+      "originalUrl": "https://static.rakuya.com.tw/community_image/60371/64474c006cb67.jpeg",
       "type": "image",
       "ipinfo": {
         "domain": "static.rakuya.com.tw",
-        "ip": "3.169.137.58",
-        "hostname": "server-3-169-137-58.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "65.9.180.113",
+        "hostname": "server-65-9-180-113.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://capi-automation.s3.us-east-2.amazonaws.com/public/client_js/capiParamBuilder/clientParamBuilder.bundle.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "capi-automation.s3.us-east-2.amazonaws.com",
+        "ip": "3.5.90.118",
+        "city": "Columbus",
+        "region": "Ohio",
+        "country": "US",
+        "loc": "39.9612,-82.9988",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "America/New_York"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 200.756,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "3.5.90.118",
+          "prefix": "3.5.90.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.facebook.com/tr/?id=182613354898571&ev=PageView&dl=https%3A%2F%2Fcommunity.rakuya.com.tw%2Fsell&rl=https%3A%2F%2Fcommunity.rakuya.com.tw%2F&if=false&ts=1784555780086&iw=false&sw=1280&sh=720&v=2.9.357&r=stable&a=tmSimo-GTM-WebTemplate-2.0.8-fcg&ec=0&o=4126&aems=0%3B0&fbp=fb.2.1784555780079.239494876110611737&cdl=API_unavailable&pmd[title]=%E7%A4%BE%E5%8D%80%E5%88%97%E8%A1%A8%EF%BC%9A%E7%A4%BE%E5%8D%80%E5%84%AA%E8%B3%AA%E7%89%A9%E4%BB%B6%E3%80%81%E5%AF%A6%E5%83%B9%E7%99%BB%E9%8C%84%E3%80%81%E6%88%BF%E5%83%B9%E5%88%86%E6%9E%90%20%7C%20%E6%A8%82%E5%B1%8B%E7%B6%B2%E7%A4%BE%E5%8D%80%E8%A1%8C%E6%83%85&pmd[locale]=zh-TW&pmd[description]=%E5%84%AA%E8%B3%AA%E7%A4%BE%E5%8D%80%E4%B8%80%E8%A6%BD%EF%BC%8C%E6%9C%80%E6%96%B075297%E5%80%8B%E7%A4%BE%E5%8D%80%E8%B3%87%E6%96%99%E3%80%81%E5%84%AA%E8%B3%AA%E7%A4%BE%E5%8D%80%E6%88%BF%E5%B1%8B%E5%BE%85%E5%94%AE%E7%89%A9%E4%BB%B6%E3%80%81%E7%A4%BE%E5%8D%80%E6%88%BF%E5%83%B9%E8%A9%B3%E7%B4%B0%E5%88%86%E6%9E%90%E3%80%81%E6%9C%80%E6%96%B0%E5%AF%A6%E5%83%B9%E7%99%BB%E9%8C%84%E8%B3%87%E6%96%99%EF%BC%8C%E6%A8%82%E5%B1%8B%E7%B6%B2%E6%9B%B4%E6%8F%90%E4%BE%9B%E7%86%B1%E9%96%80%E4%BA%BA%E6%B0%A3%E7%A4%BE%E5%8D%80%E6%8E%92%E8%A1%8C%EF%BC%8C%E7%AB%8B%E5%8D%B3%E9%BB%9E%E6%93%8A%E9%80%B2%E5%85%A5%E6%9F%A5%E7%9C%8B%E5%90%A7%EF%BC%81&plt=1194&iss=1&imft=1&tz=480&it=1784555779827&coo=false&eid=pv_17845557791882&tm=1&expv2[0]=pl1&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=im0&expv2[6]=hf0&rqm=GET",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://www.rakuya.com.tw/gtm-data/item-data-layer/imprs",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "www.rakuya.com.tw",
+        "ip": "172.66.155.48",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "cf-ray": "a1e277fcfa8bfd23-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "172.66.155.48",
+          "prefix": "172.66.155.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 64,
+          "location_count": 64,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
+      }
     }
   ]
 }

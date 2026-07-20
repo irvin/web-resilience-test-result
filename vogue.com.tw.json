@@ -2,11 +2,12 @@
   "url": "https://vogue.com.tw",
   "canonicalURL": "https://www.vogue.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:13:01.075Z",
+  "timestamp": "2026-07-20T13:07:21.532Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 271,
-  "uniqueDomains": 25,
+  "requestCount": 397,
+  "uniqueDomains": 31,
   "test_results": {
     "domestic": {
-      "cloud": 18,
-      "direct": 1
+      "cloud": 23,
+      "direct": 2
     },
     "foreign": {
-      "cloud": 4,
+      "cloud": 5,
       "direct": 1
     }
   },
@@ -42,18 +43,33 @@
       "type": "document",
       "ipinfo": {
         "domain": "vogue.com.tw",
-        "ip": "151.101.66.133",
-        "city": "San Francisco",
-        "region": "California",
+        "ip": "54.196.233.61",
+        "hostname": "ec2-54-196-233-61.compute-1.amazonaws.com",
+        "city": "Ashburn",
+        "region": "Virginia",
         "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "America/Los_Angeles"
+        "loc": "39.0437,-77.4875",
+        "org": "AS14618 Amazon.com, Inc.",
+        "timezone": "America/New_York"
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 33.678,
-        "detection_method": "rtt"
+        "rtt": null,
+        "detection_method": "rtt",
+        "rtt_error": "timeout",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "54.196.233.61",
+          "prefix": "54.196.233.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
       }
     },
     {
@@ -61,12 +77,12 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.vogue.com.tw",
-        "ip": "3.169.137.58",
-        "hostname": "server-3-169-137-58.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "65.9.180.75",
+        "hostname": "server-65-9-180-75.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -77,12 +93,12 @@
       "type": "image",
       "ipinfo": {
         "domain": "media.vogue.com.tw",
-        "ip": "3.169.137.104",
-        "hostname": "server-3-169-137-104.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "65.9.180.18",
+        "hostname": "server-65-9-180-18.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -93,12 +109,12 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.196.202",
-        "hostname": "nctsaa-ac-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "74.125.23.95",
+        "hostname": "tg-in-f95.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "24.1469,120.6839",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
@@ -109,12 +125,12 @@
       "type": "script",
       "ipinfo": {
         "domain": "privacy.condenastdigital.com",
-        "ip": "3.169.121.3",
-        "hostname": "server-3-169-121-3.tpe53.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "3.169.121.36",
+        "hostname": "server-3-169-121-36.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -125,24 +141,44 @@
       "type": "script",
       "ipinfo": {
         "domain": "fundingchoicesmessages.google.com",
-        "ip": "142.250.196.206",
-        "hostname": "nctsaa-ac-in-f14.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "74.125.203.102",
+        "hostname": "th-in-f102.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "24.1469,120.6839",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://lil.condenastdigital.com/cnd/c.gif",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "lil.condenastdigital.com",
+        "ip": "104.18.29.142",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e22fddf8f0b846-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-TPWMSWZ&l=dataLayer",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
+        "ip": "142.250.192.136",
+        "hostname": "bom12s18-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -151,55 +187,6 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "blob:https://www.vogue.com.tw/cc262d4b-eea8-4768-9ccd-2026a785e70a",
-      "type": "other",
-      "ipinfo": {
-        "domain": ""
-      }
-    },
-    {
-      "originalUrl": "https://bd1cec50-00d1-4ce9-9572-785857419a1e.prmutv.co/v2.0/pxid?k=5e2454b0-c97a-431a-9f1e-416c0de6bf7f",
-      "type": "xhr",
-      "ipinfo": {
-        "domain": "bd1cec50-00d1-4ce9-9572-785857419a1e.prmutv.co",
-        "ip": "35.241.9.51",
-        "hostname": "51.9.241.35.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
-        "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "rtt": 4.622,
-        "detection_method": "rtt"
-      }
-    },
-    {
-      "originalUrl": "https://permutive.vogue.com.tw/v2.0/watson?k=5e2454b0-c97a-431a-9f1e-416c0de6bf7f",
-      "type": "xhr",
-      "ipinfo": {
-        "domain": "permutive.vogue.com.tw",
-        "ip": "34.107.161.9",
-        "hostname": "9.161.107.34.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
-        "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "rtt": 5.184,
-        "detection_method": "rtt"
-      }
     },
     {
       "originalUrl": "https://cdn.parsely.com/keys/vogue.com.tw/p.js?gtm_ver=3.1",
@@ -237,7 +224,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "s.skimresources.com",
-        "ip": "199.232.113.91",
+        "ip": "146.75.45.91",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",
@@ -247,8 +234,25 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 43.976,
-        "detection_method": "rtt"
+        "x-served-by": "cache-nrt-rjtf7700055-NRT",
+        "rtt": 63.774,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "146.75.45.91",
+          "prefix": "146.75.45.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 2,
+          "location_count": 2
+        }
       }
     },
     {
@@ -256,12 +260,12 @@
       "type": "script",
       "ipinfo": {
         "domain": "asset.fwpub1.com",
-        "ip": "3.169.137.82",
-        "hostname": "server-3-169-137-82.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "65.9.180.90",
+        "hostname": "server-65-9-180-90.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -274,54 +278,180 @@
         "domain": "sb.scorecardresearch.com",
         "ip": "3.169.137.16",
         "hostname": "server-3-169-137-16.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fwww.vogue.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=499588751.1768353169&dt=Vogue%20Taiwan&auid=805113320.1768353169&navt=n&npa=0&_tu=CA&gtm=45He61c1v811949395za200zd811949395xea&gcs=G111&gcd=13r3r3r3r5l1&dma=0&tcfd=10000&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115616985~115938466~115938468~117041588&tft=1768353168881&tfd=2368&apve=1&apvf=f",
-      "type": "fetch",
+      "originalUrl": "https://emrldtp.com/NTQ3NDM0.js?t=547434",
+      "type": "script",
       "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.196.196",
-        "hostname": "nctsaa-ac-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "domain": "emrldtp.com",
+        "ip": "3.169.137.91",
+        "hostname": "server-3-169-137-91.tpe54.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com/ccm/collect?rcb=17&frm=0&ae=g&auid=1741750303.1784552826&dt=Vogue%20Taiwan&en=page_view&dl=https%3A%2F%2Fwww.vogue.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=1629724654.1784552826&navt=n&npa=0&ep.ads_data_redaction=0&_tu=CA&gtm=45He67f0v811949395za200zd811949395xea&gcs=G111&gcd=13r3r3r3r5l1&dma=0&tcfd=10000&tag_exp=115938465~115938469~118395334~118897920~118897930~119709550~119896803&apve=1&apvf=f&apvc=1&tft=1784552826395&tfd=2266&fmt=8",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.152.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.714,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.152.119",
+          "prefix": "142.251.152.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
+    },
+    {
+      "originalUrl": "https://4d.condenastdigital.com/user?xid=338d72e9-6725-4fa6-b634-0be862efb719",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "4d.condenastdigital.com",
+        "ip": "54.192.248.27",
+        "hostname": "server-54-192-248-27.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://bd1cec50-00d1-4ce9-9572-785857419a1e.prmutv.co/v2.0/pxid?k=5e2454b0-c97a-431a-9f1e-416c0de6bf7f",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "bd1cec50-00d1-4ce9-9572-785857419a1e.prmutv.co",
+        "ip": "35.241.9.51",
+        "hostname": "51.9.241.35.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.8,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "35.241.9.51",
+          "prefix": "35.241.9.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 64,
+          "location_count": 64
+        }
+      }
+    },
+    {
+      "originalUrl": "https://permutive.vogue.com.tw/v2.0/watson?k=5e2454b0-c97a-431a-9f1e-416c0de6bf7f",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "permutive.vogue.com.tw",
+        "ip": "34.107.161.9",
+        "hostname": "9.161.107.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 7.756,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "34.107.161.9",
+          "prefix": "34.107.161.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 63,
+          "location_count": 63
+        }
+      }
     },
     {
       "originalUrl": "https://cdn.treasuredata.com/sdk/2.2/td.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "cdn.treasuredata.com",
-        "ip": "3.169.55.80",
-        "hostname": "server-3-169-55-80.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "3.169.55.73",
+        "hostname": "server-3-169-55-73.tpe54.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/765808616/?random=1768353168910&cv=11&fst=1768352400000&bg=ffffff&guid=ON&async=1&gtm=45be61c1v9186286943z8811949395za20gzb811949395zd811949395xea&gcd=13r3r3r3r5l1&dma=0&tcfd=10000&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391252~115616985~115938466~115938468~116910503~117041587&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.vogue.com.tw%2F&frm=0&tiba=Vogue%20Taiwan&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=805113320.1768353169&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&_tu=CA&data=ads_data_redaction%3Dfalse&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEA56J1eT3pDHiKofBxPCDtDYZvMUO6xum5B1vyfsT9S0lXL4Jqs3LZLSQtXJA4qxkXib9SoM8n9TU3tzI3zD58MwJul2Hi5ngX18DXvxz6aO5cfPSyd_jI5L8z2S1CNEiXaDCOr_Y2T7BGJLerBCjFznZ-4GVb4eJU8KkgT_YahDlOKTmkI862qSx3&random=3347371906&rmt_tld=1&ipr=y",
+      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/765812945/?random=1784552826575&cv=11&fst=1784552400000&bg=ffffff&guid=ON&async=1&gtm=45be67f0v9185682453z8811949395za20gzb811949395zd811949395xea&gcd=13r3r3r3r5l1&dma=0&tcfd=10000&tag_exp=115938465~115938468~118897920~118897930~119381662~119773331&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.vogue.com.tw%2F&rcb=4&frm=0&tiba=Vogue%20Taiwan&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1741750303.1784552826&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&_tu=CA&data=ads_data_redaction%3Dfalse&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS7AEAEQoqgQVjCMgHrhVnP3lTHx4wFSmEAkpxfPwugD53KVIJB6w44eqKAWNVwxSXlf5TNdziTtKJKM2P4rCVUfNq_X-em3ZehKKhQtj7XC0PiMloYCkW_TJdITQrpbLp483MUljV9zNDHOqhRTp8W3H_8AWfbp7VVlnj5P7l68-IgP_G61PuBnmew75PWGalasnWFpfYmrj9kY7GnPGNJob8whDuN7drsHGwyil_hWq7Ds8JvvTqOl05z_WrjxsEhHc12edS52P93zGYPyK25R8RkOLD2Wzx4-isVHuMz-60wiH559NAAAMRn60aMg&random=2880648437&rmt_tld=1&ipr=y",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.204.35",
-        "hostname": "hkg07s38-in-f3.1e100.net",
+        "ip": "142.250.77.195",
+        "hostname": "del11s08-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -332,28 +462,12 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://ssc.vogue.com.tw/get_cookie_id?cookie_domain=vogue.com.tw&r=1768353169090&callback=TreasureJSONPCallback0",
-      "type": "script",
-      "ipinfo": {
-        "domain": "ssc.vogue.com.tw",
-        "ip": "3.169.55.101",
-        "hostname": "server-3-169-55-101.tpe54.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://p1.parsely.com/plogger/?rand=1768353169180&plid=f8646493-6cba-4600-9a26-fbcdc596cc64&idsite=vogue.com.tw&url=https%3A%2F%2Fwww.vogue.com.tw%2F&urlref=&screen=1280x720%7C1280x720%7C24&data=%7B%22xid%22%3A%22%22%2C%22user_bucket%22%3A%2245%22%2C%22amg_user_id%22%3A%22%22%2C%22parsely%3Ametadata-detection%22%3A%7B%22version%22%3A0%2C%22url%22%3A%22https%3A%2F%2Fwww.vogue.com.tw%2F%22%2C%22hash%22%3A1643541504%7D%7D&sid=1&surl=https%3A%2F%2Fwww.vogue.com.tw%2F&sref=&sts=1768353169177&slts=0&title=Vogue+Taiwan&date=Wed+Jan+14+2026+09%3A12%3A49+GMT%2B0800+(Taipei+Standard+Time)&action=pageview&js=1&pvid=3db28526-0491-4ac1-a475-89c7a6a5f68a&u=pid%3D2635e106-46e9-4c98-a967-1bfabc1ca443",
+      "originalUrl": "https://p1.parsely.com/plogger/?rand=1784552826783&plid=f31551c2-c21b-4d54-8471-486ebd45206e&idsite=vogue.com.tw&url=https%3A%2F%2Fwww.vogue.com.tw%2F&urlref=&screen=1280x720%7C1280x720%7C30&data=%7B%22xid%22%3A%22%22%2C%22user_bucket%22%3A%2222%22%2C%22amg_user_id%22%3A%22%22%2C%22parsely%3Ametadata-detection%22%3A%7B%22version%22%3A0%2C%22url%22%3A%22https%3A%2F%2Fwww.vogue.com.tw%2F%22%2C%22hash%22%3A-1770285997%7D%7D&sid=1&surl=https%3A%2F%2Fwww.vogue.com.tw%2F&sref=&sts=1784552826781&slts=0&title=Vogue+Taiwan&date=Mon+Jul+20+2026+21%3A07%3A06+GMT%2B0800+(%E5%8F%B0%E5%8C%97%E6%A8%99%E6%BA%96%E6%99%82%E9%96%93)&action=pageview&js=1&pvid=c756642f-2f02-4ab6-a258-b3fba00b4e3e&u=pid%3D5d70322d-c643-461d-8131-108afdcd75d7",
       "type": "image",
       "ipinfo": {
         "domain": "p1.parsely.com",
-        "ip": "52.27.163.48",
-        "hostname": "ec2-52-27-163-48.us-west-2.compute.amazonaws.com",
+        "ip": "44.242.33.86",
+        "hostname": "ec2-44-242-33-86.us-west-2.compute.amazonaws.com",
         "city": "Boardman",
         "region": "Oregon",
         "country": "US",
@@ -361,29 +475,28 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://ct.pinterest.com/v3/?tid=2613993160362&event=PermutiveSegmentEntry&ed[segment_id]=%22141636%22",
-      "type": "image",
-      "ipinfo": {
-        "domain": "ct.pinterest.com",
-        "ip": "146.75.44.84",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
-      },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 48.79,
-        "detection_method": "rtt"
+        "rtt": null,
+        "detection_method": "rtt",
+        "rtt_error": "timeout",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "44.242.33.86",
+          "prefix": "44.242.33.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
       }
     },
     {
-      "originalUrl": "https://t.skimresources.com/api/v2/robots.txt?__skimjs_preflight__please_ignore__=true&rnd=0.1958202611827493",
+      "originalUrl": "https://t.skimresources.com/api/v2/robots.txt?__skimjs_preflight__please_ignore__=true&rnd=0.18031972919358707",
       "type": "image",
       "ipinfo": {
         "domain": "t.skimresources.com",
@@ -399,12 +512,28 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.228,
-        "detection_method": "rtt"
+        "rtt": 5.662,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "35.201.67.47",
+          "prefix": "35.201.67.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
       }
     },
     {
-      "originalUrl": "https://p.skimresources.com/px.gif?ch=1&rn=5.563430046144632",
+      "originalUrl": "https://p.skimresources.com/px.gif?ch=1&rn=3.3473846363677557",
       "type": "image",
       "ipinfo": {
         "domain": "p.skimresources.com",
@@ -420,8 +549,24 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 5.123,
-        "detection_method": "rtt"
+        "rtt": 6.065,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "35.190.91.160",
+          "prefix": "35.190.91.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 64,
+          "location_count": 64
+        }
       }
     },
     {
@@ -441,21 +586,170 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 5.059,
-        "detection_method": "rtt"
+        "rtt": 5.602,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "35.190.59.101",
+          "prefix": "35.190.59.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
       }
     },
     {
-      "originalUrl": "https://aam.a47b.com/aam?asid=dP4XOPhO&af=728x90&ad=138449253925&adv=4747210444&ca=6388924023&io=3258169101&pl=138449253925&ra=2142597743&st=vogue.com.tw&edst=22336649870&spl=/5574/tw.vogue/hero/homepage/bundle/1",
+      "originalUrl": "https://ssc.vogue.com.tw/get_cookie_id?cookie_domain=vogue.com.tw&r=1784552826905&callback=TreasureJSONPCallback0",
+      "type": "script",
+      "ipinfo": {
+        "domain": "ssc.vogue.com.tw",
+        "ip": "65.9.180.112",
+        "hostname": "server-65-9-180-112.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://sentry.avs.io/api/20/envelope/?sentry_version=7&sentry_key=1c30377dafc708e9dfdf6df7e355a97c&sentry_client=sentry.javascript.browser%2F9.44.0",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "sentry.avs.io",
+        "ip": "54.192.248.69",
+        "hostname": "server-54-192-248-69.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://fh-118116076e9a4c2a96a99fbb70bea2a0.ecs.us-west-2.on.aws/events?cee=no",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "fh-118116076e9a4c2a96a99fbb70bea2a0.ecs.us-west-2.on.aws",
+        "ip": "184.32.118.130",
+        "hostname": "ec2-184-32-118-130.us-west-2.compute.amazonaws.com",
+        "city": "Boardman",
+        "region": "Oregon",
+        "country": "US",
+        "loc": "45.8399,-119.7006",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": null,
+        "detection_method": "rtt",
+        "rtt_error": "timeout",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "184.32.118.130",
+          "prefix": "184.32.118.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.facebook.com/tr/?id=587218698112197&ev=PageView&dl=https%3A%2F%2Fwww.vogue.com.tw%2F&rl=&if=false&ts=1784552827190&iw=false&sw=1280&sh=720&v=2.9.357&r=stable&ec=0&o=4125&aems=0%3B0&fbp=fb.2.1784552827188.629157207442091864&eid=ob3_plugin-set_a6389550ed4a27e3eef0feee0e3b5d29cc3ca92d11ba8514f08971f54117a353&cs_est=true&ler=empty&cdl=API_unavailable&plt=1907.1999999999534&tz=480&it=1784552826928&coo=false&dpo=LDU&dpoco=0&dpost=0&cf=1&expv2[0]=pl1&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra0&expv2[4]=rp0&expv2[5]=im0&expv2[6]=hf0&rqm=GET",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://www.travelpayouts.com/check_auth",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.travelpayouts.com",
+        "ip": "54.192.248.3",
+        "hostname": "server-54-192-248-3.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://ct.pinterest.com/v3/?tid=2613993160362&event=PermutiveSegmentEntry&ed[segment_id]=%22179797%22",
+      "type": "image",
+      "ipinfo": {
+        "domain": "ct.pinterest.com",
+        "ip": "199.232.112.84",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 65.346,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "199.232.112.84",
+          "prefix": "199.232.112.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 2,
+          "location_count": 2
+        }
+      }
+    },
+    {
+      "originalUrl": "https://aam.a47b.com/aam?asid=dP4XOPhO&af=970x250&ad=138548221022&adv=4747210444&ca=7245431935&io=4003997900&pl=138548221022&ra=2028063757&st=vogue.com.tw&edst=22336649870&spl=/5574/tw.vogue/hero/homepage/bundle/1",
       "type": "script",
       "ipinfo": {
         "domain": "aam.a47b.com",
         "ip": "3.169.137.30",
         "hostname": "server-3-169-137-30.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },

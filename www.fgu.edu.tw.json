@@ -2,11 +2,12 @@
   "url": "https://www.fgu.edu.tw/",
   "canonicalURL": "https://www.fgu.edu.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T02:34:34.510Z",
+  "timestamp": "2026-07-20T13:47:39.689Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,12 +25,12 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 294,
-  "uniqueDomains": 17,
+  "requestCount": 350,
+  "uniqueDomains": 23,
   "test_results": {
     "domestic": {
-      "cloud": 11,
-      "direct": 3
+      "cloud": 16,
+      "direct": 4
     },
     "foreign": {
       "cloud": 2,
@@ -42,12 +43,12 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.fgu.edu.tw",
-        "ip": "120.101.66.100",
-        "hostname": "www1100.fgu.edu.tw",
-        "city": "Yilan",
+        "ip": "120.101.66.99",
+        "hostname": "www1099.fgu.edu.tw",
+        "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "24.7570,121.7530",
+        "loc": "25.0531,121.5264",
         "org": "AS1659 Taiwan Academic Network (TANet) Information Center",
         "timezone": "Asia/Taipei"
       },
@@ -60,58 +61,22 @@
         "domain": "website.fgu.edu.tw",
         "ip": "120.101.66.80",
         "hostname": "website.fgu.edu.tw",
-        "city": "Yilan",
+        "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "24.7570,121.7530",
+        "loc": "25.0531,121.5264",
         "org": "AS1659 Taiwan Academic Network (TANet) Information Center",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css",
-      "type": "stylesheet",
-      "ipinfo": {
-        "domain": "stackpath.bootstrapcdn.com",
-        "ip": "104.18.11.207",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "cf-ray": "9bd9bc0199084a30-TPE",
-        "detection_method": "header"
-      }
-    },
-    {
       "originalUrl": "https://apis.google.com/js/platform.js",
       "type": "script",
       "ipinfo": {
         "domain": "apis.google.com",
-        "ip": "142.250.198.78",
-        "hostname": "lctsaa-ab-in-f14.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=UA-84018348-1",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.77.14",
+        "hostname": "nctsaa-ab-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -144,7 +109,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd9bc017f244a0c-TPE",
+        "cf-ray": "a1e26afc183f809e-TPE",
         "detection_method": "header"
       }
     },
@@ -153,23 +118,23 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.198.74",
-        "hostname": "lctsaa-ab-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "64.233.188.95",
+        "hostname": "tk-in-f95.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "24.1469,120.6839",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://code.jquery.com/ui/1.12.1/jquery-ui.js",
+      "originalUrl": "https://code.jquery.com/ui/1.13.2/jquery-ui.js",
       "type": "script",
       "ipinfo": {
         "domain": "code.jquery.com",
-        "ip": "151.101.2.137",
+        "ip": "151.101.193.155",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -179,33 +144,34 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 33.667,
-        "detection_method": "rtt"
+        "x-served-by": "cache-lga21926-LGA, cache-sin-wsat1880033-SIN",
+        "rtt": 34.917,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "151.101.193.155",
+          "prefix": "151.101.193.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 54,
+          "location_count": 54
+        }
       }
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&tid=AW-674644842&en=page_view&dl=https%3A%2F%2Fwebsite.fgu.edu.tw%2F&scrsrc=www.googletagmanager.com&rnd=1229138495.1768358068&dt=%E4%BD%9B%E5%85%89%E5%A4%A7%E5%AD%B8&auid=1523403712.1768358068&navt=n&npa=0&gtm=45be61c1za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391252~115938466~115938468~115985660~116744867~117041587&tft=1768358067796&tfd=2174&apve=1&apvf=f",
-      "type": "fetch",
+      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=UA-134490040-1",
+      "type": "script",
       "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.196.196",
-        "hostname": "nctsaa-ac-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/674644842/?random=1768358067793&cv=11&fst=1768356000000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be61c1za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391252~115938466~115938468~115985660~116744867~117041587&u_w=1280&u_h=720&url=https%3A%2F%2Fwebsite.fgu.edu.tw%2F%3Flocale%3Dzh_tw&frm=0&tiba=%E4%BD%9B%E5%85%89%E5%A4%A7%E5%AD%B8&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1523403712.1768358068&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEA56J1ee8C451kDuC_OJ7KnChKFnoTrTB6nRR97TwKhq2jTpu1JyGIbRgoNXBzNKcQHubd0sqfB5NMsA8wauo4nTrpxUz-h0TcLutk-S7sXqA3VXJxeFVs9Tni5zb9Sqi44RmM4eE5RgRgPNWKuDkEPnye92UX23Au_tPeqSMxZUcvgbKur1_vfZIe&random=2700475372&rmt_tld=1&ipr=y",
-      "type": "image",
-      "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.77.3",
-        "hostname": "nctsaa-ab-in-f3.1e100.net",
+        "domain": "www.googletagmanager.com",
+        "ip": "142.250.192.136",
+        "hostname": "bom12s18-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -230,22 +196,75 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 54.623,
-        "detection_method": "rtt"
+        "x-served-by": "cache-iad-kiad7000059-IAD, cache-sin-wsat1880091-SIN",
+        "rtt": 69.377,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "199.232.112.157",
+          "prefix": "199.232.112.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 2,
+          "location_count": 2
+        }
       }
     },
     {
-      "originalUrl": "https://www.youtube.com/embed/VqHMWqQ5_do?enablejsapi=1",
+      "originalUrl": "https://www.youtube.com/embed/r-tUa4KoU2U?enablejsapi=1",
       "type": "document",
       "ipinfo": {
         "domain": "www.youtube.com",
-        "ip": "142.250.198.78",
-        "hostname": "lctsaa-ab-in-f14.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
+        "ip": "142.251.155.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
         "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.537,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.155.4",
+          "prefix": "142.251.155.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
+    },
+    {
+      "originalUrl": "https://chatbot.fgu.edu.tw/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "chatbot.fgu.edu.tw",
+        "ip": "65.9.180.75",
+        "hostname": "server-65-9-180-75.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
@@ -267,7 +286,134 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://syndication.twitter.com/settings?session_id=efdafe99e365df16bccc285e814616db8c90990d",
+      "originalUrl": "https://www.google.com/rmkt/collect/11059919847/?random=1784555250424&cv=11&fst=1784555250424&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67f0v9224955463za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930&u_w=1280&u_h=720&url=https%3A%2F%2Fwebsite.fgu.edu.tw%2F%3Flocale%3Dzh_tw&rcb=7&frm=0&tiba=%E4%BD%9B%E5%85%89%E5%A4%A7%E5%AD%B8%C2%A0Fo%20Guang%20University&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=794813824.1784555250&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.157.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.382,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.157.119",
+          "prefix": "142.251.157.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&ngs=1&ibt=1&tid=G-4GQ97J4R9E&cid=2076784972.1784555250&gtm=45be67g0h2v874779232za200zd874779232&rcb=3&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115616985~115938466~115938468~118897920~118897930&z=1142000561",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.196.195",
+        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css",
+      "type": "stylesheet",
+      "ipinfo": {
+        "domain": "cdn.jsdelivr.net",
+        "ip": "104.17.208.5",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "x-served-by": "cache-fra-eddf8230187-FRA, cache-sin-wsat1880045-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "104.17.208.5",
+          "prefix": "104.17.208.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 76,
+          "location_count": 76,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.facebook.com/tr/?id=457747454627852&ev=PageView&dl=https%3A%2F%2Fwebsite.fgu.edu.tw%2F%3Flocale%3Dzh_tw&rl=&if=false&ts=1784555251219&iw=false&sw=1280&sh=720&v=2.9.357&r=stable&ec=0&o=4126&aems=0%3B0&fbp=fb.2.1784555251216.261409019558272432&cs_est=true&ler=empty&cdl=API_unavailable&pmd[title]=%E4%BD%9B%E5%85%89%E5%A4%A7%E5%AD%B8%C2%A0Fo%20Guang%20University&pmd[locale]=zh-Hant&plt=5144.899999999907&iss=1&imft=1&tz=480&it=1784555250899&coo=false&expv2[0]=pl1&expv2[1]=el2&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=ct2&expv2[6]=hf0&rqm=GET",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://ip.abapi.info/text?r=1784555251570",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "ip.abapi.info",
+        "ip": "54.192.248.58",
+        "hostname": "server-54-192-248-58.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://syndication.twitter.com/settings?session_id=ed62c9e58ee6aa452181334414cefc092563acd9",
       "type": "fetch",
       "ipinfo": {
         "domain": "syndication.twitter.com",
@@ -282,18 +428,34 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd9bc1c6fcca9ce-TPE",
+        "cf-ray": "a1e26b16c8704a06-TPE",
         "x-served-by": "t4_p",
         "detection_method": "header"
       }
     },
     {
-      "originalUrl": "https://i.ytimg.com/vi_webp/VqHMWqQ5_do/sddefault.webp",
+      "originalUrl": "https://fgu-chatbot-socket.abapi.info/socket.io/?EIO=4&transport=polling&t=a4d2w94q",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "fgu-chatbot-socket.abapi.info",
+        "ip": "65.9.180.93",
+        "hostname": "server-65-9-180-93.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://i.ytimg.com/vi/r-tUa4KoU2U/maxresdefault.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "i.ytimg.com",
-        "ip": "142.250.196.214",
-        "hostname": "nctsaa-ac-in-f22.1e100.net",
+        "ip": "142.250.77.214",
+        "hostname": "del11s08-in-f22.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -308,13 +470,65 @@
       "type": "xhr",
       "ipinfo": {
         "domain": "jnn-pa.googleapis.com",
-        "ip": "142.250.198.74",
-        "hostname": "lctsaa-ab-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
+        "ip": "172.217.114.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
         "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.357,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "172.217.114.4",
+          "prefix": "172.217.114.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
+    },
+    {
+      "originalUrl": "https://tts-api.abapi.info/get_audio_path",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "tts-api.abapi.info",
+        "ip": "54.192.248.92",
+        "hostname": "server-54-192-248-92.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://files.asiabots.com/audio_cache/8a20c4a0f2c911f0a9160242ac11000a.mp3",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "files.asiabots.com",
+        "ip": "65.9.180.104",
+        "hostname": "server-65-9-180-104.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"

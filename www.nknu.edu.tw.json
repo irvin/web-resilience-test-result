@@ -2,11 +2,12 @@
   "url": "https://www.nknu.edu.tw/",
   "canonicalURL": "https://www.nknu.edu.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T02:20:57.527Z",
+  "timestamp": "2026-07-20T13:44:55.929Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 98,
-  "uniqueDomains": 17,
+  "requestCount": 88,
+  "uniqueDomains": 15,
   "test_results": {
     "domestic": {
-      "cloud": 9,
-      "direct": 6
+      "cloud": 7,
+      "direct": 7
     },
     "foreign": {
-      "cloud": 1,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -82,10 +83,34 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 204.977,
-        "detection_method": "rtt"
+        "cf-ray": "a1e2670c1f3fa110-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "104.21.27.152",
+          "prefix": "104.21.27.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 59,
+          "location_count": 59,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -93,28 +118,12 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.198.74",
-        "hostname": "lctsaa-ab-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "74.125.203.95",
+        "hostname": "th-in-f95.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=AW-304352964",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "24.1469,120.6839",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
@@ -137,7 +146,7 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://lightnews.nknu.edu.tw/nknu_News/News1/%E8%88%87%E6%9C%83%E4%BA%BA%E5%93%A1%E6%AD%A1%E5%96%9C%E5%90%88%E5%BD%B1%E7%95%99%E5%BF%B5%EF%BC%8C%E7%B4%80%E9%8C%84%E6%AD%A4%E6%AC%A1%E4%BA%A4%E6%B5%81%E7%9B%9B%E6%B3%81%E3%80%82.jpg",
+      "originalUrl": "https://lightnews.nknu.edu.tw/nknu_News/News1/%E5%9C%96%E4%B8%80%E3%80%81%E9%AB%98%E5%B8%AB%E5%A4%A7%E7%8E%8B%E6%94%BF%E5%BD%A5%E6%A0%A1%E9%95%B7%E8%88%87%E5%98%89%E7%BE%A9%E7%B8%A3%E6%BA%AA%E5%8F%A3%E5%9C%8B%E4%B8%AD%E8%AC%9D%E6%AD%A3%E8%A3%95%E6%A0%A1%E9%95%B7%E7%B0%BD%E7%BD%B2%E5%AD%B8%E8%A1%93%E5%90%88%E4%BD%9C%E5%82%99%E5%BF%98%E9%8C%84.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "lightnews.nknu.edu.tw",
@@ -156,8 +165,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "s.yimg.com",
-        "ip": "180.222.109.251",
-        "hostname": "e1-bmr.ycpi.vip.twb.yahoo.com",
+        "ip": "180.222.109.252",
+        "hostname": "e2-bmr.ycpi.vip.twd.yahoo.com",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -188,16 +197,36 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.youtube.com",
-        "ip": "142.250.198.78",
-        "hostname": "lctsaa-ab-in-f14.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
+        "ip": "142.251.150.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
         "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.529,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.150.4",
+          "prefix": "142.251.150.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
     },
     {
       "originalUrl": "about:blank",
@@ -207,55 +236,23 @@
       }
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&tid=AW-304352964&en=page_view&dl=https%3A%2F%2Fw3.nknu.edu.tw%2Fzh%2F&scrsrc=www.googletagmanager.com&rnd=1598391408.1768357254&dt=%E5%9C%8B%E7%AB%8B%E9%AB%98%E9%9B%84%E5%B8%AB%E7%AF%84%E5%A4%A7%E5%AD%B8%20-%20%E9%A6%96%E9%A0%81&auid=1474421650.1768357254&navt=n&npa=0&gtm=45be61c1h1za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115495938~115938466~115938469~117041588~117091819&tft=1768357254365&tfd=3349&apve=1&apvf=f",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.204.36",
-        "hostname": "hkg07s38-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/304352964/?random=1768357254362&cv=11&fst=1768356000000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be61c1h1za200xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391253~115495938~115938466~115938469~117041588~117091819&u_w=1280&u_h=720&url=https%3A%2F%2Fw3.nknu.edu.tw%2Fzh%2F&frm=0&tiba=%E5%9C%8B%E7%AB%8B%E9%AB%98%E9%9B%84%E5%B8%AB%E7%AF%84%E5%A4%A7%E5%AD%B8%20-%20%E9%A6%96%E9%A0%81&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1474421650.1768357254&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEA56J1eYKEbjcHguJ6FX1hbBANwLuC0jmPz1JhNhky74ZtCrPNHdvdnFALrbLNJ5bY6x_kRdQlYvMd9EFJ7tuXW8GTyuGFS-zeJWElTKqDpmJ86D3tkYsbR6j33JBTOSx_s8kUdprv8HH6b244Ndjiz9zoTCT2rkqYPP1oednpXr5DGjRtUsr20MVB&random=3397606470&rmt_tld=1&ipr=y",
+      "originalUrl": "https://www.facebook.com/tr/?id=1269665493500799&ev=PageView&dl=https%3A%2F%2Fw3.nknu.edu.tw%2Fzh%2F&rl=&if=false&ts=1784555086997&iw=false&sw=1280&sh=720&v=2.9.357&r=stable&ec=0&o=4126&aems=0%3B0&fbp=fb.2.1784555086994.168626794380414185&ler=empty&cdl=API_unavailable&pmd[title]=%E5%9C%8B%E7%AB%8B%E9%AB%98%E9%9B%84%E5%B8%AB%E7%AF%84%E5%A4%A7%E5%AD%B8%20-%20%E9%A6%96%E9%A0%81&pmd[locale]=zh-tw&pmd[description]=%E5%9C%8B%E7%AB%8B%E9%AB%98%E9%9B%84%E5%B8%AB%E7%AF%84%E5%A4%A7%E5%AD%B8%20National%20Kaohsiung%20Normal%20University&plt=1592.8999999999069&iss=1&mdc[data]=%7B%22json_ld%22%3A%7B%22b%22%3A%22AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA%22%7D%2C%22opengraph%22%3A%7B%22b%22%3A%22AIAAAAAAAAAAkCBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA%3D%22%7D%2C%22schema_org%22%3A%7B%22b%22%3A%22AAAAAAAAAAAAAAAAAAAAAAAAAA%3D%3D%22%7D%2C%22rdfa%22%3A%7B%22b%22%3A%22AA%3D%3D%22%7D%7D&mdc[version]=dae4e93f35929113fa44ced23aa01135&imft=1&tz=480&it=1784555086959&coo=false&expv2[0]=pl0&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=ct3&expv2[6]=hf1&rqm=GET",
       "type": "image",
       "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.198.67",
-        "hostname": "lctsaa-ab-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://yt3.ggpht.com/ytc/AIdro_n2TP9MdzjKHUUwCAVslgAdARcA0gQ6jJzSePJyYG6NgA=s68-c-k-c0x00ffffff-no-rj",
-      "type": "image",
-      "ipinfo": {
-        "domain": "yt3.ggpht.com",
-        "ip": "142.250.77.1",
-        "hostname": "nctsaa-ab-in-f1.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://rr2---sn-ipoxu-un5el.googlevideo.com/videoplayback?expire=1768378854&ei=hv1mabD1L8Prpt8Pu-vCwQk&ip=2001%3Ab011%3A3802%3Ab3f9%3A7801%3A3a2d%3A7ca8%3A40b&id=o-AJ76j_sNNIo-rtn_eqlqRHw8Lggexsy5piKO9wIMaz-f&itag=243&aitags=134%2C136%2C137%2C160%2C243&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=0&met=1768357254%2C&mh=U0&mm=31%2C29&mn=sn-ipoxu-un5el%2Csn-un57ene6&ms=au%2Crdu&mv=m&mvi=2&pl=52&rms=au%2Cau&initcwndbps=2813750&bui=AW-iu_qEBkLuc_0asymZ58Sg6lC2tTsjJHSjrn3-ILq5Lb8g7NwWqdjF8xLhUZSx1RJ-Q-OSsowyge_L&spc=q5xjPKb-S2SRY0J8a2soOogKtvIO6CaIfF-1MT72umHMU638BOWb0u-eyRjQdb8mBR4&vprv=1&svpuc=1&mime=video%2Fwebm&ns=7vMSXGiQyHDbdMmlJjpxnAoR&rqh=1&gir=yes&clen=3351388&dur=80.247&lmt=1739352346404648&mt=1768356781&fvip=1&keepalive=yes&fexp=51552689%2C51565116%2C51565682%2C51580968&c=WEB_EMBEDDED_PLAYER&sefc=1&txp=6209224&n=iBN0sbQeREXxqA&sparams=expire%2Cei%2Cip%2Cid%2Caitags%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIgHYZGm24kmsE4qz3fbT2PybCsxutOU3_KEMqO-o9Yx-ECIQD75oXPCipaOEMgOTEQoheYAUKNtQzCiwg9QTy_yP_SOg%3D%3D&alr=yes&sig=AJfQdSswRgIhAK_UMZdYsbWwIf9bhmWPZLjxjO9fEmijc-ikspWrTzLbAiEAte1944AFFydsXQ5ClDUFXjbEFhMsCCpFkHgUvUqIFeU%3D&cpn=yj-EIDDmqEoXl7yY&cver=1.20260111.00.00&range=0-112220&rn=1&rbuf=0&pot=IgjSK9Mqu00vrQ==&ump=1&srfvp=1",
+      "originalUrl": "https://rr2---sn-ipoxu-un5el.googlevideo.com/videoplayback?expire=1784576687&ei=TyZearf9D6yi9fwPiMyc4QE&ip=2001%3Ab011%3A3802%3A7be8%3Af17b%3Aef25%3A8516%3A8cfa&id=o-AP3nPa-XpdOXWWw6h0oSY7DdxpGDvk6Xj7CZ1uJIEBPw&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=269&met=1784555087%2C&mh=U0&mm=31%2C29&mn=sn-ipoxu-un5el%2Csn-ojun55-55&ms=au%2Crdu&mv=m&mvi=2&pl=52&rms=au%2Cau&initcwndbps=2531250&spc=SQ-umuNopHowAloMvtuEpVdA4P6OrprEfrc6-OuYfI76TbpN9WEHuXg6qm_ON6yRRCkLjA&svpuc=1&ns=ywx-fzyAm-Qk5mJutQKh0IgW&sabr=1&rqh=1&mt=1784554630&fvip=4&keepalive=yes&fexp=51565116%2C51946837&c=WEB_EMBEDDED_PLAYER&n=nN95ov5m0_ZSeA&sparams=expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Cspc%2Csvpuc%2Cns%2Csabr%2Crqh&sig=AE0s2JYwRAIgePA4ZSOOpvWz6gUKCwwE-5qUMJF2dx1FMCwxQSdqkFwCIBjwjrQGRKqtHJg7DzRd-jTQ4gm4xWXKTH6eRcGa4ViU&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRAIgJ4NwTau1MFbN3dcxnSeE5a-LoLyGiy7HozQ3HDtiZ9ACIBH94uG4De4FLzi7vGctVxfRUB0zKwwpjRlpZcyBso6s&cpn=PXRkkSGQtV2Tx_3b&cver=2.20260717.01.00&rn=1&alr=yes",
       "type": "fetch",
       "ipinfo": {
         "domain": "rr2---sn-ipoxu-un5el.googlevideo.com",
@@ -271,12 +268,12 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.gstatic.com/cv/js/sender/v1/cast_sender.js",
-      "type": "script",
+      "originalUrl": "https://i.ytimg.com/vi/oZypy9JjhOA/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEkgZShdMA8=&rs=AOn4CLCnnzdnwhGLC38Il29QIUl1fjs-iQ",
+      "type": "image",
       "ipinfo": {
-        "domain": "www.gstatic.com",
-        "ip": "142.250.204.35",
-        "hostname": "hkg07s38-in-f3.1e100.net",
+        "domain": "i.ytimg.com",
+        "ip": "142.250.204.54",
+        "hostname": "hkg07s38-in-f22.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -287,20 +284,76 @@
       "category": "domestic/cloud"
     },
     {
+      "originalUrl": "https://www.google.com/js/th/8uIar4J4-RenYUa4HtG5DFVcni3D6dGneJv1JZIjHfM.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.156.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.444,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.156.119",
+          "prefix": "142.251.156.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
+    },
+    {
       "originalUrl": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
       "type": "xhr",
       "ipinfo": {
         "domain": "jnn-pa.googleapis.com",
-        "ip": "142.250.204.42",
-        "hostname": "hkg07s38-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
+        "ip": "172.217.119.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
         "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.292,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "172.217.119.4",
+          "prefix": "172.217.119.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
     }
   ]
 }

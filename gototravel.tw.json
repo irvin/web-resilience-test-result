@@ -2,11 +2,12 @@
   "url": "https://gototravel.tw",
   "canonicalURL": "https://gototravel.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T03:53:12.563Z",
+  "timestamp": "2026-07-20T15:13:18.773Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,16 +25,16 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 83,
+  "requestCount": 79,
   "uniqueDomains": 13,
   "test_results": {
     "domestic": {
-      "cloud": 7,
+      "cloud": 12,
       "direct": 1
     },
     "foreign": {
-      "cloud": 3,
-      "direct": 1
+      "cloud": 0,
+      "direct": 0
     }
   },
   "domainDetails": [
@@ -42,7 +43,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "gototravel.tw",
-        "ip": "104.21.24.40",
+        "ip": "172.67.216.195",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -50,10 +51,34 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 141.655,
-        "detection_method": "rtt"
+        "cf-ray": "a1e2e8a42ddfff81-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "172.67.216.195",
+          "prefix": "172.67.216.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 58,
+          "location_count": 58,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -69,10 +94,34 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 134.226,
-        "detection_method": "rtt"
+        "cf-ray": "a1e2e8a67e6bff81-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "172.67.216.195",
+          "prefix": "172.67.216.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 58,
+          "location_count": 58,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -92,12 +141,12 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js",
+      "originalUrl": "https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js",
       "type": "script",
       "ipinfo": {
         "domain": "www.gstatic.com",
-        "ip": "142.250.204.35",
-        "hostname": "hkg07s38-in-f3.1e100.net",
+        "ip": "142.250.196.195",
+        "hostname": "nctsaa-ac-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -112,8 +161,8 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.198.74",
-        "hostname": "lctsaa-ab-in-f10.1e100.net",
+        "ip": "142.250.192.138",
+        "hostname": "bom12s18-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -128,8 +177,24 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.204.40",
+        "hostname": "hkg07s38-in-f8.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://storage.googleapis.com/teleworker-public-storage/gad_js/net.min.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "storage.googleapis.com",
+        "ip": "142.250.77.27",
+        "hostname": "nctsaa-ab-in-f27.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -168,10 +233,34 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 141.547,
-        "detection_method": "rtt"
+        "cf-ray": "a1e2e8a9ba56fd9a-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "172.67.199.117",
+          "prefix": "172.67.199.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 57,
+          "location_count": 57,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -179,46 +268,23 @@
       "type": "script",
       "ipinfo": {
         "domain": "emrld.ltd",
-        "ip": "3.169.36.104",
-        "hostname": "server-3-169-36-104.tpe53.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "3.169.137.64",
+        "hostname": "server-3-169-137-64.tpe54.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://sentry.avs.io/api/20/envelope/?sentry_version=7&sentry_key=1c30377dafc708e9dfdf6df7e355a97c&sentry_client=sentry.javascript.browser%2F9.44.0",
+      "originalUrl": "https://website.contentai.online/api/frontend/ad-anchors?domain=gototravel.tw",
       "type": "fetch",
       "ipinfo": {
-        "domain": "sentry.avs.io",
-        "ip": "3.169.137.40",
-        "hostname": "server-3-169-137-40.tpe54.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "blob:https://gototravel.tw/5b1e33c7-eae1-43dd-93f6-b7285df1ef0d",
-      "type": "other",
-      "ipinfo": {
-        "domain": ""
-      }
-    },
-    {
-      "originalUrl": "https://www.stay22.com/ext/partner?lmaID=6896f17dab5fccc272da2570&aid=&campaign=gototraveltw&product=lma&installationMethod=lmaid&version=2026-01-11T23%3A30%3A29.377Z-86430e1&hasadblocker=false&isinc=true&preservecampaign=false&qpID=&keepItPretty=false&canRoam=false&disableHyperlink=false&disableWidgets=false&disablepop=false&ref22=https%3A%2F%2Fgototravel.tw%2F&sid22=",
-      "type": "xhr",
-      "ipinfo": {
-        "domain": "www.stay22.com",
-        "ip": "104.18.10.219",
+        "domain": "website.contentai.online",
+        "ip": "172.67.213.199",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -229,25 +295,89 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bda2f52be5277f1-TPE",
-        "detection_method": "header"
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "172.67.213.199",
+          "prefix": "172.67.213.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 58,
+          "location_count": 58,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
-      "originalUrl": "https://s.w.org/images/core/emoji/17.0.2/svg/25b6.svg",
-      "type": "image",
+      "originalUrl": "https://sentry.avs.io/api/20/envelope/?sentry_version=7&sentry_key=1c30377dafc708e9dfdf6df7e355a97c&sentry_client=sentry.javascript.browser%2F9.44.0",
+      "type": "fetch",
       "ipinfo": {
-        "domain": "s.w.org",
-        "ip": "192.0.77.48",
-        "hostname": "s.w.org",
+        "domain": "sentry.avs.io",
+        "ip": "54.192.248.24",
+        "hostname": "server-54-192-248-24.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.stay22.com/api/sponsors/any",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.stay22.com",
+        "ip": "104.18.11.219",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
-        "loc": "37.7749,-122.4194",
-        "org": "AS2635 Automattic, Inc",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/direct"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "104.18.11.219",
+          "prefix": "104.18.11.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 73,
+          "location_count": 73,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
+      }
     }
   ]
 }

@@ -2,11 +2,12 @@
   "url": "https://github.com",
   "canonicalURL": "https://github.com/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:05:35.233Z",
+  "timestamp": "2026-07-20T13:03:17.764Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,11 +25,11 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 136,
-  "uniqueDomains": 4,
+  "requestCount": 146,
+  "uniqueDomains": 3,
   "test_results": {
     "domestic": {
-      "cloud": 1,
+      "cloud": 0,
       "direct": 0
     },
     "foreign": {
@@ -50,15 +51,31 @@
         "org": "AS8075 Microsoft Corporation",
         "timezone": "Asia/Tokyo"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 36.455,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "20.27.177.113",
+          "prefix": "20.27.177.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
     },
     {
-      "originalUrl": "https://github.githubassets.com/assets/global-banner-disable-f5b987d53576.js",
+      "originalUrl": "https://github.githubassets.com/assets/global-banner-disable-8d9e968f01770b06.js",
       "type": "script",
       "ipinfo": {
         "domain": "github.githubassets.com",
-        "ip": "185.199.108.154",
-        "hostname": "cdn-185-199-108-154.github.com",
+        "ip": "185.199.108.215",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -68,25 +85,26 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 49.767,
-        "detection_method": "rtt"
+        "x-served-by": "cache-iad-kjyo7100055-IAD, cache-sin-wsss1830056-SIN",
+        "rtt": 61.433,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "185.199.108.215",
+          "prefix": "185.199.108.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 53,
+          "location_count": 53
+        }
       }
-    },
-    {
-      "originalUrl": "https://images.ctfassets.net/8aevphvgewt8/4IfncsgGkGPFESlWXlAWfU/6f671f0ff761cb276c2effced9dca773/eyebrow-banner-duck.png",
-      "type": "image",
-      "ipinfo": {
-        "domain": "images.ctfassets.net",
-        "ip": "3.169.55.76",
-        "hostname": "server-3-169-55-76.tpe54.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://collector.github.com/github/collect",
@@ -95,10 +113,10 @@
         "domain": "collector.github.com",
         "ip": "140.82.112.21",
         "hostname": "lb-140-82-112-21-iad.github.com",
-        "city": "South Riding",
+        "city": "Dulles Town Center",
         "region": "Virginia",
         "country": "US",
-        "loc": "38.9209,-77.5039",
+        "loc": "39.0376,-77.4158",
         "org": "AS36459 GitHub, Inc.",
         "timezone": "America/New_York"
       },

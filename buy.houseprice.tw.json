@@ -2,11 +2,12 @@
   "url": "https://buy.houseprice.tw",
   "canonicalURL": "https://buy.houseprice.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T02:28:27.285Z",
+  "timestamp": "2026-07-20T14:07:15.651Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,12 +25,12 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 293,
-  "uniqueDomains": 24,
+  "requestCount": 353,
+  "uniqueDomains": 27,
   "test_results": {
     "domestic": {
-      "cloud": 14,
-      "direct": 5
+      "cloud": 15,
+      "direct": 7
     },
     "foreign": {
       "cloud": 5,
@@ -42,8 +43,8 @@
       "type": "document",
       "ipinfo": {
         "domain": "buy.houseprice.tw",
-        "ip": "57.180.132.228",
-        "hostname": "ec2-57-180-132-228.ap-northeast-1.compute.amazonaws.com",
+        "ip": "54.65.81.40",
+        "hostname": "ec2-54-65-81-40.ap-northeast-1.compute.amazonaws.com",
         "city": "Tokyo",
         "region": "Tokyo",
         "country": "JP",
@@ -51,14 +52,32 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Tokyo"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": null,
+        "detection_method": "rtt",
+        "rtt_error": "timeout",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "54.65.81.40",
+          "prefix": "54.65.81.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
     },
     {
       "originalUrl": "https://use.fontawesome.com/releases/v5.5.0/css/all.css",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "use.fontawesome.com",
-        "ip": "172.67.142.245",
+        "ip": "104.21.27.152",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -66,46 +85,86 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 129.692,
-        "detection_method": "rtt"
+        "cf-ray": "a1e287924bf5fd78-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "104.21.27.152",
+          "prefix": "104.21.27.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 59,
+          "location_count": 59,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
-      "originalUrl": "https://static.houseprice.tw/houseprice-2022/static/styles/reset.css",
+      "originalUrl": "https://static.houseprice.tw/houseprice-2022/static/styles/reset.css?v=202607200001",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "static.houseprice.tw",
-        "ip": "3.169.137.14",
-        "hostname": "server-3-169-137-14.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "65.9.180.29",
+        "hostname": "server-65-9-180-29.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://image.houseprice.tw/p1-hpimage/ODk2NjgyOGhwaW1hZ2U,/19db8e7100234eaa_1080x809.jpg/qs/w=245&h=166",
+      "originalUrl": "https://image.houseprice.tw/p1-hpimage/MTE1NzY4NjJocGltYWdl/2b5f56a4b3894ae0_1441x1920.jpg/qs/w=245&h=166",
       "type": "image",
       "ipinfo": {
         "domain": "image.houseprice.tw",
-        "ip": "3.169.36.38",
-        "hostname": "server-3-169-36-38.tpe53.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "3.169.55.83",
+        "hostname": "server-3-169-55-83.tpe54.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://img.hbhousing.com.tw/pictures/A741%2fA741WS68326a.jpg?1768177254",
+      "originalUrl": "https://hp-pic.houseprice.tw/20240713/f2008eb29ba74098991f04387b127068.jpg",
+      "type": "image",
+      "ipinfo": {
+        "domain": "hp-pic.houseprice.tw",
+        "ip": "54.192.248.57",
+        "hostname": "server-54-192-248-57.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://img.hbhousing.com.tw/pictures/A218%2fA218WS70544a.jpg?1783883603",
       "type": "image",
       "ipinfo": {
         "domain": "img.hbhousing.com.tw",
@@ -125,8 +184,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.66.72",
+        "hostname": "hkg12s27-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -137,7 +196,7 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://api.iconify.design/carbon.json?icons=checkbox",
+      "originalUrl": "https://api.iconify.design/twemoji.json?icons=index-pointing-up-light-skin-tone",
       "type": "fetch",
       "ipinfo": {
         "domain": "api.iconify.design",
@@ -149,52 +208,36 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud",
+      "category": "foreign/cloud",
       "cloud_provider": {
-        "country": "tw",
-        "cf-ray": "9bd9b2eae9d4a3ab-TPE",
-        "detection_method": "header"
+        "cf-ray": "a1e287981ceefd26-SIN",
+        "rtt": 66.765,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "104.26.12.204",
+          "prefix": "104.26.12.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
       }
-    },
-    {
-      "originalUrl": "https://mt.houseprice.tw/Api/GetAds?gid=2648E901-D819-458D-825B-118BA9A39C3F,156C8C8C-E080-4992-A790-3741ECA79048,C8525153-F296-4A0E-87B1-F61B1D11924A,86DF3A61-F790-4D4F-AFDE-F1E98DFF1287,C229BA4D-CA3F-4A2B-B488-02BC71716923,408DB3EA-4EC1-4789-9945-46A1ED375A84,DDD4CDA4-0024-4231-A3A1-D9ABD964396D,18912C8F-BBA0-410C-88C1-85C0EA1161FF,37CDABFA-A952-449A-831F-FF7CF81D8710,427BCDEF-2129-46D1-B53D-0759A7EB5177,0259678A-F69B-4DD2-BD49-F1C030E985C0,63B73FBA-4986-4D17-A00C-7697A0F7C891,8AAD2BF9-E09E-46AC-A933-F08BFE531A23",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "mt.houseprice.tw",
-        "ip": "13.114.201.137",
-        "hostname": "ec2-13-114-201-137.ap-northeast-1.compute.amazonaws.com",
-        "city": "Tokyo",
-        "region": "Tokyo",
-        "country": "JP",
-        "loc": "35.6895,139.6917",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Tokyo"
-      },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fbuy.houseprice.tw%2F&scrsrc=www.googletagmanager.com&rnd=1225057147.1768357695&dt=%E5%8F%B0%E5%8C%97%E5%B8%82%E7%86%B1%E9%96%80%E5%BE%85%E5%94%AE%E7%89%A9%E4%BB%B6%EF%BD%9C5168%E5%AF%A6%E5%83%B9%E7%99%BB%E9%8C%84%E6%AF%94%E5%83%B9%E7%8E%8B&auid=885453566.1768357695&navt=n&npa=0&gtm=45He61c1v811831720za200zd811831720xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391252~115616986~115938465~115938468~117041588&tft=1768357694985&tfd=1035&apve=1&apvf=f",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.204.36",
-        "hostname": "hkg07s38-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://piwik.gadatatracking.com/piwik.js",
       "type": "script",
       "ipinfo": {
         "domain": "piwik.gadatatracking.com",
-        "ip": "54.178.147.239",
-        "hostname": "ec2-54-178-147-239.ap-northeast-1.compute.amazonaws.com",
+        "ip": "52.197.220.200",
+        "hostname": "ec2-52-197-220-200.ap-northeast-1.compute.amazonaws.com",
         "city": "Tokyo",
         "region": "Tokyo",
         "country": "JP",
@@ -202,19 +245,37 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Tokyo"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": null,
+        "detection_method": "rtt",
+        "rtt_error": "timeout",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "52.197.220.200",
+          "prefix": "52.197.220.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
     },
     {
       "originalUrl": "https://s.houseprice.tw/min/b=fp/f2e_libraries/hptm&f=hptm.js&v=3",
       "type": "script",
       "ipinfo": {
         "domain": "s.houseprice.tw",
-        "ip": "3.169.137.105",
-        "hostname": "server-3-169-137-105.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "54.192.248.91",
+        "hostname": "server-54-192-248-91.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -241,16 +302,52 @@
       "type": "script",
       "ipinfo": {
         "domain": "sb.scorecardresearch.com",
-        "ip": "3.169.137.16",
-        "hostname": "server-3-169-137-16.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "3.169.137.94",
+        "hostname": "server-3-169-137-94.tpe54.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com/ccm/collect?rcb=2&frm=0&ae=g&auid=1378988147.1784556419&dt=%E5%8F%B0%E5%8C%97%E5%B8%82%E7%86%B1%E9%96%80%E5%BE%85%E5%94%AE%E7%89%A9%E4%BB%B6%EF%BD%9C5168%E5%AF%A6%E5%83%B9%E7%99%BB%E9%8C%84%E6%AF%94%E5%83%B9%E7%8E%8B&en=page_view&dl=https%3A%2F%2Fbuy.houseprice.tw%2F&scrsrc=www.googletagmanager.com&rnd=2018305392.1784556419&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He67f0v811831720za200zd811831720xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~118897920~118897930~119996999&apve=1&apvf=f&apvc=1&tft=1784556419018&tfd=922&fmt=8",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.156.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.66,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.156.119",
+          "prefix": "142.251.156.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
@@ -269,12 +366,28 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-S49XNJ5E0Y&cid=1863982989.1768357695&gtm=45je61c1v869588131z8811831720za20gzb811831720zd811831720&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391252~115938465~115938469~116988316~117041588&z=194573999",
+      "originalUrl": "https://tracking.gadatatracking.com/GetUCV",
+      "type": "script",
+      "ipinfo": {
+        "domain": "tracking.gadatatracking.com",
+        "ip": "61.220.58.70",
+        "hostname": "web70.evertrust.com.tw",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-BCVL7YCK7L&cid=494714489.1784556419&gtm=45je67f0v9122542130z8811831720za20gzb811831720zd811831720&rcb=11&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115616985~115938465~115938469~118897920~118897930~118981136&z=1415357703",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.66.67",
-        "hostname": "hkg12s27-in-f3.1e100.net",
+        "ip": "142.250.204.35",
+        "hostname": "hkg07s38-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -285,23 +398,141 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://hp-pic.houseprice.tw/20230405/45f0535d2d08425084d2fc9b1aa99698.png",
+      "originalUrl": "https://mt.houseprice.tw/Api/GetAds?gid=2648E901-D819-458D-825B-118BA9A39C3F,156C8C8C-E080-4992-A790-3741ECA79048,C8525153-F296-4A0E-87B1-F61B1D11924A,86DF3A61-F790-4D4F-AFDE-F1E98DFF1287,C229BA4D-CA3F-4A2B-B488-02BC71716923,408DB3EA-4EC1-4789-9945-46A1ED375A84,DDD4CDA4-0024-4231-A3A1-D9ABD964396D,18912C8F-BBA0-410C-88C1-85C0EA1161FF,37CDABFA-A952-449A-831F-FF7CF81D8710,427BCDEF-2129-46D1-B53D-0759A7EB5177,0259678A-F69B-4DD2-BD49-F1C030E985C0,63B73FBA-4986-4D17-A00C-7697A0F7C891,8AAD2BF9-E09E-46AC-A933-F08BFE531A23",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "mt.houseprice.tw",
+        "ip": "54.92.18.86",
+        "hostname": "ec2-54-92-18-86.ap-northeast-1.compute.amazonaws.com",
+        "city": "Tokyo",
+        "region": "Tokyo",
+        "country": "JP",
+        "loc": "35.6895,139.6917",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Tokyo"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": null,
+        "detection_method": "rtt",
+        "rtt_error": "timeout",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "54.92.18.86",
+          "prefix": "54.92.18.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
+    },
+    {
+      "originalUrl": "https://community.houseprice.tw/ws/CommunityExpert/%E5%8F%B0%E5%8C%97%E5%B8%82/list?hp_content=buy_list_middle_expert",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "community.houseprice.tw",
+        "ip": "3.114.187.23",
+        "hostname": "ec2-3-114-187-23.ap-northeast-1.compute.amazonaws.com",
+        "city": "Tokyo",
+        "region": "Tokyo",
+        "country": "JP",
+        "loc": "35.6895,139.6917",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Tokyo"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": null,
+        "detection_method": "rtt",
+        "rtt_error": "timeout",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "3.114.187.23",
+          "prefix": "3.114.187.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
+    },
+    {
+      "originalUrl": "https://master1995.com.tw/ToDraw.ashx?url=1304sxa006094a.jpg",
       "type": "image",
       "ipinfo": {
-        "domain": "hp-pic.houseprice.tw",
-        "ip": "3.169.137.42",
-        "hostname": "server-3-169-137-42.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "domain": "master1995.com.tw",
+        "ip": "223.27.43.46",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS38843 PUMO NETWORK DIGITAL TECHNOLOGY CO.,LTD",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://yccdn.yungching.com.tw/v1/image/?key=NF58Ko5oaCsyRkZN6G9rsS0Xe_6cZscyAzxn-nk8LphCgNjbRFRvCcQykn655lYCqVhtUUJ4lA_cF1mBh5MY1RWd5eEaa7mn9qxu8f6s-rs3QB1qzhlP20dQWbTXPeiPJpfT6ht43JBkfHZIEYYrhmRa7xD8tkkGWDypSMYaotadfCdPPdyK19FSCfYimac0JwLV9dFNdB42TOcpRZzC2FALbPXRd5sFG9a01IDS5Lr9CQta-cPrPAM9mbMrNw2FpMBpPJjHPqFUlRzOpEBxhdrN1oYcHVt7&width=1024&height=768",
+      "type": "image",
+      "ipinfo": {
+        "domain": "yccdn.yungching.com.tw",
+        "ip": "65.9.180.47",
+        "hostname": "server-65-9-180-47.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://hq.houseol.com.tw/images/pictures/1304SXA008568a.jpg",
+      "originalUrl": "https://img.twhg.com.tw/admin/images/OB01/TAF1/TA02547839329246356692d01ef1b4ee.jpg",
+      "type": "image",
+      "ipinfo": {
+        "domain": "img.twhg.com.tw",
+        "ip": "104.18.3.108",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e2879a7dfe82cd-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://www.nra.com.tw/image_www.php?w=800&h=800&file=upload/house/672467_70831.jpg",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.nra.com.tw",
+        "ip": "210.59.226.51",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://hq.houseol.com.tw/images/pictures/1304SXA006219a.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "hq.houseol.com.tw",
@@ -317,72 +548,24 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://img1.591.com.tw/house/2024/06/19/171876264836880003.jpg!1000x.water2.jpg",
-      "type": "image",
-      "ipinfo": {
-        "domain": "img1.591.com.tw",
-        "ip": "3.169.55.119",
-        "hostname": "server-3-169-55-119.tpe54.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://static.rakuya.com.tw/r2/n775/5a/be/32731775_1_b.jpeg?1765437723",
-      "type": "image",
-      "ipinfo": {
-        "domain": "static.rakuya.com.tw",
-        "ip": "3.169.137.41",
-        "hostname": "server-3-169-137-41.tpe54.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://cloudfps.hfcdn.com/v1/image/?key=NF58Ko5oaCu4_aUX-DA5ufmVHfMOM7PhOO9hu_JGVnzQkVFwrwrCf4e6hKQhd2KYzhxlNAx_tGVI54tDXXIxDa64od0jAbOZrBTGt_NC0NxMCtyFz-LqpYF32GTxpmDwu98NT3cksTOdfCdPPdyK1_N9HMTZXsUAyjpali26c6J_UcZAyQ6OY8h6hel3VR43ENfxb3ybinD1pLSJbiNqVK0HvUCdwmIej3oTKAUpGV_uaBnxbTilp1fX2bWndLGV6aUv8v0PafuCE7VA-k9OoZCjPFb34BhrBcXGutieQI9XuGkV3s6A9w&width=680&height=680",
-      "type": "image",
-      "ipinfo": {
-        "domain": "cloudfps.hfcdn.com",
-        "ip": "3.169.121.28",
-        "hostname": "server-3-169-121-28.tpe53.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://cms.houseprice.tw/hpimage/NzUxMzExMm5ld3M,/923572976b2744c2_450x235.jpg",
+      "originalUrl": "https://cms.houseprice.tw/hpimage/MTEzNzE1NjVuZXdz/c6422aad918741bd_450x235.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "cms.houseprice.tw",
-        "ip": "3.169.121.114",
-        "hostname": "server-3-169-121-114.tpe53.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "3.169.121.69",
+        "hostname": "server-3-169-121-69.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.facebook.com/privacy_sandbox/topics/registration/?id=422919428270624",
-      "type": "fetch",
+      "originalUrl": "https://www.facebook.com/tr/?id=422919428270624&ev=PageView&dl=https%3A%2F%2Fbuy.houseprice.tw%2F&rl=&if=false&ts=1784556421346&iw=false&sw=1280&sh=720&v=2.9.357&r=stable&ec=0&o=4125&aems=0%3B0&fbp=fb.1.1784556421345.449683119786548454&ler=empty&cdl=API_unavailable&plt=886.8000000002794&tz=480&it=1784556420987&coo=false&expv2[0]=pl0&expv2[1]=el2&expv2[2]=bc1&expv2[3]=ra0&expv2[4]=rp0&expv2[5]=im0&expv2[6]=hf1&rqm=GET",
+      "type": "image",
       "ipinfo": {
         "domain": "www.facebook.com",
         "ip": "31.13.87.36",
@@ -397,11 +580,27 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://c.bing.com/c.gif?Red3=CTOMS_pd&cbid=k--Zw70VKQGvveuHhoL8uJada7JdqSEAFqhmz3RA",
+      "originalUrl": "https://public-prod-dspcookiematching.dmxleo.com/dspreply?dspId=1521&dspUserId=k-hX1L4inPLAyTBftzBLG4EfMAylj9ve-aJNYXVg",
+      "type": "image",
+      "ipinfo": {
+        "domain": "public-prod-dspcookiematching.dmxleo.com",
+        "ip": "3.169.121.34",
+        "hostname": "server-3-169-121-34.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://c.bing.com/c.gif?Red3=CTOMS_pd&cbid=k-VkcAIinPLAyTBftzBLG4EfMAylghSo9LElBdVw",
       "type": "image",
       "ipinfo": {
         "domain": "c.bing.com",
-        "ip": "150.171.27.10",
+        "ip": "150.171.28.10",
         "city": "Redmond",
         "region": "Washington",
         "country": "US",
@@ -409,23 +608,34 @@
         "org": "AS8075 Microsoft Corporation",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://tracking.gadatatracking.com/GetUCV",
-      "type": "script",
-      "ipinfo": {
-        "domain": "tracking.gadatatracking.com",
-        "ip": "61.220.58.70",
-        "hostname": "web70.evertrust.com.tw",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS3462 Data Communication Business Group",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/direct"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "150.171.28.10",
+          "prefix": "150.171.28.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            8075
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 57,
+          "location_count": 57,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
+      }
     }
   ]
 }

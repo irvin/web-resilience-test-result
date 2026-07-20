@@ -2,33 +2,27 @@
   "url": "https://myaccount.books.com.tw",
   "canonicalURL": "https://myaccount.books.com.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T02:29:38.859Z",
+  "timestamp": "2026-07-20T14:09:30.175Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
     "hasIPinfoToken": true
   },
   "testingEnvironment": {
-    "ip": "220.132.212.194",
-    "hostname": "220-132-212-194.hinet-ip.hinet.net",
-    "city": "Banqiao",
-    "region": "Taipei",
-    "country": "TW",
-    "loc": "25.0143,121.4672",
-    "org": "AS3462 Data Communication Business Group",
-    "timezone": "Asia/Taipei",
-    "source": "ipinfo json api (direct)",
+    "error": true,
+    "message": "Request failed with status code 503",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 58,
-  "uniqueDomains": 10,
+  "requestCount": 73,
+  "uniqueDomains": 12,
   "test_results": {
     "domestic": {
-      "cloud": 6,
+      "cloud": 8,
       "direct": 4
     },
     "foreign": {
@@ -44,42 +38,46 @@
         "domain": "myaccount.books.com.tw",
         "ip": "113.196.250.40",
         "hostname": "myaccount.books.com.tw",
-        "city": "Taipei",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS9919 New Century InfoComm Tech Co., Ltd.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://cart.books.com.tw/member/login?url=https%3A%2F%2Fmyaccount.books.com.tw%2F%2F%3Fid%3Dd66880334d1e26d85cc7ebe3efc5be12",
+      "originalUrl": "https://cart.books.com.tw/member/login?url=https%3A%2F%2Fmyaccount.books.com.tw%2F%2F%3Fid%3Df411676180c950c574740d7b7394ac60",
       "type": "document",
       "ipinfo": {
         "domain": "cart.books.com.tw",
-        "ip": "113.196.250.33",
-        "hostname": "cart.books.com.tw",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS9919 New Century InfoComm Tech Co., Ltd.",
-        "timezone": "Asia/Taipei"
+        "ip": "104.18.3.141",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/direct"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e28b1f8e8f2beb-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://jci.book.com.tw/css/books/newmember/css.css",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "jci.book.com.tw",
-        "ip": "3.169.137.113",
-        "hostname": "server-3-169-137-113.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "54.192.248.9",
+        "hostname": "server-54-192-248-9.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -106,8 +104,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.192.136",
+        "hostname": "bom12s18-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -124,30 +122,14 @@
         "domain": "db.books.com.tw",
         "ip": "113.196.250.38",
         "hostname": "db.books.com.tw",
-        "city": "Taipei",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS9919 New Century InfoComm Tech Co., Ltd.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
-    },
-    {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fcart.books.com.tw%2Fmember%2Flogin&scrsrc=www.googletagmanager.com&rnd=1424408467.1768357777&dt=%E5%8D%9A%E5%AE%A2%E4%BE%86-%E6%9C%83%E5%93%A1%E7%99%BB%E5%85%A5&auid=1184504028.1768357777&navt=n&npa=0&gtm=45He61c1v72805904za200zd72805904xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115616985~115938466~115938468~116988315~117041588~117091818&tft=1768357777152&tfd=340&apve=1&apvf=f",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.196.196",
-        "hostname": "nctsaa-ac-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
@@ -182,12 +164,48 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/1040394492/?random=1768357777276&cv=11&fst=1768356000000&bg=ffffff&guid=ON&async=1&gtm=45be61c1v899622978z872805904za20gzb72805904zd72805904xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528500~104684208~104684211~105391252~115938466~115938468~116988315~117041587&u_w=1280&u_h=720&url=https%3A%2F%2Fcart.books.com.tw%2Fmember%2Flogin%3Furl%3Dhttps%253A%252F%252Fmyaccount.books.com.tw%252F%252F%253Fid%253Dd66880334d1e26d85cc7ebe3efc5be12&frm=0&tiba=%E5%8D%9A%E5%AE%A2%E4%BE%86-%E6%9C%83%E5%93%A1%E7%99%BB%E5%85%A5&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1184504028.1768357777&uaa=arm&uab=64&uafvl=Not(A%253ABrand%3B99.0.0.0%7CHeadlessChrome%3B133.0.6943.16%7CChromium%3B133.0.6943.16&uamb=0&uam=&uap=macOS&uapv=26.2.0&uaw=0&_tu=CA&rfmt=3&fmt=3&is_vtc=1&cid=CAQSiwEA56J1eSG5FakcaesJPYEBxyQOuQlucNq8udPtzcVghqzpMZ6ySsyrMC3DzZyVmUovlQuHSkDU29MNVUGNzag7Kth5LZm--3Vv49gEe2bp1l9uDmjZVpk1g4DNnCUsiBcg-y44t5HaGuOTLoWFkKwOh6y-5BLgff-74fkE2oLXRG-TkbzlDWEAzhY8&random=1432791393&rmt_tld=1&ipr=y",
+      "originalUrl": "https://www.google.com/ccm/collect?rcb=10&frm=0&ae=g&auid=1195193944.1784556565&dt=%E5%8D%9A%E5%AE%A2%E4%BE%86-%E6%9C%83%E5%93%A1%E7%99%BB%E5%85%A5&en=page_view&dl=https%3A%2F%2Fcart.books.com.tw%2Fmember%2Flogin&scrsrc=www.googletagmanager.com&rnd=591358794.1784556565&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He67f0v72805904za200zd72805904xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118395333~118897920~118897930~119896802&apve=1&apvf=f&apvc=1&tft=1784556565259&tfd=1150&fmt=8",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.153.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.972,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.153.119",
+          "prefix": "142.251.153.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&ngs=1&ibt=1&tid=G-TR763QQ559&cid=2040840630.1784556565&gtm=45je67f0v9127102809z872805904za20gzb72805904zd72805904&rcb=12&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938465~115938468~118897920~118897930&z=272140914",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.66.67",
-        "hostname": "hkg12s27-in-f3.1e100.net",
+        "ip": "142.250.192.131",
+        "hostname": "bom12s18-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -196,6 +214,58 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://mpc-prod-27-s6uit34pua-uk.a.run.app/events?cee=no",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "mpc-prod-27-s6uit34pua-uk.a.run.app",
+        "ip": "34.143.76.2",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.648,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.143.76.2",
+          "prefix": "34.143.76.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.facebook.com/tr/?id=1700571533513678&ev=PageView&dl=https%3A%2F%2Fcart.books.com.tw%2Fmember%2Flogin%3Furl%3Dhttps%253A%252F%252Fmyaccount.books.com.tw%252F%252F%253Fid%253Df411676180c950c574740d7b7394ac60&rl=&if=false&ts=1784556566049&iw=false&sw=1280&sh=720&v=2.9.357&r=stable&ec=0&o=4126&aems=0%3B0&fbp=fb.2.1784556566046.923507882596424055&hmd=cd429aabbff8b2170d94a897&eid=ob3_plugin-set_5bf5d93ebd43bbc9720f32fcc955ffbca177497a2fc809be16a17ddc7ac45ff3&ler=empty&cdl=API_unavailable&pmd[title]=%E5%8D%9A%E5%AE%A2%E4%BE%86-%E6%9C%83%E5%93%A1%E7%99%BB%E5%85%A5&pmd[keywords]=%E5%8D%9A%E5%AE%A2%E4%BE%86%2C%E6%9C%83%E5%93%A1%E7%99%BB%E5%85%A5&pmd[description]=%E5%8D%9A%E5%AE%A2%E4%BE%86-%E6%9C%83%E5%93%A1%E7%99%BB%E5%85%A5&plt=267.09999999962747&iss=1&ss=%7B%22page_keywords%22%3A%5B%7B%22rid%22%3A%22842281978968057%22%2C%22v%22%3A%5B%22%E5%8D%9A%E5%AE%A2%E4%BE%86%2C%E6%9C%83%E5%93%A1%E7%99%BB%E5%85%A5%22%5D%7D%5D%2C%22entity_name%22%3A%5B%7B%22rid%22%3A%222529243777498779%22%2C%22v%22%3A%5B%22%E6%9C%83%E5%93%A1%E7%99%BB%E5%85%A5%22%5D%7D%5D%2C%22page_title%22%3A%5B%7B%22rid%22%3A%221390528409630463%22%2C%22v%22%3A%5B%22%E6%9C%83%E5%93%A1%E7%99%BB%E5%85%A5%22%5D%7D%5D%2C%22page_description%22%3A%5B%7B%22rid%22%3A%221325250736074204%22%2C%22v%22%3A%5B%22%E5%8D%9A%E5%AE%A2%E4%BE%86-%E6%9C%83%E5%93%A1%E7%99%BB%E5%85%A5%22%5D%7D%5D%7D&imft=1&tz=480&it=1784556565861&coo=false&cf=1&expv2[0]=pl0&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=im1&expv2[6]=hf1&rqm=GET",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
     }
   ]
 }

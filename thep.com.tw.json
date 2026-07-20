@@ -1,0 +1,157 @@
+{
+  "url": "https://thep.com.tw",
+  "canonicalURL": "https://thep.com.tw/",
+  "httpStatus": 200,
+  "timestamp": "2026-07-20T15:00:34.023Z",
+  "testParameters": {
+    "customDNS": "168.95.1.1",
+    "useAdblock": true,
+    "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
+      "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
+    ],
+    "useCache": true,
+    "hasIPinfoToken": true
+  },
+  "testingEnvironment": {
+    "ip": "220.132.212.194",
+    "hostname": "220-132-212-194.hinet-ip.hinet.net",
+    "city": "Banqiao",
+    "region": "Taipei",
+    "country": "TW",
+    "loc": "25.0143,121.4672",
+    "org": "AS3462 Data Communication Business Group",
+    "timezone": "Asia/Taipei",
+    "source": "ipinfo json api (direct)",
+    "dnsServer": "168.95.1.1"
+  },
+  "requestCount": 33,
+  "uniqueDomains": 4,
+  "test_results": {
+    "domestic": {
+      "cloud": 2,
+      "direct": 1
+    },
+    "foreign": {
+      "cloud": 1,
+      "direct": 0
+    }
+  },
+  "domainDetails": [
+    {
+      "originalUrl": "https://thep.com.tw/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "thep.com.tw",
+        "ip": "114.34.110.220",
+        "hostname": "114-34-110-220.hinet-ip.hinet.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css",
+      "type": "stylesheet",
+      "ipinfo": {
+        "domain": "cdn.jsdelivr.net",
+        "ip": "104.17.208.5",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "x-served-by": "cache-fra-eddf8230027-FRA, cache-sin-wsss1830063-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "104.17.208.5",
+          "prefix": "104.17.208.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 76,
+          "location_count": 76,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
+      "type": "stylesheet",
+      "ipinfo": {
+        "domain": "cdnjs.cloudflare.com",
+        "ip": "104.17.24.14",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e2d602cf704a12-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1500&q=80",
+      "type": "image",
+      "ipinfo": {
+        "domain": "images.unsplash.com",
+        "ip": "146.75.46.208",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "x-served-by": "cache-chi-kigq8000103-CHI, cache-nrt-rjtf7700070-NRT",
+        "rtt": 69.751,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "146.75.46.208",
+          "prefix": "146.75.46.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 2,
+          "location_count": 2
+        }
+      }
+    }
+  ]
+}

@@ -2,11 +2,12 @@
   "url": "https://spotify.com",
   "canonicalURL": "https://open.spotify.com/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:07:59.079Z",
+  "timestamp": "2026-07-20T13:04:05.944Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,7 +25,7 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 135,
+  "requestCount": 136,
   "uniqueDomains": 17,
   "test_results": {
     "domestic": {
@@ -54,8 +55,24 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.988,
-        "detection_method": "rtt"
+        "rtt": 11.72,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "35.186.224.24",
+          "prefix": "35.186.224.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 63,
+          "location_count": 63
+        }
       }
     },
     {
@@ -63,25 +80,6 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.spotify.com",
-        "ip": "146.75.47.42",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": 49.618,
-        "detection_method": "rtt"
-      }
-    },
-    {
-      "originalUrl": "https://open.spotify.com/",
-      "type": "document",
-      "ipinfo": {
-        "domain": "open.spotify.com",
         "ip": "199.232.115.42",
         "city": "Singapore",
         "region": "Singapore",
@@ -92,12 +90,65 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 49.607,
-        "detection_method": "rtt"
+        "x-served-by": "cache-sin-wsss1830022-SIN",
+        "rtt": 67.768,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "199.232.115.42",
+          "prefix": "199.232.115.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 2,
+          "location_count": 2
+        }
       }
     },
     {
-      "originalUrl": "https://encore.scdn.co/fonts/SpotifyMixUI-Regular-cc3b1de388efa4cbca6c75cebc24585e.woff2",
+      "originalUrl": "https://open.spotify.com/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "open.spotify.com",
+        "ip": "146.75.47.42",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "x-served-by": "cache-sin-wsss1830020-SIN",
+        "rtt": 65.874,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "146.75.47.42",
+          "prefix": "146.75.47.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 2,
+          "location_count": 2
+        }
+      }
+    },
+    {
+      "originalUrl": "https://encore.scdn.co/fonts/SpotifyMixUI-Regular-76c92fb1a35c462f73429fa8865163eb.woff2",
       "type": "font",
       "ipinfo": {
         "domain": "encore.scdn.co",
@@ -112,11 +163,11 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://open-exp.spotifycdn.com/cdn/build/web-player/web-player.a8e521f9.css",
+      "originalUrl": "https://open.spotifycdn.com/cdn/build/web-player/web-player.c0adf289.css",
       "type": "stylesheet",
       "ipinfo": {
-        "domain": "open-exp.spotifycdn.com",
-        "ip": "199.232.114.251",
+        "domain": "open.spotifycdn.com",
+        "ip": "146.75.46.251",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",
@@ -126,8 +177,25 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 54.146,
-        "detection_method": "rtt"
+        "x-served-by": "cache-chi-klot8100104-CHI, cache-sin-wsat1880093-SIN",
+        "rtt": 66.094,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "146.75.46.251",
+          "prefix": "146.75.46.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 2,
+          "location_count": 2
+        }
       }
     },
     {
@@ -135,69 +203,52 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.204.36",
-        "hostname": "hkg07s38-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.googleoptimize.com/optimize.js?id=GTM-W53X654",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.googleoptimize.com",
-        "ip": "142.250.204.46",
-        "hostname": "hkg07s38-in-f14.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.gstatic.com/recaptcha/releases/9TiwnJFHeuIw_s0wSd3fiKfN/recaptcha__en.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.gstatic.com",
-        "ip": "142.250.77.3",
-        "hostname": "nctsaa-ab-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://o22381.ingest.sentry.io/api/114855/envelope/?sentry_version=7&sentry_key=de32132fc06e4b28965ecf25332c3a25&sentry_client=sentry.javascript.react%2F10.32.1",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "o22381.ingest.sentry.io",
-        "ip": "34.160.81.0",
-        "hostname": "0.81.160.34.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
+        "ip": "142.251.156.119",
+        "city": "Mountain View",
+        "region": "California",
         "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
       },
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.739,
-        "detection_method": "rtt"
+        "rtt": 8.881,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.156.119",
+          "prefix": "142.251.156.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
       }
+    },
+    {
+      "originalUrl": "https://www.gstatic.com/recaptcha/releases/A7KpaEASfhDcK0nXxgQEyyYv/recaptcha__zh_tw.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.gstatic.com",
+        "ip": "173.194.174.94",
+        "hostname": "td-in-f94.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.1469,120.6839",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://apresolve.spotify.com/?type=dealer-g2&type=spclient",
@@ -216,8 +267,61 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.044,
-        "detection_method": "rtt"
+        "rtt": 8.479,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "35.186.224.24",
+          "prefix": "35.186.224.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 63,
+          "location_count": 63
+        }
+      }
+    },
+    {
+      "originalUrl": "https://o22381.ingest.sentry.io/api/114855/envelope/?sentry_version=7&sentry_key=de32132fc06e4b28965ecf25332c3a25&sentry_client=sentry.javascript.react%2F10.63.0",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "o22381.ingest.sentry.io",
+        "ip": "34.160.81.0",
+        "hostname": "0.81.160.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 7.19,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.160.81.0",
+          "prefix": "34.160.81.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 65,
+          "location_count": 65
+        }
       }
     },
     {
@@ -237,8 +341,24 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.842,
-        "detection_method": "rtt"
+        "rtt": 6.769,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "35.186.224.22",
+          "prefix": "35.186.224.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 63,
+          "location_count": 63
+        }
       }
     },
     {
@@ -258,8 +378,24 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 5.183,
-        "detection_method": "rtt"
+        "rtt": 6.1,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "35.186.224.24",
+          "prefix": "35.186.224.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 63,
+          "location_count": 63
+        }
       }
     },
     {
@@ -267,7 +403,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "cdn.cookielaw.org",
-        "ip": "104.18.87.42",
+        "ip": "104.18.86.42",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -278,44 +414,45 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd93d42dfaa4a84-TPE",
+        "cf-ray": "a1e22b63ff6b4a68-TPE",
         "detection_method": "header"
       }
     },
     {
-      "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-PZHN3VD",
-      "type": "script",
+      "originalUrl": "https://spclient.wg.spotify.com/library-import/v1/eligible",
+      "type": "fetch",
       "ipinfo": {
-        "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
-      "type": "xhr",
-      "ipinfo": {
-        "domain": "geolocation.onetrust.com",
-        "ip": "172.64.155.119",
-        "city": "San Francisco",
-        "region": "California",
+        "domain": "spclient.wg.spotify.com",
+        "ip": "35.186.224.24",
+        "hostname": "24.224.186.35.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
         "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
       },
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd93d45c810841b-TPE",
-        "detection_method": "header"
+        "rtt": 6.695,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "35.186.224.24",
+          "prefix": "35.186.224.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 63,
+          "location_count": 63
+        }
       }
     },
     {
@@ -335,16 +472,32 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 5.277,
-        "detection_method": "rtt"
+        "rtt": 6.754,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "35.186.224.24",
+          "prefix": "35.186.224.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 63,
+          "location_count": 63
+        }
       }
     },
     {
-      "originalUrl": "https://i.scdn.co/image/ab67616d00001e02e2887a1b6b98fc6c73bab12b",
+      "originalUrl": "https://i.scdn.co/image/ab67616d00001e029473ea3673fe674b522ffa94",
       "type": "image",
       "ipinfo": {
         "domain": "i.scdn.co",
-        "ip": "210.71.227.161",
+        "ip": "210.71.227.136",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -353,6 +506,64 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-PZHN3VD",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.googletagmanager.com",
+        "ip": "142.250.192.136",
+        "hostname": "bom12s18-in-f8.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "geolocation.onetrust.com",
+        "ip": "104.18.32.137",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "104.18.32.137",
+          "prefix": "104.18.32.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 78,
+          "location_count": 78,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
+      }
     }
   ]
 }

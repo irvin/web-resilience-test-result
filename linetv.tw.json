@@ -2,11 +2,12 @@
   "url": "https://linetv.tw",
   "canonicalURL": "https://www.linetv.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:51:46.043Z",
+  "timestamp": "2026-07-20T13:37:40.123Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,12 +25,12 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 302,
-  "uniqueDomains": 26,
+  "requestCount": 277,
+  "uniqueDomains": 27,
   "test_results": {
     "domestic": {
       "cloud": 22,
-      "direct": 1
+      "direct": 2
     },
     "foreign": {
       "cloud": 2,
@@ -51,51 +52,69 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Tokyo"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": null,
+        "detection_method": "rtt",
+        "rtt_error": "timeout",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "13.115.205.118",
+          "prefix": "13.115.205.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
     },
     {
       "originalUrl": "https://www.linetv.tw/",
       "type": "document",
       "ipinfo": {
         "domain": "www.linetv.tw",
-        "ip": "3.169.121.12",
-        "hostname": "server-3-169-121-12.tpe53.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "3.169.121.4",
+        "hostname": "server-3-169-121-4.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://web-static.linetv.tw/release-fargate/public/dist/main-0f18e7cf-prod.css",
+      "originalUrl": "https://web-static.linetv.tw/release-fargate/public/dist/main-a6fa1ab5-prod.css",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "web-static.linetv.tw",
-        "ip": "3.169.55.28",
-        "hostname": "server-3-169-55-28.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "65.9.180.36",
+        "hostname": "server-65-9-180-36.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://static-img.linetv.tw/1460a4031f02f11b31e80525bf2c7d230348a995d4637a37d91a7822ebe24b2266bf3b8eb7d3eb0af088eee2f0a0f5de774953f12869a86726c48b28a1f62a3e4107cb4fc236730ec39b00693381b755865bde8f87cc14dab8f1a5159b98ce975628ceb1cec2baeccecab5f37524dab4001e6dd69c3f7bf9beee38693aa32f650607f5b32d46be5cd364b906e80e20ee0ca775061da8a2142c308a7aa66c9008cf35eac23b6c9f38f8c259ffc347408efabab377d92c7b9d0719ae71d4b1279383f23a4351ceda49e6c64d50a6e89c37eeec798cdc264573f34e55e294cf4770",
+      "originalUrl": "https://static-img.linetv.tw/1460a4031f02f11b31e80525bf2c7d230348a995d4637a37d91a7822ebe24b2296da13590275d56ba12019cbf2b23526480ba9657110e988c504ba54e483e235e82f08cc057eb6a6f7925acaff34471f1bff0356a3a76aeb0d796ac7daa2ec6e2ce00a49dd8ff7e4a3fe06f60ae8a8396c8f83b6fed81c23024d9e8ebb3986711955831b8b8972bdf8d5f408d5fe90157a9e1142234d80bfcb41bb61062b834ab1a9c493b857567559641a630498e2bd2e6d4e53826e97858e9c5286aac91beee785ad2ae8160c9a4826402cefc1438fc09795a2e51618c05faa20e84d205806ebcdd032c6504a32b771486c2b0e51177ef7658c91cce9b22a75382a70b9354a4f16489c01759599948979ddb5df92ad",
       "type": "image",
       "ipinfo": {
         "domain": "static-img.linetv.tw",
-        "ip": "3.169.55.94",
-        "hostname": "server-3-169-55-94.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "3.169.137.104",
+        "hostname": "server-3-169-137-104.tpe54.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -106,28 +125,28 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.198.74",
-        "hostname": "lctsaa-ab-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "108.177.97.95",
+        "hostname": "tm-in-f95.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "24.1469,120.6839",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://static.linetv.tw/line-tv-web-icon/v1.34.1/style.css",
+      "originalUrl": "https://static.linetv.tw/line-tv-web-icon/v1.35.1/style.css",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "static.linetv.tw",
-        "ip": "3.169.137.111",
-        "hostname": "server-3-169-137-111.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "65.9.180.95",
+        "hostname": "server-65-9-180-95.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -138,8 +157,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -154,12 +173,12 @@
       "type": "fetch",
       "ipinfo": {
         "domain": "in-stream.linetv.tw",
-        "ip": "3.169.121.53",
-        "hostname": "server-3-169-121-53.tpe53.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "54.192.248.66",
+        "hostname": "server-54-192-248-66.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -170,23 +189,23 @@
       "type": "xhr",
       "ipinfo": {
         "domain": "livebuy.tv",
-        "ip": "3.169.36.80",
-        "hostname": "server-3-169-36-80.tpe53.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "54.192.248.95",
+        "hostname": "server-54-192-248-95.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://linetvhelp.zendesk.com/api/v2/help_center/articles/search?label_names=%E7%BD%AE%E9%A0%82%E5%85%AC%E5%91%8A&per_page=1&sort_by=updated_at&sort_order=desc&now=1768355488019",
+      "originalUrl": "https://linetvhelp.zendesk.com/api/v2/help_center/articles/search?label_names=%E7%BD%AE%E9%A0%82%E5%85%AC%E5%91%8A&per_page=1&sort_by=updated_at&sort_order=desc&now=1784554644884",
       "type": "xhr",
       "ipinfo": {
         "domain": "linetvhelp.zendesk.com",
-        "ip": "216.198.53.6",
+        "ip": "216.198.54.6",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -194,19 +213,72 @@
         "org": "AS209242 Cloudflare London, LLC",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e25c45da557db2-TPE",
+        "detection_method": "header"
+      }
     },
     {
-      "originalUrl": "https://api.linetv.tw/v2/recommend/album?appId=062097f1b1f34e11e7f82aag22000aee&instanceId=2cde72cb-89de-481c-993b-d8123882ea5d&countryCode=TW&languageId=zh",
-      "type": "fetch",
+      "originalUrl": "https://api.linetv.tw/v1/cms/homepage?appId=062097f1b1f34e11e7f82aag22000aee&chocomemberAppId=86a6b258-ac30-4816-bc14-a31e514226d7&version=10.94.0&countryCode=TW&languageId=zh",
+      "type": "xhr",
       "ipinfo": {
         "domain": "api.linetv.tw",
-        "ip": "3.169.137.67",
-        "hostname": "server-3-169-137-67.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "54.192.248.89",
+        "hostname": "server-54-192-248-89.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://smartdata1.linetv.tw/api/v2/smart_channel/impression_tracking?backup1=SmartChannelTemplateBanner&backup2=https://www.linetv.tw/drama/22746&ad_type=smart_channel_home_page_banner&line_id=7d829adb-43e8-4f39-aa07-2faaaaddf770&action=impression&tag=%E8%AB%8B%E4%B8%96%E7%95%8C%E5%90%83%E6%A1%8C&category=%E5%85%A7%E5%BB%A3&subcategory=default&campaign=group:%20900%20WEB%20auto%20campaignTitle&installation_id=0691da56-82a9-404b-b6d1-7890eaff4690&app_id=062097f1b1f34e11e7f82aag22000aee&device=desktop_web&version=10.94.0&position_id=https://img.linetv.tw/storage/banner/create_1782716587534/1782716746276-90d1ad46-1117-43ce-9edd-d62c8f1d23ea.jpg&col_index=1",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "smartdata1.linetv.tw",
+        "ip": "3.169.55.66",
+        "hostname": "server-3-169-55-66.tpe54.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://img.linetv.tw/medium/drama/22785-b_260602.jpg",
+      "type": "image",
+      "ipinfo": {
+        "domain": "img.linetv.tw",
+        "ip": "54.192.248.28",
+        "hostname": "server-54-192-248-28.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://images.kktv.com.tw/resized_covers/0400026101/landscape.jpg",
+      "type": "image",
+      "ipinfo": {
+        "domain": "images.kktv.com.tw",
+        "ip": "65.9.180.28",
+        "hostname": "server-65-9-180-28.tpe53.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -233,8 +305,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "d.line-scdn.net",
-        "ip": "104.116.17.150",
-        "hostname": "a104-116-17-150.deploy.static.akamaitechnologies.com",
+        "ip": "184.25.121.253",
+        "hostname": "a184-25-121-253.deploy.static.akamaitechnologies.com",
         "city": "Yuanlin",
         "region": "Taiwan",
         "country": "TW",
@@ -245,103 +317,59 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://sb.scorecardresearch.com/b?c1=2&c2=23397073&ns__t=1768355488050&ns_c=UTF-8&c8=LINE%20TV%20-%20%E7%B2%BE%E5%BD%A9%E9%9A%A8%E7%9C%8B&c7=https%3A%2F%2Fwww.linetv.tw%2F&c9=",
+      "originalUrl": "https://sb.scorecardresearch.com/b?c1=2&c2=23397073&ns__t=1784554645009&ns_c=UTF-8&c8=LINE%20TV%20-%20%E7%B2%BE%E5%BD%A9%E9%9A%A8%E7%9C%8B&c7=https%3A%2F%2Fwww.linetv.tw%2F&c9=",
       "type": "image",
       "ipinfo": {
         "domain": "sb.scorecardresearch.com",
-        "ip": "3.169.137.16",
-        "hostname": "server-3-169-137-16.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "3.169.137.32",
+        "hostname": "server-3-169-137-32.tpe54.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://smartdata1.linetv.tw/api/v2/smart_channel/impression_tracking?backup1=SmartChannelTemplateBanner&backup2=https://www.linetv.tw/drama/20094&ad_type=smart_channel_home_page_banner&line_id=bd63e79f-cfa1-44f5-8deb-abeb6b68cef3&action=impression&tag=%E5%BB%9A%E5%B8%AB%E7%9A%84%E8%BF%AB%E9%99%8D%EF%BC%9A%E5%AE%A2%E5%AE%B6%E5%BB%9A%E6%88%BF2&category=%E5%85%A7%E5%BB%A3&subcategory=default&campaign=group:%20197%20WEB%20auto%20campaignTitle&installation_id=75272157-36db-4e0f-b858-2b5b7fd3d624&app_id=062097f1b1f34e11e7f82aag22000aee&device=desktop_web&version=10.79.1&position_id=https://img.linetv.tw/WEB/banner/20094_WebBN_251205_new.jpg&col_index=1",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "smartdata1.linetv.tw",
-        "ip": "3.169.55.66",
-        "hostname": "server-3-169-55-66.tpe54.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://img.linetv.tw/purchase/Mirror-b_240528.png",
-      "type": "image",
-      "ipinfo": {
-        "domain": "img.linetv.tw",
-        "ip": "3.169.121.45",
-        "hostname": "server-3-169-121-45.tpe53.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://images.kktv.com.tw/resized_covers/0100082201/landscape.jpg",
-      "type": "image",
-      "ipinfo": {
-        "domain": "images.kktv.com.tw",
-        "ip": "3.169.121.113",
-        "hostname": "server-3-169-121-113.tpe53.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.google.com/pagead/1p-user-list/944142328/?value=0&guid=ON&script=0&random=832850717167110700&is_vtc=1&cid=CAQSmQEA56J1eQYOwaMbGQLzreccbNFFxwH2aBwJ5-rYDm4rJdgvvYJFUKUKRTf3-yOGycCWPDl_vO9TY3-4UZh6Zo3j2F4n8W4FLHwIgMFrEXKuBegF6U7pN3vxqqkYNDyD847E0HywZncsaLXtO8Jilpdj22DGfSyRxspAAzOURJaWg-PMmPxMEOjwz2MbRLLvII5C_yjIyYHTFRY&random=4053720552",
+      "originalUrl": "https://www.google.com/pagead/1p-user-list/989285595/?value=0&guid=ON&script=0&random=9056963314059867000&is_vtc=1&cid=CAQS7AEAEQoqgdWMnG6JLfTDjE87qg0XShEKlxS-Gva2yWiYbiN5IqXagR4CxZuZhB3G_OQG5rQholTaxGmBqmawd1vsHQaQG5PT_X5DBXBOpboQljfLqp_qKAywGjbLdSW1raN9QqGqcoFS84cxB3cmQ0LL3hIPvE5wrIV5Jx3_BMXeGPPF3nvYFY5Ph2-qRTHDB6bkxnb8ol_29jGUplVmCIOv7EVbE452evOqyiglpOJm_P210S8_9xbi0iEyRqAjqZ61iy2AJ4zzmEC03yDuaJZb0kBlpYsDdStZMq87LxtCyhK2CY-vXMs2NR8t9g&random=2959639924",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.250.196.196",
-        "hostname": "nctsaa-ac-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
+        "ip": "142.251.151.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
         "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.667,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.151.119",
+          "prefix": "142.251.151.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
     },
     {
-      "originalUrl": "https://tracking-client.91app.com/1.2.0/nineyi.tracking.client.iife.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "tracking-client.91app.com",
-        "ip": "3.169.55.58",
-        "hostname": "server-3-169-55-58.tpe54.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/944142328/?value=0&guid=ON&script=0&random=832850717167110700&is_vtc=1&cid=CAQSmQEA56J1eQYOwaMbGQLzreccbNFFxwH2aBwJ5-rYDm4rJdgvvYJFUKUKRTf3-yOGycCWPDl_vO9TY3-4UZh6Zo3j2F4n8W4FLHwIgMFrEXKuBegF6U7pN3vxqqkYNDyD847E0HywZncsaLXtO8Jilpdj22DGfSyRxspAAzOURJaWg-PMmPxMEOjwz2MbRLLvII5C_yjIyYHTFRY&random=4053720552&ipr=y",
+      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/989285595/?value=0&guid=ON&script=0&random=9056963314059867000&is_vtc=1&cid=CAQS7AEAEQoqgdWMnG6JLfTDjE87qg0XShEKlxS-Gva2yWiYbiN5IqXagR4CxZuZhB3G_OQG5rQholTaxGmBqmawd1vsHQaQG5PT_X5DBXBOpboQljfLqp_qKAywGjbLdSW1raN9QqGqcoFS84cxB3cmQ0LL3hIPvE5wrIV5Jx3_BMXeGPPF3nvYFY5Ph2-qRTHDB6bkxnb8ol_29jGUplVmCIOv7EVbE452evOqyiglpOJm_P210S8_9xbi0iEyRqAjqZ61iy2AJ4zzmEC03yDuaJZb0kBlpYsDdStZMq87LxtCyhK2CY-vXMs2NR8t9g&random=2959639924&ipr=y",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
@@ -352,6 +380,72 @@
         "country": "TW",
         "loc": "25.0143,121.4672",
         "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://api2.amplitude.com/2/httpapi",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "api2.amplitude.com",
+        "ip": "54.184.41.146",
+        "hostname": "ec2-54-184-41-146.us-west-2.compute.amazonaws.com",
+        "city": "Boardman",
+        "region": "Oregon",
+        "country": "US",
+        "loc": "45.8399,-119.7006",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": null,
+        "detection_method": "rtt",
+        "rtt_error": "timeout",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "54.184.41.146",
+          "prefix": "54.184.41.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.facebook.com/tr/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://tracking-client.91app.com/1.2.0/nineyi.tracking.client.iife.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "tracking-client.91app.com",
+        "ip": "3.169.137.73",
+        "hostname": "server-3-169-137-73.tpe54.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
@@ -373,16 +467,32 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.707,
-        "detection_method": "rtt"
+        "rtt": 5.39,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.120.102.202",
+          "prefix": "34.120.102.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
       }
     },
     {
-      "originalUrl": "https://cookie-matching-redirect-707829737723.asia-east1.run.app/?domain=https%3A%2F%2Fpioneer.ghtinc.com%2Fcmg%3Fcn%3Ddentsu%26a%3D40%26ckType%3D18%26&google_gid=CAESEHe4YO9qFX2TMa-Zx5_A9ts&google_cver=1",
+      "originalUrl": "https://cookie-matching-redirect-707829737723.asia-east1.run.app/?domain=https%3A%2F%2Fpioneer.ghtinc.com%2Fcmg%3Fcn%3Ddentsu%26a%3D40%26ckType%3D18%26&google_gid=CAESENl28CDXGjhYvFAsX5Jqa7k&google_cver=1",
       "type": "image",
       "ipinfo": {
         "domain": "cookie-matching-redirect-707829737723.asia-east1.run.app",
-        "ip": "34.143.74.2",
+        "ip": "34.143.79.2",
         "city": "Mountain View",
         "region": "California",
         "country": "US",
@@ -393,8 +503,24 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.686,
-        "detection_method": "rtt"
+        "rtt": 4.965,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.143.79.2",
+          "prefix": "34.143.79.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
       }
     },
     {
@@ -402,7 +528,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "cdn.aralego.net",
-        "ip": "104.26.1.74",
+        "ip": "104.26.0.74",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -413,7 +539,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd97d11ee2f4a48-TPE",
+        "cf-ray": "a1e25c52eda14a85-TPE",
         "detection_method": "header"
       }
     },
@@ -447,22 +573,6 @@
         "timezone": "Asia/Singapore"
       },
       "category": "foreign/direct"
-    },
-    {
-      "originalUrl": "https://pbs.yahoo.com/setuid?bidder=rubicon&uid=MKDD795T-7-2K1J",
-      "type": "image",
-      "ipinfo": {
-        "domain": "pbs.yahoo.com",
-        "ip": "180.222.106.11",
-        "hostname": "e1.ycpi.vip.tpb.yahoo.com",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS38033 internet content provider",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
     }
   ]
 }

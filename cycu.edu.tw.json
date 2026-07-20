@@ -2,11 +2,12 @@
   "url": "https://cycu.edu.tw",
   "canonicalURL": "https://www.cycu.edu.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:28:01.793Z",
+  "timestamp": "2026-07-20T13:16:47.521Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,11 +25,11 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 185,
-  "uniqueDomains": 10,
+  "requestCount": 194,
+  "uniqueDomains": 13,
   "test_results": {
     "domestic": {
-      "cloud": 5,
+      "cloud": 9,
       "direct": 4
     },
     "foreign": {
@@ -44,10 +45,10 @@
         "domain": "cycu.edu.tw",
         "ip": "140.135.201.3",
         "hostname": "www.cycu.edu.tw",
-        "city": "Taoyuan City",
+        "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "24.9937,121.2970",
+        "loc": "25.0531,121.5264",
         "org": "AS1659 Taiwan Academic Network (TANet) Information Center",
         "timezone": "Asia/Taipei"
       },
@@ -60,61 +61,58 @@
         "domain": "www.cycu.edu.tw",
         "ip": "140.135.201.3",
         "hostname": "www.cycu.edu.tw",
-        "city": "Taoyuan City",
+        "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "24.9937,121.2970",
+        "loc": "25.0531,121.5264",
         "org": "AS1659 Taiwan Academic Network (TANet) Information Center",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "blob:https://www.cycu.edu.tw/6ab10367-c322-475b-8795-957e101fbf92",
-      "type": "other",
-      "ipinfo": {
-        "domain": ""
-      }
-    },
-    {
       "originalUrl": "https://www.youtube.com/iframe_api",
       "type": "script",
       "ipinfo": {
         "domain": "www.youtube.com",
-        "ip": "142.250.198.78",
-        "hostname": "lctsaa-ab-in-f14.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
+        "ip": "142.251.151.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
         "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 7.691,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.151.4",
+          "prefix": "142.251.151.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-K3SMTBB",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.77.8",
-        "hostname": "nctsaa-ab-in-f8.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fwww.cycu.edu.tw%2F&scrsrc=www.googletagmanager.com&rnd=660459329.1768354081&dt=%E9%A6%96%E9%A0%81%20-%20%E4%B8%AD%E5%8E%9F%E5%A4%A7%E5%AD%B8Chung%20Yuan%20Christian%20University&auid=552426137.1768354081&navt=n&npa=0&gtm=45He61d0h2v9102428214za200zd9102428214xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115938465~115938469~115985660~116988315~117041588&tft=1768354080725&tfd=1832&apve=1&apvf=f",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.198.68",
-        "hostname": "lctsaa-ab-in-f4.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -141,12 +139,96 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-YKYEC73F4M&cid=2047961931.1768354081&gtm=45je61d0h2v9171636460z89102428214za20gzb9102428214zd9102428214&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527906~104528501~104684208~104684211~105391253~115616985~115938465~115938469~115985660~116910503~117041587&z=1833279026",
+      "originalUrl": "https://www.google.com/ccm/collect?rcb=18&frm=0&ae=g&auid=1199745724.1784553398&dt=%E9%A6%96%E9%A0%81%20-%20%E4%B8%AD%E5%8E%9F%E5%A4%A7%E5%AD%B8Chung%20Yuan%20Christian%20University&en=page_view&dl=https%3A%2F%2Fwww.cycu.edu.tw%2F&scrsrc=www.googletagmanager.com&rnd=2108772764.1784553398&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He67f0v9102428214za200zd9102428214xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938468~118395334~118897920~118897930&apve=1&apvf=f&apvc=1&tft=1784553398319&tfd=4175&fmt=8",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.156.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 7.51,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.156.119",
+          "prefix": "142.251.156.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-YKYEC73F4M&cid=1628757963.1784553399&gtm=45je67f0v9171636460z89102428214za20gzb9102428214zd9102428214&rcb=10&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938466~115938469~118897920~118897930&z=131016513",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "ip": "142.250.198.67",
+        "hostname": "lctsaa-ab-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://rr3---sn-un57enel.googlevideo.com/videoplayback?expire=1784574998&ei=th9eatiWOf3e2roP0qXT8As&ip=2001%3Ab011%3A3802%3A7be8%3Af17b%3Aef25%3A8516%3A8cfa&id=o-AAXxHgQfiw9crrrdW4ceDDKPB-Xf11dIYq-0q_RTSIP3&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=291&met=1784553398%2C&mh=1h&mm=31%2C29&mn=sn-un57enel%2Csn-oji3b5-58&ms=au%2Crdu&mv=m&mvi=3&pl=52&rms=au%2Cau&initcwndbps=2196250&spc=SQ-umm1xZ_bIpTMCk5n-CczlwmwznFYrRlJi6IAjobWfCLA9V6XnB8c8El_no9rls4YkNA&svpuc=1&ns=RHAzurK1-UbnKtjfgpWP9iIW&sabr=1&rqh=1&mt=1784552959&fvip=1&keepalive=yes&fexp=51565116&c=WEB_EMBEDDED_PLAYER&n=X-wx2Jz0-uAisg&sparams=expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Cspc%2Csvpuc%2Cns%2Csabr%2Crqh&sig=AE0s2JYwRQIgROf3322uFQ2dV40sxCI2ZDFnU8tx7qV-qEf9D3TLA14CIQDjgEX-7FrKAT9qdfFuROEqYDBrNii5LChUxRMkjwE5Fw%3D%3D&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRgIhAJXRRyXLxx-KdWqDHbUHvbyJpPssPxbIMYc45czsq9sEAiEA8IC3S6Ul1aSa9_IHX4VhX01a4hODHdI3c7B28sMtC24%3D&cpn=JxG7LrcwW3cDU-qJ&cver=2.20260717.01.00&rn=1&alr=yes",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "rr3---sn-un57enel.googlevideo.com",
+        "ip": "142.251.85.168",
+        "hostname": "tsa01s12-in-f8.1e100.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://i.ytimg.com/vi/MXsl-JSWe6M/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGC0gYyhlMA8=&rs=AOn4CLAaSwXC5AkL5ao3PJuEa1THTGPSMg",
+      "type": "image",
+      "ipinfo": {
+        "domain": "i.ytimg.com",
+        "ip": "142.250.198.86",
+        "hostname": "lctsaa-ab-in-f22.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.gstatic.com/youtube/img/icons/mweb/youtube_fill/logo/v2/67px.svg",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.gstatic.com",
+        "ip": "142.250.204.35",
+        "hostname": "hkg07s38-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -161,8 +243,8 @@
       "type": "image",
       "ipinfo": {
         "domain": "yt3.ggpht.com",
-        "ip": "142.250.77.1",
-        "hostname": "nctsaa-ab-in-f1.1e100.net",
+        "ip": "142.250.66.65",
+        "hostname": "hkg12s27-in-f1.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -173,20 +255,56 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://rr8---sn-ipoxu-un5k.googlevideo.com/videoplayback?expire=1768375680&ei=IPFmadrHObbopt8PkKbcuA8&ip=2001%3Ab011%3A3802%3Ab3f9%3A7801%3A3a2d%3A7ca8%3A40b&id=o-ADn0djdVcDPT3LR9MICijXAGSxhB9UllqqfCadjSPWdX&itag=244&aitags=133%2C134%2C135%2C136%2C137%2C160%2C242%2C243%2C244%2C247%2C248%2C278&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=0&met=1768354080%2C&mh=1h&mm=31%2C29&mn=sn-ipoxu-un5k%2Csn-un57snee&ms=au%2Crdu&mv=m&mvi=8&pcm2cms=yes&pl=52&rms=au%2Cau&initcwndbps=3161250&bui=AW-iu_qFmYz7wo0oXEQA15kmVwSfzxyZCgTH3XnEyJJfup6Ie1Qv9OMRmha-W-QE_bstn9nICe-XQblg&spc=q5xjPACDb_V_H0Mynu4qMRU0eJc6xrfFBUjJ7oQSpdzO_YhQ3xUhdKnvVoXUKh6grNI&vprv=1&svpuc=1&mime=video%2Fwebm&ns=Ot-imF-DuQyB1AtxV-ormtcR&rqh=1&gir=yes&clen=37696641&dur=410.243&lmt=1762474510215919&mt=1768353436&fvip=3&keepalive=yes&fexp=51552689%2C51565115%2C51565682%2C51580968%2C51626154&c=WEB_EMBEDDED_PLAYER&sefc=1&txp=530F224&n=b8gfCON1YTJWOQ&sparams=expire%2Cei%2Cip%2Cid%2Caitags%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpcm2cms%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRgIhALI1PyeZ_uULyoeqmTXFepc1I26cdIDhXB5tb10G9oNRAiEAjp_OwmLygSCCAqjdlw-aGo2ffUSveWBLyl8hOyhGcNI%3D&alr=yes&sig=AJfQdSswRAIgKdRbYQbH9Swcc-bQ3Q0TbbDP9wxr4F6lzT67lz4zD_UCIF3MmpOKdBE4ignB2a_TSwA5jPAMcaVHPn3cEOpu7u34&cpn=fhZKMzTfssxL7VHR&cver=1.20260112.10.00&range=0-621459&rn=1&rbuf=0&pot=IggHNAY1blL2FA==&ump=1&srfvp=1",
-      "type": "fetch",
+      "originalUrl": "https://www.facebook.com/tr/?id=934507014241368&ev=PageView&dl=https%3A%2F%2Fwww.cycu.edu.tw%2F&rl=&if=false&ts=1784553399473&iw=false&sw=1280&sh=720&v=2.9.357&r=stable&ec=0&o=4126&aems=0%3B0&fbp=fb.2.1784553399470.313812256231737419&ler=empty&cdl=API_unavailable&pmd[title]=%E9%A6%96%E9%A0%81%20-%20%E4%B8%AD%E5%8E%9F%E5%A4%A7%E5%AD%B8Chung%20Yuan%20Christian%20University&pmd[locale]=zh_TW&imft=1&tz=480&it=1784553399000&coo=false&exp=s1&expv2[0]=pl0&expv2[1]=el2&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=ct2&expv2[6]=hf1&rqm=GET",
+      "type": "image",
       "ipinfo": {
-        "domain": "rr8---sn-ipoxu-un5k.googlevideo.com",
-        "ip": "203.66.169.19",
-        "hostname": "203-66-169-19.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS3462 Data Communication Business Group",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "jnn-pa.googleapis.com",
+        "ip": "172.217.114.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 7.392,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "172.217.114.4",
+          "prefix": "172.217.114.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
     }
   ]
 }

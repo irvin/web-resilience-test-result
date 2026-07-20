@@ -2,11 +2,12 @@
   "url": "https://stockfeel.com.tw",
   "canonicalURL": "https://www.stockfeel.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T02:44:29.828Z",
+  "timestamp": "2026-07-20T14:18:09.987Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 126,
-  "uniqueDomains": 16,
+  "requestCount": 168,
+  "uniqueDomains": 18,
   "test_results": {
     "domestic": {
-      "cloud": 10,
-      "direct": 1
+      "cloud": 12,
+      "direct": 2
     },
     "foreign": {
-      "cloud": 3,
+      "cloud": 2,
       "direct": 1
     }
   },
@@ -42,7 +43,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "stockfeel.com.tw",
-        "ip": "104.20.26.46",
+        "ip": "172.66.169.180",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -52,9 +53,32 @@
       },
       "category": "domestic/cloud",
       "cloud_provider": {
+        "cf-ray": "a1e2979c7ceaf853-SIN",
         "country": "tw",
-        "rtt": 5.148,
-        "detection_method": "rtt"
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "172.66.169.180",
+          "prefix": "172.66.169.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 63,
+          "location_count": 63,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -72,48 +96,95 @@
       },
       "category": "domestic/cloud",
       "cloud_provider": {
+        "cf-ray": "a1e2979ebbc4f853-SIN",
         "country": "tw",
-        "rtt": 4.856,
-        "detection_method": "rtt"
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "172.66.169.180",
+          "prefix": "172.66.169.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 63,
+          "location_count": 63,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
-      "originalUrl": "https://fonts.googleapis.com/css2?family=Roboto%3Awght%40100%3B300%3B400%3B500%3B700&display=swap&ver=202512150353",
+      "originalUrl": "https://fonts.googleapis.com/css2?family=Roboto%3Awght%40100%3B300%3B400%3B500%3B700&display=swap&ver=202605270944",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.196.202",
-        "hostname": "nctsaa-ac-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "108.177.125.95",
+        "hostname": "tp-in-f95.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "24.1469,120.6839",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?ver=202512150353",
+      "originalUrl": "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?ver=202605270944",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "151.101.193.229",
+        "ip": "104.17.208.5",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
         "loc": "37.7621,-122.3971",
-        "org": "AS54113 Fastly, Inc.",
+        "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 35.88,
-        "detection_method": "rtt"
+        "x-served-by": "cache-fra-eddf8230180-FRA, cache-sin-wsat1880096-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "104.17.208.5",
+          "prefix": "104.17.208.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 76,
+          "location_count": 76,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
-      "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
+      "originalUrl": "https://connect.facebook.net/zh_TW/sdk.js",
       "type": "script",
       "ipinfo": {
         "domain": "connect.facebook.net",
@@ -129,7 +200,64 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://secure.gravatar.com/avatar/c7b2442505d4aea38f626fe5449e46ec?s=96&d=mm&r=g",
+      "originalUrl": "https://d31qbv1cthcecs.cloudfront.net/atrk.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "d31qbv1cthcecs.cloudfront.net"
+      }
+    },
+    {
+      "originalUrl": "https://cdp2.stockfeel.com.tw/assets/www/js/cdp/universal_tw.min.js?v=202605270944",
+      "type": "script",
+      "ipinfo": {
+        "domain": "cdp2.stockfeel.com.tw",
+        "ip": "13.228.243.207",
+        "hostname": "ec2-13-228-243-207.ap-southeast-1.compute.amazonaws.com",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": null,
+        "detection_method": "rtt",
+        "rtt_error": "timeout",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "13.228.243.207",
+          "prefix": "13.228.243.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-W5JQ8FV",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.googletagmanager.com",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://secure.gravatar.com/avatar/9af8e7bc96b4a3dd5ac92b80ac2a6768?s=96&d=mm&r=g",
       "type": "image",
       "ipinfo": {
         "domain": "secure.gravatar.com",
@@ -144,7 +272,7 @@
       "category": "foreign/direct"
     },
     {
-      "originalUrl": "https://images.stockfeel.com.tw/stockfeelimage/2023/02/581467-1-1-150x150.jpg",
+      "originalUrl": "https://images.stockfeel.com.tw/stockfeelimage/2023/02/1-1-150x150.png",
       "type": "image",
       "ipinfo": {
         "domain": "images.stockfeel.com.tw",
@@ -158,9 +286,32 @@
       },
       "category": "domestic/cloud",
       "cloud_provider": {
+        "cf-ray": "a1e297a3dc95f853-SIN",
         "country": "tw",
-        "rtt": 4.81,
-        "detection_method": "rtt"
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "172.66.169.180",
+          "prefix": "172.66.169.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 63,
+          "location_count": 63,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -168,8 +319,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "accounts.google.com",
-        "ip": "64.233.188.84",
-        "hostname": "tk-in-f84.1e100.net",
+        "ip": "142.251.8.84",
+        "hostname": "tb-in-f84.1e100.net",
         "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
@@ -195,40 +346,53 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd9ca6a8e03ae64-TPE",
+        "cf-ray": "a1e297a479f7b016-TPE",
         "detection_method": "header"
       }
     },
     {
-      "originalUrl": "https://d31qbv1cthcecs.cloudfront.net/atrk.js",
-      "type": "script",
+      "originalUrl": "https://www.google.com/ccm/collect?rcb=6&frm=0&apvc=1&ae=g&auid=538754128.1784557077&dt=StockFeel%20%E8%82%A1%E6%84%9F&en=page_view&dl=https%3A%2F%2Fwww.stockfeel.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=932597887.1784557077&navt=n&npa=0&ep.ads_data_redaction=0&gcd=13l3l3l3l1l1&tft=1784557076746&tfd=1433&gtm=45He67f0v810435753za200zd810435753xea&dma=0&tag_exp=115938466~115938468~118897920~118897930~119724322&apve=1&apvf=f&fmt=8",
+      "type": "fetch",
       "ipinfo": {
-        "domain": "d31qbv1cthcecs.cloudfront.net"
+        "domain": "www.google.com",
+        "ip": "142.251.156.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.851,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.156.119",
+          "prefix": "142.251.156.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
       }
     },
     {
-      "originalUrl": "https://cdp2.stockfeel.com.tw/assets/www/js/cdp/universal_tw.min.js?v=202512150353",
-      "type": "script",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-XGZMYV0S4P&cid=1140641730.1784557077&gtm=45je67f0v9123272329z8810435753za20gzb810435753zd810435753&rcb=6&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938466~115938468~118897920~118897930~119724322&z=281462135",
+      "type": "image",
       "ipinfo": {
-        "domain": "cdp2.stockfeel.com.tw",
-        "ip": "47.130.163.243",
-        "hostname": "ec2-47-130-163-243.ap-southeast-1.compute.amazonaws.com",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-W5JQ8FV",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
+        "domain": "www.google.com.tw",
+        "ip": "142.250.196.195",
+        "hostname": "nctsaa-ac-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -239,49 +403,69 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://console.images.stockfeelgroup.com/ads/106/2026/01/Mt7yil2EYueBUWhVFYtEfZyDkFq0kUHjOICBGoUg.jpg",
-      "type": "image",
+      "originalUrl": "https://www.facebook.com/x/oauth/status?client_id=1395424247451149&input_token&origin=1&redirect_uri=https%3A%2F%2Fwww.stockfeel.com.tw%2F&sdk=joey&wants_cookie_data=true",
+      "type": "fetch",
       "ipinfo": {
-        "domain": "console.images.stockfeelgroup.com",
-        "ip": "3.169.137.77",
-        "hostname": "server-3-169-137-77.tpe54.r.cloudfront.net",
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
         "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
+        "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fwww.stockfeel.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=2131136818.1768358658&dt=StockFeel%20%E8%82%A1%E6%84%9F&auid=1838001789.1768358658&navt=n&npa=0&gtm=45He61c1h1v810435753za200zd810435753xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115938466~115938468~116682877~117041588&tft=1768358657955&tfd=1744&apve=1&apvf=f",
+      "originalUrl": "https://mpc-prod-27-s6uit34pua-uk.a.run.app/events?cee=no",
       "type": "fetch",
       "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.204.36",
-        "hostname": "hkg07s38-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "domain": "mpc-prod-27-s6uit34pua-uk.a.run.app",
+        "ip": "34.143.74.2",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 7.545,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.143.74.2",
+          "prefix": "34.143.74.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-XGZMYV0S4P&cid=1371983163.1768358658&gtm=45je61c1h1v9123272329z8810435753za20gzb810435753zd810435753&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115938466~115938469~116682877~116910503~116988316~117041587&z=1333053736",
+      "originalUrl": "https://console.images.stockfeelgroup.com/ads/862/2026/07/MVEscu3GjJTpOQl0RZMdZMG3dtHGGJUmd52lnRE9.jpg",
       "type": "image",
       "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.198.67",
-        "hostname": "lctsaa-ab-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "domain": "console.images.stockfeelgroup.com",
+        "ip": "3.169.137.94",
+        "hostname": "server-3-169-137-94.tpe54.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
@@ -291,8 +475,8 @@
       "type": "fetch",
       "ipinfo": {
         "domain": "api.stockfeel.com.tw",
-        "ip": "52.76.84.8",
-        "hostname": "ec2-52-76-84-8.ap-southeast-1.compute.amazonaws.com",
+        "ip": "18.142.80.232",
+        "hostname": "ec2-18-142-80-232.ap-southeast-1.compute.amazonaws.com",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",
@@ -300,7 +484,25 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Singapore"
       },
-      "category": "foreign/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": null,
+        "detection_method": "rtt",
+        "rtt_error": "timeout",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "18.142.80.232",
+          "prefix": "18.142.80.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
     }
   ]
 }

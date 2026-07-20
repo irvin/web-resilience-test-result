@@ -2,11 +2,12 @@
   "url": "https://next.tw",
   "canonicalURL": "https://www.next.co.uk/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T02:42:24.340Z",
+  "timestamp": "2026-07-20T13:44:19.415Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,7 +25,7 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 108,
+  "requestCount": 106,
   "uniqueDomains": 2,
   "test_results": {
     "domestic": {
@@ -42,19 +43,32 @@
       "type": "document",
       "ipinfo": {
         "domain": "next.tw",
-        "ip": "23.37.92.155",
-        "hostname": "a23-37-92-155.deploy.static.akamaitechnologies.com",
-        "city": "Tokyo",
-        "region": "Tokyo",
-        "country": "JP",
-        "loc": "35.6895,139.6917",
+        "ip": "23.200.143.84",
+        "hostname": "a23-200-143-84.deploy.static.akamaitechnologies.com",
+        "city": "Tseung Kwan O",
+        "region": "Sai Kung District",
+        "country": "HK",
+        "loc": "22.3279,114.2499",
         "org": "AS20940 Akamai International B.V.",
-        "timezone": "Asia/Tokyo"
+        "timezone": "Asia/Hong_Kong"
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 35.862,
-        "detection_method": "rtt"
+        "rtt": 31.927,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "23.200.143.84",
+          "prefix": "23.200.143.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
       }
     },
     {
@@ -62,12 +76,12 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.nextdirect.com",
-        "ip": "23.39.61.97",
-        "hostname": "a23-39-61-97.deploy.static.akamaitechnologies.com",
-        "city": "Taipei",
+        "ip": "104.116.17.89",
+        "hostname": "a104-116-17-89.deploy.static.akamaitechnologies.com",
+        "city": "Yuanlin",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "23.9567,120.5761",
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },

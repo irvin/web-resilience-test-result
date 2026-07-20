@@ -2,11 +2,12 @@
   "url": "https://www.cyut.edu.tw/",
   "canonicalURL": "https://www.cyut.edu.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:59:31.146Z",
+  "timestamp": "2026-07-20T13:25:33.621Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 128,
+  "requestCount": 132,
   "uniqueDomains": 10,
   "test_results": {
     "domestic": {
-      "cloud": 5,
+      "cloud": 6,
       "direct": 4
     },
     "foreign": {
-      "cloud": 1,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -74,8 +75,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.204.40",
-        "hostname": "hkg07s38-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -90,7 +91,7 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "use.fontawesome.com",
-        "ip": "172.67.142.245",
+        "ip": "104.21.27.152",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -98,10 +99,34 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 129.357,
-        "detection_method": "rtt"
+        "cf-ray": "a1e24abbbb509c7d-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "104.21.27.152",
+          "prefix": "104.21.27.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 59,
+          "location_count": 59,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -125,24 +150,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "cse.google.com",
-        "ip": "142.250.198.78",
-        "hostname": "lctsaa-ab-in-f14.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dr=www.cyut.edu.tw&dl=https%3A%2F%2Fweb.cyut.edu.tw%2Findex.php&scrsrc=www.googletagmanager.com&rnd=319885084.1768355968&dt=%E6%9C%9D%E9%99%BD%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8%20-%20%E6%9C%9D%E9%99%BD%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8&auid=1968440686.1768355968&navt=n&npa=0&gtm=45He61d0h2v9126662507za200zd9126662507xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115938465~115938468~117041587&tft=1768355967695&tfd=285&apve=1&apvf=f",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.204.36",
-        "hostname": "hkg07s38-in-f4.1e100.net",
+        "ip": "142.250.196.206",
+        "hostname": "nctsaa-ac-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -169,7 +178,43 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-MDWDJDN8B6&cid=404699244.1768355968&gtm=45je61d0h2v9129997895z89126662507za20gzb9126662507zd9126662507&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391253~115938465~115938469~117041587~117091819&z=2052442151",
+      "originalUrl": "https://www.google.com/ccm/collect?rcb=2&frm=0&ae=g&auid=261865621.1784553927&dt=%E6%9C%9D%E9%99%BD%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8%20-%20%E6%9C%9D%E9%99%BD%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8&en=page_view&dl=https%3A%2F%2Fweb.cyut.edu.tw%2Findex.php&dr=www.cyut.edu.tw&scrsrc=www.googletagmanager.com&rnd=1425527721.1784553927&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He67g0h2v9126662507za200zd9126662507xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938468~118897920~118897930&apve=1&apvf=f&apvc=1&tft=1784553926625&tfd=699&fmt=8",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.155.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.955,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.155.119",
+          "prefix": "142.251.155.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-MDWDJDN8B6&cid=282177232.1784553927&gtm=45je67g0h2v9129997895z89126662507za20gzb9126662507zd9126662507&rcb=19&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115616985~115938466~115938468~118897920~118897930~119527019~119896802&z=1657454873",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
@@ -185,8 +230,8 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.facebook.com/tr/?id=1874440095899585&ev=PageView&dl=https%3A%2F%2Fweb.cyut.edu.tw%2Findex.php%3FLang%3Dzh-tw&rl=https%3A%2F%2Fwww.cyut.edu.tw%2F&if=false&ts=1768355969009&sw=1280&sh=720&v=2.9.248&r=stable&ec=0&o=156&ler=other&it=1768355968540&coo=false&expv2[0]=pl0&expv2[1]=el2&expv2[2]=bc1&expv2[3]=mr2&expv2[4]=im0&rqm=GET",
-      "type": "image",
+      "originalUrl": "https://www.facebook.com/tr/",
+      "type": "document",
       "ipinfo": {
         "domain": "www.facebook.com",
         "ip": "31.13.87.36",

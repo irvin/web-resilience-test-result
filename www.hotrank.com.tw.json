@@ -2,11 +2,12 @@
   "url": "https://www.hotrank.com.tw/",
   "canonicalURL": "https://www.hotrank.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T04:07:44.635Z",
+  "timestamp": "2026-07-20T15:43:46.937Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -28,11 +29,11 @@
   "uniqueDomains": 2,
   "test_results": {
     "domestic": {
-      "cloud": 1,
+      "cloud": 2,
       "direct": 0
     },
     "foreign": {
-      "cloud": 1,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -50,10 +51,34 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 135.035,
-        "detection_method": "rtt"
+        "cf-ray": "a1e3155388a65fae-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "172.67.217.223",
+          "prefix": "172.67.217.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 58,
+          "location_count": 58,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -61,18 +86,18 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "151.101.1.229",
+        "ip": "104.17.208.5",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
         "loc": "37.7621,-122.3971",
-        "org": "AS54113 Fastly, Inc.",
+        "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bda449e8dd80740-TPE",
+        "cf-ray": "a1e31554ddf86b6f-TPE",
         "x-served-by": "cache-fra-etou8220159-FRA, cache-hkg17920-HKG",
         "detection_method": "header"
       }

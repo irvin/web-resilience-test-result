@@ -2,11 +2,12 @@
   "url": "https://adobe.com",
   "canonicalURL": "https://www.adobe.com/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:14:32.892Z",
+  "timestamp": "2026-07-20T13:11:23.126Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -28,8 +29,8 @@
   "uniqueDomains": 3,
   "test_results": {
     "domestic": {
-      "cloud": 2,
-      "direct": 1
+      "cloud": 1,
+      "direct": 2
     },
     "foreign": {
       "cloud": 0,
@@ -42,23 +43,23 @@
       "type": "document",
       "ipinfo": {
         "domain": "adobe.com",
-        "ip": "203.69.138.209",
-        "hostname": "203-69-138-209.hinet-ip.hinet.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "210.65.144.218",
+        "hostname": "210-65-144-218.hinet-ip.hinet.net",
+        "city": "Taichung",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS20940 Akamai International B.V.",
+        "loc": "24.1469,120.6839",
+        "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://www.adobe.com/",
       "type": "document",
       "ipinfo": {
         "domain": "www.adobe.com",
-        "ip": "210.71.227.162",
+        "ip": "210.71.227.106",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -69,11 +70,11 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://adobeid-na1.services.adobe.com/ims/check/v6/token?jslVersion=v2-v0.49.0-12-gfb1792a",
+      "originalUrl": "https://adobeid-na1.services.adobe.com/ims/check/v6/token?jslVersion=v2-v0.57.0-1-g5b0a59c",
       "type": "xhr",
       "ipinfo": {
         "domain": "adobeid-na1.services.adobe.com",
-        "ip": "172.66.0.163",
+        "ip": "162.159.140.165",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -84,8 +85,30 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 5.058,
-        "detection_method": "rtt"
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "162.159.140.165",
+          "prefix": "162.159.140.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 77,
+          "location_count": 77,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     }
   ]

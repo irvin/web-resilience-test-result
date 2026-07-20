@@ -2,11 +2,12 @@
   "url": "https://happygocard.com.tw",
   "canonicalURL": "https://happygocard.com.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T02:50:44.062Z",
+  "timestamp": "2026-07-20T15:27:42.603Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,16 +25,16 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 153,
-  "uniqueDomains": 11,
+  "requestCount": 195,
+  "uniqueDomains": 16,
   "test_results": {
     "domestic": {
-      "cloud": 7,
-      "direct": 2
+      "cloud": 10,
+      "direct": 3
     },
     "foreign": {
       "cloud": 1,
-      "direct": 0
+      "direct": 1
     }
   },
   "domainDetails": [
@@ -44,10 +45,10 @@
         "domain": "happygocard.com.tw",
         "ip": "113.196.76.109",
         "hostname": "www.happygocard.com.tw",
-        "city": "Taipei",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS9919 New Century InfoComm Tech Co., Ltd.",
         "timezone": "Asia/Taipei"
       },
@@ -58,12 +59,12 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.happygocard.com.tw",
-        "ip": "3.169.137.39",
-        "hostname": "server-3-169-137-39.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "ip": "3.169.137.9",
+        "hostname": "server-3-169-137-9.tpe54.r.cloudfront.net",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -90,8 +91,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.77.8",
-        "hostname": "nctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -106,8 +107,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "apis.google.com",
-        "ip": "142.250.66.78",
-        "hostname": "hkg12s27-in-f14.1e100.net",
+        "ip": "142.250.196.206",
+        "hostname": "nctsaa-ac-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -118,19 +119,71 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.happyclick.com.tw/google_bidding/google_pixel.php?source=HappyGo_website&userid=&google_gid=CAESEHV0JHwHrU2QGpa5JUdI6U8&google_cver=1",
+      "originalUrl": "https://www.happyclick.com.tw/google_bidding/google_pixel.php?source=HappyGo_website&userid=&google_gid=CAESEPlu_zJhMG6aWB_mUJNJW1w&google_cver=1",
       "type": "image",
       "ipinfo": {
         "domain": "www.happyclick.com.tw"
       }
     },
     {
+      "originalUrl": "https://www.google.com/measurement/conversion?random=1784561250120&cv=11&tid=G-HSEZJ8P2SB&fst=1784561250120&fmt=8&en=page_view&gtm=45je67f0v886268125za200zd886268125xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938469~118897920~118897930~119527019~119709549&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.happygocard.com.tw%2Fofficial%2Findex.do&gacid=1024956959.1784561250&frm=0&tiba=HAPPY%20GO%E9%BB%9E%E6%95%B8%EF%BC%8D%E5%BF%AB%E6%A8%82%E8%B3%BC%E8%81%AF%E5%90%88%E9%9B%86%E9%BB%9E%E5%8D%A1_HAPPYGO_%E5%BF%AB%E6%A8%82%E8%B3%BC&gtm_ee=1&npa=0&pscdl=noapi&auid=759900854.1784561250&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&rcb=6",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.157.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.101,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.157.119",
+          "prefix": "142.251.157.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-HSEZJ8P2SB&cid=1024956959.1784561250&gtm=45je67f0v886268125za200zd886268125&rcb=6&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115616985~115938466~115938469~118897920~118897930~119527019~119709549&z=1742951427",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.77.195",
+        "hostname": "del11s08-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
       "originalUrl": "https://footprint.happygocard.com.tw/matomo.js",
       "type": "script",
       "ipinfo": {
         "domain": "footprint.happygocard.com.tw",
-        "ip": "13.114.238.21",
-        "hostname": "ec2-13-114-238-21.ap-northeast-1.compute.amazonaws.com",
+        "ip": "16.76.126.233",
+        "hostname": "ec2-16-76-126-233.ap-northeast-1.compute.amazonaws.com",
         "city": "Tokyo",
         "region": "Tokyo",
         "country": "JP",
@@ -138,23 +191,25 @@
         "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Tokyo"
       },
-      "category": "foreign/cloud"
-    },
-    {
-      "originalUrl": "https://www.google.com/ccm/collect?frm=0&en=page_view&dl=https%3A%2F%2Fwww.happygocard.com.tw%2Fofficial%2Findex.do&scrsrc=www.googletagmanager.com&rnd=1126527641.1768359032&dt=HAPPY%20GO%E9%BB%9E%E6%95%B8%EF%BC%8D%E5%BF%AB%E6%A8%82%E8%B3%BC%E8%81%AF%E5%90%88%E9%9B%86%E9%BB%9E%E5%8D%A1_HAPPYGO_%E5%BF%AB%E6%A8%82%E8%B3%BC&auid=88679980.1768359032&navt=n&npa=0&gtm=45He61c1v76225889za200zd76225889xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=103116026~103200004~104527907~104528500~104684208~104684211~105391252~115938466~115938469~116682877~117041588&tft=1768359031678&tfd=2070&apve=1&apvf=f",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.250.66.68",
-        "hostname": "hkg12s27-in-f4.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": null,
+        "detection_method": "rtt",
+        "rtt_error": "timeout",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "16.76.126.233",
+          "prefix": "16.76.126.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
@@ -173,12 +228,12 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-HSEZJ8P2SB&cid=812560638.1768359032&gtm=45je61c1h1v886268125z876225889za20gzb76225889zd76225889&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391252~115616985~115938466~115938469~116682877~116988316~117041588&z=1949087222",
-      "type": "image",
+      "originalUrl": "https://fundingchoicesmessages.google.com/i/ca-pub-3490031404338399?href=https%3A%2F%2Fwww.happygocard.com.tw%2Fofficial%2Findex.do&ers=2",
+      "type": "script",
       "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.204.35",
-        "hostname": "hkg07s38-in-f3.1e100.net",
+        "domain": "fundingchoicesmessages.google.com",
+        "ip": "142.250.192.142",
+        "hostname": "bom12s18-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -189,20 +244,124 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://fundingchoicesmessages.google.com/i/ca-pub-3490031404338399?href=https%3A%2F%2Fwww.happygocard.com.tw%2Fofficial%2Findex.do&ers=2",
-      "type": "script",
+      "originalUrl": "https://mt-usw.appiersig.com/event?bidobjid=tTNDaa5YD36qKH_WYj5eag&cid=39LTVvJZSQq6aK0WkT-y4g&oid=TbOw08gTQ3SyhML0FPS_pA&partner_id=03mSf3HNecb-&s2s=0&event=show&loc=show&dm=&osv=10.15.7.0&adj=0&cn=0cbSxZLgjUm7NZYM9wmOWKjtD&url=cLtRZLo_KyONwju93mIBMbsNZbVgZDtBZjgDUDl-3LoBwHTxc8iy5m7-c87FHmgf5rozrSt8JfEcIsSV7YSKoSJFi4sz7bZ9JSt2tbSN7igGoP3VnRNeisgX78iN3y3PJ8lec8MOwHTxc8iyHmlyUmSflj7swgOE3SAV5rdPUi7YoRN23871Kn3PJ8lec8teoqRxwmlrCSEo3mEiUrJ28gg72HJWrsJKcjtGlY7NUHTNc8J95rGWoiOjUSORJsAy7rdRoqMYwmSWZbSE3mzec8MOonRVHmJ-HDtDHPus20Zso8oV30uR20gNlYSfHm7y38SRcH3g58J-HmSyJbS-3iOsZbteUHi-J8zjlYSfHm7y38SRcH3gHmgf587HUI7zMiN_IfOzcIO9MIzmMsuy7SGYw8te3DlBJHdOwHTxc8iyHmlyUmSflYSfHmJyUDixHmgf58SxZbggZgO1ZYON30SN7Pus2bGDwqiYon3qUmzR38zR5HTqHDtDljlBJHtEUYJeZmNBZjtec8MOJYtaoqg-ljtgZYRO3mVewHlRw8VgHDix3SOWJ8VsUYZYJLlNwmWEUYJeJbiWZbVNJbiec8MOorMVwruy30wmoqtY7PMR7qlq3qMm3qIs20wy7mGR7YoYw8teJLgx3rsmc8iDlgONJLlFHmoOoPgoiS3mngErIHGmwI-ximWIKHfR3y3ewHtycsOqZqs38SgoJYN3UityKiNiZ8ODi0Sw2LTtlgONJLlFHDTR5rdPUi7YoRN23871Kn3ewHtycsO1crsRiGzGw8Gs8IMP7jSKnSOH88as38Sj",
+      "type": "fetch",
       "ipinfo": {
-        "domain": "fundingchoicesmessages.google.com",
-        "ip": "142.250.204.46",
-        "hostname": "hkg07s38-in-f14.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "domain": "mt-usw.appiersig.com",
+        "ip": "34.36.231.211",
+        "hostname": "211.231.36.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 7.09,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.36.231.211",
+          "prefix": "34.36.231.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 64,
+          "location_count": 64
+        }
+      }
+    },
+    {
+      "originalUrl": "https://ss-sg.appiersig.com/winshowimg?bidobjid=tTNDaa5YD36qKH_WYj5eag&cid=39LTVvJZSQq6aK0WkT-y4g&crid=YXYLvhYmTr-XUqowT1X8pQ&crpid=cWmCyAXzROyiOnANvCR24Q&soid=WYaH&partner_id=03mSf3HNecb-&bx=Cylxwnu_orIQKqwz70MyoroQ7qZV20ZQK4lqU1u_uYNNZLTz3mOqwHlfKY7BUnzRJyu-uYS9uqa1cbSxZLgjUm7NZYM9wmOWKjtDu1x1c8sRuqaVK4lNZLM12qu-uYOPuqa1U8Squ1x1U8A121uVo4u-uYOPJ1u_uqGxKqGsKqZ9o4lO&ui=CyljUmOjUbisc8M121l0MIirtIzMIs73rmoyILJ28r7xMYNKtRl0cr61K4lYc8Myuqa1oqdxorE1o0GV2qoQo0u_2qa_ord1eM&consent=1&ddhh=oqdWox&billing=170486252553&price_encoded=al4-YgANjlwDKbOJAAiwXcOcB__KNoHZ9UPBPg&cachebust=1782154400",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "ss-sg.appiersig.com",
+        "ip": "23.106.54.147",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.3370,103.8933",
+        "org": "AS59253 LEASEWEB SINGAPORE PTE. LTD.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/direct"
+    },
+    {
+      "originalUrl": "https://abr.ge/@maplestoryworlds/appier?click_id=39LTVvJZSQq6aK0WkT-y4g.tTNDaa5YD36qKH_WYj5eag&sub_id=appier_broad&sub_id_1=03mSf3HNecb-&sub_id_2=0cbSxZLgjUm7NZYM9wmOWKjtD&campaign=1-1_gl_tw_250424&campaign_id=1-1_gl_tw_258751c1d2489a&ad_creative=gl_artale_upd_mulung&ad_creative_id=cWmCyAXzROyiOnANvCR24Q&ad_group=appier_broad&ad_group_id=appier_broad1a7258a7b5f1&content=pc_tw&routing_short_id=vdh29l&term=gl_artale_upd_mulung&tracking_template_id=141a22d6624f74462cf46f558627a46c&ad_type=view&_atrk_c=39LTVvJZSQq6aK0WkT-y4g&_atrk_cr=YXYLvhYmTr-XUqowT1X8pQ&_atrk_pt=03mSf3HNecb-&_atrk_bi=tTNDaa5YD36qKH_WYj5eag",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "abr.ge",
+        "ip": "3.169.55.67",
+        "hostname": "server-3-169-55-67.tpe54.r.cloudfront.net",
+        "city": "Taoyuan",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
+        "loc": "24.9937,121.2970",
+        "org": "AS16509 Amazon.com, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.facebook.com/tr/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://mpc2-prod-26-is5qnl632q-uc.a.run.app/events?cee=no",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "mpc2-prod-26-is5qnl632q-uc.a.run.app",
+        "ip": "34.143.78.2",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 7.033,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.143.78.2",
+          "prefix": "34.143.78.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
     }
   ]
 }

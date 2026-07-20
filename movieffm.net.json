@@ -2,11 +2,12 @@
   "url": "https://movieffm.net",
   "canonicalURL": "https://www.movieffm.net/home/",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:08:50.370Z",
+  "timestamp": "2026-07-20T13:06:01.262Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 61,
+  "requestCount": 57,
   "uniqueDomains": 4,
   "test_results": {
     "domestic": {
-      "cloud": 1,
+      "cloud": 3,
       "direct": 0
     },
     "foreign": {
-      "cloud": 3,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -50,10 +51,34 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 176.759,
-        "detection_method": "rtt"
+        "cf-ray": "a1e22e3659e59cce-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "104.21.45.231",
+          "prefix": "104.21.45.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 58,
+          "location_count": 58,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -61,7 +86,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.movieffm.net",
-        "ip": "104.21.45.231",
+        "ip": "172.67.219.178",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -69,35 +94,59 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 175.231,
-        "detection_method": "rtt"
+        "cf-ray": "a1e22e3a4de7f93f-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "172.67.219.178",
+          "prefix": "172.67.219.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 58,
+          "location_count": 58,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
-      "originalUrl": "https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C500%2C700&ver=2.4.3",
+      "originalUrl": "https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700&ver=2.4.3",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.196.202",
-        "hostname": "nctsaa-ac-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "ip": "108.177.125.95",
+        "hostname": "tp-in-f95.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "24.1469,120.6839",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://image.tmdb.org/t/p/w780/xkKIruOg4NoADdPjJJrvfiJHRdZ.jpg",
+      "originalUrl": "https://image.tmdb.org/t/p/w780/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "image.tmdb.org",
-        "ip": "169.150.207.217",
-        "hostname": "169-150-207-217.bunnyinfra.net",
+        "ip": "84.17.38.230",
+        "hostname": "84-17-38-230.bunnyinfra.net",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",

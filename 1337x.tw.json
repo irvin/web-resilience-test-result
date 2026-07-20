@@ -2,11 +2,12 @@
   "url": "https://1337x.tw",
   "canonicalURL": "https://1337x.tw",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:33:05.160Z",
+  "timestamp": "2026-07-20T13:52:28.519Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 65,
-  "uniqueDomains": 6,
+  "requestCount": 56,
+  "uniqueDomains": 4,
   "test_results": {
     "domestic": {
-      "cloud": 2,
+      "cloud": 4,
       "direct": 0
     },
     "foreign": {
-      "cloud": 4,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -50,10 +51,34 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 134.763,
-        "detection_method": "rtt"
+        "cf-ray": "a1e272225d96fd27-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "104.21.92.70",
+          "prefix": "104.21.92.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 56,
+          "location_count": 56,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -69,18 +94,42 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 134.048,
-        "detection_method": "rtt"
+        "cf-ray": "a1e272259accfd27-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "172.67.188.157",
+          "prefix": "172.67.188.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 61,
+          "location_count": 61,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
-      "originalUrl": "https://fsla1sfdkh2sunwin6lameestrone.com/d1/4e/ce/d14ece60a7ef138fecb4c43ca92f9a05.js",
-      "type": "script",
+      "originalUrl": "https://cdn.redgarto.com/sb/notifications/utility/default/robot/333111/css/magic.css",
+      "type": "xhr",
       "ipinfo": {
-        "domain": "fsla1sfdkh2sunwin6lameestrone.com",
-        "ip": "172.67.201.155",
+        "domain": "cdn.redgarto.com",
+        "ip": "104.21.80.164",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -88,59 +137,51 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "rtt": 135.92,
-        "detection_method": "rtt"
+        "cf-ray": "a1e272396a0c40d7-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "104.21.80.164",
+          "prefix": "104.21.80.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 58,
+          "location_count": 58,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
-      "originalUrl": "https://buttons-config.sharethis.com/js/65af1f192bb34700194aa378.js",
-      "type": "script",
+      "originalUrl": "https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap",
+      "type": "stylesheet",
       "ipinfo": {
-        "domain": "buttons-config.sharethis.com",
-        "ip": "3.169.55.54",
-        "hostname": "server-3-169-55-54.tpe54.r.cloudfront.net",
-        "city": "Taipei",
+        "domain": "fonts.googleapis.com",
+        "ip": "173.194.174.95",
+        "hostname": "td-in-f95.1e100.net",
+        "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
+        "loc": "24.1469,120.6839",
+        "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://platform-cdn.sharethis.com/img/facebook.svg",
-      "type": "image",
-      "ipinfo": {
-        "domain": "platform-cdn.sharethis.com",
-        "ip": "3.169.36.44",
-        "hostname": "server-3-169-36-44.tpe53.r.cloudfront.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://sync.sharethis.com/panorama?uid=5ea6b626d455748a0a3fea661ed016d53938643638163c8015b2abb6633b7bef&stid=CgsTz2lm8kEAAAAJE7e2Aw%3D%3D",
-      "type": "image",
-      "ipinfo": {
-        "domain": "sync.sharethis.com",
-        "ip": "52.58.16.255",
-        "hostname": "ec2-52-58-16-255.eu-central-1.compute.amazonaws.com",
-        "city": "Frankfurt am Main",
-        "region": "Hesse",
-        "country": "DE",
-        "loc": "50.1155,8.6842",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Europe/Berlin"
-      },
-      "category": "foreign/cloud"
     }
   ]
 }

@@ -2,11 +2,12 @@
   "url": "https://missav.ai",
   "canonicalURL": "https://missav.ai",
   "httpStatus": 200,
-  "timestamp": "2026-01-14T01:08:34.569Z",
+  "timestamp": "2026-07-20T13:05:41.115Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
     "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
       "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
     ],
     "useCache": true,
@@ -24,16 +25,16 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 52,
-  "uniqueDomains": 5,
+  "requestCount": 180,
+  "uniqueDomains": 9,
   "test_results": {
     "domestic": {
-      "cloud": 4,
+      "cloud": 7,
       "direct": 0
     },
     "foreign": {
       "cloud": 1,
-      "direct": 0
+      "direct": 1
     }
   },
   "domainDetails": [
@@ -52,9 +53,32 @@
       },
       "category": "domestic/cloud",
       "cloud_provider": {
+        "cf-ray": "a1e22daecd44a11f-SIN",
         "country": "tw",
-        "rtt": 4.576,
-        "detection_method": "rtt"
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "172.66.173.34",
+          "prefix": "172.66.173.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 64,
+          "location_count": 64,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -62,8 +86,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -74,12 +98,75 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://client-rapi-missav.recombee.com/missav-default/recomms/users/ae5734e3-4aa2-40f6-ae14-024e397c1461/item-segments/?frontend_timestamp=1768352910&frontend_sign=23538570e7228059fe19854b8b62ef7a596c928a",
+      "originalUrl": "https://go.mayzaent.com/smartpop/a307ab37026c09e6affe6b78f07847d95ad1cb22318702aa5eb5b52295c2dc9f?userId=0c96df4abeb0e8f90e4c799ab382981f84b483088706eee78a0b2896dd798907",
+      "type": "document",
+      "ipinfo": {
+        "domain": "go.mayzaent.com",
+        "ip": "172.66.2.237",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e22db309798f21-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://partwithner.com/partners/jh3gf8d1/298x98.gif",
+      "type": "image",
+      "ipinfo": {
+        "domain": "partwithner.com",
+        "ip": "104.21.90.99",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "cf-ray": "a1e22db8cf69ce4d-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "104.21.90.99",
+          "prefix": "104.21.90.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 58,
+          "location_count": 58,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "originalUrl": "https://client-rapi-missav.recombee.com/missav-default/recomms/users/eda8c2b2-00d0-4cb2-838b-116db5088bc7/item-segments/?frontend_timestamp=1784552737&frontend_sign=cdf43d90ed6acd87026057929f044182486d0ee3",
       "type": "xhr",
       "ipinfo": {
         "domain": "client-rapi-missav.recombee.com",
-        "ip": "147.135.98.109",
-        "hostname": "ip109.ip-147-135-98.us",
+        "ip": "51.81.140.115",
+        "hostname": "ip115.ip-51-81-140.us",
         "city": "Hillsboro",
         "region": "Oregon",
         "country": "US",
@@ -90,11 +177,11 @@
       "category": "foreign/cloud"
     },
     {
-      "originalUrl": "https://fourhoi.com/sdmm-216/cover-t.jpg",
-      "type": "image",
+      "originalUrl": "https://creative.mayzaent.com/widgets/v4/Universal?autoplay=all&autoplayForce=1&campaignId=a307ab37026c09e6affe6b78f07847d95ad1cb22318702aa5eb5b52295c2dc9f&campaignType=smartpop&creativeId=d5e1119d2393c26b362c1669f295f798538d3a299ffab86acbbe8f326237c524&hideButton=1&hideTitle=1&iterationId=1400200&masterSmartpopId=0&ruleId=0&schemeType=mediabuyer&smartpopId=17090&tag=girls&trafficType=bannerIframeOrJS&userId=0c96df4abeb0e8f90e4c799ab382981f84b483088706eee78a0b2896dd798907&variationId=36283",
+      "type": "document",
       "ipinfo": {
-        "domain": "fourhoi.com",
-        "ip": "172.66.169.100",
+        "domain": "creative.mayzaent.com",
+        "ip": "172.66.2.237",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -105,16 +192,32 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 4.891,
-        "detection_method": "rtt"
+        "cf-ray": "a1e22db87fc68f21-TPE",
+        "detection_method": "header"
       }
     },
     {
-      "originalUrl": "https://static-cdn.strpst.com/avatars/7/e/7/7e7cda0e7734764de34a8a2dcc9c2876-full",
+      "originalUrl": "https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap",
+      "type": "stylesheet",
+      "ipinfo": {
+        "domain": "fonts.googleapis.com",
+        "ip": "64.233.187.95",
+        "hostname": "tj-in-f95.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.1469,120.6839",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://img.doppiocdn.com/thumbs/1784552574/244345515",
       "type": "image",
       "ipinfo": {
-        "domain": "static-cdn.strpst.com",
-        "ip": "104.17.11.106",
+        "domain": "img.doppiocdn.com",
+        "ip": "104.17.223.114",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -125,9 +228,24 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "9bd93e294ba38270-TPE",
+        "cf-ray": "a1e22dbbfcbedb55-TPE",
         "detection_method": "header"
       }
+    },
+    {
+      "originalUrl": "https://stripchats.me/checkUrl",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "stripchats.me",
+        "ip": "77.93.82.1",
+        "city": "Lelystad",
+        "region": "Flevoland",
+        "country": "NL",
+        "loc": "52.5083,5.4750",
+        "org": "AS214124 Intrahost Solutions Ltd",
+        "timezone": "Europe/Amsterdam"
+      },
+      "category": "foreign/direct"
     }
   ]
 }
