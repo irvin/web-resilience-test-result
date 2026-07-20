@@ -2,7 +2,7 @@
   "url": "https://chictrip.com.tw",
   "canonicalURL": "https://chictrip.com.tw",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T15:16:28.317Z",
+  "timestamp": "2026-07-20T21:41:44.196Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 304,
+  "requestCount": 306,
   "uniqueDomains": 17,
   "test_results": {
     "domestic": {
-      "cloud": 9,
+      "cloud": 8,
       "direct": 3
     },
     "foreign": {
-      "cloud": 5,
+      "cloud": 6,
       "direct": 0
     }
   },
@@ -43,7 +43,27 @@
       "type": "document",
       "ipinfo": {
         "domain": "chictrip.com.tw",
-        "ip": "150.171.110.70",
+        "ip": "150.171.110.65",
+        "city": "Hong Kong",
+        "region": "Hong Kong",
+        "country": "HK",
+        "loc": "22.2783,114.1747",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "Asia/Hong_Kong"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "x-azure-ref": "20260720T214119Z-15d9487b58c9llbnhC1TPEh5500000001chg00000000ta4t",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://www.chictrip.com.tw/landing/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "www.chictrip.com.tw",
+        "ip": "150.171.110.65",
         "city": "Hong Kong",
         "region": "Hong Kong",
         "country": "HK",
@@ -53,13 +73,13 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "x-azure-ref": "20260720T151609Z-16455cd79bb92ngfhC1HK1qv4w0000000240000000003m34",
+        "x-azure-ref": "20260720T214119Z-15d4f96b558jnjw8hC1HKG02bc0000001c00000000000mgk",
         "rtt": null,
         "detection_method": "rtt",
         "rtt_error": "timeout",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "150.171.110.70",
+          "queried_ip": "150.171.110.65",
           "prefix": "150.171.110.0/24",
           "anycast": false,
           "confidence": "not_detected",
@@ -73,32 +93,12 @@
       }
     },
     {
-      "originalUrl": "https://www.chictrip.com.tw/landing/",
-      "type": "document",
-      "ipinfo": {
-        "domain": "www.chictrip.com.tw",
-        "ip": "150.171.110.70",
-        "city": "Hong Kong",
-        "region": "Hong Kong",
-        "country": "HK",
-        "loc": "22.2783,114.1747",
-        "org": "AS8075 Microsoft Corporation",
-        "timezone": "Asia/Hong_Kong"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "x-azure-ref": "20260720T151610Z-15d9487b58ctcsq2hC1TPEm4d40000001af00000000084bx",
-        "detection_method": "header"
-      }
-    },
-    {
       "originalUrl": "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&family=Inter:wght@400;500;600&display=swap",
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.204.42",
-        "hostname": "hkg07s38-in-f10.1e100.net",
+        "ip": "142.250.77.202",
+        "hostname": "del11s08-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -137,11 +137,25 @@
         "org": "AS8075 Microsoft Corporation",
         "timezone": "Asia/Hong_Kong"
       },
-      "category": "domestic/cloud",
+      "category": "foreign/cloud",
       "cloud_provider": {
-        "country": "tw",
-        "x-azure-ref": "20260720T151610Z-15d9487b58cwh4c7hC1TPE15480000001b0g000000001gcn",
-        "detection_method": "header"
+        "x-azure-ref": "20260720T214120Z-15d4f96b558r4fgjhC1HKGha7400000005u0000000001uy4",
+        "rtt": null,
+        "detection_method": "rtt",
+        "rtt_error": "timeout",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "150.171.110.65",
+          "prefix": "150.171.110.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
       }
     },
     {
@@ -165,8 +179,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "pixel.onead.com.tw",
-        "ip": "203.66.32.103",
-        "hostname": "203-66-32-103.hinet-ip.hinet.net",
+        "ip": "203.66.32.193",
+        "hostname": "203-66-32-193.hinet-ip.hinet.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -177,11 +191,27 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.google.com/rmkt/collect/11170649626/?random=1784560570515&cv=11&fst=1784560570515&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67f0v9137290194z89178363578za20gzb9178363578zd9178363578xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118897920~118897930~118981136~119724322&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.chictrip.com.tw%2Flanding%2F&rcb=4&frm=0&tiba=%E5%8E%BB%E8%B6%A3%20chicTrip%20-%20AI%20%E8%A1%8C%E7%A8%8B%E8%A6%8F%E5%8A%83%E3%80%81%E6%97%A5%E6%9C%AC%E6%97%85%E9%81%8A%E5%84%AA%E6%83%A0%E5%88%B8%E3%80%81eSIM%20%E4%B8%8A%E7%B6%B2%E4%B8%80%E7%AB%99%E6%90%9E%E5%AE%9A&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=813465553.1784560571&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-SQ2R71Y21Q&cid=277963169.1784583680&gtm=45je67g0v9236049457z89178363578za20gzb9178363578zd9178363578&rcb=4&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938465~115938469~118897920~118897930&z=2000579825",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.192.131",
+        "hostname": "bom12s18-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com/rmkt/collect/11170649626/?random=1784583680201&cv=11&fst=1784583680201&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67g0v9137290194z89178363578za20gzb9178363578zd9178363578xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118897920~118897930~118981135~119773332&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.chictrip.com.tw%2Flanding%2F&rcb=19&frm=0&tiba=%E5%8E%BB%E8%B6%A3%20chicTrip%20-%20AI%20%E8%A1%8C%E7%A8%8B%E8%A6%8F%E5%8A%83%E3%80%81%E6%97%A5%E6%9C%AC%E6%97%85%E9%81%8A%E5%84%AA%E6%83%A0%E5%88%B8%E3%80%81eSIM%20%E4%B8%8A%E7%B6%B2%E4%B8%80%E7%AB%99%E6%90%9E%E5%AE%9A&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1643151452.1784583680&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.251.151.119",
+        "ip": "142.251.152.119",
         "city": "Mountain View",
         "region": "California",
         "country": "US",
@@ -192,12 +222,12 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 5.186,
+        "rtt": 6.545,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "142.251.151.119",
-          "prefix": "142.251.151.0/24",
+          "queried_ip": "142.251.152.119",
+          "prefix": "142.251.152.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
@@ -213,23 +243,22 @@
       }
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-SQ2R71Y21Q&cid=92828337.1784560571&gtm=45je67f0v9236049457z89178363578za20gzb9178363578zd9178363578&rcb=6&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938466~115938468~118897920~118897930~119709549~119724322&z=1928996031",
-      "type": "image",
+      "originalUrl": "https://api.chictrip.com.tw/Config/GetTrafficPage",
+      "type": "xhr",
       "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.77.195",
-        "hostname": "del11s08-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "domain": "api.chictrip.com.tw",
+        "ip": "150.171.110.68",
+        "city": "Taipei",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
+        "loc": "25.0531,121.5264",
+        "org": "AS8075 Microsoft Corporation",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://ttd.byurl.cc/ttdsync?ttd_puid=92828337.1784560571,www.chictrip.com.tw&ttd_id=017427e0-816e-4e04-b424-7d502f651a77",
+      "originalUrl": "https://ttd.byurl.cc/ttdsync?ttd_puid=277963169.1784583680,www.chictrip.com.tw&ttd_id=e52f92ec-b1de-4b41-99de-bc5134b2a577",
       "type": "image",
       "ipinfo": {
         "domain": "ttd.byurl.cc",
@@ -262,11 +291,11 @@
       }
     },
     {
-      "originalUrl": "https://api.chictrip.com.tw/Config/GetTrafficPage",
-      "type": "xhr",
+      "originalUrl": "https://storage.chictrip.com.tw/advertise/50babb29-a170-410d-9ee0-96f268c0b258/dicovertrip/dicovertrip/77e12eeb-79a6-4c3f-b2b9-9be29c21eecc.jpg",
+      "type": "image",
       "ipinfo": {
-        "domain": "api.chictrip.com.tw",
-        "ip": "150.171.110.70",
+        "domain": "storage.chictrip.com.tw",
+        "ip": "150.171.110.65",
         "city": "Hong Kong",
         "region": "Hong Kong",
         "country": "HK",
@@ -276,13 +305,13 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "x-azure-ref": "20260720T151611Z-15d4f96b558jwqjthC1HKGpykn0000000vug00000000dtd0",
+        "x-azure-ref": "20260720T214122Z-15d4f96b558z58nshC1HKG8f8s0000000brg0000000010pd",
         "rtt": null,
         "detection_method": "rtt",
         "rtt_error": "timeout",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "150.171.110.70",
+          "queried_ip": "150.171.110.65",
           "prefix": "150.171.110.0/24",
           "anycast": false,
           "confidence": "not_detected",
@@ -296,48 +325,12 @@
       }
     },
     {
-      "originalUrl": "https://storage.chictrip.com.tw/advertise/a1f2c262-2716-48f3-92bd-b374b886adbe.jpg",
-      "type": "image",
-      "ipinfo": {
-        "domain": "storage.chictrip.com.tw",
-        "ip": "150.171.110.65",
-        "city": "Hong Kong",
-        "region": "Hong Kong",
-        "country": "HK",
-        "loc": "22.2783,114.1747",
-        "org": "AS8075 Microsoft Corporation",
-        "timezone": "Asia/Hong_Kong"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "x-azure-ref": "20260720T151611Z-15d9487b58cbrf66hC1TPEdepw0000001aw0000000002s89",
-        "detection_method": "header"
-      }
-    },
-    {
-      "originalUrl": "https://lh3.googleusercontent.com/places/ANJU3Du-IDLr6hrFUVH3LjpsRgHpjrJNzQGIvI8QFPRTwb2L-TFibU6a9bMxobgvBDEbShEYT2c17lPKrFPIiQ6Fzl62YpBYjCbWtXQ=s1600-w3024",
-      "type": "image",
-      "ipinfo": {
-        "domain": "lh3.googleusercontent.com",
-        "ip": "142.250.192.129",
-        "hostname": "bom12s18-in-f1.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
       "originalUrl": "https://static.wixstatic.com/media/053131_50c633748563458daa6db18180b4bc83~mv2.webp",
       "type": "image",
       "ipinfo": {
         "domain": "static.wixstatic.com",
-        "ip": "3.169.137.13",
-        "hostname": "server-3-169-137-13.tpe54.r.cloudfront.net",
+        "ip": "65.9.180.61",
+        "hostname": "server-65-9-180-61.tpe53.r.cloudfront.net",
         "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
@@ -382,7 +375,7 @@
       }
     },
     {
-      "originalUrl": "https://www.facebook.com/tr/?id=669598975064322&ev=PageView&dl=https%3A%2F%2Fwww.chictrip.com.tw%2Flanding%2F&rl=&if=false&ts=1784560572041&iw=false&sw=1280&sh=720&v=2.9.357&r=stable&ec=0&o=4126&aems=0%3B0&fbp=fb.2.1784560572037.276433551711618491&eid=ob3_plugin-set_d3209b8770c2aa0967e472fb0e744f2c8631338a19e015c343ac268a345656cb&ler=empty&cdl=API_unavailable&pmd[title]=%E5%8E%BB%E8%B6%A3%20chicTrip%20-%20AI%20%E8%A1%8C%E7%A8%8B%E8%A6%8F%E5%8A%83%E3%80%81%E6%97%A5%E6%9C%AC%E6%97%85%E9%81%8A%E5%84%AA%E6%83%A0%E5%88%B8%E3%80%81eSIM%20%E4%B8%8A%E7%B6%B2%E4%B8%80%E7%AB%99%E6%90%9E%E5%AE%9A&pmd[locale]=zh-Hant-TW&pmd[description]=%E6%AD%A3%E5%9C%A8%E8%A6%8F%E5%8A%83%E5%8F%B0%E7%81%A3%E6%88%96%E6%97%A5%E6%9C%AC%E7%9A%84%E6%97%85%E8%A1%8C%E5%97%8E%EF%BC%9F%E5%8E%BB%E8%B6%A3%20chicTrip%20%E6%8F%90%E4%BE%9B%20AI%20%E6%99%BA%E6%85%A7%E8%A1%8C%E7%A8%8B%E8%A6%8F%E5%8A%83%EF%BC%8C%E8%BC%95%E9%AC%86%E6%90%9E%E5%AE%9A%E5%8F%B0%E7%81%A3%E8%87%AA%E9%A7%95%E9%81%8A%E3%80%82%E6%9B%B4%E6%8F%90%E4%BE%9B%E6%9C%80%E6%96%B0%E6%97%A5%E6%9C%AC%E6%97%85%E9%81%8A%E5%84%AA%E6%83%A0%E5%88%B8%E8%88%87%20eSIM%20%E4%B8%8A%E7%B6%B2%E5%8D%A1%EF%BC%8C%E5%BE%9E%E8%A1%8C%E7%A8%8B%E5%88%B0%E7%B6%B2%E8%B7%AF%E3%80%81%E8%B3%BC%E7%89%A9%EF%BC%8C%E7%82%BA%E6%82%A8%E6%89%93%E9%80%A0%E5%AE%8C%E7%BE%8E%E6%97%85%E7%A8%8B%EF%BC%8C%E6%98%AF%E6%82%A8%E5%87%BA%E5%9C%8B%E8%87%AA%E7%94%B1%E8%A1%8C%E7%9A%84%E6%9C%80%E4%BD%B3%E5%A4%A5%E4%BC%B4%E3%80%82&pmd[keywords]=%E5%8E%BB%E8%B6%A3%20chicTrip%2C%20AI%E8%A1%8C%E7%A8%8B%E8%A6%8F%E5%8A%83%2C%20%E6%97%A5%E6%9C%AC%E5%84%AA%E6%83%A0%E5%88%B8%2C%20eSIM%2C%20%E5%8F%B0%E7%81%A3%E6%97%85%E9%81%8A%2C%20%E6%97%A5%E6%9C%AC%E6%97%85%E9%81%8A%2C%20%E6%99%AF%E9%BB%9E%E7%BE%8E%E9%A3%9F%2C%20%E6%87%B6%E4%BA%BA%E5%8C%85%E6%B8%85%E5%96%AE%2C%20%E4%BD%8F%E5%AE%BF%E5%AE%89%E6%8E%92%2C%20%E4%BA%A4%E9%80%9A%E9%A0%90%E8%A8%82%2C%20%E6%97%85%E9%81%8A%E7%A5%A8%E5%88%B8&plt=2260.7999999998137&iss=1&imft=1&tz=480&it=1784560571520&coo=false&cf=1&expv2[0]=pl1&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=ct3&expv2[6]=hf1&rqm=GET",
+      "originalUrl": "https://www.facebook.com/tr/?id=669598975064322&ev=PageView&dl=https%3A%2F%2Fwww.chictrip.com.tw%2Flanding%2F&rl=&if=false&ts=1784583681746&iw=false&sw=1280&sh=720&v=2.9.358&r=stable&ec=0&o=4126&aems=0%3B0&fbp=fb.2.1784583681742.529565293839894728&eid=ob3_plugin-set_81a99b8be4654210b3bc2f0673828fb2968f0312bbcdb06ea579e0a2a1826df4&ler=empty&cdl=API_unavailable&pmd[title]=%E5%8E%BB%E8%B6%A3%20chicTrip%20-%20AI%20%E8%A1%8C%E7%A8%8B%E8%A6%8F%E5%8A%83%E3%80%81%E6%97%A5%E6%9C%AC%E6%97%85%E9%81%8A%E5%84%AA%E6%83%A0%E5%88%B8%E3%80%81eSIM%20%E4%B8%8A%E7%B6%B2%E4%B8%80%E7%AB%99%E6%90%9E%E5%AE%9A&pmd[locale]=zh-Hant-TW&pmd[description]=%E6%AD%A3%E5%9C%A8%E8%A6%8F%E5%8A%83%E5%8F%B0%E7%81%A3%E6%88%96%E6%97%A5%E6%9C%AC%E7%9A%84%E6%97%85%E8%A1%8C%E5%97%8E%EF%BC%9F%E5%8E%BB%E8%B6%A3%20chicTrip%20%E6%8F%90%E4%BE%9B%20AI%20%E6%99%BA%E6%85%A7%E8%A1%8C%E7%A8%8B%E8%A6%8F%E5%8A%83%EF%BC%8C%E8%BC%95%E9%AC%86%E6%90%9E%E5%AE%9A%E5%8F%B0%E7%81%A3%E8%87%AA%E9%A7%95%E9%81%8A%E3%80%82%E6%9B%B4%E6%8F%90%E4%BE%9B%E6%9C%80%E6%96%B0%E6%97%A5%E6%9C%AC%E6%97%85%E9%81%8A%E5%84%AA%E6%83%A0%E5%88%B8%E8%88%87%20eSIM%20%E4%B8%8A%E7%B6%B2%E5%8D%A1%EF%BC%8C%E5%BE%9E%E8%A1%8C%E7%A8%8B%E5%88%B0%E7%B6%B2%E8%B7%AF%E3%80%81%E8%B3%BC%E7%89%A9%EF%BC%8C%E7%82%BA%E6%82%A8%E6%89%93%E9%80%A0%E5%AE%8C%E7%BE%8E%E6%97%85%E7%A8%8B%EF%BC%8C%E6%98%AF%E6%82%A8%E5%87%BA%E5%9C%8B%E8%87%AA%E7%94%B1%E8%A1%8C%E7%9A%84%E6%9C%80%E4%BD%B3%E5%A4%A5%E4%BC%B4%E3%80%82&pmd[keywords]=%E5%8E%BB%E8%B6%A3%20chicTrip%2C%20AI%E8%A1%8C%E7%A8%8B%E8%A6%8F%E5%8A%83%2C%20%E6%97%A5%E6%9C%AC%E5%84%AA%E6%83%A0%E5%88%B8%2C%20eSIM%2C%20%E5%8F%B0%E7%81%A3%E6%97%85%E9%81%8A%2C%20%E6%97%A5%E6%9C%AC%E6%97%85%E9%81%8A%2C%20%E6%99%AF%E9%BB%9E%E7%BE%8E%E9%A3%9F%2C%20%E6%87%B6%E4%BA%BA%E5%8C%85%E6%B8%85%E5%96%AE%2C%20%E4%BD%8F%E5%AE%BF%E5%AE%89%E6%8E%92%2C%20%E4%BA%A4%E9%80%9A%E9%A0%90%E8%A8%82%2C%20%E6%97%85%E9%81%8A%E7%A5%A8%E5%88%B8&plt=1992.199999999255&iss=1&imft=1&tz=480&it=1784583681091&coo=false&cf=1&expv2[0]=pl1&expv2[1]=el2&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=im1&expv2[6]=hf0&rqm=GET",
       "type": "image",
       "ipinfo": {
         "domain": "www.facebook.com",
@@ -396,6 +389,22 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://lh3.googleusercontent.com/places/ANJU3Du-IDLr6hrFUVH3LjpsRgHpjrJNzQGIvI8QFPRTwb2L-TFibU6a9bMxobgvBDEbShEYT2c17lPKrFPIiQ6Fzl62YpBYjCbWtXQ=s1600-w3024",
+      "type": "image",
+      "ipinfo": {
+        "domain": "lh3.googleusercontent.com",
+        "ip": "142.250.196.193",
+        "hostname": "nctsaa-ac-in-f1.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://japaneast-1.in.applicationinsights.azure.com//v2/track",
@@ -412,10 +421,10 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 34.517,
+        "rtt": 35.108,
         "detection_method": "rtt",
         "laces": {
-          "source": "laces api (direct)",
+          "source": "laces api (cached)",
           "queried_ip": "20.18.2.67",
           "prefix": "20.18.2.0/24",
           "anycast": false,

@@ -2,7 +2,7 @@
   "url": "https://stapro.com.tw",
   "canonicalURL": "https://stapro.com.tw",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T15:43:55.728Z",
+  "timestamp": "2026-07-20T22:09:22.071Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -29,11 +29,11 @@
   "uniqueDomains": 13,
   "test_results": {
     "domestic": {
-      "cloud": 8,
+      "cloud": 7,
       "direct": 5
     },
     "foreign": {
-      "cloud": 0,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -118,7 +118,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e31580187e6e87-TPE",
+        "cf-ray": "a1e54a1cde10a355-TPE",
         "detection_method": "header"
       }
     },
@@ -127,20 +127,35 @@
       "type": "script",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "104.17.208.5",
+        "ip": "151.101.1.229",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
         "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
+        "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud",
+      "category": "foreign/cloud",
       "cloud_provider": {
-        "country": "tw",
-        "cf-ray": "a1e315802ecda349-TPE",
-        "x-served-by": "cache-fra-eddf8230021-FRA, cache-sin-wsat1880069-SIN",
-        "detection_method": "header"
+        "x-served-by": "cache-fra-eddf8230217-FRA, cache-sin-wsat1880075-SIN",
+        "rtt": 35.64,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "151.101.1.229",
+          "prefix": "151.101.1.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 54,
+          "location_count": 54
+        }
       }
     },
     {
@@ -159,7 +174,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e315829d858f06-TPE",
+        "cf-ray": "a1e54a1e484ffee6-TPE",
         "detection_method": "header"
       }
     },
@@ -168,8 +183,8 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.198.74",
-        "hostname": "lctsaa-ab-in-f10.1e100.net",
+        "ip": "142.250.192.138",
+        "hostname": "bom12s18-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -180,11 +195,11 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/rmkt/collect/568440580/?random=1784562232633&cv=11&fst=1784562232633&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67f0v9116191790za200zd9116191790xec&gcd=13r3r3r3l5l1&dma=0&tag_exp=115938466~115938469~118131810~118897920~118897930&rcb=9&frm=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1839193697.1784562233&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
+      "originalUrl": "https://www.google.com/rmkt/collect/568440580/?random=1784585358967&cv=11&fst=1784585358967&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67g0v9116191790za200zd9116191790xec&gcd=13r3r3r3l5l1&dma=0&tag_exp=115938465~115938468~118012009~118897920~118897930&rcb=6&frm=0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=113318050.1784585359&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.251.151.119",
+        "ip": "142.251.155.119",
         "city": "Mountain View",
         "region": "California",
         "country": "US",
@@ -195,12 +210,12 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 6.08,
+        "rtt": 4.364,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "142.251.151.119",
-          "prefix": "142.251.151.0/24",
+          "queried_ip": "142.251.155.119",
+          "prefix": "142.251.155.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
@@ -210,8 +225,8 @@
           "date": "2026-07-17",
           "has_tw": false,
           "has_taipei": false,
-          "site_count": 61,
-          "location_count": 61
+          "site_count": 62,
+          "location_count": 62
         }
       }
     },
@@ -236,19 +251,19 @@
       "type": "script",
       "ipinfo": {
         "domain": "d.line-scdn.net",
-        "ip": "184.25.121.253",
-        "hostname": "a184-25-121-253.deploy.static.akamaitechnologies.com",
-        "city": "Yuanlin",
+        "ip": "23.39.61.163",
+        "hostname": "a23-39-61-163.deploy.static.akamaitechnologies.com",
+        "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "23.9567,120.5761",
+        "loc": "25.0531,121.5264",
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-JLTRVBVTY8&cid=1036029318.1784562233&gtm=45je67f0v9253136959za200zb9116191790zd9116191790&rcb=8&aip=1&dma=0&gcs=G111&gcd=13r3r3r3l5l1&npa=0&frm=0&tag_exp=115938466~115938469~118897920~118897930~119709549&z=1465897662",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-JLTRVBVTY8&cid=2089173051.1784585359&gtm=45je67h1v9253136959za200zb9116191790zd9116191790&rcb=15&aip=1&dma=0&gcs=G111&gcd=13r3r3r3l5l1&npa=0&frm=0&tag_exp=115938465~115938469~118897920~118897930~119793973&z=559797114",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",

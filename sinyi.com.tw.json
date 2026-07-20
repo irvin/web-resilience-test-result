@@ -2,7 +2,7 @@
   "url": "https://sinyi.com.tw",
   "canonicalURL": "https://www.sinyi.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T13:28:20.289Z",
+  "timestamp": "2026-07-20T19:46:37.914Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,12 +25,12 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 104,
-  "uniqueDomains": 5,
+  "requestCount": 226,
+  "uniqueDomains": 11,
   "test_results": {
     "domestic": {
-      "cloud": 3,
-      "direct": 2
+      "cloud": 8,
+      "direct": 3
     },
     "foreign": {
       "cloud": 0,
@@ -59,7 +59,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.251.157.119",
+        "ip": "142.251.151.119",
         "city": "Mountain View",
         "region": "California",
         "country": "US",
@@ -70,12 +70,12 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 6.159,
+        "rtt": 6.086,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "142.251.157.119",
-          "prefix": "142.251.157.0/24",
+          "queried_ip": "142.251.151.119",
+          "prefix": "142.251.151.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
@@ -107,10 +107,10 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 5.319,
+        "rtt": 5.944,
         "detection_method": "rtt",
         "laces": {
-          "source": "laces api (direct)",
+          "source": "laces api (cached)",
           "queried_ip": "34.95.113.73",
           "prefix": "34.95.113.0/24",
           "anycast": true,
@@ -132,8 +132,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.gstatic.com",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "ip": "142.250.192.131",
+        "hostname": "bom12s18-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -158,6 +158,106 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-TS765C4",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.googletagmanager.com",
+        "ip": "142.250.192.136",
+        "hostname": "bom12s18-in-f8.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://bat.bing.com/bat.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "bat.bing.com",
+        "ip": "150.171.27.10",
+        "city": "Redmond",
+        "region": "Washington",
+        "country": "US",
+        "loc": "47.6740,-122.1215",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "x-msedge-ref": "Ref A: B56186BE53D2428581F0AF14C25C6629 Ref B: TPE201050222042 Ref C: 2026-07-20T19:46:36Z",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://d.line-scdn.net/n/line_tag/public/release/v1/lt.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "d.line-scdn.net",
+        "ip": "23.39.61.163",
+        "hostname": "a23-39-61-163.deploy.static.akamaitechnologies.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16625 Akamai Technologies, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-W67H8FRF3B&cid=1260306931.1784576795&gtm=45je67g0v879293963z8851503238za20gzb851503238zd851503238&rcb=13&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115616986~115938465~115938469~118897920~118897930~119724320&z=1243191498",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.204.35",
+        "hostname": "hkg07s38-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "connect.facebook.net",
+        "ip": "31.13.87.5",
+        "hostname": "xx-fbcdn-shv-01-tpe1.fbcdn.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://s.yimg.com/wi/ytc.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "s.yimg.com",
+        "ip": "180.222.109.252",
+        "hostname": "e2-bmr.ycpi.vip.twd.yahoo.com",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS24376 Yahoo China Datacenter",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     }
   ]
 }

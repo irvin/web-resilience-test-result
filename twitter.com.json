@@ -2,7 +2,7 @@
   "url": "https://twitter.com",
   "canonicalURL": "https://twitter.com",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T13:04:50.955Z",
+  "timestamp": "2026-07-20T19:20:48.057Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,11 +25,11 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 96,
-  "uniqueDomains": 6,
+  "requestCount": 95,
+  "uniqueDomains": 5,
   "test_results": {
     "domestic": {
-      "cloud": 5,
+      "cloud": 4,
       "direct": 0
     },
     "foreign": {
@@ -54,7 +54,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e22c63fecd2566-TPE",
+        "cf-ray": "a1e453303f148454-TPE",
         "x-served-by": "t4_p",
         "detection_method": "header"
       }
@@ -64,7 +64,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "x.com",
-        "ip": "162.159.140.229",
+        "ip": "172.66.0.227",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -75,7 +75,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e22c657be0db55-TPE",
+        "cf-ray": "a1e45331cc0a4aa0-TPE",
         "x-served-by": "t4_p",
         "detection_method": "header"
       }
@@ -85,7 +85,7 @@
       "type": "font",
       "ipinfo": {
         "domain": "abs.twimg.com",
-        "ip": "199.232.112.159",
+        "ip": "146.75.44.159",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",
@@ -95,13 +95,13 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "x-served-by": "cache-pdk-kfty8610069-PDK, cache-nrt-rjtt7900048-NRT",
-        "rtt": 64.642,
+        "x-served-by": "cache-pdk-kfty8610069-PDK, cache-nrt-rjtt7900053-NRT, cache-sin-wsap440043-SIN",
+        "rtt": 66.955,
         "detection_method": "rtt",
         "laces": {
-          "source": "laces api (direct)",
-          "queried_ip": "199.232.112.159",
-          "prefix": "199.232.112.0/24",
+          "source": "laces api (cached)",
+          "queried_ip": "146.75.44.159",
+          "prefix": "146.75.44.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
@@ -115,22 +115,6 @@
           "location_count": 2
         }
       }
-    },
-    {
-      "originalUrl": "https://accounts.google.com/gsi/client",
-      "type": "script",
-      "ipinfo": {
-        "domain": "accounts.google.com",
-        "ip": "74.125.203.84",
-        "hostname": "th-in-f84.1e100.net",
-        "city": "Taichung",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "24.1469,120.6839",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://api.x.com/1.1/hashflags.json",
@@ -175,16 +159,16 @@
       }
     },
     {
-      "originalUrl": "https://google.com/.well-known/web-identity",
-      "type": "fedcm",
+      "originalUrl": "https://accounts.google.com/gsi/client",
+      "type": "script",
       "ipinfo": {
-        "domain": "google.com",
-        "ip": "142.250.198.78",
-        "hostname": "lctsaa-ab-in-f14.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
+        "domain": "accounts.google.com",
+        "ip": "74.125.203.84",
+        "hostname": "th-in-f84.1e100.net",
+        "city": "Taichung",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0143,121.4672",
+        "loc": "24.1469,120.6839",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },

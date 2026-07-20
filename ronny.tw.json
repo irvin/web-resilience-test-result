@@ -2,7 +2,7 @@
   "url": "https://ronny.tw",
   "canonicalURL": "https://ronny.tw",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T15:23:23.661Z",
+  "timestamp": "2026-07-20T21:48:44.124Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -29,11 +29,11 @@
   "uniqueDomains": 7,
   "test_results": {
     "domestic": {
-      "cloud": 3,
+      "cloud": 4,
       "direct": 1
     },
     "foreign": {
-      "cloud": 2,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -43,8 +43,8 @@
       "type": "document",
       "ipinfo": {
         "domain": "ronny.tw",
-        "ip": "185.199.111.153",
-        "hostname": "cdn-185-199-111-153.github.com",
+        "ip": "185.199.109.153",
+        "hostname": "cdn-185-199-109-153.github.com",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -54,13 +54,13 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "x-served-by": "cache-sin-wsss1830030-SIN",
-        "rtt": 69.44,
+        "x-served-by": "cache-sin-wsss1830092-SIN",
+        "rtt": 64.345,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "185.199.111.153",
-          "prefix": "185.199.111.0/24",
+          "queried_ip": "185.199.109.153",
+          "prefix": "185.199.109.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
@@ -70,8 +70,8 @@
           "date": "2026-07-17",
           "has_tw": false,
           "has_taipei": false,
-          "site_count": 53,
-          "location_count": 53
+          "site_count": 52,
+          "location_count": 52
         }
       }
     },
@@ -80,8 +80,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "ajax.googleapis.com",
-        "ip": "142.250.66.74",
-        "hostname": "hkg12s27-in-f10.1e100.net",
+        "ip": "142.250.196.202",
+        "hostname": "nctsaa-ac-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -107,7 +107,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e2f774a89e8f25-TPE",
+        "cf-ray": "a1e52beabe838088-TPE",
         "detection_method": "header"
       }
     },
@@ -139,34 +139,41 @@
       "type": "image",
       "ipinfo": {
         "domain": "www.paypalobjects.com",
-        "ip": "146.75.47.1",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
+        "ip": "104.19.183.109",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "x-served-by": "cache-sjc10066-SJC, cache-sjc1000106-SJC, cache-nrt-rjtf7700038-NRT",
-        "rtt": 64.391,
-        "detection_method": "rtt",
+        "x-served-by": "cache-sjc10066-SJC, cache-sjc1000106-SJC, cache-nrt-rjaa8190060-NRT",
+        "country": "tw",
+        "detection_method": "laces",
         "laces": {
           "source": "laces api (direct)",
-          "queried_ip": "146.75.47.1",
-          "prefix": "146.75.47.0/24",
+          "queried_ip": "104.19.183.109",
+          "prefix": "104.19.183.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
           "asns": [
-            54113
+            13335
           ],
           "date": "2026-07-17",
-          "has_tw": false,
-          "has_taipei": false,
-          "site_count": 2,
-          "location_count": 2
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 76,
+          "location_count": 76,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
         }
       }
     },

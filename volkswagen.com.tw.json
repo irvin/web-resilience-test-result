@@ -2,7 +2,7 @@
   "url": "https://volkswagen.com.tw",
   "canonicalURL": "https://www.volkswagen.com.tw/zh.html",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T15:31:16.981Z",
+  "timestamp": "2026-07-20T21:55:58.824Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 42,
-  "uniqueDomains": 6,
+  "requestCount": 35,
+  "uniqueDomains": 5,
   "test_results": {
     "domestic": {
       "cloud": 3,
       "direct": 2
     },
     "foreign": {
-      "cloud": 1,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -57,7 +57,7 @@
         "country": "tw",
         "detection_method": "laces",
         "laces": {
-          "source": "laces api (direct)",
+          "source": "laces api (cached)",
           "queried_ip": "75.2.59.4",
           "prefix": "75.2.59.0/24",
           "anycast": true,
@@ -86,8 +86,8 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.volkswagen.com.tw",
-        "ip": "65.9.180.93",
-        "hostname": "server-65-9-180-93.tpe53.r.cloudfront.net",
+        "ip": "65.9.180.117",
+        "hostname": "server-65-9-180-117.tpe53.r.cloudfront.net",
         "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
@@ -102,7 +102,7 @@
       "type": "image",
       "ipinfo": {
         "domain": "assets.volkswagen.com",
-        "ip": "210.71.227.210",
+        "ip": "210.71.227.202",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -117,7 +117,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "vw-tam.lighthouselabs.eu",
-        "ip": "210.71.227.120",
+        "ip": "203.69.81.42",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -142,40 +142,6 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://v1-4-1.cms-victor-bff.vwonehub.io/bff/navigation?oneapiKey=1AvAgztRZs6LdqjOULN1u7WTskbc5AnS&endpoint=%7B%22endpoint%22%3A%7B%22type%22%3A%22publish%22%2C%22country%22%3A%22tw%22%2C%22language%22%3A%22zh%22%2C%22content%22%3A%22onehub_pkw%22%2C%22envName%22%3A%22prod%22%2C%22testScenarioId%22%3Anull%7D%2C%22signature%22%3A%22ojrm5fV0uX9sn2lpuCglUtwY0lPFL5dANNEhsnM14eE%3D%22%7D&endpointCacheBustingEnabled=false&dataVersion=null-null-2137FBB7A39F11BE2126EFFBDCACBA83-29D10A0AE7114FCB47F2744AF72A81E5&mocksServerName=undefined",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "v1-4-1.cms-victor-bff.vwonehub.io",
-        "ip": "63.180.88.107",
-        "hostname": "ec2-63-180-88-107.eu-central-1.compute.amazonaws.com",
-        "city": "Frankfurt am Main",
-        "region": "Hesse",
-        "country": "DE",
-        "loc": "50.1155,8.6842",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Europe/Berlin"
-      },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": null,
-        "detection_method": "rtt",
-        "rtt_error": "timeout",
-        "laces": {
-          "source": "laces api (direct)",
-          "queried_ip": "63.180.88.107",
-          "prefix": "63.180.88.0/24",
-          "anycast": false,
-          "confidence": "not_detected",
-          "asns": [],
-          "date": "2026-07-17",
-          "has_tw": false,
-          "has_taipei": false,
-          "site_count": 0,
-          "location_count": 0
-        }
-      }
     }
   ]
 }

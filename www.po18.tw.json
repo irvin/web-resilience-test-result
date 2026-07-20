@@ -2,7 +2,7 @@
   "url": "https://www.po18.tw/",
   "canonicalURL": "https://www.po18.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T13:13:46.253Z",
+  "timestamp": "2026-07-20T19:30:27.875Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,11 +25,11 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 16,
-  "uniqueDomains": 5,
+  "requestCount": 17,
+  "uniqueDomains": 6,
   "test_results": {
     "domestic": {
-      "cloud": 1,
+      "cloud": 2,
       "direct": 3
     },
     "foreign": {
@@ -58,8 +58,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.192.136",
-        "hostname": "bom12s18-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -68,6 +68,49 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://static.critteroos.com/js/yiiweb.js?v=8",
+      "type": "script",
+      "ipinfo": {
+        "domain": "static.critteroos.com",
+        "ip": "104.21.22.93",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "cf-ray": "a1e46164ffeece13-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "104.21.22.93",
+          "prefix": "104.21.22.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 58,
+          "location_count": 58,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
+      }
     },
     {
       "originalUrl": "https://cdn0.po18.tw/web18/stylesheets/layout.css",
@@ -89,7 +132,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "code.jquery.com",
-        "ip": "151.101.65.155",
+        "ip": "151.101.129.155",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -99,13 +142,13 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "x-served-by": "cache-lga21935-LGA, cache-sin-wsss1830032-SIN",
-        "rtt": 37.084,
+        "x-served-by": "cache-lga21935-LGA, cache-sin-wsat1880052-SIN",
+        "rtt": 35.83,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "151.101.65.155",
-          "prefix": "151.101.65.0/24",
+          "queried_ip": "151.101.129.155",
+          "prefix": "151.101.129.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
@@ -115,8 +158,8 @@
           "date": "2026-07-17",
           "has_tw": false,
           "has_taipei": false,
-          "site_count": 57,
-          "location_count": 57
+          "site_count": 55,
+          "location_count": 55
         }
       }
     },

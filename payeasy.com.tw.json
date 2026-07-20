@@ -2,7 +2,7 @@
   "url": "https://payeasy.com.tw",
   "canonicalURL": "https://www.payeasy.com.tw/PWelfareWeb/COMMON/invitation/index.html",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T13:56:18.031Z",
+  "timestamp": "2026-07-20T20:17:36.655Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,7 +25,7 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 240,
+  "requestCount": 239,
   "uniqueDomains": 12,
   "test_results": {
     "domestic": {
@@ -58,7 +58,7 @@
         "detection_method": "rtt",
         "rtt_error": "timeout",
         "laces": {
-          "source": "laces api (direct)",
+          "source": "laces api (cached)",
           "queried_ip": "54.64.164.161",
           "prefix": "54.64.164.0/24",
           "anycast": false,
@@ -92,7 +92,7 @@
         "detection_method": "rtt",
         "rtt_error": "timeout",
         "laces": {
-          "source": "laces api (direct)",
+          "source": "laces api (cached)",
           "queried_ip": "54.95.182.53",
           "prefix": "54.95.182.0/24",
           "anycast": false,
@@ -122,7 +122,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e2776bc85d6b86-TPE",
+        "cf-ray": "a1e4a5f6dc57152a-TPE",
         "detection_method": "header"
       }
     },
@@ -131,8 +131,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "member.payeasy.com.tw",
-        "ip": "54.95.53.11",
-        "hostname": "ec2-54-95-53-11.ap-northeast-1.compute.amazonaws.com",
+        "ip": "54.65.216.140",
+        "hostname": "ec2-54-65-216-140.ap-northeast-1.compute.amazonaws.com",
         "city": "Tokyo",
         "region": "Tokyo",
         "country": "JP",
@@ -147,8 +147,8 @@
         "rtt_error": "timeout",
         "laces": {
           "source": "laces api (direct)",
-          "queried_ip": "54.95.53.11",
-          "prefix": "54.95.53.0/24",
+          "queried_ip": "54.65.216.140",
+          "prefix": "54.65.216.0/24",
           "anycast": false,
           "confidence": "not_detected",
           "asns": [],
@@ -165,20 +165,42 @@
       "type": "script",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "151.101.65.229",
+        "ip": "104.17.207.5",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
         "loc": "37.7621,-122.3971",
-        "org": "AS54113 Fastly, Inc.",
+        "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
       "category": "domestic/cloud",
       "cloud_provider": {
+        "x-served-by": "cache-fra-etou8220054-FRA, cache-sin-wsss1830095-SIN",
         "country": "tw",
-        "cf-ray": "a1e2776e1e78b016-TPE",
-        "x-served-by": "cache-fra-eddf8230082-FRA, cache-hkg17929-HKG",
-        "detection_method": "header"
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "104.17.207.5",
+          "prefix": "104.17.207.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 76,
+          "location_count": 76,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -197,7 +219,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e2776e18374a09-TPE",
+        "cf-ray": "a1e4a5f9dd99ae64-TPE",
         "detection_method": "header"
       }
     },
@@ -206,8 +228,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "ip": "142.250.198.72",
+        "hostname": "lctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -222,23 +244,23 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "64.233.189.95",
-        "hostname": "tl-in-f95.1e100.net",
-        "city": "Taichung",
-        "region": "Taiwan",
+        "ip": "142.250.198.74",
+        "hostname": "lctsaa-ab-in-f10.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
         "country": "TW",
-        "loc": "24.1469,120.6839",
+        "loc": "25.0143,121.4672",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/rmkt/collect/339908782/?random=1784555758160&cv=11&fst=1784555758160&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67f0h1v9210980108za200zd9210980108xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118131809~118897920~118897930~118981136&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.payeasy.com.tw%2FPWelfareWeb%2FCOMMON%2Finvitation%2Findex.html&ref=https%3A%2F%2Fwww.payeasy.com.tw%2Fwelcome.html&rcb=0&frm=0&tiba=PayEasy%E5%85%A8%E5%9C%8B%E6%9C%80%E5%A4%A7%E4%BC%81%E6%A5%AD%E7%A6%8F%E5%88%A9%E7%B6%B2%EF%BD%9C%E4%B8%80%E7%AB%99%E5%BC%8F%E5%93%A1%E5%B7%A5%E7%A6%8F%E5%88%A9%E6%95%B4%E5%90%88%E5%B9%B3%E5%8F%B0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=667731925.1784555758&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
+      "originalUrl": "https://www.google.com/rmkt/collect/339908782/?random=1784578636180&cv=11&fst=1784578636180&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67g0v9210980108za200zd9210980108xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118395333~118897920~118897930~119724322&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.payeasy.com.tw%2FPWelfareWeb%2FCOMMON%2Finvitation%2Findex.html&ref=https%3A%2F%2Fwww.payeasy.com.tw%2Fwelcome.html&rcb=8&frm=0&tiba=PayEasy%E5%85%A8%E5%9C%8B%E6%9C%80%E5%A4%A7%E4%BC%81%E6%A5%AD%E7%A6%8F%E5%88%A9%E7%B6%B2%EF%BD%9C%E4%B8%80%E7%AB%99%E5%BC%8F%E5%93%A1%E5%B7%A5%E7%A6%8F%E5%88%A9%E6%95%B4%E5%90%88%E5%B9%B3%E5%8F%B0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=927123518.1784578636&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.251.150.119",
+        "ip": "142.251.153.119",
         "city": "Mountain View",
         "region": "California",
         "country": "US",
@@ -249,12 +271,12 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 6.032,
+        "rtt": 5.862,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "142.251.150.119",
-          "prefix": "142.251.150.0/24",
+          "queried_ip": "142.251.153.119",
+          "prefix": "142.251.153.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
@@ -268,6 +290,22 @@
           "location_count": 62
         }
       }
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/339908782/?random=1784578636180&cv=11&fst=1784577600000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67g0v9210980108za200zd9210980108xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118395333~118897920~118897930~119724322&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.payeasy.com.tw%2FPWelfareWeb%2FCOMMON%2Finvitation%2Findex.html&ref=https%3A%2F%2Fwww.payeasy.com.tw%2Fwelcome.html&rcb=8&frm=0&tiba=PayEasy%E5%85%A8%E5%9C%8B%E6%9C%80%E5%A4%A7%E4%BC%81%E6%A5%AD%E7%A6%8F%E5%88%A9%E7%B6%B2%EF%BD%9C%E4%B8%80%E7%AB%99%E5%BC%8F%E5%93%A1%E5%B7%A5%E7%A6%8F%E5%88%A9%E6%95%B4%E5%90%88%E5%B9%B3%E5%8F%B0&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=927123518.1784578636&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS7AEAEQoqgdZo72NrOZWt4ngUunXmSbPRh5GUhbzYQW1AjZjWoBa90Ak8NfxFe8Q2aHYSeslGfyLncHCCr4LmR_i70c_cbTB2hhWbNhOFTCwA538VotVRDztIZElMQwnWtyRKrVjxGR_J-JOfUEAKYMfRSd6d4O-3npIIwxBrkbWzivNICOWB_SFLT7Gi3bQeMG9Wn7-_kWet-BsLUU5F61vOBWzuBDzM81zn4JkhjzrtkmQI4kfbDQoNHR-2ymOttwFBQEhXkWzGQKBg-bL5EqZXYMsUkI-qPHxsW4l2JBiPEr1jqEUjcl34oORyjQ&random=2628566677&rmt_tld=1&ipr=y",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.196.195",
+        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
@@ -284,22 +322,6 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
-    },
-    {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-KXKT6RM4T0&cid=1887121855.1784555758&gtm=45je67f0v883664011z8545213za20gzb545213zd545213&rcb=7&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115616986~115938465~115938469~118395335~118897920~118897930~119527019&z=36643866",
-      "type": "image",
-      "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.198.67",
-        "hostname": "lctsaa-ab-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.facebook.com/tr/",

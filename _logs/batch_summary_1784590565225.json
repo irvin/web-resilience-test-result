@@ -1,0 +1,87 @@
+{
+  "timestamp": "2026-07-20T23:36:05.225Z",
+  "argument": "node batch-test.js --dns 168.95.1.1 --adblock-url 'https://filter.futa.gg/hosts_abp.txt,https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt' test-results/_logs/batch_errors_1784589155108.json",
+  "options": {
+    "testListPath": "test-results/_logs/batch_errors_1784589155108.json",
+    "startFrom": 0,
+    "delayMs": 1000,
+    "concurrency": 4,
+    "customDNS": "168.95.1.1",
+    "useAdblock": true,
+    "adblockUrls": [
+      "https://filter.futa.gg/hosts_abp.txt",
+      "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt"
+    ],
+    "useCache": true,
+    "timeout": 120000,
+    "cleanResults": false
+  },
+  "statistics": {
+    "total": 3,
+    "success": 0,
+    "failed": 0,
+    "testErrors": 3,
+    "skipped": 0
+  },
+  "results": [
+    {
+      "website": "perplexity.ai",
+      "url": "https://www.perplexity.ai",
+      "status": "error",
+      "errorReason": "HTTP 403 Error",
+      "errorDetails": {
+        "message": "HTTP 403 ",
+        "statusCode": "403"
+      }
+    },
+    {
+      "website": "article19.org",
+      "url": "https://www.article19.org",
+      "status": "error",
+      "errorReason": "HTTP 403 Error",
+      "errorDetails": {
+        "message": "HTTP 403 ",
+        "statusCode": "403"
+      }
+    },
+    {
+      "website": "hitcon.org",
+      "url": "https://hitcon.org",
+      "status": "error",
+      "errorReason": "HTTP 403 Error",
+      "errorDetails": {
+        "message": "HTTP 403 ",
+        "statusCode": "403"
+      }
+    }
+  ],
+  "errorSites": [
+    {
+      "website": "perplexity.ai",
+      "url": "https://www.perplexity.ai",
+      "errorReason": "HTTP 403 Error",
+      "errorDetails": {
+        "message": "HTTP 403 ",
+        "statusCode": "403"
+      }
+    },
+    {
+      "website": "article19.org",
+      "url": "https://www.article19.org",
+      "errorReason": "HTTP 403 Error",
+      "errorDetails": {
+        "message": "HTTP 403 ",
+        "statusCode": "403"
+      }
+    },
+    {
+      "website": "hitcon.org",
+      "url": "https://hitcon.org",
+      "errorReason": "HTTP 403 Error",
+      "errorDetails": {
+        "message": "HTTP 403 ",
+        "statusCode": "403"
+      }
+    }
+  ]
+}

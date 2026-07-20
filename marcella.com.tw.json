@@ -2,7 +2,7 @@
   "url": "https://marcella.com.tw",
   "canonicalURL": "https://www.marcella.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T15:17:32.287Z",
+  "timestamp": "2026-07-20T21:42:45.662Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 293,
-  "uniqueDomains": 26,
+  "requestCount": 278,
+  "uniqueDomains": 24,
   "test_results": {
     "domestic": {
-      "cloud": 18,
+      "cloud": 17,
       "direct": 2
     },
     "foreign": {
-      "cloud": 6,
+      "cloud": 5,
       "direct": 0
     }
   },
@@ -55,7 +55,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e2ee87bb7e4a4d-TPE",
+        "cf-ray": "a1e522db08a7a9b0-TPE",
         "detection_method": "header"
       }
     },
@@ -76,7 +76,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e2ee8b189a8446-TPE",
+        "cf-ray": "a1e522de79488283-TPE",
         "detection_method": "header"
       }
     },
@@ -85,7 +85,7 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "104.17.208.5",
+        "ip": "104.17.207.5",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -95,13 +95,13 @@
       },
       "category": "domestic/cloud",
       "cloud_provider": {
-        "x-served-by": "cache-fra-eddf8230180-FRA, cache-nrt-rjtf7700065-NRT",
+        "x-served-by": "cache-fra-eddf8230180-FRA, cache-sin-wsat1880034-SIN",
         "country": "tw",
         "detection_method": "laces",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "104.17.208.5",
-          "prefix": "104.17.208.0/24",
+          "queried_ip": "104.17.207.5",
+          "prefix": "104.17.207.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
@@ -139,7 +139,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e2ee8b8e42841c-TPE",
+        "cf-ray": "a1e522debb07a39d-TPE",
         "detection_method": "header"
       }
     },
@@ -148,8 +148,8 @@
       "type": "document",
       "ipinfo": {
         "domain": "client-chat.easychat.co",
-        "ip": "3.169.55.57",
-        "hostname": "server-3-169-55-57.tpe54.r.cloudfront.net",
+        "ip": "3.169.137.71",
+        "hostname": "server-3-169-137-71.tpe54.r.cloudfront.net",
         "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
@@ -176,6 +176,99 @@
       "category": "domestic/cloud"
     },
     {
+      "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "cdnjs.cloudflare.com",
+        "ip": "104.17.24.14",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e522e91dd84a3f-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://livewishlist.scriptengine.net/api/apps-config",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "livewishlist.scriptengine.net",
+        "ip": "162.159.137.54",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e522ea3bda6b7a-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://pro.ip-api.com/json/?fields=proxy,countryCode,city&key=SXs3XvNnKoUQP2y",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "pro.ip-api.com",
+        "ip": "18.162.49.53",
+        "hostname": "ec2-18-162-49-53.ap-east-1.compute.amazonaws.com",
+        "city": "Hong Kong",
+        "region": "Hong Kong",
+        "country": "HK",
+        "loc": "22.2783,114.1747",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Hong_Kong"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 18.198,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "18.162.49.53",
+          "prefix": "18.162.49.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
+    },
+    {
+      "originalUrl": "https://shop.app/pay/hop?analytics_trace_id=77a7a906-60a5-403a-b071-d51cdb09f936&target_origin=https%3A%2F%2Fwww.marcella.com.tw&client_handle=marcella-tw.myshopify.com",
+      "type": "document",
+      "ipinfo": {
+        "domain": "shop.app",
+        "ip": "23.227.39.20",
+        "city": "Ottawa",
+        "region": "Ontario",
+        "country": "CA",
+        "loc": "45.4166,-75.6904",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Toronto"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e522e9daee7234-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
       "originalUrl": "https://otlp-http-production.shopifysvc.com/v1/metrics",
       "type": "fetch",
       "ipinfo": {
@@ -192,7 +285,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 5.86,
+        "rtt": 4.944,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
@@ -213,105 +306,12 @@
       }
     },
     {
-      "originalUrl": "https://livewishlist.scriptengine.net/api/apps-config",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "livewishlist.scriptengine.net",
-        "ip": "162.159.137.54",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "cf-ray": "a1e2ee935f7a56fb-TPE",
-        "detection_method": "header"
-      }
-    },
-    {
-      "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "cdnjs.cloudflare.com",
-        "ip": "104.17.25.14",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "cf-ray": "a1e2ee91689b4aa5-TPE",
-        "detection_method": "header"
-      }
-    },
-    {
-      "originalUrl": "https://pro.ip-api.com/json/?fields=proxy,countryCode,city&key=SXs3XvNnKoUQP2y",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "pro.ip-api.com",
-        "ip": "18.162.49.53",
-        "hostname": "ec2-18-162-49-53.ap-east-1.compute.amazonaws.com",
-        "city": "Hong Kong",
-        "region": "Hong Kong",
-        "country": "HK",
-        "loc": "22.2783,114.1747",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Hong_Kong"
-      },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": 19.322,
-        "detection_method": "rtt",
-        "laces": {
-          "source": "laces api (direct)",
-          "queried_ip": "18.162.49.53",
-          "prefix": "18.162.49.0/24",
-          "anycast": false,
-          "confidence": "not_detected",
-          "asns": [],
-          "date": "2026-07-17",
-          "has_tw": false,
-          "has_taipei": false,
-          "site_count": 0,
-          "location_count": 0
-        }
-      }
-    },
-    {
-      "originalUrl": "https://shop.app/pay/hop?analytics_trace_id=d9dcf8a6-e8b7-4535-a3a5-9a6dc50be4a7&target_origin=https%3A%2F%2Fwww.marcella.com.tw&client_handle=marcella-tw.myshopify.com",
-      "type": "document",
-      "ipinfo": {
-        "domain": "shop.app",
-        "ip": "23.227.39.20",
-        "city": "Ottawa",
-        "region": "Ontario",
-        "country": "CA",
-        "loc": "45.4166,-75.6904",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Toronto"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "cf-ray": "a1e2ee9259f8a9cb-TPE",
-        "detection_method": "header"
-      }
-    },
-    {
       "originalUrl": "https://www.googletagmanager.com/gtag/js?id=AW-815826144",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.77.8",
+        "hostname": "nctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -342,7 +342,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "shopify-gtm-suite.getelevar.com",
-        "ip": "104.26.0.225",
+        "ip": "172.67.72.114",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -353,95 +353,9 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e2ee979fac77f1-TPE",
+        "cf-ray": "a1e522ebcca7844e-TPE",
         "detection_method": "header"
       }
-    },
-    {
-      "originalUrl": "https://www.google.com/ccm/collect?rcb=11&frm=0&auid=974960290.1784560638&dt=%E3%80%90MarCella%E7%91%AA%E6%A6%AD%E3%80%91%E7%94%B7%E5%A5%B3%E7%86%B1%E9%8A%B7%E2%94%82%E7%84%A1%E7%B8%AB%E5%85%A7%E8%A1%A3%E8%A4%B2%E3%80%81%E6%A9%9F%E8%83%BD%E9%99%A4%E8%87%AD%E8%A5%AA%E6%8E%A8%E8%96%A6%EF%BC%8C%E5%94%AF%E4%B8%80%E5%A0%85%E6%8C%81&en=page_view&dl=https%3A%2F%2Fwww.marcella.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=1044965509.1784560638&navt=n&npa=0&did=dN2ZkMj%2CdNTU0Yz%2CdYmNjMT&gdid=dN2ZkMj.dNTU0Yz.dYmNjMT&_tu=AAI&gtm=45be67f0v893593567za200zb9208214631zd9208214631xec&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115616986~115938465~115938469~118897920~118897930~119709549&apve=1&apvf=f&apvc=1&tids=AW-815826144&tid=AW-815826144&tft=1784560637660&tfd=1990&fmt=8",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.251.155.119",
-        "city": "Mountain View",
-        "region": "California",
-        "country": "US",
-        "loc": "38.0088,-122.1175",
-        "org": "AS15169 Google LLC",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "rtt": 7.707,
-        "detection_method": "rtt",
-        "laces": {
-          "source": "laces api (cached)",
-          "queried_ip": "142.251.155.119",
-          "prefix": "142.251.155.0/24",
-          "anycast": true,
-          "confidence": "confident",
-          "partial": false,
-          "asns": [
-            15169
-          ],
-          "date": "2026-07-17",
-          "has_tw": false,
-          "has_taipei": false,
-          "site_count": 62,
-          "location_count": 62
-        }
-      }
-    },
-    {
-      "originalUrl": "https://api.easychat.co/restapi/v1/login/anonymous",
-      "type": "xhr",
-      "ipinfo": {
-        "domain": "api.easychat.co",
-        "ip": "47.131.203.127",
-        "hostname": "ec2-47-131-203-127.ap-southeast-1.compute.amazonaws.com",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": null,
-        "detection_method": "rtt",
-        "rtt_error": "timeout",
-        "laces": {
-          "source": "laces api (cached)",
-          "queried_ip": "47.131.203.127",
-          "prefix": "47.131.203.0/24",
-          "anycast": false,
-          "confidence": "not_detected",
-          "asns": [],
-          "date": "2026-07-17",
-          "has_tw": false,
-          "has_taipei": false,
-          "site_count": 0,
-          "location_count": 0
-        }
-      }
-    },
-    {
-      "originalUrl": "https://d.line-scdn.net/n/line_tag/public/release/v1/lt.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "d.line-scdn.net",
-        "ip": "184.25.121.253",
-        "hostname": "a184-25-121-253.deploy.static.akamaitechnologies.com",
-        "city": "Yuanlin",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "23.9567,120.5761",
-        "org": "AS16625 Akamai Technologies, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://app.akohub.com/pixel/events",
@@ -463,7 +377,7 @@
         "detection_method": "rtt",
         "rtt_error": "timeout",
         "laces": {
-          "source": "laces api (direct)",
+          "source": "laces api (cached)",
           "queried_ip": "54.211.183.183",
           "prefix": "54.211.183.0/24",
           "anycast": false,
@@ -478,12 +392,64 @@
       }
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-NZTFWX39TR&cid=1200521352.1784560638&gtm=45je67f0v9205525765z89205332141za20gzb9205332141zd9205332141&rcb=12&aip=1&dma=0&gcs=G111&gcd=13t3t3t3t5l1&npa=0&frm=0&tag_exp=115616985~115938465~115938468~118897920~118897930~119896802&z=665408144",
+      "originalUrl": "https://www.google.com/ccm/collect?rcb=19&frm=0&auid=6972115.1784583753&dt=%E3%80%90MarCella%E7%91%AA%E6%A6%AD%E3%80%91%E7%94%B7%E5%A5%B3%E7%86%B1%E9%8A%B7%E2%94%82%E7%84%A1%E7%B8%AB%E5%85%A7%E8%A1%A3%E8%A4%B2%E3%80%81%E6%A9%9F%E8%83%BD%E9%99%A4%E8%87%AD%E8%A5%AA%E6%8E%A8%E8%96%A6%EF%BC%8C%E5%94%AF%E4%B8%80%E5%A0%85%E6%8C%81&en=page_view&dl=https%3A%2F%2Fwww.marcella.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=811518623.1784583753&navt=n&npa=0&did=dN2ZkMj%2CdNTU0Yz%2CdYmNjMT&gdid=dN2ZkMj.dNTU0Yz.dYmNjMT&_tu=AAI&gtm=45be67g0v893593567za200zb9208214631zd9208214631xec&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938468~118131808~118897920~118897930~119724321&apve=1&apvf=f&apvc=1&tids=AW-815826144&tid=AW-815826144&tft=1784583753265&tfd=2881&fmt=8",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.156.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 4.465,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.156.119",
+          "prefix": "142.251.156.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
+    },
+    {
+      "originalUrl": "https://d.line-scdn.net/n/line_tag/public/release/v1/lt.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "d.line-scdn.net",
+        "ip": "23.39.61.163",
+        "hostname": "a23-39-61-163.deploy.static.akamaitechnologies.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16625 Akamai Technologies, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-NZTFWX39TR&cid=1103760156.1784583753&gtm=45je67g0v9205525765z89205332141za20gzb9205332141zd9205332141&rcb=3&aip=1&dma=0&gcs=G111&gcd=13t3t3t3t5l1&npa=0&frm=0&tag_exp=115616986~115938465~115938469~117776795~118897920~118897930~119724321&z=1290083996",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.196.195",
-        "hostname": "nctsaa-ac-in-f3.1e100.net",
+        "ip": "142.250.204.35",
+        "hostname": "hkg07s38-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -494,7 +460,7 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.facebook.com/tr/?eid=1784560638691&id=404012299753340&ev=PageView&dl=https%3A%2F%2Fwww.marcella.com.tw%2F&rl=&if=false&ts=1784560638690&sw=1282&sh=800&v=2.9.44&r=stable&fbp=fb.1.1784560638441.8872809798&it=1784560638689&rqm=GET",
+      "originalUrl": "https://www.facebook.com/tr/?eid=1784583753576&id=404012299753340&ev=PageView&dl=https%3A%2F%2Fwww.marcella.com.tw%2F&rl=&if=false&ts=1784583753574&sw=1282&sh=800&v=2.9.44&r=stable&fbp=fb.1.1784583753315.3075519546&it=1784583753573&rqm=GET",
       "type": "image",
       "ipinfo": {
         "domain": "www.facebook.com",
@@ -510,61 +476,11 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://track.omnichat.ai/restapi/v1/pixel/track?ecid=aee4fc63-10c4-420b-9516-fb0bbecc235c&p=Custom&t=MarCella%20%E7%91%AA%E6%A6%AD&bh=pageview&v=1.0&dl=https%3A%2F%2Fwww.marcella.com.tw%2F&dv=web_desktop&ssid=vyp1af7y-mrtdbtmz.1784560638923.1784560638923",
-      "type": "image",
-      "ipinfo": {
-        "domain": "track.omnichat.ai",
-        "ip": "3.0.224.154",
-        "hostname": "ec2-3-0-224-154.ap-southeast-1.compute.amazonaws.com",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": null,
-        "detection_method": "rtt",
-        "rtt_error": "timeout",
-        "laces": {
-          "source": "laces api (cached)",
-          "queried_ip": "3.0.224.154",
-          "prefix": "3.0.224.0/24",
-          "anycast": false,
-          "confidence": "not_detected",
-          "asns": [],
-          "date": "2026-07-17",
-          "has_tw": false,
-          "has_taipei": false,
-          "site_count": 0,
-          "location_count": 0
-        }
-      }
-    },
-    {
-      "originalUrl": "https://media-cdn.omnichat.ai/upload/photos/user-upload-photo/fb7a75aa-7abb-402e-9e69-d2db221d6c6e-611ed1f213dc4d91a02e1df074be86bb.png",
-      "type": "image",
-      "ipinfo": {
-        "domain": "media-cdn.omnichat.ai",
-        "ip": "54.192.248.68",
-        "hostname": "server-54-192-248-68.tpe53.r.cloudfront.net",
-        "city": "Taoyuan",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "24.9937,121.2970",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
       "originalUrl": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
       "type": "fetch",
       "ipinfo": {
         "domain": "mpc-prod-24-s6uit34pua-uw.a.run.app",
-        "ip": "34.143.75.2",
+        "ip": "34.143.79.2",
         "city": "Mountain View",
         "region": "California",
         "country": "US",
@@ -575,12 +491,12 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 5.603,
+        "rtt": 4.537,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "34.143.75.2",
-          "prefix": "34.143.75.0/24",
+          "queried_ip": "34.143.79.2",
+          "prefix": "34.143.79.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
@@ -590,8 +506,8 @@
           "date": "2026-07-17",
           "has_tw": false,
           "has_taipei": false,
-          "site_count": 62,
-          "location_count": 62
+          "site_count": 61,
+          "location_count": 61
         }
       }
     },
@@ -610,7 +526,7 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 62.501,
+        "rtt": 59.814,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
@@ -650,9 +566,43 @@
         "detection_method": "rtt",
         "rtt_error": "timeout",
         "laces": {
-          "source": "laces api (direct)",
+          "source": "laces api (cached)",
           "queried_ip": "3.13.2.215",
           "prefix": "3.13.2.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
+    },
+    {
+      "originalUrl": "https://api.easychat.co/restapi/v1/login/anonymous",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "api.easychat.co",
+        "ip": "47.131.203.127",
+        "hostname": "ec2-47-131-203-127.ap-southeast-1.compute.amazonaws.com",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": null,
+        "detection_method": "rtt",
+        "rtt_error": "timeout",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "47.131.203.127",
+          "prefix": "47.131.203.0/24",
           "anycast": false,
           "confidence": "not_detected",
           "asns": [],
@@ -681,10 +631,10 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 6.796,
+        "rtt": 5.011,
         "detection_method": "rtt",
         "laces": {
-          "source": "laces api (direct)",
+          "source": "laces api (cached)",
           "queried_ip": "35.244.142.80",
           "prefix": "35.244.142.0/24",
           "anycast": true,

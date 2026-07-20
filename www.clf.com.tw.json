@@ -2,7 +2,7 @@
   "url": "https://www.clf.com.tw/",
   "canonicalURL": "https://www.clf.com.tw/en/index.html",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T15:09:06.230Z",
+  "timestamp": "2026-07-20T21:34:00.179Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -29,11 +29,11 @@
   "uniqueDomains": 4,
   "test_results": {
     "domestic": {
-      "cloud": 3,
+      "cloud": 2,
       "direct": 1
     },
     "foreign": {
-      "cloud": 0,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -69,11 +69,11 @@
       },
       "category": "domestic/cloud",
       "cloud_provider": {
-        "cf-ray": "a1e2e2880c86c211-SIN",
+        "cf-ray": "a1e51646ba7a64ca-SIN",
         "country": "tw",
         "detection_method": "laces",
         "laces": {
-          "source": "laces api (direct)",
+          "source": "laces api (cached)",
           "queried_ip": "104.21.47.56",
           "prefix": "104.21.47.0/24",
           "anycast": true,
@@ -110,12 +110,28 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud",
+      "category": "foreign/cloud",
       "cloud_provider": {
-        "country": "tw",
-        "cf-ray": "a1e2e287fccab846-TPE",
-        "x-served-by": "cache-nrt-rjtf7700057-NRT",
-        "detection_method": "header"
+        "cf-ray": "a1e5164d4c09558c-SIN",
+        "x-served-by": "cache-sin-wsat1880067-SIN",
+        "rtt": 68.768,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "104.26.12.204",
+          "prefix": "104.26.12.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
       }
     },
     {
@@ -123,7 +139,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "unpkg.com",
-        "ip": "104.18.0.22",
+        "ip": "104.18.1.22",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -134,7 +150,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e2e2891d2077f1-TPE",
+        "cf-ray": "a1e516494f684a87-TPE",
         "detection_method": "header"
       }
     }

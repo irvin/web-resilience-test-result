@@ -2,7 +2,7 @@
   "url": "https://m.biquge.tw",
   "canonicalURL": "https://www.biquge.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T13:33:57.770Z",
+  "timestamp": "2026-07-20T19:53:17.336Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -29,11 +29,11 @@
   "uniqueDomains": 3,
   "test_results": {
     "domestic": {
-      "cloud": 3,
+      "cloud": 2,
       "direct": 0
     },
     "foreign": {
-      "cloud": 0,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -54,7 +54,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e2572a4837c4ed-TPE",
+        "cf-ray": "a1e482d78c8cb016-TPE",
         "detection_method": "header"
       }
     },
@@ -63,8 +63,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "ajax.googleapis.com",
-        "ip": "142.250.77.202",
-        "hostname": "del11s08-in-f10.1e100.net",
+        "ip": "142.250.77.10",
+        "hostname": "nctsaa-ab-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -79,7 +79,7 @@
       "type": "image",
       "ipinfo": {
         "domain": "img.biquge.tw",
-        "ip": "172.67.75.175",
+        "ip": "104.26.1.223",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -87,14 +87,14 @@
         "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud",
+      "category": "foreign/cloud",
       "cloud_provider": {
-        "country": "tw",
-        "detection_method": "laces",
+        "rtt": 64.518,
+        "detection_method": "rtt",
         "laces": {
-          "source": "laces api (direct)",
-          "queried_ip": "172.67.75.175",
-          "prefix": "172.67.75.0/24",
+          "source": "laces api (cached)",
+          "queried_ip": "104.26.1.223",
+          "prefix": "104.26.1.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
@@ -102,17 +102,10 @@
             13335
           ],
           "date": "2026-07-17",
-          "has_tw": true,
-          "has_taipei": true,
-          "site_count": 60,
-          "location_count": 60,
-          "tw_locations": [
-            {
-              "city": "Taipei",
-              "country": "TW",
-              "id": "TAI"
-            }
-          ]
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
         }
       }
     }

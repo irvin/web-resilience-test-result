@@ -2,7 +2,7 @@
   "url": "https://www.hakkatv.org.tw/",
   "canonicalURL": "https://www.hakkatv.org.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T15:42:43.340Z",
+  "timestamp": "2026-07-20T22:08:01.916Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,12 +25,12 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 274,
-  "uniqueDomains": 14,
+  "requestCount": 201,
+  "uniqueDomains": 6,
   "test_results": {
     "domestic": {
-      "cloud": 10,
-      "direct": 2
+      "cloud": 3,
+      "direct": 1
     },
     "foreign": {
       "cloud": 2,
@@ -58,7 +58,7 @@
         "detection_method": "rtt",
         "rtt_error": "timeout",
         "laces": {
-          "source": "laces api (direct)",
+          "source": "laces api (cached)",
           "queried_ip": "57.182.237.6",
           "prefix": "57.182.237.0/24",
           "anycast": false,
@@ -77,8 +77,8 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.250.198.74",
-        "hostname": "lctsaa-ab-in-f10.1e100.net",
+        "ip": "142.250.196.202",
+        "hostname": "nctsaa-ac-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -93,7 +93,7 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "104.17.208.5",
+        "ip": "104.17.207.5",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -103,10 +103,32 @@
       },
       "category": "domestic/cloud",
       "cloud_provider": {
+        "x-served-by": "cache-fra-etou8220078-FRA, cache-sin-wsss1830067-SIN",
         "country": "tw",
-        "cf-ray": "a1e313761cf4845e-TPE",
-        "x-served-by": "cache-fra-eddf8230094-FRA, cache-nrt-rjtt7900089-NRT",
-        "detection_method": "header"
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "104.17.207.5",
+          "prefix": "104.17.207.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 76,
+          "location_count": 76,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -145,7 +167,7 @@
         "detection_method": "rtt",
         "rtt_error": "timeout",
         "laces": {
-          "source": "laces api (direct)",
+          "source": "laces api (cached)",
           "queried_ip": "35.73.170.12",
           "prefix": "35.73.170.0/24",
           "anycast": false,
@@ -166,154 +188,6 @@
         "domain": "connect.facebook.net",
         "ip": "31.13.87.5",
         "hostname": "xx-fbcdn-shv-01-tpe1.fbcdn.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS32934 Facebook, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/direct"
-    },
-    {
-      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-ZQ4EFXNX11",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://translate.google.com/translate_a/element.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "translate.google.com",
-        "ip": "142.250.192.142",
-        "hostname": "bom12s18-in-f14.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://hakkatv.s3-accelerate.amazonaws.com/hakkatv/photos/default/logo.large.png",
-      "type": "image",
-      "ipinfo": {
-        "domain": "hakkatv.s3-accelerate.amazonaws.com",
-        "ip": "13.33.5.174",
-        "hostname": "server-13-33-5-174.tpe53.r.cloudfront.net",
-        "city": "Taoyuan",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "24.9937,121.2970",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.google.com/measurement/conversion?random=1784562149993&cv=11&tid=G-ZQ4EFXNX11&fst=1784562149993&fmt=8&en=session_start&gtm=45je67g0h2v876860114za200zd876860114xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938468~118897920~118897930~119709550~119996999&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.hakkatv.org.tw%2F&gacid=554461401.1784562150&ae=a&frm=0&npa=0&pscdl=noapi&auid=1982504856.1784562150&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&rcb=19",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.251.155.119",
-        "city": "Mountain View",
-        "region": "California",
-        "country": "US",
-        "loc": "38.0088,-122.1175",
-        "org": "AS15169 Google LLC",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "rtt": 5.634,
-        "detection_method": "rtt",
-        "laces": {
-          "source": "laces api (cached)",
-          "queried_ip": "142.251.155.119",
-          "prefix": "142.251.155.0/24",
-          "anycast": true,
-          "confidence": "confident",
-          "partial": false,
-          "asns": [
-            15169
-          ],
-          "date": "2026-07-17",
-          "has_tw": false,
-          "has_taipei": false,
-          "site_count": 62,
-          "location_count": 62
-        }
-      }
-    },
-    {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-ZQ4EFXNX11&cid=554461401.1784562150&gtm=45je67g0h2v876860114za200zd876860114&rcb=19&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115616986~115938465~115938468~118897920~118897930~119709550~119996999&z=351173363",
-      "type": "image",
-      "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.204.35",
-        "hostname": "hkg07s38-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.zZZZhVqDDCw.L.W.O/am=BIAABw/d=0/rs=AN8SPfpWxivXbFD2WhpIdS-DPbQSwnZZjQ/m=el_main_css",
-      "type": "stylesheet",
-      "ipinfo": {
-        "domain": "www.gstatic.com",
-        "ip": "142.250.77.195",
-        "hostname": "del11s08-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.zh_TW.V9GY5NeK2rY.O/am=BIAABw/d=1/exm=el_conf/ed=1/rs=AN8SPfqQjRyQvZtH9ab1yxoV_TjTa1b3tw/m=el_main",
-      "type": "script",
-      "ipinfo": {
-        "domain": "translate.googleapis.com",
-        "ip": "142.250.77.202",
-        "hostname": "del11s08-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.facebook.com/tr/?id=386331216188628&ev=PageView&dl=https%3A%2F%2Fwww.hakkatv.org.tw%2F&rl=&if=false&ts=1784562151135&iw=false&sw=1280&sh=720&v=2.9.357&r=stable&ec=0&o=4126&aems=0%3B0&fbp=fb.2.1784562151131.678625950269299922&ler=empty&cdl=API_unavailable&pmd[title]=%E5%AE%A2%E5%AE%B6%E9%9B%BB%E8%A6%96%E5%8F%B0&pmd[locale]=zh-TW&pmd[keywords]=%E5%AE%A2%E5%AE%B6%E9%9B%BB%E8%A6%96%E5%8F%B0&pmd[description]=%E5%AE%A2%E5%AE%B6%E9%9B%BB%E8%A6%96%E6%98%AF%E5%B1%AC%E6%96%BC%E5%85%A8%E6%B0%91%E3%80%81%E4%BB%A5%E8%87%B3%E6%96%BC%E5%85%A8%E4%B8%96%E7%95%8C%E5%AE%A2%E5%AE%B6%E6%97%8F%E7%BE%A4%E7%9A%84%E9%A0%BB%E9%81%93%EF%BC%8C%E4%BA%A6%E6%98%AF%E7%82%BA%E5%82%B3%E6%92%AD%E5%AE%A2%E5%AE%B6%E6%96%87%E5%8C%96%E8%80%8C%E5%AD%98%E5%9C%A8%EF%BC%8C%E5%AE%9A%E4%BD%8D%E7%82%BA%E3%80%8C%E5%85%A8%E9%AB%94%E5%AE%A2%E5%AE%B6%E6%97%8F%E7%BE%A4%E4%B9%8B%E5%AA%92%E9%AB%94%E3%80%8D%E3%80%82&plt=1165.199999999255&iss=1&imft=1&tz=480&it=1784562150426&coo=false&expv2[0]=pl0&expv2[1]=el2&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=ct2&expv2[6]=hf1&expv2[7]=pt0&expv2[8]=ai1&rqm=GET",
-      "type": "image",
-      "ipinfo": {
-        "domain": "www.facebook.com",
-        "ip": "31.13.87.36",
-        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",

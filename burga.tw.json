@@ -2,7 +2,7 @@
   "url": "https://burga.tw",
   "canonicalURL": "https://burga.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T15:00:17.631Z",
+  "timestamp": "2026-07-20T21:25:18.209Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 193,
-  "uniqueDomains": 21,
+  "requestCount": 249,
+  "uniqueDomains": 23,
   "test_results": {
     "domestic": {
       "cloud": 15,
-      "direct": 1
+      "direct": 2
     },
     "foreign": {
-      "cloud": 4,
+      "cloud": 5,
       "direct": 1
     }
   },
@@ -55,7 +55,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e2d55a096a4a12-TPE",
+        "cf-ray": "a1e5093f4b2c4a84-TPE",
         "detection_method": "header"
       }
     },
@@ -64,42 +64,55 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "104.17.207.5",
+        "ip": "151.101.1.229",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
         "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
+        "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud",
+      "category": "foreign/cloud",
       "cloud_provider": {
-        "x-served-by": "cache-fra-eddf8230146-FRA, cache-sin-wsss1830035-SIN",
-        "country": "tw",
-        "detection_method": "laces",
+        "x-served-by": "cache-fra-eddf8230146-FRA, cache-nrt-rjtf7700051-NRT",
+        "rtt": 38.382,
+        "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "104.17.207.5",
-          "prefix": "104.17.207.0/24",
+          "queried_ip": "151.101.1.229",
+          "prefix": "151.101.1.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
           "asns": [
-            13335
+            54113
           ],
           "date": "2026-07-17",
-          "has_tw": true,
-          "has_taipei": true,
-          "site_count": 76,
-          "location_count": 76,
-          "tw_locations": [
-            {
-              "city": "Taipei",
-              "country": "TW",
-              "id": "TAI"
-            }
-          ]
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 54,
+          "location_count": 54
         }
+      }
+    },
+    {
+      "originalUrl": "https://bat.bing.com/bat.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "bat.bing.com",
+        "ip": "150.171.28.10",
+        "city": "Redmond",
+        "region": "Washington",
+        "country": "US",
+        "loc": "47.6740,-122.1215",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "x-msedge-ref": "Ref A: 7E9712DB23C442C5BE55FAE2D92A4931 Ref B: TPE201050222025 Ref C: 2026-07-20T21:25:02Z",
+        "detection_method": "header"
       }
     },
     {
@@ -118,7 +131,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e2d55eea864a36-TPE",
+        "cf-ray": "a1e509452a378f1b-TPE",
         "detection_method": "header"
       }
     },
@@ -137,8 +150,8 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "x-served-by": "cache-lga21933-LGA, cache-nrt-rjaa8190043-NRT",
-        "rtt": 63.577,
+        "x-served-by": "cache-lga21933-LGA, cache-nrt-rjtf7700072-NRT",
+        "rtt": 65.913,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
@@ -159,32 +172,12 @@
       }
     },
     {
-      "originalUrl": "https://bat.bing.com/bat.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "bat.bing.com",
-        "ip": "150.171.28.10",
-        "city": "Redmond",
-        "region": "Washington",
-        "country": "US",
-        "loc": "47.6740,-122.1215",
-        "org": "AS8075 Microsoft Corporation",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "x-msedge-ref": "Ref A: ED4EF94BE5074F57BD16DC799DCCF50E Ref B: TPE201050220042 Ref C: 2026-07-20T15:00:05Z",
-        "detection_method": "header"
-      }
-    },
-    {
       "originalUrl": "https://cdn-static.okendo.io/reviews-widget-plus/js/okendo-reviews.js",
       "type": "script",
       "ipinfo": {
         "domain": "cdn-static.okendo.io",
-        "ip": "3.169.121.122",
-        "hostname": "server-3-169-121-122.tpe53.r.cloudfront.net",
+        "ip": "3.169.121.26",
+        "hostname": "server-3-169-121-26.tpe53.r.cloudfront.net",
         "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
@@ -211,7 +204,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 6.559,
+        "rtt": 8.972,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
@@ -232,7 +225,7 @@
       }
     },
     {
-      "originalUrl": "https://shop.app/pay/hop?analytics_trace_id=03f08b12-2474-4842-b23c-c9bd96cef1f0&target_origin=https%3A%2F%2Fburga.tw&client_handle=tw-burga.myshopify.com",
+      "originalUrl": "https://shop.app/pay/hop?analytics_trace_id=b463e7cc-e421-453e-99c5-70ff98d8ce99&target_origin=https%3A%2F%2Fburga.tw&client_handle=tw-burga.myshopify.com",
       "type": "document",
       "ipinfo": {
         "domain": "shop.app",
@@ -247,60 +240,17 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e2d56268426b6f-TPE",
+        "cf-ray": "a1e5094aae162566-TPE",
         "detection_method": "header"
       }
     },
     {
-      "originalUrl": "https://backend.alia-prod.com/public/launcher.js?shop=tw-burga.myshopify.com",
-      "type": "script",
-      "ipinfo": {
-        "domain": "backend.alia-prod.com",
-        "ip": "104.20.35.17",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "cf-ray": "a1e2d565996fb2df-SIN",
-        "country": "tw",
-        "detection_method": "laces",
-        "laces": {
-          "source": "laces api (direct)",
-          "queried_ip": "104.20.35.17",
-          "prefix": "104.20.35.0/24",
-          "anycast": true,
-          "confidence": "confident",
-          "partial": false,
-          "asns": [
-            13335
-          ],
-          "date": "2026-07-17",
-          "has_tw": true,
-          "has_taipei": true,
-          "site_count": 65,
-          "location_count": 65,
-          "tw_locations": [
-            {
-              "city": "Taipei",
-              "country": "TW",
-              "id": "TAI"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "originalUrl": "https://tracker.dema.ai/api/track?i=DV-94588161458055068721&v=shopify-1.4.235-5aa5902951&uid=13061644-ae4a-42ba-b8e4-047e6a2d9114&u=https%3A%2F%2Fburga.tw%2F&r=&d=%7B%22clientId%22%3A%2298bd4daf-8a13-4da9-967f-0ec59e76c732%22%2C%22consent%22%3A%7B%22analyticsProcessingAllowed%22%3Atrue%2C%22marketingAllowed%22%3Atrue%2C%22preferencesProcessingAllowed%22%3Atrue%2C%22saleOfDataAllowed%22%3Atrue%7D%7D&_nc=1784559605407&m=%7B%22event_name%22%3A%22page_view%22%2C%22page_location%22%3A%22https%3A%2F%2Fburga.tw%2F%22%2C%22page_referrer%22%3A%22%22%2C%22page_title%22%3A%22BURGA+%7C+%E6%AF%8F%E6%97%A5%E5%B8%B8%E5%82%99%E7%94%A8%E5%93%81%E5%8C%96%E8%BA%AB%E6%99%82%E5%B0%9A%E9%85%8D%E4%BB%B6%22%7D",
+      "originalUrl": "https://tracker.dema.ai/api/track?i=DV-94588161458055068721&v=shopify-1.4.235-5aa5902951&uid=d3d136c8-b315-41fe-a2e1-2d93a02086d0&u=https%3A%2F%2Fburga.tw%2F&r=&d=%7B%22clientId%22%3A%225ee39911-fed3-49f2-8c50-dcb9682659b5%22%2C%22consent%22%3A%7B%22analyticsProcessingAllowed%22%3Atrue%2C%22marketingAllowed%22%3Atrue%2C%22preferencesProcessingAllowed%22%3Atrue%2C%22saleOfDataAllowed%22%3Atrue%7D%7D&_nc=1784582702658&m=%7B%22event_name%22%3A%22page_view%22%2C%22page_location%22%3A%22https%3A%2F%2Fburga.tw%2F%22%2C%22page_referrer%22%3A%22%22%2C%22page_title%22%3A%22BURGA+%7C+%E6%AF%8F%E6%97%A5%E5%B8%B8%E5%82%99%E7%94%A8%E5%93%81%E5%8C%96%E8%BA%AB%E6%99%82%E5%B0%9A%E9%85%8D%E4%BB%B6%22%7D",
       "type": "fetch",
       "ipinfo": {
         "domain": "tracker.dema.ai",
-        "ip": "99.80.29.157",
-        "hostname": "ec2-99-80-29-157.eu-west-1.compute.amazonaws.com",
+        "ip": "54.220.250.67",
+        "hostname": "ec2-54-220-250-67.eu-west-1.compute.amazonaws.com",
         "city": "Dublin",
         "region": "Leinster",
         "country": "IE",
@@ -315,8 +265,8 @@
         "rtt_error": "timeout",
         "laces": {
           "source": "laces api (direct)",
-          "queried_ip": "99.80.29.157",
-          "prefix": "99.80.29.0/24",
+          "queried_ip": "54.220.250.67",
+          "prefix": "54.220.250.0/24",
           "anycast": false,
           "confidence": "not_detected",
           "asns": [],
@@ -329,11 +279,70 @@
       }
     },
     {
+      "originalUrl": "https://backend.alia-prod.com/public/launcher.js?shop=tw-burga.myshopify.com",
+      "type": "script",
+      "ipinfo": {
+        "domain": "backend.alia-prod.com",
+        "ip": "172.66.145.207",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "cf-ray": "a1e5094b8ac9a439-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "172.66.145.207",
+          "prefix": "172.66.145.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 62,
+          "location_count": 62,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "originalUrl": "https://storage.googleapis.com/gsf-scripts/custom-pixels/tw-burga.js?shop=tw-burga.myshopify.com&_=1751030012",
+      "type": "script",
+      "ipinfo": {
+        "domain": "storage.googleapis.com",
+        "ip": "142.250.192.155",
+        "hostname": "bom12s18-in-f27.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
       "originalUrl": "https://shopify-gtm-suite.getelevar.com/configs/9f3bd1f3ba24b40147377305fba56a77fe56a59a/config.js",
       "type": "script",
       "ipinfo": {
         "domain": "shopify-gtm-suite.getelevar.com",
-        "ip": "172.67.72.114",
+        "ip": "104.26.0.225",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -344,25 +353,9 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e2d5638978a39d-TPE",
+        "cf-ray": "a1e5094aaa6b82cd-TPE",
         "detection_method": "header"
       }
-    },
-    {
-      "originalUrl": "https://storage.googleapis.com/gsf-scripts/custom-pixels/tw-burga.js?shop=tw-burga.myshopify.com&_=1751030012",
-      "type": "script",
-      "ipinfo": {
-        "domain": "storage.googleapis.com",
-        "ip": "142.250.77.27",
-        "hostname": "nctsaa-ab-in-f27.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://i.burga.tw/nb-collector",
@@ -385,8 +378,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.66.72",
-        "hostname": "hkg12s27-in-f8.1e100.net",
+        "ip": "142.250.77.200",
+        "hostname": "del11s08-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -401,7 +394,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "cdn.cookielaw.org",
-        "ip": "104.18.87.42",
+        "ip": "104.18.86.42",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -412,7 +405,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e2d5661ed149f7-TPE",
+        "cf-ray": "a1e5094eca7a313b-TPE",
         "detection_method": "header"
       }
     },
@@ -421,142 +414,6 @@
       "type": "xhr",
       "ipinfo": {
         "domain": "fast.a.klaviyo.com",
-        "ip": "199.232.114.133",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "x-served-by": "cache-bos-kbos510056-BOS, cache-nrt-rjtf7700091-NRT",
-        "rtt": 63.596,
-        "detection_method": "rtt",
-        "laces": {
-          "source": "laces api (cached)",
-          "queried_ip": "199.232.114.133",
-          "prefix": "199.232.114.0/24",
-          "anycast": true,
-          "confidence": "confident",
-          "partial": false,
-          "asns": [
-            54113
-          ],
-          "date": "2026-07-17",
-          "has_tw": false,
-          "has_taipei": false,
-          "site_count": 2,
-          "location_count": 2
-        }
-      }
-    },
-    {
-      "originalUrl": "https://a.klaviyo.com/forms/api/v3/geo-ip",
-      "type": "xhr",
-      "ipinfo": {
-        "domain": "a.klaviyo.com",
-        "ip": "172.64.147.119",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "detection_method": "laces",
-        "laces": {
-          "source": "laces api (direct)",
-          "queried_ip": "172.64.147.119",
-          "prefix": "172.64.147.0/24",
-          "anycast": true,
-          "confidence": "confident",
-          "partial": false,
-          "asns": [
-            13335
-          ],
-          "date": "2026-07-17",
-          "has_tw": true,
-          "has_taipei": true,
-          "site_count": 73,
-          "location_count": 73,
-          "tw_locations": [
-            {
-              "city": "Taipei",
-              "country": "TW",
-              "id": "TAI"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "originalUrl": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
-      "type": "xhr",
-      "ipinfo": {
-        "domain": "geolocation.onetrust.com",
-        "ip": "172.64.155.119",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "detection_method": "laces",
-        "laces": {
-          "source": "laces api (direct)",
-          "queried_ip": "172.64.155.119",
-          "prefix": "172.64.155.0/24",
-          "anycast": true,
-          "confidence": "confident",
-          "partial": false,
-          "asns": [
-            13335
-          ],
-          "date": "2026-07-17",
-          "has_tw": true,
-          "has_taipei": true,
-          "site_count": 76,
-          "location_count": 76,
-          "tw_locations": [
-            {
-              "city": "Taipei",
-              "country": "TW",
-              "id": "TAI"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "originalUrl": "https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&display=swap",
-      "type": "stylesheet",
-      "ipinfo": {
-        "domain": "fonts.googleapis.com",
-        "ip": "64.233.189.95",
-        "hostname": "tl-in-f95.1e100.net",
-        "city": "Taichung",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "24.1469,120.6839",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://static-forms.klaviyo.com/forms/api/v7/V9UFqQ/full-forms",
-      "type": "xhr",
-      "ipinfo": {
-        "domain": "static-forms.klaviyo.com",
         "ip": "146.75.46.133",
         "city": "Singapore",
         "region": "Singapore",
@@ -567,7 +424,8 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 64.265,
+        "x-served-by": "cache-bos-kbos510056-BOS, cache-nrt-rjaa8190063-NRT",
+        "rtt": 66.954,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
@@ -602,6 +460,156 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://a.klaviyo.com/forms/api/v3/geo-ip",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "a.klaviyo.com",
+        "ip": "104.18.40.137",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e5094fcc980f9a-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "geolocation.onetrust.com",
+        "ip": "172.64.155.119",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e509506b6a4a5e-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&display=swap",
+      "type": "stylesheet",
+      "ipinfo": {
+        "domain": "fonts.googleapis.com",
+        "ip": "142.250.198.74",
+        "hostname": "lctsaa-ab-in-f10.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://static-forms.klaviyo.com/forms/api/v7/V9UFqQ/full-forms",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "static-forms.klaviyo.com",
+        "ip": "199.232.114.133",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "x-served-by": "cache-nrt-rjtf7700057-NRT",
+        "rtt": 66.847,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "199.232.114.133",
+          "prefix": "199.232.114.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 2,
+          "location_count": 2
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.facebook.com/tr/?id=350657982046274&ev=PageView&dl=https%3A%2F%2Fburga.tw%2F&rl=&if=false&ts=1784582705414&iw=false&sw=1280&sh=720&cud[external_id]=%23**%23%23%23%23%23-***%23-%23%23*%23-%23*%23%23-***%23%23%23%23%23%23%23*%23&ncud[external_id]=%23**%23%23%23%23%23-***%23-%23%23*%23-%23*%23%23-***%23%23%23%23%23%23%23*%23&ud[external_id]=85da80ff2e998c4f55472b5e3a667463903dcf99572f6c3a09c13fd8db7e03e9&aud[external_id]=85da80ff2e998c4f55472b5e3a667463903dcf99572f6c3a09c13fd8db7e03e9&v=2.9.358&r=stable&ec=0&o=4126&aems=0%3B0&fbp=fb.1.1784582705405.566564380746321431&hmd=724848796a52aa280e593734&pl=https%3A%2F%2Fburga.tw%2F&cs_est=true&ler=empty&cdl=API_unavailable&pmd[title]=BURGA%20%7C%20%E6%AF%8F%E6%97%A5%E5%B8%B8%E5%82%99%E7%94%A8%E5%93%81%E5%8C%96%E8%BA%AB%E6%99%82%E5%B0%9A%E9%85%8D%E4%BB%B6&pmd[locale]=zh-TW&pmd[description]=%E5%B8%B6%E4%B8%8A%20BURGA%20%E8%A8%AD%E8%A8%88%E7%9A%84%E6%AF%8F%E6%97%A5%E5%B8%B8%E5%82%99%E7%94%A8%E5%93%81%EF%BC%8C%E5%9C%A8%E7%9C%BE%E4%BA%BA%E4%B8%AD%E8%84%AB%E7%A9%8E%E8%80%8C%E5%87%BA%E3%80%82%E7%AB%8B%E5%8D%B3%E8%B3%BC%E8%B2%B7%E6%99%82%E5%B0%9A%E7%9A%84%E6%89%8B%E6%A9%9F%E6%AE%BC%E3%80%81%E5%85%85%E6%BB%BF%E5%80%8B%E4%BA%BA%E9%AD%85%E5%8A%9B%E7%9A%84%E7%9C%BC%E9%8F%A1%EF%BC%8C%E5%84%AA%E9%9B%85%E7%9A%84%E9%A3%B2%E5%85%B7%EF%BC%8C%E4%BB%A5%E5%8F%8A%E6%9B%B4%E5%A4%9A%E7%BE%8E%E5%A5%BD%E5%95%86%E5%93%81%E3%80%82&plt=1567.300000000745&iss=1&sssd[is_s_domain]=true&sssd[s_country]=zh_TW&ss=%7B%22page_title%22%3A%5B%7B%22rid%22%3A%221852828289026249%22%2C%22v%22%3A%5B%22%E6%89%8B%E6%A9%9F%E6%AE%BC%22%5D%7D%5D%7D&imft=1&tz=480&it=1784582705059&coo=false&eid=dgM5dZyG2xU_2X8BB4AuQ&tm=1&expv2[0]=pl1&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=im1&expv2[6]=hf0&rqm=GET",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://c.bing.com/c.gif?Red3=CTOMS_pd&cbid=k-58XyL8cSON7XwrZxcMUBJogZWPXPmrknQjBQiw",
+      "type": "image",
+      "ipinfo": {
+        "domain": "c.bing.com",
+        "ip": "150.171.28.10",
+        "city": "Redmond",
+        "region": "Washington",
+        "country": "US",
+        "loc": "47.6740,-122.1215",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "150.171.28.10",
+          "prefix": "150.171.28.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            8075
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 57,
+          "location_count": 57,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
+      }
     }
   ]
 }

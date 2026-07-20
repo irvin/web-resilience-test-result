@@ -2,7 +2,7 @@
   "url": "https://line.me",
   "canonicalURL": "https://line.me",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T13:02:48.475Z",
+  "timestamp": "2026-07-20T19:19:04.041Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 31,
+  "requestCount": 28,
   "uniqueDomains": 5,
   "test_results": {
     "domestic": {
-      "cloud": 4,
+      "cloud": 3,
       "direct": 0
     },
     "foreign": {
-      "cloud": 0,
+      "cloud": 1,
       "direct": 1
     }
   },
@@ -58,8 +58,8 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.line.me",
-        "ip": "54.192.248.4",
-        "hostname": "server-54-192-248-4.tpe53.r.cloudfront.net",
+        "ip": "54.192.248.95",
+        "hostname": "server-54-192-248-95.tpe53.r.cloudfront.net",
         "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
@@ -74,41 +74,34 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "104.17.207.5",
+        "ip": "151.101.1.229",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
         "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
+        "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud",
+      "category": "foreign/cloud",
       "cloud_provider": {
-        "x-served-by": "cache-fra-eddf8230180-FRA, cache-sin-wsss1830022-SIN",
-        "country": "tw",
-        "detection_method": "laces",
+        "x-served-by": "cache-fra-eddf8230180-FRA, cache-sin-wsat1880097-SIN",
+        "rtt": 35.688,
+        "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "104.17.207.5",
-          "prefix": "104.17.207.0/24",
+          "queried_ip": "151.101.1.229",
+          "prefix": "151.101.1.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
           "asns": [
-            13335
+            54113
           ],
           "date": "2026-07-17",
-          "has_tw": true,
-          "has_taipei": true,
-          "site_count": 76,
-          "location_count": 76,
-          "tw_locations": [
-            {
-              "city": "Taipei",
-              "country": "TW",
-              "id": "TAI"
-            }
-          ]
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 54,
+          "location_count": 54
         }
       }
     },
@@ -117,12 +110,12 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "108.177.125.97",
-        "hostname": "tp-in-f97.1e100.net",
-        "city": "Taichung",
-        "region": "Taiwan",
+        "ip": "142.250.192.136",
+        "hostname": "bom12s18-in-f8.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
         "country": "TW",
-        "loc": "24.1469,120.6839",
+        "loc": "25.0143,121.4672",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },

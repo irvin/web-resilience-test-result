@@ -2,7 +2,7 @@
   "url": "https://ddc.com.tw",
   "canonicalURL": "https://ddc.com.tw",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T15:39:26.371Z",
+  "timestamp": "2026-07-20T22:04:54.444Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,11 +25,11 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 55,
-  "uniqueDomains": 3,
+  "requestCount": 63,
+  "uniqueDomains": 4,
   "test_results": {
     "domestic": {
-      "cloud": 3,
+      "cloud": 4,
       "direct": 0
     },
     "foreign": {
@@ -43,7 +43,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "ddc.com.tw",
-        "ip": "104.21.65.17",
+        "ip": "172.67.139.70",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -53,13 +53,13 @@
       },
       "category": "domestic/cloud",
       "cloud_provider": {
-        "cf-ray": "a1e30ee7fd83260c-SIN",
+        "cf-ray": "a1e5437e78f9a041-SIN",
         "country": "tw",
         "detection_method": "laces",
         "laces": {
           "source": "laces api (direct)",
-          "queried_ip": "104.21.65.17",
-          "prefix": "104.21.65.0/24",
+          "queried_ip": "172.67.139.70",
+          "prefix": "172.67.139.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
@@ -69,8 +69,8 @@
           "date": "2026-07-17",
           "has_tw": true,
           "has_taipei": true,
-          "site_count": 58,
-          "location_count": 58,
+          "site_count": 60,
+          "location_count": 60,
           "tw_locations": [
             {
               "city": "Taipei",
@@ -86,42 +86,20 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "104.17.207.5",
+        "ip": "151.101.65.229",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
         "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
+        "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
       "category": "domestic/cloud",
       "cloud_provider": {
-        "x-served-by": "cache-fra-eddf8230040-FRA, cache-sin-wsat1880095-SIN",
         "country": "tw",
-        "detection_method": "laces",
-        "laces": {
-          "source": "laces api (cached)",
-          "queried_ip": "104.17.207.5",
-          "prefix": "104.17.207.0/24",
-          "anycast": true,
-          "confidence": "confident",
-          "partial": false,
-          "asns": [
-            13335
-          ],
-          "date": "2026-07-17",
-          "has_tw": true,
-          "has_taipei": true,
-          "site_count": 76,
-          "location_count": 76,
-          "tw_locations": [
-            {
-              "city": "Taipei",
-              "country": "TW",
-              "id": "TAI"
-            }
-          ]
-        }
+        "cf-ray": "a1e543812ad58f09-TPE",
+        "x-served-by": "cache-fra-etou8220147-FRA, cache-hkg17932-HKG",
+        "detection_method": "header"
       }
     },
     {
@@ -129,8 +107,24 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.77.200",
-        "hostname": "del11s08-in-f8.1e100.net",
+        "ip": "142.250.192.136",
+        "hostname": "bom12s18-in-f8.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-LG1ZYGCVBN&cid=1445004678.1784585093&gtm=45je67g0v9133642873za200zd9133642873&rcb=8&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938466~115938468~118395335~118897920~118897930~118981135&z=385220078",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.77.195",
+        "hostname": "del11s08-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",

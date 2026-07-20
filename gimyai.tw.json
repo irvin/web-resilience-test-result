@@ -2,7 +2,7 @@
   "url": "https://gimyai.tw",
   "canonicalURL": "https://gimyai.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T13:12:00.018Z",
+  "timestamp": "2026-07-20T19:28:32.989Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,8 +25,8 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 28,
-  "uniqueDomains": 3,
+  "requestCount": 29,
+  "uniqueDomains": 4,
   "test_results": {
     "domestic": {
       "cloud": 3,
@@ -34,7 +34,7 @@
     },
     "foreign": {
       "cloud": 0,
-      "direct": 0
+      "direct": 1
     }
   },
   "domainDetails": [
@@ -53,7 +53,7 @@
       },
       "category": "domestic/cloud",
       "cloud_provider": {
-        "cf-ray": "a1e23704fb5e8408-SIN",
+        "cf-ray": "a1e45e951fd2fe1e-SIN",
         "country": "tw",
         "detection_method": "laces",
         "laces": {
@@ -86,6 +86,48 @@
       "type": "image",
       "ipinfo": {
         "domain": "imgs.1777cdn.com",
+        "ip": "172.67.162.152",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "172.67.162.152",
+          "prefix": "172.67.162.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 60,
+          "location_count": 60,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "originalUrl": "https://img.1777cdn.com/upload/vod/20260426-1/8d9329e48d48a29544716b6078b3a55f.webp",
+      "type": "image",
+      "ipinfo": {
+        "domain": "img.1777cdn.com",
         "ip": "104.21.15.121",
         "city": "San Francisco",
         "region": "California",
@@ -124,46 +166,19 @@
       }
     },
     {
-      "originalUrl": "https://img.1777cdn.com/upload/vod/20260426-1/8d9329e48d48a29544716b6078b3a55f.webp",
+      "originalUrl": "https://ps.ryzypics.com/upload/vod/20260710-1/5d8e20952ec05ceaf65eefc4e471124c.webp",
       "type": "image",
       "ipinfo": {
-        "domain": "img.1777cdn.com",
-        "ip": "172.67.162.152",
-        "city": "San Francisco",
+        "domain": "ps.ryzypics.com",
+        "ip": "216.180.237.77",
+        "city": "Los Angeles",
         "region": "California",
         "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
+        "loc": "34.0522,-118.2437",
+        "org": "AS47191 blue tech technology Co., Limited",
         "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "detection_method": "laces",
-        "laces": {
-          "source": "laces api (cached)",
-          "queried_ip": "172.67.162.152",
-          "prefix": "172.67.162.0/24",
-          "anycast": true,
-          "confidence": "confident",
-          "partial": false,
-          "asns": [
-            13335
-          ],
-          "date": "2026-07-17",
-          "has_tw": true,
-          "has_taipei": true,
-          "site_count": 60,
-          "location_count": 60,
-          "tw_locations": [
-            {
-              "city": "Taipei",
-              "country": "TW",
-              "id": "TAI"
-            }
-          ]
-        }
-      }
+      "category": "foreign/direct"
     }
   ]
 }

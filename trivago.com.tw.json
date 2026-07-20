@@ -2,7 +2,7 @@
   "url": "https://trivago.com.tw",
   "canonicalURL": "https://www.trivago.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T13:55:52.001Z",
+  "timestamp": "2026-07-20T20:17:07.615Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,11 +25,11 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 137,
-  "uniqueDomains": 10,
+  "requestCount": 115,
+  "uniqueDomains": 8,
   "test_results": {
     "domestic": {
-      "cloud": 6,
+      "cloud": 4,
       "direct": 4
     },
     "foreign": {
@@ -43,7 +43,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "trivago.com.tw",
-        "ip": "210.71.227.211",
+        "ip": "210.71.227.200",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -73,7 +73,7 @@
       "type": "image",
       "ipinfo": {
         "domain": "imgcy.trivago.com",
-        "ip": "210.71.227.208",
+        "ip": "210.71.227.203",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -100,7 +100,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 5.662,
+        "rtt": 5.829,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
@@ -125,8 +125,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "accounts.google.com",
-        "ip": "64.233.188.84",
-        "hostname": "tk-in-f84.1e100.net",
+        "ip": "173.194.174.84",
+        "hostname": "td-in-f84.1e100.net",
         "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
@@ -152,22 +152,6 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://google.com/.well-known/web-identity",
-      "type": "fedcm",
-      "ipinfo": {
-        "domain": "google.com",
-        "ip": "142.250.192.142",
-        "hostname": "bom12s18-in-f14.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
       "originalUrl": "https://v1.api.service.cmp.usercentrics.eu/latest/core/2gsTdULA8FYKpd",
       "type": "fetch",
       "ipinfo": {
@@ -184,7 +168,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 6.356,
+        "rtt": 4.722,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
@@ -205,78 +189,20 @@
       }
     },
     {
-      "originalUrl": "https://app.usercentrics.eu/session/1px.png?settingsId=2gsTdULA8FYKpd",
-      "type": "image",
+      "originalUrl": "https://google.com/.well-known/web-identity",
+      "type": "fedcm",
       "ipinfo": {
-        "domain": "app.usercentrics.eu",
-        "ip": "35.190.14.188",
-        "hostname": "188.14.190.35.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
-        "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
+        "domain": "google.com",
+        "ip": "142.250.204.46",
+        "hostname": "hkg07s38-in-f14.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
       },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "rtt": 5.495,
-        "detection_method": "rtt",
-        "laces": {
-          "source": "laces api (cached)",
-          "queried_ip": "35.190.14.188",
-          "prefix": "35.190.14.0/24",
-          "anycast": true,
-          "confidence": "confident",
-          "partial": false,
-          "asns": [
-            396982
-          ],
-          "date": "2026-07-17",
-          "has_tw": false,
-          "has_taipei": false,
-          "site_count": 65,
-          "location_count": 65
-        }
-      }
-    },
-    {
-      "originalUrl": "https://consent-api.service.consent.usercentrics.eu/consent/uw/3",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "consent-api.service.consent.usercentrics.eu",
-        "ip": "35.201.111.240",
-        "hostname": "240.111.201.35.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
-        "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "rtt": 6.662,
-        "detection_method": "rtt",
-        "laces": {
-          "source": "laces api (cached)",
-          "queried_ip": "35.201.111.240",
-          "prefix": "35.201.111.0/24",
-          "anycast": true,
-          "confidence": "confident",
-          "partial": false,
-          "asns": [
-            396982
-          ],
-          "date": "2026-07-17",
-          "has_tw": false,
-          "has_taipei": false,
-          "site_count": 63,
-          "location_count": 63
-        }
-      }
+      "category": "domestic/cloud"
     }
   ]
 }

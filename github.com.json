@@ -2,7 +2,7 @@
   "url": "https://github.com",
   "canonicalURL": "https://github.com/",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T13:03:17.764Z",
+  "timestamp": "2026-07-20T19:19:35.255Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 146,
-  "uniqueDomains": 3,
+  "requestCount": 150,
+  "uniqueDomains": 4,
   "test_results": {
     "domestic": {
       "cloud": 0,
       "direct": 0
     },
     "foreign": {
-      "cloud": 2,
+      "cloud": 3,
       "direct": 1
     }
   },
@@ -53,7 +53,7 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 36.455,
+        "rtt": 37.805,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
@@ -71,7 +71,7 @@
       }
     },
     {
-      "originalUrl": "https://github.githubassets.com/assets/global-banner-disable-8d9e968f01770b06.js",
+      "originalUrl": "https://github.githubassets.com/assets/global-banner-disable-746737b0f4a6c543.js",
       "type": "script",
       "ipinfo": {
         "domain": "github.githubassets.com",
@@ -85,11 +85,11 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "x-served-by": "cache-iad-kjyo7100055-IAD, cache-sin-wsss1830056-SIN",
-        "rtt": 61.433,
+        "x-served-by": "cache-iad-kjyo7100039-IAD, cache-sin-wsat1880081-SIN",
+        "rtt": 67.714,
         "detection_method": "rtt",
         "laces": {
-          "source": "laces api (direct)",
+          "source": "laces api (cached)",
           "queried_ip": "185.199.108.215",
           "prefix": "185.199.108.0/24",
           "anycast": true,
@@ -111,8 +111,8 @@
       "type": "ping",
       "ipinfo": {
         "domain": "collector.github.com",
-        "ip": "140.82.112.21",
-        "hostname": "lb-140-82-112-21-iad.github.com",
+        "ip": "140.82.114.22",
+        "hostname": "lb-140-82-114-22-iad.github.com",
         "city": "Dulles Town Center",
         "region": "Virginia",
         "country": "US",
@@ -121,6 +121,38 @@
         "timezone": "America/New_York"
       },
       "category": "foreign/direct"
+    },
+    {
+      "originalUrl": "https://api.github.com/_private/browser/stats",
+      "type": "ping",
+      "ipinfo": {
+        "domain": "api.github.com",
+        "ip": "20.27.177.116",
+        "city": "Tokyo",
+        "region": "Tokyo",
+        "country": "JP",
+        "loc": "35.6895,139.6917",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "Asia/Tokyo"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 35.682,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "20.27.177.116",
+          "prefix": "20.27.177.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
     }
   ]
 }

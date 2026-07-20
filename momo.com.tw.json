@@ -2,7 +2,7 @@
   "url": "https://momo.com.tw",
   "canonicalURL": "https://momo.com.tw",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T13:57:10.050Z",
+  "timestamp": "2026-07-20T20:18:26.427Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 53,
-  "uniqueDomains": 5,
+  "requestCount": 65,
+  "uniqueDomains": 9,
   "test_results": {
     "domestic": {
-      "cloud": 4,
-      "direct": 1
+      "cloud": 5,
+      "direct": 3
     },
     "foreign": {
-      "cloud": 0,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -43,12 +43,12 @@
       "type": "document",
       "ipinfo": {
         "domain": "momo.com.tw",
-        "ip": "219.87.10.202",
-        "hostname": "219-87-10-202.static.tfn.net.tw",
-        "city": "Taipei",
+        "ip": "219.87.1.203",
+        "hostname": "219-87-1-203.static.tfn.net.tw",
+        "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "25.0531,121.5264",
+        "loc": "24.9937,121.2970",
         "org": "AS9924 Taiwan Fixed Network, Telco and Network Service Provider.",
         "timezone": "Asia/Taipei"
       },
@@ -59,24 +59,23 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.momoshop.com.tw",
-        "ip": "210.61.249.42",
-        "hostname": "210-61-249-42.hinet-ip.hinet.net",
-        "city": "Taichung",
+        "ip": "210.71.227.217",
+        "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "24.1469,120.6839",
-        "org": "AS20940 Akamai International B.V.",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://cdn.momoshop.com.tw/prod/sentry/sdk.js",
       "type": "script",
       "ipinfo": {
         "domain": "cdn.momoshop.com.tw",
-        "ip": "54.192.248.58",
-        "hostname": "server-54-192-248-58.tpe53.r.cloudfront.net",
+        "ip": "54.192.248.4",
+        "hostname": "server-54-192-248-4.tpe53.r.cloudfront.net",
         "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
@@ -119,10 +118,10 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 7.248,
+        "rtt": 6.82,
         "detection_method": "rtt",
         "laces": {
-          "source": "laces api (direct)",
+          "source": "laces api (cached)",
           "queried_ip": "34.50.152.253",
           "prefix": "34.50.152.0/24",
           "anycast": true,
@@ -136,6 +135,115 @@
           "has_taipei": false,
           "site_count": 64,
           "location_count": 64
+        }
+      }
+    },
+    {
+      "originalUrl": "https://browser.sentry-cdn.com/10.41.0/bundle.tracing.replay.logs.metrics.min.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "browser.sentry-cdn.com",
+        "ip": "151.101.194.217",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS54113 Fastly, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 35.905,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "151.101.194.217",
+          "prefix": "151.101.194.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 55,
+          "location_count": 55
+        }
+      }
+    },
+    {
+      "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "connect.facebook.net",
+        "ip": "31.13.87.5",
+        "hostname": "xx-fbcdn-shv-01-tpe1.fbcdn.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=G-BKEC67VMMG",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.googletagmanager.com",
+        "ip": "142.250.77.200",
+        "hostname": "del11s08-in-f8.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://bat.bing.com/bat.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "bat.bing.com",
+        "ip": "150.171.28.10",
+        "city": "Redmond",
+        "region": "Washington",
+        "country": "US",
+        "loc": "47.6740,-122.1215",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "150.171.28.10",
+          "prefix": "150.171.28.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            8075
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 57,
+          "location_count": 57,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
         }
       }
     }

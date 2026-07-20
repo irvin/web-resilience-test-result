@@ -2,7 +2,7 @@
   "url": "https://cloudflare.com",
   "canonicalURL": "https://www.cloudflare.com/",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T13:04:53.992Z",
+  "timestamp": "2026-07-20T19:20:56.463Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,11 +25,11 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 114,
-  "uniqueDomains": 4,
+  "requestCount": 143,
+  "uniqueDomains": 6,
   "test_results": {
     "domestic": {
-      "cloud": 4,
+      "cloud": 6,
       "direct": 0
     },
     "foreign": {
@@ -54,7 +54,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e22c92dd720f9a-TPE",
+        "cf-ray": "a1e45367bc8f8433-TPE",
         "detection_method": "header"
       }
     },
@@ -74,7 +74,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e22c938bd0f22a-TPE",
+        "cf-ray": "a1e45369494d842e-TPE",
         "x-served-by": "marketing-site",
         "detection_method": "header"
       }
@@ -84,7 +84,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "ot.www.cloudflare.com",
-        "ip": "104.16.124.96",
+        "ip": "104.16.123.96",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -95,7 +95,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e22c999fde8424-TPE",
+        "cf-ray": "a1e4536f8ecc8457-TPE",
         "detection_method": "header"
       }
     },
@@ -114,6 +114,62 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://bat.bing.com/bat.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "bat.bing.com",
+        "ip": "150.171.28.10",
+        "city": "Redmond",
+        "region": "Washington",
+        "country": "US",
+        "loc": "47.6740,-122.1215",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "x-msedge-ref": "Ref A: 839AF3367EA34D198DC0B7C28AA0D536 Ref B: TPE201050220029 Ref C: 2026-07-20T19:20:55Z",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://www.google.com/ccm/collect?rcb=2&frm=0&ae=g&auid=162425722.1784575255&dt=Cloudflare%3A%20Build%20for%20the%20agent%20era&en=page_view&dl=https%3A%2F%2Fwww.cloudflare.com%2F&scrsrc=www.cloudflare.com&rnd=1733497855.1784575255&navt=n&npa=0&ep.ads_data_redaction=0&gdid=dY2E1Nz.dYWJhMj.dNzQzZD&_tu=CA&gtm=45E92e67g0v890325950za204zd890325950xea&gcs=G111&gcd=13r3r3r3r5l1&dma=0&tag_exp=115938465~115938469~118131808~118897920~118897930~118981135&apve=1&apvf=f&gap.gtb=2&apvc=1&tft=1784575254620&tfd=1860&fmt=8",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.152.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 7.584,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.152.119",
+          "prefix": "142.251.152.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
     }
   ]
 }

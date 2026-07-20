@@ -2,7 +2,7 @@
   "url": "https://csms.mohw.gov.tw",
   "canonicalURL": "https://csms.mohw.gov.tw",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T13:35:01.472Z",
+  "timestamp": "2026-07-21T00:11:00.853Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,11 +25,11 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 21,
-  "uniqueDomains": 3,
+  "requestCount": 25,
+  "uniqueDomains": 4,
   "test_results": {
     "domestic": {
-      "cloud": 2,
+      "cloud": 3,
       "direct": 1
     },
     "foreign": {
@@ -69,7 +69,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e258b9ed77d4e1-TPE",
+        "cf-ray": "a1e5fc540d63d4e1-TPE",
         "detection_method": "header"
       }
     },
@@ -88,6 +88,48 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://hagen.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1e5fc553819db55/Qy9CnT3YF_te0ekD6txd.FMFSV7GjZKo86UblzrCfk0-1784592658-1.2.1.1-8b2KZkfxVXWziwJLFjlIh90dVGMx9Io9f2EJV3339BDG7NcQpDUBOw0Es_aoGT0c",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "hagen.challenges.cloudflare.com",
+        "ip": "104.18.9.208",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "104.18.9.208",
+          "prefix": "104.18.9.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 72,
+          "location_count": 72,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
+      }
     }
   ],
   "testError": true,
@@ -109,8 +151,50 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e258b9ed77d4e1-TPE",
+        "cf-ray": "a1e5fc540d63d4e1-TPE",
         "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://hagen.challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/i/a1e5fc553819db55/Qy9CnT3YF_te0ekD6txd.FMFSV7GjZKo86UblzrCfk0-1784592658-1.2.1.1-8b2KZkfxVXWziwJLFjlIh90dVGMx9Io9f2EJV3339BDG7NcQpDUBOw0Es_aoGT0c",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "hagen.challenges.cloudflare.com",
+        "ip": "104.18.9.208",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "104.18.9.208",
+          "prefix": "104.18.9.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 72,
+          "location_count": 72,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     }
   ]

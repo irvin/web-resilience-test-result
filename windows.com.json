@@ -2,7 +2,7 @@
   "url": "https://windows.com",
   "canonicalURL": "https://www.microsoft.com/zh-tw/windows",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T13:08:20.003Z",
+  "timestamp": "2026-07-20T19:24:47.763Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 88,
-  "uniqueDomains": 22,
+  "requestCount": 89,
+  "uniqueDomains": 23,
   "test_results": {
     "domestic": {
-      "cloud": 14,
-      "direct": 3
+      "cloud": 13,
+      "direct": 4
     },
     "foreign": {
-      "cloud": 5,
+      "cloud": 6,
       "direct": 0
     }
   },
@@ -43,22 +43,22 @@
       "type": "document",
       "ipinfo": {
         "domain": "windows.com",
-        "ip": "20.76.201.171",
-        "city": "Amsterdam",
-        "region": "North Holland",
-        "country": "NL",
-        "loc": "52.3740,4.8897",
+        "ip": "20.112.250.133",
+        "city": "Des Moines",
+        "region": "Iowa",
+        "country": "US",
+        "loc": "41.6005,-93.6091",
         "org": "AS8075 Microsoft Corporation",
-        "timezone": "Europe/Amsterdam"
+        "timezone": "America/Chicago"
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 203.289,
+        "rtt": 167.517,
         "detection_method": "rtt",
         "laces": {
-          "source": "laces api (direct)",
-          "queried_ip": "20.76.201.171",
-          "prefix": "20.76.201.0/24",
+          "source": "laces api (cached)",
+          "queried_ip": "20.112.250.133",
+          "prefix": "20.112.250.0/24",
           "anycast": false,
           "confidence": "not_detected",
           "asns": [],
@@ -91,12 +91,12 @@
       "type": "document",
       "ipinfo": {
         "domain": "go.microsoft.com",
-        "ip": "23.46.90.9",
-        "hostname": "a23-46-90-9.deploy.static.akamaitechnologies.com",
-        "city": "Kaohsiung",
-        "region": "Takao",
+        "ip": "23.39.61.165",
+        "hostname": "a23-39-61-165.deploy.static.akamaitechnologies.com",
+        "city": "Taipei",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "22.6163,120.3133",
+        "loc": "25.0531,121.5264",
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -107,12 +107,12 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.microsoft.com",
-        "ip": "104.116.17.220",
-        "hostname": "a104-116-17-220.deploy.static.akamaitechnologies.com",
-        "city": "Yuanlin",
+        "ip": "23.39.61.232",
+        "hostname": "a23-39-61-232.deploy.static.akamaitechnologies.com",
+        "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "23.9567,120.5761",
+        "loc": "25.0531,121.5264",
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -123,27 +123,32 @@
       "type": "script",
       "ipinfo": {
         "domain": "wcpstatic.microsoft.com",
-        "ip": "150.171.110.68",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
+        "ip": "150.171.110.70",
+        "city": "Hong Kong",
+        "region": "Hong Kong",
+        "country": "HK",
+        "loc": "22.2783,114.1747",
         "org": "AS8075 Microsoft Corporation",
-        "timezone": "Asia/Taipei"
+        "timezone": "Asia/Hong_Kong"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "x-azure-ref": "20260720T192433Z-15d9487b58c2fgmdhC1TPEc38g0000001bf00000000021m2",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://assets.adobedtm.com/5ef092d1efb5/e6b4ca74378c/launch-ENbb9d0de7cc374dc99259df2c4b823cef.min.js",
       "type": "script",
       "ipinfo": {
         "domain": "assets.adobedtm.com",
-        "ip": "23.46.89.90",
-        "hostname": "a23-46-89-90.deploy.static.akamaitechnologies.com",
-        "city": "Kaohsiung",
-        "region": "Takao",
+        "ip": "23.39.61.29",
+        "hostname": "a23-39-61-29.deploy.static.akamaitechnologies.com",
+        "city": "Taipei",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "22.6163,120.3133",
+        "loc": "25.0531,121.5264",
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -170,7 +175,7 @@
       "type": "image",
       "ipinfo": {
         "domain": "cdn-dynmedia-1.microsoft.com",
-        "ip": "203.69.81.112",
+        "ip": "210.71.227.210",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -196,7 +201,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "x-azure-ref": "20260720T130808Z-16f54f76b64v9xq6hC1TPEpzeg00000019qg0000000009bt",
+        "x-azure-ref": "20260720T192435Z-16f54f76b64ds8x9hC1TPEzhn00000001ap0000000000cn1",
         "detection_method": "header"
       }
     },
@@ -205,12 +210,12 @@
       "type": "font",
       "ipinfo": {
         "domain": "c.s-microsoft.com",
-        "ip": "23.46.90.101",
-        "hostname": "a23-46-90-101.deploy.static.akamaitechnologies.com",
-        "city": "Kaohsiung",
-        "region": "Takao",
+        "ip": "23.39.61.232",
+        "hostname": "a23-39-61-232.deploy.static.akamaitechnologies.com",
+        "city": "Taipei",
+        "region": "Taiwan",
         "country": "TW",
-        "loc": "22.6163,120.3133",
+        "loc": "25.0531,121.5264",
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
@@ -229,25 +234,11 @@
         "org": "AS8075 Microsoft Corporation",
         "timezone": "Asia/Hong_Kong"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "x-azure-ref": "20260720T130808Z-15d4f96b558vj9wghC1HKGyt2s0000000c5000000000r9h5",
-        "rtt": null,
-        "detection_method": "rtt",
-        "rtt_error": "timeout",
-        "laces": {
-          "source": "laces api (cached)",
-          "queried_ip": "150.171.110.65",
-          "prefix": "150.171.110.0/24",
-          "anycast": false,
-          "confidence": "not_detected",
-          "asns": [],
-          "date": "2026-07-17",
-          "has_tw": false,
-          "has_taipei": false,
-          "site_count": 0,
-          "location_count": 0
-        }
+        "country": "tw",
+        "x-azure-ref": "20260720T192435Z-15d9487b58csblv8hC1TPEvy540000000gug000000003xkk",
+        "detection_method": "header"
       }
     },
     {
@@ -255,16 +246,15 @@
       "type": "script",
       "ipinfo": {
         "domain": "snap.licdn.com",
-        "ip": "203.69.138.225",
-        "hostname": "203-69-138-225.hinet-ip.hinet.net",
+        "ip": "210.71.227.139",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
         "loc": "25.0531,121.5264",
-        "org": "AS20940 Akamai International B.V.",
+        "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
@@ -287,7 +277,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "bat.bing.com",
-        "ip": "150.171.27.10",
+        "ip": "150.171.28.10",
         "city": "Redmond",
         "region": "Washington",
         "country": "US",
@@ -298,7 +288,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "x-msedge-ref": "Ref A: 38D30CE8920E477AAB3AD6E035A08CB4 Ref B: TPE201080401029 Ref C: 2026-07-20T13:08:08Z",
+        "x-msedge-ref": "Ref A: 8F0B8C23FD0B4F48BB277292163DCFE0 Ref B: TPE201050220029 Ref C: 2026-07-20T19:24:35Z",
         "detection_method": "header"
       }
     },
@@ -307,18 +297,37 @@
       "type": "xhr",
       "ipinfo": {
         "domain": "offertoolproduction-fd-cwh9d4ahhtbkh8gq.b01.azurefd.net",
-        "ip": "150.171.110.68",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
+        "ip": "150.171.110.70",
+        "city": "Hong Kong",
+        "region": "Hong Kong",
+        "country": "HK",
+        "loc": "22.2783,114.1747",
         "org": "AS8075 Microsoft Corporation",
-        "timezone": "Asia/Taipei"
+        "timezone": "Asia/Hong_Kong"
       },
-      "category": "domestic/cloud"
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "x-azure-ref": "20260720T192436Z-16455cd79bb5865jhC1HK1w1u400000001dg000000003w9b",
+        "rtt": null,
+        "detection_method": "rtt",
+        "rtt_error": "timeout",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "150.171.110.70",
+          "prefix": "150.171.110.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
     },
     {
-      "originalUrl": "https://msftenterprise.sc.omtrdc.net/id?d_visid_ver=5.4.0&d_fieldgroup=A&mcorgid=EA76ADE95776D2EC7F000101%40AdobeOrg&mid=35514986305576400542204819464665810089&cl=34190000&ts=1784552888180",
+      "originalUrl": "https://msftenterprise.sc.omtrdc.net/id?d_visid_ver=5.4.0&d_fieldgroup=A&mcorgid=EA76ADE95776D2EC7F000101%40AdobeOrg&mid=00731343765408101533444947633889428973&cl=34190000&ts=1784575475238",
       "type": "xhr",
       "ipinfo": {
         "domain": "msftenterprise.sc.omtrdc.net",
@@ -351,11 +360,11 @@
       }
     },
     {
-      "originalUrl": "https://t.co/i/adsct?bci=1&dv=Asia%2FTaipei%26zh-TW%26Google%20Inc.%26MacIntel%26127%261280%26720%2610%2630%261280%26720%260%26na&eci=1&event_id=fe2d27f1-8fb8-4927-bd69-14676116659d&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=bca04605-3ca0-4c35-8c37-b6360bf9eb5b&pt=%E9%80%8F%E9%81%8E%20Windows%2011%20%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1%E3%80%81%E9%9B%BB%E8%85%A6%E8%88%87%E6%87%89%E7%94%A8%E7%A8%8B%E5%BC%8F%E9%AB%94%E9%A9%97%20AI%20%E7%9A%84%E5%8A%9F%E8%83%BD%20%7C%20Microsoft%20Windows&tw_document_href=https%3A%2F%2Fwww.microsoft.com%2Fzh-tw%2Fwindows%3Fr%3D1&tw_iframe_status=0&tw_order_quantity=0&tw_pid_src=1&tw_sale_amount=0&twpid=tw.1784552888263.845434352898477874&txn_id=nvkh8&type=javascript&version=2.3.54",
+      "originalUrl": "https://t.co/i/adsct?bci=1&dv=Asia%2FTaipei%26zh-TW%26Google%20Inc.%26MacIntel%26127%261280%26720%2610%2630%261280%26720%260%26na&eci=1&event_id=c42d89fd-d230-4559-9c6c-15443e999704&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=be6ce216-822e-41fd-a38d-b00cd87cbe88&pt=%E9%80%8F%E9%81%8E%20Windows%2011%20%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1%E3%80%81%E9%9B%BB%E8%85%A6%E8%88%87%E6%87%89%E7%94%A8%E7%A8%8B%E5%BC%8F%E9%AB%94%E9%A9%97%20AI%20%E7%9A%84%E5%8A%9F%E8%83%BD%20%7C%20Microsoft%20Windows&tw_document_href=https%3A%2F%2Fwww.microsoft.com%2Fzh-tw%2Fwindows%3Fr%3D1&tw_iframe_status=0&tw_order_quantity=0&tw_pid_src=1&tw_sale_amount=0&twpid=tw.1784575475342.510373764876797605&txn_id=nvkh8&type=javascript&version=2.3.54",
       "type": "image",
       "ipinfo": {
         "domain": "t.co",
-        "ip": "172.66.0.227",
+        "ip": "162.159.140.229",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -366,13 +375,13 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e23160acbf4aa2-TPE",
+        "cf-ray": "a1e458d6498d0f9a-TPE",
         "x-served-by": "t4_p",
         "detection_method": "header"
       }
     },
     {
-      "originalUrl": "https://analytics.twitter.com/i/adsct?bci=1&dv=Asia%2FTaipei%26zh-TW%26Google%20Inc.%26MacIntel%26127%261280%26720%2610%2630%261280%26720%260%26na&eci=1&event_id=fe2d27f1-8fb8-4927-bd69-14676116659d&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=bca04605-3ca0-4c35-8c37-b6360bf9eb5b&pt=%E9%80%8F%E9%81%8E%20Windows%2011%20%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1%E3%80%81%E9%9B%BB%E8%85%A6%E8%88%87%E6%87%89%E7%94%A8%E7%A8%8B%E5%BC%8F%E9%AB%94%E9%A9%97%20AI%20%E7%9A%84%E5%8A%9F%E8%83%BD%20%7C%20Microsoft%20Windows&tw_document_href=https%3A%2F%2Fwww.microsoft.com%2Fzh-tw%2Fwindows%3Fr%3D1&tw_iframe_status=0&tw_order_quantity=0&tw_pid_src=1&tw_sale_amount=0&twpid=tw.1784552888263.845434352898477874&txn_id=nvkh8&type=javascript&version=2.3.54",
+      "originalUrl": "https://analytics.twitter.com/i/adsct?bci=1&dv=Asia%2FTaipei%26zh-TW%26Google%20Inc.%26MacIntel%26127%261280%26720%2610%2630%261280%26720%260%26na&eci=1&event_id=c42d89fd-d230-4559-9c6c-15443e999704&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=be6ce216-822e-41fd-a38d-b00cd87cbe88&pt=%E9%80%8F%E9%81%8E%20Windows%2011%20%E4%BD%9C%E6%A5%AD%E7%B3%BB%E7%B5%B1%E3%80%81%E9%9B%BB%E8%85%A6%E8%88%87%E6%87%89%E7%94%A8%E7%A8%8B%E5%BC%8F%E9%AB%94%E9%A9%97%20AI%20%E7%9A%84%E5%8A%9F%E8%83%BD%20%7C%20Microsoft%20Windows&tw_document_href=https%3A%2F%2Fwww.microsoft.com%2Fzh-tw%2Fwindows%3Fr%3D1&tw_iframe_status=0&tw_order_quantity=0&tw_pid_src=1&tw_sale_amount=0&twpid=tw.1784575475342.510373764876797605&txn_id=nvkh8&type=javascript&version=2.3.54",
       "type": "image",
       "ipinfo": {
         "domain": "analytics.twitter.com",
@@ -387,13 +396,13 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e23160ad40b846-TPE",
+        "cf-ray": "a1e458d68b32b846-TPE",
         "x-served-by": "t4_p",
         "detection_method": "header"
       }
     },
     {
-      "originalUrl": "https://www.linkedin.com/px/li_sync?redirect=https%3A%2F%2Fpx.ads.linkedin.com%2Fcollect%3Fv%3D2%26fmt%3Djs%26pid%3D7850%26time%3D1784552888256%26li_adsId%3D1af036f2-a70b-41ca-b63a-6fe9f721ef07%26url%3Dhttps%253A%252F%252Fwww.microsoft.com%252Fzh-tw%252Fwindows%253Fr%253D1%26cookiesTest%3Dtrue%26liSync%3Dtrue",
+      "originalUrl": "https://www.linkedin.com/px/li_sync?redirect=https%3A%2F%2Fpx.ads.linkedin.com%2Fcollect%3Fv%3D2%26fmt%3Djs%26pid%3D7850%26time%3D1784575475460%26li_adsId%3Ddeaf847b-fc33-4eb8-a0d2-4bd272aebd10%26url%3Dhttps%253A%252F%252Fwww.microsoft.com%252Fzh-tw%252Fwindows%253Fr%253D1%26cookiesTest%3Dtrue%26liSync%3Dtrue",
       "type": "image",
       "ipinfo": {
         "domain": "www.linkedin.com",
@@ -408,12 +417,44 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e23163182e8451-TPE",
+        "cf-ray": "a1e458da7fd54a6a-TPE",
         "detection_method": "header"
       }
     },
     {
-      "originalUrl": "https://www.facebook.com/tr/?id=1770559986549030&ev=PageView&dl=https%3A%2F%2Fwww.microsoft.com%2Fzh-tw%2Fwindows%3Fr%3D1&rl=&if=false&ts=1784552888775&iw=false&sw=1280&sh=720&v=2.9.357&r=stable&ec=0&o=4125&aems=0%3B0&fbp=fb.1.1784552888773.724796898627664622&cs_est=true&ler=empty&cdl=API_unavailable&plt=4973&tz=480&it=1784552888644&coo=false&dpo=LDU&dpoco=0&dpost=0&tm=1&expv2[0]=pl0&expv2[1]=el2&expv2[2]=bc1&expv2[3]=ra0&expv2[4]=rp0&expv2[5]=ct3&expv2[6]=hf1&rqm=GET",
+      "originalUrl": "https://browser.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream&w=0",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "browser.events.data.microsoft.com",
+        "ip": "20.184.175.3",
+        "city": "San Jose",
+        "region": "California",
+        "country": "US",
+        "loc": "37.3394,-121.8950",
+        "org": "AS8075 Microsoft Corporation",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 140.216,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "20.184.175.3",
+          "prefix": "20.184.175.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.facebook.com/tr/?id=1770559986549030&ev=PageView&dl=https%3A%2F%2Fwww.microsoft.com%2Fzh-tw%2Fwindows%3Fr%3D1&rl=&if=false&ts=1784575476515&iw=false&sw=1280&sh=720&v=2.9.357&r=stable&ec=0&o=4125&aems=0%3B0&fbp=fb.1.1784575476513.163784233941248364&cs_est=true&ler=empty&cdl=API_unavailable&plt=5207.699999999255&tz=480&it=1784575476204&coo=false&dpo=LDU&dpoco=0&dpost=0&tm=1&expv2[0]=pl0&expv2[1]=el2&expv2[2]=bc1&expv2[3]=ra0&expv2[4]=rp0&expv2[5]=im1&expv2[6]=hf1&rqm=GET",
       "type": "image",
       "ipinfo": {
         "domain": "www.facebook.com",
@@ -429,26 +470,26 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://browser.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream&w=0",
-      "type": "xhr",
+      "originalUrl": "https://login.live.com/me.srf?wa=wsignin1.0&wreply=https%3A%2F%2Fwww.microsoft.com&uaid=8cd5275e-4583-4c01-e828-50956b511e02&partnerId=windows",
+      "type": "document",
       "ipinfo": {
-        "domain": "browser.events.data.microsoft.com",
-        "ip": "20.184.175.16",
-        "city": "San Jose",
-        "region": "California",
-        "country": "US",
-        "loc": "37.3394,-121.8950",
+        "domain": "login.live.com",
+        "ip": "20.190.166.66",
+        "city": "Tokyo",
+        "region": "Tokyo",
+        "country": "JP",
+        "loc": "35.6895,139.6917",
         "org": "AS8075 Microsoft Corporation",
-        "timezone": "America/Los_Angeles"
+        "timezone": "Asia/Tokyo"
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 139.005,
+        "rtt": 40.666,
         "detection_method": "rtt",
         "laces": {
-          "source": "laces api (direct)",
-          "queried_ip": "20.184.175.16",
-          "prefix": "20.184.175.0/24",
+          "source": "laces api (cached)",
+          "queried_ip": "20.190.166.66",
+          "prefix": "20.190.166.0/24",
           "anycast": false,
           "confidence": "not_detected",
           "asns": [],
@@ -461,26 +502,27 @@
       }
     },
     {
-      "originalUrl": "https://login.live.com/me.srf?wa=wsignin1.0&wreply=https%3A%2F%2Fwww.microsoft.com&uaid=82727304-b748-4082-4ffc-564638b01e79&partnerId=windows",
-      "type": "document",
+      "originalUrl": "https://c1.microsoft.com/c.gif?DI=4050&did=1&t=",
+      "type": "image",
       "ipinfo": {
-        "domain": "login.live.com",
-        "ip": "20.190.141.38",
-        "city": "Osaka",
-        "region": "Osaka",
-        "country": "JP",
-        "loc": "34.6938,135.5011",
+        "domain": "c1.microsoft.com",
+        "ip": "150.171.110.70",
+        "city": "Hong Kong",
+        "region": "Hong Kong",
+        "country": "HK",
+        "loc": "22.2783,114.1747",
         "org": "AS8075 Microsoft Corporation",
-        "timezone": "Asia/Tokyo"
+        "timezone": "Asia/Hong_Kong"
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 43.535,
+        "rtt": null,
         "detection_method": "rtt",
+        "rtt_error": "timeout",
         "laces": {
-          "source": "laces api (direct)",
-          "queried_ip": "20.190.141.38",
-          "prefix": "20.190.141.0/24",
+          "source": "laces api (cached)",
+          "queried_ip": "150.171.110.70",
+          "prefix": "150.171.110.0/24",
           "anycast": false,
           "confidence": "not_detected",
           "asns": [],

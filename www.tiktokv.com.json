@@ -2,7 +2,7 @@
   "url": "https://www.tiktokv.com/",
   "canonicalURL": "https://www.tiktokv.com/",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T13:05:23.490Z",
+  "timestamp": "2026-07-20T19:21:24.774Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 7,
-  "uniqueDomains": 3,
+  "requestCount": 98,
+  "uniqueDomains": 6,
   "test_results": {
     "domestic": {
-      "cloud": 1,
-      "direct": 1
+      "cloud": 0,
+      "direct": 4
     },
     "foreign": {
-      "cloud": 1,
+      "cloud": 2,
       "direct": 0
     }
   },
@@ -43,7 +43,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.tiktokv.com",
-        "ip": "210.71.227.168",
+        "ip": "210.71.227.163",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -58,8 +58,72 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.tiktok.com",
-        "ip": "23.32.91.16",
-        "hostname": "a23-32-91-16.deploy.static.akamaitechnologies.com",
+        "ip": "96.7.244.138",
+        "hostname": "a96-7-244-138.deploy.static.akamaitechnologies.com",
+        "city": "Tokyo",
+        "region": "Tokyo",
+        "country": "JP",
+        "loc": "35.6895,139.6917",
+        "org": "AS20940 Akamai International B.V.",
+        "timezone": "Asia/Tokyo"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": 42.182,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "96.7.244.138",
+          "prefix": "96.7.244.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
+    },
+    {
+      "originalUrl": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok_privacy_protection_framework/loader/1.0.0.951/index.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "sf16-website-login.neutral.ttwstatic.com",
+        "ip": "210.65.144.171",
+        "hostname": "210-65-144-171.hinet-ip.hinet.net",
+        "city": "Taichung",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "24.1469,120.6839",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://mon-sg.tiktokv.com/monitor_web/settings/browser-settings?bid=tiktok_webapp&store=1",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "mon-sg.tiktokv.com",
+        "ip": "203.69.81.105",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://libraweb-sg.tiktok.com/service/2/abtest_config/",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "libraweb-sg.tiktok.com",
+        "ip": "23.32.91.42",
+        "hostname": "a23-32-91-42.deploy.static.akamaitechnologies.com",
         "city": "Hong Kong",
         "region": "Hong Kong",
         "country": "HK",
@@ -69,11 +133,11 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 24.429,
+        "rtt": 22.124,
         "detection_method": "rtt",
         "laces": {
-          "source": "laces api (direct)",
-          "queried_ip": "23.32.91.16",
+          "source": "laces api (cached)",
+          "queried_ip": "23.32.91.42",
           "prefix": "23.32.91.0/24",
           "anycast": false,
           "confidence": "not_detected",
@@ -87,20 +151,19 @@
       }
     },
     {
-      "originalUrl": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/slardar/sdk-pre/browser.web.pre.js",
-      "type": "script",
+      "originalUrl": "https://mcs-sg.tiktokv.com/v1/list",
+      "type": "xhr",
       "ipinfo": {
-        "domain": "sf16-website-login.neutral.ttwstatic.com",
-        "ip": "203.69.138.233",
-        "hostname": "203-69-138-233.hinet-ip.hinet.net",
+        "domain": "mcs-sg.tiktokv.com",
+        "ip": "203.69.81.33",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
         "loc": "25.0531,121.5264",
-        "org": "AS20940 Akamai International B.V.",
+        "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/direct"
     }
   ]
 }

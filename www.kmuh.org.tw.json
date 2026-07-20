@@ -2,7 +2,7 @@
   "url": "https://www.kmuh.org.tw/",
   "canonicalURL": "https://www.kmuh.org.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T13:44:06.229Z",
+  "timestamp": "2026-07-20T20:04:59.273Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,11 +25,11 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 39,
-  "uniqueDomains": 1,
+  "requestCount": 50,
+  "uniqueDomains": 2,
   "test_results": {
     "domestic": {
-      "cloud": 0,
+      "cloud": 1,
       "direct": 1
     },
     "foreign": {
@@ -43,8 +43,8 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.kmuh.org.tw",
-        "ip": "211.23.120.50",
-        "hostname": "211-23-120-50.hinet-ip.hinet.net",
+        "ip": "211.75.233.170",
+        "hostname": "211-75-233-170.hinet-ip.hinet.net",
         "city": "Kaohsiung",
         "region": "Takao",
         "country": "TW",
@@ -53,6 +53,42 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://www.youtube.com/embed/potp6fJr7W0?si=qQG34p4OpXURVFEO",
+      "type": "document",
+      "ipinfo": {
+        "domain": "www.youtube.com",
+        "ip": "142.251.150.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.064,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.150.4",
+          "prefix": "142.251.150.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
     }
   ]
 }

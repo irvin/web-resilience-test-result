@@ -2,7 +2,7 @@
   "url": "https://wear.tw",
   "canonicalURL": "https://wear.jp/",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T14:53:57.225Z",
+  "timestamp": "2026-07-20T21:19:14.377Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 97,
-  "uniqueDomains": 15,
+  "requestCount": 98,
+  "uniqueDomains": 14,
   "test_results": {
     "domestic": {
-      "cloud": 5,
-      "direct": 5
+      "cloud": 8,
+      "direct": 3
     },
     "foreign": {
-      "cloud": 4,
+      "cloud": 2,
       "direct": 1
     }
   },
@@ -54,11 +54,11 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "x-amz-cf-pop": "NRT20-P4",
-        "rtt": 79.798,
+        "x-amz-cf-pop": "MCI50-P2",
+        "rtt": 55.491,
         "detection_method": "rtt",
         "laces": {
-          "source": "laces api (direct)",
+          "source": "laces api (cached)",
           "queried_ip": "18.65.14.38",
           "prefix": "18.65.14.0/24",
           "anycast": true,
@@ -80,36 +80,20 @@
       "type": "document",
       "ipinfo": {
         "domain": "wear.jp",
-        "ip": "18.65.14.12",
-        "hostname": "server-18-65-14-12.hkg61.r.cloudfront.net",
-        "city": "Hong Kong",
-        "region": "Hong Kong",
-        "country": "HK",
-        "loc": "22.2783,114.1747",
+        "ip": "3.166.205.122",
+        "hostname": "server-3-166-205-122.nrt20.r.cloudfront.net",
+        "city": "Tokyo",
+        "region": "Tokyo",
+        "country": "JP",
+        "loc": "35.6895,139.6917",
         "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Hong_Kong"
+        "timezone": "Asia/Tokyo"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "x-amz-cf-pop": "NRT20-P4",
-        "rtt": 55.004,
-        "detection_method": "rtt",
-        "laces": {
-          "source": "laces api (direct)",
-          "queried_ip": "18.65.14.12",
-          "prefix": "18.65.14.0/24",
-          "anycast": true,
-          "confidence": "low_confidence",
-          "partial": false,
-          "asns": [
-            16509
-          ],
-          "date": "2026-07-17",
-          "has_tw": false,
-          "has_taipei": false,
-          "site_count": 2,
-          "location_count": 0
-        }
+        "country": "tw",
+        "x-amz-cf-pop": "TPE53-P3",
+        "detection_method": "header"
       }
     },
     {
@@ -117,24 +101,24 @@
       "type": "image",
       "ipinfo": {
         "domain": "images.wear2.jp",
-        "ip": "210.65.144.219",
-        "hostname": "210-65-144-219.hinet-ip.hinet.net",
-        "city": "Taichung",
+        "ip": "203.69.138.222",
+        "hostname": "203-69-138-222.hinet-ip.hinet.net",
+        "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "24.1469,120.6839",
-        "org": "AS3462 Data Communication Business Group",
+        "loc": "25.0531,121.5264",
+        "org": "AS20940 Akamai International B.V.",
         "timezone": "Asia/Taipei"
       },
-      "category": "domestic/direct"
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-5GQ5GD",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -145,11 +129,11 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://c.imgz.jp/067/97456067/97456067b_10010_d_70.jpg",
+      "originalUrl": "https://c.imgz.jp/688/103163688/103163688b_144_d_70.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "c.imgz.jp",
-        "ip": "203.69.81.43",
+        "ip": "210.71.227.91",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -160,20 +144,87 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://cdn.wimg.jp/profile/58l0yz/20210611222407027_80.jpg",
+      "originalUrl": "https://cdn.wimg.jp/profile/inxhek/20210815230111749_80.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "cdn.wimg.jp",
-        "ip": "210.65.144.209",
-        "hostname": "210-65-144-209.hinet-ip.hinet.net",
-        "city": "Taichung",
+        "ip": "203.69.138.225",
+        "hostname": "203-69-138-225.hinet-ip.hinet.net",
+        "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "24.1469,120.6839",
-        "org": "AS3462 Data Communication Business Group",
+        "loc": "25.0531,121.5264",
+        "org": "AS20940 Akamai International B.V.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://s.yimg.jp/images/listing/tool/cv/ytag.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "s.yimg.jp",
+        "ip": "183.79.219.124",
+        "city": "Osaka",
+        "region": "Osaka",
+        "country": "JP",
+        "loc": "34.6938,135.5011",
+        "org": "AS24572 Yahoo Japan",
+        "timezone": "Asia/Tokyo"
+      },
+      "category": "foreign/direct"
+    },
+    {
+      "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "connect.facebook.net",
+        "ip": "31.13.87.5",
+        "hostname": "xx-fbcdn-shv-01-tpe1.fbcdn.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://www.google.com/ccm/collect?rcb=16&frm=0&ae=g&auid=995469257.1784582341&dt=%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%87%E3%82%A3%E3%83%8D%E3%83%BC%E3%83%88%20-%20WEAR&en=page_view&dl=https%3A%2F%2Fwear.jp%2F&scrsrc=www.googletagmanager.com&rnd=17950893.1784582341&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He67g0v71416046za200zd71416046xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~118395334~118897920~118897930~119896803&apve=1&apvf=f&apvc=1&tft=1784582341023&tfd=2197&fmt=8",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.154.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.209,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.154.119",
+          "prefix": "142.251.154.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 60,
+          "location_count": 60
+        }
+      }
     },
     {
       "originalUrl": "https://o423276.ingest.sentry.io/api/4504366945796096/envelope/?sentry_version=7&sentry_key=42ddfdee192941629bd41c7dcf2ddb65&sentry_client=sentry.javascript.nextjs%2F10.63.0",
@@ -192,7 +243,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 5.606,
+        "rtt": 6.669,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
@@ -217,8 +268,8 @@
       "type": "fetch",
       "ipinfo": {
         "domain": "api.wear2.jp",
-        "ip": "13.159.215.23",
-        "hostname": "ec2-13-159-215-23.ap-northeast-1.compute.amazonaws.com",
+        "ip": "54.92.94.38",
+        "hostname": "ec2-54-92-94-38.ap-northeast-1.compute.amazonaws.com",
         "city": "Tokyo",
         "region": "Tokyo",
         "country": "JP",
@@ -233,8 +284,8 @@
         "rtt_error": "timeout",
         "laces": {
           "source": "laces api (direct)",
-          "queried_ip": "13.159.215.23",
-          "prefix": "13.159.215.0/24",
+          "queried_ip": "54.92.94.38",
+          "prefix": "54.92.94.0/24",
           "anycast": false,
           "confidence": "not_detected",
           "asns": [],
@@ -247,79 +298,12 @@
       }
     },
     {
-      "originalUrl": "https://s.yimg.jp/images/listing/tool/cv/ytag.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "s.yimg.jp",
-        "ip": "182.22.31.124",
-        "city": "Tokyo",
-        "region": "Tokyo",
-        "country": "JP",
-        "loc": "35.6895,139.6917",
-        "org": "AS23816 LY Corporation",
-        "timezone": "Asia/Tokyo"
-      },
-      "category": "foreign/direct"
-    },
-    {
-      "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "connect.facebook.net",
-        "ip": "31.13.87.5",
-        "hostname": "xx-fbcdn-shv-01-tpe1.fbcdn.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS32934 Facebook, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/direct"
-    },
-    {
-      "originalUrl": "https://www.google.com/ccm/collect?rcb=13&frm=0&ae=g&auid=2013458196.1784559225&dt=%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%87%E3%82%A3%E3%83%8D%E3%83%BC%E3%83%88%20-%20WEAR&en=page_view&dl=https%3A%2F%2Fwear.jp%2F&scrsrc=www.googletagmanager.com&rnd=1289096654.1784559225&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He67f0v71416046za200zd71416046xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938468~118897920~118897930&apve=1&apvf=f&apvc=1&tft=1784559224921&tfd=1375&fmt=8",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.251.152.119",
-        "city": "Mountain View",
-        "region": "California",
-        "country": "US",
-        "loc": "38.0088,-122.1175",
-        "org": "AS15169 Google LLC",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "rtt": 5.949,
-        "detection_method": "rtt",
-        "laces": {
-          "source": "laces api (cached)",
-          "queried_ip": "142.251.152.119",
-          "prefix": "142.251.152.0/24",
-          "anycast": true,
-          "confidence": "confident",
-          "partial": false,
-          "asns": [
-            15169
-          ],
-          "date": "2026-07-17",
-          "has_tw": false,
-          "has_taipei": false,
-          "site_count": 61,
-          "location_count": 61
-        }
-      }
-    },
-    {
-      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/16570071443/?random=1784559224978&cv=11&fst=1784556000000&bg=ffffff&guid=ON&async=1&gtm=45be67f0v9208309176z871416046za20gzb71416046zd71416046xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118897920~118897930~119527019&u_w=1280&u_h=720&url=https%3A%2F%2Fwear.jp%2F&rcb=19&frm=0&tiba=%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%87%E3%82%A3%E3%83%8D%E3%83%BC%E3%83%88%20-%20WEAR&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=2013458196.1784559225&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&_tu=CA&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS7AEAEQoqga-ahwmnLIqcKPoKQ81Zzm2pyZYkLHKa72y9lsNR_cjphUqGN7sqrhJJR_Bqi4t07notkFjVjaFuN9ROvzbefVe9HAZDy_PBkmW7BqRiIYxEfrFpvqNq6dfvTCRDddZwGvviQ-LsR43_lHxOIB6AAzEQlvkEWAfOhPn3meUsJOPLUTPcuhkEGpV2FMhVSXOQD-YXw0gFQDZDnbucDyH9c-M_Fqk5th9n28S6ppk0j06IPRMFx2iQOgVdiQXVKxfziAH6q1iCXPMuiIi9w4nuBDqjkRMrzswzwzshiDuF6aJTBTGJXzPm7w&random=246482025&rmt_tld=1&ipr=y",
+      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/16570071443/?random=1784582341260&cv=11&fst=1784581200000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67g0v9208309176z871416046za20gzb71416046zd71416046xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938468~118395334~118897920~118897930&u_w=1280&u_h=720&url=https%3A%2F%2Fwear.jp%2F&rcb=0&frm=0&tiba=%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%87%E3%82%A3%E3%83%8D%E3%83%BC%E3%83%88%20-%20WEAR&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=995469257.1784582341&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS7AEAEQoqgcvlpN3l5JLs7F2_0Q7p9WW8vAas5bTHyOXQJFTUYCfpF5uPXQGIa6vVUZZylyoKIQ0A98yI75ztxY5RsVpcU4CS8lyWqtfbNl4z51svyfdhR7eR8n671ywqw_LbKc-sjsLjTMT6W2Y_yoKIVFFXrZIhKZzsdoX6U7zTwKqpmDpTHrZXVrk-KDEJxI4zahGwtHAhHo-hMYVMXZj-SaZzjmSuLSj4mxzdzGmrUs_uqrEEgQGsbQcg_YCdYBsOkEaBlBrM_rVYsKGdfuilYTiqbYCVsgSCuiCK5fCmRkiiOGsD6QxOVbVbSw&random=4055943239&rmt_tld=1&ipr=y",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.192.131",
-        "hostname": "bom12s18-in-f3.1e100.net",
+        "ip": "142.250.77.195",
+        "hostname": "del11s08-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -334,7 +318,7 @@
       "type": "fetch",
       "ipinfo": {
         "domain": "mpc-prod-28-1053047382554.us-central1.run.app",
-        "ip": "34.143.72.2",
+        "ip": "34.143.77.2",
         "city": "Mountain View",
         "region": "California",
         "country": "US",
@@ -345,12 +329,12 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 6.167,
+        "rtt": 5.107,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "34.143.72.2",
-          "prefix": "34.143.72.0/24",
+          "queried_ip": "34.143.77.2",
+          "prefix": "34.143.77.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
@@ -360,8 +344,8 @@
           "date": "2026-07-17",
           "has_tw": false,
           "has_taipei": false,
-          "site_count": 61,
-          "location_count": 61
+          "site_count": 62,
+          "location_count": 62
         }
       }
     },
@@ -380,39 +364,6 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
-    },
-    {
-      "originalUrl": "https://dm.slim02.jp/tppa/v2/vs?adv_id=5000000244218781&cnropq=eyJ0YWdfaWQiOiJCUDI4OUpUTDZTIiwibGFiZWwiOiIiLCJldmVudCI6IiIsInJlZiI6Imh0dHBzOi8vd2Vhci5qcC8iLCJyZXFfdHlwZSI6InJldGFyZ2V0aW5nIn0&evt=5&pid=5000000244218780&xci=d5e61748-946e-49a5-8782-e32594ba3663",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "dm.slim02.jp",
-        "ip": "13.230.25.59",
-        "hostname": "ec2-13-230-25-59.ap-northeast-1.compute.amazonaws.com",
-        "city": "Tokyo",
-        "region": "Tokyo",
-        "country": "JP",
-        "loc": "35.6895,139.6917",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Tokyo"
-      },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": 38.152,
-        "detection_method": "rtt",
-        "laces": {
-          "source": "laces api (direct)",
-          "queried_ip": "13.230.25.59",
-          "prefix": "13.230.25.0/24",
-          "anycast": false,
-          "confidence": "not_detected",
-          "asns": [],
-          "date": "2026-07-17",
-          "has_tw": false,
-          "has_taipei": false,
-          "site_count": 0,
-          "location_count": 0
-        }
-      }
     }
   ]
 }

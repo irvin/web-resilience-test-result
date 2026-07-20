@@ -2,7 +2,7 @@
   "url": "https://lia-roc.org.tw",
   "canonicalURL": "https://lia-roc.org.tw",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T15:08:26.039Z",
+  "timestamp": "2026-07-20T21:33:22.382Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -29,11 +29,11 @@
   "uniqueDomains": 6,
   "test_results": {
     "domestic": {
-      "cloud": 5,
+      "cloud": 4,
       "direct": 0
     },
     "foreign": {
-      "cloud": 1,
+      "cloud": 2,
       "direct": 0
     }
   },
@@ -59,41 +59,34 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "104.17.207.5",
+        "ip": "151.101.129.229",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
         "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
+        "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud",
+      "category": "foreign/cloud",
       "cloud_provider": {
-        "x-served-by": "cache-fra-etou8220140-FRA, cache-sin-wsat1880025-SIN",
-        "country": "tw",
-        "detection_method": "laces",
+        "x-served-by": "cache-fra-etou8220140-FRA, cache-nrt-rjtf7700070-NRT",
+        "rtt": 39.231,
+        "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "104.17.207.5",
-          "prefix": "104.17.207.0/24",
+          "queried_ip": "151.101.129.229",
+          "prefix": "151.101.129.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
           "asns": [
-            13335
+            54113
           ],
           "date": "2026-07-17",
-          "has_tw": true,
-          "has_taipei": true,
-          "site_count": 76,
-          "location_count": 76,
-          "tw_locations": [
-            {
-              "city": "Taipei",
-              "country": "TW",
-              "id": "TAI"
-            }
-          ]
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 55,
+          "location_count": 55
         }
       }
     },
@@ -118,7 +111,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "code.jquery.com",
-        "ip": "151.101.129.155",
+        "ip": "151.101.65.155",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -128,13 +121,13 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "x-served-by": "cache-lga21978-LGA, cache-sin-wsat1880067-SIN",
-        "rtt": 34.842,
+        "x-served-by": "cache-lga21978-LGA, cache-sin-wsat1880096-SIN",
+        "rtt": 40.046,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "151.101.129.155",
-          "prefix": "151.101.129.0/24",
+          "queried_ip": "151.101.65.155",
+          "prefix": "151.101.65.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
@@ -144,8 +137,8 @@
           "date": "2026-07-17",
           "has_tw": false,
           "has_taipei": false,
-          "site_count": 55,
-          "location_count": 55
+          "site_count": 57,
+          "location_count": 57
         }
       }
     },
@@ -154,7 +147,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.251.156.119",
+        "ip": "142.251.151.119",
         "city": "Mountain View",
         "region": "California",
         "country": "US",
@@ -165,12 +158,12 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 5.676,
+        "rtt": 8.593,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "142.251.156.119",
-          "prefix": "142.251.156.0/24",
+          "queried_ip": "142.251.151.119",
+          "prefix": "142.251.151.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
@@ -190,8 +183,8 @@
       "type": "image",
       "ipinfo": {
         "domain": "clients1.google.com",
-        "ip": "142.250.196.206",
-        "hostname": "nctsaa-ac-in-f14.1e100.net",
+        "ip": "142.250.192.142",
+        "hostname": "bom12s18-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",

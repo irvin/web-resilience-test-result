@@ -2,7 +2,7 @@
   "url": "https://1-apple.com.tw",
   "canonicalURL": "https://1-apple.com.tw",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T15:40:20.159Z",
+  "timestamp": "2026-07-20T22:05:45.921Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,11 +25,11 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 256,
-  "uniqueDomains": 8,
+  "requestCount": 304,
+  "uniqueDomains": 11,
   "test_results": {
     "domestic": {
-      "cloud": 4,
+      "cloud": 7,
       "direct": 0
     },
     "foreign": {
@@ -58,7 +58,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "104.17.208.5",
+        "ip": "104.17.207.5",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -68,32 +68,10 @@
       },
       "category": "domestic/cloud",
       "cloud_provider": {
-        "x-served-by": "cache-fra-eddf8230115-FRA, cache-sin-wsat1880021-SIN",
         "country": "tw",
-        "detection_method": "laces",
-        "laces": {
-          "source": "laces api (cached)",
-          "queried_ip": "104.17.208.5",
-          "prefix": "104.17.208.0/24",
-          "anycast": true,
-          "confidence": "confident",
-          "partial": false,
-          "asns": [
-            13335
-          ],
-          "date": "2026-07-17",
-          "has_tw": true,
-          "has_taipei": true,
-          "site_count": 76,
-          "location_count": 76,
-          "tw_locations": [
-            {
-              "city": "Taipei",
-              "country": "TW",
-              "id": "TAI"
-            }
-          ]
-        }
+        "cf-ray": "a1e54480be8ff023-TPE",
+        "x-served-by": "cache-fra-eddf8230170-FRA, cache-nrt-rjtf7700051-NRT",
+        "detection_method": "header"
       }
     },
     {
@@ -116,8 +94,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "secure-sg.imrworldwide.com",
-        "ip": "13.228.31.156",
-        "hostname": "ec2-13-228-31-156.ap-southeast-1.compute.amazonaws.com",
+        "ip": "18.136.52.141",
+        "hostname": "ec2-18-136-52-141.ap-southeast-1.compute.amazonaws.com",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",
@@ -132,8 +110,8 @@
         "rtt_error": "timeout",
         "laces": {
           "source": "laces api (direct)",
-          "queried_ip": "13.228.31.156",
-          "prefix": "13.228.31.0/24",
+          "queried_ip": "18.136.52.141",
+          "prefix": "18.136.52.0/24",
           "anycast": false,
           "confidence": "not_detected",
           "asns": [],
@@ -146,7 +124,7 @@
       }
     },
     {
-      "originalUrl": "https://ndx.1-apple.com.tw/DFA/js_ndxtag.cfm?legend=Appledaily&pgn=1-apple_home&lev=0&pos=1&typ=AppleSlide&COMonPage=0&ROSonPage=0&CATonPage=0&ord=1784562003255&sReferrer=https%3A%2F%2F1-apple.com.tw%2F",
+      "originalUrl": "https://ndx.1-apple.com.tw/DFA/js_ndxtag.cfm?legend=Appledaily&pgn=1-apple_home&lev=0&pos=1&typ=AppleSlide&COMonPage=0&ROSonPage=0&CATonPage=0&ord=1784585130118&sReferrer=https%3A%2F%2F1-apple.com.tw%2F",
       "type": "script",
       "ipinfo": {
         "domain": "ndx.1-apple.com.tw",
@@ -181,8 +159,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "cdn-gl.imrworldwide.com",
-        "ip": "54.192.248.55",
-        "hostname": "server-54-192-248-55.tpe53.r.cloudfront.net",
+        "ip": "54.192.248.14",
+        "hostname": "server-54-192-248-14.tpe53.r.cloudfront.net",
         "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
@@ -193,11 +171,86 @@
       "category": "domestic/cloud"
     },
     {
+      "originalUrl": "https://violet.ghtinc.com/api/media/creatives/6a55a13aacc20689def7573b",
+      "type": "image",
+      "ipinfo": {
+        "domain": "violet.ghtinc.com",
+        "ip": "104.21.40.2",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "cf-ray": "a1e544916d1bce5a-SIN",
+        "country": "tw",
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "104.21.40.2",
+          "prefix": "104.21.40.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 56,
+          "location_count": 56,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "originalUrl": "https://storage.googleapis.com/interactive-media-ads/hosted-samples/wta/icon_adchoices.png",
+      "type": "image",
+      "ipinfo": {
+        "domain": "storage.googleapis.com",
+        "ip": "142.250.77.219",
+        "hostname": "del11s08-in-f27.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://s0.2mdn.net/simgad/12708978364499796210",
+      "type": "image",
+      "ipinfo": {
+        "domain": "s0.2mdn.net",
+        "ip": "142.250.192.134",
+        "hostname": "bom12s18-in-f6.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
       "originalUrl": "https://www.google.com/recaptcha/api2/aframe",
       "type": "document",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.251.154.119",
+        "ip": "142.251.151.119",
         "city": "Mountain View",
         "region": "California",
         "country": "US",
@@ -208,12 +261,12 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 5.968,
+        "rtt": 5.657,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "142.251.154.119",
-          "prefix": "142.251.154.0/24",
+          "queried_ip": "142.251.151.119",
+          "prefix": "142.251.151.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
@@ -223,8 +276,8 @@
           "date": "2026-07-17",
           "has_tw": false,
           "has_taipei": false,
-          "site_count": 60,
-          "location_count": 60
+          "site_count": 61,
+          "location_count": 61
         }
       }
     }

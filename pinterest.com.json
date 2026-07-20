@@ -2,7 +2,7 @@
   "url": "https://pinterest.com",
   "canonicalURL": "https://www.pinterest.com/",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T13:04:49.905Z",
+  "timestamp": "2026-07-20T19:20:50.951Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 60,
-  "uniqueDomains": 4,
+  "requestCount": 99,
+  "uniqueDomains": 8,
   "test_results": {
     "domestic": {
-      "cloud": 1,
-      "direct": 1
+      "cloud": 4,
+      "direct": 3
     },
     "foreign": {
-      "cloud": 2,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -43,7 +43,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "pinterest.com",
-        "ip": "151.101.0.84",
+        "ip": "151.101.128.84",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -53,12 +53,12 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 38.255,
+        "rtt": 35.227,
         "detection_method": "rtt",
         "laces": {
-          "source": "laces api (direct)",
-          "queried_ip": "151.101.0.84",
-          "prefix": "151.101.0.0/24",
+          "source": "laces api (cached)",
+          "queried_ip": "151.101.128.84",
+          "prefix": "151.101.128.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
@@ -68,8 +68,8 @@
           "date": "2026-07-17",
           "has_tw": false,
           "has_taipei": false,
-          "site_count": 53,
-          "location_count": 53
+          "site_count": 57,
+          "location_count": 57
         }
       }
     },
@@ -78,42 +78,23 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.pinterest.com",
-        "ip": "199.232.112.84",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS54113 Fastly, Inc.",
-        "timezone": "Asia/Singapore"
+        "ip": "23.220.196.240",
+        "hostname": "a23-220-196-240.deploy.static.akamaitechnologies.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16625 Akamai Technologies, Inc.",
+        "timezone": "Asia/Taipei"
       },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": 66.078,
-        "detection_method": "rtt",
-        "laces": {
-          "source": "laces api (direct)",
-          "queried_ip": "199.232.112.84",
-          "prefix": "199.232.112.0/24",
-          "anycast": true,
-          "confidence": "confident",
-          "partial": false,
-          "asns": [
-            54113
-          ],
-          "date": "2026-07-17",
-          "has_tw": false,
-          "has_taipei": false,
-          "site_count": 2,
-          "location_count": 2
-        }
-      }
+      "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://s.pinimg.com/webapp/runtime.zh_TW-42a62e0b0f16089a.mjs",
+      "originalUrl": "https://s.pinimg.com/webapp/runtime.zh_TW-e14f0151431867f8.mjs",
       "type": "script",
       "ipinfo": {
         "domain": "s.pinimg.com",
-        "ip": "210.71.227.155",
+        "ip": "210.71.227.105",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -128,8 +109,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "accounts.google.com",
-        "ip": "74.125.23.84",
-        "hostname": "tg-in-f84.1e100.net",
+        "ip": "64.233.188.84",
+        "hostname": "tk-in-f84.1e100.net",
         "city": "Taichung",
         "region": "Taiwan",
         "country": "TW",
@@ -138,6 +119,68 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://ct.pinterest.com/ct.html",
+      "type": "document",
+      "ipinfo": {
+        "domain": "ct.pinterest.com",
+        "ip": "23.220.196.240",
+        "hostname": "a23-220-196-240.deploy.static.akamaitechnologies.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS16625 Akamai Technologies, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://i1-e.pinimg.com/474x/8c/32/33/8c32334fb2b4fc8941a2abbff9678411.jpg",
+      "type": "image",
+      "ipinfo": {
+        "domain": "i1-e.pinimg.com",
+        "ip": "210.71.227.145",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://google.com/.well-known/web-identity",
+      "type": "fedcm",
+      "ipinfo": {
+        "domain": "google.com",
+        "ip": "142.250.192.142",
+        "hostname": "bom12s18-in-f14.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://i.pinimg.com/736x/aa/b2/c1/aab2c136721cd027a906a7cf0b081707.jpg",
+      "type": "image",
+      "ipinfo": {
+        "domain": "i.pinimg.com",
+        "ip": "210.71.227.145",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS3462 Data Communication Business Group",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
     }
   ]
 }

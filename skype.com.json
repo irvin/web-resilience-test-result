@@ -2,7 +2,7 @@
   "url": "https://skype.com",
   "canonicalURL": "https://teams.live.com/free",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T13:06:07.841Z",
+  "timestamp": "2026-07-20T19:22:15.975Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -29,8 +29,8 @@
   "uniqueDomains": 7,
   "test_results": {
     "domestic": {
-      "cloud": 4,
-      "direct": 0
+      "cloud": 3,
+      "direct": 1
     },
     "foreign": {
       "cloud": 3,
@@ -43,22 +43,22 @@
       "type": "document",
       "ipinfo": {
         "domain": "skype.com",
-        "ip": "20.236.44.162",
-        "city": "Moses Lake",
-        "region": "Washington",
-        "country": "US",
-        "loc": "47.1301,-119.2781",
+        "ip": "20.70.246.20",
+        "city": "Sydney",
+        "region": "New South Wales",
+        "country": "AU",
+        "loc": "-33.8678,151.2073",
         "org": "AS8075 Microsoft Corporation",
-        "timezone": "America/Los_Angeles"
+        "timezone": "Australia/Sydney"
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 136.634,
+        "rtt": 136.381,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "20.236.44.162",
-          "prefix": "20.236.44.0/24",
+          "queried_ip": "20.70.246.20",
+          "prefix": "20.70.246.0/24",
           "anycast": false,
           "confidence": "not_detected",
           "asns": [],
@@ -75,7 +75,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.skype.com",
-        "ip": "52.123.128.14",
+        "ip": "52.123.129.14",
         "city": "Redmond",
         "region": "Washington",
         "country": "US",
@@ -86,7 +86,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "x-msedge-ref": "Ref A: EBE11CC6327A4F2483CEB840442F586E Ref B: TPE201050221025 Ref C: 2026-07-20T13:06:04Z",
+        "x-msedge-ref": "Ref A: FE3F5CF28E2A4AF8814A5E5AF19102D3 Ref B: TPE201080401060 Ref C: 2026-07-20T19:22:11Z",
         "detection_method": "header"
       }
     },
@@ -95,7 +95,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "teams.live.com",
-        "ip": "52.123.128.14",
+        "ip": "52.123.129.14",
         "city": "Redmond",
         "region": "Washington",
         "country": "US",
@@ -106,7 +106,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "x-msedge-ref": "Ref A: FED6304191074EC1846D2D4FE15E30A2 Ref B: TPE201080401023 Ref C: 2026-07-20T13:06:05Z",
+        "x-msedge-ref": "Ref A: 998A12BA1DE047559BBA571DC50408B6 Ref B: TPE201050219029 Ref C: 2026-07-20T19:22:11Z",
         "detection_method": "header"
       }
     },
@@ -130,38 +130,37 @@
       "type": "image",
       "ipinfo": {
         "domain": "statics.teams.cdn.live.net",
-        "ip": "203.69.138.207",
-        "hostname": "203-69-138-207.hinet-ip.hinet.net",
+        "ip": "203.69.81.58",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
         "loc": "25.0531,121.5264",
-        "org": "AS20940 Akamai International B.V.",
+        "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://login.microsoftonline.com/consumers/oauth2/v2.0/authorize?client_id=4b3e8f46-56d3-427f-b1e2-d239b2ea6bca&response_type=token&scope=openid+profile&redirect_uri=https%3A%2F%2Fteams.live.com%2Fv2%2Fauth&prompt=none",
       "type": "document",
       "ipinfo": {
         "domain": "login.microsoftonline.com",
-        "ip": "40.126.13.8",
-        "city": "Osaka",
-        "region": "Osaka",
+        "ip": "20.190.166.133",
+        "city": "Tokyo",
+        "region": "Tokyo",
         "country": "JP",
-        "loc": "34.6938,135.5011",
+        "loc": "35.6895,139.6917",
         "org": "AS8075 Microsoft Corporation",
         "timezone": "Asia/Tokyo"
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 44.704,
+        "rtt": 35.875,
         "detection_method": "rtt",
         "laces": {
-          "source": "laces api (cached)",
-          "queried_ip": "40.126.13.8",
-          "prefix": "40.126.13.0/24",
+          "source": "laces api (direct)",
+          "queried_ip": "20.190.166.133",
+          "prefix": "20.190.166.0/24",
           "anycast": false,
           "confidence": "not_detected",
           "asns": [],
@@ -174,11 +173,11 @@
       }
     },
     {
-      "originalUrl": "https://login.live.com/oauth20_authorize.srf?client_id=4b3e8f46-56d3-427f-b1e2-d239b2ea6bca&scope=openid+profile&redirect_uri=https%3a%2f%2fteams.live.com%2fv2%2fauth&response_type=token&prompt=none&uaid=82ae206ee4d04f6c81491f94769dba30&msproxy=1&issuer=mso&tenant=consumers&ui_locales=zh-TW&epctrc=izEnPId%2fnwbwpBPPdDZk84lquH7KKeroEhxxJbm9Y3Q%3d9%3a1%3aCANARY%3aX7n4AZCC8pYsm%2fOGcf2wo45toI3A4m%2fhFzoY7io%2bp%2bQ%3d&epct=PAQABDgEAAAAdDD7nC9b5Q7JPd_okEQRFRXZvU3RzQXJ0aWZhY3RzCAAAAAAAM2yrI_cNTGp_DJhJoNBVwjbvC3P33Gb4Y6Ald6CR7r24S-pPWqXH8KA3EnFi6lKYSvcPP1qRlJHit3sLZqAg89xx6QlJdJBDajU8y5VAYYF5AYAP3LnkThpBo4nVxw_dNJz5TYytnkeNPrFRyj5Amc0MrmKj2wqEjxlRxwovuku-dS7r581niqkD4TgrAUkIGv2h_FQI14ooslwkAQeZwCAA&jshs=0",
+      "originalUrl": "https://login.live.com/oauth20_authorize.srf?client_id=4b3e8f46-56d3-427f-b1e2-d239b2ea6bca&scope=openid+profile&redirect_uri=https%3a%2f%2fteams.live.com%2fv2%2fauth&response_type=token&prompt=none&uaid=7a1efc06515044b484b5cc8b8b0de952&msproxy=1&issuer=mso&tenant=consumers&ui_locales=zh-TW&epctrc=1VB4ygnMSiY5WsBAo4e66E1Hfm%2fEAS%2foA32qVs%2fnYzc%3d2%3a1%3aCANARY%3a4HwVMFG61DVOZF4SZAqTtpvrQFx2RgznJI%2bdfCPcboM%3d&epct=PAQABDgEAAAAdDD7nC9b5Q7JPd_okEQRFRXZvU3RzQXJ0aWZhY3RzCAAAAAAAKKmK52PZniHPuAtG6fu2FFcV7GYVamOApArRpYFXCkdT5g6xIrLZLEouwMWUwg8--QP8r8_tW9pnGIN0HG5UYeOKVGg6sH7GIdvX7ME2T86C3y9UmDgzNWMQHmWxb5WYx65dvr49vpUd3eS44E2kLBgdyHMPMOmBhkY20Ku4rjKqn9W09sfjjH4YSMjYq5M72xKoVEEGJ1pw_EtmHE7KcCAA&jshs=0",
       "type": "document",
       "ipinfo": {
         "domain": "login.live.com",
-        "ip": "20.190.141.37",
+        "ip": "20.190.141.34",
         "city": "Osaka",
         "region": "Osaka",
         "country": "JP",
@@ -188,11 +187,11 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 43.016,
+        "rtt": 42.933,
         "detection_method": "rtt",
         "laces": {
-          "source": "laces api (cached)",
-          "queried_ip": "20.190.141.37",
+          "source": "laces api (direct)",
+          "queried_ip": "20.190.141.34",
           "prefix": "20.190.141.0/24",
           "anycast": false,
           "confidence": "not_detected",

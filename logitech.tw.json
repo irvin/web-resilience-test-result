@@ -2,7 +2,7 @@
   "url": "https://logitech.tw",
   "canonicalURL": "https://store.logitech.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T15:30:18.539Z",
+  "timestamp": "2026-07-20T21:55:23.646Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 492,
-  "uniqueDomains": 28,
+  "requestCount": 502,
+  "uniqueDomains": 29,
   "test_results": {
     "domestic": {
       "cloud": 22,
       "direct": 2
     },
     "foreign": {
-      "cloud": 4,
+      "cloud": 5,
       "direct": 0
     }
   },
@@ -55,7 +55,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e301530fa3f023-TPE",
+        "cf-ray": "a1e5356a19b38285-TPE",
         "detection_method": "header"
       }
     },
@@ -76,7 +76,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e30153fdb34aa4-TPE",
+        "cf-ray": "a1e5356b0bc349f7-TPE",
         "detection_method": "header"
       }
     },
@@ -112,7 +112,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e301550ecc841c-TPE",
+        "cf-ray": "a1e5356b681a6e87-TPE",
         "detection_method": "header"
       }
     },
@@ -121,7 +121,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "static.klaviyo.com",
-        "ip": "146.75.46.133",
+        "ip": "199.232.114.133",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",
@@ -131,13 +131,13 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "x-served-by": "cache-lga21949-LGA, cache-nrt-rjtf7700050-NRT",
-        "rtt": 64.936,
+        "x-served-by": "cache-lga21949-LGA, cache-nrt-rjaa8190075-NRT",
+        "rtt": 69.542,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "146.75.46.133",
-          "prefix": "146.75.46.0/24",
+          "queried_ip": "199.232.114.133",
+          "prefix": "199.232.114.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
@@ -173,13 +173,66 @@
       "type": "script",
       "ipinfo": {
         "domain": "cdn.bogos.io",
-        "ip": "65.9.180.114",
-        "hostname": "server-65-9-180-114.tpe53.r.cloudfront.net",
+        "ip": "65.9.180.49",
+        "hostname": "server-65-9-180-49.tpe53.r.cloudfront.net",
         "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
         "loc": "24.9937,121.2970",
         "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://otlp-http-production.shopifysvc.com/v1/metrics",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "otlp-http-production.shopifysvc.com",
+        "ip": "34.160.147.240",
+        "hostname": "240.147.160.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 7.257,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.160.147.240",
+          "prefix": "34.160.147.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 63,
+          "location_count": 63
+        }
+      }
+    },
+    {
+      "originalUrl": "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "ajax.googleapis.com",
+        "ip": "142.250.77.10",
+        "hostname": "nctsaa-ab-in-f10.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
@@ -201,6 +254,58 @@
       "category": "domestic/cloud"
     },
     {
+      "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "connect.facebook.net",
+        "ip": "31.13.87.5",
+        "hostname": "xx-fbcdn-shv-01-tpe1.fbcdn.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=AW-603686455",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.googletagmanager.com",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "cdnjs.cloudflare.com",
+        "ip": "104.17.24.14",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e53570cc254a6c-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
       "originalUrl": "https://livewishlist.scriptengine.net/api/apps-config",
       "type": "fetch",
       "ipinfo": {
@@ -216,7 +321,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e3015eaa374a0c-TPE",
+        "cf-ray": "a1e53575daf94a96-TPE",
         "detection_method": "header"
       }
     },
@@ -225,7 +330,7 @@
       "type": "fetch",
       "ipinfo": {
         "domain": "banner-public-api.tech-arms.io",
-        "ip": "104.21.23.106",
+        "ip": "172.67.210.128",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -235,13 +340,13 @@
       },
       "category": "domestic/cloud",
       "cloud_provider": {
-        "cf-ray": "a1e3015f9ac50af4-SIN",
+        "cf-ray": "a1e535752b04ce3e-SIN",
         "country": "tw",
         "detection_method": "laces",
         "laces": {
           "source": "laces api (direct)",
-          "queried_ip": "104.21.23.106",
-          "prefix": "104.21.23.0/24",
+          "queried_ip": "172.67.210.128",
+          "prefix": "172.67.210.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
@@ -251,8 +356,8 @@
           "date": "2026-07-17",
           "has_tw": true,
           "has_taipei": true,
-          "site_count": 58,
-          "location_count": 58,
+          "site_count": 57,
+          "location_count": 57,
           "tw_locations": [
             {
               "city": "Taipei",
@@ -298,64 +403,7 @@
       }
     },
     {
-      "originalUrl": "https://otlp-http-production.shopifysvc.com/v1/metrics",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "otlp-http-production.shopifysvc.com",
-        "ip": "34.160.147.240",
-        "hostname": "240.147.160.34.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
-        "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "rtt": 5.822,
-        "detection_method": "rtt",
-        "laces": {
-          "source": "laces api (cached)",
-          "queried_ip": "34.160.147.240",
-          "prefix": "34.160.147.0/24",
-          "anycast": true,
-          "confidence": "confident",
-          "partial": false,
-          "asns": [
-            396982
-          ],
-          "date": "2026-07-17",
-          "has_tw": false,
-          "has_taipei": false,
-          "site_count": 63,
-          "location_count": 63
-        }
-      }
-    },
-    {
-      "originalUrl": "https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "cdnjs.cloudflare.com",
-        "ip": "104.17.24.14",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "cf-ray": "a1e3015bdf88b846-TPE",
-        "detection_method": "header"
-      }
-    },
-    {
-      "originalUrl": "https://shop.app/pay/hop?analytics_trace_id=0739373d-79cb-4cad-826b-49488aa0075c&target_origin=https%3A%2F%2Fstore.logitech.tw&client_handle=logitech-tw.myshopify.com",
+      "originalUrl": "https://shop.app/pay/hop?analytics_trace_id=d7d5c82b-ae17-41f3-a0ef-0d94aafe339a&target_origin=https%3A%2F%2Fstore.logitech.tw&client_handle=logitech-tw.myshopify.com",
       "type": "document",
       "ipinfo": {
         "domain": "shop.app",
@@ -370,76 +418,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e3015c08b68460-TPE",
-        "detection_method": "header"
-      }
-    },
-    {
-      "originalUrl": "https://www.googletagmanager.com/gtag/js?id=AW-603686455",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.googletagmanager.com",
-        "ip": "142.250.196.200",
-        "hostname": "nctsaa-ac-in-f8.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "connect.facebook.net",
-        "ip": "31.13.87.5",
-        "hostname": "xx-fbcdn-shv-01-tpe1.fbcdn.net",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS32934 Facebook, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/direct"
-    },
-    {
-      "originalUrl": "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "ajax.googleapis.com",
-        "ip": "142.250.196.202",
-        "hostname": "nctsaa-ac-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://logitech-tw.myshopify.com/api/2024-04/graphql.json",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "logitech-tw.myshopify.com",
-        "ip": "23.227.38.74",
-        "hostname": "shops.myshopify.com",
-        "city": "Ottawa",
-        "region": "Ontario",
-        "country": "CA",
-        "loc": "45.4166,-75.6904",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Toronto"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "cf-ray": "a1e3015c5bc68448-TPE",
+        "cf-ray": "a1e535718dd18f01-TPE",
         "detection_method": "header"
       }
     },
@@ -482,7 +461,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "gw.stape.ws",
-        "ip": "172.67.180.44",
+        "ip": "104.21.51.120",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -496,8 +475,8 @@
         "detection_method": "laces",
         "laces": {
           "source": "laces api (direct)",
-          "queried_ip": "172.67.180.44",
-          "prefix": "172.67.180.0/24",
+          "queried_ip": "104.21.51.120",
+          "prefix": "104.21.51.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
@@ -507,8 +486,8 @@
           "date": "2026-07-17",
           "has_tw": true,
           "has_taipei": true,
-          "site_count": 58,
-          "location_count": 58,
+          "site_count": 56,
+          "location_count": 56,
           "tw_locations": [
             {
               "city": "Taipei",
@@ -520,11 +499,11 @@
       }
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?rcb=19&frm=0&auid=1691702576.1784561407&dt=%E7%BE%85%E6%8A%80%20Logi%20%E7%B6%B2%E8%B7%AF%E6%97%97%E8%89%A6%E5%BA%97&en=page_view&dl=https%3A%2F%2Fstore.logitech.tw%2F&scrsrc=www.googletagmanager.com&rnd=1638752497.1784561407&navt=n&npa=0&did=dN2ZkMj%2CdNTU0Yz%2CdYmNjMT&gdid=dN2ZkMj.dNTU0Yz.dYmNjMT&_tu=AAI&gtm=45be67f0v871433187za200zd871433187xec&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938469~118897920~118897930~119527019~119896802&apve=1&apvf=f&apvc=1&tids=AW-603686455~AW-11098433868&tid=AW-603686455&tft=1784561407154&tfd=2082&fmt=8",
+      "originalUrl": "https://www.google.com/ccm/collect?rcb=4&frm=0&auid=721774633.1784584512&dt=%E7%BE%85%E6%8A%80%20Logi%20%E7%B6%B2%E8%B7%AF%E6%97%97%E8%89%A6%E5%BA%97&en=page_view&dl=https%3A%2F%2Fstore.logitech.tw%2F&scrsrc=www.googletagmanager.com&rnd=990312726.1784584512&navt=n&npa=0&did=dN2ZkMj%2CdNTU0Yz%2CdYmNjMT&gdid=dN2ZkMj.dNTU0Yz.dYmNjMT&_tu=AAI&gtm=45be67g0v871433187za200zd871433187xec&gcs=G111&gcd=13t3t3t3t5l1&dma=0&tag_exp=115938465~115938469~118395334~118897920~118897930~118981136~119724321~119896802&apve=1&apvf=f&apvc=1&tids=AW-603686455~AW-11098433868&tid=AW-603686455&tft=1784584511908&tfd=2612&fmt=8",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.251.151.119",
+        "ip": "142.251.152.119",
         "city": "Mountain View",
         "region": "California",
         "country": "US",
@@ -535,12 +514,12 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 5.671,
+        "rtt": 8.099,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "142.251.151.119",
-          "prefix": "142.251.151.0/24",
+          "queried_ip": "142.251.152.119",
+          "prefix": "142.251.152.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
@@ -556,12 +535,67 @@
       }
     },
     {
-      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/11098433868/?random=1784561407311&cv=11&fst=1784559600000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67f0v871433187za200zd871433187xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118897920~118897930&u_w=1352&u_h=878&url=https%3A%2F%2Fstore.logitech.tw%2Fweb-pixels%406392291bw48edd0b4p524860cam091f7eea%2Fcustom%2Fweb-pixel-17137687%401%2Fsandbox%2Fmodern%2F&rcb=6&frm=2&tiba=%E7%BE%85%E6%8A%80%20Logi%20%E7%B6%B2%E8%B7%AF%E6%97%97%E8%89%A6%E5%BA%97&did=dMDg0Yz&gdid=dMDg0Yz&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1601004000.1784561407&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS7AEAEQoqgVTMmMf6tHY9KNy08o5cz_KrcgneijJeVLjl8GQO9xj5tlv9BOx5BYP16FqwG55fks6JQmqJ9sb5_yGTSNHTNacQ93n804YVW7trqCfUcw0oa5IUvY4xlUn1oLE88P_lXh17wIR1fa2hTkd38QMeoDWzIWfsQbit0NjcSJTckqLWgUnTcNvT_QaAuxGT9ZQ4te3EaOKBEfN_WYrZi5fPS_u3wTn0C0YQVSWfVphrWa2wBrOow-VYNwpbe3yH82C47Pqc_3bovIFHTy7TT2YA0ya9bu2I5GtmP4Q1SyZHhjt694jytnQWmQ&random=1663431180&rmt_tld=1&ipr=y",
+      "originalUrl": "https://logitech-tw.myshopify.com/api/2026-04/graphql.json",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "logitech-tw.myshopify.com",
+        "ip": "23.227.38.74",
+        "hostname": "shops.myshopify.com",
+        "city": "Ottawa",
+        "region": "Ontario",
+        "country": "CA",
+        "loc": "45.4166,-75.6904",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Toronto"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e53573eb318f07-TPE",
+        "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://api.easychat.co/restapi/v1/login/anonymous",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "api.easychat.co",
+        "ip": "47.131.203.127",
+        "hostname": "ec2-47-131-203-127.ap-southeast-1.compute.amazonaws.com",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": null,
+        "detection_method": "rtt",
+        "rtt_error": "timeout",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "47.131.203.127",
+          "prefix": "47.131.203.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/11098433868/?random=1784584512267&cv=11&fst=1784581200000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67h1v871433187za200zd871433187xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938469~118395334~118897920~118897930~118981135~119527019&u_w=1352&u_h=878&url=https%3A%2F%2Fstore.logitech.tw%2Fweb-pixels%406392291bw48edd0b4p524860cam091f7eea%2Fcustom%2Fweb-pixel-17137687%401%2Fsandbox%2Fmodern%2F&rcb=4&frm=2&tiba=%E7%BE%85%E6%8A%80%20Logi%20%E7%B6%B2%E8%B7%AF%E6%97%97%E8%89%A6%E5%BA%97&did=dMDg0Yz&gdid=dMDg0Yz&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1095615793.1784584512&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS7AEAEQoqgVF9dTpx2BrKsxpd5oNF6Nj9yIaPRUZ7LnjbxW6pivAZauC4nD2nzsQ1ZSlbwK-D0BBeAOMJXXjxP0TJM2LcbUIkJQxD_2dAEphSLwTSHIdRWWaV4M8GGHoyEt-iCkslHEcHe-3CpEvZuCmTjIb6dwYj30WVMLBtoKMIs2iyZvJTx1S1WTgBvYlgiOHPLkcVbOIvw-okAW_W4H6CQopy-sbrcYFK-uOXEP4Mshly9IlowWT0q8TgiORF5mcjoAq4JFEJ23ShvjcxnR-iiaYjzMEWPW2dwHcnhs_D0Q1yvfX9VLcFH1S4Nw&random=3279387901&rmt_tld=1&ipr=y",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.198.67",
-        "hostname": "lctsaa-ab-in-f3.1e100.net",
+        "ip": "142.250.204.35",
+        "hostname": "hkg07s38-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -588,40 +622,6 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://api.easychat.co/restapi/v1/login/anonymous",
-      "type": "xhr",
-      "ipinfo": {
-        "domain": "api.easychat.co",
-        "ip": "122.248.211.200",
-        "hostname": "ec2-122-248-211-200.ap-southeast-1.compute.amazonaws.com",
-        "city": "Singapore",
-        "region": "Singapore",
-        "country": "SG",
-        "loc": "1.2897,103.8501",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Singapore"
-      },
-      "category": "foreign/cloud",
-      "cloud_provider": {
-        "rtt": null,
-        "detection_method": "rtt",
-        "rtt_error": "timeout",
-        "laces": {
-          "source": "laces api (cached)",
-          "queried_ip": "122.248.211.200",
-          "prefix": "122.248.211.0/24",
-          "anycast": false,
-          "confidence": "not_detected",
-          "asns": [],
-          "date": "2026-07-17",
-          "has_tw": false,
-          "has_taipei": false,
-          "site_count": 0,
-          "location_count": 0
-        }
-      }
-    },
-    {
       "originalUrl": "https://a.klaviyo.com/forms/api/v3/geo-ip",
       "type": "xhr",
       "ipinfo": {
@@ -637,8 +637,42 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e301606c7b844e-TPE",
+        "cf-ray": "a1e53576be8a4a8a-TPE",
         "detection_method": "header"
+      }
+    },
+    {
+      "originalUrl": "https://track.omnichat.ai/restapi/v1/pixel/track?ecid=f63e3130-1eef-4fa9-aaf4-2bed8cb84ccb&sid=37676&p=Custom&t=%E7%BE%85%E6%8A%80%20logi%20%E7%B6%B2%E8%B7%AF%E6%97%97%E8%89%A6%E5%BA%97&bh=pageview&v=1.0&dl=https%3A%2F%2Fstore.logitech.tw%2F&dv=web_desktop&ssid=4yh39i6r-mrtrjiyt.1784584512965.1784584512965",
+      "type": "image",
+      "ipinfo": {
+        "domain": "track.omnichat.ai",
+        "ip": "13.215.180.83",
+        "hostname": "ec2-13-215-180-83.ap-southeast-1.compute.amazonaws.com",
+        "city": "Singapore",
+        "region": "Singapore",
+        "country": "SG",
+        "loc": "1.2897,103.8501",
+        "org": "AS16509 Amazon.com, Inc.",
+        "timezone": "Asia/Singapore"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": null,
+        "detection_method": "rtt",
+        "rtt_error": "timeout",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "13.215.180.83",
+          "prefix": "13.215.180.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
       }
     },
     {
@@ -646,7 +680,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "countdown.conversionbear.com",
-        "ip": "104.18.38.76",
+        "ip": "172.64.149.180",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -660,8 +694,8 @@
         "detection_method": "laces",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "104.18.38.76",
-          "prefix": "104.18.38.0/24",
+          "queried_ip": "172.64.149.180",
+          "prefix": "172.64.149.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
@@ -671,8 +705,8 @@
           "date": "2026-07-17",
           "has_tw": true,
           "has_taipei": true,
-          "site_count": 73,
-          "location_count": 73,
+          "site_count": 70,
+          "location_count": 70,
           "tw_locations": [
             {
               "city": "Taipei",
@@ -688,8 +722,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "cdn.wishpond.net",
-        "ip": "54.192.248.14",
-        "hostname": "server-54-192-248-14.tpe53.r.cloudfront.net",
+        "ip": "54.192.248.64",
+        "hostname": "server-54-192-248-64.tpe53.r.cloudfront.net",
         "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
@@ -704,8 +738,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "cdn.hextom.com",
-        "ip": "54.192.248.98",
-        "hostname": "server-54-192-248-98.tpe53.r.cloudfront.net",
+        "ip": "54.192.248.10",
+        "hostname": "server-54-192-248-10.tpe53.r.cloudfront.net",
         "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",

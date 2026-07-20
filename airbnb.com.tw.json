@@ -2,7 +2,7 @@
   "url": "https://airbnb.com.tw",
   "canonicalURL": "https://www.airbnb.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T13:38:40.615Z",
+  "timestamp": "2026-07-20T19:59:02.263Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,12 +25,12 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 176,
-  "uniqueDomains": 8,
+  "requestCount": 102,
+  "uniqueDomains": 4,
   "test_results": {
     "domestic": {
-      "cloud": 6,
-      "direct": 2
+      "cloud": 1,
+      "direct": 3
     },
     "foreign": {
       "cloud": 0,
@@ -43,7 +43,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "airbnb.com.tw",
-        "ip": "166.117.189.176",
+        "ip": "166.117.27.62",
         "hostname": "a333dda39e3b496ea.awsglobalaccelerator.com",
         "city": "Seattle",
         "region": "Washington",
@@ -58,8 +58,8 @@
         "detection_method": "laces",
         "laces": {
           "source": "laces api (direct)",
-          "queried_ip": "166.117.189.176",
-          "prefix": "166.117.189.0/24",
+          "queried_ip": "166.117.27.62",
+          "prefix": "166.117.27.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
@@ -69,8 +69,8 @@
           "date": "2026-07-17",
           "has_tw": true,
           "has_taipei": true,
-          "site_count": 59,
-          "location_count": 59,
+          "site_count": 58,
+          "location_count": 58,
           "tw_locations": [
             {
               "city": "Taipei",
@@ -86,23 +86,22 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.airbnb.com.tw",
-        "ip": "203.69.138.10",
-        "hostname": "203-69-138-10.hinet-ip.hinet.net",
+        "ip": "210.71.227.211",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
         "loc": "25.0531,121.5264",
-        "org": "AS20940 Akamai International B.V.",
+        "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_W_Wght.8816d9e5c3b6a860636193e36b6ac4e4.woff2",
       "type": "font",
       "ipinfo": {
         "domain": "a0.muscache.com",
-        "ip": "210.71.227.161",
+        "ip": "210.71.227.144",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -117,97 +116,12 @@
       "type": "script",
       "ipinfo": {
         "domain": "d0a7e.airbnb.com",
-        "ip": "203.69.138.48",
-        "hostname": "203-69-138-48.hinet-ip.hinet.net",
+        "ip": "210.71.227.216",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
         "loc": "25.0531,121.5264",
-        "org": "AS20940 Akamai International B.V.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.google.com/ccm/geo",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.251.153.119",
-        "city": "Mountain View",
-        "region": "California",
-        "country": "US",
-        "loc": "38.0088,-122.1175",
-        "org": "AS15169 Google LLC",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "rtt": 5.879,
-        "detection_method": "rtt",
-        "laces": {
-          "source": "laces api (cached)",
-          "queried_ip": "142.251.153.119",
-          "prefix": "142.251.153.0/24",
-          "anycast": true,
-          "confidence": "confident",
-          "partial": false,
-          "asns": [
-            15169
-          ],
-          "date": "2026-07-17",
-          "has_tw": false,
-          "has_taipei": false,
-          "site_count": 62,
-          "location_count": 62
-        }
-      }
-    },
-    {
-      "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-46MK&gtg_health=1",
-      "type": "script",
-      "ipinfo": {
-        "domain": "www.googletagmanager.com",
-        "ip": "142.250.192.136",
-        "hostname": "bom12s18-in-f8.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://ct.pinterest.com/v3/?tid=2614425740829&event=PageVisit&ed[product_category]=ENTER+DATA+VALUE&ed[product_price]=ENTER+DATA+VALUE&pd[em]=&noscript=1&gtmcb=301189385",
-      "type": "image",
-      "ipinfo": {
-        "domain": "ct.pinterest.com",
-        "ip": "104.116.16.231",
-        "hostname": "a104-116-16-231.deploy.static.akamaitechnologies.com",
-        "city": "Yuanlin",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "23.9567,120.5761",
-        "org": "AS16625 Akamai Technologies, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.facebook.com/tr?id=674478425975295&ev=PageView&dl=https%3A%2F%2Fwww.airbnb.com.tw%2F&rl=&eid=57bf752c-a0ae-4fbc-83a0-88f081429bfe&ud[external_id]=1784554717_EAMmIwMzg0ZmM5Y2&fbc=undefined&ud[em]=&ud[ph]=&ud[fn]=&ud[ln]=&ud[db]=&ud[ge]=&ud[ct]=&ud[st]=&ud[cn]=&dpo=&noscript=1&gtmcb=1818405251",
-      "type": "image",
-      "ipinfo": {
-        "domain": "www.facebook.com",
-        "ip": "31.13.87.36",
-        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS32934 Facebook, Inc.",
+        "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"

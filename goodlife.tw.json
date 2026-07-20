@@ -2,7 +2,7 @@
   "url": "https://goodlife.tw",
   "canonicalURL": "https://goodlife.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T14:33:32.335Z",
+  "timestamp": "2026-07-20T20:56:37.409Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,12 +25,12 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 72,
-  "uniqueDomains": 7,
+  "requestCount": 75,
+  "uniqueDomains": 9,
   "test_results": {
     "domestic": {
-      "cloud": 6,
-      "direct": 0
+      "cloud": 7,
+      "direct": 1
     },
     "foreign": {
       "cloud": 0,
@@ -43,7 +43,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "goodlife.tw",
-        "ip": "172.67.71.126",
+        "ip": "104.26.0.167",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -54,7 +54,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e2ae701a558f1e-TPE",
+        "cf-ray": "a1e4df9579bd074c-TPE",
         "detection_method": "header"
       }
     },
@@ -63,7 +63,7 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "assets.goodlife.tw",
-        "ip": "104.26.1.167",
+        "ip": "104.26.0.167",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -74,7 +74,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e2ae71ac628f1e-TPE",
+        "cf-ray": "a1e4df974a24074c-TPE",
         "detection_method": "header"
       }
     },
@@ -83,12 +83,12 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "108.177.125.95",
-        "hostname": "tp-in-f95.1e100.net",
-        "city": "Taichung",
-        "region": "Taiwan",
+        "ip": "142.250.196.202",
+        "hostname": "nctsaa-ac-in-f10.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
         "country": "TW",
-        "loc": "24.1469,120.6839",
+        "loc": "25.0143,121.4672",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
@@ -99,8 +99,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "maps.google.com",
-        "ip": "142.250.77.14",
-        "hostname": "nctsaa-ab-in-f14.1e100.net",
+        "ip": "142.250.198.78",
+        "hostname": "lctsaa-ab-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -148,6 +148,58 @@
       "ipinfo": {
         "domain": "d31qbv1cthcecs.cloudfront.net"
       }
+    },
+    {
+      "originalUrl": "https://maps.googleapis.com/maps/api/mapsjs/gen_204?csp_test=true",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "maps.googleapis.com",
+        "ip": "172.217.119.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.608,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "172.217.119.4",
+          "prefix": "172.217.119.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
+    },
+    {
+      "originalUrl": "https://connect.facebook.net/zh_TW/sdk.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "connect.facebook.net",
+        "ip": "31.13.87.5",
+        "hostname": "xx-fbcdn-shv-01-tpe1.fbcdn.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
     }
   ]
 }

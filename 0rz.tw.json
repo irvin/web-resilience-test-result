@@ -2,7 +2,7 @@
   "url": "https://0rz.tw",
   "canonicalURL": "https://0rz.tw",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T13:40:37.326Z",
+  "timestamp": "2026-07-20T20:01:15.917Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 5,
-  "uniqueDomains": 3,
+  "requestCount": 8,
+  "uniqueDomains": 5,
   "test_results": {
     "domestic": {
       "cloud": 1,
       "direct": 0
     },
     "foreign": {
-      "cloud": 2,
+      "cloud": 3,
       "direct": 0
     }
   },
@@ -70,6 +70,40 @@
       "category": "domestic/cloud"
     },
     {
+      "originalUrl": "https://berht-shv.com/zokvisitor/bbe0fbc0-8475-11f1-8677-122cf6fd7177/85aefdc2-9ed0-48aa-922d-60f9f9fc0f2d?campaignid=bbfd0f41-8475-11f1-8677-122cf6fd7177",
+      "type": "document",
+      "ipinfo": {
+        "domain": "berht-shv.com",
+        "ip": "100.28.160.237",
+        "hostname": "ec2-100-28-160-237.compute-1.amazonaws.com",
+        "city": "Ashburn",
+        "region": "Virginia",
+        "country": "US",
+        "loc": "39.0437,-77.4875",
+        "org": "AS14618 Amazon.com, Inc.",
+        "timezone": "America/New_York"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": null,
+        "detection_method": "rtt",
+        "rtt_error": "timeout",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "100.28.160.237",
+          "prefix": "100.28.160.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
+    },
+    {
       "originalUrl": "https://obseu.northwavepoint.com/ct",
       "type": "xhr",
       "ipinfo": {
@@ -89,7 +123,7 @@
         "detection_method": "rtt",
         "rtt_error": "timeout",
         "laces": {
-          "source": "laces api (direct)",
+          "source": "laces api (cached)",
           "queried_ip": "34.251.101.162",
           "prefix": "34.251.101.0/24",
           "anycast": false,
@@ -101,6 +135,13 @@
           "site_count": 0,
           "location_count": 0
         }
+      }
+    },
+    {
+      "originalUrl": "http://ravin-obu.com/",
+      "type": "document",
+      "ipinfo": {
+        "domain": "ravin-obu.com"
       }
     }
   ]

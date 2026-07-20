@@ -2,7 +2,7 @@
   "url": "https://lunio.com.tw",
   "canonicalURL": "https://lunio.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T14:55:13.287Z",
+  "timestamp": "2026-07-20T21:20:43.672Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 110,
-  "uniqueDomains": 7,
+  "requestCount": 117,
+  "uniqueDomains": 10,
   "test_results": {
     "domestic": {
       "cloud": 7,
-      "direct": 0
+      "direct": 2
     },
     "foreign": {
-      "cloud": 0,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -54,37 +54,59 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e2ce250fe4b856-TPE",
+        "cf-ray": "a1e502695dbffac4-TPE",
         "detection_method": "header"
       }
     },
     {
-      "originalUrl": "https://cms.lunio.com.tw/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css",
-      "type": "stylesheet",
+      "originalUrl": "https://www.lunio.com.tw/",
+      "type": "document",
       "ipinfo": {
-        "domain": "cms.lunio.com.tw",
-        "ip": "104.26.3.214",
-        "city": "San Francisco",
+        "domain": "www.lunio.com.tw",
+        "ip": "76.76.21.21",
+        "city": "Walnut",
         "region": "California",
         "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
+        "loc": "34.0203,-117.8653",
+        "org": "AS16509 Amazon.com, Inc.",
         "timezone": "America/Los_Angeles"
       },
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e2ce2579f3b856-TPE",
-        "detection_method": "header"
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "76.76.21.21",
+          "prefix": "76.76.21.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            16509
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 56,
+          "location_count": 56,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
-      "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-MM84H3V&gtg_health=1",
+      "originalUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-MM84H3V",
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.77.200",
+        "hostname": "del11s08-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -93,6 +115,22 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "connect.facebook.net",
+        "ip": "31.13.87.5",
+        "hostname": "xx-fbcdn-shv-01-tpe1.fbcdn.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://unpkg.com/web-vitals@3.0.1/dist/web-vitals.iife.js",
@@ -110,17 +148,67 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e2ce26bf2c8469-TPE",
+        "cf-ray": "a1e50285abf24a9c-TPE",
         "detection_method": "header"
       }
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-HFVV7LX5EY&cid=1347399824.1784559310&gtm=45g92e67g0h2v885181454z8812496579za20kzb812496579zd812496579&rcb=6&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115616986~115938465~115938468~118897920~118897930~119724322&z=934083717",
+      "originalUrl": "https://e1-0850197d5e074be58352ddc860645af6.ecs.us-east-1.on.aws/events?cee=no",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "e1-0850197d5e074be58352ddc860645af6.ecs.us-east-1.on.aws",
+        "ip": "100.60.38.132",
+        "hostname": "ec2-100-60-38-132.compute-1.amazonaws.com",
+        "city": "Ashburn",
+        "region": "Virginia",
+        "country": "US",
+        "loc": "39.0437,-77.4875",
+        "org": "AS14618 Amazon.com, Inc.",
+        "timezone": "America/New_York"
+      },
+      "category": "foreign/cloud",
+      "cloud_provider": {
+        "rtt": null,
+        "detection_method": "rtt",
+        "rtt_error": "timeout",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "100.60.38.132",
+          "prefix": "100.60.38.0/24",
+          "anycast": false,
+          "confidence": "not_detected",
+          "asns": [],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 0,
+          "location_count": 0
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.facebook.com/tr/?id=2225087634255571&ev=PageView&dl=https%3A%2F%2Fwww.lunio.com.tw%2F&rl=&if=false&ts=1784582426225&iw=false&sw=1280&sh=720&v=2.9.358&r=stable&ec=0&o=4126&aems=0%3B0&fbp=fb.2.1784582426223.885712353264567876&eid=ob3_plugin-set_62127cc1a00e149186ffc3218fff2907e757f4440ef0a5f362a9e235ab1a66e9&ler=empty&cdl=API_unavailable&pmd[title]=%E4%B9%B3%E8%86%A0%E5%BA%8A%E5%A2%8A%E9%A6%96%E9%81%B8Lunio%EF%BD%9C%E7%82%BA%E4%BA%86%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%9D%A1%E7%9C%A0%E5%93%81%E8%B3%AA&pmd[locale]=zh-TW&pmd[description]=Lunio%20%E2%80%94%20%E5%8F%B0%E7%81%A3%E9%A0%82%E7%B4%9A%E5%A4%A9%E7%84%B6%E4%B9%B3%E8%86%A0%E5%BA%8A%E5%A2%8A%E5%93%81%E7%89%8C%E3%80%82%E7%9F%B3%E5%A2%A8%E7%83%AF%E6%8A%80%E8%A1%93%E3%80%81%E9%AA%A8%E7%A7%91%E9%86%AB%E5%B8%AB%E5%90%88%E4%BD%9C%E7%A0%94%E7%99%BC%E3%80%82%E6%8F%90%E5%8D%87%E6%B7%B1%E5%B1%A4%E7%9D%A1%E7%9C%A030%25%EF%BC%8C%E5%85%A8%E5%8F%B0%E5%85%8D%E8%B2%BB%E9%85%8D%E9%80%81%E5%AE%89%E8%A3%9D%E3%80%82&pmd[keywords]=%E5%BA%8A%E5%A2%8A%2C%E4%B9%B3%E8%86%A0%E5%BA%8A%E5%A2%8A%2C%E7%9F%B3%E5%A2%A8%E7%83%AF%E5%BA%8A%E5%A2%8A%2C%E6%9E%95%E9%A0%AD%2C%E5%AF%A2%E5%85%B7%2CLunio%2C%E7%9D%A1%E7%9C%A0%2C%E5%A4%A9%E7%84%B6%E4%B9%B3%E8%86%A0%2C%E7%8D%A8%E7%AB%8B%E7%AD%92%2C%E5%8F%B0%E7%81%A3%E5%BA%8A%E5%A2%8A&plt=4005.199999999255&imft=1&tz=480&it=1784582425887&coo=false&cf=1&expv2[0]=pl0&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=ct2&expv2[6]=hf0&rqm=GET",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-HFVV7LX5EY&cid=1292408213.1784582426&gtm=45je67g0v885181454z8812496579za20gzb812496579zd812496579&rcb=12&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115616985~115938465~115938468~118395333~118897920~118897930~119773331&z=548997645",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.192.131",
-        "hostname": "bom12s18-in-f3.1e100.net",
+        "ip": "142.250.204.35",
+        "hostname": "hkg07s38-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -135,23 +223,23 @@
       "type": "script",
       "ipinfo": {
         "domain": "d.line-scdn.net",
-        "ip": "184.25.121.253",
-        "hostname": "a184-25-121-253.deploy.static.akamaitechnologies.com",
-        "city": "Yuanlin",
+        "ip": "23.39.61.163",
+        "hostname": "a23-39-61-163.deploy.static.akamaitechnologies.com",
+        "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "23.9567,120.5761",
+        "loc": "25.0531,121.5264",
         "org": "AS16625 Akamai Technologies, Inc.",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?rcb=12&frm=0&apvc=1&ae=g&auid=1123236942.1784559312&dt=%E4%B9%B3%E8%86%A0%E5%BA%8A%E5%A2%8A%E9%A6%96%E9%81%B8Lunio%EF%BD%9C%E7%82%BA%E4%BA%86%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%9D%A1%E7%9C%A0%E5%93%81%E8%B3%AA&en=page_view&dl=https%3A%2F%2Flunio.com.tw%2F&scrsrc=lunio.com.tw&rnd=993169495.1784559312&navt=n&npa=0&ep.ads_data_redaction=0&gdid=dYzg1YT.dNzQzZD&gcd=13l3l3l3l1l1&tft=1784559312097&tfd=2984&gtm=45E92e67g0h2v812496579za204zd812496579xea&dma=0&tag_exp=115938465~115938468~118897920~118897930~119381664~119724322~119773332&apve=1&apvf=f&gap.gtb=2&fmt=8",
+      "originalUrl": "https://www.google.com/ccm/collect?rcb=6&frm=0&ae=g&auid=1901286448.1784582433&dt=%E4%B9%B3%E8%86%A0%E5%BA%8A%E5%A2%8A%E9%A6%96%E9%81%B8Lunio%EF%BD%9C%E7%82%BA%E4%BA%86%E6%9B%B4%E5%A5%BD%E7%9A%84%E7%9D%A1%E7%9C%A0%E5%93%81%E8%B3%AA&en=page_view&dl=https%3A%2F%2Fwww.lunio.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=1781476707.1784582433&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He67g0v812496579za200zd812496579xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~118897920~118897930&apve=1&apvf=f&apvc=1&tft=1784582433100&tfd=11842&fmt=8",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
-        "ip": "142.251.156.119",
+        "ip": "142.251.153.119",
         "city": "Mountain View",
         "region": "California",
         "country": "US",
@@ -162,12 +250,12 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 5.778,
+        "rtt": 5.808,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "142.251.156.119",
-          "prefix": "142.251.156.0/24",
+          "queried_ip": "142.251.153.119",
+          "prefix": "142.251.153.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
@@ -177,8 +265,8 @@
           "date": "2026-07-17",
           "has_tw": false,
           "has_taipei": false,
-          "site_count": 61,
-          "location_count": 61
+          "site_count": 62,
+          "location_count": 62
         }
       }
     }

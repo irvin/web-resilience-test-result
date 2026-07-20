@@ -2,7 +2,7 @@
   "url": "https://www.ffxiv.com.tw/",
   "canonicalURL": "https://www.ffxiv.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T13:32:54.324Z",
+  "timestamp": "2026-07-20T19:52:00.068Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 256,
+  "requestCount": 263,
   "uniqueDomains": 15,
   "test_results": {
     "domestic": {
-      "cloud": 11,
+      "cloud": 12,
       "direct": 3
     },
     "foreign": {
-      "cloud": 1,
+      "cloud": 0,
       "direct": 0
     }
   },
@@ -55,10 +55,10 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 9.668,
+        "rtt": 6.669,
         "detection_method": "rtt",
         "laces": {
-          "source": "laces api (direct)",
+          "source": "laces api (cached)",
           "queried_ip": "34.117.143.215",
           "prefix": "34.117.143.0/24",
           "anycast": true,
@@ -80,12 +80,12 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.251.170.95",
-        "hostname": "tc-in-f95.1e100.net",
-        "city": "Taichung",
-        "region": "Taiwan",
+        "ip": "142.250.204.42",
+        "hostname": "hkg07s38-in-f10.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
         "country": "TW",
-        "loc": "24.1469,120.6839",
+        "loc": "25.0143,121.4672",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
@@ -96,34 +96,41 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "151.101.193.229",
+        "ip": "104.17.207.5",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
         "loc": "37.7621,-122.3971",
-        "org": "AS54113 Fastly, Inc.",
+        "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "x-served-by": "cache-fra-eddf8230180-FRA, cache-sin-wsss1830090-SIN",
-        "rtt": 43.186,
-        "detection_method": "rtt",
+        "x-served-by": "cache-fra-eddf8230180-FRA, cache-nrt-rjtf7700051-NRT",
+        "country": "tw",
+        "detection_method": "laces",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "151.101.193.229",
-          "prefix": "151.101.193.0/24",
+          "queried_ip": "104.17.207.5",
+          "prefix": "104.17.207.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
           "asns": [
-            54113
+            13335
           ],
           "date": "2026-07-17",
-          "has_tw": false,
-          "has_taipei": false,
-          "site_count": 54,
-          "location_count": 54
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 76,
+          "location_count": 76,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
         }
       }
     },
@@ -132,8 +139,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.66.72",
+        "hostname": "hkg12s27-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -164,8 +171,8 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.youtube-nocookie.com",
-        "ip": "142.250.66.78",
-        "hostname": "hkg12s27-in-f14.1e100.net",
+        "ip": "142.250.204.46",
+        "hostname": "hkg07s38-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -180,7 +187,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.youtube.com",
-        "ip": "142.251.156.4",
+        "ip": "142.251.157.4",
         "city": "Mountain View",
         "region": "California",
         "country": "US",
@@ -191,12 +198,12 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 9.725,
+        "rtt": 6.284,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "142.251.156.4",
-          "prefix": "142.251.156.0/24",
+          "queried_ip": "142.251.157.4",
+          "prefix": "142.251.157.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
@@ -212,59 +219,7 @@
       }
     },
     {
-      "originalUrl": "https://www.google.com/rmkt/collect/17104740049/?random=1784554366188&cv=11&fst=1784554366188&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67f0v9220946643za200zb9222778267zd9222778267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118131808~118897920~118897930~119317811~119709549&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.ffxiv.com.tw%2Fpr%2F&ref=https%3A%2F%2Fwww.ffxiv.com.tw%2F&rcb=19&frm=0&tiba=FINAL%20FANTASY%20XIV%20%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87%E7%89%88%E5%AE%98%E6%96%B9%E7%B6%B2%E7%AB%99&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=5678841.1784554366&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.251.153.119",
-        "city": "Mountain View",
-        "region": "California",
-        "country": "US",
-        "loc": "38.0088,-122.1175",
-        "org": "AS15169 Google LLC",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "rtt": 8.042,
-        "detection_method": "rtt",
-        "laces": {
-          "source": "laces api (cached)",
-          "queried_ip": "142.251.153.119",
-          "prefix": "142.251.153.0/24",
-          "anycast": true,
-          "confidence": "confident",
-          "partial": false,
-          "asns": [
-            15169
-          ],
-          "date": "2026-07-17",
-          "has_tw": false,
-          "has_taipei": false,
-          "site_count": 62,
-          "location_count": 62
-        }
-      }
-    },
-    {
-      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/17104740049/?random=1784554366188&cv=11&fst=1784552400000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67f0v9220946643za200zb9222778267zd9222778267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118131808~118897920~118897930~119317811~119709549&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.ffxiv.com.tw%2Fpr%2F&ref=https%3A%2F%2Fwww.ffxiv.com.tw%2F&rcb=19&frm=0&tiba=FINAL%20FANTASY%20XIV%20%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87%E7%89%88%E5%AE%98%E6%96%B9%E7%B6%B2%E7%AB%99&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=5678841.1784554366&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS7AEAEQoqgWC3r040javE9T7lYedxIa_uKSceHxs6CaMRxxkV-jIgm_zl2Sb1lgP57yiPQw4VFSi8EpkosSDW0rJUVJobJNHR-lwL570ekt6GHukok_UXivTcf8t4MujPUcd8c5QCrgfr-FGd9tVCgZiv6_f3wB5R1JIoxauRXlwtE1aEaZD7urKfmBzoGfZyZMafcZrfsXKrUL1C9JQWAFaqQi0XX3iKCeZ8hn8eRTGFkf3K2ZX58HiaPtJmW3ULHy-4zyX3rN6CY7gmjlhLSrgF-ejmgyRpI1YOoPS1IGfNIierdLc5PVy4p2gohA&random=3512691341&rmt_tld=1&ipr=y",
-      "type": "image",
-      "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.204.35",
-        "hostname": "hkg07s38-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://rr2---sn-ipoxu-un5r.googlevideo.com/videoplayback?expire=1784575967&ei=fyNeaoI-w9qm3w-k_p-xDA&ip=2001%3Ab011%3A3802%3A7be8%3Af17b%3Aef25%3A8516%3A8cfa&id=o-AM4gn04IgyLEDc9PbD6DaRptJQzwGSSdH2wvcnJWWCap&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=235&met=1784554367%2C&mh=w5&mm=31%2C29&mn=sn-ipoxu-un5r%2Csn-ajun55-54&ms=au%2Crdu&mv=m&mvi=2&pl=52&rms=au%2Cau&initcwndbps=2762500&spc=SQ-umnlw8DhUuWLbraruk351J276osgpnYVz6HeOf5mLWlrrHLx6blno6CFER9e4LWontQ&svpuc=1&ns=kseAZPgTawV4VgOtF9I06rAW&sabr=1&rqh=1&mt=1784553916&fvip=4&keepalive=yes&fexp=51565116&c=WEB_EMBEDDED_PLAYER&n=2B0VDhr9_eZNQA&sparams=expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Cspc%2Csvpuc%2Cns%2Csabr%2Crqh&sig=AE0s2JYwRAIgThkxJjtrOUrVRdwhyhVXb7vb_W9tEo8KiPDxzvIKUZsCICYH-n_zdbVUiMo81E58wDYFKsIUDZiAI_rXekg-96dJ&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRgIhAJG8I9P_xDL0nFvlAgAsNdaVXapAlBot1hSr4edjqhB0AiEA7xmg_rQqlujyNDwsb123tN1tyKAyUBEBQXOb_m1GPL4%3D&cpn=hs5y_YWg5fIbcBKr&cver=2.20260717.01.00&rn=1&alr=yes",
+      "originalUrl": "https://rr2---sn-ipoxu-un5r.googlevideo.com/videoplayback?expire=1784598713&ei=WXxeatfYJbSRpt8PoJD78AE&ip=2001%3Ab011%3A3802%3A52d7%3Aced%3Aab09%3A4293%3Ae75c&id=o-AJM4tmvLKbuBsXCH494RmcNNe4ujI0izB8u9GqIfE9Ma&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=152&met=1784577113%2C&mh=w5&mm=31%2C29&mn=sn-ipoxu-un5r%2Csn-un57snee&ms=au%2Crdu&mv=m&mvi=2&pl=52&rms=au%2Cau&initcwndbps=2686250&spc=SQ-umhO296s6pQuK4PNESopNmEF1CaMjVApoFNSvgaR3YuQji9VEExcQeDU53sTEyahfUw&svpuc=1&ns=SG5Sqy9VYSox-Vv9LGrvABwW&sabr=1&rqh=1&mt=1784576754&fvip=4&keepalive=yes&fexp=51565116&c=WEB_EMBEDDED_PLAYER&n=_rZD9NVaKxfdWw&sparams=expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Cspc%2Csvpuc%2Cns%2Csabr%2Crqh&sig=AE0s2JYwRAIgJ-lSe32DrP6ozIM7WQ1KDpcfDnjeKVbLRlvzjkREJzICIH4X409_F_v0uxafgHhWsL-smA3EVghdEK1v-gJ1QOsc&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRgIhAOL-IEzLxolIMGTw339itwJNgUJA-XBX2nEoAJMvX97vAiEA-s6tcKxLvB768NjpTkxOoXJ_IlnnHvak6FPFwst23VM%3D&cpn=f3xlp08AuoBb_esg&cver=2.20260720.01.00&rn=1&alr=yes",
       "type": "fetch",
       "ipinfo": {
         "domain": "rr2---sn-ipoxu-un5r.googlevideo.com",
@@ -284,8 +239,8 @@
       "type": "image",
       "ipinfo": {
         "domain": "i.ytimg.com",
-        "ip": "142.250.77.22",
-        "hostname": "nctsaa-ab-in-f22.1e100.net",
+        "ip": "142.250.196.214",
+        "hostname": "nctsaa-ac-in-f22.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -296,7 +251,7 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://rr5---sn-ipoxu-un5r.googlevideo.com/videoplayback?expire=1784575967&ei=fyNeaovrDoytvcAPn-nqiAQ&ip=2001%3Ab011%3A3802%3A7be8%3Af17b%3Aef25%3A8516%3A8cfa&id=o-ALWGs-pMunqZLEI7aIIliFsQTv4X_sPQKKGhK4DPtl3m&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=319&met=1784554367%2C&mh=2O&mm=31%2C29&mn=sn-ipoxu-un5r%2Csn-oji3b5-5n&ms=au%2Crdu&mv=m&mvi=5&pl=52&rms=au%2Cau&initcwndbps=2796250&spc=SQ-ummN_Op3ikg9li8YfVI-HPxtX6x943eEQ4tHTS1TLGJ-HUpl7L4xVqxQI2p9o6jg8Ww&svpuc=1&ns=jDE1zJm7cvzKJahbXR3iPIAW&sabr=1&rqh=1&mt=1784554151&fvip=5&keepalive=yes&fexp=51565115&c=WEB_EMBEDDED_PLAYER&n=6iY_wa3FhuS5MQ&sparams=expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Cspc%2Csvpuc%2Cns%2Csabr%2Crqh&sig=AE0s2JYwRAIgOR4a0iFGnyfklAtXey5iZf1tH-74MyuYDYENkLC-AOgCIEn3Kd9josJThwcxBKOaOADAVAlKya381hHsQDPjyGjj&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIhAOXHXbtu_pkF-HHFdKmwbAiJ4REjkP0nWXNGlwf1ZfEJAiAT_TXFYumE03p9FPURaAB3skrdwZnD59bpvHwcwmeQWQ%3D%3D&cpn=p2G2dZXB8d4mnUvt&cver=2.20260717.01.00&rn=1&alr=yes",
+      "originalUrl": "https://rr5---sn-ipoxu-un5r.googlevideo.com/videoplayback?expire=1784598713&ei=WXxeasnvK72A2roPtaHz-Aw&ip=2001%3Ab011%3A3802%3A52d7%3Aced%3Aab09%3A4293%3Ae75c&id=o-ALunieAU9qOx5SFixRNhqNqUZlI7v4Jb7flULExrKX83&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=269&met=1784577113%2C&mh=2O&mm=31%2C29&mn=sn-ipoxu-un5r%2Csn-un57snee&ms=au%2Crdu&mv=m&mvi=5&pl=52&rms=au%2Cau&initcwndbps=2686250&spc=SQ-umhX-nIoXLIQStHCtPkBKbawXbBieoCleseicMUw74HiAaGkHBoimIGU7iidlHw93ag&svpuc=1&ns=jgx0eG222rCi3qv-KBs0k2EW&sabr=1&rqh=1&mt=1784576754&fvip=2&keepalive=yes&fexp=51565115&c=WEB_EMBEDDED_PLAYER&n=eJjtQffk5gSqOg&sparams=expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Cspc%2Csvpuc%2Cns%2Csabr%2Crqh&sig=AE0s2JYwRQIgUnWgSioipR2NcuACgG1HC6DjVObQJJtfCwnMaWvbej4CIQDIhY0ZiVMU1SqOMX5ZM3CIC9mK9i3ROU1xdJ5o0undKQ%3D%3D&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRAIgIMa2jVcs2Taitj2lEx9KJl1ZP5gP1amWdOLuKNAqbxQCIHKobG1icBstTy2ZybJb2Vp06cLixYIRWMFG4_J-PWOP&cpn=PHkfys1WFEILiNEG&cver=2.20260720.01.00&rn=1&alr=yes",
       "type": "fetch",
       "ipinfo": {
         "domain": "rr5---sn-ipoxu-un5r.googlevideo.com",
@@ -312,28 +267,12 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.gstatic.com/youtube/img/icons/mweb/youtube_fill/logo/v2/67px.svg",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "www.gstatic.com",
-        "ip": "142.250.77.195",
-        "hostname": "del11s08-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
       "originalUrl": "https://yt3.ggpht.com/ytc/AIdro_mpvw7KBfPTDJB251MRE3teLX023WHR99vPzyzBpxng1p3rXYCSnD2BNjwTT6fgXyBv1w=s68-c-k-c0x00ffffff-no-rj",
       "type": "image",
       "ipinfo": {
         "domain": "yt3.ggpht.com",
-        "ip": "142.250.198.65",
-        "hostname": "lctsaa-ab-in-f1.1e100.net",
+        "ip": "142.250.192.129",
+        "hostname": "bom12s18-in-f1.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -344,11 +283,27 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
-      "type": "xhr",
+      "originalUrl": "https://www.gstatic.com/youtube/img/icons/mweb/youtube_fill/logo/v2/67px.svg",
+      "type": "fetch",
       "ipinfo": {
-        "domain": "jnn-pa.googleapis.com",
-        "ip": "172.217.119.4",
+        "domain": "www.gstatic.com",
+        "ip": "142.250.192.131",
+        "hostname": "bom12s18-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com/rmkt/collect/17104740049/?random=1784577113282&cv=11&fst=1784577113282&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67g0v9220946643za200zb9222778267zd9222778267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118131809~118897920~118897930~119724322~119773332&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.ffxiv.com.tw%2Fpr%2F&ref=https%3A%2F%2Fwww.ffxiv.com.tw%2F&rcb=19&frm=0&tiba=FINAL%20FANTASY%20XIV%20%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87%E7%89%88%E5%AE%98%E6%96%B9%E7%B6%B2%E7%AB%99&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=539551030.1784577113&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.154.119",
         "city": "Mountain View",
         "region": "California",
         "country": "US",
@@ -359,12 +314,12 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 9.588,
+        "rtt": 7.486,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "172.217.119.4",
-          "prefix": "172.217.119.0/24",
+          "queried_ip": "142.251.154.119",
+          "prefix": "142.251.154.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
@@ -374,10 +329,62 @@
           "date": "2026-07-17",
           "has_tw": false,
           "has_taipei": false,
-          "site_count": 62,
-          "location_count": 62
+          "site_count": 60,
+          "location_count": 60
         }
       }
+    },
+    {
+      "originalUrl": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "jnn-pa.googleapis.com",
+        "ip": "172.217.116.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 7.394,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "172.217.116.4",
+          "prefix": "172.217.116.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/pagead/1p-user-list/17104740049/?random=1784577113282&cv=11&fst=1784574000000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be67g0v9220946643za200zb9222778267zd9222778267xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118131809~118897920~118897930~119724322~119773332&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.ffxiv.com.tw%2Fpr%2F&ref=https%3A%2F%2Fwww.ffxiv.com.tw%2F&rcb=19&frm=0&tiba=FINAL%20FANTASY%20XIV%20%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87%E7%89%88%E5%AE%98%E6%96%B9%E7%B6%B2%E7%AB%99&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=539551030.1784577113&uaa=x86&uab=64&uafvl=Chromium%3B143.0.7499.4%7CNot%2520A(Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS7AEAEQoqgaGNOvnSwPeAkn63Plh6nzSeYCsHQgmMAHNhUiP0FuuhbA4wNiztT9RCq6sUS3SvvVuLjtlsJQ1e9VEP9qIQjenei6bLFUdmf6wF-uMOfEpScnO2rJ9zOuQzPIiqQwc8dB6oZVRVMwpmmrZY7Gq6Hw8AR-9ivQSsq0rlpz_btA2e_sllTX2mqpnOohVgQXUHqbwmIuH5BFQBxbaBmPQwgK3orY0CQsyNj6bibem_IZiu0lgQ9CiB1UjpBLrllM_pyq2NHPmsCcZ0RY4g19hYxlOwJewOltmHbivmjSRK_AYagSkmq0TYkg&random=2465750224&rmt_tld=1&ipr=y",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.77.195",
+        "hostname": "del11s08-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
     }
   ]
 }

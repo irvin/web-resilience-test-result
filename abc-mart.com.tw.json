@@ -2,7 +2,7 @@
   "url": "https://abc-mart.com.tw",
   "canonicalURL": "https://abc-mart.com.tw",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T15:31:45.794Z",
+  "timestamp": "2026-07-20T21:56:34.924Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,12 +25,12 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 351,
-  "uniqueDomains": 25,
+  "requestCount": 349,
+  "uniqueDomains": 23,
   "test_results": {
     "domestic": {
-      "cloud": 21,
-      "direct": 4
+      "cloud": 20,
+      "direct": 3
     },
     "foreign": {
       "cloud": 0,
@@ -53,11 +53,11 @@
       },
       "category": "domestic/cloud",
       "cloud_provider": {
-        "cf-ray": "a1e303971c6bf8ff-SIN",
+        "cf-ray": "a1e537427d1cfdbf-SIN",
         "country": "tw",
         "detection_method": "laces",
         "laces": {
-          "source": "laces api (direct)",
+          "source": "laces api (cached)",
           "queried_ip": "172.66.151.62",
           "prefix": "172.66.151.0/24",
           "anycast": true,
@@ -86,7 +86,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.abc-mart.com.tw",
-        "ip": "172.66.151.62",
+        "ip": "104.20.24.190",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -96,13 +96,13 @@
       },
       "category": "domestic/cloud",
       "cloud_provider": {
-        "cf-ray": "a1e303991a49f8ff-SIN",
+        "cf-ray": "a1e537434e79fdbf-SIN",
         "country": "tw",
         "detection_method": "laces",
         "laces": {
           "source": "laces api (direct)",
-          "queried_ip": "172.66.151.62",
-          "prefix": "172.66.151.0/24",
+          "queried_ip": "104.20.24.190",
+          "prefix": "104.20.24.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
@@ -112,8 +112,8 @@
           "date": "2026-07-17",
           "has_tw": true,
           "has_taipei": true,
-          "site_count": 64,
-          "location_count": 64,
+          "site_count": 66,
+          "location_count": 66,
           "tw_locations": [
             {
               "city": "Taipei",
@@ -129,7 +129,7 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "cdnjs.cloudflare.com",
-        "ip": "104.17.24.14",
+        "ip": "104.17.25.14",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -140,7 +140,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e303a659fc0750-TPE",
+        "cf-ray": "a1e53757e863a339-TPE",
         "detection_method": "header"
       }
     },
@@ -159,10 +159,32 @@
       },
       "category": "domestic/cloud",
       "cloud_provider": {
+        "x-served-by": "cache-fra-etou8220138-FRA, cache-sin-wsss1830066-SIN",
         "country": "tw",
-        "cf-ray": "a1e303a66cffa3a5-TPE",
-        "x-served-by": "cache-fra-eddf8230135-FRA, cache-sin-wsat1880022-SIN",
-        "detection_method": "header"
+        "detection_method": "laces",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "104.17.208.5",
+          "prefix": "104.17.208.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            13335
+          ],
+          "date": "2026-07-17",
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 76,
+          "location_count": 76,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
+        }
       }
     },
     {
@@ -170,8 +192,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -186,24 +208,44 @@
       "type": "script",
       "ipinfo": {
         "domain": "storage.googleapis.com",
-        "ip": "142.250.66.91",
-        "hostname": "hkg12s27-in-f27.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
+        "ip": "34.153.2.27",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.677,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (direct)",
+          "queried_ip": "34.153.2.27",
+          "prefix": "34.153.2.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
     },
     {
       "originalUrl": "https://cdn.qgr.ph/qgraph.65ed744a3237a15a38ec.js",
       "type": "script",
       "ipinfo": {
         "domain": "cdn.qgr.ph",
-        "ip": "3.169.121.86",
-        "hostname": "server-3-169-121-86.tpe53.r.cloudfront.net",
+        "ip": "3.169.121.17",
+        "hostname": "server-3-169-121-17.tpe53.r.cloudfront.net",
         "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
@@ -212,6 +254,98 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://firebase.googleapis.com/v1alpha/projects/-/apps/1:563034394390:web:7d39d9246c426404f14a37/webConfig",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "firebase.googleapis.com",
+        "ip": "172.217.117.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.339,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "172.217.117.4",
+          "prefix": "172.217.117.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 62,
+          "location_count": 62
+        }
+      }
+    },
+    {
+      "originalUrl": "https://firebaseinstallations.googleapis.com/v1/projects/vpush-abc-mart/installations",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "firebaseinstallations.googleapis.com",
+        "ip": "172.217.116.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.556,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "172.217.116.4",
+          "prefix": "172.217.116.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
+    },
+    {
+      "originalUrl": "https://unpkg.com/web-vitals@3.1.0/dist/web-vitals.iife.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "unpkg.com",
+        "ip": "104.18.0.22",
+        "city": "San Francisco",
+        "region": "California",
+        "country": "US",
+        "loc": "37.7621,-122.3971",
+        "org": "AS13335 Cloudflare, Inc.",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "cf-ray": "a1e5375ab855a9c8-TPE",
+        "detection_method": "header"
+      }
     },
     {
       "originalUrl": "https://connect.facebook.net/en_US/fbevents.js",
@@ -234,7 +368,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "bat.bing.com",
-        "ip": "150.171.28.10",
+        "ip": "150.171.27.10",
         "city": "Redmond",
         "region": "Washington",
         "country": "US",
@@ -245,7 +379,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "x-msedge-ref": "Ref A: AABB232E9E5C4FA69E237055597D0C82 Ref B: TPE201080402040 Ref C: 2026-07-20T15:31:42Z",
+        "x-msedge-ref": "Ref A: 5BBF581FE61044C181921D34CA5B711D Ref B: TPE201050219040 Ref C: 2026-07-20T21:56:30Z",
         "detection_method": "header"
       }
     },
@@ -254,8 +388,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "pixel.onead.com.tw",
-        "ip": "203.66.32.109",
-        "hostname": "203-66-32-109.hinet-ip.hinet.net",
+        "ip": "203.66.32.99",
+        "hostname": "203-66-32-99.hinet-ip.hinet.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
@@ -266,46 +400,10 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?rcb=14&frm=0&ae=g&auid=136549248.1784561501&dt=ABC%20Mart&en=page_view&dl=https%3A%2F%2Fwww.abc-mart.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=45401506.1784561501&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He67f0v846289038za200zd846289038xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118897920~118897930~118981136~119732170&apve=1&apvf=f&apvc=1&tft=1784561501292&tfd=3336&fmt=8",
+      "originalUrl": "https://sheets.googleapis.com/v4/spreadsheets/1wuWDwcMBAvwx7aMAzHpKlSAY1f2FgWQP91NhrtMHy20/values/%E7%B6%B2%E9%A0%81%E4%BF%83%E8%B3%BC%E6%A9%9F%E5%88%B6%E6%8E%A7%E5%88%B6%E5%8D%80?alt=json&key=AIzaSyBgmJ9INvLFmtXDWUnmVtYy_dz-yawXSY0",
       "type": "fetch",
       "ipinfo": {
-        "domain": "www.google.com",
-        "ip": "142.251.151.119",
-        "city": "Mountain View",
-        "region": "California",
-        "country": "US",
-        "loc": "38.0088,-122.1175",
-        "org": "AS15169 Google LLC",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "rtt": 6.368,
-        "detection_method": "rtt",
-        "laces": {
-          "source": "laces api (cached)",
-          "queried_ip": "142.251.151.119",
-          "prefix": "142.251.151.0/24",
-          "anycast": true,
-          "confidence": "confident",
-          "partial": false,
-          "asns": [
-            15169
-          ],
-          "date": "2026-07-17",
-          "has_tw": false,
-          "has_taipei": false,
-          "site_count": 61,
-          "location_count": 61
-        }
-      }
-    },
-    {
-      "originalUrl": "https://retail.googleapis.com/v2/projects/abc-mart-tag-server/locations/global/catalogs/default_catalog/userEvents:collect?key=AIzaSyAXSnpFL3oLQplgLKe1Ks2IdtLq8yJRL1c&uri=https%3A%2F%2Fwww.abc-mart.com.tw%2F&user_event=%7B%22eventType%22%3A%22search%22%2C%22productDetails%22%3A%5B%7B%22product%22%3A%7B%22id%22%3A%22V16020026%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22214048-2EY%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22214048-5EW%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V160213002%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V160105016%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V160300039%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V160300040%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V160300041%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22HP5050%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22HP5051%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22LA6439%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22KK2279%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V16020026%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22214048-2EY%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22214048-5EW%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V160213002%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V160105016%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V160300039%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V160300040%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V160300041%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22HP5050%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22HP5051%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22LA6439%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22KK2279%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22HP5050%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22KZ8952%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22KJ6882%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22JR6010%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22U5302ZB%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22U204L2QC%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22U509CD%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22U188W3U2%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V160300036%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V16020026%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V1C0101510%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V140314010%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%221201B020-100%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%221203B048-001%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%221203A615-109%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%221022A335-001%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2240826401%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2240884601%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2240771001%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2239501802%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22A22181C%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22A17501C%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22164056C%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22A16396C%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22FS262OD03X002-100%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22FS261RU02X040-920%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22FS262SN01F002-102%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22FS262OD03X004-010%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22213347-7DF%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22212481-001%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22211354-0LD%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22211994-5DW%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2211100100-3019%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2211100102-1973%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2211111500-2162%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2211100100-1999%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2274591-257%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2274716-008%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2274591-252%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2274498-008%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V261314001%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22KZ6697%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%221203B219-020%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22M2002RNM%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22213347-7DF%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22213970-0HZ%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22KI0054%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22M29505IE%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V140314010%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22A08789C%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2274371-008%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22IH1760%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2240643001%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2240643102%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22F0000291-1757%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V160200014%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22P2302J4%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22KI2363%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22U1906LAE%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22G150302002%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22N360302002%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22N360302007%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22N360302015%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2274716-008%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V160100020%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22KC6490%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22F3-RSF001-CFE%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22F3-RSX029-001%22%7D%2C%22quantity%22%3A1%7D%5D%2C%22visitorId%22%3A%22GA1.1.129661170.1784561501%22%2C%22searchQuery%22%3A%22false%22%2C%22attributes%22%3A%7B%22gtmSchema%22%3A%7B%22text%22%3A%5B%22GA4%22%5D%7D%7D%7D&ets=1784561501289",
-      "type": "image",
-      "ipinfo": {
-        "domain": "retail.googleapis.com",
+        "domain": "sheets.googleapis.com",
         "ip": "172.217.114.4",
         "city": "Mountain View",
         "region": "California",
@@ -317,7 +415,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 5.857,
+        "rtt": 6.019,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
@@ -338,12 +436,84 @@
       }
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-LLG3C1SE2W&cid=129661170.1784561501&gtm=45je67f0v879635484z8846289038za20gzb846289038zd846289038&rcb=7&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938466~115938468~118897920~118897930~119896802&z=1449916976",
+      "originalUrl": "https://www.google.com/ccm/collect?rcb=16&frm=0&ae=g&auid=2140444569.1784584590&dt=ABC%20Mart&en=page_view&dl=https%3A%2F%2Fwww.abc-mart.com.tw%2F&scrsrc=www.googletagmanager.com&rnd=700145525.1784584590&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He67h1v846289038za200zd846289038xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118897920~118897930~119724320~119773331&apve=1&apvf=f&apvc=1&tft=1784584590144&tfd=4202&fmt=8",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.154.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.737,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.154.119",
+          "prefix": "142.251.154.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 60,
+          "location_count": 60
+        }
+      }
+    },
+    {
+      "originalUrl": "https://retail.googleapis.com/v2/projects/abc-mart-tag-server/locations/global/catalogs/default_catalog/userEvents:collect?key=AIzaSyAXSnpFL3oLQplgLKe1Ks2IdtLq8yJRL1c&uri=https%3A%2F%2Fwww.abc-mart.com.tw%2F&user_event=%7B%22eventType%22%3A%22search%22%2C%22productDetails%22%3A%5B%7B%22product%22%3A%7B%22id%22%3A%22V16020026%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22214048-2EY%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22214048-5EW%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V160213002%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V160105016%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V160300039%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V160300040%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V160300041%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22HP5050%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22HP5051%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22LA6439%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22KK2279%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V16020026%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22214048-2EY%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22214048-5EW%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V160213002%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V160105016%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V160300039%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V160300040%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V160300041%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22HP5050%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22HP5051%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22LA6439%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22KK2279%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22HP5050%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22KZ8952%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22KJ6882%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22JR6010%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22U5302ZB%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22U204L2QC%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22U509CD%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22U188W3U2%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V160300036%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V16020026%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V1C0101510%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V140314010%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%221201B020-100%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%221203B048-001%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%221203A615-109%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%221022A335-001%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2240826401%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2240884601%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2240771001%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2239501802%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22A22181C%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22A17501C%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22164056C%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22A16396C%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22FS262OD03X002-100%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22FS261RU02X040-920%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22FS262SN01F002-102%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22FS262OD03X004-010%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22213347-7DF%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22212481-001%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22211354-0LD%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22211994-5DW%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2211100100-3019%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2211100102-1973%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2211111500-2162%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2211100100-1999%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2274591-257%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2274716-008%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2274591-252%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2274498-008%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V261314001%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22KZ6697%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%221203B219-020%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22M2002RNM%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22213347-7DF%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22213970-0HZ%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22KI0054%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22M29505IE%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V140314010%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22A08789C%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2274371-008%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22IH1760%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2240643001%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2240643102%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22F0000291-1757%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V160200014%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22P2302J4%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22KI2363%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22U1906LAE%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22G150302002%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22N360302002%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22N360302007%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22N360302015%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%2274716-008%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22V160100020%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22KC6490%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22F3-RSF001-CFE%22%7D%2C%22quantity%22%3A1%7D%2C%7B%22product%22%3A%7B%22id%22%3A%22F3-RSX029-001%22%7D%2C%22quantity%22%3A1%7D%5D%2C%22visitorId%22%3A%22GA1.1.709714576.1784584590%22%2C%22searchQuery%22%3A%22false%22%2C%22attributes%22%3A%7B%22gtmSchema%22%3A%7B%22text%22%3A%5B%22GA4%22%5D%7D%7D%7D&ets=1784584590140",
+      "type": "image",
+      "ipinfo": {
+        "domain": "retail.googleapis.com",
+        "ip": "172.217.114.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.319,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "172.217.114.4",
+          "prefix": "172.217.114.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-DQSPTE4W6K&cid=709714576.1784584590&gtm=45je67h1v874530252z8846289038za20gzb846289038zd846289038&rcb=6&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938466~115938468~118897920~118897930~118981135~119724320~119793973&z=236346048",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.204.35",
-        "hostname": "hkg07s38-in-f3.1e100.net",
+        "ip": "142.250.192.131",
+        "hostname": "bom12s18-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -358,51 +528,16 @@
       "type": "script",
       "ipinfo": {
         "domain": "cdn.qgraph.io",
-        "ip": "203.69.81.43",
+        "ip": "203.69.138.230",
+        "hostname": "203-69-138-230.hinet-ip.hinet.net",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
         "loc": "25.0531,121.5264",
-        "org": "AS3462 Data Communication Business Group",
+        "org": "AS20940 Akamai International B.V.",
         "timezone": "Asia/Taipei"
       },
-      "category": "domestic/direct"
-    },
-    {
-      "originalUrl": "https://sheets.googleapis.com/v4/spreadsheets/1wuWDwcMBAvwx7aMAzHpKlSAY1f2FgWQP91NhrtMHy20/values/%E7%B6%B2%E9%A0%81%E4%BF%83%E8%B3%BC%E6%A9%9F%E5%88%B6%E6%8E%A7%E5%88%B6%E5%8D%80?alt=json&key=AIzaSyBgmJ9INvLFmtXDWUnmVtYy_dz-yawXSY0",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "sheets.googleapis.com",
-        "ip": "172.217.116.4",
-        "city": "Mountain View",
-        "region": "California",
-        "country": "US",
-        "loc": "38.0088,-122.1175",
-        "org": "AS15169 Google LLC",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "rtt": 5.529,
-        "detection_method": "rtt",
-        "laces": {
-          "source": "laces api (cached)",
-          "queried_ip": "172.217.116.4",
-          "prefix": "172.217.116.0/24",
-          "anycast": true,
-          "confidence": "confident",
-          "partial": false,
-          "asns": [
-            15169
-          ],
-          "date": "2026-07-17",
-          "has_tw": false,
-          "has_taipei": false,
-          "site_count": 61,
-          "location_count": 61
-        }
-      }
+      "category": "domestic/cloud"
     },
     {
       "originalUrl": "https://aixq-ps-sdk.ess.appier.io/abc-mart/aixq-ps-sdk-pixel.js",
@@ -421,7 +556,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 6.236,
+        "rtt": 6.005,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
@@ -442,32 +577,12 @@
       }
     },
     {
-      "originalUrl": "https://unpkg.com/web-vitals@3.1.0/dist/web-vitals.iife.js",
-      "type": "script",
-      "ipinfo": {
-        "domain": "unpkg.com",
-        "ip": "104.18.0.22",
-        "city": "San Francisco",
-        "region": "California",
-        "country": "US",
-        "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
-        "timezone": "America/Los_Angeles"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "cf-ray": "a1e303adbedca9c8-TPE",
-        "detection_method": "header"
-      }
-    },
-    {
       "originalUrl": "https://asset.botbonnie.com/sdk/sdk.js",
       "type": "script",
       "ipinfo": {
         "domain": "asset.botbonnie.com",
-        "ip": "54.192.248.80",
-        "hostname": "server-54-192-248-80.tpe53.r.cloudfront.net",
+        "ip": "54.192.248.21",
+        "hostname": "server-54-192-248-21.tpe53.r.cloudfront.net",
         "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
@@ -478,74 +593,55 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://firebase.googleapis.com/v1alpha/projects/-/apps/1:563034394390:web:7d39d9246c426404f14a37/webConfig",
-      "type": "fetch",
+      "originalUrl": "https://www.facebook.com/tr/?id=571370517358884&ev=PageView&dl=https%3A%2F%2Fwww.abc-mart.com.tw%2F&rl=&if=false&ts=1784584591449&iw=false&sw=1280&sh=720&v=2.9.358&r=stable&ec=0&o=4126&aems=0%3B0&fbp=fb.2.1784584591444.912668888825259375&ler=empty&cdl=API_unavailable&pmd[title]=ABC%20Mart&pmd[locale]=zh-TW&plt=3978.89999999851&iss=1&imft=1&tz=480&it=1784584591012&coo=false&expv2[0]=pl1&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=ct3&expv2[6]=hf0&rqm=GET",
+      "type": "image",
       "ipinfo": {
-        "domain": "firebase.googleapis.com",
-        "ip": "172.217.116.4",
-        "city": "Mountain View",
-        "region": "California",
-        "country": "US",
-        "loc": "38.0088,-122.1175",
-        "org": "AS15169 Google LLC",
-        "timezone": "America/Los_Angeles"
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
       },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "rtt": 6.571,
-        "detection_method": "rtt",
-        "laces": {
-          "source": "laces api (cached)",
-          "queried_ip": "172.217.116.4",
-          "prefix": "172.217.116.0/24",
-          "anycast": true,
-          "confidence": "confident",
-          "partial": false,
-          "asns": [
-            15169
-          ],
-          "date": "2026-07-17",
-          "has_tw": false,
-          "has_taipei": false,
-          "site_count": 61,
-          "location_count": 61
-        }
-      }
+      "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://firebaseinstallations.googleapis.com/v1/projects/vpush-abc-mart/installations",
-      "type": "fetch",
+      "originalUrl": "https://api.quantumgraph.com/web/cm/",
+      "type": "xhr",
       "ipinfo": {
-        "domain": "firebaseinstallations.googleapis.com",
-        "ip": "172.217.118.4",
-        "city": "Mountain View",
-        "region": "California",
+        "domain": "api.quantumgraph.com",
+        "ip": "34.110.163.49",
+        "hostname": "49.163.110.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
         "country": "US",
-        "loc": "38.0088,-122.1175",
-        "org": "AS15169 Google LLC",
-        "timezone": "America/Los_Angeles"
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
       },
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 6.044,
+        "rtt": 5.328,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "172.217.118.4",
-          "prefix": "172.217.118.0/24",
+          "queried_ip": "34.110.163.49",
+          "prefix": "34.110.163.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
           "asns": [
-            15169
+            396982
           ],
           "date": "2026-07-17",
           "has_tw": false,
           "has_taipei": false,
-          "site_count": 62,
-          "location_count": 62
+          "site_count": 63,
+          "location_count": 63
         }
       }
     },
@@ -564,7 +660,6 @@
       },
       "category": "domestic/cloud",
       "cloud_provider": {
-        "cf-ray": "a1e303b37df6ce5a-SIN",
         "country": "tw",
         "detection_method": "laces",
         "laces": {
@@ -591,91 +686,6 @@
           ]
         }
       }
-    },
-    {
-      "originalUrl": "https://api.quantumgraph.com/web/cm/",
-      "type": "xhr",
-      "ipinfo": {
-        "domain": "api.quantumgraph.com",
-        "ip": "34.110.163.49",
-        "hostname": "49.163.110.34.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
-        "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "rtt": 6.45,
-        "detection_method": "rtt",
-        "laces": {
-          "source": "laces api (cached)",
-          "queried_ip": "34.110.163.49",
-          "prefix": "34.110.163.0/24",
-          "anycast": true,
-          "confidence": "confident",
-          "partial": false,
-          "asns": [
-            396982
-          ],
-          "date": "2026-07-17",
-          "has_tw": false,
-          "has_taipei": false,
-          "site_count": 63,
-          "location_count": 63
-        }
-      }
-    },
-    {
-      "originalUrl": "https://chat.botbonnie.com/?appId=page-eafddf4e5ca14248bbdf38f5&userId=bb-wpIrfLj66SnvtiUPsB4P6&isNewUser=true&",
-      "type": "document",
-      "ipinfo": {
-        "domain": "chat.botbonnie.com",
-        "ip": "54.192.248.68",
-        "hostname": "server-54-192-248-68.tpe53.r.cloudfront.net",
-        "city": "Taoyuan",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "24.9937,121.2970",
-        "org": "AS16509 Amazon.com, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.facebook.com/tr/?id=571370517358884&ev=PageView&dl=https%3A%2F%2Fwww.abc-mart.com.tw%2F&rl=&if=false&ts=1784561503743&iw=false&sw=1280&sh=720&v=2.9.357&r=stable&ec=0&o=4126&aems=0%3B0&fbp=fb.2.1784561503739.360213906820528364&ler=empty&cdl=API_unavailable&pmd[title]=ABC%20Mart&pmd[locale]=zh-TW&plt=3959.5999999996275&iss=1&imft=1&tz=480&it=1784561503449&coo=false&expv2[0]=pl1&expv2[1]=el2&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=im0&expv2[6]=hf1&rqm=GET",
-      "type": "image",
-      "ipinfo": {
-        "domain": "www.facebook.com",
-        "ip": "31.13.87.36",
-        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
-        "city": "Taipei",
-        "region": "Taiwan",
-        "country": "TW",
-        "loc": "25.0531,121.5264",
-        "org": "AS32934 Facebook, Inc.",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/direct"
-    },
-    {
-      "originalUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap",
-      "type": "stylesheet",
-      "ipinfo": {
-        "domain": "fonts.googleapis.com",
-        "ip": "142.250.66.74",
-        "hostname": "hkg12s27-in-f10.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
     }
   ]
 }

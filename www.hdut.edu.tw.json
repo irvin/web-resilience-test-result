@@ -2,7 +2,7 @@
   "url": "https://www.hdut.edu.tw/",
   "canonicalURL": "https://www.hdut.edu.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T15:44:11.575Z",
+  "timestamp": "2026-07-20T22:09:30.802Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 102,
+  "requestCount": 100,
   "uniqueDomains": 10,
   "test_results": {
     "domestic": {
-      "cloud": 9,
+      "cloud": 8,
       "direct": 1
     },
     "foreign": {
-      "cloud": 0,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -58,20 +58,35 @@
       "type": "script",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "104.17.208.5",
+        "ip": "151.101.65.229",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
         "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
+        "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud",
+      "category": "foreign/cloud",
       "cloud_provider": {
-        "country": "tw",
-        "cf-ray": "a1e315d54ded8f15-TPE",
-        "x-served-by": "cache-fra-eddf8230135-FRA, cache-sin-wsat1880022-SIN",
-        "detection_method": "header"
+        "x-served-by": "cache-fra-etou8220138-FRA, cache-nrt-rjtf7700066-NRT",
+        "rtt": 36.214,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "151.101.65.229",
+          "prefix": "151.101.65.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 57,
+          "location_count": 57
+        }
       }
     },
     {
@@ -79,8 +94,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "translate.google.com",
-        "ip": "142.250.77.206",
-        "hostname": "del11s08-in-f14.1e100.net",
+        "ip": "142.250.204.46",
+        "hostname": "hkg07s38-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -95,8 +110,8 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "www.gstatic.com",
-        "ip": "142.250.192.131",
-        "hostname": "bom12s18-in-f3.1e100.net",
+        "ip": "142.250.77.195",
+        "hostname": "del11s08-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -107,12 +122,12 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.zh_TW.V9GY5NeK2rY.O/am=BIAABw/d=1/exm=el_conf/ed=1/rs=AN8SPfqQjRyQvZtH9ab1yxoV_TjTa1b3tw/m=el_main",
+      "originalUrl": "https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.zh_TW.g8Tx0odbiT8.O/am=BIAABw/d=1/exm=el_conf/ed=1/rs=AN8SPfrPaKDFjtUt-XzX9AihIx_mkhzJww/m=el_main",
       "type": "script",
       "ipinfo": {
         "domain": "translate.googleapis.com",
-        "ip": "142.250.77.10",
-        "hostname": "nctsaa-ab-in-f10.1e100.net",
+        "ip": "142.250.196.202",
+        "hostname": "nctsaa-ac-in-f10.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -127,7 +142,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.youtube.com",
-        "ip": "142.251.151.4",
+        "ip": "142.251.156.4",
         "city": "Mountain View",
         "region": "California",
         "country": "US",
@@ -138,12 +153,12 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 6.562,
+        "rtt": 6.034,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "142.251.151.4",
-          "prefix": "142.251.151.0/24",
+          "queried_ip": "142.251.156.4",
+          "prefix": "142.251.156.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
@@ -159,12 +174,12 @@
       }
     },
     {
-      "originalUrl": "https://i.ytimg.com/vi/p2SdM2JoHDo/maxresdefault.jpg",
+      "originalUrl": "https://i.ytimg.com/vi/ad05RjMH5XQ/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLBlVMiHvYsYZEpqOpZEuO47NsUEig",
       "type": "image",
       "ipinfo": {
         "domain": "i.ytimg.com",
-        "ip": "142.250.77.214",
-        "hostname": "del11s08-in-f22.1e100.net",
+        "ip": "142.250.77.22",
+        "hostname": "nctsaa-ab-in-f22.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -179,8 +194,8 @@
       "type": "image",
       "ipinfo": {
         "domain": "yt3.ggpht.com",
-        "ip": "142.250.198.65",
-        "hostname": "lctsaa-ab-in-f1.1e100.net",
+        "ip": "142.250.192.129",
+        "hostname": "bom12s18-in-f1.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -206,7 +221,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 5.493,
+        "rtt": 5.966,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
@@ -242,7 +257,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 5.202,
+        "rtt": 5.096,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",

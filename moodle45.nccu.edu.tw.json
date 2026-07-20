@@ -2,7 +2,7 @@
   "url": "https://moodle45.nccu.edu.tw",
   "canonicalURL": "https://moodle45.nccu.edu.tw",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T14:09:23.733Z",
+  "timestamp": "2026-07-20T20:32:11.471Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 34,
+  "requestCount": 43,
   "uniqueDomains": 3,
   "test_results": {
     "domestic": {
-      "cloud": 1,
+      "cloud": 0,
       "direct": 1
     },
     "foreign": {
-      "cloud": 0,
+      "cloud": 1,
       "direct": 1
     }
   },
@@ -74,41 +74,34 @@
       "type": "script",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "104.17.208.5",
+        "ip": "151.101.129.229",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
         "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
+        "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud",
+      "category": "foreign/cloud",
       "cloud_provider": {
-        "x-served-by": "cache-fra-eddf8230196-FRA, cache-sin-wsss1830072-SIN",
-        "country": "tw",
-        "detection_method": "laces",
+        "x-served-by": "cache-fra-eddf8230196-FRA, cache-sin-wsss1830073-SIN",
+        "rtt": 42.645,
+        "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "104.17.208.5",
-          "prefix": "104.17.208.0/24",
+          "queried_ip": "151.101.129.229",
+          "prefix": "151.101.129.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
           "asns": [
-            13335
+            54113
           ],
           "date": "2026-07-17",
-          "has_tw": true,
-          "has_taipei": true,
-          "site_count": 76,
-          "location_count": 76,
-          "tw_locations": [
-            {
-              "city": "Taipei",
-              "country": "TW",
-              "id": "TAI"
-            }
-          ]
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 55,
+          "location_count": 55
         }
       }
     }

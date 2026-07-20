@@ -2,7 +2,7 @@
   "url": "https://www.pct.org.tw/",
   "canonicalURL": "https://www.pct.org.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T14:32:43.478Z",
+  "timestamp": "2026-07-20T20:55:48.831Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,11 +25,11 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 85,
-  "uniqueDomains": 10,
+  "requestCount": 87,
+  "uniqueDomains": 12,
   "test_results": {
     "domestic": {
-      "cloud": 6,
+      "cloud": 8,
       "direct": 4
     },
     "foreign": {
@@ -59,8 +59,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.77.200",
-        "hostname": "del11s08-in-f8.1e100.net",
+        "ip": "142.250.77.8",
+        "hostname": "nctsaa-ab-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -71,7 +71,7 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://pctcontent.pct.org.tw/block/file/getimage.aspx?pname=20260313193120454&lname=2026%20%E5%85%92%E7%AB%A5%E7%87%9F%E6%95%99%E6%9D%90%20%E6%88%91%E6%98%AF%E5%AA%92%E9%AB%94%E5%B0%8F%E9%81%94%E4%BA%BA%20%E5%B0%81%E9%9D%A2s.jpg",
+      "originalUrl": "https://pctcontent.pct.org.tw/block/file/getimage.aspx?pname=20260513125251484&lname=2026%E7%92%B0%E5%A2%83%E4%B8%BB%E6%97%A5%E6%B5%B7%E5%A0%B1.png",
       "type": "image",
       "ipinfo": {
         "domain": "pctcontent.pct.org.tw",
@@ -91,7 +91,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "pki-tool.com",
-        "ip": "104.21.92.191",
+        "ip": "172.67.197.87",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -101,12 +101,13 @@
       },
       "category": "domestic/cloud",
       "cloud_provider": {
+        "cf-ray": "a1e4de580d12f4a9-SIN",
         "country": "tw",
         "detection_method": "laces",
         "laces": {
           "source": "laces api (direct)",
-          "queried_ip": "104.21.92.191",
-          "prefix": "104.21.92.0/24",
+          "queried_ip": "172.67.197.87",
+          "prefix": "172.67.197.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
@@ -116,8 +117,8 @@
           "date": "2026-07-17",
           "has_tw": true,
           "has_taipei": true,
-          "site_count": 56,
-          "location_count": 56,
+          "site_count": 57,
+          "location_count": 57,
           "tw_locations": [
             {
               "city": "Taipei",
@@ -145,11 +146,11 @@
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.youtube.com/embed/3MhIxnNMGJw?rel=0",
+      "originalUrl": "https://www.youtube.com/embed/HQa6o8QJ3IU?rel=0",
       "type": "document",
       "ipinfo": {
         "domain": "www.youtube.com",
-        "ip": "142.251.153.4",
+        "ip": "142.251.152.4",
         "city": "Mountain View",
         "region": "California",
         "country": "US",
@@ -160,12 +161,48 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 5.305,
+        "rtt": 7.487,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "142.251.153.4",
-          "prefix": "142.251.153.0/24",
+          "queried_ip": "142.251.152.4",
+          "prefix": "142.251.152.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.google.com/js/th/8uIar4J4-RenYUa4HtG5DFVcni3D6dGneJv1JZIjHfM.js",
+      "type": "script",
+      "ipinfo": {
+        "domain": "www.google.com",
+        "ip": "142.251.150.119",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 6.397,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "142.251.150.119",
+          "prefix": "142.251.150.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
@@ -181,28 +218,12 @@
       }
     },
     {
-      "originalUrl": "https://i.ytimg.com/vi_webp/3MhIxnNMGJw/sddefault.webp",
+      "originalUrl": "https://i.ytimg.com/vi_webp/HQa6o8QJ3IU/sddefault.webp",
       "type": "image",
       "ipinfo": {
         "domain": "i.ytimg.com",
-        "ip": "142.250.77.22",
-        "hostname": "nctsaa-ab-in-f22.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://www.gstatic.com/youtube/img/icons/mweb/youtube_fill/logo/v2/67px.svg",
-      "type": "fetch",
-      "ipinfo": {
-        "domain": "www.gstatic.com",
-        "ip": "142.250.198.67",
-        "hostname": "lctsaa-ab-in-f3.1e100.net",
+        "ip": "142.250.66.86",
+        "hostname": "hkg12s27-in-f22.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -217,8 +238,8 @@
       "type": "image",
       "ipinfo": {
         "domain": "yt3.ggpht.com",
-        "ip": "142.250.204.33",
-        "hostname": "hkg07s38-in-f1.1e100.net",
+        "ip": "142.250.77.193",
+        "hostname": "del11s08-in-f1.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -229,7 +250,59 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://www.facebook.com/v2.4/plugins/page.php?adapt_container_width=true&app_id=&channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Dff7fb5e37a1782070%26domain%3Dwww.pct.org.tw%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.pct.org.tw%252Fff23b80eff1cd7dc5%26relation%3Dparent.parent&container_width=418&height=155&hide_cover=false&href=https%3A%2F%2Fwww.facebook.com%2F1865pct&locale=zh_TW&sdk=joey&show_facepile=false&show_posts=false&small_header=true&width=418",
+      "originalUrl": "https://www.gstatic.com/youtube/img/icons/mweb/youtube_fill/logo/v2/67px.svg",
+      "type": "fetch",
+      "ipinfo": {
+        "domain": "www.gstatic.com",
+        "ip": "142.250.66.67",
+        "hostname": "hkg12s27-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "jnn-pa.googleapis.com",
+        "ip": "172.217.114.4",
+        "city": "Mountain View",
+        "region": "California",
+        "country": "US",
+        "loc": "38.0088,-122.1175",
+        "org": "AS15169 Google LLC",
+        "timezone": "America/Los_Angeles"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 5.966,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "172.217.114.4",
+          "prefix": "172.217.114.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            15169
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 61,
+          "location_count": 61
+        }
+      }
+    },
+    {
+      "originalUrl": "https://www.facebook.com/v2.4/plugins/page.php?adapt_container_width=true&app_id=&channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Dfe578782a6fe80bfa%26domain%3Dwww.pct.org.tw%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.pct.org.tw%252Ffee9f575ffaaeca3a%26relation%3Dparent.parent&container_width=418&height=155&hide_cover=false&href=https%3A%2F%2Fwww.facebook.com%2F1865pct&locale=zh_TW&sdk=joey&show_facepile=false&show_posts=false&small_header=true&width=418",
       "type": "document",
       "ipinfo": {
         "domain": "www.facebook.com",

@@ -2,7 +2,7 @@
   "url": "https://cnyes.com",
   "canonicalURL": "https://cnyes.com",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T13:02:36.295Z",
+  "timestamp": "2026-07-20T19:18:54.037Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,12 +25,12 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 239,
-  "uniqueDomains": 22,
+  "requestCount": 341,
+  "uniqueDomains": 23,
   "test_results": {
     "domestic": {
-      "cloud": 17,
-      "direct": 3
+      "cloud": 15,
+      "direct": 6
     },
     "foreign": {
       "cloud": 2,
@@ -58,24 +58,23 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.cnyes.com",
-        "ip": "203.69.138.32",
-        "hostname": "203-69-138-32.hinet-ip.hinet.net",
+        "ip": "203.69.81.154",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
         "loc": "25.0531,121.5264",
-        "org": "AS20940 Akamai International B.V.",
+        "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://www.googleoptimize.com/optimize.js?id=OPT-NXGS5V5",
       "type": "script",
       "ipinfo": {
         "domain": "www.googleoptimize.com",
-        "ip": "142.250.196.206",
-        "hostname": "nctsaa-ac-in-f14.1e100.net",
+        "ip": "142.250.66.78",
+        "hostname": "hkg12s27-in-f14.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -90,12 +89,12 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "173.194.174.95",
-        "hostname": "td-in-f95.1e100.net",
-        "city": "Taichung",
-        "region": "Taiwan",
+        "ip": "142.250.77.202",
+        "hostname": "del11s08-in-f10.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
         "country": "TW",
-        "loc": "24.1469,120.6839",
+        "loc": "25.0143,121.4672",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
@@ -106,7 +105,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "s3-ap-northeast-1.amazonaws.com",
-        "ip": "3.5.159.94",
+        "ip": "3.5.157.74",
         "city": "Tokyo",
         "region": "Tokyo",
         "country": "JP",
@@ -116,12 +115,12 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 36.013,
+        "rtt": 36.333,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (direct)",
-          "queried_ip": "3.5.159.94",
-          "prefix": "3.5.159.0/24",
+          "queried_ip": "3.5.157.74",
+          "prefix": "3.5.157.0/24",
           "anycast": false,
           "confidence": "not_detected",
           "asns": [],
@@ -154,8 +153,8 @@
       "type": "image",
       "ipinfo": {
         "domain": "sfiles.cnyes.cool",
-        "ip": "54.192.248.97",
-        "hostname": "server-54-192-248-97.tpe53.r.cloudfront.net",
+        "ip": "54.192.248.114",
+        "hostname": "server-54-192-248-114.tpe53.r.cloudfront.net",
         "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
@@ -170,8 +169,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "player.svc.litv.tv",
-        "ip": "54.192.248.62",
-        "hostname": "server-54-192-248-62.tpe53.r.cloudfront.net",
+        "ip": "54.192.248.45",
+        "hostname": "server-54-192-248-45.tpe53.r.cloudfront.net",
         "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
@@ -180,30 +179,66 @@
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://pusti.svc.litv.tv/puid",
+      "type": "xhr",
+      "ipinfo": {
+        "domain": "pusti.svc.litv.tv",
+        "ip": "34.96.74.134",
+        "hostname": "134.74.96.34.bc.googleusercontent.com",
+        "city": "Kansas City",
+        "region": "Missouri",
+        "country": "US",
+        "loc": "39.0997,-94.5786",
+        "org": "AS396982 Google LLC",
+        "timezone": "America/Chicago"
+      },
+      "category": "domestic/cloud",
+      "cloud_provider": {
+        "country": "tw",
+        "rtt": 8.433,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "34.96.74.134",
+          "prefix": "34.96.74.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            396982
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 65,
+          "location_count": 65
+        }
+      }
     },
     {
       "originalUrl": "https://login.cnyes.com/dpi.html",
       "type": "document",
       "ipinfo": {
         "domain": "login.cnyes.com",
-        "ip": "203.69.138.32",
-        "hostname": "203-69-138-32.hinet-ip.hinet.net",
+        "ip": "203.69.81.35",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
         "loc": "25.0531,121.5264",
-        "org": "AS20940 Akamai International B.V.",
+        "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
-      "category": "domestic/cloud"
+      "category": "domestic/direct"
     },
     {
       "originalUrl": "https://aigc.cnyes.com/hot-qa.json",
       "type": "fetch",
       "ipinfo": {
         "domain": "aigc.cnyes.com",
-        "ip": "3.169.121.76",
-        "hostname": "server-3-169-121-76.tpe53.r.cloudfront.net",
+        "ip": "3.169.121.109",
+        "hostname": "server-3-169-121-109.tpe53.r.cloudfront.net",
         "city": "Taoyuan",
         "region": "Taiwan",
         "country": "TW",
@@ -214,7 +249,7 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://api.cnyes.com/media/api/v1/newslist/category/headline?startAt=1781960551&endAt=1784552551&isIndexHeadline=0&isCategoryHeadline=0&limit=10",
+      "originalUrl": "https://api.cnyes.com/media/api/v1/newslist/category/headline?startAt=1781983128&endAt=1784575128&isIndexHeadline=0&isCategoryHeadline=0&limit=10",
       "type": "xhr",
       "ipinfo": {
         "domain": "api.cnyes.com",
@@ -230,7 +265,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 6.037,
+        "rtt": 8.999,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
@@ -267,7 +302,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 5.937,
+        "rtt": 10.425,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
@@ -304,7 +339,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 6.175,
+        "rtt": 9.521,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
@@ -325,76 +360,22 @@
       }
     },
     {
-      "originalUrl": "https://pusti.svc.litv.tv/puid",
-      "type": "xhr",
-      "ipinfo": {
-        "domain": "pusti.svc.litv.tv",
-        "ip": "34.96.74.134",
-        "hostname": "134.74.96.34.bc.googleusercontent.com",
-        "city": "Kansas City",
-        "region": "Missouri",
-        "country": "US",
-        "loc": "39.0997,-94.5786",
-        "org": "AS396982 Google LLC",
-        "timezone": "America/Chicago"
-      },
-      "category": "domestic/cloud",
-      "cloud_provider": {
-        "country": "tw",
-        "rtt": 5.927,
-        "detection_method": "rtt",
-        "laces": {
-          "source": "laces api (cached)",
-          "queried_ip": "34.96.74.134",
-          "prefix": "34.96.74.0/24",
-          "anycast": true,
-          "confidence": "confident",
-          "partial": false,
-          "asns": [
-            396982
-          ],
-          "date": "2026-07-17",
-          "has_tw": false,
-          "has_taipei": false,
-          "site_count": 65,
-          "location_count": 65
-        }
-      }
-    },
-    {
       "originalUrl": "https://cimg.cnyes.cool/prod/vendorPurchaseAd/upload/9/97cd4da0a41e11f09b6d43c8dee83364.jpeg",
       "type": "image",
       "ipinfo": {
         "domain": "cimg.cnyes.cool",
-        "ip": "203.74.67.41",
-        "hostname": "203-74-67-41.hinet-ip.hinet.net",
-        "city": "Taichung",
+        "ip": "203.69.81.154",
+        "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",
-        "loc": "24.1469,120.6839",
+        "loc": "25.0531,121.5264",
         "org": "AS3462 Data Communication Business Group",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/direct"
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-G733DLJ15Z&cid=990488436.1784552551&gtm=45je67f0v891083988z8812902046za20gzb812902046zd812902046&rcb=9&aip=1&dma=0&gcd=13l3l3l2l1l1&npa=1&frm=0&tag_exp=115938465~115938469~118897920~118897930~118981136~119724321&z=555614718",
-      "type": "image",
-      "ipinfo": {
-        "domain": "www.google.com.tw",
-        "ip": "142.250.198.67",
-        "hostname": "lctsaa-ab-in-f3.1e100.net",
-        "city": "Banqiao",
-        "region": "Taipei",
-        "country": "TW",
-        "loc": "25.0143,121.4672",
-        "org": "AS15169 Google LLC",
-        "timezone": "Asia/Taipei"
-      },
-      "category": "domestic/cloud"
-    },
-    {
-      "originalUrl": "https://adsv.omgrmn.tw/omni/sync?puid=a28e0a82-dade-4584-975e-5eabd3109117",
+      "originalUrl": "https://adsv.omgrmn.tw/omni/sync?puid=58d89896-4383-4354-9c27-0fa71a73291e",
       "type": "image",
       "ipinfo": {
         "domain": "adsv.omgrmn.tw",
@@ -410,7 +391,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 6.204,
+        "rtt": 10.575,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
@@ -431,7 +412,7 @@
       }
     },
     {
-      "originalUrl": "https://sb.scorecardresearch.com/p?c1=8&c2=18986219&c3=1&cj=1&c4=https%3A%2F%2Fwww.cnyes.com%2F&rn=1784552551584&cs_fpid=a28e0a82-dade-4584-975e-5eabd3109117&cs_fpit=c&cs_fpdm=*null&cs_fpdt=*null",
+      "originalUrl": "https://sb.scorecardresearch.com/p?c1=8&c2=18986219&c3=1&cj=1&c4=https%3A%2F%2Fwww.cnyes.com%2F&rn=1784575129152&cs_fpid=58d89896-4383-4354-9c27-0fa71a73291e&cs_fpit=c&cs_fpdm=*null&cs_fpdt=*null",
       "type": "image",
       "ipinfo": {
         "domain": "sb.scorecardresearch.com",
@@ -447,7 +428,7 @@
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://api.svc.taiwanmedia.org/taiwan-media/puid/sync?luid=a28e0a82-dade-4584-975e-5eabd3109117",
+      "originalUrl": "https://api.svc.taiwanmedia.org/taiwan-media/puid/sync?luid=58d89896-4383-4354-9c27-0fa71a73291e",
       "type": "image",
       "ipinfo": {
         "domain": "api.svc.taiwanmedia.org",
@@ -463,7 +444,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 5.611,
+        "rtt": 7.73,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
@@ -484,7 +465,7 @@
       }
     },
     {
-      "originalUrl": "https://e2elog.fetnet.net/CM/ce?ad_id=a28e0a82-dade-4584-975e-5eabd3109117&chnl=litv&do=www.cnyes.com&dt=%E8%B2%A1%E7%B6%93%E6%96%B0%E8%81%9E%E3%80%81%E5%85%A8%E7%90%83%E6%8C%87%E6%95%B8%E3%80%81%E8%82%A1%E5%B8%82%E5%A0%B1%E5%83%B9%E3%80%81%E5%95%86%E5%93%81%E8%A1%8C%E6%83%85%E3%80%81%E7%90%86%E8%B2%A1%E6%8A%95%E8%B3%87%20-%20%E9%89%85%E4%BA%A8%E7%B6%B2",
+      "originalUrl": "https://e2elog.fetnet.net/CM/ce?ad_id=58d89896-4383-4354-9c27-0fa71a73291e&chnl=litv&do=www.cnyes.com&dt=%E8%B2%A1%E7%B6%93%E6%96%B0%E8%81%9E%E3%80%81%E5%85%A8%E7%90%83%E6%8C%87%E6%95%B8%E3%80%81%E8%82%A1%E5%B8%82%E5%A0%B1%E5%83%B9%E3%80%81%E5%95%86%E5%93%81%E8%A1%8C%E6%83%85%E3%80%81%E7%90%86%E8%B2%A1%E6%8A%95%E8%B3%87%20-%20%E9%89%85%E4%BA%A8%E7%B6%B2",
       "type": "image",
       "ipinfo": {
         "domain": "e2elog.fetnet.net",
@@ -498,7 +479,7 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "rtt": 50.606,
+        "rtt": 52.872,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
@@ -516,7 +497,23 @@
       }
     },
     {
-      "originalUrl": "https://www.google.com/ccm/collect?rcb=18&frm=0&ae=g&auid=1121695638.1784552552&dt=%E8%B2%A1%E7%B6%93%E6%96%B0%E8%81%9E%E3%80%81%E5%85%A8%E7%90%83%E6%8C%87%E6%95%B8%E3%80%81%E8%82%A1%E5%B8%82%E5%A0%B1%E5%83%B9%E3%80%81%E5%95%86%E5%93%81%E8%A1%8C%E6%83%85%E3%80%81%E7%90%86%E8%B2%A1%E6%8A%95%E8%B3%87%20-%20%E9%89%85%E4%BA%A8%E7%B6%B2&dl=https%3A%2F%2Fwww.cnyes.com%2F&scrsrc=www.googletagmanager.com&rnd=1698333348.1784552552&navt=n&npa=1&_tu=CA&gtm=45be67f0z8812902046za20gzb812902046zd812902046xea&gcd=13l3l3l2l1l1&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~119709549~119724321~119773332&apve=1&apvf=f&apvc=0&tids=AW-654852154&tid=AW-654852154&tft=1784552551775&tfd=1379&fmt=8",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-102K295BQ2&cid=360450032.1784575128&gtm=45je67g0v891083518z8812902046za20gzb812902046zd812902046&rcb=19&aip=1&dma=0&gcd=13l3l3l2l1l1&npa=1&frm=0&tag_exp=115938466~115938468~118897920~118897930~119773332~119896803&z=597774767",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.google.com.tw",
+        "ip": "142.250.198.67",
+        "hostname": "lctsaa-ab-in-f3.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
+        "country": "TW",
+        "loc": "25.0143,121.4672",
+        "org": "AS15169 Google LLC",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/cloud"
+    },
+    {
+      "originalUrl": "https://www.google.com/ccm/collect?rcb=11&frm=0&ae=g&auid=1015126207.1784575129&dt=%E8%B2%A1%E7%B6%93%E6%96%B0%E8%81%9E%E3%80%81%E5%85%A8%E7%90%83%E6%8C%87%E6%95%B8%E3%80%81%E8%82%A1%E5%B8%82%E5%A0%B1%E5%83%B9%E3%80%81%E5%95%86%E5%93%81%E8%A1%8C%E6%83%85%E3%80%81%E7%90%86%E8%B2%A1%E6%8A%95%E8%B3%87%20-%20%E9%89%85%E4%BA%A8%E7%B6%B2&dl=https%3A%2F%2Fwww.cnyes.com%2F&scrsrc=www.googletagmanager.com&rnd=2038681886.1784575129&navt=n&npa=1&_tu=CA&gtm=45be67g0z8812902046za20gzb812902046zd812902046xea&gcd=13l3l3l2l1l1&dma=0&tag_exp=115938466~115938468~118897920~118897930~118981135~119773332&apve=1&apvf=f&apvc=0&tids=AW-654852154&tid=AW-654852154&tft=1784575129406&tfd=2359&fmt=8",
       "type": "fetch",
       "ipinfo": {
         "domain": "www.google.com",
@@ -531,7 +528,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "rtt": 7.281,
+        "rtt": 11.705,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
@@ -558,6 +555,22 @@
         "domain": "connect.facebook.net",
         "ip": "31.13.87.5",
         "hostname": "xx-fbcdn-shv-01-tpe1.fbcdn.net",
+        "city": "Taipei",
+        "region": "Taiwan",
+        "country": "TW",
+        "loc": "25.0531,121.5264",
+        "org": "AS32934 Facebook, Inc.",
+        "timezone": "Asia/Taipei"
+      },
+      "category": "domestic/direct"
+    },
+    {
+      "originalUrl": "https://www.facebook.com/tr?id=166170211276554&pId=51634&cd%5Bpixel_id%5D=51634&cd%5Bbanner_id%5D=8533&cd%5Bzone_id%5D=1079&cd%5Bpageurl%5D=https%3A%2F%2Fwww.cnyes.com%2F&cd%5Bwidth%5D=300&cd%5Bheight%5D=250&cd%5Bhit%5D=1784575131&ud%5Bexternal_id%5D=d75893b4846f11f18df406cf01e34cbc&ud%5Boaid%5D=%7BOAID%7D&ev=ViewAds",
+      "type": "image",
+      "ipinfo": {
+        "domain": "www.facebook.com",
+        "ip": "31.13.87.36",
+        "hostname": "edge-star-mini-shv-01-tpe1.facebook.com",
         "city": "Taipei",
         "region": "Taiwan",
         "country": "TW",

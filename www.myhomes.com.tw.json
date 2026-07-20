@@ -2,7 +2,7 @@
   "url": "https://www.myhomes.com.tw/",
   "canonicalURL": "https://www.myhomes.com.tw/",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T14:40:25.462Z",
+  "timestamp": "2026-07-20T21:04:19.607Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -29,11 +29,11 @@
   "uniqueDomains": 7,
   "test_results": {
     "domestic": {
-      "cloud": 4,
+      "cloud": 5,
       "direct": 0
     },
     "foreign": {
-      "cloud": 3,
+      "cloud": 2,
       "direct": 0
     }
   },
@@ -58,8 +58,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.77.8",
-        "hostname": "nctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.196.200",
+        "hostname": "nctsaa-ac-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -74,34 +74,41 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "151.101.193.229",
+        "ip": "104.17.208.5",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
         "loc": "37.7621,-122.3971",
-        "org": "AS54113 Fastly, Inc.",
+        "org": "AS13335 Cloudflare, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "foreign/cloud",
+      "category": "domestic/cloud",
       "cloud_provider": {
-        "x-served-by": "cache-fra-etou8220090-FRA, cache-nrt-rjtf7700075-NRT",
-        "rtt": 36.287,
-        "detection_method": "rtt",
+        "x-served-by": "cache-fra-etou8220090-FRA, cache-sin-wsss1830052-SIN",
+        "country": "tw",
+        "detection_method": "laces",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "151.101.193.229",
-          "prefix": "151.101.193.0/24",
+          "queried_ip": "104.17.208.5",
+          "prefix": "104.17.208.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
           "asns": [
-            54113
+            13335
           ],
           "date": "2026-07-17",
-          "has_tw": false,
-          "has_taipei": false,
-          "site_count": 54,
-          "location_count": 54
+          "has_tw": true,
+          "has_taipei": true,
+          "site_count": 76,
+          "location_count": 76,
+          "tw_locations": [
+            {
+              "city": "Taipei",
+              "country": "TW",
+              "id": "TAI"
+            }
+          ]
         }
       }
     },
@@ -110,23 +117,23 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "74.125.23.95",
-        "hostname": "tg-in-f95.1e100.net",
-        "city": "Taichung",
-        "region": "Taiwan",
+        "ip": "142.250.66.74",
+        "hostname": "hkg12s27-in-f10.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
         "country": "TW",
-        "loc": "24.1469,120.6839",
+        "loc": "25.0143,121.4672",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
       "category": "domestic/cloud"
     },
     {
-      "originalUrl": "https://vod.api.video/vod/vi6NX6OGlIrOft0NGyMiO4Mk/thumbnail.jpg",
+      "originalUrl": "https://vod.api.video/vod/vi4vYHhesAMHJWmn1R4rMwlJ/thumbnail.jpg",
       "type": "image",
       "ipinfo": {
         "domain": "vod.api.video",
-        "ip": "199.232.113.91",
+        "ip": "146.75.45.91",
         "city": "Singapore",
         "region": "Singapore",
         "country": "SG",
@@ -136,13 +143,13 @@
       },
       "category": "foreign/cloud",
       "cloud_provider": {
-        "x-served-by": "cache-par-lfpg1960057-PAR, cache-nrt-rjaa8190053-NRT",
-        "rtt": 65.972,
+        "x-served-by": "cache-par-lfpb1150071-PAR, cache-nrt-rjtf7700038-NRT",
+        "rtt": 61.873,
         "detection_method": "rtt",
         "laces": {
           "source": "laces api (cached)",
-          "queried_ip": "199.232.113.91",
-          "prefix": "199.232.113.0/24",
+          "queried_ip": "146.75.45.91",
+          "prefix": "146.75.45.0/24",
           "anycast": true,
           "confidence": "confident",
           "partial": false,
@@ -162,7 +169,7 @@
       "type": "script",
       "ipinfo": {
         "domain": "unpkg.com",
-        "ip": "104.18.0.22",
+        "ip": "104.18.1.22",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -173,17 +180,17 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e2b80fcd32c4ed-TPE",
+        "cf-ray": "a1e4ea1c4afbf22a-TPE",
         "detection_method": "header"
       }
     },
     {
-      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-34H1E06DQK&cid=561036802.1784558405&gtm=45je67f0v9115509792za200zd9115509792&rcb=3&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115616986~115938466~115938469~118897920~118897930&z=1712261029",
+      "originalUrl": "https://www.google.com.tw/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-34H1E06DQK&cid=1535479477.1784581426&gtm=45je67g0v9115509792za200zd9115509792&rcb=16&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938465~115938469~118395334~118897920~118897930~118981135~119896803&z=719235709",
       "type": "image",
       "ipinfo": {
         "domain": "www.google.com.tw",
-        "ip": "142.250.77.3",
-        "hostname": "nctsaa-ab-in-f3.1e100.net",
+        "ip": "142.250.198.67",
+        "hostname": "lctsaa-ab-in-f3.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",

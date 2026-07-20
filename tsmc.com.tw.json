@@ -2,7 +2,7 @@
   "url": "https://tsmc.com.tw",
   "canonicalURL": "https://www.tsmc.com/english",
   "httpStatus": 200,
-  "timestamp": "2026-07-20T14:37:29.835Z",
+  "timestamp": "2026-07-20T21:00:52.719Z",
   "testParameters": {
     "customDNS": "168.95.1.1",
     "useAdblock": true,
@@ -25,15 +25,15 @@
     "source": "ipinfo json api (direct)",
     "dnsServer": "168.95.1.1"
   },
-  "requestCount": 37,
+  "requestCount": 39,
   "uniqueDomains": 7,
   "test_results": {
     "domestic": {
-      "cloud": 7,
+      "cloud": 6,
       "direct": 0
     },
     "foreign": {
-      "cloud": 0,
+      "cloud": 1,
       "direct": 0
     }
   },
@@ -43,7 +43,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "tsmc.com.tw",
-        "ip": "172.66.0.3",
+        "ip": "162.159.140.3",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -54,7 +54,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e2b4353927841c-TPE",
+        "cf-ray": "a1e4e5d0bce24a0d-TPE",
         "detection_method": "header"
       }
     },
@@ -63,7 +63,7 @@
       "type": "document",
       "ipinfo": {
         "domain": "www.tsmc.com",
-        "ip": "172.66.0.3",
+        "ip": "162.159.140.3",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -74,7 +74,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e2b4369b578446-TPE",
+        "cf-ray": "a1e4e5d17c8e6a99-TPE",
         "detection_method": "header"
       }
     },
@@ -83,12 +83,12 @@
       "type": "stylesheet",
       "ipinfo": {
         "domain": "fonts.googleapis.com",
-        "ip": "142.251.170.95",
-        "hostname": "tc-in-f95.1e100.net",
-        "city": "Taichung",
-        "region": "Taiwan",
+        "ip": "142.250.198.74",
+        "hostname": "lctsaa-ab-in-f10.1e100.net",
+        "city": "Banqiao",
+        "region": "Taipei",
         "country": "TW",
-        "loc": "24.1469,120.6839",
+        "loc": "25.0143,121.4672",
         "org": "AS15169 Google LLC",
         "timezone": "Asia/Taipei"
       },
@@ -110,7 +110,7 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "cf-ray": "a1e2b438ce9e8445-TPE",
+        "cf-ray": "a1e4e5d28f0da9b0-TPE",
         "detection_method": "header"
       }
     },
@@ -119,8 +119,8 @@
       "type": "script",
       "ipinfo": {
         "domain": "www.googletagmanager.com",
-        "ip": "142.250.198.72",
-        "hostname": "lctsaa-ab-in-f8.1e100.net",
+        "ip": "142.250.192.136",
+        "hostname": "bom12s18-in-f8.1e100.net",
         "city": "Banqiao",
         "region": "Taipei",
         "country": "TW",
@@ -135,20 +135,35 @@
       "type": "script",
       "ipinfo": {
         "domain": "cdn.jsdelivr.net",
-        "ip": "104.17.208.5",
+        "ip": "151.101.193.229",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
         "loc": "37.7621,-122.3971",
-        "org": "AS13335 Cloudflare, Inc.",
+        "org": "AS54113 Fastly, Inc.",
         "timezone": "America/Los_Angeles"
       },
-      "category": "domestic/cloud",
+      "category": "foreign/cloud",
       "cloud_provider": {
-        "country": "tw",
-        "cf-ray": "a1e2b4371d2a49f7-TPE",
-        "x-served-by": "cache-fra-etou8220111-FRA, cache-nrt-rjtt7900064-NRT",
-        "detection_method": "header"
+        "x-served-by": "cache-fra-etou8220194-FRA, cache-nrt-rjtf7700095-NRT",
+        "rtt": 36.544,
+        "detection_method": "rtt",
+        "laces": {
+          "source": "laces api (cached)",
+          "queried_ip": "151.101.193.229",
+          "prefix": "151.101.193.0/24",
+          "anycast": true,
+          "confidence": "confident",
+          "partial": false,
+          "asns": [
+            54113
+          ],
+          "date": "2026-07-17",
+          "has_tw": false,
+          "has_taipei": false,
+          "site_count": 54,
+          "location_count": 54
+        }
       }
     },
     {
@@ -156,7 +171,7 @@
       "type": "xhr",
       "ipinfo": {
         "domain": "pr.tsmc.com",
-        "ip": "172.66.0.3",
+        "ip": "162.159.140.3",
         "city": "San Francisco",
         "region": "California",
         "country": "US",
@@ -167,30 +182,8 @@
       "category": "domestic/cloud",
       "cloud_provider": {
         "country": "tw",
-        "detection_method": "laces",
-        "laces": {
-          "source": "laces api (direct)",
-          "queried_ip": "172.66.0.3",
-          "prefix": "172.66.0.0/24",
-          "anycast": true,
-          "confidence": "confident",
-          "partial": false,
-          "asns": [
-            13335
-          ],
-          "date": "2026-07-17",
-          "has_tw": true,
-          "has_taipei": true,
-          "site_count": 77,
-          "location_count": 77,
-          "tw_locations": [
-            {
-              "city": "Taipei",
-              "country": "TW",
-              "id": "TAI"
-            }
-          ]
-        }
+        "cf-ray": "a1e4e5d69b9d8f13-TPE",
+        "detection_method": "header"
       }
     }
   ]
