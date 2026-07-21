@@ -1,37 +1,37 @@
-=== 雲端資源統計 ===
+=== Cloud resource statistics ===
 ASN	Company Name	Total Requests	Taiwan Requests	Non-Taiwan Requests	Taiwan Ratio (%)	Total Websites	Websites (domestic node)	Websites (foreign node)
-AS15169	Google LLC	5762	5732	30	99.48	1461	1461	28
-AS13335	Cloudflare, Inc.	2563	2523	40	98.44	857	851	26
-AS16509	Amazon.com, Inc.	1689	1222	467	72.35	533	458	262
-AS396982	Google LLC	853	828	25	97.07	370	360	21
-AS54113	Fastly, Inc.	455	134	321	29.45	321	132	213
-AS16625	Akamai Technologies, Inc.	345	343	2	99.42	271	270	2
-AS8075	Microsoft Corporation	313	175	138	55.91	178	121	80
-AS20940	Akamai Technologies, Inc.	114	107	7	93.86	83	80	6
+AS15169	Google LLC	6492	6457	35	99.46	1664	1664	33
+AS13335	Cloudflare, Inc.	3072	3051	21	99.32	1016	1016	17
+AS16509	Amazon.com, Inc.	1904	1382	522	72.58	616	512	309
+AS396982	Google LLC	964	936	28	97.10	448	441	25
+AS16625	Akamai Technologies, Inc.	386	385	1	99.74	311	310	1
+AS54113	Fastly, Inc.	375	6	369	1.60	261	6	257
+AS8075	Microsoft Corporation	339	196	143	57.82	193	140	77
+AS20940	Akamai Technologies, Inc.	73	61	12	83.56	55	47	10
 
-=== 公司合計統計 ===
+=== Company totals ===
 Company Name	ASNs	Total Requests	Taiwan Requests	Non-Taiwan Requests	Taiwan Ratio (%)	Total Websites	Websites (domestic node)	Websites (foreign node)	Websites (consider resilience)
-Google LLC	AS15169, AS396982	6615	6560	55	99.17	1479	1478	47	872
-Cloudflare, Inc.	AS13335	2563	2523	40	98.44	857	851	26	411
-Amazon.com, Inc.	AS16509	1689	1222	467	72.35	533	458	262	137
-Akamai Technologies, Inc.	AS16625, AS20940	459	450	9	98.04	324	323	8	97
-Fastly, Inc.	AS54113	455	134	321	29.45	321	132	213	49
-Microsoft Corporation	AS8075	313	175	138	55.91	178	121	80	36
+Google LLC	AS15169, AS396982	7456	7393	63	99.16	1685	1685	56	965
+Cloudflare, Inc.	AS13335	3072	3051	21	99.32	1016	1016	17	480
+Amazon.com, Inc.	AS16509	1904	1382	522	72.58	616	512	309	138
+Akamai Technologies, Inc.	AS16625, AS20940	459	446	13	97.17	343	338	11	104
+Fastly, Inc.	AS54113	375	6	369	1.60	261	6	257	4
+Microsoft Corporation	AS8075	339	196	143	57.82	193	140	77	38
 
-=== Resilience=1 網站公有雲使用總結 ===
-Resilience=1 網站總數	1141
-使用公有雲台灣節點的網站數	962	84.31%
+=== Resilience=1 public cloud summary ===
+Resilience=1 site count	1323
+Sites using Taiwan public cloud nodes	1079	81.56%
 
-各公有雲使用情況:
-Google LLC	872
-Cloudflare, Inc.	411
-Amazon.com, Inc.	137
-Akamai Technologies, Inc.	97
-Fastly, Inc.	49
-Microsoft Corporation	36
+Per-provider usage:
+Google LLC	965
+Cloudflare, Inc.	480
+Amazon.com, Inc.	138
+Akamai Technologies, Inc.	104
+Microsoft Corporation	38
+Fastly, Inc.	4
 
-=== 公共機關整體風險統計 ===
-類型	測試網站數量	存在境外連線數量	比例
-政府網站 (.gov.tw)	201	14	7.0%
-教育網站 (.edu.tw)	227	35	15.4%
-全部	1878	737	39.2%
+=== Public-sector foreign dependency risk ===
+Type	Sites tested	Sites with foreign connections	Ratio
+Government (.gov.tw)	235	16	6.8%
+Education (.edu.tw)	255	34	13.3%
+All	2179	856	39.3%
